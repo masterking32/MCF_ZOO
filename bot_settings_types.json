@@ -89,7 +89,7 @@
     "key": "user_alliance_id",
     "name": "Alliance ID",
     "type": "number",
-    "default_value": 0,
+    "default_value": 178,
     "description": "Your target alliance id to auto join, example: 386",
     "min": 0,
     "max": 999999
