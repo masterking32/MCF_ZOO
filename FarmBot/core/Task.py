@@ -141,7 +141,7 @@ class Task:
         reward = zsutils.rnd(task.get("reward", 0))
         task_name = task.get("title", "").strip()
         if "chest_" in task.get("key", ""):
-            title_time = datetime.strptime(task["title"], "%Y-%m-%d %H:%M:%S").replace(
+            title_time = datetime.strptime(task["actionTo"], "%Y-%m-%d %H:%M:%S").replace(
                 tzinfo=timezone.utc
             )
             local_title_time = title_time.astimezone()
@@ -187,7 +187,7 @@ class Task:
     def _can_claim_chest(self, task: dict):
         if utils.getConfig("ignore_chest_claim_time", False):
             return True
-        title_time = datetime.strptime(task["title"], "%Y-%m-%d %H:%M:%S").replace(
+        title_time = datetime.strptime(task["actionTo"], "%Y-%m-%d %H:%M:%S").replace(
             tzinfo=timezone.utc
         )
         end_time = datetime.strptime(task["dateEnd"], "%Y-%m-%d %H:%M:%S").replace(
@@ -224,7 +224,7 @@ class Task:
             task_name = task.get("title", "Unknown")
             if "chest_" in task_key:
                 title_time = datetime.strptime(
-                    task["title"], "%Y-%m-%d %H:%M:%S"
+                    task["actionTo"], "%Y-%m-%d %H:%M:%S"
                 ).replace(tzinfo=timezone.utc)
                 local_title_time = title_time.astimezone()
                 end_time = datetime.strptime(
