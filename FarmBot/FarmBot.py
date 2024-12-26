@@ -52,7 +52,7 @@ class FarmBot:
                 return
 
             self.log.info(
-                f"🤖 <c>{self.mcf_api.account_name}</c> | Starting to farm <c>Zoo</c>..."
+                f"🤖 <g><c>{self.mcf_api.account_name}</c> | Starting to farm <c>Zoo</c>...</g>"
             )
 
             self.user = User(self.requests, self.mcf_api)
@@ -81,14 +81,16 @@ class FarmBot:
             self.boost.auto_buy_boost()
 
             self.log.info(
-                f"🤖 <c>{self.mcf_api.account_name}</c> | Finished farming <c>Zoo</c>!"
+                f"🤖 <c>{self.mcf_api.account_name}</c><g> | Finished farming <c>Zoo</c>!</g>"
             )
 
         except Exception as e:
-            self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | Failed to farm!")
+            self.log.error(
+                f"🔴 <c>{self.mcf_api.account_name}</c><r> | Failed to farm!</r>"
+            )
             if str(e):
                 self.log.error(
-                    f"🔴 <c>{self.mcf_api.account_name}</c> | Error: <r>{str(e)}</r>"
+                    f"🔴 <c>{self.mcf_api.account_name}</c><r> | Error: {str(e)}</r>"
                 )
             return
         finally:

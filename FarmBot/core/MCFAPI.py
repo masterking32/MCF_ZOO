@@ -77,7 +77,7 @@ class MCFAPI:
         if self.license_key is None:
             return None
         apiObj = API(self.log)
-        data["game_name"] = self.bot_globals.get("module_name", "").lower()
+        data["game_name"] = "zoo"
         data["action"] = action
         response = apiObj.get_task_answer(self.license_key, data)
         time.sleep(3)
