@@ -78,7 +78,9 @@ class Alliance:
             )
 
             if resp is None:
-                raise Exception(f"Failed to join to alliance, response: <m>{resp}</m>")
+                raise Exception(
+                    f"Failed to join to alliance, Looks like you don't have enough coins to join the alliance. response: <m>{resp}</m>"
+                )
 
             success = resp.get("success")
 

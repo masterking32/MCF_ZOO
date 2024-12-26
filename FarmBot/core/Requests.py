@@ -71,6 +71,9 @@ class Requests:
                 "Api-Key": api_key,
                 "Api-Time": f"{api_time}",
             }
+            display_errors = True
+            if url == "/alliance/rating":
+                display_errors = False
 
             resp = self.http.post(
                 url=url,
@@ -78,11 +81,12 @@ class Requests:
                 data=json.dumps(payload),
                 auth_header=False,
                 headers=headers,
-                display_errors=True,
+                display_errors=display_errors,
             )
-
-            if resp is None:
+            if resp is None and display_errors:
                 raise Exception(f"Failed to send POST request to {url}.")
+            elif resp is None:
+                return None
 
             time.sleep(random.randint(1, 3))
 
