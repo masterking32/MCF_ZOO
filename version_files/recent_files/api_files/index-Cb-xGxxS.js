@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DlSVQNTq.js", "assets/Alliance-Jl5lte4L.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-Ske2BSqC.js", "assets/Boost-CcIlgcXF.css", "assets/Home-BnSNx-s-.css", "assets/Rating-CTM7iecD.js", "assets/Rating-DRysk5eI.css", "assets/Communities-CfVp-deN.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-CzHQvByO.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-z1fPXsdc.js", "assets/Alliance-DkMjZDFx.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost--G1c6oRW.js", "assets/Boost-CcIlgcXF.css", "assets/Home-BnSNx-s-.css", "assets/Rating-CWu79oLK.js", "assets/Rating-DRysk5eI.css", "assets/Communities-Doh3gVfI.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BNrpCOaN.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -21104,21 +21104,22 @@ function LE(e, t, n, o, s, a) {
     style: {
       "border-bottom": "1px dashed #FFFFFF"
     }
-  }, [be(M(e.t("You can earn up to 10,000 feed for a friend:")) + " ", 1), s.isListVisible ? (W(), Me(l, {
+  }, [be(M(e.t("You can earn up to 10,000 feed per friend:")) + " ", 1), s.isListVisible ? (W(), Me(l, {
     key: 0,
     name: "arrow-down"
   })) : (W(), Me(l, {
     key: 1,
     name: "arrow"
   }))]), rt(P("ul", SE, [P("li", {
-    innerHTML: e.t("- Up to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME}.", {
+    innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
+      MIN: 1,
       MAX: 5,
       COUNT: e._number(1e4),
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
   }, null, 8, xE), P("li", {
-    innerHTML: e.t("- {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME}.", {
+    innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 6,
       MAX: 10,
       COUNT: e._number(5e3),
@@ -21126,7 +21127,7 @@ function LE(e, t, n, o, s, a) {
       COIN_NAME: e.COIN_NAME
     })
   }, null, 8, AE), P("li", {
-    innerHTML: e.t("- {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME}.", {
+    innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 11,
       MAX: 20,
       COUNT: e._number(3e3),
@@ -21134,7 +21135,7 @@ function LE(e, t, n, o, s, a) {
       COIN_NAME: e.COIN_NAME
     })
   }, null, 8, EE), P("li", {
-    innerHTML: e.t("- {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME}.", {
+    innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 21,
       MAX: 50,
       COUNT: e._number(1e3),
@@ -21142,7 +21143,7 @@ function LE(e, t, n, o, s, a) {
       COIN_NAME: e.COIN_NAME
     })
   }, null, 8, IE), P("li", {
-    innerHTML: e.t("- {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME}.", {
+    innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 51,
       MAX: 100,
       COUNT: e._number(500),
@@ -21150,7 +21151,7 @@ function LE(e, t, n, o, s, a) {
       COIN_NAME: e.COIN_NAME
     })
   }, null, 8, PE), P("li", {
-    innerHTML: e.t("- Over {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME}.", {
+    innerHTML: e.t("- Over {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MAX: 100,
       COUNT: e._number(50),
       IMG_COIN: e.IMG_COIN,
@@ -21233,7 +21234,7 @@ function LE(e, t, n, o, s, a) {
 }
 const Am = St(wE, [
     ["render", LE],
-    ["__scopeId", "data-v-779040d5"]
+    ["__scopeId", "data-v-9025637b"]
   ]),
   NE = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -23703,37 +23704,37 @@ const ia = FP({
     history: gP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-DlSVQNTq.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-z1fPXsdc.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-DlSVQNTq.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-z1fPXsdc.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => bE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-CGWJSvSn.js"), [])
+      component: () => It(() => import("./Terms-B4OcMZZP.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => fE), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-CTM7iecD.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-CWu79oLK.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => NE), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-CfVp-deN.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-Doh3gVfI.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-Jl5lte4L.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-DkMjZDFx.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-Ske2BSqC.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost--G1c6oRW.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-KSxTaM5K.js"), [])
+      component: () => It(() => import("./Support-BRFrKgzo.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => uI), void 0)
@@ -23742,7 +23743,7 @@ const ia = FP({
       component: () => It(() => Promise.resolve().then(() => GE), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-CzHQvByO.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-BNrpCOaN.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   zP = {
