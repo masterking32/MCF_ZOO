@@ -35,7 +35,6 @@ class Boost:
         self.requests: Requests = requests
         self.mcf_api: MCFAPI = mcf_api
         self.user: User = user
-        self.value = user.hero.get("boostPercent", 0)
         self.boosts = [BoostMdl.from_dict(bst) for bst in self.user.boosts_data]
 
     def _buy_boost(self, boost: BoostMdl):
@@ -73,7 +72,7 @@ class Boost:
             )
             return True
 
-        if self.user.hero.get("boostPercent", 0) > 0:
+        if self.user.hero.get("tphBoost", 0) > 0:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Boost already active.</y>"
             )
