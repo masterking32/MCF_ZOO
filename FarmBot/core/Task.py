@@ -253,14 +253,17 @@ class Task:
             )
 
             if task.get("checkType") == "invite":
-                friends_count = self.user.profile.get("friends", -1)
-                required = task.get("checkCount", 0)
-                if not friends_count >= required:
-                    self.log.info(
-                        f"🟠 <c>{self.mcf_api.account_name}</c> | Insufficient friends. Requires <y>{required}</y>, yours is <y>{friends_count}</y>"
-                    )
-                    continue
-                self._claim_task(task)
+                try:
+                    friends_count = self.user.profile.get("friends", -1)
+                    required = task.get("checkCount", 0)
+                    if not friends_count >= required:
+                        self.log.info(
+                            f"🟠 <c>{self.mcf_api.account_name}</c> | Insufficient friends. Requires <y>{required}</y>, yours is <y>{friends_count}</y>"
+                        )
+                        continue
+                    self._claim_task(task)
+                except Exception as e:
+                    pass
                 continue
 
             if task_key == "join_tg":
