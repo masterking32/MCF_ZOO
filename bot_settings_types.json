@@ -1,79 +1,191 @@
 [
   {
-    "key": "key1",
-    "name": "Example Text",
-    "type": "text",
-    "placeholder": "Text Placeholder",
-    "default_value": "Default Text",
-    "description": "This is an example text field",
-    "required": false
-  },
-  {
-    "key": "key_number",
-    "name": "Example Number",
+    "key": "auto_disable_module",
+    "name": "Don't use module before key date for X days",
     "type": "number",
-    "placeholder": "Number Placeholder",
-    "default_value": 1,
-    "description": "This is an example number field",
-    "min": 1,
-    "max": 255
+    "default_value": 7,
+    "description": "Stop using the module X days before the key date. The key date is set by the developer, it can be the listing date or the end date of the mining phase. 0 means don't stop use module.",
+    "min": 0,
+    "max": 365
   },
   {
-    "key": "key_checkbox1",
-    "name": "Example Checkbox",
+    "key": "auto_daily_reward",
+    "name": "Auto claim daily reward",
     "type": "checkbox",
     "default_value": "on",
-    "description": "This is an example checkbox field"
+    "description": "Automatically claim daily reward"
   },
   {
-    "key": "key_range1",
-    "name": "Example Range",
+    "key": "auto_play_quizzes",
+    "name": "Auto play quizzes",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
+    "key": "auto_complete_tasks",
+    "name": "Auto complete tasks",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": "Automatically complete tasks"
+  },
+  {
+    "key": "auto_claim_chests",
+    "name": "Auto claim chests",
+    "type": "checkbox",
+    "default_value": "",
+    "description": "Automatically claim chests"
+  },
+  {
+    "key": "ignore_chest_claim_time",
+    "name": "Ignore chest claim time",
+    "type": "checkbox",
+    "default_value": "",
+    "description": "Ignore chest claim time"
+  },
+  {
+    "key": "auto_join_channels",
+    "name": "Auto join channels",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": "Automatically join channels. ONLY FOR SESSIONS"
+  },
+  {
+    "key": "auto_change_name",
+    "name": "Auto change name",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": "Automatically change name. ONLY FOR SESSIONS"
+  },
+  {
+    "key": "auto_upgrade_animals",
+    "name": "Auto upgrade animals",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
+    "key": "auto_buy_animals",
+    "name": "Auto buy new animals",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
+    "key": "auto_buy_animals_one",
+    "name": "Buy only one animal per loop",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
+    "key": "auto_join_alliance",
+    "name": "Auto join alliance",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
+    "key": "user_alliance_id",
+    "name": "Alliance ID",
+    "type": "number",
+    "default_value": 0,
+    "description": "Your target alliance id to auto join, example: 386",
+    "min": 0,
+    "max": 999999
+  },
+  {
+    "key": "auto_donate_alliance",
+    "name": "Auto food donation",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
+    "key": "donate_limit_balance",
+    "name": "Untouchable food limit",
+    "type": "number",
+    "default_value": 1000,
+    "description": "If the balance is below this value or if the amount of donation can lower the balance below this value, the donation will be canceled.",
+    "min": 0,
+    "max": 100000000
+  },
+  {
+    "key": "donate_amount",
+    "name": "Donation amount in percent",
     "type": "range",
-    "default_value": 50,
-    "description": "This is an example range field",
-    "min": 50,
+    "default_value": 1,
+    "description": "Donation amount in percents, 0 = disabled.",
+    "min": 0,
     "max": 100
   },
   {
-    "key": "key_select1",
-    "name": "Example Select",
+    "key": "auto_buy_boost",
+    "name": "Auto buy boosts",
     "type": "select",
     "options": [
       {
-        "value": "option1",
-        "name": "Option 1"
+        "value": "0",
+        "name": "Disabled"
       },
       {
-        "value": "option2",
-        "name": "Option 2"
+        "value": "5",
+        "name": "+5% for 24 hours / 50 food"
+      },
+      {
+        "value": "10",
+        "name": "+10% for 24 hours / 100 food"
+      },
+      {
+        "value": "15",
+        "name": "+15% for 24 hours / 250 food"
+      },
+      {
+        "value": "20",
+        "name": "+20% for 24 hours / 1k food"
+      },
+      {
+        "value": "25",
+        "name": "+25% for 24 hours / 5k food"
       }
     ],
-    "description": "This is an example select field",
+    "default_value": "5",
+    "description": "Auto buy boosts if available",
     "multi_select": false
   },
   {
-    "key": "key_select2",
-    "name": "Example Multi-Select",
-    "type": "select",
-    "options": [
-      {
-        "value": "option1",
-        "name": "Option 1"
-      },
-      {
-        "value": "option2",
-        "name": "Option 2"
-      },
-      {
-        "value": "option3",
-        "name": "Option 3"
-      },
-      {
-        "value": "option4",
-        "name": "Option 4"
-      }
-    ],
-    "description": "This is an example select field",
-    "multi_select": true
+    "key": "delay_between_accounts",
+    "name": "Delay between accounts (seconds)",
+    "type": "range",
+    "default_value": 60,
+    "description": "How long to wait between accounts, in seconds.",
+    "min": 1,
+    "max": 1200
+  },
+  {
+    "key": "check_interval",
+    "name": "Check interval (seconds)",
+    "type": "number",
+    "default_value": 5400,
+    "description": "How often to login into accounts, in seconds.",
+    "min": 1800,
+    "max": 28800
+  },
+  {
+    "key": "max_threads",
+    "name": "Max Threads",
+    "type": "range",
+    "default_value": 5,
+    "description": "Maximum number of threads to use for checking groups of accounts based on their proxies.",
+    "min": 1,
+    "max": 15
+  },
+  {
+    "key": "referral_token",
+    "name": "Referral Token",
+    "type": "text",
+    "placeholder": "ref504844459",
+    "default_value": "",
+    "description": "Put your referral token here. It's just your ID. Format: ref504844459"
   }
 ]
