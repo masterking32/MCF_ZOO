@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CX9Yg2fm.js", "assets/Alliance-B1DrhatZ.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-8GNDff1X.js", "assets/Boost-CcIlgcXF.css", "assets/Home-_li6mdvx.css", "assets/Rating-BiPwLMUM.js", "assets/Rating-DRysk5eI.css", "assets/Communities-B8U0VZaQ.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-PXSM8OGF.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CoSVZIfm.js", "assets/Alliance-Bydl2BsD.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-35bRVp4C.js", "assets/Boost-CcIlgcXF.css", "assets/Home-_li6mdvx.css", "assets/Rating-Dj7eTiTm.js", "assets/Rating-DRysk5eI.css", "assets/Communities-DfqxM9YX.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BCZ8Lowz.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -18764,7 +18764,7 @@ const Ur = St(Lx, [
             const a = this.uQuests.find(l => l.key === "donate_ton_01");
             a && (a == null ? void 0 : a.creationDate) < "2024-12-18 06:20:00" && (o.isArchived = !1)
           }
-          return o.key === "donate_ton_06" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_01")), o.key === "donate_ton_1" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_06")), o.key === "donate_ton_3" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_1")), o.key === "donate_ton_5" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_3")), o.key === "donate_ton_10" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_5")), o.key === "donate_ton_25" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_10")), o.key === "donate_ton_50" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_25")), o.key === "donate_ton_75" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_50")), o.key === "boost_tg2" && (o.isArchived = !this.uQuests.find(a => a.key === "boost_tg")), o
+          return o.key === "donate_ton_06" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_01")), o.key === "donate_ton_1" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_06")), o.key === "donate_ton_3" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_1")), o.key === "donate_ton_5" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_3")), o.key === "donate_ton_10" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_5")), o.key === "donate_ton_25" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_10")), o.key === "donate_ton_50" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_25")), o.key === "donate_ton_75" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_50")), o
         }).filter(o => !o.key.includes("chest_")).filter(o => !(o.isArchived && (o.status === "new" || o.key.includes("rebus_") || o.key.includes("riddle_"))));
         this.extendQuestsAll = e, this.extendQuestsFinished = e.filter(o => o.status === "finished").sort((o, s) => s.reward - o.reward);
         const t = e.filter(o => o.status !== "finished"),
@@ -19242,7 +19242,7 @@ function x2(e, t, n, o, s, a) {
 }
 const A2 = St(Wx, [
     ["render", x2],
-    ["__scopeId", "data-v-1600da07"]
+    ["__scopeId", "data-v-4beec549"]
   ]),
   E2 = {
     components: {
@@ -23713,37 +23713,37 @@ const ia = VP({
     history: vP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-CX9Yg2fm.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-CoSVZIfm.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-CX9Yg2fm.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-CoSVZIfm.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => bE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-DL6cUWQr.js"), [])
+      component: () => It(() => import("./Terms-BDjsWv5X.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => fE), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-BiPwLMUM.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-Dj7eTiTm.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => FE), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-B8U0VZaQ.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-DfqxM9YX.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-B1DrhatZ.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-Bydl2BsD.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-8GNDff1X.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-35bRVp4C.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-CD3UdHKA.js"), [])
+      component: () => It(() => import("./Support-D3Y60cvM.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => dI), void 0)
@@ -23752,7 +23752,7 @@ const ia = VP({
       component: () => It(() => Promise.resolve().then(() => ZE), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-PXSM8OGF.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-BCZ8Lowz.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   HP = {
