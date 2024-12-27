@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CapVbfS7.js", "assets/Alliance-CJSgxW18.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CCLkynU4.js", "assets/Boost-CcIlgcXF.css", "assets/Home-BnSNx-s-.css", "assets/Rating-DrCSTpyv.js", "assets/Rating-DRysk5eI.css", "assets/Communities-fb7S-5PD.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-_y7kjy_7.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CFdz90fp.js", "assets/Alliance-NTP_5Wn0.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-xYh7BTrd.js", "assets/Boost-CcIlgcXF.css", "assets/Home-CrcU1nz4.css", "assets/Rating-CGgCP1O7.js", "assets/Rating-DRysk5eI.css", "assets/Communities-Dboj4hoH.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BnwIy4M9.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -21066,23 +21066,24 @@ const xm = St(hE, [
   PE = ["innerHTML"],
   OE = ["innerHTML"],
   RE = ["innerHTML"],
-  DE = {
+  DE = ["innerHTML"],
+  BE = {
     key: 0,
     class: "panelBrown"
   },
-  BE = ["innerHTML"],
-  $E = {
+  $E = ["innerHTML"],
+  ME = {
     key: 0,
     class: "right"
   },
-  ME = {
+  LE = {
     key: 1,
     style: {
       "font-size": "0.7em"
     }
   };
 
-function LE(e, t, n, o, s, a) {
+function NE(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-badge"),
     c = ge("van-button"),
@@ -21090,21 +21091,22 @@ function LE(e, t, n, o, s, a) {
     d = ge("van-cell"),
     f = ge("van-cell-group"),
     m = ge("van-back-top");
-  return W(), ae("div", CE, [P("div", _E, [P("div", kE, [P("div", null, [P("h1", null, M(e.t("Invite Friends!")), 1), P("p", {
-    innerHTML: e.t("Your friend get {BONUS_FRIEND}  {IMG_COIN} {COIN_NAME} or {BONUS_FRIEND_PREMIUM} {IMG_COIN} {COIN_NAME} if friend has Telegram Premium.", {
-      COIN_NAME: e.COIN_NAME,
-      BONUS_FRIEND: e.gameConfig["ref.bonus.basic"],
-      BONUS_FRIEND_PREMIUM: e.gameConfig["ref.bonus.premium"],
-      IMG_COIN: e.IMG_COIN
-    })
-  }, null, 8, TE), P("span", {
+  return W(), ae("div", CE, [P("div", _E, [P("div", kE, [P("div", null, [P("h1", null, M(e.t("Invite Friends!")), 1), P("span", {
     onClick: t[0] || (t[0] = g => {
       this.isListVisible = !this.isListVisible
     }),
     style: {
       "border-bottom": "1px dashed #FFFFFF"
     }
-  }, [be(M(e.t("You can earn up to 10,000 feed per friend:")) + " ", 1), s.isListVisible ? (W(), Me(l, {
+  }, [P("span", {
+    innerHTML: e.t("You can earn up to {COUNT} {IMG_COIN} {COIN_NAME} per friend:", {
+      MIN: 1,
+      MAX: 5,
+      COUNT: e._number(1e4),
+      IMG_COIN: e.IMG_COIN,
+      COIN_NAME: e.COIN_NAME
+    })
+  }, null, 8, TE), s.isListVisible ? (W(), Me(l, {
     key: 0,
     name: "arrow-down"
   })) : (W(), Me(l, {
@@ -21164,7 +21166,14 @@ function LE(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, RE), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (W(), ae("p", DE, [be(M(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
+  }, null, 8, RE), P("p", {
+    innerHTML: e.t("Your friend get {BONUS_FRIEND}  {IMG_COIN} {COIN_NAME} or {BONUS_FRIEND_PREMIUM} {IMG_COIN} {COIN_NAME} if friend has Telegram Premium.", {
+      COIN_NAME: e.COIN_NAME,
+      BONUS_FRIEND: e.gameConfig["ref.bonus.basic"],
+      BONUS_FRIEND_PREMIUM: e.gameConfig["ref.bonus.premium"],
+      IMG_COIN: e.IMG_COIN
+    })
+  }, null, 8, DE), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (W(), ae("p", BE, [be(M(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
     PERCENT: 30
   })) + " ", 1), P("span", {
     onClick: t[1] || (t[1] = g => e.$router.push("/referral/commission")),
@@ -21210,7 +21219,7 @@ function LE(e, t, n, o, s, a) {
     innerHTML: e.t(a.friendsCount === 1 ? "You have {friendsCount} friend." : "You have {friendsCount} friends.", {
       friendsCount: "<b>" + a.friendsCount + "</b>"
     })
-  }, null, 8, BE), h(f, {
+  }, null, 8, $E), h(f, {
     inset: "",
     style: {
       margin: "0"
@@ -21222,9 +21231,9 @@ function LE(e, t, n, o, s, a) {
       size: "large",
       center: ""
     }, {
-      "right-icon": le(() => [g.coins > 0 ? (W(), ae("div", $E, [be("+" + M(e._number(g.coins)) + " ", 1), t[3] || (t[3] = P("span", {
+      "right-icon": le(() => [g.coins > 0 ? (W(), ae("div", ME, [be("+" + M(e._number(g.coins)) + " ", 1), t[3] || (t[3] = P("span", {
         class: "coin25"
-      }, null, -1))])) : (W(), ae("div", ME, M(e.t("Task not completed")), 1))]),
+      }, null, -1))])) : (W(), ae("div", LE, M(e.t("Task not completed")), 1))]),
       _: 2
     }, 1032, ["title"]))), 128))]),
     _: 1
@@ -21233,16 +21242,16 @@ function LE(e, t, n, o, s, a) {
   })])])
 }
 const Am = St(wE, [
-    ["render", LE],
-    ["__scopeId", "data-v-9025637b"]
+    ["render", NE],
+    ["__scopeId", "data-v-b743d51c"]
   ]),
-  NE = Object.freeze(Object.defineProperty({
+  FE = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Am
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  FE = {
+  VE = {
     components: {},
     async created() {},
     mounted() {
@@ -21342,23 +21351,23 @@ const Am = St(wE, [
       }
     }
   },
-  VE = {
+  zE = {
     class: "test",
     style: {
       direction: "ltr"
     }
   },
-  zE = {
+  HE = {
     class: "con"
   },
-  HE = {
+  UE = {
     class: "zTextShadow2white center"
   },
-  UE = {
+  WE = {
     class: "options"
   },
-  WE = ["onClick"],
-  jE = {
+  jE = ["onClick"],
+  QE = {
     class: "con container",
     style: {
       display: "flex",
@@ -21367,30 +21376,30 @@ const Am = St(wE, [
       height: "100%"
     }
   },
-  QE = {
+  KE = {
     class: "zTextShadow2white center",
     style: {
       "padding-top": "50px",
       margin: "0"
     }
   },
-  KE = {
+  YE = {
     class: "",
     style: {
       "padding-bottom": "30px"
     }
   },
-  YE = {
+  qE = {
     class: "panel"
   };
 
-function qE(e, t, n, o, s, a) {
+function GE(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-swipe-item"),
     c = ge("van-badge"),
     u = ge("van-button"),
     d = ge("van-swipe");
-  return W(), ae("div", VE, [h(d, {
+  return W(), ae("div", zE, [h(d, {
     class: "onboardingSwipe",
     autoplay: 0,
     "show-indicators": !1,
@@ -21407,7 +21416,7 @@ function qE(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", zE, [P("h2", HE, M(f.desc), 1), P("div", UE, [(W(!0), ae(Be, null, Ft(f.options, g => (W(), ae("div", {
+      default: le(() => [P("div", HE, [P("h2", UE, M(f.desc), 1), P("div", WE, [(W(!0), ae(Be, null, Ft(f.options, g => (W(), ae("div", {
         class: "option",
         onClick: v => a.setAnswer(m, g)
       }, [e.selectedValues[m] === JSON.stringify(g.animals) ? (W(), Me(l, {
@@ -21418,7 +21427,7 @@ function qE(e, t, n, o, s, a) {
         key: 1,
         size: "30",
         name: "circle"
-      })), P("div", null, M(g.desc), 1)], 8, WE))), 256)), m > 0 ? (W(), ae("div", {
+      })), P("div", null, M(g.desc), 1)], 8, jE))), 256)), m > 0 ? (W(), ae("div", {
         key: 0,
         class: "option",
         onClick: t[0] || (t[0] = (...g) => a.prev && a.prev(...g)),
@@ -21438,7 +21447,7 @@ function qE(e, t, n, o, s, a) {
     }, {
       default: le(() => {
         var f, m;
-        return [P("div", jE, [P("h2", QE, M(n.quiz.title), 1), P("div", KE, [P("p", YE, M((f = a.answerData) == null ? void 0 : f.title) + " - " + M((m = a.answerData) == null ? void 0 : m.desc), 1), h(u, {
+        return [P("div", QE, [P("h2", KE, M(n.quiz.title), 1), P("div", YE, [P("p", qE, M((f = a.answerData) == null ? void 0 : f.title) + " - " + M((m = a.answerData) == null ? void 0 : m.desc), 1), h(u, {
           onClick: a.shareStory,
           loading: e.isSharesLoading,
           type: "success",
@@ -21485,18 +21494,18 @@ function qE(e, t, n, o, s, a) {
     name: "arrow-left"
   }), be(" " + M(e.t("Back to quiz selection")), 1)])])
 }
-const Em = St(FE, [
-    ["render", qE],
+const Em = St(VE, [
+    ["render", GE],
     ["__scopeId", "data-v-ddcdb515"]
   ]),
-  GE = Object.freeze(Object.defineProperty({
+  ZE = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Em
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  ZE = "/assets/paw-5F38omYJ.png",
-  XE = {
+  XE = "/assets/paw-5F38omYJ.png",
+  JE = {
     name: "Test-g",
     components: {
       TestProcess: Em
@@ -21527,48 +21536,48 @@ const Em = St(FE, [
       }
     }
   },
-  JE = {
+  eI = {
     key: 0,
     class: "Test"
   },
-  eI = {
+  tI = {
     class: "pageContainer container"
   },
-  tI = {
+  nI = {
     style: {
       "margin-bottom": "0"
     }
   },
-  nI = {
+  oI = {
     class: "zTextShadow2white"
   },
-  oI = {
+  iI = {
     class: "testList"
   },
-  iI = ["onClick"],
-  sI = {
+  sI = ["onClick"],
+  aI = {
     class: "title"
   },
-  aI = {
+  lI = {
     key: 0,
     class: "zTextShadow2white",
     style: {
       width: "100%"
     }
   },
-  lI = {
+  rI = {
     style: {
       "font-size": "1.5em"
     }
   },
-  rI = {
+  cI = {
     key: 1,
     style: {
       width: "100%"
     }
   };
 
-function cI(e, t, n, o, s, a) {
+function uI(e, t, n, o, s, a) {
   const l = ge("van-badge"),
     r = ge("van-button"),
     c = ge("test-process");
@@ -21576,7 +21585,7 @@ function cI(e, t, n, o, s, a) {
     key: 1,
     quiz: s.openedQuiz,
     onBackToList: a.backToList
-  }, null, 8, ["quiz", "onBackToList"])) : (W(), ae("div", JE, [P("div", eI, [P("h1", tI, M(e.t("Take the quiz and find out which animal you are!")), 1), P("div", nI, M(e.t("And get your reward!")), 1), t[3] || (t[3] = P("br", null, null, -1)), P("div", oI, [(W(!0), ae(Be, null, Ft(a.tests, u => {
+  }, null, 8, ["quiz", "onBackToList"])) : (W(), ae("div", eI, [P("div", tI, [P("h1", nI, M(e.t("Take the quiz and find out which animal you are!")), 1), P("div", oI, M(e.t("And get your reward!")), 1), t[3] || (t[3] = P("br", null, null, -1)), P("div", iI, [(W(!0), ae(Be, null, Ft(a.tests, u => {
     var d;
     return W(), ae("div", {
       key: u.key,
@@ -21586,7 +21595,7 @@ function cI(e, t, n, o, s, a) {
         backgroundImage: "url(" + e._getQuizImg(u.result) + ")",
         backgroundPosition: "0 -20px"
       } : "")
-    }, [P("div", sI, M(u.title), 1), u.result ? (W(), ae("div", aI, [u.isRewarded ? Te("", !0) : (W(), Me(r, {
+    }, [P("div", aI, M(u.title), 1), u.result ? (W(), ae("div", lI, [u.isRewarded ? Te("", !0) : (W(), Me(r, {
       key: 0,
       type: "success",
       size: "small"
@@ -21600,8 +21609,8 @@ function cI(e, t, n, o, s, a) {
         _: 2
       }, 1024)]),
       _: 2
-    }, 1024)), P("div", lI, M((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (W(), ae("div", rI, [t[1] || (t[1] = P("img", {
-      src: ZE,
+    }, 1024)), P("div", rI, M((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (W(), ae("div", cI, [t[1] || (t[1] = P("img", {
+      src: XE,
       alt: "",
       style: {
         width: "60%",
@@ -21622,20 +21631,20 @@ function cI(e, t, n, o, s, a) {
       count: e._number(u.reward)
     })) + " ", 1), t[2] || (t[2] = P("span", {
       class: "coin25"
-    }, null, -1))]))], 12, iI)
+    }, null, -1))]))], 12, sI)
   }), 128))])])]))
 }
-const Im = St(XE, [
-    ["render", cI],
+const Im = St(JE, [
+    ["render", uI],
     ["__scopeId", "data-v-3d3367b5"]
   ]),
-  uI = Object.freeze(Object.defineProperty({
+  dI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Im
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  dI = {
+  fI = {
     components: {
       TestG: Im,
       FriendsG: Am,
@@ -21722,21 +21731,21 @@ const Im = St(XE, [
     },
     methods: {}
   },
-  fI = ["onClick"],
-  hI = {
-    class: "flyBtnCont"
-  },
+  hI = ["onClick"],
   mI = {
-    class: "flyBtnTitle"
+    class: "flyBtnCont"
   },
   gI = {
-    class: "flyBtnCont"
+    class: "flyBtnTitle"
   },
   vI = {
+    class: "flyBtnCont"
+  },
+  yI = {
     class: "flyBtnTitle"
   };
 
-function yI(e, t, n, o, s, a) {
+function pI(e, t, n, o, s, a) {
   const l = ge("van-badge"),
     r = ge("airdrop-g"),
     c = ge("van-popup"),
@@ -21756,14 +21765,14 @@ function yI(e, t, n, o, s, a) {
   }, [h(l, {
     dot: g.isDot
   }, {
-    default: le(() => [P("div", hI, [P("div", {
+    default: le(() => [P("div", mI, [P("div", {
       class: "flyBtnIcon",
       style: an({
         backgroundImage: `url(${g.image})`
       })
-    }, null, 4)]), P("div", mI, M(g.title), 1)]),
+    }, null, 4)]), P("div", gI, M(g.title), 1)]),
     _: 2
-  }, 1032, ["dot"])], 8, fI))), 128)), h(c, {
+  }, 1032, ["dot"])], 8, hI))), 128)), h(c, {
     show: s.isShowPopup.airdrop,
     "onUpdate:show": t[0] || (t[0] = g => s.isShowPopup.airdrop = g),
     position: "bottom",
@@ -21811,17 +21820,17 @@ function yI(e, t, n, o, s, a) {
     key: 1,
     class: "flyBtn BottomBar",
     onClick: t[4] || (t[4] = g => e.$router.push("/"))
-  }, [P("div", gI, [h(m, {
+  }, [P("div", vI, [h(m, {
     name: "wap-home",
     color: "#FFEDD9"
-  })]), P("div", vI, M(e.t("Home")), 1)]))
+  })]), P("div", yI, M(e.t("Home")), 1)]))
 }
-const pI = St(dI, [
-    ["render", yI],
+const bI = St(fI, [
+    ["render", pI],
     ["__scopeId", "data-v-2386ef5b"]
   ]),
-  bI = new Error("request for lock canceled");
-var wI = function(e, t, n, o) {
+  wI = new Error("request for lock canceled");
+var CI = function(e, t, n, o) {
   function s(a) {
     return a instanceof n ? a : new n(function(l) {
       l(a)
@@ -21850,8 +21859,8 @@ var wI = function(e, t, n, o) {
     u((o = o.apply(e, t || [])).next())
   })
 };
-class CI {
-  constructor(t, n = bI) {
+class _I {
+  constructor(t, n = wI) {
     this._value = t, this._cancelError = n, this._queue = [], this._weightedWaiters = []
   }
   acquire(t = 1, n = 0) {
@@ -21868,7 +21877,7 @@ class CI {
     })
   }
   runExclusive(t) {
-    return wI(this, arguments, void 0, function*(n, o = 1, s = 0) {
+    return CI(this, arguments, void 0, function*(n, o = 1, s = 0) {
       const [a, l] = yield this.acquire(o, s);
       try {
         return yield n(a)
@@ -21880,7 +21889,7 @@ class CI {
   waitForUnlock(t = 1, n = 0) {
     if (t <= 0) throw new Error(`invalid weight ${t}: must be positive`);
     return this._couldLockImmediately(t, n) ? Promise.resolve() : new Promise(o => {
-      this._weightedWaiters[t - 1] || (this._weightedWaiters[t - 1] = []), _I(this._weightedWaiters[t - 1], {
+      this._weightedWaiters[t - 1] || (this._weightedWaiters[t - 1] = []), kI(this._weightedWaiters[t - 1], {
         resolve: o,
         priority: n
       })
@@ -21935,7 +21944,7 @@ class CI {
   }
 }
 
-function _I(e, t) {
+function kI(e, t) {
   const n = Pm(e, o => t.priority <= o.priority);
   e.splice(n + 1, 0, t)
 }
@@ -21945,7 +21954,7 @@ function Pm(e, t) {
     if (t(e[n])) return n;
   return -1
 }
-var kI = function(e, t, n, o) {
+var TI = function(e, t, n, o) {
   function s(a) {
     return a instanceof n ? a : new n(function(l) {
       l(a)
@@ -21974,12 +21983,12 @@ var kI = function(e, t, n, o) {
     u((o = o.apply(e, t || [])).next())
   })
 };
-class TI {
+class SI {
   constructor(t) {
-    this._semaphore = new CI(1, t)
+    this._semaphore = new _I(1, t)
   }
   acquire() {
-    return kI(this, arguments, void 0, function*(t = 0) {
+    return TI(this, arguments, void 0, function*(t = 0) {
       const [, n] = yield this._semaphore.acquire(1, t);
       return n
     })
@@ -22000,7 +22009,7 @@ class TI {
     return this._semaphore.cancel()
   }
 }
-const SI = {
+const xI = {
     name: "AllianceInfo",
     props: {
       allianceData: {
@@ -22033,20 +22042,20 @@ const SI = {
       }
     }
   },
-  xI = {
+  AI = {
     class: "flexBeetween",
     style: {
       margin: "-20px 0 20px 0"
     }
   },
-  AI = {
+  EI = {
     key: 0
   };
 
-function EI(e, t, n, o, s, a) {
+function II(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-button");
-  return W(), ae("div", null, [P("h1", null, M(n.allianceData.name), 1), P("div", xI, [P("div", null, M(e.t("Founder:")) + " " + M(n.allianceData.ownerName), 1), P("div", null, "id:" + M(n.allianceData.id), 1)]), n.allianceData.channelLink ? (W(), ae("div", AI, [be(M(e.t("Channel:")) + " ", 1), P("span", {
+  return W(), ae("div", null, [P("h1", null, M(n.allianceData.name), 1), P("div", AI, [P("div", null, M(e.t("Founder:")) + " " + M(n.allianceData.ownerName), 1), P("div", null, "id:" + M(n.allianceData.id), 1)]), n.allianceData.channelLink ? (W(), ae("div", EI, [be(M(e.t("Channel:")) + " ", 1), P("span", {
     onClick: t[0] || (t[0] = c => e._openUrl("https://" + n.allianceData.channelLink)),
     style: {
       "border-bottom": "1px dashed #fff"
@@ -22070,17 +22079,17 @@ function EI(e, t, n, o, s, a) {
     _: 1
   }, 8, ["loading"]))])
 }
-const II = St(SI, [
-    ["render", EI],
+const PI = St(xI, [
+    ["render", II],
     ["__scopeId", "data-v-e3c39631"]
   ]),
-  PI = new TI,
-  OI = {
+  OI = new SI,
+  RI = {
     components: {
-      AllianceInfo: II,
+      AllianceInfo: PI,
       Topup: Tm,
       TopBar: Qr,
-      BottomBar: pI,
+      BottomBar: bI,
       OnboardingStart: xx
     },
     async created() {
@@ -22099,7 +22108,7 @@ const II = St(SI, [
           }
         }
         window.tonConnectUI = async function() {
-          return this._tonConnectUI ? this._tonConnectUI : await PI.runExclusive(async () => {
+          return this._tonConnectUI ? this._tonConnectUI : await OI.runExclusive(async () => {
             if (this._tonConnectUI) return this._tonConnectUI;
             const {
               TonConnectUI: t
@@ -22234,31 +22243,31 @@ const II = St(SI, [
       }
     }
   },
-  RI = {
+  DI = {
     key: 0,
     class: "loadingScreen"
   },
-  DI = {
+  BI = {
     style: {
       "font-weight": "700",
       "font-size": "1.2em"
     }
   },
-  BI = {
+  $I = {
     id: "scrollable",
     class: "scrollable"
   },
-  $I = {
+  MI = {
     class: "panelBrown",
     style: {
       margin: "10px"
     }
   },
-  MI = {
+  LI = {
     class: "container"
   };
 
-function LI(e, t, n, o, s, a) {
+function NI(e, t, n, o, s, a) {
   const l = ge("OnboardingStart"),
     r = ge("RouterView"),
     c = ge("BottomBar"),
@@ -22267,7 +22276,7 @@ function LI(e, t, n, o, s, a) {
     f = ge("topup");
   return W(), ae("div", null, [s.dbLoaded ? e._isOnboardingComplete(e.onBoard.start) ? (W(), ae(Be, {
     key: 2
-  }, [P("div", BI, [h(r)]), h(c), h(d, {
+  }, [P("div", $I, [h(r)]), h(c), h(d, {
     show: s.isShowInviteRefAlliance,
     "onUpdate:show": t[0] || (t[0] = m => s.isShowInviteRefAlliance = m),
     round: "",
@@ -22277,14 +22286,14 @@ function LI(e, t, n, o, s, a) {
     },
     duration: "0.15"
   }, {
-    default: le(() => [P("div", $I, M(e.t("You are invited to join an alliance.")), 1), h(u, {
+    default: le(() => [P("div", MI, M(e.t("You are invited to join an alliance.")), 1), h(u, {
       "alliance-data": s.invitedRefAllianceData,
       class: "container"
     }, null, 8, ["alliance-data"])]),
     _: 1
   }, 8, ["show"])], 64)) : (W(), Me(l, {
     key: 1
-  })) : (W(), ae("div", RI, [P("div", DI, M(a.textLeft), 1), t[2] || (t[2] = P("div", {
+  })) : (W(), ae("div", DI, [P("div", BI, M(a.textLeft), 1), t[2] || (t[2] = P("div", {
     class: "progressBar"
   }, [P("div", {
     class: "progressResult"
@@ -22298,14 +22307,14 @@ function LI(e, t, n, o, s, a) {
     },
     onClose: t[1] || (t[1] = m => e.stores.state.setIsShowTopUp(!1))
   }, {
-    default: le(() => [P("div", MI, [h(f, {
+    default: le(() => [P("div", LI, [h(f, {
       "lack-of-coin": this.stores.state.lackOfCoin
     }, null, 8, ["lack-of-coin"])])]),
     _: 1
   }, 8, ["show"])])
 }
-const NI = St(OI, [
-  ["render", LI],
+const FI = St(RI, [
+  ["render", NI],
   ["__scopeId", "data-v-7ba7e920"]
 ]);
 /*!
@@ -22319,7 +22328,7 @@ function Om(e) {
   return typeof e == "object" || "displayName" in e || "props" in e || "__vccOpts" in e
 }
 
-function FI(e) {
+function VI(e) {
   return e.__esModule || e[Symbol.toStringTag] === "Module" || e.default && Om(e.default)
 }
 const Qe = Object.assign;
@@ -22335,42 +22344,42 @@ function gl(e, t) {
 const Wi = () => {},
   sn = Array.isArray,
   Rm = /#/g,
-  VI = /&/g,
-  zI = /\//g,
-  HI = /=/g,
-  UI = /\?/g,
+  zI = /&/g,
+  HI = /\//g,
+  UI = /=/g,
+  WI = /\?/g,
   Dm = /\+/g,
-  WI = /%5B/g,
-  jI = /%5D/g,
+  jI = /%5B/g,
+  QI = /%5D/g,
   Bm = /%5E/g,
-  QI = /%60/g,
+  KI = /%60/g,
   $m = /%7B/g,
-  KI = /%7C/g,
+  YI = /%7C/g,
   Mm = /%7D/g,
-  YI = /%20/g;
+  qI = /%20/g;
 
 function Kr(e) {
-  return encodeURI("" + e).replace(KI, "|").replace(WI, "[").replace(jI, "]")
+  return encodeURI("" + e).replace(YI, "|").replace(jI, "[").replace(QI, "]")
 }
 
-function qI(e) {
+function GI(e) {
   return Kr(e).replace($m, "{").replace(Mm, "}").replace(Bm, "^")
 }
 
 function Kl(e) {
-  return Kr(e).replace(Dm, "%2B").replace(YI, "+").replace(Rm, "%23").replace(VI, "%26").replace(QI, "`").replace($m, "{").replace(Mm, "}").replace(Bm, "^")
-}
-
-function GI(e) {
-  return Kl(e).replace(HI, "%3D")
+  return Kr(e).replace(Dm, "%2B").replace(qI, "+").replace(Rm, "%23").replace(zI, "%26").replace(KI, "`").replace($m, "{").replace(Mm, "}").replace(Bm, "^")
 }
 
 function ZI(e) {
-  return Kr(e).replace(Rm, "%23").replace(UI, "%3F")
+  return Kl(e).replace(UI, "%3D")
 }
 
 function XI(e) {
-  return e == null ? "" : ZI(e).replace(zI, "%2F")
+  return Kr(e).replace(Rm, "%23").replace(WI, "%3F")
+}
+
+function JI(e) {
+  return e == null ? "" : XI(e).replace(HI, "%2F")
 }
 
 function ns(e) {
@@ -22379,8 +22388,8 @@ function ns(e) {
   } catch {}
   return "" + e
 }
-const JI = /\/$/,
-  eP = e => e.replace(JI, "");
+const eP = /\/$/,
+  tP = e => e.replace(eP, "");
 
 function vl(e, t, n = "/") {
   let o, s = {},
@@ -22388,7 +22397,7 @@ function vl(e, t, n = "/") {
     l = "";
   const r = t.indexOf("#");
   let c = t.indexOf("?");
-  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = iP(o ?? t, n), {
+  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = sP(o ?? t, n), {
     fullPath: o + (a && "?") + a + l,
     path: o,
     query: s,
@@ -22396,7 +22405,7 @@ function vl(e, t, n = "/") {
   }
 }
 
-function tP(e, t) {
+function nP(e, t) {
   const n = t.query ? e(t.query) : "";
   return t.path + (n && "?") + n + (t.hash || "")
 }
@@ -22405,7 +22414,7 @@ function Yu(e, t) {
   return !t || !e.toLowerCase().startsWith(t.toLowerCase()) ? e : e.slice(t.length) || "/"
 }
 
-function nP(e, t, n) {
+function oP(e, t, n) {
   const o = t.matched.length - 1,
     s = n.matched.length - 1;
   return o > -1 && o === s && hi(t.matched[o], n.matched[s]) && Lm(t.params, n.params) && e(t.query) === e(n.query) && t.hash === n.hash
@@ -22418,11 +22427,11 @@ function hi(e, t) {
 function Lm(e, t) {
   if (Object.keys(e).length !== Object.keys(t).length) return !1;
   for (const n in e)
-    if (!oP(e[n], t[n])) return !1;
+    if (!iP(e[n], t[n])) return !1;
   return !0
 }
 
-function oP(e, t) {
+function iP(e, t) {
   return sn(e) ? qu(e, t) : sn(t) ? qu(t, e) : e === t
 }
 
@@ -22430,7 +22439,7 @@ function qu(e, t) {
   return sn(t) ? e.length === t.length && e.every((n, o) => n === t[o]) : e.length === 1 && e[0] === t
 }
 
-function iP(e, t) {
+function sP(e, t) {
   if (e.startsWith("/")) return e;
   if (!e) return t;
   const n = t.split("/"),
@@ -22465,21 +22474,21 @@ var ji;
   e.back = "back", e.forward = "forward", e.unknown = ""
 })(ji || (ji = {}));
 
-function sP(e) {
+function aP(e) {
   if (!e)
     if (Jo) {
       const t = document.querySelector("base");
       e = t && t.getAttribute("href") || "/", e = e.replace(/^\w+:\/\/[^\/]+/, "")
     } else e = "/";
-  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), eP(e)
+  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), tP(e)
 }
-const aP = /^[^#]+#/;
-
-function lP(e, t) {
-  return e.replace(aP, "#") + t
-}
+const lP = /^[^#]+#/;
 
 function rP(e, t) {
+  return e.replace(lP, "#") + t
+}
+
+function cP(e, t) {
   const n = document.documentElement.getBoundingClientRect(),
     o = e.getBoundingClientRect();
   return {
@@ -22493,14 +22502,14 @@ const Da = () => ({
   top: window.scrollY
 });
 
-function cP(e) {
+function uP(e) {
   let t;
   if ("el" in e) {
     const n = e.el,
       o = typeof n == "string" && n.startsWith("#"),
       s = typeof n == "string" ? o ? document.getElementById(n.slice(1)) : document.querySelector(n) : n;
     if (!s) return;
-    t = rP(s, e)
+    t = cP(s, e)
   } else t = e;
   "scrollBehavior" in document.documentElement.style ? window.scrollTo(t) : window.scrollTo(t.left != null ? t.left : window.scrollX, t.top != null ? t.top : window.scrollY)
 }
@@ -22510,15 +22519,15 @@ function Gu(e, t) {
 }
 const Yl = new Map;
 
-function uP(e, t) {
+function dP(e, t) {
   Yl.set(e, t)
 }
 
-function dP(e) {
+function fP(e) {
   const t = Yl.get(e);
   return Yl.delete(e), t
 }
-let fP = () => location.protocol + "//" + location.host;
+let hP = () => location.protocol + "//" + location.host;
 
 function Nm(e, t) {
   const {
@@ -22534,7 +22543,7 @@ function Nm(e, t) {
   return Yu(n, e) + o + s
 }
 
-function hP(e, t, n, o) {
+function mP(e, t, n, o) {
   let s = [],
     a = [],
     l = null;
@@ -22607,7 +22616,7 @@ function Zu(e, t, n, o = !1, s = !1) {
   }
 }
 
-function mP(e) {
+function gP(e) {
   const {
     history: t,
     location: n
@@ -22627,7 +22636,7 @@ function mP(e) {
 
   function a(c, u, d) {
     const f = e.indexOf("#"),
-      m = f > -1 ? (n.host && document.querySelector("base") ? e : e.slice(f)) + c : fP() + e + c;
+      m = f > -1 ? (n.host && document.querySelector("base") ? e : e.slice(f)) + c : hP() + e + c;
     try {
       t[d ? "replaceState" : "pushState"](u, "", m), s.value = u
     } catch (g) {
@@ -22661,10 +22670,10 @@ function mP(e) {
   }
 }
 
-function gP(e) {
-  e = sP(e);
-  const t = mP(e),
-    n = hP(e, t.state, t.location, t.replace);
+function vP(e) {
+  e = aP(e);
+  const t = gP(e),
+    n = mP(e, t.state, t.location, t.replace);
 
   function o(a, l = !0) {
     l || n.pauseListeners(), history.go(a)
@@ -22673,7 +22682,7 @@ function gP(e) {
     location: "",
     base: e,
     go: o,
-    createHref: lP.bind(null, e)
+    createHref: rP.bind(null, e)
   }, t, n);
   return Object.defineProperty(s, "location", {
     enumerable: !0,
@@ -22684,7 +22693,7 @@ function gP(e) {
   }), s
 }
 
-function vP(e) {
+function yP(e) {
   return typeof e == "string" || e && typeof e == "object"
 }
 
@@ -22708,16 +22717,16 @@ function In(e, t) {
   return e instanceof Error && Vm in e && (t == null || !!(e.type & t))
 }
 const Ju = "[^/]+?",
-  yP = {
+  pP = {
     sensitive: !1,
     strict: !1,
     start: !0,
     end: !0
   },
-  pP = /[.+*?^${}()[\]/\\]/g;
+  bP = /[.+*?^${}()[\]/\\]/g;
 
-function bP(e, t) {
-  const n = Qe({}, yP, t),
+function wP(e, t) {
+  const n = Qe({}, pP, t),
     o = [];
   let s = n.start ? "^" : "";
   const a = [];
@@ -22727,7 +22736,7 @@ function bP(e, t) {
     for (let f = 0; f < u.length; f++) {
       const m = u[f];
       let g = 40 + (n.sensitive ? .25 : 0);
-      if (m.type === 0) f || (s += "/"), s += m.value.replace(pP, "\\$&"), g += 40;
+      if (m.type === 0) f || (s += "/"), s += m.value.replace(bP, "\\$&"), g += 40;
       else if (m.type === 1) {
         const {
           value: v,
@@ -22807,7 +22816,7 @@ function bP(e, t) {
   }
 }
 
-function wP(e, t) {
+function CP(e, t) {
   let n = 0;
   for (; n < e.length && n < t.length;) {
     const o = t[n] - e[n];
@@ -22822,7 +22831,7 @@ function zm(e, t) {
   const o = e.score,
     s = t.score;
   for (; n < o.length && n < s.length;) {
-    const a = wP(o[n], s[n]);
+    const a = CP(o[n], s[n]);
     if (a) return a;
     n++
   }
@@ -22837,18 +22846,18 @@ function ed(e) {
   const t = e[e.length - 1];
   return e.length > 0 && t[t.length - 1] < 0
 }
-const CP = {
+const _P = {
     type: 0,
     value: ""
   },
-  _P = /[a-zA-Z0-9_]/;
+  kP = /[a-zA-Z0-9_]/;
 
-function kP(e) {
+function TP(e) {
   if (!e) return [
     []
   ];
   if (e === "/") return [
-    [CP]
+    [_P]
   ];
   if (!e.startsWith("/")) throw new Error(`Invalid path "${e}"`);
 
@@ -22896,7 +22905,7 @@ function kP(e) {
         m(), n = o;
         break;
       case 1:
-        c === "(" ? n = 2 : _P.test(c) ? m() : (f(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
+        c === "(" ? n = 2 : kP.test(c) ? m() : (f(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
         break;
       case 2:
         c === ")" ? d[d.length - 1] == "\\" ? d = d.slice(0, -1) + c : n = 3 : d += c;
@@ -22912,8 +22921,8 @@ function kP(e) {
   return n === 2 && t(`Unfinished custom RegExp for param "${u}"`), f(), l(), s
 }
 
-function TP(e, t, n) {
-  const o = bP(kP(e.path), n),
+function SP(e, t, n) {
+  const o = wP(TP(e.path), n),
     s = Qe(o, {
       record: e,
       parent: t,
@@ -22923,7 +22932,7 @@ function TP(e, t, n) {
   return t && !s.record.aliasOf == !t.record.aliasOf && t.children.push(s), s
 }
 
-function SP(e, t) {
+function xP(e, t) {
   const n = [],
     o = new Map;
   t = id({
@@ -22960,7 +22969,7 @@ function SP(e, t) {
           B = E[E.length - 1] === "/" ? "" : "/";
         _.path = m.record.path + (k && B + k)
       }
-      if (y = TP(_, m, p), g ? g.alias.push(y) : (C = C || y, C !== y && C.alias.push(y), v && f.name && !od(y) && l(f.name)), Hm(y) && c(y), b.children) {
+      if (y = SP(_, m, p), g ? g.alias.push(y) : (C = C || y, C !== y && C.alias.push(y), v && f.name && !od(y) && l(f.name)), Hm(y) && c(y), b.children) {
         const E = b.children;
         for (let B = 0; B < E.length; B++) a(E[B], y, g && g.children[B])
       }
@@ -22986,7 +22995,7 @@ function SP(e, t) {
   }
 
   function c(f) {
-    const m = EP(f, n);
+    const m = IP(f, n);
     n.splice(m, 0, f), f.record.name && !od(f) && o.set(f.record.name, f)
   }
 
@@ -23014,7 +23023,7 @@ function SP(e, t) {
       path: b,
       params: v,
       matched: w,
-      meta: AP(w)
+      meta: EP(w)
     }
   }
   e.forEach(f => a(f));
@@ -23046,7 +23055,7 @@ function nd(e) {
     meta: e.meta || {},
     aliasOf: e.aliasOf,
     beforeEnter: e.beforeEnter,
-    props: xP(e),
+    props: AP(e),
     children: e.children || [],
     instances: {},
     leaveGuards: new Set,
@@ -23061,7 +23070,7 @@ function nd(e) {
   }), t
 }
 
-function xP(e) {
+function AP(e) {
   const t = {},
     n = e.props || !1;
   if ("component" in e) t.default = n;
@@ -23078,7 +23087,7 @@ function od(e) {
   return !1
 }
 
-function AP(e) {
+function EP(e) {
   return e.reduce((t, n) => Qe(t, n.meta), {})
 }
 
@@ -23088,18 +23097,18 @@ function id(e, t) {
   return n
 }
 
-function EP(e, t) {
+function IP(e, t) {
   let n = 0,
     o = t.length;
   for (; n !== o;) {
     const a = n + o >> 1;
     zm(e, t[a]) < 0 ? o = a : n = a + 1
   }
-  const s = IP(e);
+  const s = PP(e);
   return s && (o = t.lastIndexOf(s, o - 1)), o
 }
 
-function IP(e) {
+function PP(e) {
   let t = e;
   for (; t = t.parent;)
     if (Hm(t) && zm(e, t) === 0) return t
@@ -23111,7 +23120,7 @@ function Hm({
   return !!(e.name || e.components && Object.keys(e.components).length || e.redirect)
 }
 
-function PP(e) {
+function OP(e) {
   const t = {};
   if (e === "" || e === "?") return t;
   const o = (e[0] === "?" ? e.slice(1) : e).split("&");
@@ -23132,7 +23141,7 @@ function sd(e) {
   let t = "";
   for (let n in e) {
     const o = e[n];
-    if (n = GI(n), o == null) {
+    if (n = ZI(n), o == null) {
       o !== void 0 && (t += (t.length ? "&" : "") + n);
       continue
     }(sn(o) ? o.map(a => a && Kl(a)) : [o && Kl(o)]).forEach(a => {
@@ -23142,7 +23151,7 @@ function sd(e) {
   return t
 }
 
-function OP(e) {
+function RP(e) {
   const t = {};
   for (const n in e) {
     const o = e[n];
@@ -23150,7 +23159,7 @@ function OP(e) {
   }
   return t
 }
-const RP = Symbol(""),
+const DP = Symbol(""),
   ad = Symbol(""),
   Yr = Symbol(""),
   Um = Symbol(""),
@@ -23183,7 +23192,7 @@ function io(e, t, n, o, s, a = l => l()) {
         m === !1 ? c(mi(4, {
           from: n,
           to: t
-        })) : m instanceof Error ? c(m) : vP(m) ? c(mi(2, {
+        })) : m instanceof Error ? c(m) : yP(m) ? c(mi(2, {
           from: t,
           to: m
         })) : (l && o.enterCallbacks[s] === l && typeof m == "function" && l.push(m), r())
@@ -23207,7 +23216,7 @@ function yl(e, t, n, o, s = a => a()) {
           let u = c();
           a.push(() => u.then(d => {
             if (!d) throw new Error(`Couldn't resolve component "${r}" at "${l.path}"`);
-            const f = FI(d) ? d.default : d;
+            const f = VI(d) ? d.default : d;
             l.mods[r] = d, l.components[r] = f;
             const g = (f.__vccOpts || f)[t];
             return g && io(g, n, o, l, r, s)()
@@ -23236,11 +23245,11 @@ function ld(e) {
       const g = rd(c[u - 2]);
       return u > 1 && rd(d) === g && f[f.length - 1].path !== g ? f.findIndex(hi.bind(null, c[u - 2])) : m
     }),
-    a = N(() => s.value > -1 && MP(n.params, o.value.params)),
+    a = N(() => s.value > -1 && LP(n.params, o.value.params)),
     l = N(() => s.value > -1 && s.value === n.matched.length - 1 && Lm(n.params, o.value.params));
 
   function r(c = {}) {
-    return $P(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
+    return MP(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
   }
   return {
     route: o,
@@ -23250,7 +23259,7 @@ function ld(e) {
     navigate: r
   }
 }
-const DP = K({
+const BP = K({
     name: "RouterLink",
     compatConfig: {
       MODE: 3
@@ -23292,9 +23301,9 @@ const DP = K({
       }
     }
   }),
-  BP = DP;
+  $P = BP;
 
-function $P(e) {
+function MP(e) {
   if (!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) && !e.defaultPrevented && !(e.button !== void 0 && e.button !== 0)) {
     if (e.currentTarget && e.currentTarget.getAttribute) {
       const t = e.currentTarget.getAttribute("target");
@@ -23304,7 +23313,7 @@ function $P(e) {
   }
 }
 
-function MP(e, t) {
+function LP(e, t) {
   for (const n in t) {
     const o = t[n],
       s = e[n];
@@ -23319,7 +23328,7 @@ function rd(e) {
   return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
 const cd = (e, t, n) => e ?? t ?? n,
-  LP = K({
+  NP = K({
     name: "RouterView",
     inheritAttrs: !1,
     props: {
@@ -23350,7 +23359,7 @@ const cd = (e, t, n) => e ?? t ?? n,
           return u
         }),
         r = N(() => s.value.matched[l.value]);
-      Bn(ad, N(() => l.value + 1)), Bn(RP, r), Bn(ql, s);
+      Bn(ad, N(() => l.value + 1)), Bn(DP, r), Bn(ql, s);
       const c = F();
       return re(() => [c.value, r.value, e.name], ([u, d, f], [m, g, v]) => {
         d && (d.instances[f] = u, g && g !== d && u && u === m && (d.leaveGuards.size || (d.leaveGuards = g.leaveGuards), d.updateGuards.size || (d.updateGuards = g.updateGuards))), u && d && (!g || !hi(d, g) || !m) && (d.enterCallbacks[f] || []).forEach(b => b(u))
@@ -23386,11 +23395,11 @@ function ud(e, t) {
   const n = e(t);
   return n.length === 1 ? n[0] : n
 }
-const NP = LP;
+const FP = NP;
 
-function FP(e) {
-  const t = SP(e.routes, e),
-    n = e.parseQuery || PP,
+function VP(e) {
+  const t = xP(e.routes, e),
+    n = e.parseQuery || OP,
     o = e.stringifyQuery || sd,
     s = e.history,
     a = Ri(),
@@ -23400,7 +23409,7 @@ function FP(e) {
   let u = Jn;
   Jo && e.scrollBehavior && "scrollRestoration" in history && (history.scrollRestoration = "manual");
   const d = gl.bind(null, A => "" + A),
-    f = gl.bind(null, XI),
+    f = gl.bind(null, JI),
     m = gl.bind(null, ns);
 
   function g(A, z) {
@@ -23449,15 +23458,15 @@ function FP(e) {
     const ne = t.resolve(H, z),
       ke = A.hash || "";
     ne.params = d(m(ne.params));
-    const Le = tP(o, Qe({}, A, {
-        hash: qI(ke),
+    const Le = nP(o, Qe({}, A, {
+        hash: GI(ke),
         path: ne.path
       })),
       x = s.createHref(Le);
     return Qe({
       fullPath: Le,
       hash: ke,
-      query: o === sd ? OP(A.query) : A.query || {}
+      query: o === sd ? RP(A.query) : A.query || {}
     }, ne, {
       redirectedFrom: void 0,
       href: x
@@ -23517,7 +23526,7 @@ function FP(e) {
     const L = H;
     L.redirectedFrom = z;
     let q;
-    return !Le && nP(o, ne, H) && (q = mi(16, {
+    return !Le && oP(o, ne, H) && (q = mi(16, {
       to: L,
       from: ne
     }), V(ne, ne, !0, !1)), (q ? Promise.resolve(q) : D(L, ne)).catch(Q => In(Q) ? In(Q, 2) ? Q : Ne(Q) : ue(Q, L, ne)).then(Q => {
@@ -23545,7 +23554,7 @@ function FP(e) {
 
   function D(A, z) {
     let H;
-    const [ne, ke, Le] = VP(A, z);
+    const [ne, ke, Le] = zP(A, z);
     H = yl(ne.reverse(), "beforeRouteLeave", A, z);
     for (const O of ne) O.leaveGuards.forEach(L => {
       H.push(io(L, A, z))
@@ -23604,7 +23613,7 @@ function FP(e) {
       }
       u = ne;
       const Le = c.value;
-      Jo && uP(Gu(Le.fullPath, H.delta), Da()), D(ne, Le).catch(x => In(x, 12) ? x : In(x, 2) ? (B(x.to, ne).then(O => {
+      Jo && dP(Gu(Le.fullPath, H.delta), Da()), D(ne, Le).catch(x => In(x, 12) ? x : In(x, 2) ? (B(x.to, ne).then(O => {
         In(O, 20) && !H.delta && H.type === os.pop && s.go(-1, !1)
       }).catch(Wi), Promise.reject()) : (H.delta && s.go(-H.delta, !1), ue(x, ne, Le))).then(x => {
         x = x || I(ne, Le, !1), x && (H.delta && !In(x, 8) ? s.go(-H.delta, !1) : H.type === os.pop && In(x, 20) && s.go(-1, !1)), S(ne, Le, x)
@@ -23636,8 +23645,8 @@ function FP(e) {
       scrollBehavior: ke
     } = e;
     if (!Jo || !ke) return Promise.resolve();
-    const Le = !H && dP(Gu(A.fullPath, 0)) || (ne || !H) && history.state && history.state.scroll || null;
-    return Oe().then(() => ke(A, z, Le)).then(x => x && cP(x)).catch(x => ue(x, A, z))
+    const Le = !H && fP(Gu(A.fullPath, 0)) || (ne || !H) && history.state && history.state.scroll || null;
+    return Oe().then(() => ke(A, z, Le)).then(x => x && uP(x)).catch(x => ue(x, A, z))
   }
   const Z = A => s.go(A);
   let ve;
@@ -23664,7 +23673,7 @@ function FP(e) {
       isReady: Re,
       install(A) {
         const z = this;
-        A.component("RouterLink", BP), A.component("RouterView", NP), A.config.globalProperties.$router = z, Object.defineProperty(A.config.globalProperties, "$route", {
+        A.component("RouterLink", $P), A.component("RouterView", FP), A.config.globalProperties.$router = z, Object.defineProperty(A.config.globalProperties, "$route", {
           enumerable: !0,
           get: () => en(c)
         }), Jo && !ve && c.value === Jn && (ve = !0, _(s.location).catch(ke => {}));
@@ -23687,7 +23696,7 @@ function FP(e) {
   return se
 }
 
-function VP(e, t) {
+function zP(e, t) {
   const n = [],
     o = [],
     s = [],
@@ -23700,53 +23709,53 @@ function VP(e, t) {
   }
   return [n, o, s]
 }
-const ia = FP({
-    history: gP("/"),
+const ia = VP({
+    history: vP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-CapVbfS7.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-CFdz90fp.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-CapVbfS7.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-CFdz90fp.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => bE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-B0aW6DzW.js"), [])
+      component: () => It(() => import("./Terms-CStNK_Is.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => fE), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-DrCSTpyv.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-CGgCP1O7.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
-      component: () => It(() => Promise.resolve().then(() => NE), void 0)
+      component: () => It(() => Promise.resolve().then(() => FE), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-fb7S-5PD.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-Dboj4hoH.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-CJSgxW18.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-NTP_5Wn0.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-CCLkynU4.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-xYh7BTrd.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-CybwmdT0.js"), [])
+      component: () => It(() => import("./Support-BxA-Ed34.js"), [])
     }, {
       path: "/test",
-      component: () => It(() => Promise.resolve().then(() => uI), void 0)
+      component: () => It(() => Promise.resolve().then(() => dI), void 0)
     }, {
       path: "/test2",
-      component: () => It(() => Promise.resolve().then(() => GE), void 0)
+      component: () => It(() => Promise.resolve().then(() => ZE), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-_y7kjy_7.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-BnwIy4M9.js"), __vite__mapDeps([10, 11]))
     }]
   }),
-  zP = {
+  HP = {
     methods: {
       async dbLoadDbData(e = ["all"]) {
         try {
@@ -24420,7 +24429,7 @@ const ia = FP({
       return {}
     }
   },
-  HP = {
+  UP = {
     methods: {
       async auth() {
         const e = ao();
@@ -24532,7 +24541,7 @@ const ia = FP({
       }
     }
   },
-  UP = {
+  WP = {
     data: function() {
       return {
         TOKEN_NAME: "$ZOO",
@@ -24779,8 +24788,8 @@ const ia = FP({
       }
     }
   },
-  po = Bf(NI),
-  WP = j2();
+  po = Bf(FI),
+  jP = j2();
 let dd = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && dd ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), dd = !0
@@ -24788,17 +24797,17 @@ ia.afterEach(function() {
 window.Telegram.WebApp.onEvent("backButtonClicked", function() {
   window.history.state && window.history.state.popup && history.back(), ia.push("/")
 });
-po.use(WP);
+po.use(jP);
 po.use(ia);
 po.use(WS);
-po.mixin(zP);
 po.mixin(HP);
 po.mixin(UP);
+po.mixin(WP);
 po.mixin(oA);
 po.mount("#app");
 window.userStore = ao();
 window.stateStore = jr();
 window.dbStore = bm();
 export {
-  II as A, Be as F, Qr as T, St as _, P as a, h as b, ae as c, be as d, Te as e, Me as f, ge as g, ot as h, rt as i, GS as j, za as k, $v as l, an as n, W as o, Ft as r, Bo as s, M as t, Py as u, dt as v, le as w
+  PI as A, Be as F, Qr as T, St as _, P as a, h as b, ae as c, be as d, Te as e, Me as f, ge as g, ot as h, rt as i, GS as j, za as k, $v as l, an as n, W as o, Ft as r, Bo as s, M as t, Py as u, dt as v, le as w
 };
