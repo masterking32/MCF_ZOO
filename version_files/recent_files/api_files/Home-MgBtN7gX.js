@@ -18,9 +18,9 @@ import {
   h as B,
   i as x,
   v as K
-} from "./index-BnrITTLE.js";
-import z from "./Alliance-CDjfd8gz.js";
-import H from "./Boost-BQhiPhmW.js";
+} from "./index-BprxN63v.js";
+import z from "./Alliance-BAHU0W0t.js";
+import H from "./Boost-NeUL7fHE.js";
 const I = {
     name: "Feed-g",
     components: {},
@@ -42,7 +42,7 @@ const I = {
     watch: {},
     methods: {
       calcPrice(e) {
-        return Math.round(e.priceInTph * this.uHero.tphBase)
+        return Math.ceil(e.priceInTph * this.uHero.tphBase)
       },
       async buyAutoFeed(e) {
         if (this.calcPrice(e), e.price > this.uHero.coins) {
@@ -151,7 +151,7 @@ function ee(e, s, d, c, r, o) {
     TIME: e.uFeed.autoFeedEndDateStr
   })), 1)])) : A("", !0), t("ul", Z, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), t("li", null, i(e.t("Feeding time occurs once at a random time during the day.")), 1), t("li", null, i(e.t("{TOKEN_NAME} token mining will resume after you feed your animals.", {
+  })), 1), t("li", null, i(e.t("Feeding time occurs six times at random intervals throughout the day.")), 1), t("li", null, i(e.t("{TOKEN_NAME} token mining will resume after you feed your animals.", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), t("li", null, i(e.t("Check on your zoo often, and don't let your animals go hungry!")), 1)]), s[3] || (s[3] = t("br", null, null, -1)), s[4] || (s[4] = t("br", null, null, -1)), t("h2", q, i(e.t("Buy automatic animal feeding")), 1), t("div", j, i(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), h(_, {
     inset: "",
@@ -191,7 +191,7 @@ function ee(e, s, d, c, r, o) {
 }
 const se = P(I, [
     ["render", ee],
-    ["__scopeId", "data-v-d2d30d97"]
+    ["__scopeId", "data-v-27e2e2ca"]
   ]),
   te = {
     name: "Home-g",
