@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CoSVZIfm.js", "assets/Alliance-Bydl2BsD.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-35bRVp4C.js", "assets/Boost-CcIlgcXF.css", "assets/Home-_li6mdvx.css", "assets/Rating-Dj7eTiTm.js", "assets/Rating-DRysk5eI.css", "assets/Communities-DfqxM9YX.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BCZ8Lowz.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-Der4etNw.js", "assets/Alliance-EYMUXbj1.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CeUCO-rl.js", "assets/Boost-CcIlgcXF.css", "assets/Home-_li6mdvx.css", "assets/Rating-DZgeGK7P.js", "assets/Rating-DRysk5eI.css", "assets/Communities-xkNfaYdg.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-DHFET9-g.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -21442,7 +21442,7 @@ function GE(e, t, n, o, s, a) {
         rtl: e.isRtl
       }]),
       style: an({
-        backgroundImage: "url(" + e._getQuizImg(a.calculatedResult) + ")"
+        backgroundImage: "url(" + e._getQuizImg(n.quiz.key, a.calculatedResult) + ")"
       })
     }, {
       default: le(() => {
@@ -21496,7 +21496,7 @@ function GE(e, t, n, o, s, a) {
 }
 const Em = St(VE, [
     ["render", GE],
-    ["__scopeId", "data-v-ddcdb515"]
+    ["__scopeId", "data-v-ac2bbb0f"]
   ]),
   ZE = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -21592,7 +21592,7 @@ function uI(e, t, n, o, s, a) {
       class: "testItem panelBrown",
       onClick: f => a.openQuiz(u),
       style: an(u.result ? {
-        backgroundImage: "url(" + e._getQuizImg(u.result) + ")",
+        backgroundImage: "url(" + e._getQuizImg(u.key, u.result) + ")",
         backgroundPosition: "0 -20px"
       } : "")
     }, [P("div", aI, M(u.title), 1), u.result ? (W(), ae("div", lI, [u.isRewarded ? Te("", !0) : (W(), Me(r, {
@@ -21636,7 +21636,7 @@ function uI(e, t, n, o, s, a) {
 }
 const Im = St(JE, [
     ["render", uI],
-    ["__scopeId", "data-v-3d3367b5"]
+    ["__scopeId", "data-v-130bb5a5"]
   ]),
   dI = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -23713,37 +23713,37 @@ const ia = VP({
     history: vP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-CoSVZIfm.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-Der4etNw.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-CoSVZIfm.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-Der4etNw.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => bE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-BDjsWv5X.js"), [])
+      component: () => It(() => import("./Terms-D67sx_8Z.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => fE), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-Dj7eTiTm.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-DZgeGK7P.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => FE), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-DfqxM9YX.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-xkNfaYdg.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-Bydl2BsD.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-EYMUXbj1.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-35bRVp4C.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-CeUCO-rl.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-D3Y60cvM.js"), [])
+      component: () => It(() => import("./Support-DSd06P2-.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => dI), void 0)
@@ -23752,7 +23752,7 @@ const ia = VP({
       component: () => It(() => Promise.resolve().then(() => ZE), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-BCZ8Lowz.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-DHFET9-g.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   HP = {
@@ -24637,8 +24637,8 @@ const ia = VP({
       _getQuestImg(e) {
         return e.includes("riddle_") ? "/assets/img/quests/riddle.jpg?v=2" : e.includes("rebus_") ? "/assets/img/quests/rebus.jpg?v=2" : e.includes("donate_ton_") ? "/assets/img/quests/donate_ton.jpg?v=2" : "/assets/img/quests/" + e + ".jpg?v=2"
       },
-      _getQuizImg(e) {
-        return "/assets/img/quiz/" + e + ".jpg?v=1"
+      _getQuizImg(e, t) {
+        return "/assets/img/quiz/" + e + "/" + t + ".jpg?v=1"
       },
       async _delay(e) {
         await new Promise(t => setTimeout(t, e))

@@ -16,7 +16,7 @@ import {
   A as N,
   F as S,
   r as I
-} from "./index-BJLW2TYl.js";
+} from "./index-DgDv0Byv.js";
 const M = {
   name: "Progressbar-g",
   props: {
