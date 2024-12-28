@@ -18,9 +18,9 @@ import {
   h as B,
   i as x,
   v as K
-} from "./index-DgDv0Byv.js";
-import z from "./Alliance-EYMUXbj1.js";
-import H from "./Boost-CeUCO-rl.js";
+} from "./index-BnrITTLE.js";
+import z from "./Alliance-CDjfd8gz.js";
+import H from "./Boost-BQhiPhmW.js";
 const I = {
     name: "Feed-g",
     components: {},
@@ -164,7 +164,7 @@ function ee(e, s, d, c, r, o) {
       key: y.key,
       center: ""
     }, {
-      title: p(() => [+(y.time === 172800) == 1 ? (l(), a("div", {
+      title: p(() => [Number(y.time) === 86400 ? (l(), a("div", {
         key: 0,
         innerHTML: e.t("1 day")
       }, null, 8, J)) : (l(), a("div", {
@@ -191,7 +191,7 @@ function ee(e, s, d, c, r, o) {
 }
 const se = P(I, [
     ["render", ee],
-    ["__scopeId", "data-v-038a1553"]
+    ["__scopeId", "data-v-d2d30d97"]
   ]),
   te = {
     name: "Home-g",
