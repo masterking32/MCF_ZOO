@@ -1,26 +1,26 @@
 import {
-  _ as T,
+  _ as P,
   o as l,
   c as a,
   a as t,
   t as i,
-  b as u,
+  b as h,
   w as p,
-  d as h,
-  e as A,
+  d as u,
+  e as k,
   F as w,
-  r as k,
-  f as P,
+  r as _,
+  f as B,
   g,
   T as D,
-  u as x,
-  n as C,
-  h as B,
-  i as N,
+  u as N,
+  n as A,
+  h as L,
+  i as x,
   v as K
-} from "./index-66seyjvw.js";
-import z from "./Alliance-BFef7uH4.js";
-import H from "./Boost-ChtQrRDP.js";
+} from "./index-PT0ANmVk.js";
+import H from "./Alliance-DNc0mygx.js";
+import z from "./Boost-pw9BRA_I.js";
 const I = {
     name: "Feed-g",
     components: {},
@@ -131,10 +131,10 @@ function ee(e, s, d, c, r, o) {
   var S, f;
   const m = g("van-button"),
     v = g("van-cell"),
-    _ = g("van-cell-group");
+    C = g("van-cell-group");
   return l(), a("div", O, [t("h1", U, i(e.t("Feed the animals to keep token {TOKEN_NAME} mining going!", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), (S = e.uFeed) != null && S.isNeedFeed ? (l(), a("div", W, [t("div", G, i(e.t("Token mining has stopped. ")), 1), t("div", Q, i(e.t("The animals need to be fed.")), 1), u(m, {
+  })), 1), (S = e.uFeed) != null && S.isNeedFeed ? (l(), a("div", W, [t("div", G, i(e.t("Token mining has stopped. ")), 1), t("div", Q, i(e.t("The animals need to be fed.")), 1), h(m, {
     type: "warning",
     size: "large",
     onClick: s[0] || (s[0] = y => o.buyAutoFeed(o.instantItem)),
@@ -143,24 +143,24 @@ function ee(e, s, d, c, r, o) {
       "margin-top": "10px"
     }
   }, {
-    default: p(() => [h(i(e.t("Feed the animals")) + " ", 1), s[1] || (s[1] = t("span", {
+    default: p(() => [u(i(e.t("Feed the animals")) + " ", 1), s[1] || (s[1] = t("span", {
       class: "coin25"
-    }, null, -1)), h(" " + i(e._number(o.calcPrice(o.instantItem))), 1)]),
+    }, null, -1)), u(" " + i(e._number(o.calcPrice(o.instantItem))), 1)]),
     _: 1
   }, 8, ["loading"])])) : (f = e.uFeed) != null && f.autoFeedEndDateStr ? (l(), a("div", R, [t("div", V, i(e.t("Automatic animal feeding is active")), 1), t("div", Y, i(e.t("Time Remaining: {TIME}", {
     TIME: e.uFeed.autoFeedEndDateStr
-  })), 1)])) : A("", !0), t("ul", Z, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
+  })), 1)])) : k("", !0), t("ul", Z, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), t("li", null, i(e.t("Feeding time occurs six times at random intervals throughout the day.")), 1), t("li", null, i(e.t("{TOKEN_NAME} token mining will resume after you feed your animals.", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), t("li", null, i(e.t("Check on your zoo often, and don't let your animals go hungry!")), 1)]), s[3] || (s[3] = t("br", null, null, -1)), s[4] || (s[4] = t("br", null, null, -1)), t("h2", q, i(e.t("Buy automatic animal feeding")), 1), t("div", j, i(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), u(_, {
+  })), 1), t("li", null, i(e.t("Check on your zoo often, and don't let your animals go hungry!")), 1)]), s[3] || (s[3] = t("br", null, null, -1)), s[4] || (s[4] = t("br", null, null, -1)), t("h2", q, i(e.t("Buy automatic animal feeding")), 1), t("div", j, i(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), h(C, {
     inset: "",
     class: "noMargin",
     style: {
       "margin-top": "5px"
     }
   }, {
-    default: p(() => [(l(!0), a(w, null, k(e.dbAutoFeed.filter(y => y.time > 1), y => (l(), P(v, {
+    default: p(() => [(l(!0), a(w, null, _(e.dbAutoFeed.filter(y => y.time > 1), y => (l(), B(v, {
       key: y.key,
       center: ""
     }, {
@@ -173,15 +173,15 @@ function ee(e, s, d, c, r, o) {
           days: Math.round(y.time / (24 * 3600))
         })
       }, null, 8, X))]),
-      "right-icon": p(() => [u(m, {
+      "right-icon": p(() => [h(m, {
         type: "success",
         size: "small",
-        onClick: L => o.buyAutoFeed(y),
+        onClick: F => o.buyAutoFeed(y),
         loading: r.isBuyLoading
       }, {
         default: p(() => [s[2] || (s[2] = t("span", {
           class: "coin25"
-        }, null, -1)), h(" " + i(e._number(o.calcPrice(y))), 1)]),
+        }, null, -1)), u(" " + i(e._number(o.calcPrice(y))), 1)]),
         _: 2
       }, 1032, ["onClick", "loading"])]),
       _: 2
@@ -189,15 +189,15 @@ function ee(e, s, d, c, r, o) {
     _: 1
   }), t("ul", $, [t("li", null, i(e.t("Automatic feeding works one at a time — purchases do not stack.")), 1), t("li", null, i(e.t("If you buy a second one, the one that lasts longer will remain active.")), 1), t("li", null, i(e.t("It starts working immediately after purchase.")), 1), t("li", null, i(e.t("The amount of food needed for feeding depends on your Tokens per hour")), 1), t("li", null, i(e.t("When you buy automatic feeding, no additional food will be deducted.")), 1)])])
 }
-const se = T(I, [
+const se = P(I, [
     ["render", ee],
     ["__scopeId", "data-v-27e2e2ca"]
   ]),
   te = {
     name: "Home-g",
     components: {
-      BoostG: H,
-      AllianceG: z,
+      BoostG: z,
+      AllianceG: H,
       FeedG: se,
       TopBar: D
     },
@@ -411,7 +411,7 @@ const se = T(I, [
         return "level" in ((e = this.openAnimal) == null ? void 0 : e.currentLevelData) ? this.openAnimal.currentLevelData.level * this.openAnimal.currentLevelData.level * (gameConfig["animal.min_change_position_price"] ?? 50) : null
       },
       k() {
-        let e = x();
+        let e = N();
         return (e.width.value > 768 ? 768 : e.width.value) / this.map.w
       },
       animalByPosition() {
@@ -535,8 +535,8 @@ const se = T(I, [
               const m = d.dateEnd.replace(" ", "T") + "Z",
                 v = new Date(m);
               d.countdown = v - r;
-              const _ = d.key.includes("chest_s") ? "chest_s" : d.key.includes("chest_m") ? "chest_m" : "chest_l";
-              d.img = "/assets/img/decor/" + _ + ".png?v1", d.countdown > 0 && s.push(d)
+              const C = d.key.includes("chest_s") ? "chest_s" : d.key.includes("chest_m") ? "chest_m" : "chest_l";
+              d.img = "/assets/img/decor/" + C + ".png?v1", d.countdown > 0 && s.push(d)
             }
           }
         }), this.chests = s
@@ -734,19 +734,19 @@ const se = T(I, [
       "margin-top": "30px"
     }
   },
-  xe = ["src"],
-  Ne = {
+  Ne = ["src"],
+  xe = {
     class: "desc"
   },
   Ke = {
     class: "title"
   },
-  ze = {
+  He = {
     style: {
       "font-size": "0.8em"
     }
   },
-  He = {
+  ze = {
     key: 0
   },
   Ie = {
@@ -909,29 +909,29 @@ const se = T(I, [
   };
 
 function ws(e, s, d, c, r, o) {
-  var F;
+  var T;
   const m = g("top-bar"),
     v = g("van-badge"),
-    _ = g("van-count-down"),
+    C = g("van-count-down"),
     S = g("van-loading"),
     f = g("van-popup"),
     y = g("van-button"),
-    L = g("alliance-g"),
+    F = g("alliance-g"),
     E = g("boost-g"),
     M = g("feed-g");
-  return l(), a("div", null, [u(m, {
+  return l(), a("div", null, [h(m, {
     onOpenFeedDetails: o.openFeedDetails
   }, null, 8, ["onOpenFeedDetails"]), t("div", {
     class: "globalMap",
-    style: C({
+    style: A({
       height: Math.round(r.map.h * o.k) + "px"
     }),
     onPointerdown: s[0] || (s[0] = (...n) => o.mapClick && o.mapClick(...n)),
     id: "globalMap"
-  }, [(l(!0), a(w, null, k(o.extPoints, n => (l(), a("div", {
+  }, [(l(!0), a(w, null, _(o.extPoints, n => (l(), a("div", {
     key: n.position,
     class: "point",
-    style: C({
+    style: A({
       left: n.x + "px",
       top: n.y + ((n == null ? void 0 : n.animalLevel) > 0 ? Math.round(-25 * o.k) : 0) + "px"
     })
@@ -939,43 +939,43 @@ function ws(e, s, d, c, r, o) {
     class: "buildingImg",
     src: o.getBuildingImg(n.animalKey, n.animalLevel),
     alt: "",
-    style: C({
+    style: A({
       width: Math.round(220 * o.k) + "px"
     })
   }, null, 12, ie), t("div", {
-    class: B(["level", {
+    class: L(["level", {
       aniLevel: r.animateAnimalKeys.includes(n.animalKey)
     }])
-  }, [u(v, {
+  }, [h(v, {
     dot: n.isAnimalCanBuy,
     style: {
       padding: "3px 0"
     }
   }, {
-    default: p(() => [h(" +" + i(e._numberShort(n.animalProfit)), 1)]),
+    default: p(() => [u(" +" + i(e._numberShort(n.animalProfit)), 1)]),
     _: 2
-  }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", oe)) : A("", !0)], 2)])) : (l(), a("div", {
+  }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", oe)) : k("", !0)], 2)])) : (l(), a("div", {
     key: 1,
-    class: B(["emptySlot", {
+    class: L(["emptySlot", {
       winter: n.isWinter
     }]),
-    style: C({
+    style: A({
       width: Math.round(210 * o.k) + "px"
     })
-  }, null, 6))], 4))), 128)), (l(!0), a(w, null, k(o.extPoints, n => (l(), a("div", {
+  }, null, 6))], 4))), 128)), (l(!0), a(w, null, _(o.extPoints, n => (l(), a("div", {
     key: n.position,
     class: "pointClick",
-    style: C({
+    style: A({
       left: n.x + "px",
       top: n.y + "px",
       width: Math.round(210 * o.k) + "px"
     }),
     onClick: b => (n == null ? void 0 : n.animalLevel) > 0 ? o.upgradePopup(n) : o.buyPopup(n)
-  }, null, 12, le))), 128)), (l(!0), a(w, null, k(r.chests, n => N((l(), a("div", {
+  }, null, 12, le))), 128)), (l(!0), a(w, null, _(r.chests, n => x((l(), a("div", {
     key: n.key,
     class: "pointChest center",
     onClick: b => o.openChest(n),
-    style: C({
+    style: A({
       left: n.x + "px",
       top: n.y + "px",
       width: Math.round(130 * o.k) + "px"
@@ -986,14 +986,14 @@ function ws(e, s, d, c, r, o) {
     style: {
       width: "100%"
     }
-  }, null, 8, re), u(_, {
+  }, null, 8, re), h(C, {
     time: n.countdown,
     class: "timer",
     format: "mm:ss",
     onFinish: b => n.countdown = 0
   }, null, 8, ["time", "onFinish"])], 12, ae)), [
     [K, n.countdown > 0]
-  ])), 128))], 36), u(f, {
+  ])), 128))], 36), h(f, {
     show: r.isShowChest,
     "onUpdate:show": s[1] || (s[1] = n => r.isShowChest = n),
     closeable: "",
@@ -1010,13 +1010,13 @@ function ws(e, s, d, c, r, o) {
         width: "100%",
         margin: "-30px 0"
       }
-    }, null, 8, ue), r.isClaimChestLoading ? (l(), P(S, {
+    }, null, 8, ue), r.isClaimChestLoading ? (l(), B(S, {
       key: 0
-    })) : (l(), a("div", he, [t("span", pe, i(e._number(r.activeChest.reward)), 1), s[13] || (s[13] = h("  ")), s[14] || (s[14] = t("span", {
+    })) : (l(), a("div", he, [t("span", pe, i(e._number(r.activeChest.reward)), 1), s[13] || (s[13] = u("  ")), s[14] || (s[14] = t("span", {
       class: "coin60"
     }, null, -1))])), t("div", ce, [t("div", null, i(e.t("Surprises may appear on the map throughout the day. Be quick to collect them!")), 1)])])]),
     _: 1
-  }, 8, ["show"]), u(f, {
+  }, 8, ["show"]), h(f, {
     show: r.isBuyPopupShow,
     "onUpdate:show": s[2] || (s[2] = n => r.isBuyPopupShow = n),
     position: "bottom",
@@ -1029,7 +1029,7 @@ function ws(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [t("div", ye, "#" + i(r.openPoint.position), 1), o.availableForBuySpecial.length > 0 ? (l(), a("div", ge, [t("div", me, i(e.t("Special Time Offer")), 1), (l(!0), a(w, null, k(o.availableForBuySpecial, n => (l(), a("div", {
+    default: p(() => [t("div", ye, "#" + i(r.openPoint.position), 1), o.availableForBuySpecial.length > 0 ? (l(), a("div", ge, [t("div", me, i(e.t("Special Time Offer")), 1), (l(!0), a(w, null, _(o.availableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1038,19 +1038,19 @@ function ws(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, ve)]), t("div", fe, [t("div", we, i(n.title), 1), t("div", null, [h("+" + i(e._number(n.level1data.profit)) + " ", 1), s[15] || (s[15] = t("span", {
+    }, null, 8, ve)]), t("div", fe, [t("div", we, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[15] || (s[15] = t("span", {
       class: "tph24"
-    }, null, -1)), s[16] || (s[16] = h()), t("span", be, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [u(y, {
+    }, null, -1)), s[16] || (s[16] = u()), t("span", be, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
       round: "",
       type: "success",
       onClick: b => o.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", ke, [t("span", _e, i(e.t("Buy animal")), 1), s[17] || (s[17] = h()), s[18] || (s[18] = t("br", null, null, -1)), s[19] || (s[19] = t("span", {
+      default: p(() => [t("div", ke, [t("span", _e, i(e.t("Buy animal")), 1), s[17] || (s[17] = u()), s[18] || (s[18] = t("br", null, null, -1)), s[19] || (s[19] = t("span", {
         class: "coin25"
-      }, null, -1)), h("  " + i(e._number(n.level1data.price)), 1)])]),
+      }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"]), u(_, {
+    }, 1032, ["onClick", "loading"]), h(C, {
       time: n.timeToEnd,
       class: "panelRed center",
       format: "mm:ss",
@@ -1060,7 +1060,7 @@ function ws(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "onFinish"])])]))), 128))])) : A("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ce, [t("div", Ae, i(e.t("Select animal")), 1), (l(!0), a(w, null, k(o.availableForBuyAnimalList, n => (l(), a("div", {
+    }, null, 8, ["time", "onFinish"])])]))), 128))])) : k("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ce, [t("div", Ae, i(e.t("Select animal")), 1), (l(!0), a(w, null, _(o.availableForBuyAnimalList, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1069,26 +1069,26 @@ function ws(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, Se)]), t("div", Be, [t("div", Le, i(n.title), 1), t("div", null, [h("+" + i(e._number(n.level1data.profit)) + " ", 1), s[20] || (s[20] = t("span", {
+    }, null, 8, Se)]), t("div", Be, [t("div", Le, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[20] || (s[20] = t("span", {
       class: "tph24"
-    }, null, -1)), s[21] || (s[21] = h()), t("span", Fe, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [u(y, {
+    }, null, -1)), s[21] || (s[21] = u()), t("span", Fe, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
       round: "",
       type: "success",
       onClick: b => o.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Te, [t("span", Pe, i(e.t("Buy animal")), 1), s[22] || (s[22] = h()), s[23] || (s[23] = t("br", null, null, -1)), s[24] || (s[24] = t("span", {
+      default: p(() => [t("div", Te, [t("span", Pe, i(e.t("Buy animal")), 1), s[22] || (s[22] = u()), s[23] || (s[23] = t("br", null, null, -1)), s[24] || (s[24] = t("span", {
         class: "coin25"
-      }, null, -1)), h("  " + i(e._number(n.level1data.price)), 1)])]),
+      }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ee, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), u(y, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ee, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(y, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
     }, {
-      default: p(() => [h(i(e.t("Follow our channel")), 1)]),
+      default: p(() => [u(i(e.t("Follow our channel")), 1)]),
       _: 1
-    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", Me, [t("div", De, i(e.t("Unavailable offers")), 1), (l(!0), a(w, null, k(o.notAvailableForBuySpecial, n => (l(), a("div", {
+    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", Me, [t("div", De, i(e.t("Unavailable offers")), 1), (l(!0), a(w, null, _(o.notAvailableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1097,11 +1097,11 @@ function ws(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, xe)]), t("div", Ne, [t("div", Ke, i(n.title), 1), t("div", null, [h("+" + i(e._number(n.level1data.profit)) + " ", 1), s[25] || (s[25] = t("span", {
+    }, null, 8, Ne)]), t("div", xe, [t("div", Ke, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[25] || (s[25] = t("span", {
       class: "tph24"
-    }, null, -1)), s[26] || (s[26] = h()), t("span", ze, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", He, [s[27] || (s[27] = t("span", {
+    }, null, -1)), s[26] || (s[26] = u()), t("span", He, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", ze, [s[27] || (s[27] = t("span", {
       class: "coin25"
-    }, null, -1)), h("  " + i(e._number(n.level1data.price)) + " ", 1), s[28] || (s[28] = t("br", null, null, -1)), h(" " + i(e.t("Sales start in")) + " ", 1), u(_, {
+    }, null, -1)), u("  " + i(e._number(n.level1data.price)) + " ", 1), s[28] || (s[28] = t("br", null, null, -1)), u(" " + i(e.t("Sales start in")) + " ", 1), h(C, {
       time: n.timeToStart,
       format: "mm:ss",
       onFinish: o.calcUnboughtAnimals,
@@ -1110,9 +1110,9 @@ function ws(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "onFinish"])])) : (l(), a("div", Ie, i(e.t("Missed offer")), 1))])]))), 128))])) : A("", !0)]),
+    }, null, 8, ["time", "onFinish"])])) : (l(), a("div", Ie, i(e.t("Missed offer")), 1))])]))), 128))])) : k("", !0)]),
     _: 1
-  }, 8, ["show"]), u(f, {
+  }, 8, ["show"]), h(f, {
     show: r.isUpgradePopupShow,
     "onUpdate:show": s[6] || (s[6] = n => r.isUpgradePopupShow = n),
     position: "bottom",
@@ -1133,7 +1133,7 @@ function ws(e, s, d, c, r, o) {
         display: "inline-block"
       },
       onClick: s[3] || (s[3] = (...n) => o.showChangeLocation && o.showChangeLocation(...n))
-    }, [u(v, {
+    }, [h(v, {
       dot: !e._isOnboardingComplete(e.onBoard.changeLocation)
     }, {
       default: p(() => [t("span", Ue, i(e.t("Change location")), 1)]),
@@ -1142,24 +1142,24 @@ function ws(e, s, d, c, r, o) {
       class: "buildingImg",
       src: o.getBuildingImg(o.openAnimal.key, o.openAnimal.currentLevelData.level),
       alt: "",
-      style: C([{
+      style: A([{
         width: Math.round(600 * o.k) + "px",
         top: Math.round(-80 * o.k) + "px",
         right: Math.round(10 * o.k) + "px"
       }, {
         position: "absolute"
       }])
-    }, null, 12, We)]), t("div", Ge, [t("div", Qe, [t("div", Re, i(o.openAnimal.title), 1)]), t("div", null, [t("div", Ve, i(e.t("Level")) + " " + i(o.openAnimal.currentLevelData.level), 1), t("div", null, [h(i(e.t("Current {TOKEN_NAME} per hour:", {
+    }, null, 12, We)]), t("div", Ge, [t("div", Qe, [t("div", Re, i(o.openAnimal.title), 1)]), t("div", null, [t("div", Ve, i(e.t("Level")) + " " + i(o.openAnimal.currentLevelData.level), 1), t("div", null, [u(i(e.t("Current {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[29] || (s[29] = t("span", {
       class: "tph24"
-    }, null, -1)), h(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", Ye, i(e.t("This is the maximum level.")), 1)) : A("", !0), o.openAnimal.isMaxLevel ? A("", !0) : (l(), a("div", Ze, [t("div", null, [h(i(e.t("Next level {TOKEN_NAME} per hour:", {
+    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", Ye, i(e.t("This is the maximum level.")), 1)) : k("", !0), o.openAnimal.isMaxLevel ? k("", !0) : (l(), a("div", Ze, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[30] || (s[30] = t("span", {
       class: "tph24"
-    }, null, -1)), h(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", qe, [t("div", je, [h(i(e.t("Increase at the next level: ")) + " ", 1), s[31] || (s[31] = t("br", null, null, -1)), s[32] || (s[32] = t("span", {
+    }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", qe, [t("div", je, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[31] || (s[31] = t("br", null, null, -1)), s[32] || (s[32] = t("span", {
       class: "tph50"
-    }, null, -1)), t("span", Je, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), u(y, {
+    }, null, -1)), t("span", Je, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(y, {
       type: "success",
       size: "large",
       onClick: s[4] || (s[4] = n => o.buy(o.openAnimal.key, o.openAnimal.nextLevelData.price)),
@@ -1168,16 +1168,16 @@ function ws(e, s, d, c, r, o) {
         "margin-top": "15px"
       }
     }, {
-      default: p(() => [u(v, {
+      default: p(() => [h(v, {
         dot: o.openAnimal.nextLevelData.price <= e.uHero.coins
       }, {
-        default: p(() => [t("div", Xe, [h(i(e.t("Level up ")) + "  ", 1), s[33] || (s[33] = t("span", {
+        default: p(() => [t("div", Xe, [u(i(e.t("Level up ")) + "  ", 1), s[33] || (s[33] = t("span", {
           class: "coin33"
-        }, null, -1)), h("  " + i(e._number(o.openAnimal.nextLevelData.price)), 1)])]),
+        }, null, -1)), u("  " + i(e._number(o.openAnimal.nextLevelData.price)), 1)])]),
         _: 1
       }, 8, ["dot"])]),
       _: 1
-    }, 8, ["loading"])])]))])]), u(f, {
+    }, 8, ["loading"])])]))])]), h(f, {
       show: r.isShowChangeLocation,
       "onUpdate:show": s[5] || (s[5] = n => r.isShowChangeLocation = n),
       closeable: "",
@@ -1185,18 +1185,18 @@ function ws(e, s, d, c, r, o) {
     }, {
       default: p(() => [t("div", $e, [t("h2", null, i(e.t("Change location for {animalTitle}", {
         animalTitle: o.openAnimal.title
-      })), 1), o.freePoints.length > 0 ? (l(), a("div", es, [t("div", ss, [(l(!0), a(w, null, k(o.freePoints, n => (l(), a("div", {
-        class: B(["freePoint clicked flexCenter", {
+      })), 1), o.freePoints.length > 0 ? (l(), a("div", es, [t("div", ss, [(l(!0), a(w, null, _(o.freePoints, n => (l(), a("div", {
+        class: L(["freePoint clicked flexCenter", {
           active: r.newLocation === n
         }]),
         onClick: b => r.newLocation = n
-      }, i(n), 11, ts))), 256))]), s[35] || (s[35] = t("br", null, null, -1)), u(y, {
+      }, i(n), 11, ts))), 256))]), s[35] || (s[35] = t("br", null, null, -1)), h(y, {
         type: "success",
         size: "large",
         onClick: o.changeLocation,
         loading: r.isChangeLocationLoading
       }, {
-        default: p(() => [h(i(e.t("Change")) + " " + i(e._number(o.priceChangeLocation)) + " ", 1), s[34] || (s[34] = t("span", {
+        default: p(() => [u(i(e.t("Change")) + " " + i(e._number(o.priceChangeLocation)) + " ", 1), s[34] || (s[34] = t("span", {
           class: "coin25"
         }, null, -1))]),
         _: 1
@@ -1204,7 +1204,7 @@ function ws(e, s, d, c, r, o) {
       _: 1
     }, 8, ["show"])]),
     _: 1
-  }, 8, ["show"]), t("div", os, [u(v, {
+  }, 8, ["show"]), t("div", os, [h(v, {
     dot: !e.uAlliance.id
   }, {
     default: p(() => [t("div", {
@@ -1212,8 +1212,9 @@ function ws(e, s, d, c, r, o) {
       onClick: s[7] || (s[7] = n => r.isShowAlliance = !0)
     }, [t("div", ls, [e.uAlliance.id ? (l(), a("span", as, "+" + i(e.dbAllianceByLevel[e.uAlliance.level].bonus) + "%", 1)) : (l(), a("div", rs))]), t("div", ds, i(e.t("Alliance")), 1)])]),
     _: 1
-  }, 8, ["dot"]), u(v, {
-    dot: !((F = e.uHero) != null && F.boostPercent)
+  }, 8, ["dot"]), e.uHero.tph > 0 ? (l(), B(v, {
+    key: 0,
+    dot: !((T = e.uHero) != null && T.boostPercent)
   }, {
     default: p(() => {
       var n;
@@ -1223,7 +1224,8 @@ function ws(e, s, d, c, r, o) {
       }, [t("div", us, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", hs, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ps))]), t("div", cs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
     }),
     _: 1
-  }, 8, ["dot"]), u(v, {
+  }, 8, ["dot"])) : k("", !0), e.uHero.tph > 0 ? (l(), B(v, {
+    key: 1,
     dot: !e.uFeed.autoFeedEndDateStr
   }, {
     default: p(() => {
@@ -1233,12 +1235,12 @@ function ws(e, s, d, c, r, o) {
         onClick: s[9] || (s[9] = bs => r.isShowFeed = !0)
       }, [t("div", ys, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", gs)) : (b = e.uFeed) != null && b.autoFeedEndDateStr ? (l(), a("div", ms)) : (l(), a("div", vs))]), t("div", fs, [e.uFeed.isNeedFeed ? (l(), a(w, {
         key: 0
-      }, [h(i(e.t("HUNGER")), 1)], 64)) : (l(), a(w, {
+      }, [u(i(e.t("HUNGER")), 1)], 64)) : (l(), a(w, {
         key: 1
-      }, [h(i(e.uFeed.autoFeedEndDateStr ? e.uFeed.autoFeedEndDateStr : e.t("Feeding")), 1)], 64))])])]
+      }, [u(i(e.uFeed.autoFeedEndDateStr ? e.uFeed.autoFeedEndDateStr : e.t("Feeding")), 1)], 64))])])]
     }),
     _: 1
-  }, 8, ["dot"])]), u(f, {
+  }, 8, ["dot"])) : k("", !0)]), h(f, {
     show: r.isShowAlliance,
     "onUpdate:show": s[10] || (s[10] = n => r.isShowAlliance = n),
     position: "right",
@@ -1249,9 +1251,9 @@ function ws(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [u(L)]),
+    default: p(() => [h(F)]),
     _: 1
-  }, 8, ["show"]), u(f, {
+  }, 8, ["show"]), h(f, {
     show: r.isShowBoost,
     "onUpdate:show": s[11] || (s[11] = n => r.isShowBoost = n),
     position: "right",
@@ -1262,9 +1264,9 @@ function ws(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [u(E)]),
+    default: p(() => [h(E)]),
     _: 1
-  }, 8, ["show"]), u(f, {
+  }, 8, ["show"]), h(f, {
     show: r.isShowFeed,
     "onUpdate:show": s[12] || (s[12] = n => r.isShowFeed = n),
     position: "right",
@@ -1275,13 +1277,13 @@ function ws(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [u(M)]),
+    default: p(() => [h(M)]),
     _: 1
   }, 8, ["show"])])
 }
-const As = T(te, [
+const As = P(te, [
   ["render", ws],
-  ["__scopeId", "data-v-d1dfbe30"]
+  ["__scopeId", "data-v-c9768daa"]
 ]);
 export {
   As as
