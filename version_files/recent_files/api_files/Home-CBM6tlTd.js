@@ -1,5 +1,5 @@
 import {
-  _ as F,
+  _,
   o as l,
   c as a,
   a as t,
@@ -18,9 +18,9 @@ import {
   h as E,
   i as H,
   v as I
-} from "./index-DnSBc1gg.js";
-import z from "./Alliance-DL-ERzs6.js";
-import K from "./Boost-DdjIEHDs.js";
+} from "./index-Cz1IZrGY.js";
+import z from "./Alliance-CVVPUKeq.js";
+import K from "./Boost-Dm7J0yEM.js";
 const x = {
     name: "Feed-g",
     components: {},
@@ -203,7 +203,7 @@ function te(e, s, d, c, r, o) {
     count: 500
   })), 1))])
 }
-const ne = F(x, [
+const ne = _(x, [
     ["render", te],
     ["__scopeId", "data-v-292f3b75"]
   ]),
@@ -713,8 +713,8 @@ const ne = F(x, [
       margin: "15px 0 15px 0"
     }
   },
-  _e = ["src"],
-  Fe = {
+  Fe = ["src"],
+  _e = {
     class: "desc"
   },
   De = {
@@ -928,7 +928,7 @@ const ne = F(x, [
   };
 
 function Cs(e, s, d, c, r, o) {
-  var _;
+  var F;
   const m = g("top-bar"),
     f = g("van-badge"),
     C = g("van-count-down"),
@@ -1095,7 +1095,7 @@ function Cs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, _e)]), t("div", Fe, [t("div", De, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
+    }, null, 8, Fe)]), t("div", _e, [t("div", De, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
       class: "tph24"
     }, null, -1)), s[22] || (s[22] = u()), t("span", Me, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
       round: "",
@@ -1240,7 +1240,7 @@ function Cs(e, s, d, c, r, o) {
     _: 1
   }, 8, ["dot"]), e.uHero.tph > 0 ? (l(), B(f, {
     key: 0,
-    dot: !((_ = e.uHero) != null && _.boostPercent)
+    dot: !((F = e.uHero) != null && F.boostPercent)
   }, {
     default: p(() => {
       var n;
@@ -1250,7 +1250,7 @@ function Cs(e, s, d, c, r, o) {
       }, [t("div", ys, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", gs, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ms))]), t("div", vs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
     }),
     _: 1
-  }, 8, ["dot"])) : k("", !0), e.uHero.tph > 0 ? (l(), B(f, {
+  }, 8, ["dot"])) : k("", !0), e.uProfile.isAlfaTester && e.uHero.tph > 0 ? (l(), B(f, {
     key: 1,
     dot: !e.uFeed.autoFeedEndDateStr && e.uHero.tph > 1e3
   }, {
@@ -1307,9 +1307,9 @@ function Cs(e, s, d, c, r, o) {
     _: 1
   }, 8, ["show"])])
 }
-const Ts = F(oe, [
+const Ts = _(oe, [
   ["render", Cs],
-  ["__scopeId", "data-v-0a1d0db1"]
+  ["__scopeId", "data-v-263832a8"]
 ]);
 export {
   Ts as

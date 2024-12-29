@@ -14,7 +14,7 @@ import {
   F as h,
   r as k,
   h as T
-} from "./index-DnSBc1gg.js";
+} from "./index-Cz1IZrGY.js";
 const w = {
     name: "Rating-o",
     components: {

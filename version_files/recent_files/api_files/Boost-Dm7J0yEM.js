@@ -1,9 +1,9 @@
 import {
   _ as k,
   c as i,
-  a as t,
-  d as b,
-  t as s,
+  a as e,
+  d as y,
+  t as o,
   e as w,
   b as p,
   w as a,
@@ -12,7 +12,7 @@ import {
   F as _,
   r as v,
   f as m
-} from "./index-DnSBc1gg.js";
+} from "./index-Cz1IZrGY.js";
 const M = {
     name: "Boost-g",
     components: {},
@@ -30,17 +30,17 @@ const M = {
     },
     watch: {},
     methods: {
-      async buyBoost(e) {
-        if (e.price > this.uHero.coins) {
-          this.stores.state.setLackOfCoin(e.price - this.uHero.coins), this.stores.state.setIsShowTopUp(!0);
+      async buyBoost(t) {
+        if (t.price > this.uHero.coins) {
+          this.stores.state.setLackOfCoin(t.price - this.uHero.coins), this.stores.state.setIsShowTopUp(!0);
           return
         }
         try {
           this.isBuyLoading = !0;
-          const o = await this.apiCall("boostBuy", e.key);
-          this.stores.user.setHero(o.hero)
-        } catch (o) {
-          this._catchError(o)
+          const s = await this.apiCall("boostBuy", t.key);
+          this.stores.user.setHero(s.hero)
+        } catch (s) {
+          this._catchError(s)
         }
         this.isBuyLoading = !1
       }
@@ -80,28 +80,28 @@ const M = {
   D = ["innerHTML"],
   E = ["innerHTML"];
 
-function O(e, o, S, U, u, y) {
-  var h;
-  const g = l("van-button"),
-    f = l("van-cell"),
+function O(t, s, S, U, u, h) {
+  var b;
+  const f = l("van-button"),
+    g = l("van-cell"),
     T = l("van-cell-group"),
     B = l("van-tab"),
     H = l("van-tabs");
-  return n(), i("div", I, [t("h1", L, [b(s(e.t("Boost your profit per hour")) + " ", 1), o[1] || (o[1] = t("span", {
+  return n(), i("div", I, [e("h1", L, [y(o(t.t("Boost your profit per hour")) + " ", 1), s[1] || (s[1] = e("span", {
     class: "tph40"
-  }, null, -1))]), ((h = e.uHero) == null ? void 0 : h.boostPercent) > 0 ? (n(), i("div", C, [t("div", N, s(e.t("Boost {COUNT}% working now!", {
-    COUNT: e.uHero.boostPercent
-  })), 1), t("div", P, [t("div", null, s(e.t("Time Remaining: {TIME}", {
-    TIME: e.uHero.boostShortDateStr
-  })), 1)])])) : w("", !0), t("ul", G, [t("li", null, s(e.t("Only one boost will work at a time — they don't stack.")), 1), t("li", null, s(e.t("If you buy a second one, the one that lasts longer will remain active.")), 1), t("li", null, s(e.t("The boost starts working immediately after purchase.")), 1)]), p(H, {
+  }, null, -1))]), ((b = t.uHero) == null ? void 0 : b.boostPercent) > 0 ? (n(), i("div", C, [e("div", N, o(t.t("Boost {COUNT}% working now!", {
+    COUNT: t.uHero.boostPercent
+  })), 1), e("div", P, [e("div", null, o(t.t("Time Remaining: {TIME}", {
+    TIME: t.uHero.boostShortDateStr
+  })), 1)])])) : w("", !0), e("ul", G, [e("li", null, o(t.t("Only one boost will work at a time — they don't stack.")), 1), e("li", null, o(t.t("The boost purchased last will be the one that remains active.")), 1), e("li", null, o(t.t("The boost starts working immediately after purchase.")), 1)]), p(H, {
     active: u.activeTab,
-    "onUpdate:active": o[0] || (o[0] = c => u.activeTab = c),
-    swipeable: !e.isRtl,
+    "onUpdate:active": s[0] || (s[0] = c => u.activeTab = c),
+    swipeable: !t.isRtl,
     type: "card",
     ellipsis: !1
   }, {
-    default: a(() => [(n(!0), i(_, null, v(y.extDbBoost, (c, d) => (n(), m(B, null, {
-      title: a(() => [t("span", null, s(d) + " " + s(Number(d) === 1 ? e.t("day") : e.t("days")), 1)]),
+    default: a(() => [(n(!0), i(_, null, v(h.extDbBoost, (c, d) => (n(), m(B, null, {
+      title: a(() => [e("span", null, o(d) + " " + o(Number(d) === 1 ? t.t("day") : t.t("days")), 1)]),
       default: a(() => [p(T, {
         inset: "",
         class: "noMargin",
@@ -109,33 +109,33 @@ function O(e, o, S, U, u, y) {
           "margin-top": "5px"
         }
       }, {
-        default: a(() => [(n(!0), i(_, null, v(c, r => (n(), m(f, {
+        default: a(() => [(n(!0), i(_, null, v(c, r => (n(), m(g, {
           key: r.key,
           center: ""
         }, {
           title: a(() => [Number(d) === 1 ? (n(), i("div", {
             key: 0,
-            innerHTML: e.t("+{value}% {IMG_TPH} boost for 1 day", {
+            innerHTML: t.t("+{value}% {IMG_TPH} boost for 1 day", {
               value: r.boost,
-              IMG_TPH: e.IMG_TPH
+              IMG_TPH: t.IMG_TPH
             })
           }, null, 8, D)) : (n(), i("div", {
             key: 1,
-            innerHTML: e.t("+{value}% {IMG_TPH} boost for {days} days", {
+            innerHTML: t.t("+{value}% {IMG_TPH} boost for {days} days", {
               value: r.boost,
               days: r.days,
-              IMG_TPH: e.IMG_TPH
+              IMG_TPH: t.IMG_TPH
             })
           }, null, 8, E))]),
-          "right-icon": a(() => [p(g, {
+          "right-icon": a(() => [p(f, {
             type: "success",
             size: "small",
-            onClick: V => y.buyBoost(r),
+            onClick: V => h.buyBoost(r),
             loading: u.isBuyLoading
           }, {
-            default: a(() => [o[2] || (o[2] = t("span", {
+            default: a(() => [s[2] || (s[2] = e("span", {
               class: "coin25"
-            }, null, -1)), b(" " + s(e._number(r.price)), 1)]),
+            }, null, -1)), y(" " + o(t._number(r.price)), 1)]),
             _: 2
           }, 1032, ["onClick", "loading"])]),
           _: 2
@@ -149,7 +149,7 @@ function O(e, o, S, U, u, y) {
 }
 const F = k(M, [
   ["render", O],
-  ["__scopeId", "data-v-465c0bc8"]
+  ["__scopeId", "data-v-f1abaa69"]
 ]);
 export {
   F as
