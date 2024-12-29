@@ -13,14 +13,14 @@ import {
   f as L,
   g,
   T as D,
-  u as N,
+  u as x,
   n as C,
   h as B,
-  i as x,
+  i as N,
   v as K
-} from "./index-BprxN63v.js";
-import z from "./Alliance-BAHU0W0t.js";
-import H from "./Boost-NeUL7fHE.js";
+} from "./index-B5uqLdU2.js";
+import z from "./Alliance-lvxr-tOy.js";
+import H from "./Boost-xHUjMTu-.js";
 const I = {
     name: "Feed-g",
     components: {},
@@ -411,7 +411,7 @@ const se = P(I, [
         return "level" in ((e = this.openAnimal) == null ? void 0 : e.currentLevelData) ? this.openAnimal.currentLevelData.level * this.openAnimal.currentLevelData.level * (gameConfig["animal.min_change_position_price"] ?? 50) : null
       },
       k() {
-        let e = N();
+        let e = x();
         return (e.width.value > 768 ? 768 : e.width.value) / this.map.w
       },
       animalByPosition() {
@@ -643,83 +643,89 @@ const se = P(I, [
     }
   },
   ye = {
+    style: {
+      padding: "5px 5px 0 5px",
+      opacity: "0.5"
+    }
+  },
+  ge = {
     key: 0,
     class: "container"
   },
-  ge = {
+  me = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
       "font-weight": "800",
       display: "inline-block",
-      "margin-top": "30px"
+      "margin-top": "15px"
     }
   },
-  me = ["src"],
-  ve = {
+  ve = ["src"],
+  fe = {
     class: "desc"
   },
-  fe = {
+  we = {
     class: "title"
   },
-  we = {
+  be = {
     style: {
       "font-size": "0.8em"
     }
   },
-  be = {
+  ke = {
     class: ""
   },
-  ke = {
+  _e = {
     style: {
       "font-size": "0.7em"
     }
   },
-  _e = {
+  Ce = {
     key: 1,
     class: "container"
   },
-  Ce = {
+  Ae = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
       "font-weight": "800",
       display: "inline-block",
-      margin: "30px 0 15px 0"
+      margin: "15px 0 15px 0"
     }
   },
-  Ae = ["src"],
-  Se = {
+  Se = ["src"],
+  Be = {
     class: "desc"
   },
-  Be = {
+  Le = {
     class: "title"
   },
-  Le = {
+  Fe = {
     style: {
       "font-size": "0.8em"
     }
   },
-  Fe = {
+  Te = {
     class: ""
   },
-  Te = {
+  Pe = {
     style: {
       "font-size": "0.7em"
     }
   },
-  Pe = {
+  Ee = {
     key: 2,
     class: "container"
   },
-  Ee = {
+  Me = {
     key: 3,
     class: "container",
     style: {
       filter: "grayscale(1)"
     }
   },
-  Me = {
+  De = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
@@ -728,40 +734,40 @@ const se = P(I, [
       "margin-top": "30px"
     }
   },
-  De = ["src"],
+  xe = ["src"],
   Ne = {
     class: "desc"
   },
-  xe = {
+  Ke = {
     class: "title"
   },
-  Ke = {
+  ze = {
     style: {
       "font-size": "0.8em"
     }
   },
-  ze = {
+  He = {
     key: 0
   },
-  He = {
+  Ie = {
     key: 1
   },
-  Ie = {
+  Oe = {
     class: "header"
   },
-  Oe = {
+  Ue = {
     style: {
       opacity: "0.5"
     }
   },
-  Ue = ["src"],
-  We = {
+  We = ["src"],
+  Ge = {
     class: "container",
     style: {
       "border-top": "2px solid #D6A36C"
     }
   },
-  Ge = {
+  Qe = {
     style: {
       display: "flex",
       "column-gap": "10px",
@@ -769,49 +775,49 @@ const se = P(I, [
       "margin-top": "-30px"
     }
   },
-  Qe = {
+  Re = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
       "font-weight": "800"
     }
   },
-  Re = {
+  Ve = {
     class: "level"
   },
-  Ve = {
+  Ye = {
     key: 0
   },
-  Ye = {
+  Ze = {
     key: 1,
     class: "white"
   },
-  Ze = {
+  qe = {
     style: {
       "margin-top": "30px"
     }
   },
-  qe = {
+  je = {
     style: {},
     class: "center"
   },
-  je = {
+  Je = {
     class: "zTextShadow2white",
     style: {
       "font-size": "3em",
       "font-weight": "800"
     }
   },
-  Je = {
+  Xe = {
     class: "flexCenter"
   },
-  Xe = {
+  $e = {
     class: "container"
   },
-  $e = {
+  es = {
     key: 0
   },
-  es = {
+  ss = {
     class: "flexCenter",
     style: {
       "flex-wrap": "wrap",
@@ -819,23 +825,23 @@ const se = P(I, [
       "row-gap": "10px"
     }
   },
-  ss = ["onClick"],
-  ts = {
+  ts = ["onClick"],
+  ns = {
     style: {
       "font-size": "0.8em",
       "margin-top": "10px"
     }
   },
-  ns = {
+  is = {
     key: 1
   },
-  is = {
+  os = {
     class: "boostBtns"
   },
-  os = {
+  ls = {
     class: "flyBtnCont"
   },
-  ls = {
+  as = {
     key: 0,
     style: {
       "font-weight": "800",
@@ -843,20 +849,20 @@ const se = P(I, [
       color: "#daae7d"
     }
   },
-  as = {
+  rs = {
     key: 1,
     class: "flyBtnIcon",
     style: {
       "background-image": "url('/assets/img/decor/icon_ali.png')"
     }
   },
-  rs = {
+  ds = {
     class: "flyBtnTitle"
   },
-  ds = {
+  us = {
     class: "flyBtnCont"
   },
-  us = {
+  hs = {
     key: 0,
     style: {
       "font-weight": "800",
@@ -864,45 +870,45 @@ const se = P(I, [
       color: "#daae7d"
     }
   },
-  hs = {
+  ps = {
     key: 1,
     class: "flyBtnIcon",
     style: {
       "background-image": "url('/assets/img/decor/icon_boost.png')"
     }
   },
-  ps = {
+  cs = {
     class: "flyBtnTitle nowrap"
   },
-  cs = {
+  ys = {
     class: "flyBtnCont"
   },
-  ys = {
+  gs = {
     key: 0,
     class: "flyBtnIcon",
     style: {
       "background-image": "url('/assets/img/decor/icon_feed_need.png')"
     }
   },
-  gs = {
+  ms = {
     key: 1,
     class: "flyBtnIcon",
     style: {
       "background-image": "url('/assets/img/decor/icon_feed_on.png')"
     }
   },
-  ms = {
+  vs = {
     key: 2,
     class: "flyBtnIcon",
     style: {
       "background-image": "url('/assets/img/decor/icon_feed_off.png')"
     }
   },
-  vs = {
+  fs = {
     class: "flyBtnTitle nowrap"
   };
 
-function fs(e, s, d, c, r, o) {
+function ws(e, s, d, c, r, o) {
   var T;
   const m = g("top-bar"),
     v = g("van-badge"),
@@ -965,7 +971,7 @@ function fs(e, s, d, c, r, o) {
       width: Math.round(210 * o.k) + "px"
     }),
     onClick: b => (n == null ? void 0 : n.animalLevel) > 0 ? o.upgradePopup(n) : o.buyPopup(n)
-  }, null, 12, le))), 128)), (l(!0), a(w, null, k(r.chests, n => x((l(), a("div", {
+  }, null, 12, le))), 128)), (l(!0), a(w, null, k(r.chests, n => N((l(), a("div", {
     key: n.key,
     class: "pointChest center",
     onClick: b => o.openChest(n),
@@ -1023,7 +1029,7 @@ function fs(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [o.availableForBuySpecial.length > 0 ? (l(), a("div", ye, [t("div", ge, i(e.t("Special Time Offer")), 1), (l(!0), a(w, null, k(o.availableForBuySpecial, n => (l(), a("div", {
+    default: p(() => [t("div", ye, "#" + i(r.openPoint.position), 1), o.availableForBuySpecial.length > 0 ? (l(), a("div", ge, [t("div", me, i(e.t("Special Time Offer")), 1), (l(!0), a(w, null, k(o.availableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1032,15 +1038,15 @@ function fs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, me)]), t("div", ve, [t("div", fe, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[15] || (s[15] = t("span", {
+    }, null, 8, ve)]), t("div", fe, [t("div", we, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[15] || (s[15] = t("span", {
       class: "tph24"
-    }, null, -1)), s[16] || (s[16] = u()), t("span", we, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
+    }, null, -1)), s[16] || (s[16] = u()), t("span", be, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
       round: "",
       type: "success",
       onClick: b => o.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", be, [t("span", ke, i(e.t("Buy animal")), 1), s[17] || (s[17] = u()), s[18] || (s[18] = t("br", null, null, -1)), s[19] || (s[19] = t("span", {
+      default: p(() => [t("div", ke, [t("span", _e, i(e.t("Buy animal")), 1), s[17] || (s[17] = u()), s[18] || (s[18] = t("br", null, null, -1)), s[19] || (s[19] = t("span", {
         class: "coin25"
       }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
@@ -1054,7 +1060,7 @@ function fs(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "onFinish"])])]))), 128))])) : A("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", _e, [t("div", Ce, i(e.t("Select animal")), 1), (l(!0), a(w, null, k(o.availableForBuyAnimalList, n => (l(), a("div", {
+    }, null, 8, ["time", "onFinish"])])]))), 128))])) : A("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ce, [t("div", Ae, i(e.t("Select animal")), 1), (l(!0), a(w, null, k(o.availableForBuyAnimalList, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1063,26 +1069,26 @@ function fs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, Ae)]), t("div", Se, [t("div", Be, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[20] || (s[20] = t("span", {
+    }, null, 8, Se)]), t("div", Be, [t("div", Le, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[20] || (s[20] = t("span", {
       class: "tph24"
-    }, null, -1)), s[21] || (s[21] = u()), t("span", Le, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
+    }, null, -1)), s[21] || (s[21] = u()), t("span", Fe, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(y, {
       round: "",
       type: "success",
       onClick: b => o.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Fe, [t("span", Te, i(e.t("Buy animal")), 1), s[22] || (s[22] = u()), s[23] || (s[23] = t("br", null, null, -1)), s[24] || (s[24] = t("span", {
+      default: p(() => [t("div", Te, [t("span", Pe, i(e.t("Buy animal")), 1), s[22] || (s[22] = u()), s[23] || (s[23] = t("br", null, null, -1)), s[24] || (s[24] = t("span", {
         class: "coin25"
       }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Pe, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(y, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ee, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(y, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
     }, {
       default: p(() => [u(i(e.t("Follow our channel")), 1)]),
       _: 1
-    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", Ee, [t("div", Me, i(e.t("Unavailable offers")), 1), (l(!0), a(w, null, k(o.notAvailableForBuySpecial, n => (l(), a("div", {
+    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", Me, [t("div", De, i(e.t("Unavailable offers")), 1), (l(!0), a(w, null, k(o.notAvailableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1091,9 +1097,9 @@ function fs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, De)]), t("div", Ne, [t("div", xe, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[25] || (s[25] = t("span", {
+    }, null, 8, xe)]), t("div", Ne, [t("div", Ke, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[25] || (s[25] = t("span", {
       class: "tph24"
-    }, null, -1)), s[26] || (s[26] = u()), t("span", Ke, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", ze, [s[27] || (s[27] = t("span", {
+    }, null, -1)), s[26] || (s[26] = u()), t("span", ze, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", He, [s[27] || (s[27] = t("span", {
       class: "coin25"
     }, null, -1)), u("  " + i(e._number(n.level1data.price)) + " ", 1), s[28] || (s[28] = t("br", null, null, -1)), u(" " + i(e.t("Sales start in")) + " ", 1), h(_, {
       time: n.timeToStart,
@@ -1104,7 +1110,7 @@ function fs(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "onFinish"])])) : (l(), a("div", He, i(e.t("Missed offer")), 1))])]))), 128))])) : A("", !0)]),
+    }, null, 8, ["time", "onFinish"])])) : (l(), a("div", Ie, i(e.t("Missed offer")), 1))])]))), 128))])) : A("", !0)]),
     _: 1
   }, 8, ["show"]), h(f, {
     show: r.isUpgradePopupShow,
@@ -1118,7 +1124,7 @@ function fs(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [t("div", Ie, [t("div", {
+    default: p(() => [t("div", Oe, [t("div", {
       style: {
         position: "absolute",
         top: "0",
@@ -1130,7 +1136,7 @@ function fs(e, s, d, c, r, o) {
     }, [h(v, {
       dot: !e._isOnboardingComplete(e.onBoard.changeLocation)
     }, {
-      default: p(() => [t("span", Oe, i(e.t("Change location")), 1)]),
+      default: p(() => [t("span", Ue, i(e.t("Change location")), 1)]),
       _: 1
     }, 8, ["dot"])]), t("img", {
       class: "buildingImg",
@@ -1143,17 +1149,17 @@ function fs(e, s, d, c, r, o) {
       }, {
         position: "absolute"
       }])
-    }, null, 12, Ue)]), t("div", We, [t("div", Ge, [t("div", Qe, i(o.openAnimal.title), 1)]), t("div", null, [t("div", Re, i(e.t("Level")) + " " + i(o.openAnimal.currentLevelData.level), 1), t("div", null, [u(i(e.t("Current {TOKEN_NAME} per hour:", {
+    }, null, 12, We)]), t("div", Ge, [t("div", Qe, [t("div", Re, i(o.openAnimal.title), 1)]), t("div", null, [t("div", Ve, i(e.t("Level")) + " " + i(o.openAnimal.currentLevelData.level), 1), t("div", null, [u(i(e.t("Current {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[29] || (s[29] = t("span", {
       class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", Ve, i(e.t("This is the maximum level.")), 1)) : A("", !0), o.openAnimal.isMaxLevel ? A("", !0) : (l(), a("div", Ye, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
+    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", Ye, i(e.t("This is the maximum level.")), 1)) : A("", !0), o.openAnimal.isMaxLevel ? A("", !0) : (l(), a("div", Ze, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[30] || (s[30] = t("span", {
       class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", Ze, [t("div", qe, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[31] || (s[31] = t("br", null, null, -1)), s[32] || (s[32] = t("span", {
+    }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", qe, [t("div", je, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[31] || (s[31] = t("br", null, null, -1)), s[32] || (s[32] = t("span", {
       class: "tph50"
-    }, null, -1)), t("span", je, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(y, {
+    }, null, -1)), t("span", Je, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(y, {
       type: "success",
       size: "large",
       onClick: s[4] || (s[4] = n => o.buy(o.openAnimal.key, o.openAnimal.nextLevelData.price)),
@@ -1165,7 +1171,7 @@ function fs(e, s, d, c, r, o) {
       default: p(() => [h(v, {
         dot: o.openAnimal.nextLevelData.price <= e.uHero.coins
       }, {
-        default: p(() => [t("div", Je, [u(i(e.t("Level up ")) + "  ", 1), s[33] || (s[33] = t("span", {
+        default: p(() => [t("div", Xe, [u(i(e.t("Level up ")) + "  ", 1), s[33] || (s[33] = t("span", {
           class: "coin33"
         }, null, -1)), u("  " + i(e._number(o.openAnimal.nextLevelData.price)), 1)])]),
         _: 1
@@ -1177,14 +1183,14 @@ function fs(e, s, d, c, r, o) {
       closeable: "",
       round: ""
     }, {
-      default: p(() => [t("div", Xe, [t("h2", null, i(e.t("Change location for {animalTitle}", {
+      default: p(() => [t("div", $e, [t("h2", null, i(e.t("Change location for {animalTitle}", {
         animalTitle: o.openAnimal.title
-      })), 1), o.freePoints.length > 0 ? (l(), a("div", $e, [t("div", es, [(l(!0), a(w, null, k(o.freePoints, n => (l(), a("div", {
+      })), 1), o.freePoints.length > 0 ? (l(), a("div", es, [t("div", ss, [(l(!0), a(w, null, k(o.freePoints, n => (l(), a("div", {
         class: B(["freePoint clicked flexCenter", {
           active: r.newLocation === n
         }]),
         onClick: b => r.newLocation = n
-      }, i(n), 11, ss))), 256))]), s[35] || (s[35] = t("br", null, null, -1)), h(y, {
+      }, i(n), 11, ts))), 256))]), s[35] || (s[35] = t("br", null, null, -1)), h(y, {
         type: "success",
         size: "large",
         onClick: o.changeLocation,
@@ -1194,17 +1200,17 @@ function fs(e, s, d, c, r, o) {
           class: "coin25"
         }, null, -1))]),
         _: 1
-      }, 8, ["onClick", "loading"]), t("div", ts, [t("div", null, "• " + i(e.t("You can see the location number in the upper left corner when viewing the location.")), 1), t("div", null, "• " + i(e.t("You can only change to an empty location.")), 1), t("div", null, "• " + i(e.t("The cost of transfer depends on the level of the building.")), 1)])])) : (l(), a("div", ns, i(e.t("Тo location available")), 1))])]),
+      }, 8, ["onClick", "loading"]), t("div", ns, [t("div", null, "• " + i(e.t("You can see the location number in the upper left corner when viewing the location.")), 1), t("div", null, "• " + i(e.t("You can only change to an empty location.")), 1), t("div", null, "• " + i(e.t("The cost of transfer depends on the level of the building.")), 1)])])) : (l(), a("div", is, i(e.t("Тo location available")), 1))])]),
       _: 1
     }, 8, ["show"])]),
     _: 1
-  }, 8, ["show"]), t("div", is, [h(v, {
+  }, 8, ["show"]), t("div", os, [h(v, {
     dot: !e.uAlliance.id
   }, {
     default: p(() => [t("div", {
       class: "flyBtn",
       onClick: s[7] || (s[7] = n => r.isShowAlliance = !0)
-    }, [t("div", os, [e.uAlliance.id ? (l(), a("span", ls, "+" + i(e.dbAllianceByLevel[e.uAlliance.level].bonus) + "%", 1)) : (l(), a("div", as))]), t("div", rs, i(e.t("Alliance")), 1)])]),
+    }, [t("div", ls, [e.uAlliance.id ? (l(), a("span", as, "+" + i(e.dbAllianceByLevel[e.uAlliance.level].bonus) + "%", 1)) : (l(), a("div", rs))]), t("div", ds, i(e.t("Alliance")), 1)])]),
     _: 1
   }, 8, ["dot"]), h(v, {
     dot: !((T = e.uHero) != null && T.boostPercent)
@@ -1214,7 +1220,7 @@ function fs(e, s, d, c, r, o) {
       return [t("div", {
         class: "flyBtn",
         onClick: s[8] || (s[8] = b => r.isShowBoost = !0)
-      }, [t("div", ds, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", us, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", hs))]), t("div", ps, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
+      }, [t("div", us, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", hs, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ps))]), t("div", cs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
     }),
     _: 1
   }, 8, ["dot"]), e.uProfile.isAlfaTester ? (l(), L(v, {
@@ -1225,8 +1231,8 @@ function fs(e, s, d, c, r, o) {
       var n, b;
       return [t("div", {
         class: "flyBtn",
-        onClick: s[9] || (s[9] = ws => r.isShowFeed = !0)
-      }, [t("div", cs, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", ys)) : (b = e.uFeed) != null && b.autoFeedEndDateStr ? (l(), a("div", gs)) : (l(), a("div", ms))]), t("div", vs, [e.uFeed.isNeedFeed ? (l(), a(w, {
+        onClick: s[9] || (s[9] = bs => r.isShowFeed = !0)
+      }, [t("div", ys, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", gs)) : (b = e.uFeed) != null && b.autoFeedEndDateStr ? (l(), a("div", ms)) : (l(), a("div", vs))]), t("div", fs, [e.uFeed.isNeedFeed ? (l(), a(w, {
         key: 0
       }, [u(i(e.t("HUNGER")), 1)], 64)) : (l(), a(w, {
         key: 1
@@ -1274,11 +1280,11 @@ function fs(e, s, d, c, r, o) {
     _: 1
   }, 8, ["show"])])
 }
-const Cs = P(te, [
-  ["render", fs],
-  ["__scopeId", "data-v-cb7f28d8"]
+const As = P(te, [
+  ["render", ws],
+  ["__scopeId", "data-v-55050fe6"]
 ]);
 export {
-  Cs as
+  As as
   default
 };
