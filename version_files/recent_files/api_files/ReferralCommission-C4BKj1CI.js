@@ -14,7 +14,7 @@ import {
   F as C,
   r as T,
   f as S
-} from "./index-x5wtfx79.js";
+} from "./index-DCEs_EGg.js";
 const D = {
     async mounted() {
       await this.loadPageData()
