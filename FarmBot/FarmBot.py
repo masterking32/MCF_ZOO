@@ -71,6 +71,7 @@ class FarmBot:
             self.quiz.play_quiz()
 
             self.zoo = Zoo(self.requests, self.mcf_api, self.user)
+            self.zoo.feed_animals()
             self.zoo.buy_special()
             self.zoo.perform_animals()
 

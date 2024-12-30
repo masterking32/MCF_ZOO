@@ -42,6 +42,25 @@ class AnimalMdl:
         )
 
 
+@dataclass
+class FeedMdl:
+    key: Optional[str] = None
+    price_in_tph: Optional[float] = None
+    food_price: Optional[int] = None
+    duration: Optional[int] = None
+
+    @classmethod
+    def from_dict(cls, data: Optional[dict]):
+        if data is None:
+            return cls()
+        return cls(
+            key=data.get("key"),
+            price_in_tph=data.get("priceInTph"),
+            food_price=data.get("fixPrice"),
+            duration=data.get("time"),
+        )
+
+
 class Zoo:
     def __init__(self, requests: Requests, mcf_api: MCFAPI, user: User):
         self.log: Logger = mcf_api.log
@@ -50,6 +69,11 @@ class Zoo:
         self.user: User = user
         self.buy_new_disabled_once = False
         self.upgrade_disabled_once = False
+        self.feed_status = user.data.get("feed")
+        self.feed_data = [
+            FeedMdl.from_dict(feed_type)
+            for feed_type in user.data.get("dbData", {}).get("dbAutoFeed", [])
+        ]
 
     def _find_by_key(self, collection, key):
         return next((item for item in collection if item["key"] == key), None)
@@ -254,3 +278,61 @@ class Zoo:
                     f"🟠 <c>{self.mcf_api.account_name}</c> | <y>But you have an insufficient balance. Yours: <c>{zsutils.rnd(balance)}</c>, Required: <c>{zsutils.rnd(animal.next_lvl_price)}</c></y>"
                 )
             return False
+
+    def _is_feed_required(self):
+        return self.feed_status.get("isNeedFeed", False)
+
+    def _feed_animal(self, feed: FeedMdl):
+        try:
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Trying to feed the animals.</y>"
+            )
+            resp = self.requests.post_request(
+                "/autofeed/buy",
+                feed.key,
+            )
+
+            if resp is None or not resp.get("success"):
+                raise Exception(f"Failed to feed animals, response: <m>{resp}</m>")
+
+            is_success = resp.get("success")
+
+            data = resp.get("data", {})
+            self.feed_status = data.get("feed", {})
+            self.user.hero = data.get("hero", {})
+            self.log.info(
+                f"🟢 <c>{self.mcf_api.account_name}</c> | <g>The animals are fed successfully.</g>"
+            )
+
+            return is_success
+        except Exception as e:
+            msg = str(e) if str(e) else "Unknown error."
+            self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
+            return False
+
+    def feed_animals(self):
+        if not self._is_feed_required():
+            self.log.info(
+                f"🟢 <c>{self.mcf_api.account_name}</c> | Animals don't need feeding."
+            )
+            return
+        self.log.info(
+            f"🟡 <c>{self.mcf_api.account_name}</c> | <y>The animals need to be fed, the mining has been stopped..</y>"
+        )
+        if not utils.getConfig("auto_feed_animals", False):
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto feed animals <r>DISABLED</r></y>"
+            )
+            return
+
+        one_time_feed = next(feed for feed in self.feed_data if feed.duration == 0)
+        tph = self.user.hero.get("tph", 0)
+        food_balance = self.user.hero.get("coins", 0)
+        price = tph * one_time_feed.price_in_tph
+        price = int(price) + (1 if price > int(price) else 0)
+        if price > food_balance:
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Insufficient food balance (<c>{food_balance}</c>) to feed animals, required <c>{price}</c> food.</y>"
+            )
+            return
+        self._feed_animal(one_time_feed)

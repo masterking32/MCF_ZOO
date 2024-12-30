@@ -58,6 +58,13 @@
     "description": "Automatically change name. ONLY FOR SESSIONS"
   },
   {
+    "key": "auto_feed_animals",
+    "name": "Auto feed animals",
+    "type": "checkbox",
+    "default_value": "",
+    "description": ""
+  },
+  {
     "key": "auto_upgrade_animals",
     "name": "Auto upgrade animals",
     "type": "checkbox",
