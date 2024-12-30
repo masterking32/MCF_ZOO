@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import Optional, Union, List, Dict, Tuple
+from datetime import datetime, timezone
 import time, random
 from logging import Logger
 from utilities import utilities as utils, zsutils
@@ -19,6 +20,8 @@ class AnimalMdl:
     position: Optional[int] = None
     owned: Optional[bool] = None
     upgradable: Optional[bool] = None
+    date_start: Optional[str] = None
+    date_end: Optional[str] = None
 
     @classmethod
     def from_dict(cls, data: Optional[dict]):
@@ -34,6 +37,8 @@ class AnimalMdl:
             position=data.get("position"),
             owned=data.get("owned"),
             upgradable=data.get("upgradable"),
+            date_start=data.get("date_start"),
+            date_end=data.get("date_end"),
         )
 
 
@@ -84,6 +89,8 @@ class Zoo:
                 "position": position,
                 "owned": crnt_level > 0,
                 "upgradable": crnt_level > 0 and next_level_data.get("level", 0) > 0,
+                "date_start": animal_data.get("dateStart"),
+                "date_end": animal_data.get("dateEnd"),
             }
 
             prepared_animals.append(AnimalMdl.from_dict(data))
@@ -144,7 +151,7 @@ class Zoo:
 
     def _buy_new_animals(self):
         animals = self._prepare()
-        animals = [animal for animal in animals if not animal.owned]
+        animals = [animal for animal in animals if not animal.owned and "special_" not in animal.key]
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
             balance = self.user.hero.get("coins", 0)
@@ -184,3 +191,49 @@ class Zoo:
                 f"🟡 <c>{self.mcf_api.account_name}</c> | Checking animals for upgrading..."
             )
             self._upgrade_animals()
+
+    def buy_special(self):
+        if not utils.getConfig("auto_buy_special_animals", True):
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto buy special animals <r>DISABLED</r></y>"
+            )
+            return
+
+        animals = self._prepare()
+        animals = [
+            animal
+            for animal in animals
+            if not animal.owned and "special_" in animal.key
+        ]
+        animals.sort(key=lambda animal: animal.next_lvl_price)
+        for animal in animals:
+            if animal.date_start and animal.date_end:
+                if self._can_buy_special(animal):
+                    balance = self.user.hero.get("coins", 0)
+                    if animal.next_lvl_price > balance:
+                        self.log.info(
+                            f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Isufficient balance to buy special <c>{animal.name}</c> now.</y>"
+                        )
+                        continue
+                    if self._buy_animal(animal):
+                        animals.remove(animal)
+                    else:
+                        break
+
+    def _can_buy_special(self, animal: AnimalMdl):
+        start_time = datetime.strptime(animal.date_start, "%Y-%m-%d %H:%M:%S").replace(
+            tzinfo=timezone.utc
+        )
+        end_time = datetime.strptime(animal.date_end, "%Y-%m-%d %H:%M:%S").replace(
+            tzinfo=timezone.utc
+        )
+        start_timestamp = int(start_time.timestamp())
+        end_timestamp = int(end_time.timestamp())
+        current_timestamp = int(datetime.now().timestamp())
+        if start_timestamp <= current_timestamp <= end_timestamp:
+            return True
+        else:
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>You can't buy special <c>{animal.name}</c> now.</y>"
+            )
+            return False

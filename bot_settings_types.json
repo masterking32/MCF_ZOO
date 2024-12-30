@@ -72,6 +72,13 @@
     "description": ""
   },
   {
+    "key": "auto_buy_special_animals",
+    "name": "Auto buy new special animals",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": ""
+  },
+  {
     "key": "auto_buy_animals_one",
     "name": "Buy only one animal per loop",
     "type": "checkbox",
