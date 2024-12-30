@@ -226,13 +226,15 @@ class Zoo:
         end_time = datetime.strptime(animal.date_end, "%Y-%m-%d %H:%M:%S").replace(
             tzinfo=timezone.utc
         )
+        local_start_time = start_time.astimezone()
+        local_end_time = end_time.astimezone()
         start_timestamp = int(start_time.timestamp())
         end_timestamp = int(end_time.timestamp())
         current_timestamp = int(datetime.now().timestamp())
+        balance = self.user.hero.get("coins", 0)
         if current_timestamp > end_timestamp:
             return False
         elif start_timestamp <= current_timestamp <= end_timestamp:
-            balance = self.user.hero.get("coins", 0)
             if animal.next_lvl_price > balance:
                 self.log.info(
                     f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Isufficient balance to buy special <c>{animal.name}</c> now.</y>"
@@ -244,4 +246,11 @@ class Zoo:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>You can't buy special <c>{animal.name}</c> now.</y>"
             )
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Purchase available between <c>{local_start_time}</c> and <c>{local_end_time}</c></y>"
+            )
+            if animal.next_lvl_price > balance:
+                self.log.info(
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>But you have an insufficient balance. Yours: <c>{zsutils.rnd(balance)}</c>, Required: <c>{zsutils.rnd(animal.next_lvl_price)}</c></y>"
+                )
             return False
