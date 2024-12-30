@@ -151,7 +151,11 @@ class Zoo:
 
     def _buy_new_animals(self):
         animals = self._prepare()
-        animals = [animal for animal in animals if not animal.owned and "special_" not in animal.key]
+        animals = [
+            animal
+            for animal in animals
+            if not animal.owned and "special_" not in animal.key
+        ]
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
             balance = self.user.hero.get("coins", 0)
@@ -208,17 +212,12 @@ class Zoo:
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
             if animal.date_start and animal.date_end:
-                if self._can_buy_special(animal):
-                    balance = self.user.hero.get("coins", 0)
-                    if animal.next_lvl_price > balance:
-                        self.log.info(
-                            f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Isufficient balance to buy special <c>{animal.name}</c> now.</y>"
-                        )
-                        continue
-                    if self._buy_animal(animal):
-                        animals.remove(animal)
-                    else:
-                        break
+                if not self._can_buy_special(animal):
+                    continue
+                if self._buy_animal(animal):
+                    animals.remove(animal)
+                else:
+                    break
 
     def _can_buy_special(self, animal: AnimalMdl):
         start_time = datetime.strptime(animal.date_start, "%Y-%m-%d %H:%M:%S").replace(
@@ -230,8 +229,17 @@ class Zoo:
         start_timestamp = int(start_time.timestamp())
         end_timestamp = int(end_time.timestamp())
         current_timestamp = int(datetime.now().timestamp())
-        if start_timestamp <= current_timestamp <= end_timestamp:
-            return True
+        if current_timestamp > end_timestamp:
+            return False
+        elif start_timestamp <= current_timestamp <= end_timestamp:
+            balance = self.user.hero.get("coins", 0)
+            if animal.next_lvl_price > balance:
+                self.log.info(
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Isufficient balance to buy special <c>{animal.name}</c> now.</y>"
+                )
+                return False
+            else:
+                return True
         else:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>You can't buy special <c>{animal.name}</c> now.</y>"
