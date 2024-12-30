@@ -319,7 +319,7 @@ class Zoo:
         self.log.info(
             f"🟡 <c>{self.mcf_api.account_name}</c> | <y>The animals need to be fed, the mining has been stopped..</y>"
         )
-        if not utils.getConfig("auto_feed_animals", False):
+        if not utils.getConfig("auto_feed_animals", True):
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto feed animals <r>DISABLED</r></y>"
             )

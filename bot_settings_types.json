@@ -61,7 +61,7 @@
     "key": "auto_feed_animals",
     "name": "Auto feed animals",
     "type": "checkbox",
-    "default_value": "",
+    "default_value": "on",
     "description": ""
   },
   {
