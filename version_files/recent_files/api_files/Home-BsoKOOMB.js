@@ -15,12 +15,12 @@ import {
   T as N,
   u as P,
   n as B,
-  h as T,
+  h as _,
   i as I,
   v as H
-} from "./index-D_fy7ywz.js";
-import z from "./Alliance-CKpV2o2l.js";
-import K from "./Boost-G0cTEbEb.js";
+} from "./index-BXVzwBqk.js";
+import z from "./Alliance-Dt1cCPbB.js";
+import K from "./Boost-DaGjssdT.js";
 const O = {
     name: "Feed-g",
     components: {},
@@ -189,7 +189,7 @@ function te(e, s, d, c, r, o) {
       "right-icon": p(() => [h(g, {
         type: "success",
         size: "small",
-        onClick: _ => o.buyAutoFeed(w),
+        onClick: T => o.buyAutoFeed(w),
         loading: r.isBuyLoading
       }, {
         default: p(() => [h(v, {
@@ -579,7 +579,7 @@ const ne = M(O, [
         this.isShowChangeLocation = !0, await this._completeOnboarding(this.onBoard.changeLocation)
       },
       getBuildingImg(e, s = 1) {
-        return ["doge", "pepe", "capybara", "platypus", "special_icecream"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v2" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
+        return ["capybara", "cat", "dog", "doge", "pepe", "platypus", "seal", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v2" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
       },
       buyPopup(e) {
         this.openPoint = e, this.isBuyPopupShow = !0
@@ -710,7 +710,7 @@ const ne = M(O, [
     key: 1,
     class: "container"
   },
-  Te = {
+  _e = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
@@ -719,7 +719,7 @@ const ne = M(O, [
       margin: "15px 0 15px 0"
     }
   },
-  _e = ["src"],
+  Te = ["src"],
   Fe = {
     class: "desc"
   },
@@ -942,7 +942,7 @@ function Cs(e, s, d, c, r, o) {
     f = y("van-popup"),
     b = y("van-button"),
     w = y("alliance-g"),
-    _ = y("boost-g"),
+    T = y("boost-g"),
     D = y("feed-g");
   return l(), a("div", null, [h(g, {
     onOpenFeedDetails: o.openFeedDetails
@@ -975,7 +975,7 @@ function Cs(e, s, d, c, r, o) {
     }
   }, null, -1)]))) : (l(), a("div", {
     key: 1,
-    class: T(["level", {
+    class: _(["level", {
       aniLevel: r.animateAnimalKeys.includes(n.animalKey)
     }])
   }, [h(v, {
@@ -988,7 +988,7 @@ function Cs(e, s, d, c, r, o) {
     _: 2
   }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", de)) : k("", !0)], 2))])) : (l(), a("div", {
     key: 1,
-    class: T(["emptySlot", {
+    class: _(["emptySlot", {
       winter: n.isWinter
     }]),
     style: B({
@@ -1092,7 +1092,7 @@ function Cs(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : k("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ee, [t("div", Te, i(e.t("Select animal")), 1), (l(!0), a(m, null, C(o.availableForBuyAnimalList, n => (l(), a("div", {
+    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : k("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ee, [t("div", _e, i(e.t("Select animal")), 1), (l(!0), a(m, null, C(o.availableForBuyAnimalList, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1101,7 +1101,7 @@ function Cs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, _e)]), t("div", Fe, [t("div", Me, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
+    }, null, 8, Te)]), t("div", Fe, [t("div", Me, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
       class: "tph24"
     }, null, -1)), s[22] || (s[22] = u()), t("span", De, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(b, {
       round: "",
@@ -1218,7 +1218,7 @@ function Cs(e, s, d, c, r, o) {
       default: p(() => [t("div", ns, [t("h2", null, i(e.t("Change location for {animalTitle}", {
         animalTitle: o.openAnimal.title
       })), 1), o.freePoints.length > 0 ? (l(), a("div", is, [t("div", os, [(l(!0), a(m, null, C(o.freePoints, n => (l(), a("div", {
-        class: T(["freePoint clicked flexCenter", {
+        class: _(["freePoint clicked flexCenter", {
           active: r.newLocation === n
         }]),
         onClick: A => r.newLocation = n
@@ -1296,7 +1296,7 @@ function Cs(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [h(_)]),
+    default: p(() => [h(T)]),
     _: 1
   }, 8, ["show"]), h(f, {
     show: r.isShowFeed,
@@ -1313,11 +1313,11 @@ function Cs(e, s, d, c, r, o) {
     _: 1
   }, 8, ["show"])])
 }
-const Ts = M(oe, [
+const _s = M(oe, [
   ["render", Cs],
-  ["__scopeId", "data-v-195e6939"]
+  ["__scopeId", "data-v-6d838ab0"]
 ]);
 export {
-  Ts as
+  _s as
   default
 };
