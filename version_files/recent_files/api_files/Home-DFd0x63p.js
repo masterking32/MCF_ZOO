@@ -7,7 +7,7 @@ import {
   b as h,
   w as p,
   d as u,
-  e as k,
+  e as b,
   F as m,
   r as C,
   f as L,
@@ -18,9 +18,9 @@ import {
   h as _,
   i as I,
   v as H
-} from "./index-BXVzwBqk.js";
-import z from "./Alliance-Dt1cCPbB.js";
-import K from "./Boost-DaGjssdT.js";
+} from "./index-B1StPXNy.js";
+import z from "./Alliance-DDZ9aBlZ.js";
+import K from "./Boost-CTHxRx5G.js";
 const O = {
     name: "Feed-g",
     components: {},
@@ -132,7 +132,7 @@ const O = {
   };
 
 function te(e, s, d, c, r, o) {
-  var f, b;
+  var f, k;
   const g = y("van-button"),
     v = y("van-badge"),
     S = y("van-cell"),
@@ -152,9 +152,9 @@ function te(e, s, d, c, r, o) {
       class: "coin25"
     }, null, -1)), u(" " + i(e._number(o.calcPrice(o.instantItem))), 1)]),
     _: 1
-  }, 8, ["loading"])])) : (b = e.uFeed) != null && b.autoFeedEndDateStr ? (l(), a("div", G, [t("div", X, i(e.t("Automatic animal feeding is active")), 1), t("div", R, i(e.t("Time Remaining: {TIME}", {
+  }, 8, ["loading"])])) : (k = e.uFeed) != null && k.autoFeedEndDateStr ? (l(), a("div", G, [t("div", X, i(e.t("Automatic animal feeding is active")), 1), t("div", R, i(e.t("Time Remaining: {TIME}", {
     TIME: e.uFeed.autoFeedEndDateStr
-  })), 1)])) : k("", !0), t("ul", j, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
+  })), 1)])) : b("", !0), t("ul", j, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), t("li", null, i(e.t("Feeding time occurs eight times at random intervals throughout the day.")), 1), t("li", {
     innerHTML: e.t("The cost of one feeding depends on the Tokens per Hour and is currently <b>{count} {IMG_COIN} {COIN_NAME}</b>.", {
@@ -579,7 +579,7 @@ const ne = M(O, [
         this.isShowChangeLocation = !0, await this._completeOnboarding(this.onBoard.changeLocation)
       },
       getBuildingImg(e, s = 1) {
-        return ["capybara", "cat", "dog", "doge", "pepe", "platypus", "seal", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v2" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
+        return ["capybara", "cat", "dog", "doge", "pepe", "platypus", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
       },
       buyPopup(e) {
         this.openPoint = e, this.isBuyPopupShow = !0
@@ -686,8 +686,8 @@ const ne = M(O, [
       "margin-top": "15px"
     }
   },
-  be = ["src"],
-  ke = {
+  ke = ["src"],
+  be = {
     class: "desc"
   },
   Ce = {
@@ -922,14 +922,14 @@ const ne = M(O, [
       "background-image": "url('/assets/img/decor/icon_feed_on.png')"
     }
   },
-  bs = {
+  ks = {
     key: 2,
     class: "flyBtnIcon",
     style: {
       "background-image": "url('/assets/img/decor/icon_feed_off.png')"
     }
   },
-  ks = {
+  bs = {
     class: "flyBtnTitle nowrap"
   };
 
@@ -940,7 +940,7 @@ function Cs(e, s, d, c, r, o) {
     S = y("van-count-down"),
     E = y("van-loading"),
     f = y("van-popup"),
-    b = y("van-button"),
+    k = y("van-button"),
     w = y("alliance-g"),
     T = y("boost-g"),
     D = y("feed-g");
@@ -986,7 +986,7 @@ function Cs(e, s, d, c, r, o) {
   }, {
     default: p(() => [u(" +" + i(e._numberShort(n.animalProfit)), 1)]),
     _: 2
-  }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", de)) : k("", !0)], 2))])) : (l(), a("div", {
+  }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", de)) : b("", !0)], 2))])) : (l(), a("div", {
     key: 1,
     class: _(["emptySlot", {
       winter: n.isWinter
@@ -1070,9 +1070,9 @@ function Cs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, be)]), t("div", ke, [t("div", Ce, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[16] || (s[16] = t("span", {
+    }, null, 8, ke)]), t("div", be, [t("div", Ce, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[16] || (s[16] = t("span", {
       class: "tph24"
-    }, null, -1)), s[17] || (s[17] = u()), t("span", Se, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(b, {
+    }, null, -1)), s[17] || (s[17] = u()), t("span", Se, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
       round: "",
       type: "success",
       onClick: A => o.buy(n.key, n.level1data.price, !0),
@@ -1092,7 +1092,7 @@ function Cs(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : k("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ee, [t("div", _e, i(e.t("Select animal")), 1), (l(!0), a(m, null, C(o.availableForBuyAnimalList, n => (l(), a("div", {
+    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : b("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ee, [t("div", _e, i(e.t("Select animal")), 1), (l(!0), a(m, null, C(o.availableForBuyAnimalList, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1103,7 +1103,7 @@ function Cs(e, s, d, c, r, o) {
       }
     }, null, 8, Te)]), t("div", Fe, [t("div", Me, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
       class: "tph24"
-    }, null, -1)), s[22] || (s[22] = u()), t("span", De, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(b, {
+    }, null, -1)), s[22] || (s[22] = u()), t("span", De, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
       round: "",
       type: "success",
       onClick: A => o.buy(n.key, n.level1data.price, !0),
@@ -1113,7 +1113,7 @@ function Cs(e, s, d, c, r, o) {
         class: "coin25"
       }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(b, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(k, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
@@ -1142,7 +1142,7 @@ function Cs(e, s, d, c, r, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Ye, i(e.t("Missed offer")), 1))])]))), 128))])) : k("", !0)]),
+    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Ye, i(e.t("Missed offer")), 1))])]))), 128))])) : b("", !0)]),
     _: 1
   }, 8, ["show"]), h(f, {
     show: r.isUpgradePopupShow,
@@ -1185,13 +1185,13 @@ function Cs(e, s, d, c, r, o) {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[30] || (s[30] = t("span", {
       class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", qe, i(e.t("This is the maximum level.")), 1)) : k("", !0), o.openAnimal.isMaxLevel ? k("", !0) : (l(), a("div", Ve, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
+    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", qe, i(e.t("This is the maximum level.")), 1)) : b("", !0), o.openAnimal.isMaxLevel ? b("", !0) : (l(), a("div", Ve, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[31] || (s[31] = t("span", {
       class: "tph24"
     }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", $e, [t("div", es, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[32] || (s[32] = t("br", null, null, -1)), s[33] || (s[33] = t("span", {
       class: "tph50"
-    }, null, -1)), t("span", ss, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(b, {
+    }, null, -1)), t("span", ss, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(k, {
       type: "success",
       size: "large",
       onClick: s[4] || (s[4] = n => o.buy(o.openAnimal.key, o.openAnimal.nextLevelData.price)),
@@ -1222,7 +1222,7 @@ function Cs(e, s, d, c, r, o) {
           active: r.newLocation === n
         }]),
         onClick: A => r.newLocation = n
-      }, i(n), 11, ls))), 256))]), s[36] || (s[36] = t("br", null, null, -1)), h(b, {
+      }, i(n), 11, ls))), 256))]), s[36] || (s[36] = t("br", null, null, -1)), h(k, {
         type: "success",
         size: "large",
         onClick: o.changeLocation,
@@ -1256,7 +1256,7 @@ function Cs(e, s, d, c, r, o) {
       }, [t("div", ys, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", gs, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ms))]), t("div", vs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
     }),
     _: 1
-  }, 8, ["dot"])) : k("", !0), e.uHero.tph > 0 ? (l(), L(v, {
+  }, 8, ["dot"])) : b("", !0), e.uHero.tph > 0 ? (l(), L(v, {
     key: 1,
     dot: !e.uFeed.autoFeedEndDateStr && e.uHero.tph > 300
   }, {
@@ -1265,14 +1265,14 @@ function Cs(e, s, d, c, r, o) {
       return [t("div", {
         class: "flyBtn",
         onClick: s[9] || (s[9] = Ss => r.isShowFeed = !0)
-      }, [t("div", fs, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", ws)) : (A = e.uFeed) != null && A.autoFeedEndDateStr ? (l(), a("div", As)) : (l(), a("div", bs))]), t("div", ks, [e.uFeed.isNeedFeed ? (l(), a(m, {
+      }, [t("div", fs, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", ws)) : (A = e.uFeed) != null && A.autoFeedEndDateStr ? (l(), a("div", As)) : (l(), a("div", ks))]), t("div", bs, [e.uFeed.isNeedFeed ? (l(), a(m, {
         key: 0
       }, [u(i(e.t("HUNGER")), 1)], 64)) : (l(), a(m, {
         key: 1
       }, [u(i(e.uFeed.autoFeedEndDateStr ? e.uFeed.autoFeedEndDateStr : e.t("Feeding")), 1)], 64))])])]
     }),
     _: 1
-  }, 8, ["dot"])) : k("", !0)]), h(f, {
+  }, 8, ["dot"])) : b("", !0)]), h(f, {
     show: r.isShowAlliance,
     "onUpdate:show": s[10] || (s[10] = n => r.isShowAlliance = n),
     position: "right",
@@ -1315,7 +1315,7 @@ function Cs(e, s, d, c, r, o) {
 }
 const _s = M(oe, [
   ["render", Cs],
-  ["__scopeId", "data-v-6d838ab0"]
+  ["__scopeId", "data-v-08c3fa3d"]
 ]);
 export {
   _s as
