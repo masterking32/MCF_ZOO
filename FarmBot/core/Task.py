@@ -89,7 +89,7 @@ class Task:
 
             if resp is None or not resp.get("success"):
                 raise Exception(
-                    f"Failed to check task <c<{task_key}</c>, response: <m>{resp}</m>"
+                    f"Failed to check task <c>{task_key}</c>, response: <m>{resp}</m>"
                 )
 
             success = resp.get("success")
@@ -118,7 +118,7 @@ class Task:
 
             if resp is None or not resp.get("success"):
                 raise Exception(
-                    f"Failed to check task <c<{task_key}</c>, response: <m>{resp}</m>"
+                    f"Failed to check task <c>{task_key}</c>, response: <m>{resp}</m>"
                 )
 
             success = resp.get("success")
