@@ -6,7 +6,7 @@
 
 from datetime import datetime
 from pathlib import Path
-import os
+from datetime import datetime, timezone
 import sys
 import urllib.parse
 import json
@@ -17,6 +17,19 @@ from hashlib import md5
 MODULE_DIR = Path(__file__).resolve().parents[1]
 MASTER_CRYPTO_FARM_BOT_DIR = Path(__file__).resolve().parents[3]
 sys.path.append(str(MASTER_CRYPTO_FARM_BOT_DIR))
+
+
+def get_time(time: str):
+    if time == "":
+        return None
+    utc_time = datetime.strptime(time, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
+    local_time = utc_time.astimezone()
+    timestamp = int(utc_time.timestamp())
+    return {
+        "utc": utc_time,
+        "local": local_time,
+        "timestamp": timestamp,
+    }
 
 
 def wad_to_json(input_string):
@@ -40,7 +53,7 @@ def get_api_time():
 def get_api_hash(timestamp, payload):
     payload = json.dumps(payload)
     encoded = urllib.parse.quote(f"{timestamp}_{payload}")
-    hash = md5(encoded.encode('utf-8')).hexdigest()
+    hash = md5(encoded.encode("utf-8")).hexdigest()
     return hash
 
 

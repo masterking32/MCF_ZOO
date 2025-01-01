@@ -311,9 +311,21 @@ class Zoo:
             return False
 
     def feed_animals(self):
+        auto_feed_end = zsutils.get_time(self.feed_status.get("autoFeedEndDate", ""))
+        next_feed_time = zsutils.get_time(self.feed_status.get("nextFeedTime", ""))
         if not self._is_feed_required():
             self.log.info(
                 f"🟢 <c>{self.mcf_api.account_name}</c> | Animals don't need feeding."
+            )
+            utc = auto_feed_end.get("utc")
+            local = auto_feed_end.get("local")
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Auto feed end: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
+            )
+            utc = next_feed_time.get("utc")
+            local = next_feed_time.get("local")
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Next feed time: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
             )
             return
         self.log.info(
@@ -322,6 +334,16 @@ class Zoo:
         if not utils.getConfig("auto_feed_animals", True):
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto feed animals <r>DISABLED</r></y>"
+            )
+            utc = auto_feed_end.get("utc")
+            local = auto_feed_end.get("local")
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Auto feed end: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
+            )
+            utc = next_feed_time.get("utc")
+            local = next_feed_time.get("local")
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Next feed time: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
             )
             return
 
