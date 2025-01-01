@@ -281,7 +281,7 @@ class Task:
                     continue
                 continue
 
-            if task_key == "name_check_giraffe":
+            if task_key in ["name_check_giraffe", "name_check_snake"]:
                 if not utils.getConfig("auto_change_name", True):
                     self.log.info(
                         f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto change name <r>DISABLED</r></y>"
