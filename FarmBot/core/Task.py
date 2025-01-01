@@ -141,9 +141,9 @@ class Task:
         reward = zsutils.rnd(task.get("reward", 0))
         task_name = task.get("title", "").strip()
         if "chest_" in task.get("key", ""):
-            title_time = datetime.strptime(task["actionTo"], "%Y-%m-%d %H:%M:%S").replace(
-                tzinfo=timezone.utc
-            )
+            title_time = datetime.strptime(
+                task["actionTo"], "%Y-%m-%d %H:%M:%S"
+            ).replace(tzinfo=timezone.utc)
             local_title_time = title_time.astimezone()
             end_time = datetime.strptime(task["dateEnd"], "%Y-%m-%d %H:%M:%S").replace(
                 tzinfo=timezone.utc
@@ -318,9 +318,15 @@ class Task:
             if "riddle_" in task_key.lower() or "rebus_" in task_key.lower():
                 check_data = task.get("checkData")
                 if not check_data:
+                    self.log.info(
+                        f"🟠 <c>{self.mcf_api.account_name}</c> | <r>Task object does not contain an answer.</r>"
+                    )
                     continue
-                if not self._check_task(task, check_data):
-                    continue
+                task_type = task_key.lower().split("_")[0]
+                self.log.info(
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Attempting to answer the {task_type}: <c>{check_data}</c></y>"
+                )
+                self._check_task(task, check_data)
                 continue
 
             if "chest_" in task_key.lower():
