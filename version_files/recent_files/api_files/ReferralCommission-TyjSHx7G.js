@@ -14,7 +14,7 @@ import {
   F as C,
   r as T,
   f as S
-} from "./index-COWaBo38.js";
+} from "./index-FfZTaKAn.js";
 const D = {
     async mounted() {
       await this.loadPageData()
