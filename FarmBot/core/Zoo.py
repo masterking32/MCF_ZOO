@@ -81,20 +81,28 @@ class Zoo:
     def _prepare(self):
         owned_animals = self.user.animals
         prepared_animals: list[AnimalMdl] = []
+        max_position = 34
+
+        total_positions = set(range(1, max_position + 1))
+        occupied_positions = {o["position"] for o in owned_animals}
+        free_positions = iter(sorted(total_positions - occupied_positions))
+
         for animal_data in self.user.animals_data:
             key = animal_data["key"]
             name = animal_data["title"]
             owned_animal = self._find_by_key(owned_animals, key)
 
-            position = (
-                owned_animal["position"]
-                if owned_animal
-                else (
-                    max([o["position"] for o in owned_animals]) + 1
-                    if owned_animals
-                    else 1
-                )
-            )
+            if owned_animal:
+                position = owned_animal["position"]
+            else:
+                try:
+                    position = next(free_positions)
+                except Exception:
+                    self.log.info(
+                        f"🟠 <c>{self.mcf_api.account_name}</c> | <y>No available positions.</y>"
+                    )
+                    break
+
             crnt_level = owned_animal["level"] if owned_animal else 0
             next_level = crnt_level + 1
 
@@ -338,7 +346,7 @@ class Zoo:
             utc = auto_feed_end.get("utc")
             local = auto_feed_end.get("local")
             self.log.info(
-                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Auto feed end: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Auto feed end:  UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
             )
             utc = next_feed_time.get("utc")
             local = next_feed_time.get("local")
@@ -358,3 +366,36 @@ class Zoo:
             )
             return
         self._feed_animal(one_time_feed)
+
+    def change_position(self, animal: AnimalMdl, new_pos: int):
+        try:
+            old_pos = animal.position
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Changing position for <c>{animal.name}</c> from <c>{old_pos}</c> to <g>{new_pos}</g>.</y>"
+            )
+            payload = {
+                "animalKey": animal.key,
+                "position": new_pos,
+            }
+            resp = self.requests.post_request(
+                "/animal/position",
+                payload,
+            )
+
+            if resp is None or not resp.get("success"):
+                raise Exception(
+                    f"Failed to change position for <c>{animal.name}</c> from <c>{old_pos}</c> to <g>{new_pos}</g>, response: <m>{resp}</m>"
+                )
+
+            is_success = resp.get("success")
+
+            if is_success:
+                self.log.info(
+                    f"🟢 <c>{self.mcf_api.account_name}</c> | <g>Position changed for <c>{animal.name}</c> from <c>{old_pos}</c> to <g>{new_pos}</g>.</g>"
+                )
+
+            return is_success
+        except Exception as e:
+            msg = str(e) if str(e) else "Unknown error."
+            self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
+            return False
