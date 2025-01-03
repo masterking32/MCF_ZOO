@@ -311,7 +311,7 @@ class Zoo:
             self.log.info(
                 f"🟢 <c>{self.mcf_api.account_name}</c> | <g>The animals are fed successfully.</g>"
             )
-            self._feed_log()
+            self._feed_time_log()
 
             return is_success
         except Exception as e:
@@ -319,28 +319,29 @@ class Zoo:
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
             return False
         
-    def _feed_log(self):
-        auto_feed_end = zsutils.get_time(self.feed_status.get("autoFeedEndDate", ""))
-        next_feed_time = zsutils.get_time(self.feed_status.get("nextFeedTime", ""))
-        utc = auto_feed_end.get("utc")
-        local = auto_feed_end.get("local")
-        self.log.info(
-            f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Auto feed end:  UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
-        )
-        utc = next_feed_time.get("utc")
-        local = next_feed_time.get("local")
-        self.log.info(
-            f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Next feed time: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
-        )
+    def _feed_time_log(self):
+        try:
+            auto_feed_end = zsutils.get_time(self.feed_status.get("autoFeedEndDate", ""))
+            next_feed_time = zsutils.get_time(self.feed_status.get("nextFeedTime", ""))
+            utc = auto_feed_end.get("utc")
+            local = auto_feed_end.get("local")
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Auto feed end:  UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
+            )
+            utc = next_feed_time.get("utc")
+            local = next_feed_time.get("local")
+            self.log.info(
+                f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Next feed time: UTC: <c>{utc}</c> | LOCAL: <c>{local}</c></y>"
+            )
+        except Exception:
+            pass
 
     def feed_animals(self):
-        auto_feed_end = zsutils.get_time(self.feed_status.get("autoFeedEndDate", ""))
-        next_feed_time = zsutils.get_time(self.feed_status.get("nextFeedTime", ""))
         if not self._is_feed_required():
             self.log.info(
                 f"🟢 <c>{self.mcf_api.account_name}</c> | Animals don't need feeding."
             )
-            self._feed_log()
+            self._feed_time_log()
             return
         self.log.info(
             f"🟡 <c>{self.mcf_api.account_name}</c> | <y>The animals need to be fed, the mining has been stopped..</y>"
@@ -349,7 +350,7 @@ class Zoo:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto feed animals <r>DISABLED</r></y>"
             )
-            self._feed_log()
+            self._feed_time_log()
             return
 
         one_time_feed = next(feed for feed in self.feed_data if feed.duration == 0)
