@@ -167,11 +167,6 @@ class Alliance:
             return
         self._get_alliances()
         target_alliance_id = utils.getConfig("user_alliance_id", 178)
-        if target_alliance_id == 0:
-            self.log.info(
-                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Target alliance ID for join is 0, auto join alliance <r>CANCELED</r></y>"
-            )
-            return
         target_alliance = next(
             (al for al in self.alliances if al.id == target_alliance_id),
             None,
