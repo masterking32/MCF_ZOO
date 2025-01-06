@@ -179,7 +179,7 @@ class Alliance:
         coins = self.user.hero.get("coins", 0)
         if coins < target_alliance.enter_fee:
             self.log.info(
-                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Insufficient balance to join an alliance. Yours: <c>{zsutils.rnd(coins)}</c>, Required: <c>{zsutils.rnd(target_alliance.enter_fee)}</y>"
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Insufficient balance to join an alliance. Yours: <c>{zsutils.rnd(coins)}</c>, Required: <c>{zsutils.rnd(target_alliance.enter_fee)}</c></y>"
             )
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto join alliance <r>CANCELED</r></y>"
