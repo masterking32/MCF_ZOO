@@ -186,7 +186,9 @@ class Zoo:
         animals = [
             animal
             for animal in animals
-            if not animal.owned and "special_" not in animal.key
+            if not animal.owned
+            and "special_" not in animal.key
+            and animal.key not in ["attraction"]
         ]
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
@@ -239,7 +241,8 @@ class Zoo:
         animals = [
             animal
             for animal in animals
-            if not animal.owned and "special_" in animal.key
+            if not animal.owned
+            and ("special_" in animal.key or animal.key in ["attraction"])
         ]
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
@@ -318,10 +321,12 @@ class Zoo:
             msg = str(e) if str(e) else "Unknown error."
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
             return False
-        
+
     def _feed_time_log(self):
         try:
-            auto_feed_end = zsutils.get_time(self.feed_status.get("autoFeedEndDate", ""))
+            auto_feed_end = zsutils.get_time(
+                self.feed_status.get("autoFeedEndDate", "")
+            )
             next_feed_time = zsutils.get_time(self.feed_status.get("nextFeedTime", ""))
             utc = auto_feed_end.get("utc")
             local = auto_feed_end.get("local")
