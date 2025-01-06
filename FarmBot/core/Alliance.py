@@ -23,8 +23,8 @@ class AllianceMdl:
 
     @classmethod
     def from_dict(cls, data: Optional[dict]):
-        if data is None:
-            return cls()
+        if data is None or not isinstance(data, dict):
+            return None
         return cls(
             id=data.get("id"),
             owner_id=data.get("ownerId"),
@@ -45,7 +45,7 @@ class Alliance:
         self.requests: Requests = requests
         self.mcf_api: MCFAPI = mcf_api
         self.user: User = user
-        self.alliances = []
+        self.alliances: list[AllianceMdl] = []
 
     def _get_alliances(self):
         try:
@@ -62,7 +62,7 @@ class Alliance:
             success = resp.get("success")
 
             data = resp.get("data", [])
-            self.alliances = data
+            self.alliances = [AllianceMdl.from_dict(al) for al in data]
 
             return self.alliances
         except Exception as e:
@@ -85,7 +85,7 @@ class Alliance:
             success = resp.get("success")
 
             data = resp.get("data", {})
-            self.user.alliance = AllianceMdl.from_dict(data.get("alliance"))
+            self.user.alliance = data.get("alliance")
             self.user.hero = data.get("hero")
 
             return success
@@ -131,14 +131,14 @@ class Alliance:
             )
 
             if resp is None:
-                raise Exception(f"Failed leave from alliances, response: <m>{resp}</m>")
+                raise Exception(f"Failed leave from alliance, response: <m>{resp}</m>")
 
-            success = resp.get("success")
+            is_success = resp.get("success")
 
             data = resp.get("data", [])
-            self.alliances = data
+            self.alliances = [AllianceMdl.from_dict(al) for al in data]
 
-            return self.alliances
+            return is_success
         except Exception as e:
             msg = str(e) if str(e) else "Unknown error."
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
@@ -164,28 +164,56 @@ class Alliance:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto join alliance <r>DISABLED</r></y>"
             )
-            return True
-        if self.user.alliance:
-            self._print_alliance_info(AllianceMdl.from_dict(self.user.alliance))
-            return True
-        target_alliance_id = utils.getConfig("user_alliance_id", 0)
+            return
+        self._get_alliances()
+        target_alliance_id = utils.getConfig("user_alliance_id", 178)
         if target_alliance_id == 0:
-            return True
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Target alliance ID for join is 0, auto join alliance <r>CANCELED</r></y>"
+            )
+            return
+        target_alliance = next(
+            (al for al in self.alliances if al.id == target_alliance_id),
+            None,
+        )
+        if not target_alliance:
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Target alliance to join is not found in alliances list, auto join alliance <r>CANCELLED</r></y>"
+            )
+            return
+        current_alliance = AllianceMdl.from_dict(self.user.alliance)
+        if current_alliance:
+            if current_alliance.id == target_alliance.id:
+                self._print_alliance_info(current_alliance)
+                return
+            if not utils.getConfig("auto_leave_alliance", False):
+                self.log.info(
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Target alliance ID does not match the current alliance.</y>"
+                )
+                self.log.info(
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto join alliance <r>CANCELED</r> because auto leave alliance <r>DISABLED</r></y>"
+                )
+                self._print_alliance_info(current_alliance)
+                return
+            if not self._leave_alliance():
+                return
 
         self._get_alliances()
-        if self._join_alliance(target_alliance_id):
+        if self._join_alliance(target_alliance.id):
             self._get_alliances()
             self._print_alliance_info(AllianceMdl.from_dict(self.user.alliance))
 
     def donate_alliance(self):
         if not self.user.alliance:
             return True
-        donation_percent = float(utils.getConfig("auto_donate_alliance", 1) / 100)
+        donation_percent = utils.getConfig("auto_donate_alliance", 1)
         if donation_percent <= 0:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto food donation to the alliance <r>DISABLED</r></y>"
             )
             return True
+
+        donation_percent = float(donation_percent / 100)
         coins = self.user.hero.get("coins", 0)
         amount = int(coins * donation_percent)
         limit = utils.getConfig("donate_limit_balance", 1000)
