@@ -112,7 +112,7 @@
     "key": "auto_leave_alliance",
     "name": "Auto leave alliance",
     "type": "checkbox",
-    "default_value": "on",
+    "default_value": "",
     "description": "Automatically leave an alliance if the current alliance ID does not match the alliance ID of the alliance you want to automatically join."
   },
   {
