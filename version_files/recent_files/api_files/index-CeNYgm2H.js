@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CpSyrNiT.js", "assets/Alliance-BKCaqSrB.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-DeN6WRJo.js", "assets/Boost-DDb4GCY_.css", "assets/Home-BE5w9kLX.css", "assets/Rating-D-Tw8VAq.js", "assets/Rating-DRysk5eI.css", "assets/Communities-HzpwRlfZ.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BMARXG0k.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DbJOVWIW.js", "assets/Alliance-BtoZtTCH.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CZ_YaPX3.js", "assets/Boost-DDb4GCY_.css", "assets/Home-BE5w9kLX.css", "assets/Rating-DnjtD0fk.js", "assets/Rating-DRysk5eI.css", "assets/Communities-C3s8BZCs.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-DhADTCHN.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -18044,16 +18044,16 @@ const jS = "modulepreload",
   };
 
 function qS(e, t, n, o, s, a) {
-  return W(), ae("div", YS, t[0] || (t[0] = [$v('<h1 class="center" data-v-8a4f7e00>Zoo Terms of Use</h1><div class="center" data-v-8a4f7e00>Last Updated: 12/12/2024</div><h2 data-v-8a4f7e00>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-8a4f7e00>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-8a4f7e00>• Company - the legal entity named Zorimal Ltd. <br data-v-8a4f7e00>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-8a4f7e00>• Alliance - consolidation of the App Users in the App. <br data-v-8a4f7e00>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-8a4f7e00>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-8a4f7e00>• Interface - the visible part of the App. <br data-v-8a4f7e00>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-8a4f7e00>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-8a4f7e00>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-8a4f7e00>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-8a4f7e00>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands. This agreement regulates your access to and use of the App. <br data-v-8a4f7e00>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-8a4f7e00>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-8a4f7e00>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-8a4f7e00>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-8a4f7e00>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-8a4f7e00>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-8a4f7e00>3. The App&#39;s Mechanics</h2><h3 data-v-8a4f7e00>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-8a4f7e00>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-8a4f7e00>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-8a4f7e00>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-8a4f7e00>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-8a4f7e00>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-8a4f7e00>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-8a4f7e00>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-8a4f7e00>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-8a4f7e00>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-8a4f7e00>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-8a4f7e00>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-8a4f7e00>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-8a4f7e00>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-8a4f7e00>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-8a4f7e00>4. Prohibited Activities</h2> Using of any form of technical automation, including but not limited to bots, scripts, or other automated tools, to interact with or manipulate the App is strictly prohibited. Using of any other form of disruption to the mechanics of the App, including but not limited to refunding Telegram Stars for in-app purchases, is also strictly prohibited. Such actions may lead to immediate account suspension or a permanent ban without prior notice. <h2 data-v-8a4f7e00>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-8a4f7e00>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-8a4f7e00>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-8a4f7e00>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-8a4f7e00>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-8a4f7e00>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-8a4f7e00>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-8a4f7e00>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-8a4f7e00>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-8a4f7e00>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-8a4f7e00>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-8a4f7e00>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-8a4f7e00>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-8a4f7e00>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-8a4f7e00>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-8a4f7e00>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-8a4f7e00>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-8a4f7e00>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-8a4f7e00>Telegram Mini App Terms of Use</a>. <h2 data-v-8a4f7e00>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
+  return W(), ae("div", YS, t[0] || (t[0] = [$v('<h1 class="center" data-v-6ae2a584>Zoo Terms of Use</h1><div class="center" data-v-6ae2a584>Last Updated: 12/12/2024</div><h2 data-v-6ae2a584>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-6ae2a584>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-6ae2a584>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-6ae2a584>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-6ae2a584>• Alliance - consolidation of the App Users in the App. <br data-v-6ae2a584>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-6ae2a584>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-6ae2a584>• Interface - the visible part of the App. <br data-v-6ae2a584>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-6ae2a584>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-6ae2a584>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-6ae2a584>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-6ae2a584>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-6ae2a584>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-6ae2a584>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-6ae2a584>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-6ae2a584>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-6ae2a584>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-6ae2a584>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-6ae2a584>3. The App&#39;s Mechanics</h2><h3 data-v-6ae2a584>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-6ae2a584>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-6ae2a584>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-6ae2a584>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-6ae2a584>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-6ae2a584>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-6ae2a584>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-6ae2a584>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-6ae2a584>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-6ae2a584>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-6ae2a584>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-6ae2a584>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-6ae2a584>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-6ae2a584>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-6ae2a584>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-6ae2a584>4. Prohibited Activities</h2> Using of any form of technical automation, including but not limited to bots, scripts, or other automated tools, to interact with or manipulate the App is strictly prohibited. Using of any other form of disruption to the mechanics of the App, including but not limited to refunding Telegram Stars for in-app purchases, is also strictly prohibited. Such actions may lead to immediate account suspension or a permanent ban without prior notice. <h2 data-v-6ae2a584>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-6ae2a584>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-6ae2a584>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-6ae2a584>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-6ae2a584>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-6ae2a584>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-6ae2a584>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-6ae2a584>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-6ae2a584>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-6ae2a584>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-6ae2a584>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-6ae2a584>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-6ae2a584>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-6ae2a584>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-6ae2a584>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-6ae2a584>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-6ae2a584>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-6ae2a584>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-6ae2a584>Telegram Mini App Terms of Use</a>. <h2 data-v-6ae2a584>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
 }
 const GS = St(KS, [
     ["render", qS],
-    ["__scopeId", "data-v-8a4f7e00"]
+    ["__scopeId", "data-v-6ae2a584"]
   ]),
   ZS = "/assets/onboarding_1-C7MzEQXq.jpg",
   XS = "/assets/onboarding_2-UoTZ07w1.jpg",
   JS = "/assets/onboarding_3-CzE3Yyga.jpg",
-  ex = {
+  e2 = {
     components: {
       TermsOfUse: GS
     },
@@ -18077,94 +18077,94 @@ const GS = St(KS, [
       }
     }
   },
-  tx = {
+  t2 = {
     class: "onboardingStart center",
     style: {
       direction: "ltr"
     }
   },
-  nx = {
+  n2 = {
     class: "con"
   },
-  ox = {
+  o2 = {
     class: "zTextShadow2white"
   },
-  ix = {
+  i2 = {
     class: "panel"
   },
-  sx = {
+  s2 = {
     class: "center buttonNextContainer"
   },
-  ax = {
+  a2 = {
     class: "con"
   },
-  lx = {
+  l2 = {
     class: "zTextShadow2white"
   },
-  rx = {
+  r2 = {
     class: "panel"
   },
-  cx = {
+  c2 = {
     class: "center buttonNextContainer"
   },
-  ux = {
+  u2 = {
     class: "con"
   },
-  dx = {
+  d2 = {
     class: "panel"
   },
-  fx = {
+  f2 = {
     class: "center buttonNextContainer"
   },
-  hx = {
+  h2 = {
     class: "con"
   },
-  mx = {
+  m2 = {
     class: "zTextShadow2white"
   },
-  gx = {
+  g2 = {
     class: "flyBtn",
     style: {
       "margin-bottom": "-20px",
       "z-index": "10"
     }
   },
-  vx = {
+  v2 = {
     class: "flyBtnTitle"
   },
-  yx = {
+  y2 = {
     class: "panel"
   },
-  px = {
+  p2 = {
     class: "center buttonNextContainer"
   },
-  bx = {
+  b2 = {
     class: "con"
   },
-  wx = {
+  w2 = {
     class: "zTextShadow2white"
   },
-  Cx = {
+  C2 = {
     class: "panel"
   },
-  _x = {
+  _2 = {
     class: "center buttonNextContainer"
   },
-  kx = {
+  k2 = {
     class: "termsOfUse"
   },
-  Tx = {
+  T2 = {
     class: "termsContainer"
   };
 
-function Sx(e, t, n, o, s, a) {
+function S2(e, t, n, o, s, a) {
   const l = ge("van-button"),
     r = ge("van-swipe-item"),
     c = ge("van-checkbox"),
     u = ge("van-swipe"),
     d = ge("TermsOfUse"),
     f = ge("van-popup");
-  return W(), ae("div", tx, [h(u, {
+  return W(), ae("div", t2, [h(u, {
     class: "onboardingSwipe",
     autoplay: 0,
     loop: !1,
@@ -18184,11 +18184,11 @@ function Sx(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", nx, [P("h2", ox, M(e.t("Welcome to Zoo!")), 1), t[4] || (t[4] = P("img", {
+      default: le(() => [P("div", n2, [P("h2", o2, M(e.t("Welcome to Zoo!")), 1), t[4] || (t[4] = P("img", {
         src: ZS,
         alt: "",
         width: "100%"
-      }, null, -1)), P("p", ix, M(e.t("Here, you'll build your very own Zoo!")), 1)]), P("div", sx, [h(l, {
+      }, null, -1)), P("p", i2, M(e.t("Here, you'll build your very own Zoo!")), 1)]), P("div", s2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18205,13 +18205,13 @@ function Sx(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", ax, [P("h2", lx, M(e.t("Earn coins and upgrade your Zoo")), 1), t[5] || (t[5] = P("img", {
+      default: le(() => [P("div", a2, [P("h2", l2, M(e.t("Earn coins and upgrade your Zoo")), 1), t[5] || (t[5] = P("img", {
         src: XS,
         alt: "",
         width: "100%"
-      }, null, -1)), P("p", rx, M(e.t("The bigger and better your Zoo, the more it mines {TOKEN_NAME}.", {
+      }, null, -1)), P("p", r2, M(e.t("The bigger and better your Zoo, the more it mines {TOKEN_NAME}.", {
         TOKEN_NAME: e.TOKEN_NAME
-      })), 1)]), P("div", cx, [h(l, {
+      })), 1)]), P("div", c2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18228,15 +18228,15 @@ function Sx(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", ux, [t[6] || (t[6] = P("h2", {
+      default: le(() => [P("div", u2, [t[6] || (t[6] = P("h2", {
         class: "zTextShadow2white"
       }, "Airdrop", -1)), t[7] || (t[7] = P("img", {
         src: JS,
         alt: "",
         width: "100%"
-      }, null, -1)), P("p", dx, M(e.t("Earn {TOKEN_NAME} tokens through Airdrop based on your progress.", {
+      }, null, -1)), P("p", d2, M(e.t("Earn {TOKEN_NAME} tokens through Airdrop based on your progress.", {
         TOKEN_NAME: e.TOKEN_NAME
-      })), 1)]), P("div", fx, [h(l, {
+      })), 1)]), P("div", f2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18253,17 +18253,17 @@ function Sx(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", hx, [P("h2", mx, M(e.t("Create or Join an Alliance")), 1), P("div", gx, [t[8] || (t[8] = P("div", {
+      default: le(() => [P("div", h2, [P("h2", m2, M(e.t("Create or Join an Alliance")), 1), P("div", g2, [t[8] || (t[8] = P("div", {
         class: "flyBtnCont"
       }, [P("div", {
         class: "flyBtnIcon",
         style: {
           "background-image": "url('/assets/img/decor/icon_ali.png')"
         }
-      })], -1)), P("div", vx, M(e.t("Alliance")), 1)]), P("p", yx, M(e.t("Alliance owners receive {PERCENT}% of all contributions, and members gain significant advantages in mining {TOKEN_NAME} tokens.", {
+      })], -1)), P("div", v2, M(e.t("Alliance")), 1)]), P("p", y2, M(e.t("Alliance owners receive {PERCENT}% of all contributions, and members gain significant advantages in mining {TOKEN_NAME} tokens.", {
         PERCENT: e.gameConfig["alliance.bonus.founder"],
         TOKEN_NAME: e.TOKEN_NAME
-      })), 1)]), P("div", px, [h(l, {
+      })), 1)]), P("div", p2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18280,7 +18280,7 @@ function Sx(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", bx, [P("h2", wx, M(e.t("We're having fun together")), 1), P("p", Cx, M(e.t("Grow your Zoo, complete quests, invite friends, and take part in the {Airdrop}!")), 1)]), P("div", _x, [P("div", kx, [h(c, {
+      default: le(() => [P("div", b2, [P("h2", w2, M(e.t("We're having fun together")), 1), P("p", C2, M(e.t("Grow your Zoo, complete quests, invite friends, and take part in the {Airdrop}!")), 1)]), P("div", _2, [P("div", k2, [h(c, {
         modelValue: e.isUserAcceptTermsOfUse,
         "onUpdate:modelValue": t[1] || (t[1] = m => e.isUserAcceptTermsOfUse = m)
       }, {
@@ -18310,16 +18310,16 @@ function Sx(e, t, n, o, s, a) {
     position: "center",
     closeable: ""
   }, {
-    default: le(() => [P("div", Tx, [h(d)])]),
+    default: le(() => [P("div", T2, [h(d)])]),
     _: 1
   }, 8, ["show"])])
 }
-const xx = St(ex, [
-  ["render", Sx],
+const x2 = St(e2, [
+  ["render", S2],
   ["__scopeId", "data-v-630ce1d4"]
 ]);
 
-function Ax(e) {
+function A2(e) {
   let t = 0;
   const n = new Uint8Array(e.length + 2);
   n.set(e);
@@ -18330,11 +18330,11 @@ function Ax(e) {
   return new Uint8Array([Math.floor(t / 256), t % 256])
 }
 
-function Ex(e) {
+function E2(e) {
   return Array.from(e).map(t => t.toString(16).padStart(2, "0")).join("")
 }
 
-function Ix(e) {
+function I2(e) {
   return btoa(e)
 }
 class ri {
@@ -18357,11 +18357,11 @@ class ri {
       const l = new Uint8Array(34);
       l[0] = a, l[1] = this.wc, l.set(this.hashPart, 2);
       const r = new Uint8Array(36);
-      r.set(l), r.set(Ax(l), 34);
-      let c = Ix(String.fromCharCode.apply(null, r));
+      r.set(l), r.set(A2(l), 34);
+      let c = I2(String.fromCharCode.apply(null, r));
       return n && (c = c.replace(/\+/g, "-").replace(/\//g, "_")), c
     }
-    return this.wc + ":" + Ex(this.hashPart)
+    return this.wc + ":" + E2(this.hashPart)
   }
   static parseFriendlyAddress(t) {
     const n = t.split(":");
@@ -18391,7 +18391,7 @@ class ri {
     return n
   }
 }
-const Px = {
+const P2 = {
     name: "GamePopup",
     props: {
       imgUrl: {
@@ -18420,24 +18420,24 @@ const Px = {
       }
     }
   },
-  Ox = {
+  O2 = {
     class: "contentWrapper"
   },
-  Rx = {
+  R2 = {
     class: "content"
   },
-  Dx = {
+  D2 = {
     key: 1
   },
-  Bx = {
+  B2 = {
     key: 3
   },
-  $x = {
+  $2 = {
     key: 0,
     class: "imgWrapper"
   };
 
-function Mx(e, t, n, o, s, a) {
+function M2(e, t, n, o, s, a) {
   const l = ge("van-popup");
   return W(), Me(l, {
     "close-icon": "cross",
@@ -18449,11 +18449,11 @@ function Mx(e, t, n, o, s, a) {
     position: n.position,
     duration: n.duration
   }, {
-    default: le(() => [P("div", Ox, [P("div", Rx, [n.title ? Te("", !0) : za(e.$slots, "title", {
+    default: le(() => [P("div", O2, [P("div", R2, [n.title ? Te("", !0) : za(e.$slots, "title", {
       key: 0
-    }, void 0, !0), n.title ? (W(), ae("h1", Dx, M(n.title), 1)) : Te("", !0), n.subtitle ? Te("", !0) : za(e.$slots, "subtitle", {
+    }, void 0, !0), n.title ? (W(), ae("h1", D2, M(n.title), 1)) : Te("", !0), n.subtitle ? Te("", !0) : za(e.$slots, "subtitle", {
       key: 2
-    }, void 0, !0), n.subtitle ? (W(), ae("h2", Bx, M(n.subtitle), 1)) : Te("", !0), za(e.$slots, "default", {}, void 0, !0)])]), n.imgUrl ? (W(), ae("div", $x, [P("div", {
+    }, void 0, !0), n.subtitle ? (W(), ae("h2", B2, M(n.subtitle), 1)) : Te("", !0), za(e.$slots, "default", {}, void 0, !0)])]), n.imgUrl ? (W(), ae("div", $2, [P("div", {
       class: "imgTitle",
       style: an({
         backgroundImage: `url(${n.imgUrl})`
@@ -18462,12 +18462,12 @@ function Mx(e, t, n, o, s, a) {
     _: 3
   }, 8, ["class", "round", "closeable", "position", "duration"])
 }
-const hm = St(Px, [
-    ["render", Mx],
+const hm = St(P2, [
+    ["render", M2],
     ["__scopeId", "data-v-5796a2f7"]
   ]),
   mm = "data:image/svg+xml,%3csvg%20width='56'%20height='56'%20viewBox='0%200%2056%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M28%2056C43.464%2056%2056%2043.464%2056%2028C56%2012.536%2043.464%200%2028%200C12.536%200%200%2012.536%200%2028C0%2043.464%2012.536%2056%2028%2056Z'%20fill='%230098EA'/%3e%3cpath%20d='M37.5603%2015.6277H18.4386C14.9228%2015.6277%2012.6944%2019.4202%2014.4632%2022.4861L26.2644%2042.9409C27.0345%2044.2765%2028.9644%2044.2765%2029.7345%2042.9409L41.5381%2022.4861C43.3045%2019.4251%2041.0761%2015.6277%2037.5627%2015.6277H37.5603ZM26.2548%2036.8068L23.6847%2031.8327L17.4833%2020.7414C17.0742%2020.0315%2017.5795%2019.1218%2018.4362%2019.1218H26.2524V36.8092L26.2548%2036.8068ZM38.5108%2020.739L32.3118%2031.8351L29.7417%2036.8068V19.1194H37.5579C38.4146%2019.1194%2038.9199%2020.0291%2038.5108%2020.739Z'%20fill='white'/%3e%3c/svg%3e",
-  Lx = {
+  L2 = {
     components: {
       GamePopup: hm
     },
@@ -18566,13 +18566,13 @@ const hm = St(Px, [
       }
     }
   },
-  Nx = {
+  N2 = {
     class: "ton-wallet"
   },
-  Fx = {
+  F2 = {
     class: "ton-wallet-button-wrapper"
   },
-  Vx = {
+  V2 = {
     style: {
       margin: "0 10px"
     },
@@ -18582,10 +18582,10 @@ const hm = St(Px, [
     viewBox: "0 0 28 29",
     fill: "none"
   },
-  zx = {
+  z2 = {
     class: "wallet-address"
   },
-  Hx = {
+  H2 = {
     style: {
       margin: "0 10px"
     },
@@ -18596,11 +18596,11 @@ const hm = St(Px, [
     fill: "none"
   };
 
-function Ux(e, t, n, o, s, a) {
+function U2(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-button"),
     c = ge("game-popup");
-  return W(), ae("div", Nx, [P("div", Fx, [a.showTransactionButton ? Te("", !0) : (W(), Me(r, {
+  return W(), ae("div", N2, [P("div", F2, [a.showTransactionButton ? Te("", !0) : (W(), Me(r, {
     key: 0,
     onClick: a.handleClick,
     round: "",
@@ -18609,7 +18609,7 @@ function Ux(e, t, n, o, s, a) {
     "icon-position": "right",
     type: a.isConnected ? "success" : "warning"
   }, {
-    icon: le(() => [(W(), ae("svg", Vx, t[1] || (t[1] = [P("path", {
+    icon: le(() => [(W(), ae("svg", V2, t[1] || (t[1] = [P("path", {
       "fill-rule": "evenodd",
       "clip-rule": "evenodd",
       d: "M1.75 12.002C1.75 9.20169 1.75 7.80156 2.29497 6.732C2.77433 5.79119 3.53924 5.02629 4.48005 4.54692C5.54961 4.00195 6.94974 4.00195 9.75 4.00195H17.25C20.0503 4.00195 21.4504 4.00195 22.52 4.54692C23.4608 5.02629 24.2257 5.79119 24.705 6.732C24.8256 6.96861 24.9195 7.2214 24.9926 7.50195H21.5C19.6377 7.50195 18.7065 7.50195 17.9609 7.77334C16.711 8.22828 15.7263 9.21291 15.2714 10.4629C15 11.2085 15 12.1396 15 14.002C15 15.8643 15 16.7954 15.2714 17.541C15.7263 18.791 16.711 19.7756 17.9609 20.2306C18.7065 20.502 19.6377 20.502 21.5 20.502H24.9926C24.9195 20.7825 24.8256 21.0353 24.705 21.2719C24.2257 22.2127 23.4608 22.9776 22.52 23.457C21.4504 24.002 20.0503 24.002 17.25 24.002H9.75C6.94974 24.002 5.54961 24.002 4.48005 23.457C3.53924 22.9776 2.77433 22.2127 2.29497 21.2719C1.75 20.2023 1.75 18.8022 1.75 16.002V12.002ZM16.4999 13.802C16.4999 12.1218 16.4999 11.2817 16.8269 10.64C17.1145 10.0755 17.5735 9.61656 18.138 9.32894C18.7797 9.00196 19.6198 9.00196 21.2999 9.00196H23.1999C24.8801 9.00196 25.7202 9.00196 26.3619 9.32894C26.9264 9.61656 27.3853 10.0755 27.673 10.64C27.9999 11.2817 27.9999 12.1218 27.9999 13.802V14.202C27.9999 15.8821 27.9999 16.7222 27.673 17.3639C27.3853 17.9284 26.9264 18.3874 26.3619 18.675C25.7202 19.002 24.8801 19.002 23.1999 19.002H21.2999C19.6198 19.002 18.7797 19.002 18.138 18.675C17.5735 18.3874 17.1145 17.9284 16.8269 17.3639C16.4999 16.7222 16.4999 15.8821 16.4999 14.202V13.802ZM22.4999 14.002C22.4999 14.9685 21.7164 15.752 20.7499 15.752C19.7834 15.752 18.9999 14.9685 18.9999 14.002C18.9999 13.0355 19.7834 12.252 20.7499 12.252C21.7164 12.252 22.4999 13.0355 22.4999 14.002Z",
@@ -18647,7 +18647,7 @@ function Ux(e, t, n, o, s, a) {
     closeable: "",
     title: e.t("Connected Wallet")
   }, {
-    default: le(() => [P("div", zx, [(W(), ae("svg", Hx, t[3] || (t[3] = [P("path", {
+    default: le(() => [P("div", z2, [(W(), ae("svg", H2, t[3] || (t[3] = [P("path", {
       "fill-rule": "evenodd",
       "clip-rule": "evenodd",
       d: "M1.75 12.002C1.75 9.20169 1.75 7.80156 2.29497 6.732C2.77433 5.79119 3.53924 5.02629 4.48005 4.54692C5.54961 4.00195 6.94974 4.00195 9.75 4.00195H17.25C20.0503 4.00195 21.4504 4.00195 22.52 4.54692C23.4608 5.02629 24.2257 5.79119 24.705 6.732C24.8256 6.96861 24.9195 7.2214 24.9926 7.50195H21.5C19.6377 7.50195 18.7065 7.50195 17.9609 7.77334C16.711 8.22828 15.7263 9.21291 15.2714 10.4629C15 11.2085 15 12.1396 15 14.002C15 15.8643 15 16.7954 15.2714 17.541C15.7263 18.791 16.711 19.7756 17.9609 20.2306C18.7065 20.502 19.6377 20.502 21.5 20.502H24.9926C24.9195 20.7825 24.8256 21.0353 24.705 21.2719C24.2257 22.2127 23.4608 22.9776 22.52 23.457C21.4504 24.002 20.0503 24.002 17.25 24.002H9.75C6.94974 24.002 5.54961 24.002 4.48005 23.457C3.53924 22.9776 2.77433 22.2127 2.29497 21.2719C1.75 20.2023 1.75 18.8022 1.75 16.002V12.002ZM16.4999 13.802C16.4999 12.1218 16.4999 11.2817 16.8269 10.64C17.1145 10.0755 17.5735 9.61656 18.138 9.32894C18.7797 9.00196 19.6198 9.00196 21.2999 9.00196H23.1999C24.8801 9.00196 25.7202 9.00196 26.3619 9.32894C26.9264 9.61656 27.3853 10.0755 27.673 10.64C27.9999 11.2817 27.9999 12.1218 27.9999 13.802V14.202C27.9999 15.8821 27.9999 16.7222 27.673 17.3639C27.3853 17.9284 26.9264 18.3874 26.3619 18.675C25.7202 19.002 24.8801 19.002 23.1999 19.002H21.2999C19.6198 19.002 18.7797 19.002 18.138 18.675C17.5735 18.3874 17.1145 17.9284 16.8269 17.3639C16.4999 16.7222 16.4999 15.8821 16.4999 14.202V13.802ZM22.4999 14.002C22.4999 14.9685 21.7164 15.752 20.7499 15.752C19.7834 15.752 18.9999 14.9685 18.9999 14.002C18.9999 13.0355 19.7834 12.252 20.7499 12.252C21.7164 12.252 22.4999 13.0355 22.4999 14.002Z",
@@ -18668,11 +18668,11 @@ function Ux(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show", "title"])])
 }
-const Ur = St(Lx, [
-    ["render", Ux],
+const Ur = St(L2, [
+    ["render", U2],
     ["__scopeId", "data-v-49c142f1"]
   ]),
-  Wx = {
+  W2 = {
     components: {
       TonWallet: Ur
     },
@@ -18822,120 +18822,120 @@ const Ur = St(Lx, [
       }
     }
   },
-  jx = {
+  j2 = {
     class: "questChallenge"
   },
-  Qx = ["src"],
-  Kx = {
+  Q2 = ["src"],
+  K2 = {
     class: "goldLightText"
   },
-  Yx = {
+  Y2 = {
     class: "white"
   },
-  qx = ["src"],
-  Gx = {
+  q2 = ["src"],
+  G2 = {
     class: "container",
     style: {
       "margin-bottom": "40px"
     }
   },
-  Zx = {
+  Z2 = {
     style: {
       display: "flex",
       margin: "20px 0",
       "align-items": "center"
     }
   },
-  Xx = ["src"],
-  Jx = {
+  X2 = ["src"],
+  J2 = {
     style: {
       "font-size": "1.2em",
       "font-weight": "bold"
     }
   },
-  e2 = {
+  ex = {
     key: 0
   },
-  t2 = ["innerHTML"],
-  n2 = {
+  tx = ["innerHTML"],
+  nx = {
     key: 2,
     style: {
       "font-size": "20px",
       "margin-bottom": "20px"
     }
   },
-  o2 = {
+  ox = {
     class: "goldText"
   },
-  i2 = {
+  ix = {
     key: 3
   },
-  s2 = ["src"],
-  a2 = {
+  sx = ["src"],
+  ax = {
     key: 4,
     style: {
       margin: "20px 0"
     }
   },
-  l2 = {
+  lx = {
     key: 5,
     style: {
       margin: "20px 0"
     }
   },
-  r2 = {
+  rx = {
     key: 0
   },
-  c2 = {
+  cx = {
     key: 6,
     style: {
       margin: "20px 0"
     }
   },
-  u2 = {
+  ux = {
     key: 7,
     style: {
       "padding-top": "20px"
     }
   },
-  d2 = {
+  dx = {
     key: 0,
     style: {
       margin: "20px 0"
     }
   },
-  f2 = {
+  fx = {
     style: {
       color: "#fff"
     }
   },
-  h2 = {
+  hx = {
     key: 1,
     style: {
       margin: "20px 0"
     }
   },
-  m2 = {
+  mx = {
     style: {
       color: "#fff"
     }
   },
-  g2 = {
+  gx = {
     key: 2
   },
-  v2 = {
+  vx = {
     key: 3,
     style: {
       color: "red"
     }
   },
-  y2 = {
+  yx = {
     key: 8,
     style: {
       margin: "20px 0"
     }
   },
-  p2 = {
+  px = {
     key: 0,
     class: "center",
     style: {
@@ -18944,33 +18944,33 @@ const Ur = St(Lx, [
       "margin-bottom": "10px"
     }
   },
-  b2 = ["src"],
-  w2 = {
+  bx = ["src"],
+  wx = {
     style: {
       color: "#fff",
       "margin-bottom": "5px"
     }
   },
-  C2 = {
+  Cx = {
     class: "tips"
   },
-  _2 = {
+  _x = {
     key: 9
   },
-  k2 = {
+  kx = {
     key: 0,
     style: {
       color: "red"
     }
   },
-  T2 = {
+  Tx = {
     key: 10
   },
-  S2 = {
+  Sx = {
     key: 11
   };
 
-function x2(e, t, n, o, s, a) {
+function xx(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-badge"),
     c = ge("van-cell"),
@@ -18979,7 +18979,7 @@ function x2(e, t, n, o, s, a) {
     f = ge("ton-wallet"),
     m = ge("van-field"),
     g = ge("van-popup");
-  return W(), ae("div", jx, [s.extendQuestsProgress.length ? (W(), Me(u, {
+  return W(), ae("div", j2, [s.extendQuestsProgress.length ? (W(), Me(u, {
     key: 0,
     inset: ""
   }, {
@@ -18995,7 +18995,7 @@ function x2(e, t, n, o, s, a) {
         src: e._getQuestImg(v.key),
         class: "questImg",
         alt: ""
-      }, null, 8, Qx)]),
+      }, null, 8, Q2)]),
       label: le(() => [P("span", {
         class: ot({
           goldLightText: v.status === "complete"
@@ -19009,7 +19009,7 @@ function x2(e, t, n, o, s, a) {
       fn: le(() => [h(r, {
         dot: ""
       }, {
-        default: le(() => [P("span", Kx, [be(M(e.t("Take")) + " ", 1), h(l, {
+        default: le(() => [P("span", K2, [be(M(e.t("Take")) + " ", 1), h(l, {
           name: "arrow"
         })])]),
         _: 1
@@ -19024,7 +19024,7 @@ function x2(e, t, n, o, s, a) {
       "margin-bottom": "50px"
     }
   }, {
-    title: le(() => [P("span", Yx, M(e.t("Completed Tasks")), 1)]),
+    title: le(() => [P("span", Y2, M(e.t("Completed Tasks")), 1)]),
     default: le(() => [(W(!0), ae(Be, null, Ft(s.extendQuestsFinished, v => (W(), Me(c, {
       key: v.key,
       onClick: b => a.openQuest(v),
@@ -19037,7 +19037,7 @@ function x2(e, t, n, o, s, a) {
         src: e._getQuestImg(v.key),
         class: "questImg",
         alt: ""
-      }, null, 8, qx)]),
+      }, null, 8, q2)]),
       "right-icon": le(() => [P("span", null, [be(" +" + M(e._number(v.reward)) + " ", 1), h(l, {
         name: "checked"
       })])]),
@@ -19052,22 +19052,22 @@ function x2(e, t, n, o, s, a) {
     position: "bottom",
     round: ""
   }, {
-    default: le(() => [P("div", Gx, [P("div", Zx, [P("img", {
+    default: le(() => [P("div", G2, [P("div", Z2, [P("img", {
       src: e._getQuestImg(s.openedQuest.key),
       class: "questImg",
       alt: ""
-    }, null, 8, Xx), P("div", null, [P("div", Jx, M(s.openedQuest.title), 1), P("div", null, [be(" +" + M(e._number(s.openedQuest.reward)) + " ", 1), t[9] || (t[9] = P("span", {
+    }, null, 8, X2), P("div", null, [P("div", J2, M(s.openedQuest.title), 1), P("div", null, [be(" +" + M(e._number(s.openedQuest.reward)) + " ", 1), t[9] || (t[9] = P("span", {
       class: "coin25"
-    }, null, -1))])])]), s.openedQuest.key.includes("riddle_") ? (W(), ae("p", e2, '"' + M(s.openedQuest.desc) + '"', 1)) : (W(), ae("p", {
+    }, null, -1))])])]), s.openedQuest.key.includes("riddle_") ? (W(), ae("p", ex, '"' + M(s.openedQuest.desc) + '"', 1)) : (W(), ae("p", {
       key: 1,
       innerHTML: s.openedQuest.desc.replace(/\n/g, "<br />").replace("{reward}", e._number(s.openedQuest.reward))
-    }, null, 8, t2)), s.openedQuest.status === "finished" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), ae("div", n2, [t[10] || (t[10] = be(" ✅ ")), P("span", o2, M(s.openedQuest.checkData), 1)])) : Te("", !0), s.openedQuest.checkType === "multiQuest" ? (W(), ae("div", i2, [P("div", null, M(e.t("To get the reward complete the quests:")), 1), (W(!0), ae(Be, null, Ft(s.openedQuest.multiQuests, v => (W(), ae("div", {
+    }, null, 8, tx)), s.openedQuest.status === "finished" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), ae("div", nx, [t[10] || (t[10] = be(" ✅ ")), P("span", ox, M(s.openedQuest.checkData), 1)])) : Te("", !0), s.openedQuest.checkType === "multiQuest" ? (W(), ae("div", ix, [P("div", null, M(e.t("To get the reward complete the quests:")), 1), (W(!0), ae(Be, null, Ft(s.openedQuest.multiQuests, v => (W(), ae("div", {
       key: "subQuest" + v.key,
       class: ot(["subQuest", v.isComplete ? "subQuestDone" : ""])
     }, [P("img", {
       src: e._getQuestImg(v.key),
       alt: ""
-    }, null, 8, s2), v.isComplete ? (W(), Me(l, {
+    }, null, 8, sx), v.isComplete ? (W(), Me(l, {
       key: 0,
       name: "checked",
       style: {
@@ -19100,13 +19100,13 @@ function x2(e, t, n, o, s, a) {
     }, {
       default: le(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
-    }, 8, ["type", "onClick"])) : Te("", !0)]), s.openedQuest.status === "new" && s.openedQuest.key.includes("ton_wallet_") ? (W(), ae("div", a2, [h(f, {
+    }, 8, ["type", "onClick"])) : Te("", !0)]), s.openedQuest.status === "new" && s.openedQuest.key.includes("ton_wallet_") ? (W(), ae("div", ax, [h(f, {
       "transaction-value": s.openedQuest.isCheckProgress ? 0 : s.openedQuest.tonTransactionValue,
       "saved-wallet": s.connectedWallet,
       onWalletConnectHandler: a.tonConnectStatusHandler,
       onPaid: t[0] || (t[0] = v => a.actionCheck(5e3)),
       loading: s.openedQuest.isCheckProgress
-    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "loading"])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("donate_ton") ? (W(), ae("div", l2, [h(f, {
+    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "loading"])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("donate_ton") ? (W(), ae("div", lx, [h(f, {
       onError: t[1] || (t[1] = v => s.isTransactionError = !0),
       "transaction-value": s.openedQuest.isCheckProgress ? 0 : s.openedQuest.checkCount,
       "saved-wallet": s.connectedWallet,
@@ -19114,7 +19114,7 @@ function x2(e, t, n, o, s, a) {
       "transaction-address": e.uTonDonateAddress,
       onPaid: t[2] || (t[2] = v => a.actionCheck(5e3)),
       loading: s.openedQuest.isCheckProgress
-    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "transaction-address", "loading"]), s.isTransactionError ? (W(), ae("div", r2, [P("p", null, M(e.t("Encountered an error? Reconnect the wallet and try again.")), 1), h(d, {
+    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "transaction-address", "loading"]), s.isTransactionError ? (W(), ae("div", rx, [P("p", null, M(e.t("Encountered an error? Reconnect the wallet and try again.")), 1), h(d, {
       color: "darkorange",
       size: "small",
       round: "",
@@ -19122,7 +19122,7 @@ function x2(e, t, n, o, s, a) {
     }, {
       default: le(() => [be(M(e.t("Reconnect wallet")), 1)]),
       _: 1
-    }, 8, ["onClick"])])) : Te("", !0)])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("tg_story") ? (W(), ae("div", c2, [h(d, {
+    }, 8, ["onClick"])])) : Te("", !0)])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("tg_story") ? (W(), ae("div", cx, [h(d, {
       type: "success",
       size: "small",
       round: "",
@@ -19131,8 +19131,8 @@ function x2(e, t, n, o, s, a) {
     }, {
       default: le(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
-    }, 8, ["onClick", "loading"])])) : Te("", !0), s.openedQuest.needCheck && s.openedQuest.status === "new" && s.openedQuest.isActionButtonClicked && a.showWalletCheckButton ? (W(), ae("div", u2, [
-      ["bybit", "bybit_kyc", "bybit_deposit"].includes(s.openedQuest.checkType) ? (W(), ae("div", d2, [P("p", null, [P("span", f2, M(e.t("Enter your {Bybit} UID")), 1), t[12] || (t[12] = P("br", null, null, -1)), be(" " + M(e.t("Only accounts registered using the button above or entering the code: 86127 during registration can participate.")), 1)]), h(m, {
+    }, 8, ["onClick", "loading"])])) : Te("", !0), s.openedQuest.needCheck && s.openedQuest.status === "new" && s.openedQuest.isActionButtonClicked && a.showWalletCheckButton ? (W(), ae("div", ux, [
+      ["bybit", "bybit_kyc", "bybit_deposit"].includes(s.openedQuest.checkType) ? (W(), ae("div", dx, [P("p", null, [P("span", fx, M(e.t("Enter your {Bybit} UID")), 1), t[12] || (t[12] = P("br", null, null, -1)), be(" " + M(e.t("Only accounts registered using the button above or entering the code: 86127 during registration can participate.")), 1)]), h(m, {
         modelValue: s.questCheckValue,
         "onUpdate:modelValue": t[3] || (t[3] = v => s.questCheckValue = v),
         center: "",
@@ -19145,7 +19145,7 @@ function x2(e, t, n, o, s, a) {
           "font-size": "1.1em"
         },
         border: !1
-      }, null, 8, ["modelValue", "placeholder"])])) : s.openedQuest.checkType === "checkCode" ? (W(), ae("div", h2, [P("p", m2, M(e.t("Enter code")), 1), h(m, {
+      }, null, 8, ["modelValue", "placeholder"])])) : s.openedQuest.checkType === "checkCode" ? (W(), ae("div", hx, [P("p", mx, M(e.t("Enter code")), 1), h(m, {
         modelValue: s.questCheckValue,
         "onUpdate:modelValue": t[4] || (t[4] = v => s.questCheckValue = v),
         center: "",
@@ -19158,7 +19158,7 @@ function x2(e, t, n, o, s, a) {
           "font-size": "1.1em"
         },
         border: !1
-      }, null, 8, ["modelValue", "placeholder"])])) : (W(), ae("p", g2, M(e.t("After this action, click Check action.")), 1)), h(d, {
+      }, null, 8, ["modelValue", "placeholder"])])) : (W(), ae("p", gx, M(e.t("After this action, click Check action.")), 1)), h(d, {
         type: "success",
         round: "",
         icon: "warn-o",
@@ -19171,14 +19171,14 @@ function x2(e, t, n, o, s, a) {
       }, {
         default: le(() => [be(M(e.t("Check action")), 1)]),
         _: 1
-      }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), ae("div", v2, M(s.checkErrorText), 1)) : Te("", !0)
-    ])) : s.openedQuest.status === "new" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), ae("div", y2, [s.openedQuest.key.includes("rebus_") ? (W(), ae("div", p2, [P("img", {
+      }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), ae("div", vx, M(s.checkErrorText), 1)) : Te("", !0)
+    ])) : s.openedQuest.status === "new" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), ae("div", yx, [s.openedQuest.key.includes("rebus_") ? (W(), ae("div", px, [P("img", {
       src: a.getRebusImg(s.openedQuest.key),
       alt: "",
       style: {
         "max-height": "150px"
       }
-    }, null, 8, b2)])) : Te("", !0), P("div", w2, M(e.t("Enter answer:")), 1), h(m, {
+    }, null, 8, bx)])) : Te("", !0), P("div", wx, M(e.t("Enter answer:")), 1), h(m, {
       modelValue: s.questCheckValue,
       "onUpdate:modelValue": t[5] || (t[5] = v => s.questCheckValue = v),
       center: "",
@@ -19191,7 +19191,7 @@ function x2(e, t, n, o, s, a) {
         "font-size": "1.1em"
       },
       border: !1
-    }, null, 8, ["modelValue", "placeholder"]), t[14] || (t[14] = P("br", null, null, -1)), P("div", C2, [be(M(e.t("Write the answer in English.")), 1), t[13] || (t[13] = P("br", null, null, -1)), be(" " + M(e.t("If it's difficult for you, look for communities where they can help you.")), 1)])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key !== "tg_story" && !s.openedQuest.actionTo && !s.openedQuest.actionUrl && (s.openedQuest.checkType === "fakeCheck" || s.openedQuest.checkType === "checkCode") ? (W(), ae("div", _2, [h(d, {
+    }, null, 8, ["modelValue", "placeholder"]), t[14] || (t[14] = P("br", null, null, -1)), P("div", Cx, [be(M(e.t("Write the answer in English.")), 1), t[13] || (t[13] = P("br", null, null, -1)), be(" " + M(e.t("If it's difficult for you, look for communities where they can help you.")), 1)])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key !== "tg_story" && !s.openedQuest.actionTo && !s.openedQuest.actionUrl && (s.openedQuest.checkType === "fakeCheck" || s.openedQuest.checkType === "checkCode") ? (W(), ae("div", _x, [h(d, {
       type: "success",
       round: "",
       onClick: a.actionCheck,
@@ -19200,7 +19200,7 @@ function x2(e, t, n, o, s, a) {
     }, {
       default: le(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
-    }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), ae("div", k2, M(s.checkErrorText), 1)) : Te("", !0)])) : Te("", !0), s.openedQuest.key.includes("name_check") ? (W(), ae("div", T2, [t[15] || (t[15] = P("br", null, null, -1)), t[16] || (t[16] = P("br", null, null, -1)), h(d, {
+    }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), ae("div", kx, M(s.checkErrorText), 1)) : Te("", !0)])) : Te("", !0), s.openedQuest.key.includes("name_check") ? (W(), ae("div", Tx, [t[15] || (t[15] = P("br", null, null, -1)), t[16] || (t[16] = P("br", null, null, -1)), h(d, {
       icon: "link-o",
       onClick: t[6] || (t[6] = v => e._copyToClipboard(s.openedQuest.checkData)),
       round: "",
@@ -19212,7 +19212,7 @@ function x2(e, t, n, o, s, a) {
         emoji: s.openedQuest.checkData
       })), 1)]),
       _: 1
-    }, 8, ["loading"])])) : Te("", !0), !s.openedQuest.needCheck && s.openedQuest.status === "new" ? (W(), ae("div", S2, [t[17] || (t[17] = P("br", null, null, -1)), t[18] || (t[18] = P("br", null, null, -1)), h(d, {
+    }, 8, ["loading"])])) : Te("", !0), !s.openedQuest.needCheck && s.openedQuest.status === "new" ? (W(), ae("div", Sx, [t[17] || (t[17] = P("br", null, null, -1)), t[18] || (t[18] = P("br", null, null, -1)), h(d, {
       icon: "replay",
       onClick: a.updateQuestStatus,
       round: "",
@@ -19240,11 +19240,11 @@ function x2(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const A2 = St(Wx, [
-    ["render", x2],
+const Ax = St(W2, [
+    ["render", xx],
     ["__scopeId", "data-v-4beec549"]
   ]),
-  E2 = {
+  Ex = {
     components: {
       GamePopup: hm
     },
@@ -19292,31 +19292,31 @@ const A2 = St(Wx, [
       }
     }
   },
-  I2 = {
+  Ix = {
     class: "content"
   },
-  P2 = {
+  Px = {
     style: {
       "font-size": "1.2em",
       "margin-bottom": "10px"
     }
   },
-  O2 = {
+  Ox = {
     key: 0
   },
-  R2 = {
+  Rx = {
     key: 1
   },
-  D2 = {
+  Dx = {
     class: "action"
   },
-  B2 = {
+  Bx = {
     key: 1
   },
-  $2 = {
+  $x = {
     class: "center"
   },
-  M2 = {
+  Mx = {
     class: "timer",
     style: {
       display: "inline-block",
@@ -19324,26 +19324,26 @@ const A2 = St(Wx, [
       "font-weight": "800"
     }
   },
-  L2 = {
+  Lx = {
     class: "dailyRewardGrid"
   },
-  N2 = ["onClick"],
-  F2 = {
+  Nx = ["onClick"],
+  Fx = {
     class: "day"
   },
-  V2 = {
+  Vx = {
     class: "reward zTextShadow2white",
     style: {
       "font-weight": "800",
       "font-size": "1.4em"
     }
   },
-  z2 = {
+  zx = {
     key: 0,
     class: "dailyRewardPopupBottomClaim"
   };
 
-function H2(e, t, n, o, s, a) {
+function Hx(e, t, n, o, s, a) {
   const l = ge("van-count-down"),
     r = ge("van-icon"),
     c = ge("van-badge"),
@@ -19360,7 +19360,7 @@ function H2(e, t, n, o, s, a) {
     class: "img"
   }, [P("span", {
     class: "coin60"
-  })])], -1)), P("div", I2, [P("div", P2, M(e.t("Daily reward")), 1), P("div", null, [a.isDailyCanTake ? (W(), ae("span", R2, M(e.t("Hurry up and get it")), 1)) : (W(), ae("span", O2, M(e.t("Can be claim in")), 1)), t[3] || (t[3] = be("  ")), h(l, {
+  })])], -1)), P("div", Ix, [P("div", Px, M(e.t("Daily reward")), 1), P("div", null, [a.isDailyCanTake ? (W(), ae("span", Rx, M(e.t("Hurry up and get it")), 1)) : (W(), ae("span", Ox, M(e.t("Can be claim in")), 1)), t[3] || (t[3] = be("  ")), h(l, {
     time: s.timeToNextDay,
     class: "countDown",
     style: {
@@ -19369,7 +19369,7 @@ function H2(e, t, n, o, s, a) {
       width: "7ch",
       display: "inline-block"
     }
-  }, null, 8, ["time"])])]), P("div", D2, [a.isDailyCanTake ? (W(), Me(c, {
+  }, null, 8, ["time"])])]), P("div", Dx, [a.isDailyCanTake ? (W(), Me(c, {
     key: 0,
     dot: "",
     style: {
@@ -19380,7 +19380,7 @@ function H2(e, t, n, o, s, a) {
       name: "arrow"
     })]),
     _: 1
-  })) : (W(), ae("div", B2, [h(r, {
+  })) : (W(), ae("div", Bx, [h(r, {
     name: "arrow"
   })]))])], 2), h(d, {
     show: s.isShowDailyReward,
@@ -19394,7 +19394,7 @@ function H2(e, t, n, o, s, a) {
       "padding-bottom": a.isDailyCanTake ? "120px" : "80px"
     })
   }, {
-    default: le(() => [P("div", $2, [P("h1", null, M(e.t("Daily reward")), 1), P("p", null, M(e.t("If you miss a day, you start all over again")), 1), P("div", M2, [be(M(e.t("Until the next day:")) + " ", 1), h(l, {
+    default: le(() => [P("div", $x, [P("h1", null, M(e.t("Daily reward")), 1), P("p", null, M(e.t("If you miss a day, you start all over again")), 1), P("div", Mx, [be(M(e.t("Until the next day:")) + " ", 1), h(l, {
       time: s.timeToNextDay,
       style: {
         display: "inline-block",
@@ -19402,7 +19402,7 @@ function H2(e, t, n, o, s, a) {
         "font-size": "1.3em",
         width: "7ch"
       }
-    }, null, 8, ["time"])])]), t[6] || (t[6] = P("br", null, null, -1)), P("div", L2, [(W(!0), ae(Be, null, Ft(a.rewardsExtend, f => (W(), ae("div", {
+    }, null, 8, ["time"])])]), t[6] || (t[6] = P("br", null, null, -1)), P("div", Lx, [(W(!0), ae(Be, null, Ft(a.rewardsExtend, f => (W(), ae("div", {
       class: ot(["rewardItem", {
         isTaken: !f.isTaken,
         isCanTake: f.isCanTake,
@@ -19410,9 +19410,9 @@ function H2(e, t, n, o, s, a) {
       }]),
       key: f.key,
       onClick: m => f.isCanTake ? a.claimDailyReward(f) : ""
-    }, [P("div", F2, M(e.t("Day")) + " " + M(f.key), 1), t[5] || (t[5] = P("div", {
+    }, [P("div", Fx, M(e.t("Day")) + " " + M(f.key), 1), t[5] || (t[5] = P("div", {
       class: "rewardIcon"
-    }, null, -1)), P("div", V2, M(e._numberShort(f.rewardMoney)), 1), f.isTaken ? (W(), Me(r, {
+    }, null, -1)), P("div", Vx, M(e._numberShort(f.rewardMoney)), 1), f.isTaken ? (W(), Me(r, {
       key: 0,
       color: "#07c160",
       name: "success",
@@ -19424,7 +19424,7 @@ function H2(e, t, n, o, s, a) {
         transform: "translate(-50%, -50%)",
         filter: "drop-shadow(2px 4px 6px yellow)"
       }
-    })) : Te("", !0)], 10, N2))), 128))]), a.isDailyCanTake ? (W(), ae("div", z2, [h(u, {
+    })) : Te("", !0)], 10, Nx))), 128))]), a.isDailyCanTake ? (W(), ae("div", zx, [h(u, {
       type: "warning",
       size: "large",
       round: "",
@@ -19440,11 +19440,11 @@ function H2(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show", "style"])])
 }
-const U2 = St(E2, [
-  ["render", H2],
+const Ux = St(Ex, [
+  ["render", Hx],
   ["__scopeId", "data-v-8158abb7"]
 ]);
-var W2 = !1;
+var Wx = !1;
 /*!
  * pinia v2.2.4
  * (c) 2024 Eduardo San Martin Morote
@@ -19462,7 +19462,7 @@ var Ui;
   e.direct = "direct", e.patchObject = "patch object", e.patchFunction = "patch function"
 })(Ui || (Ui = {}));
 
-function j2() {
+function jx() {
   const e = Td(!0),
     t = e.run(() => F({}));
   let n = [],
@@ -19472,7 +19472,7 @@ function j2() {
       Ra(s), s._a = a, a.provide(vm, s), a.config.globalProperties.$pinia = s, o.forEach(l => n.push(l)), o = []
     },
     use(a) {
-      return !this._a && !W2 ? o.push(a) : n.push(a), this
+      return !this._a && !Wx ? o.push(a) : n.push(a), this
     },
     _p: n,
     _a: null,
@@ -19498,7 +19498,7 @@ function Zo(e, ...t) {
     n(...t)
   })
 }
-const Q2 = e => e(),
+const Qx = e => e(),
   Qu = Symbol(),
   ml = Symbol();
 
@@ -19512,20 +19512,20 @@ function Ql(e, t) {
   }
   return e
 }
-const K2 = Symbol();
+const Kx = Symbol();
 
-function Y2(e) {
-  return !jl(e) || !e.hasOwnProperty(K2)
+function Yx(e) {
+  return !jl(e) || !e.hasOwnProperty(Kx)
 }
 const {
   assign: eo
 } = Object;
 
-function q2(e) {
+function qx(e) {
   return !!(it(e) && e.effect)
 }
 
-function G2(e, t, n, o) {
+function Gx(e, t, n, o) {
   const {
     state: s,
     actions: a,
@@ -19642,12 +19642,12 @@ function pm(e, t, n = {}, o, s, a) {
     },
     k = Je(_);
   o._s.set(e, k);
-  const B = (o._a && o._a.runWithContext || Q2)(() => o._e.run(() => (l = Td()).run(() => t({
+  const B = (o._a && o._a.runWithContext || Qx)(() => o._e.run(() => (l = Td()).run(() => t({
     action: C
   }))));
   for (const T in B) {
     const R = B[T];
-    if (it(R) && !q2(R) || lo(R)) a || (v && Y2(R) && (it(R) ? R.value = v[T] : Ql(R, v[T])), o.state.value[e][T] = R);
+    if (it(R) && !qx(R) || lo(R)) a || (v && Yx(R) && (it(R) ? R.value = v[T] : Ql(R, v[T])), o.state.value[e][T] = R);
     else if (typeof R == "function") {
       const D = C(R, T);
       B[T] = D, r.actions[T] = R
@@ -19677,7 +19677,7 @@ function Wr(e, t, n) {
 
   function l(r, c) {
     const u = dv();
-    return r = r || (u ? Rt(vm, null) : null), r && Ra(r), r = gm, r._s.has(o) || (a ? pm(o, t, s, r) : G2(o, s, r)), r._s.get(o)
+    return r = r || (u ? Rt(vm, null) : null), r && Ra(r), r = gm, r._s.has(o) || (a ? pm(o, t, s, r) : Gx(o, s, r)), r._s.get(o)
   }
   return l.$id = o, l
 }
@@ -19978,14 +19978,14 @@ const ao = Wr("user", {
       arrayFormat: "bracket"
     })
   },
-  Z2 = function() {
+  Zx = function() {
     return Date.now()
   },
-  X2 = function() {
+  Xx = function() {
     return 1e3
   },
-  J2 = function() {
-    return Math.floor(Z2() / X2())
+  Jx = function() {
+    return Math.floor(Zx() / Xx())
   },
   eA = function(e, t) {
     return km(encodeURIComponent(`${e}_${t}`))
@@ -19994,7 +19994,7 @@ const ao = Wr("user", {
     const n = ao(),
       o = !!e;
     e instanceof Object && (e = JSON.stringify(e));
-    const s = J2(),
+    const s = Jx(),
       a = eA(s, o ? e : "");
     return {
       method: o ? "post" : "get",
@@ -20871,8 +20871,8 @@ const Qr = St(xA, [
     name: "Quests-g",
     components: {
       TopBar: Qr,
-      QuestChallenge: A2,
-      QuestDailyReward: U2
+      QuestChallenge: Ax,
+      QuestDailyReward: Ux
     },
     async created() {
       this.stores.state.setPageSettings()
@@ -22082,7 +22082,7 @@ const PI = St(xI, [
       Topup: Tm,
       TopBar: Qr,
       BottomBar: bI,
-      OnboardingStart: xx
+      OnboardingStart: x2
     },
     async created() {
       window.location.href.endsWith("?popup") && (this.$router.push("/"), history.replaceState(null, "", "/"));
@@ -23705,37 +23705,37 @@ const ia = VP({
     history: vP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-CpSyrNiT.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DbJOVWIW.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-CpSyrNiT.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DbJOVWIW.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => bE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-Dw-Z9-z7.js"), [])
+      component: () => It(() => import("./Terms-Bj30dE-t.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => fE), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-D-Tw8VAq.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-DnjtD0fk.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => FE), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-HzpwRlfZ.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-C3s8BZCs.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-BKCaqSrB.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-BtoZtTCH.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-DeN6WRJo.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-CZ_YaPX3.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-DkKcikDL.js"), [])
+      component: () => It(() => import("./Support-CfKcn0DF.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => dI), void 0)
@@ -23744,7 +23744,7 @@ const ia = VP({
       component: () => It(() => Promise.resolve().then(() => ZE), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-BMARXG0k.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-DhADTCHN.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   HP = {
@@ -24765,7 +24765,7 @@ const ia = VP({
     }
   },
   po = Bf(FI),
-  jP = j2();
+  jP = jx();
 let dd = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && dd ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), dd = !0
