@@ -73,7 +73,7 @@ class Alliance:
     def _join_alliance(self, alliance_id):
         try:
             resp = self.requests.post_request(
-                "/alliance/rating",
+                "/alliance/join",
                 alliance_id,
             )
 
