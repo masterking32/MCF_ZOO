@@ -139,25 +139,19 @@ class Task:
 
     def _log_task_reward(self, task):
         reward = zsutils.rnd(task.get("reward", 0))
-        task_name = task.get("title", "").strip()
-        if "chest_" in task.get("key", ""):
-            title_time = datetime.strptime(
-                task["actionTo"], "%Y-%m-%d %H:%M:%S"
-            ).replace(tzinfo=timezone.utc)
-            local_title_time = title_time.astimezone()
-            end_time = datetime.strptime(task["dateEnd"], "%Y-%m-%d %H:%M:%S").replace(
-                tzinfo=timezone.utc
-            )
-            local_end_time = end_time.astimezone()
-            start = local_title_time.strftime("%Y-%m-%d %H:%M:%S")
-            end = local_end_time.strftime("%Y-%m-%d %H:%M:%S")
-            task_name = f"Claim the chest between <y>{start}</y> and <y>{end}</y>"
-        if task_name == "":
-            task_name = task.get("key", "")
 
-        self.log.info(
-            f"🟢 <c>{self.mcf_api.account_name}</c> | Task reward <c>{reward}</c> for completion <y>{task_name}</y>"
-        )
+        if "chest_" in task.get("key", ""):
+            chest_size = self._get_chest_size(task)
+            self.log.info(
+                f"🟢 <c>{self.mcf_api.account_name}</c> | Reward <c>{reward}</c> food for claiming <y>{chest_size}</y> chest"
+            )
+        else:
+            task_name = task.get("title", "").strip()
+            if task_name == "":
+                task_name = task.get("key", "")
+            self.log.info(
+                f"🟢 <c>{self.mcf_api.account_name}</c> | Reward <c>{reward}</c> food for completion <y>{task_name}</y> task"
+            )
 
     def _update_progress(self):
         try:
@@ -184,26 +178,6 @@ class Task:
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
             return False
 
-    def _can_claim_chest(self, task: dict):
-        if utils.getConfig("ignore_chest_claim_time", False):
-            return True
-        title_time = datetime.strptime(task["actionTo"], "%Y-%m-%d %H:%M:%S").replace(
-            tzinfo=timezone.utc
-        )
-        end_time = datetime.strptime(task["dateEnd"], "%Y-%m-%d %H:%M:%S").replace(
-            tzinfo=timezone.utc
-        )
-        title_timestamp = title_time.timestamp()
-        end_timestamp = end_time.timestamp()
-        current_timestamp = datetime.now().timestamp()
-        if title_timestamp <= current_timestamp <= end_timestamp:
-            return True
-        else:
-            self.log.info(
-                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>You can't claim the chest now.</y>"
-            )
-            return False
-
     async def perform_tasks(self):
         if not utils.getConfig("auto_complete_tasks", True):
             self.log.info(
@@ -216,25 +190,14 @@ class Task:
             if task["isRewarded"] == True
         }
         pending_tasks = [
-            task for task in self.user.tasks_data if task["key"] not in completed_keys
+            task
+            for task in self.user.tasks_data
+            if task["key"] not in completed_keys and "chest_" not in task["key"]
         ]
 
         for task in pending_tasks:
             task_key = task.get("key", "")
             task_name = task.get("title", "Unknown")
-            if "chest_" in task_key:
-                title_time = datetime.strptime(
-                    task["actionTo"], "%Y-%m-%d %H:%M:%S"
-                ).replace(tzinfo=timezone.utc)
-                local_title_time = title_time.astimezone()
-                end_time = datetime.strptime(
-                    task["dateEnd"], "%Y-%m-%d %H:%M:%S"
-                ).replace(tzinfo=timezone.utc)
-                local_end_time = end_time.astimezone()
-                start = local_title_time.strftime("%Y-%m-%d %H:%M:%S")
-                end = local_end_time.strftime("%Y-%m-%d %H:%M:%S")
-
-                task_name = f"Claim the chest between <y>{start}</y> and <y>{end}</y>"
             if not task_key:
                 self.log.error(
                     f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Failed to get task key: {task}</y>"
@@ -329,11 +292,6 @@ class Task:
                 self._check_task(task, check_data)
                 continue
 
-            if "chest_" in task_key.lower():
-                if self._can_claim_chest(task):
-                    self._claim_task(task)
-                continue
-
             if task_key in ["join_x", "special_x", "special_hrum"]:
                 self._claim_task(task)
                 continue
@@ -351,3 +309,62 @@ class Task:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Task <c>{task_name}</c> unsupported right now. Devs check required.</y>"
             )
+
+    def claim_chests(self):
+        if not utils.getConfig("auto_claim_chests", True):
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto claim chests <r>DISABLED</r></y>"
+            )
+            return True
+
+        self.log.info(f"🔵 <c>{self.mcf_api.account_name}</c> | Checking for chests")
+
+        completed_keys = {
+            task["key"]
+            for task in self.user.completed_tasks
+            if "chest_" in task["key"] and task["isRewarded"] == True
+        }
+        pending_chests = [
+            task
+            for task in self.user.tasks_data
+            if task["key"] not in completed_keys and "chest_" in task["key"]
+        ]
+        for chest in pending_chests:
+            if self._can_claim_chest(chest):
+                self._claim_task(chest)
+            continue
+
+    def _can_claim_chest(self, chest: dict):
+        start_time = datetime.strptime(chest["actionTo"], "%Y-%m-%d %H:%M:%S").replace(
+            tzinfo=timezone.utc
+        )
+        end_time = datetime.strptime(chest["dateEnd"], "%Y-%m-%d %H:%M:%S").replace(
+            tzinfo=timezone.utc
+        )
+        local_start_time = start_time.astimezone()
+        local_end_time = end_time.astimezone()
+        start_timestamp = int(start_time.timestamp())
+        end_timestamp = int(end_time.timestamp())
+        current_timestamp = int(datetime.now().timestamp())
+        reward = chest.get("reward", -1)
+        chest_size = self._get_chest_size(chest)
+        if current_timestamp > end_timestamp:
+            return False
+        elif start_timestamp <= current_timestamp <= end_timestamp:
+            return True
+        elif current_timestamp < start_timestamp:
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Claim <c>{chest_size}</c> chest available between <c>{local_start_time}</c> and <c>{local_end_time}</c></y>"
+            )
+            return False
+
+    def _get_chest_size(self, chest: dict):
+        chest_key = chest.get("key", "")
+        chest_size = "Unknown"
+        if "_s_" in chest_key:
+            chest_size = "Small"
+        elif "_m_" in chest_key:
+            chest_size = "Medium"
+        elif "_l_" in chest_key:
+            chest_size = "Large"
+        return chest_size

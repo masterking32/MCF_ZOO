@@ -274,7 +274,7 @@ class Zoo:
                 return False
             else:
                 return True
-        else:
+        elif current_timestamp < start_timestamp:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>You can't buy special <c>{animal.name}</c> now.</y>"
             )

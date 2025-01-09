@@ -67,6 +67,8 @@ class FarmBot:
 
             await self.taks.perform_tasks()
 
+            self.taks.claim_chests()
+
             self.quiz = Quiz(self.requests, self.mcf_api, self.user)
             self.quiz.play_quiz()
 
