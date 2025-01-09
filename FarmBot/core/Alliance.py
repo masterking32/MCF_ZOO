@@ -214,24 +214,31 @@ class Alliance:
             self._print_alliance_info(AllianceMdl.from_dict(self.user.alliance))
 
     def donate_alliance(self):
-        if not self.user.alliance:
+        if not utils.getConfig("auto_donate_alliance", True):
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto food donation to the alliance <r>DISABLED</r></y>"
+            )
             return True
-        donation_percent = utils.getConfig("auto_donate_alliance", 1)
+        donation_percent = utils.getConfig("donate_amount", 1)
         if donation_percent <= 0:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto food donation to the alliance <r>DISABLED</r></y>"
             )
             return True
 
+        if not self.user.alliance:
+            return True
+
         donation_percent = float(donation_percent / 100)
         coins = self.user.hero.get("coins", 0)
         amount = int(coins * donation_percent)
         limit = utils.getConfig("donate_limit_balance", 1000)
-        if coins < limit or coins - amount < limit:
-            self.log.info(
-                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Donation canceled to preserve reserve balance (<c>{limit}</c>).</y>"
-            )
-            return True
+        if limit > 0:
+            if coins < limit or coins - amount < limit:
+                self.log.info(
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Donation canceled to preserve reserve balance (<c>{limit}</c>).</y>"
+                )
+                return True
         if amount <= 0:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Insufficient food to donate to the alliance.</y>"
