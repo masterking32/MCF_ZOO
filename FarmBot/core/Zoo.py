@@ -186,9 +186,7 @@ class Zoo:
         animals = [
             animal
             for animal in animals
-            if not animal.owned
-            and "special_" not in animal.key
-            and animal.key not in ["attraction"]
+            if not animal.owned and not animal.date_start and not animal.date_end
         ]
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
@@ -241,8 +239,7 @@ class Zoo:
         animals = [
             animal
             for animal in animals
-            if not animal.owned
-            and ("special_" in animal.key or animal.key in ["attraction"])
+            if not animal.owned and animal.date_start and animal.date_end
         ]
         animals.sort(key=lambda animal: animal.next_lvl_price)
         for animal in animals:
@@ -272,7 +269,7 @@ class Zoo:
         elif start_timestamp <= current_timestamp <= end_timestamp:
             if animal.next_lvl_price > balance:
                 self.log.info(
-                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Isufficient balance to buy special <c>{animal.name}</c> now.</y>"
+                    f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Isufficient balance to buy special <c>{animal.name}</c>, Yours: <c>{zsutils.rnd(balance)}</c>, Required: <c>{zsutils.rnd(animal.next_lvl_price)}</c></y>"
                 )
                 return False
             else:
@@ -368,6 +365,9 @@ class Zoo:
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Insufficient food balance (<c>{food_balance}</c>) to feed animals, required <c>{price}</c> food.</y>"
             )
             return
+        self.log.info(
+            f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Animal feed price: {price} food</y>"
+        )
         self._feed_animal(one_time_feed)
 
     def change_position(self, animal: AnimalMdl, new_pos: int):
