@@ -88,6 +88,12 @@ class Alliance:
             self.user.alliance = data.get("alliance")
             self.user.hero = data.get("hero")
 
+            if success:
+                name = self.user.alliance.get("name", "Unknown")
+                self.log.info(
+                    f"🟢 <c>{self.mcf_api.account_name}</c> | You have joined the <c>{name}</c> alliance."
+                )
+
             return success
         except Exception as e:
             msg = str(e) if str(e) else "Unknown error."
