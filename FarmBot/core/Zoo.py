@@ -366,7 +366,7 @@ class Zoo:
             )
             return
         self.log.info(
-            f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Animal feed price: {price} food</y>"
+            f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Animal feed price: <c>{price}</c> food</y>"
         )
         self._feed_animal(one_time_feed)
 
