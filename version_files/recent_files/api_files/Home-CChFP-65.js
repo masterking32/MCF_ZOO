@@ -3,7 +3,7 @@ import {
   o as l,
   c as a,
   a as t,
-  t as i,
+  t as o,
   b as h,
   w as p,
   d as u,
@@ -18,10 +18,10 @@ import {
   h as E,
   i as I,
   v as H
-} from "./index-CeNYgm2H.js";
-import z from "./Alliance-BtoZtTCH.js";
-import K from "./Boost-CZ_YaPX3.js";
-const O = {
+} from "./index-ZMNZZISQ.js";
+import z from "./Alliance-CTopqVCo.js";
+import x from "./Boost-B8KwoqKN.js";
+const K = {
     name: "Feed-g",
     components: {},
     async created() {},
@@ -60,13 +60,13 @@ const O = {
       }
     }
   },
-  U = {
+  O = {
     class: "container",
     style: {
       "padding-bottom": "90px"
     }
   },
-  x = {
+  U = {
     class: "aniH1",
     style: {
       "line-height": "normal"
@@ -131,42 +131,42 @@ const O = {
     key: 3
   };
 
-function te(e, s, d, c, r, o) {
+function te(e, s, d, c, r, i) {
   var v, k;
   const g = y("van-button"),
     f = y("van-badge"),
     S = y("van-cell"),
     L = y("van-cell-group");
-  return l(), a("div", U, [t("h1", x, i(e.t("Feed the animals to keep token {TOKEN_NAME} mining going!", {
+  return l(), a("div", O, [t("h1", U, o(e.t("Feed the animals to keep token {TOKEN_NAME} mining going!", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), (v = e.uFeed) != null && v.isNeedFeed ? (l(), a("div", W, [t("div", Y, i(e.t("Token mining has stopped. ")), 1), t("div", Q, i(e.t("The animals need to be fed.")), 1), h(g, {
+  })), 1), (v = e.uFeed) != null && v.isNeedFeed ? (l(), a("div", W, [t("div", Y, o(e.t("Token mining has stopped. ")), 1), t("div", Q, o(e.t("The animals need to be fed.")), 1), h(g, {
     type: "warning",
     size: "large",
-    onClick: s[0] || (s[0] = w => o.buyAutoFeed(o.instantItem)),
+    onClick: s[0] || (s[0] = w => i.buyAutoFeed(i.instantItem)),
     loading: r.isBuyLoading,
     style: {
       "margin-top": "10px"
     }
   }, {
-    default: p(() => [u(i(e.t("Feed the animals")) + " ", 1), s[1] || (s[1] = t("span", {
+    default: p(() => [u(o(e.t("Feed the animals")) + " ", 1), s[1] || (s[1] = t("span", {
       class: "coin25"
-    }, null, -1)), u(" " + i(e._number(o.calcPrice(o.instantItem))), 1)]),
+    }, null, -1)), u(" " + o(e._number(i.calcPrice(i.instantItem))), 1)]),
     _: 1
-  }, 8, ["loading"])])) : (k = e.uFeed) != null && k.autoFeedEndDateStr ? (l(), a("div", G, [t("div", X, i(e.t("Automatic animal feeding is active")), 1), t("div", R, i(e.t("Time Remaining: {TIME}", {
+  }, 8, ["loading"])])) : (k = e.uFeed) != null && k.autoFeedEndDateStr ? (l(), a("div", G, [t("div", X, o(e.t("Automatic animal feeding is active")), 1), t("div", R, o(e.t("Time Remaining: {TIME}", {
     TIME: e.uFeed.autoFeedEndDateStr
-  })), 1)])) : b("", !0), t("ul", j, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
+  })), 1)])) : b("", !0), t("ul", j, [t("li", null, o(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), t("li", null, i(e.t("Feeding time occurs eight times at random intervals throughout the day.")), 1), t("li", {
+  })), 1), t("li", null, o(e.t("Feeding time occurs eight times at random intervals throughout the day.")), 1), t("li", {
     innerHTML: e.t("The cost of one feeding depends on the Tokens per Hour and is currently <b>{count} {IMG_COIN} {COIN_NAME}</b>.", {
-      count: e._number(o.calcPrice(o.instantItem)),
+      count: e._number(i.calcPrice(i.instantItem)),
       COIN_NAME: e.COIN_NAME,
       IMG_COIN: e.IMG_COIN
     })
-  }, null, 8, J), t("li", null, i(e.t("{TOKEN_NAME} token mining will resume after you feed your animals.", {
+  }, null, 8, J), t("li", null, o(e.t("{TOKEN_NAME} token mining will resume after you feed your animals.", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), t("li", null, i(e.t("Check on your zoo often, and don't let your animals go hungry!")), 1)]), s[3] || (s[3] = t("br", null, null, -1)), s[4] || (s[4] = t("br", null, null, -1)), t("h2", Z, i(e.t("Buy automatic animal feeding")), 1), e.uHero.tph > 300 ? (l(), a(m, {
+  })), 1), t("li", null, o(e.t("Check on your zoo often, and don't let your animals go hungry!")), 1)]), s[3] || (s[3] = t("br", null, null, -1)), s[4] || (s[4] = t("br", null, null, -1)), t("h2", Z, o(e.t("Buy automatic animal feeding")), 1), e.uHero.tph > 300 ? (l(), a(m, {
     key: 2
-  }, [t("div", q, i(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), h(L, {
+  }, [t("div", q, o(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), h(L, {
     inset: "",
     class: "noMargin",
     style: {
@@ -189,7 +189,7 @@ function te(e, s, d, c, r, o) {
       "right-icon": p(() => [h(g, {
         type: "success",
         size: "small",
-        onClick: T => o.buyAutoFeed(w),
+        onClick: T => i.buyAutoFeed(w),
         loading: r.isBuyLoading
       }, {
         default: p(() => [h(f, {
@@ -197,7 +197,7 @@ function te(e, s, d, c, r, o) {
         }, {
           default: p(() => [s[2] || (s[2] = t("span", {
             class: "coin25"
-          }, null, -1)), u(" " + i(e._number(o.calcPrice(w))), 1)]),
+          }, null, -1)), u(" " + o(e._number(i.calcPrice(w))), 1)]),
           _: 2
         }, 1032, ["dot"])]),
         _: 2
@@ -205,19 +205,19 @@ function te(e, s, d, c, r, o) {
       _: 2
     }, 1024))), 128))]),
     _: 1
-  }), t("ul", ee, [t("li", null, i(e.t("Automatic feeding works one at a time — purchases do not stack.")), 1), t("li", null, i(e.t("If you buy a second one, the one that lasts longer will remain active.")), 1), t("li", null, i(e.t("It starts working immediately after purchase.")), 1), t("li", null, i(e.t("The amount of food needed for feeding depends on your Tokens per hour")), 1), t("li", null, i(e.t("When you buy automatic feeding, no additional food will be deducted.")), 1), t("li", null, i(e.t("At a high Tokens per Hours, automation will be cheaper than manual feeding over the course of a day.")), 1)])], 64)) : (l(), a("p", se, i(e.t("The option for automatic feeding will become available when your Tokens per Hour exceeds {count}.", {
+  }), t("ul", ee, [t("li", null, o(e.t("Automatic feeding works one at a time — purchases do not stack.")), 1), t("li", null, o(e.t("If you buy a second one, the one that lasts longer will remain active.")), 1), t("li", null, o(e.t("It starts working immediately after purchase.")), 1), t("li", null, o(e.t("The amount of food needed for feeding depends on your Tokens per hour")), 1), t("li", null, o(e.t("When you buy automatic feeding, no additional food will be deducted.")), 1), t("li", null, o(e.t("At a high Tokens per Hours, automation will be cheaper than manual feeding over the course of a day.")), 1)])], 64)) : (l(), a("p", se, o(e.t("The option for automatic feeding will become available when your Tokens per Hour exceeds {count}.", {
     count: 300
   })), 1))])
 }
-const ne = M(O, [
+const ne = M(K, [
     ["render", te],
     ["__scopeId", "data-v-0ae5d0d2"]
   ]),
-  ie = "data:image/png;base64,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",
-  oe = {
+  oe = "data:image/png;base64,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",
+  ie = {
     name: "Home-g",
     components: {
-      BoostG: K,
+      BoostG: x,
       AllianceG: z,
       FeedG: ne,
       TopBar: N
@@ -369,8 +369,8 @@ const ne = M(O, [
           y: 2450
         }, {
           position: 23,
-          x: 630,
-          y: 2455
+          x: 650,
+          y: 2405
         }, {
           position: 24,
           x: 438,
@@ -422,6 +422,22 @@ const ne = M(O, [
           x: 600,
           y: 3823,
           isWinter: !0
+        }, {
+          position: 35,
+          x: 147,
+          y: 2540
+        }, {
+          position: 36,
+          x: 546,
+          y: 2510
+        }, {
+          position: 37,
+          x: 120,
+          y: 2870
+        }, {
+          position: 38,
+          x: 650,
+          y: 2920
         }],
         openPoint: null
       }
@@ -445,8 +461,8 @@ const ne = M(O, [
             const d = this.animalByPosition[s.position];
             if (d.key in this.dbAnimalsByKey) {
               s.animalKey = d.key, s.animalLevel = d.level, s.isAnimalCanBuy = !1;
-              const c = this.dbAnimalsByKey[d.key].levels.find(o => o.level === d.level),
-                r = this.dbAnimalsByKey[d.key].levels.find(o => o.level === d.level + 1);
+              const c = this.dbAnimalsByKey[d.key].levels.find(i => i.level === d.level),
+                r = this.dbAnimalsByKey[d.key].levels.find(i => i.level === d.level + 1);
               r && r.price <= this.uHero.coins && (s.isAnimalCanBuy = !0), s.animalProfit = c.profit
             }
           }
@@ -473,9 +489,9 @@ const ne = M(O, [
           d = s + 1,
           c = this._arrayByKey(e.levels, "level"),
           r = c[s],
-          o = !(d in c);
+          i = !(d in c);
         let g = null;
-        return o || (g = c[d]), e.isMaxLevel = o, e.currentLevelData = r, e.nextLevelData = g, e
+        return i || (g = c[d]), e.isMaxLevel = i, e.currentLevelData = r, e.nextLevelData = g, e
       }
     },
     watch: {
@@ -550,9 +566,9 @@ const ne = M(O, [
           const c = new Date(d.actionTo.replace(" ", "T") + "Z"),
             r = new Date;
           if (c < r) {
-            let o = e[Number(d.checkData) - 1] || null;
-            if (o && !this.uQuests.find(g => g.key === d.key)) {
-              d.x = Math.round(o.x * this.k), d.y = Math.round(o.y * this.k);
+            let i = e[Number(d.checkData) - 1] || null;
+            if (i && !this.uQuests.find(g => g.key === d.key)) {
+              d.x = Math.round(i.x * this.k), d.y = Math.round(i.y * this.k);
               const g = d.dateEnd.replace(" ", "T") + "Z",
                 f = new Date(g);
               d.countdown = f - r;
@@ -579,7 +595,7 @@ const ne = M(O, [
         this.isShowChangeLocation = !0, await this._completeOnboarding(this.onBoard.changeLocation)
       },
       getBuildingImg(e, s = 1) {
-        return ["alpaca", "attraction", "bat", "camel", "capybara", "cat", "dog", "doge", "duck", "horse", "lemur", "mountain_goat", "ostrich", "owl", "peacock", "pepe", "platypus", "raccoon", "scorpion", "seahorse", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "starfish", "swan", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
+        return ["ticket_booth", "roller_coaster", "alpaca", "attraction", "bat", "camel", "capybara", "cat", "dog", "doge", "duck", "horse", "lemur", "mountain_goat", "ostrich", "owl", "peacock", "pepe", "platypus", "raccoon", "scorpion", "seahorse", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "starfish", "swan", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
       },
       buyPopup(e) {
         this.openPoint = e, this.isBuyPopupShow = !0
@@ -759,14 +775,14 @@ const ne = M(O, [
       "margin-top": "30px"
     }
   },
-  Ke = ["src"],
-  Oe = {
+  xe = ["src"],
+  Ke = {
     class: "desc"
   },
-  Ue = {
+  Oe = {
     class: "title"
   },
-  xe = {
+  Ue = {
     style: {
       "font-size": "0.8em"
     }
@@ -839,10 +855,10 @@ const ne = M(O, [
   ns = {
     class: "container"
   },
-  is = {
+  os = {
     key: 0
   },
-  os = {
+  is = {
     class: "flexCenter",
     style: {
       "flex-wrap": "wrap",
@@ -933,7 +949,7 @@ const ne = M(O, [
     class: "flyBtnTitle nowrap"
   };
 
-function Cs(e, s, d, c, r, o) {
+function Cs(e, s, d, c, r, i) {
   var F;
   const g = y("top-bar"),
     f = y("van-badge"),
@@ -945,30 +961,30 @@ function Cs(e, s, d, c, r, o) {
     T = y("boost-g"),
     D = y("feed-g");
   return l(), a("div", null, [h(g, {
-    onOpenFeedDetails: o.openFeedDetails
+    onOpenFeedDetails: i.openFeedDetails
   }, null, 8, ["onOpenFeedDetails"]), t("div", {
     class: "globalMap",
     style: B({
-      height: Math.round(r.map.h * o.k) + "px"
+      height: Math.round(r.map.h * i.k) + "px"
     }),
-    onPointerdown: s[0] || (s[0] = (...n) => o.mapClick && o.mapClick(...n)),
+    onPointerdown: s[0] || (s[0] = (...n) => i.mapClick && i.mapClick(...n)),
     id: "globalMap"
-  }, [(l(!0), a(m, null, C(o.extPoints, n => (l(), a("div", {
+  }, [(l(!0), a(m, null, C(i.extPoints, n => (l(), a("div", {
     key: n.position,
     class: "point",
     style: B({
       left: n.x + "px",
-      top: n.y + ((n == null ? void 0 : n.animalLevel) > 0 ? Math.round(-25 * o.k) : 0) + "px"
+      top: n.y + ((n == null ? void 0 : n.animalLevel) > 0 ? Math.round(-25 * i.k) : 0) + "px"
     })
   }, [(n == null ? void 0 : n.animalLevel) > 0 ? (l(), a("div", le, [t("img", {
     class: "buildingImg",
-    src: o.getBuildingImg(n.animalKey, n.animalLevel),
+    src: i.getBuildingImg(n.animalKey, n.animalLevel),
     alt: "",
     style: B({
-      width: Math.round(220 * o.k) + "px"
+      width: Math.round(220 * i.k) + "px"
     })
   }, null, 12, ae), e.uFeed.isNeedFeed ? (l(), a("div", re, s[13] || (s[13] = [t("img", {
-    src: ie,
+    src: oe,
     alt: "",
     style: {
       width: "25px"
@@ -984,7 +1000,7 @@ function Cs(e, s, d, c, r, o) {
       padding: "3px 0"
     }
   }, {
-    default: p(() => [u(" +" + i(e._numberShort(n.animalProfit)), 1)]),
+    default: p(() => [u(" +" + o(e._numberShort(n.animalProfit)), 1)]),
     _: 2
   }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", de)) : b("", !0)], 2))])) : (l(), a("div", {
     key: 1,
@@ -992,25 +1008,25 @@ function Cs(e, s, d, c, r, o) {
       winter: n.isWinter
     }]),
     style: B({
-      width: Math.round(210 * o.k) + "px"
+      width: Math.round(210 * i.k) + "px"
     })
-  }, null, 6))], 4))), 128)), (l(!0), a(m, null, C(o.extPoints, n => (l(), a("div", {
+  }, null, 6))], 4))), 128)), (l(!0), a(m, null, C(i.extPoints, n => (l(), a("div", {
     key: n.position,
     class: "pointClick",
     style: B({
       left: n.x + "px",
       top: n.y + "px",
-      width: Math.round(210 * o.k) + "px"
+      width: Math.round(210 * i.k) + "px"
     }),
-    onClick: A => (n == null ? void 0 : n.animalLevel) > 0 ? o.upgradePopup(n) : o.buyPopup(n)
+    onClick: A => (n == null ? void 0 : n.animalLevel) > 0 ? i.upgradePopup(n) : i.buyPopup(n)
   }, null, 12, ue))), 128)), (l(!0), a(m, null, C(r.chests, n => I((l(), a("div", {
     key: n.key,
     class: "pointChest center",
-    onClick: A => o.openChest(n),
+    onClick: A => i.openChest(n),
     style: B({
       left: n.x + "px",
       top: n.y + "px",
-      width: Math.round(130 * o.k) + "px"
+      width: Math.round(130 * i.k) + "px"
     })
   }, [t("img", {
     src: n.img,
@@ -1035,7 +1051,7 @@ function Cs(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [t("div", ce, [t("h1", null, i(e.t("Congratulations! You found it.")), 1), t("img", {
+    default: p(() => [t("div", ce, [t("h1", null, o(e.t("Congratulations! You found it.")), 1), t("img", {
       src: r.activeChest.img,
       alt: "",
       style: {
@@ -1044,9 +1060,9 @@ function Cs(e, s, d, c, r, o) {
       }
     }, null, 8, ye), r.isClaimChestLoading ? (l(), _(L, {
       key: 0
-    })) : (l(), a("div", ge, [t("span", me, i(e._number(r.activeChest.reward)), 1), s[14] || (s[14] = u("  ")), s[15] || (s[15] = t("span", {
+    })) : (l(), a("div", ge, [t("span", me, o(e._number(r.activeChest.reward)), 1), s[14] || (s[14] = u("  ")), s[15] || (s[15] = t("span", {
       class: "coin60"
-    }, null, -1))])), t("div", fe, [t("div", null, i(e.t("Surprises may appear on the map throughout the day. Be quick to collect them!")), 1)])])]),
+    }, null, -1))])), t("div", fe, [t("div", null, o(e.t("Surprises may appear on the map throughout the day. Be quick to collect them!")), 1)])])]),
     _: 1
   }, 8, ["show"]), h(v, {
     show: r.isBuyPopupShow,
@@ -1061,7 +1077,7 @@ function Cs(e, s, d, c, r, o) {
     },
     duration: .15
   }, {
-    default: p(() => [t("div", ve, "#" + i(r.openPoint.position), 1), o.availableForBuySpecial.length > 0 ? (l(), a("div", we, [t("div", Ae, i(e.t("Special Time Offer")), 1), (l(!0), a(m, null, C(o.availableForBuySpecial, n => (l(), a("div", {
+    default: p(() => [t("div", ve, "#" + o(r.openPoint.position), 1), i.availableForBuySpecial.length > 0 ? (l(), a("div", we, [t("div", Ae, o(e.t("Special Time Offer")), 1), (l(!0), a(m, null, C(i.availableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1070,29 +1086,29 @@ function Cs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, ke)]), t("div", be, [t("div", Ce, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[16] || (s[16] = t("span", {
+    }, null, 8, ke)]), t("div", be, [t("div", Ce, o(n.title), 1), t("div", null, [u("+" + o(e._number(n.level1data.profit)) + " ", 1), s[16] || (s[16] = t("span", {
       class: "tph24"
-    }, null, -1)), s[17] || (s[17] = u()), t("span", Se, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
+    }, null, -1)), s[17] || (s[17] = u()), t("span", Se, o(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
       round: "",
       type: "success",
-      onClick: A => o.buy(n.key, n.level1data.price, !0),
+      onClick: A => i.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Be, [t("span", _e, i(e.t("Buy animal")), 1), s[18] || (s[18] = u()), s[19] || (s[19] = t("br", null, null, -1)), s[20] || (s[20] = t("span", {
+      default: p(() => [t("div", Be, [t("span", _e, o(e.t("Buy animal")), 1), s[18] || (s[18] = u()), s[19] || (s[19] = t("br", null, null, -1)), s[20] || (s[20] = t("span", {
         class: "coin25"
-      }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
+      }, null, -1)), u("  " + o(e._number(n.level1data.price)), 1)])]),
       _: 2
     }, 1032, ["onClick", "loading"]), h(S, {
       time: n.timeToEnd,
       class: "panelRed center",
       format: n.timeToEnd > 6e4 ? "HH:mm:ss" : "mm:ss",
-      onFinish: o.calcUnboughtAnimals,
+      onFinish: i.calcUnboughtAnimals,
       style: {
         "font-size": "1.5em",
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : b("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Le, [t("div", Ee, i(e.t("Select animal")), 1), (l(!0), a(m, null, C(o.availableForBuyAnimalList, n => (l(), a("div", {
+    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : b("", !0), i.availableForBuyAnimalList.length > 0 ? (l(), a("div", Le, [t("div", Ee, o(e.t("Select animal")), 1), (l(!0), a(m, null, C(i.availableForBuyAnimalList, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1101,26 +1117,26 @@ function Cs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, Te)]), t("div", Fe, [t("div", Me, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
+    }, null, 8, Te)]), t("div", Fe, [t("div", Me, o(n.title), 1), t("div", null, [u("+" + o(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
       class: "tph24"
-    }, null, -1)), s[22] || (s[22] = u()), t("span", De, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
+    }, null, -1)), s[22] || (s[22] = u()), t("span", De, o(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
       round: "",
       type: "success",
-      onClick: A => o.buy(n.key, n.level1data.price, !0),
+      onClick: A => i.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Ne, [t("span", Pe, i(e.t("Buy animal")), 1), s[23] || (s[23] = u()), s[24] || (s[24] = t("br", null, null, -1)), s[25] || (s[25] = t("span", {
+      default: p(() => [t("div", Ne, [t("span", Pe, o(e.t("Buy animal")), 1), s[23] || (s[23] = u()), s[24] || (s[24] = t("br", null, null, -1)), s[25] || (s[25] = t("span", {
         class: "coin25"
-      }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
+      }, null, -1)), u("  " + o(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(k, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, o(e.t("New animals coming soon - follow our telegram channel.")), 1), h(k, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
     }, {
-      default: p(() => [u(i(e.t("Follow our channel")), 1)]),
+      default: p(() => [u(o(e.t("Follow our channel")), 1)]),
       _: 1
-    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", He, [t("div", ze, i(e.t("Unavailable offers")), 1), (l(!0), a(m, null, C(o.notAvailableForBuySpecial, n => (l(), a("div", {
+    }, 8, ["onClick"])])), i.notAvailableForBuySpecial.length > 0 ? (l(), a("div", He, [t("div", ze, o(e.t("Unavailable offers")), 1), (l(!0), a(m, null, C(i.notAvailableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1129,18 +1145,18 @@ function Cs(e, s, d, c, r, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, Ke)]), t("div", Oe, [t("div", Ue, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[26] || (s[26] = t("span", {
+    }, null, 8, xe)]), t("div", Ke, [t("div", Oe, o(n.title), 1), t("div", null, [u("+" + o(e._number(n.level1data.profit)) + " ", 1), s[26] || (s[26] = t("span", {
       class: "tph24"
-    }, null, -1)), s[27] || (s[27] = u()), t("span", xe, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", We, [u(i(e.t("Sales start in")) + " ", 1), h(S, {
+    }, null, -1)), s[27] || (s[27] = u()), t("span", Ue, o(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", We, [u(o(e.t("Sales start in")) + " ", 1), h(S, {
       time: n.timeToStart,
       format: n.timeToStart > 6e4 ? "HH:mm:ss" : "mm:ss",
-      onFinish: o.calcUnboughtAnimals,
+      onFinish: i.calcUnboughtAnimals,
       class: "center",
       style: {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Ye, i(e.t("Missed offer")), 1))])]))), 128))])) : b("", !0)]),
+    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Ye, o(e.t("Missed offer")), 1))])]))), 128))])) : b("", !0)]),
     _: 1
   }, 8, ["show"]), h(v, {
     show: r.isUpgradePopupShow,
@@ -1162,48 +1178,48 @@ function Cs(e, s, d, c, r, o) {
         padding: "10px 20px 20px 10px",
         display: "inline-block"
       },
-      onClick: s[3] || (s[3] = (...n) => o.showChangeLocation && o.showChangeLocation(...n))
+      onClick: s[3] || (s[3] = (...n) => i.showChangeLocation && i.showChangeLocation(...n))
     }, [h(f, {
       dot: !e._isOnboardingComplete(e.onBoard.changeLocation)
     }, {
-      default: p(() => [t("span", Ge, i(e.t("Change location")), 1)]),
+      default: p(() => [t("span", Ge, o(e.t("Change location")), 1)]),
       _: 1
     }, 8, ["dot"])]), t("img", {
       class: "buildingImg",
-      src: o.getBuildingImg(o.openAnimal.key, o.openAnimal.currentLevelData.level),
+      src: i.getBuildingImg(i.openAnimal.key, i.openAnimal.currentLevelData.level),
       alt: "",
       style: B([{
-        width: Math.round(600 * o.k) + "px",
-        top: Math.round(-80 * o.k) + "px",
-        right: Math.round(10 * o.k) + "px"
+        width: Math.round(600 * i.k) + "px",
+        top: Math.round(-80 * i.k) + "px",
+        right: Math.round(10 * i.k) + "px"
       }, {
         position: "absolute"
       }])
-    }, null, 12, Xe)]), t("div", Re, [t("div", je, [t("div", Je, i(o.openAnimal.title), 1)]), t("div", null, [t("div", Ze, i(e.t("Level")) + " " + i(o.openAnimal.currentLevelData.level), 1), t("div", null, [u(i(e.t("Current {TOKEN_NAME} per hour:", {
+    }, null, 12, Xe)]), t("div", Re, [t("div", je, [t("div", Je, o(i.openAnimal.title), 1)]), t("div", null, [t("div", Ze, o(e.t("Level")) + " " + o(i.openAnimal.currentLevelData.level), 1), t("div", null, [u(o(e.t("Current {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[28] || (s[28] = t("span", {
       class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", qe, i(e.t("This is the maximum level.")), 1)) : b("", !0), o.openAnimal.isMaxLevel ? b("", !0) : (l(), a("div", Ve, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
+    }, null, -1)), u(o(e._number(i.openAnimal.currentLevelData.profit)), 1)]), i.openAnimal.isMaxLevel ? (l(), a("div", qe, o(e.t("This is the maximum level.")), 1)) : b("", !0), i.openAnimal.isMaxLevel ? b("", !0) : (l(), a("div", Ve, [t("div", null, [u(o(e.t("Next level {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[29] || (s[29] = t("span", {
       class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", $e, [t("div", es, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[30] || (s[30] = t("br", null, null, -1)), s[31] || (s[31] = t("span", {
+    }, null, -1)), u(o(e._number(i.openAnimal.nextLevelData.profit)), 1)]), t("div", $e, [t("div", es, [u(o(e.t("Increase at the next level: ")) + " ", 1), s[30] || (s[30] = t("br", null, null, -1)), s[31] || (s[31] = t("span", {
       class: "tph50"
-    }, null, -1)), t("span", ss, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(k, {
+    }, null, -1)), t("span", ss, "+" + o(e._number(i.openAnimal.nextLevelData.profit - i.openAnimal.currentLevelData.profit)), 1)]), h(k, {
       type: "success",
       size: "large",
-      onClick: s[4] || (s[4] = n => o.buy(o.openAnimal.key, o.openAnimal.nextLevelData.price)),
+      onClick: s[4] || (s[4] = n => i.buy(i.openAnimal.key, i.openAnimal.nextLevelData.price)),
       loading: r.isBuyLoading,
       style: {
         "margin-top": "15px"
       }
     }, {
       default: p(() => [h(f, {
-        dot: o.openAnimal.nextLevelData.price <= e.uHero.coins
+        dot: i.openAnimal.nextLevelData.price <= e.uHero.coins
       }, {
-        default: p(() => [t("div", ts, [u(i(e.t("Level up ")) + "  ", 1), s[32] || (s[32] = t("span", {
+        default: p(() => [t("div", ts, [u(o(e.t("Level up ")) + "  ", 1), s[32] || (s[32] = t("span", {
           class: "coin33"
-        }, null, -1)), u("  " + i(e._number(o.openAnimal.nextLevelData.price)), 1)])]),
+        }, null, -1)), u("  " + o(e._number(i.openAnimal.nextLevelData.price)), 1)])]),
         _: 1
       }, 8, ["dot"])]),
       _: 1
@@ -1213,24 +1229,24 @@ function Cs(e, s, d, c, r, o) {
       closeable: "",
       round: ""
     }, {
-      default: p(() => [t("div", ns, [t("h2", null, i(e.t("Change location for {animalTitle}", {
-        animalTitle: o.openAnimal.title
-      })), 1), o.freePoints.length > 0 ? (l(), a("div", is, [t("div", os, [(l(!0), a(m, null, C(o.freePoints, n => (l(), a("div", {
+      default: p(() => [t("div", ns, [t("h2", null, o(e.t("Change location for {animalTitle}", {
+        animalTitle: i.openAnimal.title
+      })), 1), i.freePoints.length > 0 ? (l(), a("div", os, [t("div", is, [(l(!0), a(m, null, C(i.freePoints, n => (l(), a("div", {
         class: E(["freePoint clicked flexCenter", {
           active: r.newLocation === n
         }]),
         onClick: A => r.newLocation = n
-      }, i(n), 11, ls))), 256))]), s[34] || (s[34] = t("br", null, null, -1)), h(k, {
+      }, o(n), 11, ls))), 256))]), s[34] || (s[34] = t("br", null, null, -1)), h(k, {
         type: "success",
         size: "large",
-        onClick: o.changeLocation,
+        onClick: i.changeLocation,
         loading: r.isChangeLocationLoading
       }, {
-        default: p(() => [u(i(e.t("Change")) + " " + i(e._number(o.priceChangeLocation)) + " ", 1), s[33] || (s[33] = t("span", {
+        default: p(() => [u(o(e.t("Change")) + " " + o(e._number(i.priceChangeLocation)) + " ", 1), s[33] || (s[33] = t("span", {
           class: "coin25"
         }, null, -1))]),
         _: 1
-      }, 8, ["onClick", "loading"]), t("div", as, [t("div", null, "• " + i(e.t("You can see the location number in the upper left corner when viewing the location.")), 1), t("div", null, "• " + i(e.t("You can only change to an empty location.")), 1), t("div", null, "• " + i(e.t("The cost of transfer depends on the level of the building.")), 1)])])) : (l(), a("div", rs, i(e.t("Тo location available")), 1))])]),
+      }, 8, ["onClick", "loading"]), t("div", as, [t("div", null, "• " + o(e.t("You can see the location number in the upper left corner when viewing the location.")), 1), t("div", null, "• " + o(e.t("You can only change to an empty location.")), 1), t("div", null, "• " + o(e.t("The cost of transfer depends on the level of the building.")), 1)])])) : (l(), a("div", rs, o(e.t("Тo location available")), 1))])]),
       _: 1
     }, 8, ["show"])]),
     _: 1
@@ -1240,7 +1256,7 @@ function Cs(e, s, d, c, r, o) {
     default: p(() => [t("div", {
       class: "flyBtn",
       onClick: s[7] || (s[7] = n => r.isShowAlliance = !0)
-    }, [t("div", us, [e.uAlliance.id ? (l(), a("span", hs, "+" + i(e.dbAllianceByLevel[e.uAlliance.level].bonus) + "%", 1)) : (l(), a("div", ps))]), t("div", cs, i(e.t("Alliance")), 1)])]),
+    }, [t("div", us, [e.uAlliance.id ? (l(), a("span", hs, "+" + o(e.dbAllianceByLevel[e.uAlliance.level].bonus) + "%", 1)) : (l(), a("div", ps))]), t("div", cs, o(e.t("Alliance")), 1)])]),
     _: 1
   }, 8, ["dot"]), e.uHero.tph > 0 ? (l(), _(f, {
     key: 0,
@@ -1251,7 +1267,7 @@ function Cs(e, s, d, c, r, o) {
       return [t("div", {
         class: "flyBtn",
         onClick: s[8] || (s[8] = A => r.isShowBoost = !0)
-      }, [t("div", ys, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", gs, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ms))]), t("div", fs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
+      }, [t("div", ys, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", gs, "+" + o(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ms))]), t("div", fs, o(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
     }),
     _: 1
   }, 8, ["dot"])) : b("", !0), e.uHero.tph > 0 ? (l(), _(f, {
@@ -1265,9 +1281,9 @@ function Cs(e, s, d, c, r, o) {
         onClick: s[9] || (s[9] = Ss => r.isShowFeed = !0)
       }, [t("div", vs, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", ws)) : (A = e.uFeed) != null && A.autoFeedEndDateStr ? (l(), a("div", As)) : (l(), a("div", ks))]), t("div", bs, [e.uFeed.isNeedFeed ? (l(), a(m, {
         key: 0
-      }, [u(i(e.t("HUNGER")), 1)], 64)) : (l(), a(m, {
+      }, [u(o(e.t("HUNGER")), 1)], 64)) : (l(), a(m, {
         key: 1
-      }, [u(i(e.uFeed.autoFeedEndDateStr ? e.uFeed.autoFeedEndDateStr : e.t("Feeding")), 1)], 64))])])]
+      }, [u(o(e.uFeed.autoFeedEndDateStr ? e.uFeed.autoFeedEndDateStr : e.t("Feeding")), 1)], 64))])])]
     }),
     _: 1
   }, 8, ["dot"])) : b("", !0)]), h(v, {
@@ -1311,9 +1327,9 @@ function Cs(e, s, d, c, r, o) {
     _: 1
   }, 8, ["show"])])
 }
-const Es = M(oe, [
+const Es = M(ie, [
   ["render", Cs],
-  ["__scopeId", "data-v-33aa7040"]
+  ["__scopeId", "data-v-d84d3d78"]
 ]);
 export {
   Es as
