@@ -95,6 +95,8 @@ class Zoo:
             if owned_animal:
                 position = owned_animal["position"]
             else:
+                if self._offer_expired(animal_data):
+                    continue
                 try:
                     position = next(free_positions)
                 except Exception:
@@ -250,6 +252,19 @@ class Zoo:
                     animals.remove(animal)
                 else:
                     break
+
+    def _offer_expired(self, animal: dict):
+        if not animal.get("dateStart") and not animal.get("dateEnd"):
+            return False
+
+        end_time = datetime.strptime(animal.get("dateEnd"), "%Y-%m-%d %H:%M:%S").replace(
+            tzinfo=timezone.utc
+        )
+        end_timestamp = int(end_time.timestamp())
+        current_timestamp = int(datetime.now().timestamp())
+        if current_timestamp > end_timestamp:
+            return True
+        return False
 
     def _can_buy_special(self, animal: AnimalMdl):
         start_time = datetime.strptime(animal.date_start, "%Y-%m-%d %H:%M:%S").replace(
