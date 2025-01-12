@@ -64,7 +64,7 @@ class FarmBot:
             user_data = self.user.login()
             if not user_data:
                 add_account_to_display_data(
-                    "display_data_bot_issues.json", self.account_name
+                    "display_data_bot_issues.json", self.mcf_api.account_name
                 )
                 return
 
@@ -108,7 +108,7 @@ class FarmBot:
             )
         except Exception as e:
             add_account_to_display_data(
-                "display_data_bot_issues.json", self.account_name
+                "display_data_bot_issues.json", self.mcf_api.account_name
             )
             self.log.error(
                 f"🔴 <c>{self.mcf_api.account_name}</c><r> | Failed to farm!</r>"
