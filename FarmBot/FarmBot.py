@@ -96,7 +96,7 @@ class FarmBot:
             )
             add_account_to_display_data(
                 "display_data_success_accounts.json",
-                self.account_name,
+                self.mcf_api.account_name,
                 "TPH:" + zsutils.rnd(self.user.hero.get("tph", 0)),
                 zsutils.rnd(self.user.hero.get("tokens", 0)),
             )
