@@ -10,6 +10,10 @@ from datetime import datetime
 import asyncio
 
 from logging import Logger
+from modules.MCF_Blum.utilities.utilities import (
+    add_account_to_display_data,
+    inc_display_data,
+)
 from utilities import zsutils, utilities as utils
 from .core.MCFAPI import MCFAPI
 from .core.HttpRequest import HttpRequest
@@ -59,6 +63,9 @@ class FarmBot:
 
             user_data = self.user.login()
             if not user_data:
+                add_account_to_display_data(
+                    "display_data_bot_issues.json", self.account_name
+                )
                 return
 
             self.taks = Task(self.requests, self.mcf_api, self.user)
@@ -87,8 +94,22 @@ class FarmBot:
             self.log.info(
                 f"🤖 <c>{self.mcf_api.account_name}</c><g> | Finished farming <c>Zoo</c>!</g>"
             )
+            add_account_to_display_data(
+                "display_data_success_accounts.json",
+                self.account_name,
+                "TPH:" + zsutils.rnd(self.user.hero.get("tph", 0)),
+                zsutils.rnd(self.user.hero.get("tokens", 0)),
+            )
 
+            inc_display_data(
+                "display_data.json",
+                "success_accounts",
+                {"title": "Successfull farm finished accounts", "name": "count"},
+            )
         except Exception as e:
+            add_account_to_display_data(
+                "display_data_bot_issues.json", self.account_name
+            )
             self.log.error(
                 f"🔴 <c>{self.mcf_api.account_name}</c><r> | Failed to farm!</r>"
             )
