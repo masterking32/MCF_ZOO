@@ -214,6 +214,9 @@ class Alliance:
             self._print_alliance_info(AllianceMdl.from_dict(self.user.alliance))
 
     def donate_alliance(self):
+        if not self.user.alliance:
+            return True
+
         if not utils.getConfig("auto_donate_alliance", True):
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto food donation to the alliance <r>DISABLED</r></y>"
@@ -224,9 +227,6 @@ class Alliance:
             self.log.info(
                 f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto food donation to the alliance <r>DISABLED</r></y>"
             )
-            return True
-
-        if not self.user.alliance:
             return True
 
         donation_percent = float(donation_percent / 100)

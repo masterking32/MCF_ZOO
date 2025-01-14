@@ -123,13 +123,11 @@
     "description": ""
   },
   {
-    "key": "donate_limit_balance",
-    "name": "Untouchable food limit",
-    "type": "number",
-    "default_value": 1000,
-    "description": "If the balance is below this value or if the amount of donation can lower the balance below this value, the donation will be canceled.",
-    "min": 0,
-    "max": 100000000
+    "key": "save_balance_for_joining",
+    "name": "Save balance for join alliance",
+    "type": "checkbox",
+    "default_value": "",
+    "description": "Do not perform any actions which spend balance while you are not in alliance."
   },
   {
     "key": "donate_amount",

@@ -48,6 +48,7 @@ class FarmBot:
 
     async def run(self):
         try:
+            self.save_balance_for_joining = False
             if not self.mcf_api.can_use_module():
                 return
 
@@ -63,6 +64,9 @@ class FarmBot:
                     "display_data_bot_issues.json", self.mcf_api.account_name
                 )
                 return
+            
+            if not self.user.alliance and utils.getConfig("save_balance_for_joining", False):
+                self.save_balance_for_joining = True
 
             self.taks = Task(self.requests, self.mcf_api, self.user)
 
@@ -75,17 +79,19 @@ class FarmBot:
             self.quiz = Quiz(self.requests, self.mcf_api, self.user)
             self.quiz.play_quiz()
 
-            self.zoo = Zoo(self.requests, self.mcf_api, self.user)
-            self.zoo.feed_animals()
-            self.zoo.buy_special()
-            self.zoo.perform_animals()
+            if not self.save_balance_for_joining:
+                self.zoo = Zoo(self.requests, self.mcf_api, self.user)
+                self.zoo.feed_animals()
+                self.zoo.buy_special()
+                self.zoo.perform_animals()
 
             self.alliance = Alliance(self.requests, self.mcf_api, self.user)
             self.alliance.auto_join_alliance()
             self.alliance.donate_alliance()
 
-            self.boost = Boost(self.requests, self.mcf_api, self.user)
-            self.boost.auto_buy_boost()
+            if not self.save_balance_for_joining:
+                self.boost = Boost(self.requests, self.mcf_api, self.user)
+                self.boost.auto_buy_boost()
 
             self.log.info(
                 f"🤖 <c>{self.mcf_api.account_name}</c><g> | Finished farming <c>Zoo</c>!</g>"
