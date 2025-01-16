@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DAVoOPno.js", "assets/Alliance-C9Jmc_SR.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-1SZ5lo1G.js", "assets/Boost-CeTnVcsX.css", "assets/Home-DevA-3f1.css", "assets/Rating-ClgNsdlV.js", "assets/Rating-DRysk5eI.css", "assets/Communities-BOL04InR.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-B_n3dagy.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-elQlLrB3.js", "assets/Alliance-BUqoTLIC.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CgC6f_4n.js", "assets/Boost-CeTnVcsX.css", "assets/Home-DevA-3f1.css", "assets/Rating-DKqCaw0i.js", "assets/Rating-DRysk5eI.css", "assets/Communities-BOjALlwV.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BJNQF6rv.js", "assets/ReferralCommission-BKmif7ej.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -1192,15 +1192,15 @@ function Ng(e, t, n = Ke) {
     if (!(!(d.flags & 1) || !d.dirty && !_))
       if (t) {
         const k = d.run();
-        if (s || v || (b ? k.some((E, B) => ro(E, y[B])) : ro(k, y))) {
+        if (s || v || (b ? k.some((I, B) => ro(I, y[B])) : ro(k, y))) {
           m && m();
-          const E = So;
+          const I = So;
           So = d;
           try {
             const B = [k, y === hs ? void 0 : b && y[0] === hs ? [] : y, g];
             c ? c(t, 3, B) : t(...B), y = k
           } finally {
-            So = E
+            So = I
           }
         }
       } else d.run()
@@ -1376,7 +1376,7 @@ function Ks(e) {
   return ut = e, Yd = e && e.type.__scopeId || null, t
 }
 
-function le(e, t = ut, n) {
+function se(e, t = ut, n) {
   if (!t || e._n) return e;
   const o = (...s) => {
     o._d && yc(-1);
@@ -1455,8 +1455,8 @@ const qd = Symbol("_vte"),
       } = t;
       if (e == null) {
         const k = t.el = b(""),
-          E = t.anchor = b("");
-        g(k, n, o), g(E, n, o);
+          I = t.anchor = b("");
+        g(k, n, o), g(I, n, o);
         const B = (R, D) => {
             y & 16 && (s && s.isCE && (s.ce._teleportTarget = R), d(C, R, D, s, a, l, r, c))
           },
@@ -1465,20 +1465,20 @@ const qd = Symbol("_vte"),
               D = Zd(R, t, b, g);
             R && (l !== "svg" && ac(R) ? l = "svg" : l !== "mathml" && lc(R) && (l = "mathml"), w || (B(R, D), Ms(t)))
           };
-        w && (B(n, E), Ms(t)), Hg(t.props) ? Dt(T, a) : T()
+        w && (B(n, I), Ms(t)), Hg(t.props) ? Dt(T, a) : T()
       } else {
         t.el = e.el, t.targetStart = e.targetStart;
         const k = t.anchor = e.anchor,
-          E = t.target = e.target,
+          I = t.target = e.target,
           B = t.targetAnchor = e.targetAnchor,
           T = Li(e.props),
-          R = T ? n : E,
+          R = T ? n : I,
           D = T ? k : B;
-        if (l === "svg" || ac(E) ? l = "svg" : (l === "mathml" || lc(E)) && (l = "mathml"), _ ? (m(e.dynamicChildren, _, R, s, a, l, r), mr(e, t, !0)) : c || f(e, t, R, D, s, a, l, r, !1), w) T ? t.props && e.props && t.props.to !== e.props.to && (t.props.to = e.props.to) : ms(t, n, k, u, 1);
+        if (l === "svg" || ac(I) ? l = "svg" : (l === "mathml" || lc(I)) && (l = "mathml"), _ ? (m(e.dynamicChildren, _, R, s, a, l, r), mr(e, t, !0)) : c || f(e, t, R, D, s, a, l, r, !1), w) T ? t.props && e.props && t.props.to !== e.props.to && (t.props.to = e.props.to) : ms(t, n, k, u, 1);
         else if ((t.props && t.props.to) !== (e.props && e.props.to)) {
           const S = t.target = Cl(t.props, v);
           S && ms(t, S, null, u, 0)
-        } else T && ms(t, E, B, u, 1);
+        } else T && ms(t, I, B, u, 1);
         Ms(t)
       }
     },
@@ -1692,11 +1692,11 @@ function _l(e, t, n, o, s) {
     onAppear: w,
     onAfterAppear: y,
     onAppearCancelled: C
-  } = t, _ = String(e.key), k = tf(n, e), E = (R, D) => {
+  } = t, _ = String(e.key), k = tf(n, e), I = (R, D) => {
     R && on(R, o, 9, D)
   }, B = (R, D) => {
     const S = D[1];
-    E(R, D), xe(R) ? R.every(I => I.length <= 1) && S() : R.length <= 1 && S()
+    I(R, D), xe(R) ? R.every(P => P.length <= 1) && S() : R.length <= 1 && S()
   }, T = {
     mode: l,
     persisted: r,
@@ -1707,28 +1707,28 @@ function _l(e, t, n, o, s) {
         else return;
       R[no] && R[no](!0);
       const S = k[_];
-      S && xo(e, S) && S.el[no] && S.el[no](), E(D, [R])
+      S && xo(e, S) && S.el[no] && S.el[no](), I(D, [R])
     },
     enter(R) {
       let D = u,
         S = d,
-        I = f;
+        P = f;
       if (!n.isMounted)
-        if (a) D = w || u, S = y || d, I = C || f;
+        if (a) D = w || u, S = y || d, P = C || f;
         else return;
       let $ = !1;
       const X = R[gs] = ce => {
-        $ || ($ = !0, ce ? E(I, [R]) : E(S, [R]), T.delayedLeave && T.delayedLeave(), R[gs] = void 0)
+        $ || ($ = !0, ce ? I(P, [R]) : I(S, [R]), T.delayedLeave && T.delayedLeave(), R[gs] = void 0)
       };
       D ? B(D, [R, X]) : X()
     },
     leave(R, D) {
       const S = String(e.key);
       if (R[gs] && R[gs](!0), n.isUnmounting) return D();
-      E(m, [R]);
-      let I = !1;
+      I(m, [R]);
+      let P = !1;
       const $ = R[no] = X => {
-        I || (I = !0, D(), X ? E(b, [R]) : E(v, [R]), R[no] = void 0, k[S] === e && delete k[S])
+        P || (P = !0, D(), X ? I(b, [R]) : I(v, [R]), R[no] = void 0, k[S] === e && delete k[S])
       };
       k[S] = e, g ? B(g, [R, $]) : $()
     },
@@ -2080,13 +2080,13 @@ function iv(e) {
     destroyed: C,
     unmounted: _,
     render: k,
-    renderTracked: E,
+    renderTracked: I,
     renderTriggered: B,
     errorCaptured: T,
     serverPrefetch: R,
     expose: D,
     inheritAttrs: S,
-    components: I,
+    components: P,
     directives: $,
     filters: X
   } = t;
@@ -2128,7 +2128,7 @@ function iv(e) {
   function U(te, ue) {
     xe(ue) ? ue.forEach(Re => te(Re.bind(n))) : ue && te(ue.bind(n))
   }
-  if (U(qg, f), U(at, m), U(af, g), U(lf, v), U(Cn, b), U(_n, p), U(Jg, T), U(Xg, E), U(Zg, B), U(kn, y), U(gi, _), U(Gg, R), xe(D))
+  if (U(qg, f), U(at, m), U(af, g), U(lf, v), U(Cn, b), U(_n, p), U(Jg, T), U(Xg, I), U(Zg, B), U(kn, y), U(gi, _), U(Gg, R), xe(D))
     if (D.length) {
       const te = e.exposed || (e.exposed = {});
       D.forEach(ue => {
@@ -2138,7 +2138,7 @@ function iv(e) {
         })
       })
     } else e.exposed || (e.exposed = {});
-  k && e.render === bn && (e.render = k), S != null && (e.inheritAttrs = S), I && (e.components = I), $ && (e.directives = $), R && of(e)
+  k && e.render === bn && (e.render = k), S != null && (e.inheritAttrs = S), P && (e.components = P), $ && (e.directives = $), R && of(e)
 }
 
 function sv(e, t, n = bn) {
@@ -2521,7 +2521,7 @@ const bf = e => e[0] === "_" || e === "$stable",
   hr = e => xe(e) ? e.map(yn) : [yn(e)],
   gv = (e, t, n) => {
     if (t._n) return t;
-    const o = le((...s) => hr(t(...s)), n);
+    const o = se((...s) => hr(t(...s)), n);
     return o._c = !1, o
   },
   wf = (e, t, n) => {
@@ -2607,7 +2607,7 @@ function bv(e, t) {
         x == null && y(O, L, q, me);
         break;
       case Be:
-        I(x, O, L, q, Q, oe, me, fe, de);
+        P(x, O, L, q, Q, oe, me, fe, de);
         break;
       default:
         pe & 1 ? k(x, O, L, q, Q, oe, me, fe, de) : pe & 6 ? $(x, O, L, q, Q, oe, me, fe, de) : (pe & 64 || pe & 128) && ie.process(x, O, L, q, Q, oe, me, fe, de, ne)
@@ -2638,8 +2638,8 @@ function bv(e, t) {
     for (; x && x !== O;) L = m(x), s(x), x = L;
     s(O)
   }, k = (x, O, L, q, Q, oe, me, fe, de) => {
-    O.type === "svg" ? me = "svg" : O.type === "math" && (me = "mathml"), x == null ? E(O, L, q, Q, oe, me, fe, de) : R(x, O, Q, oe, me, fe, de)
-  }, E = (x, O, L, q, Q, oe, me, fe) => {
+    O.type === "svg" ? me = "svg" : O.type === "math" && (me = "mathml"), x == null ? I(O, L, q, Q, oe, me, fe, de) : R(x, O, Q, oe, me, fe, de)
+  }, I = (x, O, L, q, Q, oe, me, fe) => {
     let de, ie;
     const {
       props: Se,
@@ -2717,7 +2717,7 @@ function bv(e, t) {
       }
       "value" in L && a(x, "value", O.value, L.value, Q)
     }
-  }, I = (x, O, L, q, Q, oe, me, fe, de) => {
+  }, P = (x, O, L, q, Q, oe, me, fe, de) => {
     const ie = O.el = x ? x.el : r(""),
       Se = O.anchor = x ? x.anchor : r("");
     let {
@@ -2964,7 +2964,7 @@ function bv(e, t) {
     const Ve = Se & 1 && Ce,
       Ye = !oi(x);
     let je;
-    if (Ye && (je = me && me.onVnodeBeforeUnmount) && hn(je, O, x), Se & 6) se(x.component, L, q);
+    if (Ye && (je = me && me.onVnodeBeforeUnmount) && hn(je, O, x), Se & 6) ae(x.component, L, q);
     else {
       if (Se & 128) {
         x.suspense.unmount(L, q);
@@ -3003,7 +3003,7 @@ function bv(e, t) {
     let L;
     for (; x !== O;) L = m(x), s(x), x = L;
     s(O)
-  }, se = (x, O, L) => {
+  }, ae = (x, O, L) => {
     const {
       bum: q,
       scope: Q,
@@ -3337,8 +3337,8 @@ function Af(e) {
   return e.dynamicChildren = Zi > 0 ? Nt || ei : null, Rv(), Zi > 0 && Nt && Nt.push(e), e
 }
 
-function ae(e, t, n, o, s, a) {
-  return Af(P(e, t, n, o, s, a, !0))
+function le(e, t, n, o, s, a) {
+  return Af(E(e, t, n, o, s, a, !0))
 }
 
 function Me(e, t, n, o, s) {
@@ -3366,7 +3366,7 @@ const Ef = ({
     f: !!n
   } : e : null);
 
-function P(e, t = null, n = null, o = 0, s = null, a = e === Be ? 0 : 1, l = !1, r = !1) {
+function E(e, t = null, n = null, o = 0, s = null, a = e === Be ? 0 : 1, l = !1, r = !1) {
   const c = {
     __v_isVNode: !0,
     __v_skip: !0,
@@ -3414,7 +3414,7 @@ function Dv(e, t = null, n = null, o = 0, s = null, a = !1) {
     r && !tt(r) && (t.class = ot(r)), Xe(c) && (rr(c) && !xe(c) && (c = ft({}, c)), t.style = an(c))
   }
   const l = tt(e) ? 1 : xf(e) ? 128 : Gd(e) ? 64 : Xe(e) ? 4 : Ee(e) ? 2 : 0;
-  return P(e, t, n, o, s, l, a, !0)
+  return E(e, t, n, o, s, l, a, !0)
 }
 
 function Bv(e) {
@@ -3830,7 +3830,7 @@ const Of = Il ? e => Il.createHTML(e) : e => e,
 
 function Zv(e) {
   const t = {};
-  for (const I in e) I in Rf || (t[I] = e[I]);
+  for (const P in e) P in Rf || (t[P] = e[P]);
   if (e.css === !1) return t;
   const {
     name: n = "v",
@@ -3851,44 +3851,44 @@ function Zv(e) {
     onEnterCancelled: C,
     onLeave: _,
     onLeaveCancelled: k,
-    onBeforeAppear: E = w,
+    onBeforeAppear: I = w,
     onAppear: B = y,
     onAppearCancelled: T = C
-  } = t, R = (I, $, X) => {
-    _o(I, $ ? d : r), _o(I, $ ? u : l), X && X()
-  }, D = (I, $) => {
-    I._isLeaving = !1, _o(I, f), _o(I, g), _o(I, m), $ && $()
-  }, S = I => ($, X) => {
-    const ce = I ? B : y,
-      U = () => R($, I, X);
+  } = t, R = (P, $, X) => {
+    _o(P, $ ? d : r), _o(P, $ ? u : l), X && X()
+  }, D = (P, $) => {
+    P._isLeaving = !1, _o(P, f), _o(P, g), _o(P, m), $ && $()
+  }, S = P => ($, X) => {
+    const ce = P ? B : y,
+      U = () => R($, P, X);
     Co(ce, [$, U]), Tc(() => {
-      _o($, I ? c : a), Kn($, I ? d : r), kc(ce) || Sc($, o, b, U)
+      _o($, P ? c : a), Kn($, P ? d : r), kc(ce) || Sc($, o, b, U)
     })
   };
   return ft(t, {
-    onBeforeEnter(I) {
-      Co(w, [I]), Kn(I, a), Kn(I, l)
+    onBeforeEnter(P) {
+      Co(w, [P]), Kn(P, a), Kn(P, l)
     },
-    onBeforeAppear(I) {
-      Co(E, [I]), Kn(I, c), Kn(I, u)
+    onBeforeAppear(P) {
+      Co(I, [P]), Kn(P, c), Kn(P, u)
     },
     onEnter: S(!1),
     onAppear: S(!0),
-    onLeave(I, $) {
-      I._isLeaving = !0;
-      const X = () => D(I, $);
-      Kn(I, f), Kn(I, m), ty(), Tc(() => {
-        I._isLeaving && (_o(I, f), Kn(I, g), kc(_) || Sc(I, o, p, X))
-      }), Co(_, [I, X])
+    onLeave(P, $) {
+      P._isLeaving = !0;
+      const X = () => D(P, $);
+      Kn(P, f), Kn(P, m), ty(), Tc(() => {
+        P._isLeaving && (_o(P, f), Kn(P, g), kc(_) || Sc(P, o, p, X))
+      }), Co(_, [P, X])
     },
-    onEnterCancelled(I) {
-      R(I, !1), Co(C, [I])
+    onEnterCancelled(P) {
+      R(P, !1), Co(C, [P])
     },
-    onAppearCancelled(I) {
-      R(I, !0), Co(T, [I])
+    onAppearCancelled(P) {
+      R(P, !0), Co(T, [P])
     },
-    onLeaveCancelled(I) {
-      D(I), Co(k, [I])
+    onLeaveCancelled(P) {
+      D(P), Co(k, [P])
     }
   })
 }
@@ -5558,14 +5558,14 @@ var Lp = K({
       r = F(),
       c = Tr(() => e.show || !e.lazyRender),
       u = N(() => {
-        const E = {
+        const I = {
           zIndex: l.value
         };
         if (Fe(e.duration)) {
           const B = e.position === "center" ? "animationDuration" : "transitionDuration";
-          E[B] = `${e.duration}s`
+          I[B] = `${e.duration}s`
         }
-        return E
+        return I
       }),
       d = () => {
         s || (s = !0, l.value = e.zIndex !== void 0 ? +e.zIndex : np(), t("open"))
@@ -5577,8 +5577,8 @@ var Lp = K({
           }
         })
       },
-      m = E => {
-        t("clickOverlay", E), e.closeOnClickOverlay && f()
+      m = I => {
+        t("clickOverlay", I), e.closeOnClickOverlay && f()
       },
       g = () => {
         if (e.overlay) return h(th, De({
@@ -5595,8 +5595,8 @@ var Lp = K({
           default: o["overlay-content"]
         })
       },
-      v = E => {
-        t("clickCloseIcon", E), f()
+      v = I => {
+        t("clickCloseIcon", I), f()
       },
       b = () => {
         if (e.closeable) return h(Pe, {
@@ -5615,9 +5615,9 @@ var Lp = K({
         })
       },
       y = () => t("closed"),
-      C = E => t("keydown", E),
+      C = I => t("keydown", I),
       _ = c(() => {
-        var E;
+        var I;
         const {
           round: B,
           position: T,
@@ -5637,16 +5637,16 @@ var Lp = K({
             "van-safe-area-bottom": D
           }],
           onKeydown: C
-        }, n, Js()), [(E = o.default) == null ? void 0 : E.call(o), b()]), [
+        }, n, Js()), [(I = o.default) == null ? void 0 : I.call(o), b()]), [
           [dt, e.show]
         ])
       }),
       k = () => {
         const {
-          position: E,
+          position: I,
           transition: B,
           transitionAppear: T
-        } = e, R = E === "center" ? "van-fade" : `van-popup-slide-${E}`;
+        } = e, R = I === "center" ? "van-fade" : `van-popup-slide-${I}`;
         return h(ya, {
           name: B || R,
           appear: T,
@@ -5656,11 +5656,11 @@ var Lp = K({
           default: _
         })
       };
-    return re(() => e.show, E => {
-      E && !s && (d(), n.tabindex === 0 && Oe(() => {
+    return re(() => e.show, I => {
+      I && !s && (d(), n.tabindex === 0 && Oe(() => {
         var B;
         (B = r.value) == null || B.focus()
-      })), !E && s && (s = !1, t("close"))
+      })), !I && s && (s = !1, t("close"))
     }), $e({
       popupRef: r
     }), eh(r, () => e.show && e.lockScroll), st("popstate", () => {
@@ -5876,13 +5876,13 @@ var qp = K({
       v = () => e.optionHeight * (+e.visibleOptionNum - 1) / 2,
       b = D => {
         let S = Vs(e.options, D);
-        const I = -S * e.optionHeight,
+        const P = -S * e.optionHeight,
           $ = () => {
             S > g() - 1 && (S = Vs(e.options, D));
             const X = e.options[S][e.fields.value];
             X !== e.value && t("change", X)
           };
-        o && I !== d.value ? r = $ : $(), d.value = I
+        o && P !== d.value ? r = $ : $(), d.value = P
       },
       p = () => e.readonly || !e.options.length,
       w = D => {
@@ -5891,15 +5891,15 @@ var qp = K({
       y = D => ht(Math.round(-D / e.optionHeight), 0, g() - 1),
       C = N(() => y(d.value)),
       _ = (D, S) => {
-        const I = Math.abs(D / S);
-        D = d.value + I / .003 * (D < 0 ? -1 : 1);
+        const P = Math.abs(D / S);
+        D = d.value + P / .003 * (D < 0 ? -1 : 1);
         const $ = y(D);
         f.value = +e.swipeDuration, b($)
       },
       k = () => {
         o = !1, f.value = 0, r && (r(), r = null)
       },
-      E = D => {
+      I = D => {
         if (!p()) {
           if (m.start(D), o) {
             const S = Qp(u.value);
@@ -5912,8 +5912,8 @@ var qp = K({
         if (p()) return;
         m.move(D), m.isVertical() && (o = !0, Ge(D, !0));
         const S = ht(s + m.deltaY.value, -(g() * e.optionHeight), e.optionHeight),
-          I = y(S);
-        I !== C.value && t("scrollInto", e.options[I]), d.value = S;
+          P = y(S);
+        P !== C.value && t("scrollInto", e.options[P]), d.value = S;
         const $ = Date.now();
         $ - a > Jc && (a = $, l = S)
       },
@@ -5934,7 +5934,7 @@ var qp = K({
         const D = {
           height: `${e.optionHeight}px`
         };
-        return e.options.map((S, I) => {
+        return e.options.map((S, P) => {
           const $ = S[e.fields.text],
             {
               disabled: X
@@ -5948,13 +5948,13 @@ var qp = K({
                 disabled: X,
                 selected: ce === e.value
               }), S.className],
-              onClick: () => w(I)
+              onClick: () => w(P)
             },
             te = {
               class: "van-ellipsis",
               [e.allowHtml ? "innerHTML" : "textContent"]: $
             };
-          return h("li", U, [n.option ? n.option(S, I) : h("div", te, null)])
+          return h("li", U, [n.option ? n.option(S, P) : h("div", te, null)])
         })
       };
     return yt(ih), $e({
@@ -5962,14 +5962,14 @@ var qp = K({
     }), vi(() => {
       const D = o ? Math.floor(-d.value / e.optionHeight) : e.options.findIndex($ => $[e.fields.value] === e.value),
         S = Vs(e.options, D),
-        I = -S * e.optionHeight;
-      o && S < D && k(), d.value = I
+        P = -S * e.optionHeight;
+      o && S < D && k(), d.value = P
     }), st("touchmove", B, {
       target: c
     }), () => h("div", {
       ref: c,
       class: Za(),
-      onTouchstartPassive: E,
+      onTouchstartPassive: I,
       onTouchend: T,
       onTouchcancel: T
     }, [h("ul", {
@@ -6283,7 +6283,7 @@ var ab = K({
         if (d.value <= 1) return;
         const {
           active: we
-        } = a, se = C(V), ye = _(se, Z);
+        } = a, ae = C(V), ye = _(ae, Z);
         if (e.loop) {
           if (c[0] && ye !== g.value) {
             const A = ye < g.value;
@@ -6294,9 +6294,9 @@ var ab = K({
             c[d.value - 1].setOffset(A ? -b.value : 0)
           }
         }
-        a.active = se, a.offset = ye, ve && se !== we && t("change", p.value)
+        a.active = ae, a.offset = ye, ve && ae !== we && t("change", p.value)
       },
-      E = () => {
+      I = () => {
         a.swiping = !0, a.active <= -1 ? k({
           pace: d.value
         }) : a.active >= d.value && k({
@@ -6304,7 +6304,7 @@ var ab = K({
         })
       },
       B = () => {
-        E(), r.reset(), so(() => {
+        I(), r.reset(), so(() => {
           a.swiping = !1, k({
             pace: -1,
             emitChange: !0
@@ -6312,7 +6312,7 @@ var ab = K({
         })
       },
       T = () => {
-        E(), r.reset(), so(() => {
+        I(), r.reset(), so(() => {
           a.swiping = !1, k({
             pace: 1,
             emitChange: !0
@@ -6326,27 +6326,27 @@ var ab = K({
           T(), S()
         }, +e.autoplay))
       },
-      I = (V = +e.initialSwipe) => {
+      P = (V = +e.initialSwipe) => {
         if (!o.value) return;
         const Z = () => {
           var ve, we;
           if (!Do(o)) {
-            const se = {
+            const ae = {
               width: o.value.offsetWidth,
               height: o.value.offsetHeight
             };
-            a.rect = se, a.width = +((ve = e.width) != null ? ve : se.width), a.height = +((we = e.height) != null ? we : se.height)
+            a.rect = ae, a.width = +((ve = e.width) != null ? ve : ae.width), a.height = +((we = e.height) != null ? we : ae.height)
           }
-          d.value && (V = Math.min(d.value - 1, V), V === -1 && (V = d.value - 1)), a.active = V, a.swiping = !0, a.offset = _(V), c.forEach(se => {
-            se.setOffset(0)
+          d.value && (V = Math.min(d.value - 1, V), V === -1 && (V = d.value - 1)), a.active = V, a.swiping = !0, a.offset = _(V), c.forEach(ae => {
+            ae.setOffset(0)
           }), S()
         };
         Do(o) ? Oe().then(Z) : Z()
       },
-      $ = () => I(a.active);
+      $ = () => P(a.active);
     let X;
     const ce = V => {
-        !e.touchable || V.touches.length > 1 || (r.start(V), l = !1, X = Date.now(), D(), E())
+        !e.touchable || V.touches.length > 1 || (r.start(V), l = !1, X = Date.now(), D(), I())
       },
       U = V => {
         e.touchable && a.swiping && (r.move(V), w.value && (!e.loop && (a.active === 0 && m.value > 0 || a.active === d.value - 1 && m.value < 0) || (Ge(V, e.stopPropagation), k({
@@ -6361,9 +6361,9 @@ var ab = K({
           Z = m.value / V;
         if ((Math.abs(Z) > .25 || Math.abs(m.value) > f.value / 2) && w.value) {
           const we = e.vertical ? r.offsetY.value : r.offsetX.value;
-          let se = 0;
-          e.loop ? se = we > 0 ? m.value > 0 ? -1 : 1 : 0 : se = -Math[m.value > 0 ? "ceil" : "floor"](m.value / f.value), k({
-            pace: se,
+          let ae = 0;
+          e.loop ? ae = we > 0 ? m.value > 0 ? -1 : 1 : 0 : ae = -Math[m.value > 0 ? "ceil" : "floor"](m.value / f.value), k({
+            pace: ae,
             emitChange: !0
           })
         } else m.value && k({
@@ -6374,7 +6374,7 @@ var ab = K({
         }), S()
       },
       ue = (V, Z = {}) => {
-        E(), r.reset(), so(() => {
+        I(), r.reset(), so(() => {
           let ve;
           e.loop && V === d.value ? ve = a.active === 0 ? 0 : V : ve = V % d.value, Z.immediate ? so(() => {
             a.swiping = !1
@@ -6418,9 +6418,9 @@ var ab = K({
       props: e,
       count: d,
       activeIndicator: p
-    }), re(() => e.initialSwipe, V => I(+V)), re(d, () => I(a.active)), re(() => e.autoplay, S), re([tn, jt, () => e.width, () => e.height], $), re(Dy(), V => {
+    }), re(() => e.initialSwipe, V => P(+V)), re(d, () => P(a.active)), re(() => e.autoplay, S), re([tn, jt, () => e.width, () => e.height], $), re(Dy(), V => {
       V === "visible" ? S() : D()
-    }), at(I), Cn(() => I(a.active)), Ca(() => I(a.active)), _n(D), kn(D), st("touchmove", U, {
+    }), at(P), Cn(() => P(a.active)), Ca(() => P(a.active)), _n(D), kn(D), st("touchmove", U, {
       target: s
     }), () => {
       var V;
@@ -6547,26 +6547,26 @@ var ub = K({
         borderColor: e.color,
         background: e.background
       })),
-      k = (se, ye) => {
+      k = (ae, ye) => {
         var A;
-        return (A = se.name) != null ? A : ye
+        return (A = ae.name) != null ? A : ye
       },
-      E = N(() => {
-        const se = p[y.currentIndex];
-        if (se) return k(se, y.currentIndex)
+      I = N(() => {
+        const ae = p[y.currentIndex];
+        if (ae) return k(ae, y.currentIndex)
       }),
       B = N(() => wr(e.offsetTop)),
       T = N(() => e.sticky ? B.value + o : 0),
-      R = se => {
+      R = ae => {
         const ye = u.value,
           A = v.value;
         if (!C.value || !ye || !A || !A[y.currentIndex]) return;
         const z = A[y.currentIndex].$el,
           H = z.offsetLeft - (ye.offsetWidth - z.offsetWidth) / 2;
-        l && l(), l = Xp(ye, H, se ? 0 : +e.duration)
+        l && l(), l = Xp(ye, H, ae ? 0 : +e.duration)
       },
       D = () => {
-        const se = y.inited;
+        const ae = y.inited;
         Oe(() => {
           const ye = v.value;
           if (!ye || !ye[y.currentIndex] || e.type !== "line" || Do(c.value)) return;
@@ -6581,45 +6581,45 @@ var ub = K({
               backgroundColor: e.color,
               transform: `translateX(${ne}px) translateX(-50%)`
             };
-          if (se && (ke.transitionDuration = `${e.duration}s`), Fe(H)) {
+          if (ae && (ke.transitionDuration = `${e.duration}s`), Fe(H)) {
             const Le = Ie(H);
             ke.height = Le, ke.borderRadius = Le
           }
           y.lineStyle = ke
         })
       },
-      S = se => {
-        const ye = se < y.currentIndex ? -1 : 1;
-        for (; se >= 0 && se < p.length;) {
-          if (!p[se].disabled) return se;
-          se += ye
+      S = ae => {
+        const ye = ae < y.currentIndex ? -1 : 1;
+        for (; ae >= 0 && ae < p.length;) {
+          if (!p[ae].disabled) return ae;
+          ae += ye
         }
       },
-      I = (se, ye) => {
-        const A = S(se);
+      P = (ae, ye) => {
+        const A = S(ae);
         if (!Fe(A)) return;
         const z = p[A],
           H = k(z, A),
           ne = y.currentIndex !== null;
         y.currentIndex !== A && (y.currentIndex = A, ye || R(), D()), H !== e.active && (t("update:active", H), ne && t("change", H, z.title)), a && !e.scrollspy && Ji(Math.ceil(Vc(c.value) - B.value))
       },
-      $ = (se, ye) => {
-        const A = p.find((H, ne) => k(H, ne) === se),
+      $ = (ae, ye) => {
+        const A = p.find((H, ne) => k(H, ne) === ae),
           z = A ? p.indexOf(A) : 0;
-        I(z, ye)
+        P(z, ye)
       },
-      X = (se = !1) => {
+      X = (ae = !1) => {
         if (e.scrollspy) {
           const ye = p[y.currentIndex].$el;
           if (ye && g.value) {
             const A = Vc(ye, g.value) - T.value;
-            s = !0, r && r(), r = Jp(g.value, A, se ? 0 : +e.duration, () => {
+            s = !0, r && r(), r = Jp(g.value, A, ae ? 0 : +e.duration, () => {
               s = !1
             })
           }
         }
       },
-      ce = (se, ye, A) => {
+      ce = (ae, ye, A) => {
         const {
           title: z,
           disabled: H
@@ -6627,36 +6627,36 @@ var ub = K({
         H || (vo(e.beforeChange, {
           args: [ne],
           done: () => {
-            I(ye), X()
+            P(ye), X()
           }
-        }), Gf(se)), t("clickTab", {
+        }), Gf(ae)), t("clickTab", {
           name: ne,
           title: z,
           event: A,
           disabled: H
         })
       },
-      U = se => {
-        a = se.isFixed, t("scroll", se)
+      U = ae => {
+        a = ae.isFixed, t("scroll", ae)
       },
-      te = se => {
+      te = ae => {
         Oe(() => {
-          $(se), X(!0)
+          $(ae), X(!0)
         })
       },
       ue = () => {
-        for (let se = 0; se < p.length; se++) {
+        for (let ae = 0; ae < p.length; ae++) {
           const {
             top: ye
-          } = Ue(p[se].$el);
-          if (ye > T.value) return se === 0 ? 0 : se - 1
+          } = Ue(p[ae].$el);
+          if (ye > T.value) return ae === 0 ? 0 : ae - 1
         }
         return p.length - 1
       },
       Re = () => {
         if (e.scrollspy && !s) {
-          const se = ue();
-          I(se)
+          const ae = ue();
+          P(ae)
         }
       },
       Ne = () => {
@@ -6666,7 +6666,7 @@ var ub = K({
         }, null)
       },
       V = () => {
-        var se, ye, A;
+        var ae, ye, A;
         const {
           type: z,
           border: H,
@@ -6685,19 +6685,19 @@ var ub = K({
           }]),
           style: _.value,
           "aria-orientation": "horizontal"
-        }, [(se = n["nav-left"]) == null ? void 0 : se.call(n), p.map(Le => Le.renderTitle(ce)), Ne(), (ye = n["nav-right"]) == null ? void 0 : ye.call(n)])]), (A = n["nav-bottom"]) == null ? void 0 : A.call(n)];
+        }, [(ae = n["nav-left"]) == null ? void 0 : ae.call(n), p.map(Le => Le.renderTitle(ce)), Ne(), (ye = n["nav-right"]) == null ? void 0 : ye.call(n)])]), (A = n["nav-bottom"]) == null ? void 0 : A.call(n)];
         return ne ? h("div", {
           ref: d
         }, [ke]) : ke
       },
       Z = () => {
         D(), Oe(() => {
-          var se, ye;
-          R(!0), (ye = (se = f.value) == null ? void 0 : se.swipeRef.value) == null || ye.resize()
+          var ae, ye;
+          R(!0), (ye = (ae = f.value) == null ? void 0 : ae.swipeRef.value) == null || ye.resize()
         })
       };
-    re(() => [e.color, e.duration, e.lineWidth, e.lineHeight], D), re(tn, Z), re(() => e.active, se => {
-      se !== E.value && $(se)
+    re(() => [e.color, e.duration, e.lineWidth, e.lineHeight], D), re(tn, Z), re(() => e.active, ae => {
+      ae !== I.value && $(ae)
     }), re(() => p.length, () => {
       y.inited && ($(e.active), D(), Oe(() => {
         R(!0)
@@ -6708,7 +6708,7 @@ var ub = K({
           y.inited = !0, d.value && (o = Ue(d.value).height), R(!0)
         })
       },
-      we = (se, ye) => t("rendered", se, ye);
+      we = (ae, ye) => t("rendered", ae, ye);
     return $e({
       resize: Z,
       scrollTo: te
@@ -6721,7 +6721,7 @@ var ub = K({
       setLine: D,
       scrollable: C,
       onRendered: we,
-      currentName: E,
+      currentName: I,
       setTitleRefs: b,
       scrollIntoView: R
     }), () => h("div", {
@@ -6742,11 +6742,11 @@ var ub = K({
       swipeable: e.swipeable,
       lazyRender: e.lazyRender,
       currentIndex: y.currentIndex,
-      onChange: I
+      onChange: P
     }, {
       default: () => {
-        var se;
-        return [(se = n.default) == null ? void 0 : se.call(n)]
+        var ae;
+        return [(ae = n.default) == null ? void 0 : ae.call(n)]
       }
     })])
   }
@@ -6978,7 +6978,7 @@ var bb = K({
           }, [(B = t.default) == null ? void 0 : B.call(t)])]
         }
       });
-      const E = o.value || y || !C ? (v = t.default) == null ? void 0 : v.call(t) : null;
+      const I = o.value || y || !C ? (v = t.default) == null ? void 0 : v.call(t) : null;
       return rt(h("div", {
         id: n,
         role: "tabpanel",
@@ -6986,7 +6986,7 @@ var bb = K({
         tabindex: _ ? 0 : -1,
         "aria-labelledby": b,
         "data-allow-mismatch": "attribute"
-      }, [E]), [
+      }, [I]), [
         [dt, _]
       ])
     }
@@ -7102,12 +7102,12 @@ var kb = K({
         }
       }),
       m = N(() => f.value.some(S => S.length)),
-      g = N(() => f.value.map((S, I) => Ml(S, s.value[I], c.value))),
-      v = N(() => f.value.map((S, I) => S.findIndex($ => $[c.value.value] === s.value[I]))),
-      b = (S, I) => {
-        if (s.value[S] !== I) {
+      g = N(() => f.value.map((S, P) => Ml(S, s.value[P], c.value))),
+      v = N(() => f.value.map((S, P) => S.findIndex($ => $[c.value.value] === s.value[P]))),
+      b = (S, P) => {
+        if (s.value[S] !== P) {
           const $ = s.value.slice(0);
-          $[S] = I, s.value = $
+          $[S] = P, s.value = $
         }
       },
       p = () => ({
@@ -7115,33 +7115,33 @@ var kb = K({
         selectedOptions: g.value,
         selectedIndexes: v.value
       }),
-      w = (S, I) => {
-        b(I, S), d.value === "cascade" && s.value.forEach(($, X) => {
+      w = (S, P) => {
+        b(P, S), d.value === "cascade" && s.value.forEach(($, X) => {
           const ce = f.value[X];
           Zc(ce, $, c.value) || b(X, ce.length ? ce[0][c.value.value] : void 0)
         }), Oe(() => {
           t("change", _e({
-            columnIndex: I
+            columnIndex: P
           }, p()))
         })
       },
-      y = (S, I) => {
+      y = (S, P) => {
         const $ = {
-          columnIndex: I,
+          columnIndex: P,
           currentOption: S
         };
         t("clickOption", _e(p(), $)), t("scrollInto", $)
       },
       C = () => {
-        l.forEach(I => I.stopMomentum());
+        l.forEach(P => P.stopMomentum());
         const S = p();
         return Oe(() => {
           t("confirm", S)
         }), S
       },
       _ = () => t("cancel", p()),
-      k = () => f.value.map((S, I) => h(qp, {
-        value: s.value[I],
+      k = () => f.value.map((S, P) => h(qp, {
+        value: s.value[P],
         fields: c.value,
         options: S,
         readonly: e.readonly,
@@ -7149,20 +7149,20 @@ var kb = K({
         optionHeight: u.value,
         swipeDuration: e.swipeDuration,
         visibleOptionNum: e.visibleOptionNum,
-        onChange: $ => w($, I),
-        onClickOption: $ => y($, I),
+        onChange: $ => w($, P),
+        onClickOption: $ => y($, P),
         onScrollInto: $ => {
           t("scrollInto", {
             currentOption: $,
-            columnIndex: I
+            columnIndex: P
           })
         }
       }, {
         option: n.option
       })),
-      E = S => {
+      I = S => {
         if (m.value) {
-          const I = {
+          const P = {
               height: `${u.value}px`
             },
             $ = {
@@ -7173,20 +7173,20 @@ var kb = K({
             style: $
           }, null), h("div", {
             class: [Gy, Rn("frame")],
-            style: I
+            style: P
           }, null)]
         }
       },
       B = () => {
         const S = u.value * +e.visibleOptionNum,
-          I = {
+          P = {
             height: `${S}px`
           };
         return h("div", {
           ref: o,
           class: Rn("columns"),
-          style: I
-        }, [k(), E(S)])
+          style: P
+        }, [k(), I(S)])
       },
       T = () => {
         if (e.showToolbar && !a) return h(ah, De(ze(e, Zp), {
@@ -7195,8 +7195,8 @@ var kb = K({
         }), ze(n, sh))
       };
     re(f, S => {
-      S.forEach((I, $) => {
-        I.length && !Zc(I, s.value[$], c.value) && b($, nh(I)[c.value.value])
+      S.forEach((P, $) => {
+        P.length && !Zc(P, s.value[$], c.value) && b($, nh(P)[c.value.value])
       })
     }, {
       immediate: !0
@@ -7216,12 +7216,12 @@ var kb = K({
       confirm: C,
       getSelectedOptions: () => g.value
     }), () => {
-      var S, I;
+      var S, P;
       return h("div", {
         class: Rn()
       }, [e.toolbarPosition === "top" ? T() : null, e.loading ? h(rn, {
         class: Rn("loading")
-      }, null) : null, (S = n["columns-top"]) == null ? void 0 : S.call(n), B(), (I = n["columns-bottom"]) == null ? void 0 : I.call(n), e.toolbarPosition === "bottom" ? T() : null])
+      }, null) : null, (S = n["columns-top"]) == null ? void 0 : S.call(n), B(), (P = n["columns-bottom"]) == null ? void 0 : P.call(n), e.toolbarPosition === "bottom" ? T() : null])
     }
   }
 });
@@ -7469,8 +7469,8 @@ var Mb = K({
       linkChildren: s
     } = Tt(Wf), a = p => p ? o.filter(w => p.includes(w.name)) : o, l = p => new Promise((w, y) => {
       const C = [];
-      a(p).reduce((k, E) => k.then(() => {
-        if (!C.length) return E.validate().then(B => {
+      a(p).reduce((k, I) => k.then(() => {
+        if (!C.length) return I.validate().then(B => {
           B && C.push(B)
         })
       }), Promise.resolve()).then(() => {
@@ -7795,7 +7795,7 @@ var Wb = K({
       k = A => {
         A.target.composing || _(A.target.value)
       },
-      E = () => {
+      I = () => {
         var A;
         return (A = a.value) == null ? void 0 : A.blur()
       },
@@ -7808,13 +7808,13 @@ var Wb = K({
         e.type === "textarea" && e.autosize && A && Vb(A, e.autosize)
       },
       R = A => {
-        s.focused = !0, t("focus", A), Oe(T), d("readonly") && E()
+        s.focused = !0, t("focus", A), Oe(T), d("readonly") && I()
       },
       D = A => {
         s.focused = !1, _(u(), "onBlur"), t("blur", A), !d("readonly") && (y("onBlur"), Oe(T), Lf())
       },
       S = A => t("clickInput", A),
-      I = A => t("clickLeftIcon", A),
+      P = A => t("clickLeftIcon", A),
       $ = A => t("clickRightIcon", A),
       X = A => {
         Ge(A), t("update:modelValue", ""), t("clear", A)
@@ -7831,7 +7831,7 @@ var Wb = K({
         }
       }),
       te = A => {
-        A.keyCode === 13 && (!(c && c.props.submitOnEnter) && e.type !== "textarea" && Ge(A), e.type === "search" && E()), t("keypress", A)
+        A.keyCode === 13 && (!(c && c.props.submitOnEnter) && e.type !== "textarea" && Ge(A), e.type === "search" && I()), t("keypress", A)
       },
       ue = () => e.id || `${o}-input`,
       Re = () => s.status,
@@ -7877,7 +7877,7 @@ var Wb = K({
         const A = n["left-icon"];
         if (e.leftIcon || A) return h("div", {
           class: Ut("left-icon"),
-          onClick: I
+          onClick: P
         }, [A ? A() : h(Pe, {
           name: e.leftIcon,
           classPrefix: e.iconPrefix
@@ -7916,7 +7916,7 @@ var Wb = K({
           }) : A])
         }
       },
-      se = () => {
+      ae = () => {
         const A = d("labelWidth"),
           z = d("labelAlign"),
           H = d("colon") ? ":" : "";
@@ -7943,7 +7943,7 @@ var Wb = K({
         class: Ut("button")
       }, [n.button()])]), ve(), we()];
     return $e({
-      blur: E,
+      blur: I,
       focus: B,
       validate: w,
       formValue: m,
@@ -7967,7 +7967,7 @@ var Wb = K({
         z = d("labelAlign"),
         H = V(),
         ne = () => {
-          const ke = se();
+          const ke = ae();
           return z === "top" ? [H, ke].filter(Boolean) : ke || []
         };
       return h(un, {
@@ -8396,39 +8396,39 @@ var c0 = K({
       r = N(() => wn(e.areaList) && Object.keys(e.areaList).length),
       c = N(() => {
         const {
-          province: E,
+          province: I,
           city: B,
           county: T,
           areaCode: R
         } = s;
         if (R) {
-          const D = [E, B, T];
-          return E && E === B && D.splice(1, 1), D.filter(Boolean).join("/")
+          const D = [I, B, T];
+          return I && I === B && D.splice(1, 1), D.filter(Boolean).join("/")
         }
         return ""
       }),
       u = N(() => {
-        var E;
-        return ((E = e.searchResult) == null ? void 0 : E.length) && l.value
+        var I;
+        return ((I = e.searchResult) == null ? void 0 : I.length) && l.value
       }),
-      d = E => {
-        l.value = E === "addressDetail", t("focus", E)
+      d = I => {
+        l.value = I === "addressDetail", t("focus", I)
       },
-      f = (E, B) => {
+      f = (I, B) => {
         t("change", {
-          key: E,
+          key: I,
           value: B
         })
       },
       m = N(() => {
         const {
-          validator: E,
+          validator: I,
           telValidator: B
         } = e, T = (R, D) => ({
           validator: S => {
-            if (E) {
-              const I = E(R, S);
-              if (I) return I
+            if (I) {
+              const P = I(R, S);
+              if (P) return P
             }
             return S ? !0 : D
           }
@@ -8444,33 +8444,33 @@ var c0 = K({
         }
       }),
       g = () => t("save", s),
-      v = E => {
-        s.addressDetail = E, t("changeDetail", E)
+      v = I => {
+        s.addressDetail = I, t("changeDetail", I)
       },
-      b = E => {
-        s.province = E[0].text, s.city = E[1].text, s.county = E[2].text
+      b = I => {
+        s.province = I[0].text, s.city = I[1].text, s.county = I[2].text
       },
       p = ({
-        selectedValues: E,
+        selectedValues: I,
         selectedOptions: B
       }) => {
-        E.some(T => T === ii) ? Ll(xt("areaEmpty")) : (a.value = !1, b(B), t("changeArea", B))
+        I.some(T => T === ii) ? Ll(xt("areaEmpty")) : (a.value = !1, b(B), t("changeArea", B))
       },
       w = () => t("delete", s),
-      y = E => {
-        s.areaCode = E || ""
+      y = I => {
+        s.areaCode = I || ""
       },
       C = () => {
         setTimeout(() => {
           l.value = !1
         })
       },
-      _ = E => {
-        s.addressDetail = E
+      _ = I => {
+        s.addressDetail = I
       },
       k = () => {
         if (e.showSetDefault) {
-          const E = {
+          const I = {
             "right-icon": () => h(Rr, {
               modelValue: s.isDefault,
               "onUpdate:modelValue": B => s.isDefault = B,
@@ -8482,7 +8482,7 @@ var c0 = K({
             border: !1,
             title: xt("defaultAddress"),
             class: Ho("default")
-          }, E), [
+          }, I), [
             [dt, !u.value]
           ])
         }
@@ -8490,8 +8490,8 @@ var c0 = K({
     return $e({
       setAreaCode: y,
       setAddressDetail: _
-    }), re(() => e.addressInfo, E => {
-      _e(s, wh, E), Oe(() => {
+    }), re(() => e.addressInfo, I => {
+      _e(s, wh, I), Oe(() => {
         var B;
         const T = (B = o.value) == null ? void 0 : B.getSelectedOptions();
         T && T.every(R => R && R.value !== ii) && b(T)
@@ -8501,7 +8501,7 @@ var c0 = K({
       immediate: !0
     }), () => {
       const {
-        disableArea: E
+        disableArea: I
       } = e;
       return h(Er, {
         class: Ho(),
@@ -8532,13 +8532,13 @@ var c0 = K({
           }, null), rt(h($n, {
             readonly: !0,
             label: xt("area"),
-            "is-link": !E,
+            "is-link": !I,
             modelValue: c.value,
             rules: e.showArea ? m.value.areaCode : void 0,
             placeholder: e.areaPlaceholder || xt("area"),
             onFocus: () => d("areaCode"),
             onClick: () => {
-              t("clickArea"), a.value = !E
+              t("clickArea"), a.value = !I
             }
           }, null), [
             [dt, e.showArea]
@@ -9513,33 +9513,33 @@ var J0 = K({
   }) {
     const [o, s] = Ty(), a = F(), l = F(), r = Kf(l), c = N(() => Q0(e.date)), u = N(() => Ie(e.rowHeight)), d = N(() => {
       const D = e.date.getDate(),
-        I = (e.date.getDay() - D % 7 + 8) % 7;
-      return e.firstDayOfWeek ? (I + 7 - e.firstDayOfWeek) % 7 : I
+        P = (e.date.getDay() - D % 7 + 8) % 7;
+      return e.firstDayOfWeek ? (P + 7 - e.firstDayOfWeek) % 7 : P
     }), f = N(() => Ph(e.date.getFullYear(), e.date.getMonth() + 1)), m = N(() => o.value || !e.lazyRender), g = () => c.value, v = D => {
-      const S = I => e.currentDate.some($ => Bt($, I) === 0);
+      const S = P => e.currentDate.some($ => Bt($, P) === 0);
       if (S(D)) {
-        const I = Nl(D),
+        const P = Nl(D),
           $ = Fl(D),
-          X = S(I),
+          X = S(P),
           ce = S($);
         return X && ce ? "multiple-middle" : X ? "end" : ce ? "start" : "multiple-selected"
       }
       return ""
     }, b = D => {
-      const [S, I] = e.currentDate;
+      const [S, P] = e.currentDate;
       if (!S) return "";
       const $ = Bt(D, S);
-      if (!I) return $ === 0 ? "start" : "";
-      const X = Bt(D, I);
+      if (!P) return $ === 0 ? "start" : "";
+      const X = Bt(D, P);
       return e.allowSameDay && $ === 0 && X === 0 ? "start-end" : $ === 0 ? "start" : X === 0 ? "end" : $ > 0 && X < 0 ? "middle" : ""
     }, p = D => {
       const {
         type: S,
-        minDate: I,
+        minDate: P,
         maxDate: $,
         currentDate: X
       } = e;
-      if (I && Bt(D, I) < 0 || $ && Bt(D, $) > 0) return "disabled";
+      if (P && Bt(D, P) < 0 || $ && Bt(D, $) > 0) return "disabled";
       if (X === null) return "";
       if (Array.isArray(X)) {
         if (S === "multiple") return v(D);
@@ -9570,9 +9570,9 @@ var J0 = K({
     }), k = N(() => {
       const D = [],
         S = e.date.getFullYear(),
-        I = e.date.getMonth();
+        P = e.date.getMonth();
       for (let $ = 1; $ <= f.value; $++) {
-        const X = new Date(S, I, $),
+        const X = new Date(S, P, $),
           ce = p(X);
         let U = {
           date: X,
@@ -9583,12 +9583,12 @@ var J0 = K({
         e.formatter && (U = e.formatter(U)), D.push(U)
       }
       return D
-    }), E = N(() => k.value.filter(D => D.type === "disabled")), B = (D, S) => {
+    }), I = N(() => k.value.filter(D => D.type === "disabled")), B = (D, S) => {
       if (a.value) {
-        const I = Ue(a.value),
+        const P = Ue(a.value),
           $ = _.value.length,
-          ce = (Math.ceil((S.getDate() + d.value) / 7) - 1) * I.height / $;
-        Zs(D, I.top + ce + D.scrollTop - Ue(D).top)
+          ce = (Math.ceil((S.getDate() + d.value) / 7) - 1) * P.height / $;
+        Zs(D, P.top + ce + D.scrollTop - Ue(D).top)
       }
     }, T = (D, S) => h(G0, {
       item: D,
@@ -9596,8 +9596,8 @@ var J0 = K({
       color: e.color,
       offset: d.value,
       rowHeight: u.value,
-      onClick: I => t("click", I),
-      onClickDisabledDate: I => t("clickDisabledDate", I)
+      onClick: P => t("click", P),
+      onClickDisabledDate: P => t("clickDisabledDate", P)
     }, ze(n, ["top-info", "bottom-info"])), R = () => h("div", {
       ref: a,
       role: "grid",
@@ -9608,7 +9608,7 @@ var J0 = K({
       getHeight: () => r.value,
       setVisible: s,
       scrollToDate: B,
-      disabledDays: E
+      disabledDays: I
     }), () => h("div", {
       class: nt("month"),
       ref: l
@@ -9658,7 +9658,7 @@ var t1 = K({
           C = g ? "arrow" : "arrow-left",
           _ = g ? "arrow-double-right" : "arrow-double-left",
           k = () => u((g ? du : uu)(e.date)),
-          E = () => u((g ? hu : fu)(e.date)),
+          I = () => u((g ? hu : fu)(e.date)),
           B = h("view", {
             class: nt("header-action", {
               disabled: w
@@ -9676,7 +9676,7 @@ var t1 = K({
             class: nt("header-action", {
               disabled: y
             }),
-            onClick: y ? void 0 : E
+            onClick: y ? void 0 : I
           }, [p ? p({
             disabled: y
           }) : h(Pe, {
@@ -9783,13 +9783,13 @@ var o1 = K({
         const we = ks();
         if (Z === "range") {
           Array.isArray(V) || (V = []), V.length === 1 && Bt(V[0], we) === 1 && (V = []);
-          const se = s.value,
+          const ae = s.value,
             ye = a.value,
-            A = l(V[0] || we, se, ye ? ve ? ye : Nl(ye) : void 0),
-            z = l(V[1] || (ve ? we : Fl(we)), se ? ve ? se : Fl(se) : void 0);
+            A = l(V[0] || we, ae, ye ? ve ? ye : Nl(ye) : void 0),
+            z = l(V[1] || (ve ? we : Fl(we)), ae ? ve ? ae : Fl(ae) : void 0);
           return [A, z]
         }
-        return Z === "multiple" ? Array.isArray(V) ? V.map(se => l(se)) : [l(we)] : ((!V || Array.isArray(V)) && (V = we), l(V))
+        return Z === "multiple" ? Array.isArray(V) ? V.map(ae => l(ae)) : [l(we)] : ((!V || Array.isArray(V)) && (V = we), l(V))
       },
       c = () => {
         const V = Array.isArray(f.value) ? f.value[0] : f.value;
@@ -9824,15 +9824,15 @@ var o1 = K({
           ve = w.value.map((z, H) => v.value[H].getHeight()),
           we = ve.reduce((z, H) => z + H, 0);
         if (Z > we && V > 0) return;
-        let se = 0,
+        let ae = 0,
           ye;
         const A = [-1, -1];
         for (let z = 0; z < w.value.length; z++) {
           const H = v.value[z];
-          se <= Z && se + ve[z] >= V && (A[1] = z, ye || (ye = H, A[0] = z), v.value[z].showed || (v.value[z].showed = !0, t("monthShow", {
+          ae <= Z && ae + ve[z] >= V && (A[1] = z, ye || (ye = H, A[0] = z), v.value[z].showed || (v.value[z].showed = !0, t("monthShow", {
             date: H.date,
             title: H.getTitle()
-          }))), se += ve[z]
+          }))), ae += ve[z]
         }
         w.value.forEach((z, H) => {
           const ne = H >= A[0] - 1 && H <= A[1] + 1;
@@ -9844,7 +9844,7 @@ var o1 = K({
           w.value.some((Z, ve) => Ao(Z, V) === 0 ? (d.value && v.value[ve].scrollToDate(d.value, V), !0) : !1), _()
         })
       },
-      E = () => {
+      I = () => {
         if (!(e.poppable && !e.show))
           if (f.value) {
             const V = e.type === "single" ? f.value : f.value[0];
@@ -9854,10 +9854,10 @@ var o1 = K({
       B = () => {
         e.poppable && !e.show || (o.value || wt(() => {
           u = Math.floor(Ue(d).height)
-        }), E())
+        }), I())
       },
       T = (V = r()) => {
-        f.value = V, E()
+        f.value = V, I()
       },
       R = V => {
         const {
@@ -9876,7 +9876,7 @@ var o1 = K({
         var V;
         return t("confirm", (V = f.value) != null ? V : cu(f.value))
       },
-      I = (V, Z) => {
+      P = (V, Z) => {
         const ve = we => {
           f.value = we, t("select", cu(we))
         };
@@ -9888,7 +9888,7 @@ var o1 = K({
       },
       $ = (V, Z, ve) => {
         var we;
-        return (we = V.find(se => Bt(Z, se.date) === -1 && Bt(se.date, ve) === -1)) == null ? void 0 : we.date
+        return (we = V.find(ae => Bt(Z, ae.date) === -1 && Bt(ae.date, ve) === -1)) == null ? void 0 : we.date
       },
       X = N(() => v.value.reduce((V, Z) => {
         var ve, we;
@@ -9903,32 +9903,32 @@ var o1 = K({
         } = e;
         if (ve === "range") {
           if (!f.value) {
-            I([Z]);
+            P([Z]);
             return
           }
-          const [we, se] = f.value;
-          if (we && !se) {
+          const [we, ae] = f.value;
+          if (we && !ae) {
             const ye = Bt(Z, we);
             if (ye === 1) {
               const A = $(X.value, we, Z);
               if (A) {
                 const z = Nl(A);
-                Bt(we, z) === -1 ? I([we, z]) : I([Z])
-              } else I([we, Z], !0)
-            } else ye === -1 ? I([Z]) : e.allowSameDay && I([Z, Z], !0)
-          } else I([Z])
+                Bt(we, z) === -1 ? P([we, z]) : P([Z])
+              } else P([we, Z], !0)
+            } else ye === -1 ? P([Z]) : e.allowSameDay && P([Z, Z], !0)
+          } else P([Z])
         } else if (ve === "multiple") {
           if (!f.value) {
-            I([Z]);
+            P([Z]);
             return
           }
           const we = f.value,
-            se = we.findIndex(ye => Bt(ye, Z) === 0);
-          if (se !== -1) {
-            const [ye] = we.splice(se, 1);
+            ae = we.findIndex(ye => Bt(ye, Z) === 0);
+          if (ae !== -1) {
+            const [ye] = we.splice(ae, 1);
             t("unselect", di(ye))
-          } else e.maxRange && we.length >= +e.maxRange ? Ll(e.rangePrompt || Mn("rangePrompt", e.maxRange)) : I([...we, Z])
-        } else I(Z, !0)
+          } else e.maxRange && we.length >= +e.maxRange ? Ll(e.rangePrompt || Mn("rangePrompt", e.maxRange)) : P([...we, Z])
+        } else P(Z, !0)
       },
       U = V => t("update:show", V),
       te = (V, Z) => {
@@ -10282,11 +10282,11 @@ var g1 = K({
         value: "value",
         children: "children"
       }, e.fieldNames),
-      d = (k, E) => {
+      d = (k, I) => {
         for (const B of k) {
-          if (B[c] === E) return [B];
+          if (B[c] === I) return [B];
           if (B[u]) {
-            const T = d(B[u], E);
+            const T = d(B[u], I);
             if (T) return [B, ...T]
           }
         }
@@ -10294,10 +10294,10 @@ var g1 = K({
       f = () => {
         const {
           options: k,
-          modelValue: E
+          modelValue: I
         } = e;
-        if (E !== void 0) {
-          const B = d(k, E);
+        if (I !== void 0) {
+          const B = d(k, I);
           if (B) {
             let T = k;
             o.value = B.map(R => {
@@ -10305,7 +10305,7 @@ var g1 = K({
                   options: T,
                   selected: R
                 },
-                S = T.find(I => I[c] === R[c]);
+                S = T.find(P => P[c] === R[c]);
               return S && (T = S[u]), D
             }), T && o.value.push({
               options: T,
@@ -10321,14 +10321,14 @@ var g1 = K({
           selected: null
         }]
       },
-      m = (k, E) => {
+      m = (k, I) => {
         if (k.disabled) return;
-        if (o.value[E].selected = k, o.value.length > E + 1 && (o.value = o.value.slice(0, E + 1)), k[u]) {
+        if (o.value[I].selected = k, o.value.length > I + 1 && (o.value = o.value.slice(0, I + 1)), k[u]) {
           const R = {
             options: k[u],
             selected: null
           };
-          o.value[E + 1] ? o.value[E + 1] = R : o.value.push(R), Oe(() => {
+          o.value[I + 1] ? o.value[I + 1] = R : o.value.push(R), Oe(() => {
             s.value++
           })
         }
@@ -10336,7 +10336,7 @@ var g1 = K({
         n("update:modelValue", k[c]);
         const T = {
           value: k[c],
-          tabIndex: E,
+          tabIndex: I,
           selectedOptions: B
         };
         n("change", T), k[u] || n("finish", T)
@@ -10344,8 +10344,8 @@ var g1 = K({
       g = () => n("close"),
       v = ({
         name: k,
-        title: E
-      }) => n("clickTab", k, E),
+        title: I
+      }) => n("clickTab", k, I),
       b = () => e.showHeader ? h("div", {
         class: xn("header")
       }, [h("h2", {
@@ -10355,10 +10355,10 @@ var g1 = K({
         class: [xn("close-icon"), _t],
         onClick: g
       }, null) : null]) : null,
-      p = (k, E, B) => {
+      p = (k, I, B) => {
         const {
           disabled: T
-        } = k, R = !!(E && k[c] === E[c]), D = k.color || (R ? e.activeColor : void 0), S = t.option ? t.option({
+        } = k, R = !!(I && k[c] === I[c]), D = k.color || (R ? e.activeColor : void 0), S = t.option ? t.option({
           option: k,
           selected: R
         }) : h("span", null, [k[r]]);
@@ -10381,11 +10381,11 @@ var g1 = K({
           class: xn("selected-icon")
         }, null) : null])
       },
-      w = (k, E, B) => h("ul", {
+      w = (k, I, B) => h("ul", {
         role: "menu",
         class: xn("options")
-      }, [k.map(T => p(T, E, B))]),
-      y = (k, E) => {
+      }, [k.map(T => p(T, I, B))]),
+      y = (k, I) => {
         const {
           options: B,
           selected: T
@@ -10397,11 +10397,11 @@ var g1 = K({
           })
         }, {
           default: () => {
-            var S, I;
+            var S, P;
             return [(S = t["options-top"]) == null ? void 0 : S.call(t, {
-              tabIndex: E
-            }), w(B, T, E), (I = t["options-bottom"]) == null ? void 0 : I.call(t, {
-              tabIndex: E
+              tabIndex: I
+            }), w(B, T, I), (P = t["options-bottom"]) == null ? void 0 : P.call(t, {
+              tabIndex: I
             })]
           }
         })
@@ -10419,12 +10419,12 @@ var g1 = K({
         default: () => [o.value.map(y)]
       }),
       _ = k => {
-        const E = k.parentElement;
-        E && (E.scrollTop = k.offsetTop - (E.offsetHeight - k.offsetHeight) / 2)
+        const I = k.parentElement;
+        I && (I.scrollTop = k.offsetTop - (I.offsetHeight - k.offsetHeight) / 2)
       };
     return f(), re(s, k => {
-      const E = a.value[k];
-      E && _(E)
+      const I = a.value[k];
+      I && _(I)
     }), re(() => e.options, f, {
       deep: !0
     }), re(() => e.modelValue, k => {
@@ -11694,7 +11694,7 @@ var Tw = K({
       const {
         coupons: y,
         chosenCoupon: C
-      } = e, _ = e.showCount ? ` (${y.length})` : "", k = (e.enabledTitle || Qo("enable")) + _, E = (B = [], T = 0) => B.includes(T) ? B.filter(R => R !== T) : [...B, T];
+      } = e, _ = e.showCount ? ` (${y.length})` : "", k = (e.enabledTitle || Qo("enable")) + _, I = (B = [], T = 0) => B.includes(T) ? B.filter(R => R !== T) : [...B, T];
       return h(es, {
         title: k
       }, {
@@ -11713,7 +11713,7 @@ var Tw = K({
             coupon: T,
             chosen: Array.isArray(C) ? C.includes(R) : R === C,
             currency: e.currency,
-            onClick: () => t("change", Array.isArray(C) ? E(C, R) : R)
+            onClick: () => t("change", Array.isArray(C) ? I(C, R) : R)
           }, null)), !y.length && v(), (B = n["list-footer"]) == null ? void 0 : B.call(n)])]
         }
       })
@@ -11733,10 +11733,10 @@ var Tw = K({
             style: {
               height: `${c.value}px`
             }
-          }, [y.map(E => h(zl, {
+          }, [y.map(I => h(zl, {
             disabled: !0,
-            key: E.id,
-            coupon: E,
+            key: I.id,
+            coupon: I,
             currency: e.currency
           }, null)), !y.length && v(), (k = n["disabled-list-footer"]) == null ? void 0 : k.call(n)])]
         }
@@ -11811,8 +11811,8 @@ var Ew = K({
       f = _ => {
         const {
           minDate: k,
-          columnsType: E
-        } = e, B = E.indexOf(_), T = s.value ? e.modelValue[B] : o.value[B];
+          columnsType: I
+        } = e, B = I.indexOf(_), T = s.value ? e.modelValue[B] : o.value[B];
         if (T) return +T;
         switch (_) {
           case "year":
@@ -11826,15 +11826,15 @@ var Ew = K({
       m = () => {
         const _ = f("year"),
           k = r(_) ? e.minDate.getMonth() + 1 : 1,
-          E = c(_) ? e.maxDate.getMonth() + 1 : 12;
-        return si(k, E, "month", e.formatter, e.filter)
+          I = c(_) ? e.maxDate.getMonth() + 1 : 12;
+        return si(k, I, "month", e.formatter, e.filter)
       },
       g = () => {
         const _ = f("year"),
           k = f("month"),
-          E = r(_) && u(k) ? e.minDate.getDate() : 1,
+          I = r(_) && u(k) ? e.minDate.getDate() : 1,
           B = c(_) && d(k) ? e.maxDate.getDate() : Ph(_, k);
-        return si(E, B, "day", e.formatter, e.filter)
+        return si(I, B, "day", e.formatter, e.filter)
       },
       v = () => {
         var _;
@@ -11956,13 +11956,13 @@ var Dw = K({
         } = e, k = qt("message", {
           "has-title": w,
           [_]: _
-        }), E = ci(y) ? y() : y;
-        return C && typeof E == "string" ? h("div", {
+        }), I = ci(y) ? y() : y;
+        return C && typeof I == "string" ? h("div", {
           class: k,
-          innerHTML: E
+          innerHTML: I
         }, null) : h("div", {
           class: k
-        }, [E])
+        }, [I])
       },
       g = () => {
         if (n.default) return h("div", {
@@ -12148,7 +12148,7 @@ var zw = K({
           showPopup: _
         } = y.state, {
           disabled: k,
-          titleClass: E
+          titleClass: I
         } = y;
         return h("div", {
           id: `${n}-${C}`,
@@ -12168,7 +12168,7 @@ var zw = K({
           class: [Es("title", {
             down: _ === (e.direction === "down"),
             active: _
-          }), E],
+          }), I],
           style: {
             color: _ ? e.activeColor : ""
           }
@@ -12256,7 +12256,7 @@ var Ww = K({
           activeColor: C
         } = l.props, {
           disabled: _
-        } = y, k = y.value === e.modelValue, E = () => {
+        } = y, k = y.value === e.modelValue, I = () => {
           _ || (s.showPopup = !1, y.value !== e.modelValue && (t("update:modelValue", y.value), t("change", y.value)))
         }, B = () => {
           if (k) return h(Pe, {
@@ -12279,7 +12279,7 @@ var Ww = K({
           },
           tabindex: k ? 0 : -1,
           clickable: !_,
-          onClick: E
+          onClick: I
         }, {
           value: B
         })
@@ -12291,7 +12291,7 @@ var Ww = K({
           autoLocate: C,
           zIndex: _,
           overlay: k,
-          duration: E,
+          duration: I,
           direction: B,
           closeOnClickOverlay: T
         } = l.props, R = Un(_);
@@ -12312,7 +12312,7 @@ var Ww = K({
           class: Is("content"),
           overlay: k,
           position: B === "down" ? "top" : "bottom",
-          duration: s.transition ? E : 0,
+          duration: s.transition ? I : 0,
           lazyRender: e.lazyRender,
           overlayStyle: {
             position: "absolute"
@@ -12525,9 +12525,9 @@ var Jw = K({
         const _ = Math.abs(C),
           {
             min: k,
-            max: E
+            max: I
           } = r.value;
-        return _ > E ? -(E + (_ - E) * .2) : _ < k ? -(k - (k - _) * .2) : C
+        return _ > I ? -(I + (_ - I) * .2) : _ < k ? -(k - (k - _) * .2) : C
       };
     let m, g = -1;
     const v = Kt(),
@@ -12546,8 +12546,8 @@ var Jw = K({
           if (-m < r.value.max) Ge(C, !0);
           else if (!(B <= 0 && v.deltaY.value > 0) || g > 0) return
         }
-        const E = v.deltaY.value + m;
-        l.value = -f(E)
+        const I = v.deltaY.value + m;
+        l.value = -f(I)
       },
       w = () => {
         g = -1, u.value = !1, l.value = Xs(c.value, l.value), l.value !== -m && t("heightChange", {
@@ -12942,7 +12942,7 @@ var gC = K({
           y: s.startY.value
         } : void 0)
       };
-    let p, w, y, C, _, k, E, B, T = !1;
+    let p, w, y, C, _, k, I, B, T = !1;
     const R = U => {
         const {
           touches: te
@@ -12983,12 +12983,12 @@ var gC = K({
           V = Re == null ? void 0 : Re.contains(U.target);
         !e.closeOnClickImage && V || !e.closeOnClickOverlay && Ne || t("close")
       },
-      I = U => {
+      P = U => {
         if (p > 1) return;
         const te = Date.now() - B,
           ue = 250;
-        s.isTap.value && (te < ue ? e.doubleScale ? E ? (clearTimeout(E), E = null, b()) : E = setTimeout(() => {
-          S(U), E = null
+        s.isTap.value && (te < ue ? e.doubleScale ? I ? (clearTimeout(I), I = null, b()) : I = setTimeout(() => {
+          S(U), I = null
         }, ue) : S(U) : te > jf && t("longPress"))
       },
       $ = U => {
@@ -12998,7 +12998,7 @@ var gC = K({
           const ue = +e.maxZoom;
           o.scale > ue && g(ue, k)
         }
-        Ge(U, te), I(U), s.reset()
+        Ge(U, te), P(U), s.reset()
       },
       X = () => {
         const {
@@ -13320,8 +13320,8 @@ var SC = K({
       g = (T, R) => {
         for (let D = c.length - 1; D >= 0; D--) {
           const S = D > 0 ? R[D - 1].height : 0,
-            I = e.sticky ? S + e.stickyOffsetTop : 0;
-          if (T + I >= R[D].top) return D
+            P = e.sticky ? S + e.stickyOffsetTop : 0;
+          if (T + P >= R[D].top) return D
         }
         return -1
       },
@@ -13331,15 +13331,15 @@ var SC = K({
         const {
           sticky: T,
           indexList: R
-        } = e, D = Ln(r.value), S = Ue(r), I = c.map(X => X.getRect(r.value, S));
+        } = e, D = Ln(r.value), S = Ue(r), P = c.map(X => X.getRect(r.value, S));
         let $ = -1;
         if (d) {
           const X = v(d);
           if (X) {
             const ce = X.getRect(r.value, S);
-            e.sticky && e.stickyOffsetTop ? $ = g(ce.top - e.stickyOffsetTop, I) : $ = g(ce.top, I)
+            e.sticky && e.stickyOffsetTop ? $ = g(ce.top - e.stickyOffsetTop, P) : $ = g(ce.top, P)
           }
-        } else $ = g(D, I);
+        } else $ = g(D, P);
         a.value = R[$], T && c.forEach((X, ce) => {
           const {
             state: U,
@@ -13349,10 +13349,10 @@ var SC = K({
             const ue = te.getBoundingClientRect();
             U.left = ue.left, U.width = ue.width
           } else U.left = null, U.width = null;
-          if (ce === $) U.active = !0, U.top = Math.max(e.stickyOffsetTop, I[ce].top - D) + S.top;
+          if (ce === $) U.active = !0, U.top = Math.max(e.stickyOffsetTop, P[ce].top - D) + S.top;
           else if (ce === $ - 1 && d === "") {
-            const ue = I[$].top - D;
-            U.active = ue > 0, U.top = ue + S.top - I[ce].height
+            const ue = P[$].top - D;
+            U.active = ue > 0, U.top = ue + S.top - P[ce].height
           } else U.active = !1
         }), d = ""
       },
@@ -13382,13 +13382,13 @@ var SC = K({
           const D = Ln(r.value),
             S = Ue(r),
             {
-              offsetHeight: I
+              offsetHeight: P
             } = document.documentElement;
-          if (R.$el.scrollIntoView(), D === I - S.height) {
+          if (R.$el.scrollIntoView(), D === P - S.height) {
             b();
             return
           }
-          e.sticky && e.stickyOffsetTop && (Po() === I - S.height ? Ji(Po()) : Ji(Po() - e.stickyOffsetTop)), t("select", R.index)
+          e.sticky && e.stickyOffsetTop && (Po() === P - S.height ? Ji(Po()) : Ji(Po() - e.stickyOffsetTop)), t("select", R.index)
         }
       },
       C = T => {
@@ -13401,7 +13401,7 @@ var SC = K({
         C(T.target)
       };
     let k;
-    const E = T => {
+    const I = T => {
         if (l.move(T), l.isVertical()) {
           Ge(T);
           const {
@@ -13410,9 +13410,9 @@ var SC = K({
           } = T.touches[0], S = document.elementFromPoint(R, D);
           if (S) {
             const {
-              index: I
+              index: P
             } = S.dataset;
-            I && k !== I && (k = I, C(S))
+            P && k !== P && (k = P, C(S))
           }
         }
       },
@@ -13425,7 +13425,7 @@ var SC = K({
       }, [w()]);
     return $e({
       scrollTo: y
-    }), st("touchmove", E, {
+    }), st("touchmove", I, {
       target: s
     }), () => {
       var T;
@@ -14785,21 +14785,21 @@ function Y_(e) {
           });
           {
             var _ = U_([].concat(C, d.options.modifiers), function(S) {
-              var I = S.name;
-              return I
+              var P = S.name;
+              return P
             });
             if (H_(_), Oa(d.options.placement) === qh) {
               var k = d.orderedModifiers.find(function(S) {
-                var I = S.name;
-                return I === "flip"
+                var P = S.name;
+                return P === "flip"
               });
               k || console.error(['Popper: "auto" placements require the "flip" modifier be', "present and enabled to work."].join(" "))
             }
-            var E = Fn(c),
-              B = E.marginTop,
-              T = E.marginRight,
-              R = E.marginBottom,
-              D = E.marginLeft;
+            var I = Fn(c),
+              B = I.marginTop,
+              T = I.marginRight,
+              R = I.marginBottom,
+              D = I.marginLeft;
             [B, T, R, D].some(function(S) {
               return parseFloat(S)
             }) && console.warn(['Popper: CSS "margin" styles cannot be used to apply padding', "between the popper and its reference element or boundary.", "To replicate margin, use the `offset` modifier, as well as", "the `padding` option in the `preventOverflow` and `flip`", "modifiers."].join(" "))
@@ -14830,11 +14830,11 @@ function Y_(e) {
                 d.reset = !1, k = -1;
                 continue
               }
-              var E = d.orderedModifiers[k],
-                B = E.fn,
-                T = E.options,
+              var I = d.orderedModifiers[k],
+                B = I.fn,
+                T = I.options,
                 R = T === void 0 ? {} : T,
-                D = E.name;
+                D = I.name;
               typeof B == "function" && (d = B({
                 state: d,
                 options: R,
@@ -14871,8 +14871,8 @@ function Y_(e) {
               instance: g,
               options: C
             }),
-            E = function() {};
-          f.push(k || E)
+            I = function() {};
+          f.push(k || I)
         }
       })
     }
@@ -14981,31 +14981,31 @@ function Ru(e) {
     _ = li,
     k = window;
   if (u) {
-    var E = Yh(n),
+    var I = Yh(n),
       B = "clientHeight",
       T = "clientWidth";
-    if (E === dn(n) && (E = Pa(n), Fn(E).position !== "static" && r === "absolute" && (B = "scrollHeight", T = "scrollWidth")), E = E, s === li || (s === Oo || s === ts) && a === na) {
+    if (I === dn(n) && (I = Pa(n), Fn(I).position !== "static" && r === "absolute" && (B = "scrollHeight", T = "scrollWidth")), I = I, s === li || (s === Oo || s === ts) && a === na) {
       _ = ta;
-      var R = f && E === k && k.visualViewport ? k.visualViewport.height : E[B];
+      var R = f && I === k && k.visualViewport ? k.visualViewport.height : I[B];
       b -= R - o.height, b *= c ? 1 : -1
     }
     if (s === Oo || (s === li || s === ta) && a === na) {
       C = ts;
-      var D = f && E === k && k.visualViewport ? k.visualViewport.width : E[T];
+      var D = f && I === k && k.visualViewport ? k.visualViewport.width : I[T];
       g -= D - o.width, g *= c ? 1 : -1
     }
   }
   var S = Object.assign({
       position: r
     }, u && J_),
-    I = d === !0 ? ek({
+    P = d === !0 ? ek({
       x: g,
       y: b
     }) : {
       x: g,
       y: b
     };
-  if (g = I.x, b = I.y, c) {
+  if (g = P.x, b = P.y, c) {
     var $;
     return Object.assign({}, S, ($ = {}, $[_] = y ? "0" : "", $[C] = w ? "0" : "", $.transform = (k.devicePixelRatio || 1) <= 1 ? "translate(" + g + "px, " + b + "px)" : "translate3d(" + g + "px, " + b + "px, 0)", $))
   }
@@ -15241,13 +15241,13 @@ var mk = K({
         const {
           icon: _,
           color: k,
-          disabled: E,
+          disabled: I,
           className: B
         } = y;
         return h("div", {
           role: "menuitem",
           class: [To("action", {
-            disabled: E,
+            disabled: I,
             "with-icon": _
           }), {
             [qy]: e.actionsDirection === "horizontal"
@@ -15255,8 +15255,8 @@ var mk = K({
           style: {
             color: k
           },
-          tabindex: E ? void 0 : 0,
-          "aria-disabled": E || void 0,
+          tabindex: I ? void 0 : 0,
+          "aria-disabled": I || void 0,
           onClick: () => v(y, C)
         }, [p(y, C)])
       };
@@ -15407,8 +15407,8 @@ var Tk = K({
         return _ > k && (_ < k * 2 ? _ = k + (_ - k) / 2 : _ = k * 1.5 + (_ - k * 2) / 4), Math.round(_)
       },
       m = (_, k) => {
-        const E = +(e.pullDistance || e.headHeight);
-        r.distance = _, k ? r.status = "loading" : _ === 0 ? r.status = "normal" : _ < E ? r.status = "pulling" : r.status = "loosing", t("change", {
+        const I = +(e.pullDistance || e.headHeight);
+        r.distance = _, k ? r.status = "loading" : _ === 0 ? r.status = "normal" : _ < I ? r.status = "pulling" : r.status = "loosing", t("change", {
           status: r.status,
           distance: _
         })
@@ -15427,14 +15427,14 @@ var Tk = K({
         if (n[_]) return n[_]({
           distance: k
         });
-        const E = [];
-        return _k.includes(_) && E.push(h("div", {
+        const I = [];
+        return _k.includes(_) && I.push(h("div", {
           class: Ii("text")
-        }, [g()])), _ === "loading" && E.push(h(rn, {
+        }, [g()])), _ === "loading" && I.push(h(rn, {
           class: Ii("loading")
         }, {
           default: g
-        })), E
+        })), I
       },
       b = () => {
         r.status = "success", setTimeout(() => {
@@ -15563,8 +15563,8 @@ var Ik = K({
           if (_ >= d.top && _ <= d.bottom) {
             if (C > u[k].left && _ >= u[k].top && _ <= u[k].top + u[k].height) return u[k].score
           } else {
-            const E = _ < d.top ? f : m;
-            if (C > u[k].left && u[k].top === E) return u[k].score
+            const I = _ < d.top ? f : m;
+            if (C > u[k].left && u[k].top === I) return u[k].score
           } return e.allowHalf ? .5 : 1
       },
       b = C => {
@@ -15585,13 +15585,13 @@ var Ik = K({
       y = (C, _) => {
         const {
           icon: k,
-          size: E,
+          size: I,
           color: B,
           count: T,
           gutter: R,
           voidIcon: D,
           disabled: S,
-          voidColor: I,
+          voidColor: P,
           allowHalf: $,
           iconPrefix: X,
           disabledColor: ce
@@ -15617,16 +15617,16 @@ var Ik = K({
           "aria-checked": !ue,
           onClick: V
         }, [h(Pe, {
-          size: E,
+          size: I,
           name: te ? k : D,
           class: Ds("icon", {
             disabled: S,
             full: te
           }),
-          color: S ? ce : te ? B : I,
+          color: S ? ce : te ? B : P,
           classPrefix: X
         }, null), Re && h(Pe, {
-          size: E,
+          size: I,
           style: {
             width: C.value + "em"
           },
@@ -15635,7 +15635,7 @@ var Ik = K({
             disabled: S,
             full: !ue
           }]),
-          color: S ? ce : ue ? I : B,
+          color: S ? ce : ue ? P : B,
           classPrefix: X
         }, null)])
       };
@@ -15818,7 +15818,7 @@ var Wk = K({
         const k = _e({}, o, ze(e, C), {
             id: c()
           }),
-          E = B => t("update:modelValue", B);
+          I = B => t("update:modelValue", B);
         return h($n, De({
           ref: a,
           type: "search",
@@ -15833,7 +15833,7 @@ var Wk = K({
           onClickInput: p,
           onClickLeftIcon: w,
           onClickRightIcon: y,
-          "onUpdate:modelValue": E
+          "onUpdate:modelValue": I
         }, k), ze(n, ["left-icon", "right-icon"]))
       };
     return $e({
@@ -16099,12 +16099,12 @@ var cT = K({
         var y, C;
         const _ = n.value;
         if (!_) return;
-        const E = m(_) ? "" : ((C = (y = {
+        const I = m(_) ? "" : ((C = (y = {
           jpg: () => _.toDataURL("image/jpeg", .8),
           jpeg: () => _.toDataURL("image/jpeg", .8)
         })[e.type]) == null ? void 0 : C.call(y)) || _.toDataURL(`image/${e.type}`);
         t("submit", {
-          image: E,
+          image: I,
           canvas: _
         })
       },
@@ -16115,8 +16115,8 @@ var cT = K({
         var y, C, _;
         if (a && n.value) {
           const k = n.value,
-            E = Vt ? window.devicePixelRatio : 1;
-          l = k.width = (((y = o.value) == null ? void 0 : y.offsetWidth) || 0) * E, r = k.height = (((C = o.value) == null ? void 0 : C.offsetHeight) || 0) * E, (_ = s.value) == null || _.scale(E, E), g(s.value)
+            I = Vt ? window.devicePixelRatio : 1;
+          l = k.width = (((y = o.value) == null ? void 0 : y.offsetWidth) || 0) * I, r = k.height = (((C = o.value) == null ? void 0 : C.offsetHeight) || 0) * I, (_ = s.value) == null || _.scale(I, I), g(s.value)
         }
       },
       w = () => {
@@ -16342,56 +16342,56 @@ var LT = K({
       g = () => {
         const {
           modelValue: S,
-          min: I
+          min: P
         } = e;
-        return m(S) ? `${(S[1]-S[0])*100/d.value}%` : `${(S-Number(I))*100/d.value}%`
+        return m(S) ? `${(S[1]-S[0])*100/d.value}%` : `${(S-Number(P))*100/d.value}%`
       },
       v = () => {
         const {
           modelValue: S,
-          min: I
+          min: P
         } = e;
-        return m(S) ? `${(S[0]-Number(I))*100/d.value}%` : "0%"
+        return m(S) ? `${(S[0]-Number(P))*100/d.value}%` : "0%"
       },
       b = N(() => {
-        const I = {
+        const P = {
           [e.vertical ? "height" : "width"]: g(),
           background: e.activeColor
         };
-        c.value && (I.transition = "none");
+        c.value && (P.transition = "none");
         const $ = () => e.vertical ? e.reverse ? "bottom" : "top" : e.reverse ? "right" : "left";
-        return I[$()] = v(), I
+        return P[$()] = v(), P
       }),
       p = S => {
-        const I = +e.min,
+        const P = +e.min,
           $ = +e.max,
           X = +e.step;
-        S = ht(S, I, $);
-        const ce = Math.round((S - I) / X) * X;
-        return Ff(I, ce)
+        S = ht(S, P, $);
+        const ce = Math.round((S - P) / X) * X;
+        return Ff(P, ce)
       },
       w = () => {
         const S = e.modelValue;
         m(S) ? a = S.map(p) : a = p(S)
       },
       y = S => {
-        var I, $;
-        const X = (I = S[0]) != null ? I : Number(e.min),
+        var P, $;
+        const X = (P = S[0]) != null ? P : Number(e.min),
           ce = ($ = S[1]) != null ? $ : Number(e.max);
         return X > ce ? [ce, X] : [X, ce]
       },
-      C = (S, I) => {
-        m(S) ? S = y(S).map(p) : S = p(S), pn(S, e.modelValue) || t("update:modelValue", S), I && !pn(S, a) && t("change", S)
+      C = (S, P) => {
+        m(S) ? S = y(S).map(p) : S = p(S), pn(S, e.modelValue) || t("update:modelValue", S), P && !pn(S, a) && t("change", S)
       },
       _ = S => {
         if (S.stopPropagation(), e.disabled || e.readonly) return;
         w();
         const {
-          min: I,
+          min: P,
           reverse: $,
           vertical: X,
           modelValue: ce
-        } = e, U = Ue(l), te = () => X ? $ ? U.bottom - S.clientY : S.clientY - U.top : $ ? U.right - S.clientX : S.clientX - U.left, ue = X ? U.height : U.width, Re = Number(I) + te() / ue * d.value;
+        } = e, U = Ue(l), te = () => X ? $ ? U.bottom - S.clientY : S.clientY - U.top : $ ? U.right - S.clientX : S.clientX - U.left, ue = X ? U.height : U.width, Re = Number(P) + te() / ue * d.value;
         if (m(ce)) {
           const [Ne, V] = ce, Z = (Ne + V) / 2;
           Re <= Z ? C([Re, V], !0) : C([Ne, Re], !0)
@@ -16400,12 +16400,12 @@ var LT = K({
       k = S => {
         e.disabled || e.readonly || (u.start(S), s = e.modelValue, w(), c.value = "start")
       },
-      E = S => {
+      I = S => {
         if (e.disabled || e.readonly) return;
         c.value === "start" && t("dragStart", S), Ge(S, !0), u.move(S), c.value = "dragging";
-        const I = Ue(l),
+        const P = Ue(l),
           $ = e.vertical ? u.deltaY.value : u.deltaX.value,
-          X = e.vertical ? I.height : I.width;
+          X = e.vertical ? P.height : P.width;
         let ce = $ / X * d.value;
         if (e.reverse && (ce = -ce), m(a)) {
           const U = e.reverse ? 1 - o : o;
@@ -16417,10 +16417,10 @@ var LT = K({
         e.disabled || e.readonly || (c.value === "dragging" && (C(s, !0), t("dragEnd", S)), c.value = "")
       },
       T = S => typeof S == "number" ? Oi("button-wrapper", ["left", "right"][S]) : Oi("button-wrapper", e.reverse ? "left" : "right"),
-      R = (S, I) => {
+      R = (S, P) => {
         const $ = c.value === "dragging";
-        if (typeof I == "number") {
-          const X = n[I === 0 ? "left-button" : "right-button"];
+        if (typeof P == "number") {
+          const X = n[P === 0 ? "left-button" : "right-button"];
           let ce;
           if ($ && Array.isArray(s) && (ce = s[0] > s[1] ? o ^ 1 : o), X) return X({
             value: S,
@@ -16437,14 +16437,14 @@ var LT = K({
         }, null)
       },
       D = S => {
-        const I = typeof S == "number" ? e.modelValue[S] : e.modelValue;
+        const P = typeof S == "number" ? e.modelValue[S] : e.modelValue;
         return h("div", {
           ref: r[S ?? 0],
           role: "slider",
           class: T(S),
           tabindex: e.disabled ? void 0 : 0,
           "aria-valuemin": e.min,
-          "aria-valuenow": I,
+          "aria-valuenow": P,
           "aria-valuemax": e.max,
           "aria-disabled": e.disabled || void 0,
           "aria-readonly": e.readonly || void 0,
@@ -16455,10 +16455,10 @@ var LT = K({
           onTouchend: B,
           onTouchcancel: B,
           onClick: br
-        }, [R(I, S)])
+        }, [R(P, S)])
       };
     return C(e.modelValue), go(() => e.modelValue), r.forEach(S => {
-      st("touchmove", E, {
+      st("touchmove", I, {
         target: S
       })
     }), () => h("div", {
@@ -16693,10 +16693,10 @@ var ZT = K({
         const {
           min: D,
           max: S,
-          allowEmpty: I,
+          allowEmpty: P,
           decimalLength: $
         } = e;
-        return I && T === "" || (T = Dl(String(T), !e.integer), T = T === "" ? 0 : +T, T = Number.isNaN(T) ? +D : T, T = R ? Math.max(Math.min(+S, T), +D) : T, Fe($) && (T = T.toFixed(+$))), T
+        return P && T === "" || (T = Dl(String(T), !e.integer), T = T === "" ? 0 : +T, T = Number.isNaN(T) ? +D : T, T = R ? Math.max(Math.min(+S, T), +D) : T, Fe($) && (T = T.toFixed(+$))), T
       },
       o = () => {
         var T;
@@ -16743,14 +16743,14 @@ var ZT = K({
           {
             decimalLength: S
           } = e;
-        let I = Dl(String(D), !e.integer);
-        if (Fe(S) && I.includes(".")) {
-          const X = I.split(".");
-          I = `${X[0]}.${X[1].slice(0,+S)}`
+        let P = Dl(String(D), !e.integer);
+        if (Fe(S) && P.includes(".")) {
+          const X = P.split(".");
+          P = `${X[0]}.${X[1].slice(0,+S)}`
         }
-        e.beforeChange ? R.value = String(l.value) : $s(D, I) || (R.value = I);
-        const $ = I === String(+I);
-        m($ ? +I : I)
+        e.beforeChange ? R.value = String(l.value) : $s(D, P) || (R.value = P);
+        const $ = P === String(+P);
+        m($ ? +P : P)
       },
       b = T => {
         var R;
@@ -16777,7 +16777,7 @@ var ZT = K({
       k = T => {
         e.longPress && (clearTimeout(y), w && Ge(T))
       },
-      E = T => {
+      I = T => {
         e.disableInput && Ge(T)
       },
       B = T => ({
@@ -16828,7 +16828,7 @@ var ZT = K({
       onBlur: p,
       onInput: v,
       onFocus: b,
-      onMousedown: E
+      onMousedown: I
     }, null), [
       [dt, e.showInput]
     ]), rt(h("button", De({
@@ -16987,8 +16987,8 @@ var lS = K({
         const R = Math.abs(d.offset),
           D = .15,
           S = o ? 1 - D : D,
-          I = T === "left" ? g.value : v.value;
-        I && R > I * S ? b(T) : p(T)
+          P = T === "left" ? g.value : v.value;
+        P && R > P * S ? b(T) : p(T)
       },
       y = T => {
         e.disabled || (a = d.offset, f.start(T))
@@ -17019,7 +17019,7 @@ var lS = K({
           error: () => l = !1
         })))
       },
-      E = (T, R) => D => {
+      I = (T, R) => D => {
         R && D.stopPropagation(), !s && k(T, D)
       },
       B = (T, R) => {
@@ -17027,7 +17027,7 @@ var lS = K({
         if (D) return h("div", {
           ref: R,
           class: fl(T),
-          onClick: E(T, !0)
+          onClick: I(T, !0)
         }, [D()])
       };
     return $e({
@@ -17046,7 +17046,7 @@ var lS = K({
       return h("div", {
         ref: r,
         class: fl(),
-        onClick: E("cell", s),
+        onClick: I("cell", s),
         onTouchstartPassive: y,
         onTouchend: _,
         onTouchcancel: _
@@ -17260,22 +17260,22 @@ var pS = K({
         var C, _;
         const {
           content: k,
-          position: E,
+          position: I,
           dots: B
         } = e, T = k.length, R = 0 + T >> 1, D = n.action ? (_ = (C = r.value) == null ? void 0 : C.outerHTML) != null ? _ : "" : e.expandText, S = () => {
           const $ = (X, ce) => {
-            if (ce - X <= 1) return E === "end" ? k.slice(0, X) + B : B + k.slice(ce, T);
+            if (ce - X <= 1) return I === "end" ? k.slice(0, X) + B : B + k.slice(ce, T);
             const U = Math.round((X + ce) / 2);
-            return E === "end" ? w.innerText = k.slice(0, U) + B : w.innerText = B + k.slice(U, T), w.innerHTML += D, w.offsetHeight > y ? E === "end" ? $(X, U) : $(U, ce) : E === "end" ? $(U, ce) : $(X, U)
+            return I === "end" ? w.innerText = k.slice(0, U) + B : w.innerText = B + k.slice(U, T), w.innerHTML += D, w.offsetHeight > y ? I === "end" ? $(X, U) : $(U, ce) : I === "end" ? $(U, ce) : $(X, U)
           };
           return $(0, T)
-        }, I = ($, X) => {
+        }, P = ($, X) => {
           if ($[1] - $[0] <= 1 && X[1] - X[0] <= 1) return k.slice(0, $[0]) + B + k.slice(X[1], T);
           const ce = Math.floor(($[0] + $[1]) / 2),
             U = Math.ceil((X[0] + X[1]) / 2);
-          return w.innerText = e.content.slice(0, ce) + e.dots + e.content.slice(U, T), w.innerHTML += D, w.offsetHeight >= y ? I([$[0], ce], [U, X[1]]) : I([ce, $[1]], [X[0], U])
+          return w.innerText = e.content.slice(0, ce) + e.dots + e.content.slice(U, T), w.innerHTML += D, w.offsetHeight >= y ? P([$[0], ce], [U, X[1]]) : P([ce, $[1]], [X[0], U])
         };
-        return e.position === "middle" ? I([0, R], [R, T]) : S()
+        return e.position === "middle" ? P([0, R], [R, T]) : S()
       },
       g = () => {
         const w = f();
@@ -17377,21 +17377,21 @@ var kS = K({
             minute: 0,
             second: 0
           };
-          e.columnsType.forEach((k, E) => {
+          e.columnsType.forEach((k, I) => {
             var B;
-            y[k] = (B = o.value[E]) != null ? B : 0
+            y[k] = (B = o.value[I]) != null ? B : 0
           });
           const {
             hour: C,
             minute: _
           } = y;
           if (e.minTime) {
-            const [k, E, B] = a(e.minTime);
-            m = k, v = +C <= +m ? E : "00", p = +C <= +m && +_ <= +v ? B : "00"
+            const [k, I, B] = a(e.minTime);
+            m = k, v = +C <= +m ? I : "00", p = +C <= +m && +_ <= +v ? B : "00"
           }
           if (e.maxTime) {
-            const [k, E, B] = a(e.maxTime);
-            g = k, b = +C >= +g ? E : "59", w = +C >= +g && +_ >= +b ? B : "59"
+            const [k, I, B] = a(e.maxTime);
+            g = k, b = +C >= +g ? I : "59", w = +C >= +g && +_ >= +b ? B : "59"
           }
         }
         return e.columnsType.map(y => {
@@ -17739,8 +17739,8 @@ var MS = K({
           resultType: S
         } = e;
         if (Array.isArray(T)) {
-          const I = +R - D.length;
-          T.length > I && (T = T.slice(0, I)), Promise.all(T.map($ => Hu($, S))).then($ => {
+          const P = +R - D.length;
+          T.length > P && (T = T.slice(0, P)), Promise.all(T.map($ => Hu($, S))).then($ => {
             const X = T.map((ce, U) => {
               const te = {
                 file: ce,
@@ -17752,14 +17752,14 @@ var MS = K({
             });
             u(X)
           })
-        } else Hu(T, S).then(I => {
+        } else Hu(T, S).then(P => {
           const $ = {
             file: T,
             status: "",
             message: "",
             objectUrl: URL.createObjectURL(T)
           };
-          I && ($.content = I), u($)
+          P && ($.content = P), u($)
         })
       },
       f = T => {
@@ -17775,8 +17775,8 @@ var MS = K({
             return
           }
           if (Gl(S)) {
-            S.then(I => {
-              d(I || D)
+            S.then(P => {
+              d(P || D)
             }).catch(c);
             return
           }
@@ -17825,7 +17825,7 @@ var MS = K({
         if (e.previewImage) return e.modelValue.map(C)
       },
       k = T => t("clickUpload", T),
-      E = () => {
+      I = () => {
         const T = e.modelValue.length < +e.maxCount,
           R = e.readonly ? null : h("input", {
             ref: o,
@@ -17873,7 +17873,7 @@ var MS = K({
       class: ct("wrapper", {
         disabled: e.disabled
       })
-    }, [_(), E()])])
+    }, [_(), I()])])
   }
 });
 const LS = J(MS),
@@ -18044,7 +18044,7 @@ const jS = "modulepreload",
   };
 
 function qS(e, t, n, o, s, a) {
-  return W(), ae("div", YS, t[0] || (t[0] = [$v('<h1 class="center" data-v-6ae2a584>Zoo Terms of Use</h1><div class="center" data-v-6ae2a584>Last Updated: 12/12/2024</div><h2 data-v-6ae2a584>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-6ae2a584>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-6ae2a584>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-6ae2a584>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-6ae2a584>• Alliance - consolidation of the App Users in the App. <br data-v-6ae2a584>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-6ae2a584>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-6ae2a584>• Interface - the visible part of the App. <br data-v-6ae2a584>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-6ae2a584>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-6ae2a584>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-6ae2a584>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-6ae2a584>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-6ae2a584>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-6ae2a584>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-6ae2a584>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-6ae2a584>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-6ae2a584>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-6ae2a584>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-6ae2a584>3. The App&#39;s Mechanics</h2><h3 data-v-6ae2a584>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-6ae2a584>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-6ae2a584>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-6ae2a584>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-6ae2a584>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-6ae2a584>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-6ae2a584>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-6ae2a584>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-6ae2a584>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-6ae2a584>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-6ae2a584>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-6ae2a584>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-6ae2a584>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-6ae2a584>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-6ae2a584>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-6ae2a584>4. Prohibited Activities</h2> Using of any form of technical automation, including but not limited to bots, scripts, or other automated tools, to interact with or manipulate the App is strictly prohibited. Using of any other form of disruption to the mechanics of the App, including but not limited to refunding Telegram Stars for in-app purchases, is also strictly prohibited. Such actions may lead to immediate account suspension or a permanent ban without prior notice. <h2 data-v-6ae2a584>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-6ae2a584>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-6ae2a584>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-6ae2a584>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-6ae2a584>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-6ae2a584>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-6ae2a584>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-6ae2a584>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-6ae2a584>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-6ae2a584>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-6ae2a584>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-6ae2a584>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-6ae2a584>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-6ae2a584>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-6ae2a584>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-6ae2a584>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-6ae2a584>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-6ae2a584>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-6ae2a584>Telegram Mini App Terms of Use</a>. <h2 data-v-6ae2a584>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
+  return W(), le("div", YS, t[0] || (t[0] = [$v('<h1 class="center" data-v-6ae2a584>Zoo Terms of Use</h1><div class="center" data-v-6ae2a584>Last Updated: 12/12/2024</div><h2 data-v-6ae2a584>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-6ae2a584>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-6ae2a584>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-6ae2a584>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-6ae2a584>• Alliance - consolidation of the App Users in the App. <br data-v-6ae2a584>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-6ae2a584>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-6ae2a584>• Interface - the visible part of the App. <br data-v-6ae2a584>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-6ae2a584>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-6ae2a584>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-6ae2a584>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-6ae2a584>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-6ae2a584>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-6ae2a584>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-6ae2a584>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-6ae2a584>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-6ae2a584>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-6ae2a584>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-6ae2a584>3. The App&#39;s Mechanics</h2><h3 data-v-6ae2a584>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-6ae2a584>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-6ae2a584>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-6ae2a584>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-6ae2a584>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-6ae2a584>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-6ae2a584>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-6ae2a584>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-6ae2a584>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-6ae2a584>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-6ae2a584>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-6ae2a584>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-6ae2a584>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-6ae2a584>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-6ae2a584>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-6ae2a584>4. Prohibited Activities</h2> Using of any form of technical automation, including but not limited to bots, scripts, or other automated tools, to interact with or manipulate the App is strictly prohibited. Using of any other form of disruption to the mechanics of the App, including but not limited to refunding Telegram Stars for in-app purchases, is also strictly prohibited. Such actions may lead to immediate account suspension or a permanent ban without prior notice. <h2 data-v-6ae2a584>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-6ae2a584>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-6ae2a584>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-6ae2a584>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-6ae2a584>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-6ae2a584>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-6ae2a584>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-6ae2a584>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-6ae2a584>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-6ae2a584>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-6ae2a584>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-6ae2a584>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-6ae2a584>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-6ae2a584>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-6ae2a584>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-6ae2a584>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-6ae2a584>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-6ae2a584>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-6ae2a584>Telegram Mini App Terms of Use</a>. <h2 data-v-6ae2a584>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
 }
 const GS = St(KS, [
     ["render", qS],
@@ -18164,7 +18164,7 @@ function S2(e, t, n, o, s, a) {
     u = ge("van-swipe"),
     d = ge("TermsOfUse"),
     f = ge("van-popup");
-  return W(), ae("div", t2, [h(u, {
+  return W(), le("div", t2, [h(u, {
     class: "onboardingSwipe",
     autoplay: 0,
     loop: !1,
@@ -18179,16 +18179,16 @@ function S2(e, t, n, o, s, a) {
     duration: e.isRtl ? 0 : 500,
     touchable: !e.isRtl
   }, {
-    default: le(() => [h(r, {
+    default: se(() => [h(r, {
       class: ot(["item", {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", n2, [P("h2", o2, M(e.t("Welcome to Zoo!")), 1), t[4] || (t[4] = P("img", {
+      default: se(() => [E("div", n2, [E("h2", o2, M(e.t("Welcome to Zoo!")), 1), t[4] || (t[4] = E("img", {
         src: ZS,
         alt: "",
         width: "100%"
-      }, null, -1)), P("p", i2, M(e.t("Here, you'll build your very own Zoo!")), 1)]), P("div", s2, [h(l, {
+      }, null, -1)), E("p", i2, M(e.t("Here, you'll build your very own Zoo!")), 1)]), E("div", s2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18196,7 +18196,7 @@ function S2(e, t, n, o, s, a) {
         type: "success",
         round: ""
       }, {
-        default: le(() => [be(M(e.t("Next")), 1)]),
+        default: se(() => [be(M(e.t("Next")), 1)]),
         _: 1
       }, 8, ["onClick"])])]),
       _: 1
@@ -18205,13 +18205,13 @@ function S2(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", a2, [P("h2", l2, M(e.t("Earn coins and upgrade your Zoo")), 1), t[5] || (t[5] = P("img", {
+      default: se(() => [E("div", a2, [E("h2", l2, M(e.t("Earn coins and upgrade your Zoo")), 1), t[5] || (t[5] = E("img", {
         src: XS,
         alt: "",
         width: "100%"
-      }, null, -1)), P("p", r2, M(e.t("The bigger and better your Zoo, the more it mines {TOKEN_NAME}.", {
+      }, null, -1)), E("p", r2, M(e.t("The bigger and better your Zoo, the more it mines {TOKEN_NAME}.", {
         TOKEN_NAME: e.TOKEN_NAME
-      })), 1)]), P("div", c2, [h(l, {
+      })), 1)]), E("div", c2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18219,7 +18219,7 @@ function S2(e, t, n, o, s, a) {
         type: "success",
         round: ""
       }, {
-        default: le(() => [be(M(e.t("Next")), 1)]),
+        default: se(() => [be(M(e.t("Next")), 1)]),
         _: 1
       }, 8, ["onClick"])])]),
       _: 1
@@ -18228,15 +18228,15 @@ function S2(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", u2, [t[6] || (t[6] = P("h2", {
+      default: se(() => [E("div", u2, [t[6] || (t[6] = E("h2", {
         class: "zTextShadow2white"
-      }, "Airdrop", -1)), t[7] || (t[7] = P("img", {
+      }, "Airdrop", -1)), t[7] || (t[7] = E("img", {
         src: JS,
         alt: "",
         width: "100%"
-      }, null, -1)), P("p", d2, M(e.t("Earn {TOKEN_NAME} tokens through Airdrop based on your progress.", {
+      }, null, -1)), E("p", d2, M(e.t("Earn {TOKEN_NAME} tokens through Airdrop based on your progress.", {
         TOKEN_NAME: e.TOKEN_NAME
-      })), 1)]), P("div", f2, [h(l, {
+      })), 1)]), E("div", f2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18244,7 +18244,7 @@ function S2(e, t, n, o, s, a) {
         type: "success",
         round: ""
       }, {
-        default: le(() => [be(M(e.t("Next")), 1)]),
+        default: se(() => [be(M(e.t("Next")), 1)]),
         _: 1
       }, 8, ["onClick"])])]),
       _: 1
@@ -18253,17 +18253,17 @@ function S2(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", h2, [P("h2", m2, M(e.t("Create or Join an Alliance")), 1), P("div", g2, [t[8] || (t[8] = P("div", {
+      default: se(() => [E("div", h2, [E("h2", m2, M(e.t("Create or Join an Alliance")), 1), E("div", g2, [t[8] || (t[8] = E("div", {
         class: "flyBtnCont"
-      }, [P("div", {
+      }, [E("div", {
         class: "flyBtnIcon",
         style: {
           "background-image": "url('/assets/img/decor/icon_ali.png')"
         }
-      })], -1)), P("div", v2, M(e.t("Alliance")), 1)]), P("p", y2, M(e.t("Alliance owners receive {PERCENT}% of all contributions, and members gain significant advantages in mining {TOKEN_NAME} tokens.", {
+      })], -1)), E("div", v2, M(e.t("Alliance")), 1)]), E("p", y2, M(e.t("Alliance owners receive {PERCENT}% of all contributions, and members gain significant advantages in mining {TOKEN_NAME} tokens.", {
         PERCENT: e.gameConfig["alliance.bonus.founder"],
         TOKEN_NAME: e.TOKEN_NAME
-      })), 1)]), P("div", p2, [h(l, {
+      })), 1)]), E("div", p2, [h(l, {
         class: "buttonNext",
         icon: "arrow",
         "icon-position": "right",
@@ -18271,7 +18271,7 @@ function S2(e, t, n, o, s, a) {
         type: "success",
         round: ""
       }, {
-        default: le(() => [be(M(e.t("Next")), 1)]),
+        default: se(() => [be(M(e.t("Next")), 1)]),
         _: 1
       }, 8, ["onClick"])])]),
       _: 1
@@ -18280,11 +18280,11 @@ function S2(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", b2, [P("h2", w2, M(e.t("We're having fun together")), 1), P("p", C2, M(e.t("Grow your Zoo, complete quests, invite friends, and take part in the {Airdrop}!")), 1)]), P("div", _2, [P("div", k2, [h(c, {
+      default: se(() => [E("div", b2, [E("h2", w2, M(e.t("We're having fun together")), 1), E("p", C2, M(e.t("Grow your Zoo, complete quests, invite friends, and take part in the {Airdrop}!")), 1)]), E("div", _2, [E("div", k2, [h(c, {
         modelValue: e.isUserAcceptTermsOfUse,
         "onUpdate:modelValue": t[1] || (t[1] = m => e.isUserAcceptTermsOfUse = m)
       }, {
-        default: le(() => [t[9] || (t[9] = be(" I accept the ")), P("span", {
+        default: se(() => [t[9] || (t[9] = be(" I accept the ")), E("span", {
           class: "termsOfUseTitle",
           onClick: t[0] || (t[0] = m => e.isShowTermsOfUse = !0)
         }, "Terms of Use")]),
@@ -18297,7 +18297,7 @@ function S2(e, t, n, o, s, a) {
         onClick: t[2] || (t[2] = m => e._completeOnboarding(e.onBoard.start)),
         disabled: !e.isUserAcceptTermsOfUse
       }, {
-        default: le(() => [be(M(e.t("Start")), 1)]),
+        default: se(() => [be(M(e.t("Start")), 1)]),
         _: 1
       }, 8, ["disabled"])])]),
       _: 1
@@ -18310,7 +18310,7 @@ function S2(e, t, n, o, s, a) {
     position: "center",
     closeable: ""
   }, {
-    default: le(() => [P("div", T2, [h(d)])]),
+    default: se(() => [E("div", T2, [h(d)])]),
     _: 1
   }, 8, ["show"])])
 }
@@ -18449,11 +18449,11 @@ function M2(e, t, n, o, s, a) {
     position: n.position,
     duration: n.duration
   }, {
-    default: le(() => [P("div", O2, [P("div", R2, [n.title ? Te("", !0) : za(e.$slots, "title", {
+    default: se(() => [E("div", O2, [E("div", R2, [n.title ? Te("", !0) : za(e.$slots, "title", {
       key: 0
-    }, void 0, !0), n.title ? (W(), ae("h1", D2, M(n.title), 1)) : Te("", !0), n.subtitle ? Te("", !0) : za(e.$slots, "subtitle", {
+    }, void 0, !0), n.title ? (W(), le("h1", D2, M(n.title), 1)) : Te("", !0), n.subtitle ? Te("", !0) : za(e.$slots, "subtitle", {
       key: 2
-    }, void 0, !0), n.subtitle ? (W(), ae("h2", B2, M(n.subtitle), 1)) : Te("", !0), za(e.$slots, "default", {}, void 0, !0)])]), n.imgUrl ? (W(), ae("div", $2, [P("div", {
+    }, void 0, !0), n.subtitle ? (W(), le("h2", B2, M(n.subtitle), 1)) : Te("", !0), za(e.$slots, "default", {}, void 0, !0)])]), n.imgUrl ? (W(), le("div", $2, [E("div", {
       class: "imgTitle",
       style: an({
         backgroundImage: `url(${n.imgUrl})`
@@ -18600,7 +18600,7 @@ function U2(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-button"),
     c = ge("game-popup");
-  return W(), ae("div", N2, [P("div", F2, [a.showTransactionButton ? Te("", !0) : (W(), Me(r, {
+  return W(), le("div", N2, [E("div", F2, [a.showTransactionButton ? Te("", !0) : (W(), Me(r, {
     key: 0,
     onClick: a.handleClick,
     round: "",
@@ -18609,13 +18609,13 @@ function U2(e, t, n, o, s, a) {
     "icon-position": "right",
     type: a.isConnected ? "success" : "warning"
   }, {
-    icon: le(() => [(W(), ae("svg", V2, t[1] || (t[1] = [P("path", {
+    icon: se(() => [(W(), le("svg", V2, t[1] || (t[1] = [E("path", {
       "fill-rule": "evenodd",
       "clip-rule": "evenodd",
       d: "M1.75 12.002C1.75 9.20169 1.75 7.80156 2.29497 6.732C2.77433 5.79119 3.53924 5.02629 4.48005 4.54692C5.54961 4.00195 6.94974 4.00195 9.75 4.00195H17.25C20.0503 4.00195 21.4504 4.00195 22.52 4.54692C23.4608 5.02629 24.2257 5.79119 24.705 6.732C24.8256 6.96861 24.9195 7.2214 24.9926 7.50195H21.5C19.6377 7.50195 18.7065 7.50195 17.9609 7.77334C16.711 8.22828 15.7263 9.21291 15.2714 10.4629C15 11.2085 15 12.1396 15 14.002C15 15.8643 15 16.7954 15.2714 17.541C15.7263 18.791 16.711 19.7756 17.9609 20.2306C18.7065 20.502 19.6377 20.502 21.5 20.502H24.9926C24.9195 20.7825 24.8256 21.0353 24.705 21.2719C24.2257 22.2127 23.4608 22.9776 22.52 23.457C21.4504 24.002 20.0503 24.002 17.25 24.002H9.75C6.94974 24.002 5.54961 24.002 4.48005 23.457C3.53924 22.9776 2.77433 22.2127 2.29497 21.2719C1.75 20.2023 1.75 18.8022 1.75 16.002V12.002ZM16.4999 13.802C16.4999 12.1218 16.4999 11.2817 16.8269 10.64C17.1145 10.0755 17.5735 9.61656 18.138 9.32894C18.7797 9.00196 19.6198 9.00196 21.2999 9.00196H23.1999C24.8801 9.00196 25.7202 9.00196 26.3619 9.32894C26.9264 9.61656 27.3853 10.0755 27.673 10.64C27.9999 11.2817 27.9999 12.1218 27.9999 13.802V14.202C27.9999 15.8821 27.9999 16.7222 27.673 17.3639C27.3853 17.9284 26.9264 18.3874 26.3619 18.675C25.7202 19.002 24.8801 19.002 23.1999 19.002H21.2999C19.6198 19.002 18.7797 19.002 18.138 18.675C17.5735 18.3874 17.1145 17.9284 16.8269 17.3639C16.4999 16.7222 16.4999 15.8821 16.4999 14.202V13.802ZM22.4999 14.002C22.4999 14.9685 21.7164 15.752 20.7499 15.752C19.7834 15.752 18.9999 14.9685 18.9999 14.002C18.9999 13.0355 19.7834 12.252 20.7499 12.252C21.7164 12.252 22.4999 13.0355 22.4999 14.002Z",
       fill: "#FFFFFF"
     }, null, -1)])))]),
-    default: le(() => [a.isConnected ? (W(), Me(l, {
+    default: se(() => [a.isConnected ? (W(), Me(l, {
       key: 0,
       name: "checked"
     })) : Te("", !0), be(" " + M(a.isConnected ? a.addressNonBounceableMedium : e.t("Connect wallet")), 1)]),
@@ -18627,11 +18627,11 @@ function U2(e, t, n, o, s, a) {
     onClick: a.pay,
     loading: n.loading
   }, uf({
-    default: le(() => [be(" " + M(n.transactionBtnText ? n.transactionBtnText : e.t("Make a TON transaction")), 1)]),
+    default: se(() => [be(" " + M(n.transactionBtnText ? n.transactionBtnText : e.t("Make a TON transaction")), 1)]),
     _: 2
   }, [n.isShowTransactionIcon ? {
     name: "icon",
-    fn: le(() => [t[2] || (t[2] = P("img", {
+    fn: se(() => [t[2] || (t[2] = E("img", {
       src: mm,
       alt: "",
       width: "30px",
@@ -18647,7 +18647,7 @@ function U2(e, t, n, o, s, a) {
     closeable: "",
     title: e.t("Connected Wallet")
   }, {
-    default: le(() => [P("div", z2, [(W(), ae("svg", H2, t[3] || (t[3] = [P("path", {
+    default: se(() => [E("div", z2, [(W(), le("svg", H2, t[3] || (t[3] = [E("path", {
       "fill-rule": "evenodd",
       "clip-rule": "evenodd",
       d: "M1.75 12.002C1.75 9.20169 1.75 7.80156 2.29497 6.732C2.77433 5.79119 3.53924 5.02629 4.48005 4.54692C5.54961 4.00195 6.94974 4.00195 9.75 4.00195H17.25C20.0503 4.00195 21.4504 4.00195 22.52 4.54692C23.4608 5.02629 24.2257 5.79119 24.705 6.732C24.8256 6.96861 24.9195 7.2214 24.9926 7.50195H21.5C19.6377 7.50195 18.7065 7.50195 17.9609 7.77334C16.711 8.22828 15.7263 9.21291 15.2714 10.4629C15 11.2085 15 12.1396 15 14.002C15 15.8643 15 16.7954 15.2714 17.541C15.7263 18.791 16.711 19.7756 17.9609 20.2306C18.7065 20.502 19.6377 20.502 21.5 20.502H24.9926C24.9195 20.7825 24.8256 21.0353 24.705 21.2719C24.2257 22.2127 23.4608 22.9776 22.52 23.457C21.4504 24.002 20.0503 24.002 17.25 24.002H9.75C6.94974 24.002 5.54961 24.002 4.48005 23.457C3.53924 22.9776 2.77433 22.2127 2.29497 21.2719C1.75 20.2023 1.75 18.8022 1.75 16.002V12.002ZM16.4999 13.802C16.4999 12.1218 16.4999 11.2817 16.8269 10.64C17.1145 10.0755 17.5735 9.61656 18.138 9.32894C18.7797 9.00196 19.6198 9.00196 21.2999 9.00196H23.1999C24.8801 9.00196 25.7202 9.00196 26.3619 9.32894C26.9264 9.61656 27.3853 10.0755 27.673 10.64C27.9999 11.2817 27.9999 12.1218 27.9999 13.802V14.202C27.9999 15.8821 27.9999 16.7222 27.673 17.3639C27.3853 17.9284 26.9264 18.3874 26.3619 18.675C25.7202 19.002 24.8801 19.002 23.1999 19.002H21.2999C19.6198 19.002 18.7797 19.002 18.138 18.675C17.5735 18.3874 17.1145 17.9284 16.8269 17.3639C16.4999 16.7222 16.4999 15.8821 16.4999 14.202V13.802ZM22.4999 14.002C22.4999 14.9685 21.7164 15.752 20.7499 15.752C19.7834 15.752 18.9999 14.9685 18.9999 14.002C18.9999 13.0355 19.7834 12.252 20.7499 12.252C21.7164 12.252 22.4999 13.0355 22.4999 14.002Z",
@@ -18662,7 +18662,7 @@ function U2(e, t, n, o, s, a) {
       },
       size: "small"
     }, {
-      default: le(() => [be(M(e.t("Connect different wallet")), 1)]),
+      default: se(() => [be(M(e.t("Connect different wallet")), 1)]),
       _: 1
     }, 8, ["onClick"])]),
     _: 1
@@ -18979,11 +18979,11 @@ function xx(e, t, n, o, s, a) {
     f = ge("ton-wallet"),
     m = ge("van-field"),
     g = ge("van-popup");
-  return W(), ae("div", j2, [s.extendQuestsProgress.length ? (W(), Me(u, {
+  return W(), le("div", j2, [s.extendQuestsProgress.length ? (W(), Me(u, {
     key: 0,
     inset: ""
   }, {
-    default: le(() => [(W(!0), ae(Be, null, Ft(s.extendQuestsProgress, v => (W(), Me(c, {
+    default: se(() => [(W(!0), le(Be, null, Ft(s.extendQuestsProgress, v => (W(), Me(c, {
       key: v.key,
       onClick: b => a.openQuest(v),
       title: v.title,
@@ -18991,25 +18991,25 @@ function xx(e, t, n, o, s, a) {
       center: "",
       "is-link": ""
     }, uf({
-      icon: le(() => [P("img", {
+      icon: se(() => [E("img", {
         src: e._getQuestImg(v.key),
         class: "questImg",
         alt: ""
       }, null, 8, Q2)]),
-      label: le(() => [P("span", {
+      label: se(() => [E("span", {
         class: ot({
           goldLightText: v.status === "complete"
         })
-      }, [be("+" + M(e._number(v.reward)) + " ", 1), t[8] || (t[8] = P("span", {
+      }, [be("+" + M(e._number(v.reward)) + " ", 1), t[8] || (t[8] = E("span", {
         class: "coin25"
       }, null, -1))], 2)]),
       _: 2
     }, [v.status === "complete" ? {
       name: "right-icon",
-      fn: le(() => [h(r, {
+      fn: se(() => [h(r, {
         dot: ""
       }, {
-        default: le(() => [P("span", K2, [be(M(e.t("Take")) + " ", 1), h(l, {
+        default: se(() => [E("span", K2, [be(M(e.t("Take")) + " ", 1), h(l, {
           name: "arrow"
         })])]),
         _: 1
@@ -19017,28 +19017,28 @@ function xx(e, t, n, o, s, a) {
       key: "0"
     } : void 0]), 1032, ["onClick", "title"]))), 128))]),
     _: 1
-  })) : Te("", !0), t[20] || (t[20] = P("br", null, null, -1)), s.extendQuestsFinished.length ? (W(), Me(u, {
+  })) : Te("", !0), t[20] || (t[20] = E("br", null, null, -1)), s.extendQuestsFinished.length ? (W(), Me(u, {
     key: 1,
     inset: "",
     style: {
       "margin-bottom": "50px"
     }
   }, {
-    title: le(() => [P("span", Y2, M(e.t("Completed Tasks")), 1)]),
-    default: le(() => [(W(!0), ae(Be, null, Ft(s.extendQuestsFinished, v => (W(), Me(c, {
+    title: se(() => [E("span", Y2, M(e.t("Completed Tasks")), 1)]),
+    default: se(() => [(W(!0), le(Be, null, Ft(s.extendQuestsFinished, v => (W(), Me(c, {
       key: v.key,
       onClick: b => a.openQuest(v),
       size: "large",
       center: "",
       class: "finished"
     }, {
-      title: le(() => [be(M(v.title), 1)]),
-      icon: le(() => [P("img", {
+      title: se(() => [be(M(v.title), 1)]),
+      icon: se(() => [E("img", {
         src: e._getQuestImg(v.key),
         class: "questImg",
         alt: ""
       }, null, 8, q2)]),
-      "right-icon": le(() => [P("span", null, [be(" +" + M(e._number(v.reward)) + " ", 1), h(l, {
+      "right-icon": se(() => [E("span", null, [be(" +" + M(e._number(v.reward)) + " ", 1), h(l, {
         name: "checked"
       })])]),
       _: 2
@@ -19052,19 +19052,19 @@ function xx(e, t, n, o, s, a) {
     position: "bottom",
     round: ""
   }, {
-    default: le(() => [P("div", G2, [P("div", Z2, [P("img", {
+    default: se(() => [E("div", G2, [E("div", Z2, [E("img", {
       src: e._getQuestImg(s.openedQuest.key),
       class: "questImg",
       alt: ""
-    }, null, 8, X2), P("div", null, [P("div", J2, M(s.openedQuest.title), 1), P("div", null, [be(" +" + M(e._number(s.openedQuest.reward)) + " ", 1), t[9] || (t[9] = P("span", {
+    }, null, 8, X2), E("div", null, [E("div", J2, M(s.openedQuest.title), 1), E("div", null, [be(" +" + M(e._number(s.openedQuest.reward)) + " ", 1), t[9] || (t[9] = E("span", {
       class: "coin25"
-    }, null, -1))])])]), s.openedQuest.key.includes("riddle_") ? (W(), ae("p", ex, '"' + M(s.openedQuest.desc) + '"', 1)) : (W(), ae("p", {
+    }, null, -1))])])]), s.openedQuest.key.includes("riddle_") ? (W(), le("p", ex, '"' + M(s.openedQuest.desc) + '"', 1)) : (W(), le("p", {
       key: 1,
       innerHTML: s.openedQuest.desc.replace(/\n/g, "<br />").replace("{reward}", e._number(s.openedQuest.reward))
-    }, null, 8, tx)), s.openedQuest.status === "finished" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), ae("div", nx, [t[10] || (t[10] = be(" ✅ ")), P("span", ox, M(s.openedQuest.checkData), 1)])) : Te("", !0), s.openedQuest.checkType === "multiQuest" ? (W(), ae("div", ix, [P("div", null, M(e.t("To get the reward complete the quests:")), 1), (W(!0), ae(Be, null, Ft(s.openedQuest.multiQuests, v => (W(), ae("div", {
+    }, null, 8, tx)), s.openedQuest.status === "finished" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), le("div", nx, [t[10] || (t[10] = be(" ✅ ")), E("span", ox, M(s.openedQuest.checkData), 1)])) : Te("", !0), s.openedQuest.checkType === "multiQuest" ? (W(), le("div", ix, [E("div", null, M(e.t("To get the reward complete the quests:")), 1), (W(!0), le(Be, null, Ft(s.openedQuest.multiQuests, v => (W(), le("div", {
       key: "subQuest" + v.key,
       class: ot(["subQuest", v.isComplete ? "subQuestDone" : ""])
-    }, [P("img", {
+    }, [E("img", {
       src: e._getQuestImg(v.key),
       alt: ""
     }, null, 8, sx), v.isComplete ? (W(), Me(l, {
@@ -19073,14 +19073,14 @@ function xx(e, t, n, o, s, a) {
       style: {
         margin: "0 5px"
       }
-    })) : Te("", !0), t[11] || (t[11] = be()), P("span", null, M(v.title), 1)], 2))), 128))])) : Te("", !0), P("div", null, [s.openedQuest.actionUrl ? (W(), Me(d, {
+    })) : Te("", !0), t[11] || (t[11] = be()), E("span", null, M(v.title), 1)], 2))), 128))])) : Te("", !0), E("div", null, [s.openedQuest.actionUrl ? (W(), Me(d, {
       key: 0,
       type: s.openedQuest.status === "complete" ? "success" : "warning",
       round: "",
       onClick: a.actionButtonClick,
       size: "large"
     }, {
-      default: le(() => [be(M(s.openedQuest.actionText), 1)]),
+      default: se(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
     }, 8, ["type", "onClick"])) : Te("", !0), s.openedQuest.actionTo ? (W(), Me(d, {
       key: 1,
@@ -19089,7 +19089,7 @@ function xx(e, t, n, o, s, a) {
       to: s.openedQuest.actionTo,
       size: "large"
     }, {
-      default: le(() => [be(M(s.openedQuest.actionText), 1)]),
+      default: se(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
     }, 8, ["type", "to"])) : Te("", !0), s.openedQuest.checkType === "invite" ? (W(), Me(d, {
       key: 2,
@@ -19098,15 +19098,15 @@ function xx(e, t, n, o, s, a) {
       size: "large",
       onClick: e._shareBtnClick
     }, {
-      default: le(() => [be(M(s.openedQuest.actionText), 1)]),
+      default: se(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
-    }, 8, ["type", "onClick"])) : Te("", !0)]), s.openedQuest.status === "new" && s.openedQuest.key.includes("ton_wallet_") ? (W(), ae("div", ax, [h(f, {
+    }, 8, ["type", "onClick"])) : Te("", !0)]), s.openedQuest.status === "new" && s.openedQuest.key.includes("ton_wallet_") ? (W(), le("div", ax, [h(f, {
       "transaction-value": s.openedQuest.isCheckProgress ? 0 : s.openedQuest.tonTransactionValue,
       "saved-wallet": s.connectedWallet,
       onWalletConnectHandler: a.tonConnectStatusHandler,
       onPaid: t[0] || (t[0] = v => a.actionCheck(5e3)),
       loading: s.openedQuest.isCheckProgress
-    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "loading"])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("donate_ton") ? (W(), ae("div", lx, [h(f, {
+    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "loading"])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("donate_ton") ? (W(), le("div", lx, [h(f, {
       onError: t[1] || (t[1] = v => s.isTransactionError = !0),
       "transaction-value": s.openedQuest.isCheckProgress ? 0 : s.openedQuest.checkCount,
       "saved-wallet": s.connectedWallet,
@@ -19114,25 +19114,25 @@ function xx(e, t, n, o, s, a) {
       "transaction-address": e.uTonDonateAddress,
       onPaid: t[2] || (t[2] = v => a.actionCheck(5e3)),
       loading: s.openedQuest.isCheckProgress
-    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "transaction-address", "loading"]), s.isTransactionError ? (W(), ae("div", rx, [P("p", null, M(e.t("Encountered an error? Reconnect the wallet and try again.")), 1), h(d, {
+    }, null, 8, ["transaction-value", "saved-wallet", "onWalletConnectHandler", "transaction-address", "loading"]), s.isTransactionError ? (W(), le("div", rx, [E("p", null, M(e.t("Encountered an error? Reconnect the wallet and try again.")), 1), h(d, {
       color: "darkorange",
       size: "small",
       round: "",
       onClick: a.reconnectWallet
     }, {
-      default: le(() => [be(M(e.t("Reconnect wallet")), 1)]),
+      default: se(() => [be(M(e.t("Reconnect wallet")), 1)]),
       _: 1
-    }, 8, ["onClick"])])) : Te("", !0)])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("tg_story") ? (W(), ae("div", cx, [h(d, {
+    }, 8, ["onClick"])])) : Te("", !0)])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key.includes("tg_story") ? (W(), le("div", cx, [h(d, {
       type: "success",
       size: "small",
       round: "",
       onClick: e.shareStory,
       loading: s.openedQuest.isCheckProgress
     }, {
-      default: le(() => [be(M(s.openedQuest.actionText), 1)]),
+      default: se(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
-    }, 8, ["onClick", "loading"])])) : Te("", !0), s.openedQuest.needCheck && s.openedQuest.status === "new" && s.openedQuest.isActionButtonClicked && a.showWalletCheckButton ? (W(), ae("div", ux, [
-      ["bybit", "bybit_kyc", "bybit_deposit"].includes(s.openedQuest.checkType) ? (W(), ae("div", dx, [P("p", null, [P("span", fx, M(e.t("Enter your {Bybit} UID")), 1), t[12] || (t[12] = P("br", null, null, -1)), be(" " + M(e.t("Only accounts registered using the button above or entering the code: 86127 during registration can participate.")), 1)]), h(m, {
+    }, 8, ["onClick", "loading"])])) : Te("", !0), s.openedQuest.needCheck && s.openedQuest.status === "new" && s.openedQuest.isActionButtonClicked && a.showWalletCheckButton ? (W(), le("div", ux, [
+      ["bybit", "bybit_kyc", "bybit_deposit"].includes(s.openedQuest.checkType) ? (W(), le("div", dx, [E("p", null, [E("span", fx, M(e.t("Enter your {Bybit} UID")), 1), t[12] || (t[12] = E("br", null, null, -1)), be(" " + M(e.t("Only accounts registered using the button above or entering the code: 86127 during registration can participate.")), 1)]), h(m, {
         modelValue: s.questCheckValue,
         "onUpdate:modelValue": t[3] || (t[3] = v => s.questCheckValue = v),
         center: "",
@@ -19145,7 +19145,7 @@ function xx(e, t, n, o, s, a) {
           "font-size": "1.1em"
         },
         border: !1
-      }, null, 8, ["modelValue", "placeholder"])])) : s.openedQuest.checkType === "checkCode" ? (W(), ae("div", hx, [P("p", mx, M(e.t("Enter code")), 1), h(m, {
+      }, null, 8, ["modelValue", "placeholder"])])) : s.openedQuest.checkType === "checkCode" ? (W(), le("div", hx, [E("p", mx, M(e.t("Enter code")), 1), h(m, {
         modelValue: s.questCheckValue,
         "onUpdate:modelValue": t[4] || (t[4] = v => s.questCheckValue = v),
         center: "",
@@ -19158,7 +19158,7 @@ function xx(e, t, n, o, s, a) {
           "font-size": "1.1em"
         },
         border: !1
-      }, null, 8, ["modelValue", "placeholder"])])) : (W(), ae("p", gx, M(e.t("After this action, click Check action.")), 1)), h(d, {
+      }, null, 8, ["modelValue", "placeholder"])])) : (W(), le("p", gx, M(e.t("After this action, click Check action.")), 1)), h(d, {
         type: "success",
         round: "",
         icon: "warn-o",
@@ -19169,16 +19169,16 @@ function xx(e, t, n, o, s, a) {
           width: "100%"
         }
       }, {
-        default: le(() => [be(M(e.t("Check action")), 1)]),
+        default: se(() => [be(M(e.t("Check action")), 1)]),
         _: 1
-      }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), ae("div", vx, M(s.checkErrorText), 1)) : Te("", !0)
-    ])) : s.openedQuest.status === "new" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), ae("div", yx, [s.openedQuest.key.includes("rebus_") ? (W(), ae("div", px, [P("img", {
+      }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), le("div", vx, M(s.checkErrorText), 1)) : Te("", !0)
+    ])) : s.openedQuest.status === "new" && (s.openedQuest.key.includes("rebus_") || s.openedQuest.key.includes("riddle_")) ? (W(), le("div", yx, [s.openedQuest.key.includes("rebus_") ? (W(), le("div", px, [E("img", {
       src: a.getRebusImg(s.openedQuest.key),
       alt: "",
       style: {
         "max-height": "150px"
       }
-    }, null, 8, bx)])) : Te("", !0), P("div", wx, M(e.t("Enter answer:")), 1), h(m, {
+    }, null, 8, bx)])) : Te("", !0), E("div", wx, M(e.t("Enter answer:")), 1), h(m, {
       modelValue: s.questCheckValue,
       "onUpdate:modelValue": t[5] || (t[5] = v => s.questCheckValue = v),
       center: "",
@@ -19191,16 +19191,16 @@ function xx(e, t, n, o, s, a) {
         "font-size": "1.1em"
       },
       border: !1
-    }, null, 8, ["modelValue", "placeholder"]), t[14] || (t[14] = P("br", null, null, -1)), P("div", Cx, [be(M(e.t("Write the answer in English.")), 1), t[13] || (t[13] = P("br", null, null, -1)), be(" " + M(e.t("If it's difficult for you, look for communities where they can help you.")), 1)])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key !== "tg_story" && !s.openedQuest.actionTo && !s.openedQuest.actionUrl && (s.openedQuest.checkType === "fakeCheck" || s.openedQuest.checkType === "checkCode") ? (W(), ae("div", _x, [h(d, {
+    }, null, 8, ["modelValue", "placeholder"]), t[14] || (t[14] = E("br", null, null, -1)), E("div", Cx, [be(M(e.t("Write the answer in English.")), 1), t[13] || (t[13] = E("br", null, null, -1)), be(" " + M(e.t("If it's difficult for you, look for communities where they can help you.")), 1)])])) : Te("", !0), s.openedQuest.status === "new" && s.openedQuest.key !== "tg_story" && !s.openedQuest.actionTo && !s.openedQuest.actionUrl && (s.openedQuest.checkType === "fakeCheck" || s.openedQuest.checkType === "checkCode") ? (W(), le("div", _x, [h(d, {
       type: "success",
       round: "",
       onClick: a.actionCheck,
       loading: s.openedQuest.isCheckProgress,
       "loading-text": e.t("Checking...")
     }, {
-      default: le(() => [be(M(s.openedQuest.actionText), 1)]),
+      default: se(() => [be(M(s.openedQuest.actionText), 1)]),
       _: 1
-    }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), ae("div", kx, M(s.checkErrorText), 1)) : Te("", !0)])) : Te("", !0), s.openedQuest.key.includes("name_check") ? (W(), ae("div", Tx, [t[15] || (t[15] = P("br", null, null, -1)), t[16] || (t[16] = P("br", null, null, -1)), h(d, {
+    }, 8, ["onClick", "loading", "loading-text"]), s.checkErrorText ? (W(), le("div", kx, M(s.checkErrorText), 1)) : Te("", !0)])) : Te("", !0), s.openedQuest.key.includes("name_check") ? (W(), le("div", Tx, [t[15] || (t[15] = E("br", null, null, -1)), t[16] || (t[16] = E("br", null, null, -1)), h(d, {
       icon: "link-o",
       onClick: t[6] || (t[6] = v => e._copyToClipboard(s.openedQuest.checkData)),
       round: "",
@@ -19208,11 +19208,11 @@ function xx(e, t, n, o, s, a) {
       size: "large",
       type: "success"
     }, {
-      default: le(() => [be(M(e.t("Copy emoji {emoji}", {
+      default: se(() => [be(M(e.t("Copy emoji {emoji}", {
         emoji: s.openedQuest.checkData
       })), 1)]),
       _: 1
-    }, 8, ["loading"])])) : Te("", !0), !s.openedQuest.needCheck && s.openedQuest.status === "new" ? (W(), ae("div", Sx, [t[17] || (t[17] = P("br", null, null, -1)), t[18] || (t[18] = P("br", null, null, -1)), h(d, {
+    }, 8, ["loading"])])) : Te("", !0), !s.openedQuest.needCheck && s.openedQuest.status === "new" ? (W(), le("div", Sx, [t[17] || (t[17] = E("br", null, null, -1)), t[18] || (t[18] = E("br", null, null, -1)), h(d, {
       icon: "replay",
       onClick: a.updateQuestStatus,
       round: "",
@@ -19221,7 +19221,7 @@ function xx(e, t, n, o, s, a) {
       size: "mini",
       type: "success"
     }, {
-      default: le(() => [be(M(e.t("Update status")), 1)]),
+      default: se(() => [be(M(e.t("Update status")), 1)]),
       _: 1
     }, 8, ["onClick", "loading", "loading-text"])])) : Te("", !0), s.openedQuest.status === "complete" ? (W(), Me(d, {
       key: 12,
@@ -19232,7 +19232,7 @@ function xx(e, t, n, o, s, a) {
       onClick: a.claimQuest,
       loading: s.isClaimLoading
     }, {
-      default: le(() => [be(M(e.t("Take")) + " +" + M(e._number(s.openedQuest.reward)) + " ", 1), t[19] || (t[19] = P("span", {
+      default: se(() => [be(M(e.t("Take")) + " +" + M(e._number(s.openedQuest.reward)) + " ", 1), t[19] || (t[19] = E("span", {
         class: "coin25"
       }, null, -1))]),
       _: 1
@@ -19349,18 +19349,18 @@ function Hx(e, t, n, o, s, a) {
     c = ge("van-badge"),
     u = ge("van-button"),
     d = ge("van-popup");
-  return W(), ae("div", null, [P("div", {
+  return W(), le("div", null, [E("div", {
     class: ot(["dailyReward clicked", {
       grayscale: !a.isDailyCanTake
     }]),
     onClick: t[0] || (t[0] = f => s.isShowDailyReward = !0)
-  }, [t[4] || (t[4] = P("div", {
+  }, [t[4] || (t[4] = E("div", {
     class: "icon"
-  }, [P("div", {
+  }, [E("div", {
     class: "img"
-  }, [P("span", {
+  }, [E("span", {
     class: "coin60"
-  })])], -1)), P("div", Ix, [P("div", Px, M(e.t("Daily reward")), 1), P("div", null, [a.isDailyCanTake ? (W(), ae("span", Rx, M(e.t("Hurry up and get it")), 1)) : (W(), ae("span", Ox, M(e.t("Can be claim in")), 1)), t[3] || (t[3] = be("  ")), h(l, {
+  })])], -1)), E("div", Ix, [E("div", Px, M(e.t("Daily reward")), 1), E("div", null, [a.isDailyCanTake ? (W(), le("span", Rx, M(e.t("Hurry up and get it")), 1)) : (W(), le("span", Ox, M(e.t("Can be claim in")), 1)), t[3] || (t[3] = be("  ")), h(l, {
     time: s.timeToNextDay,
     class: "countDown",
     style: {
@@ -19369,18 +19369,18 @@ function Hx(e, t, n, o, s, a) {
       width: "7ch",
       display: "inline-block"
     }
-  }, null, 8, ["time"])])]), P("div", Dx, [a.isDailyCanTake ? (W(), Me(c, {
+  }, null, 8, ["time"])])]), E("div", Dx, [a.isDailyCanTake ? (W(), Me(c, {
     key: 0,
     dot: "",
     style: {
       "white-space": "nowrap"
     }
   }, {
-    default: le(() => [be(M(e.t("Claim")) + " ", 1), h(r, {
+    default: se(() => [be(M(e.t("Claim")) + " ", 1), h(r, {
       name: "arrow"
     })]),
     _: 1
-  })) : (W(), ae("div", Bx, [h(r, {
+  })) : (W(), le("div", Bx, [h(r, {
     name: "arrow"
   })]))])], 2), h(d, {
     show: s.isShowDailyReward,
@@ -19394,7 +19394,7 @@ function Hx(e, t, n, o, s, a) {
       "padding-bottom": a.isDailyCanTake ? "120px" : "80px"
     })
   }, {
-    default: le(() => [P("div", $x, [P("h1", null, M(e.t("Daily reward")), 1), P("p", null, M(e.t("If you miss a day, you start all over again")), 1), P("div", Mx, [be(M(e.t("Until the next day:")) + " ", 1), h(l, {
+    default: se(() => [E("div", $x, [E("h1", null, M(e.t("Daily reward")), 1), E("p", null, M(e.t("If you miss a day, you start all over again")), 1), E("div", Mx, [be(M(e.t("Until the next day:")) + " ", 1), h(l, {
       time: s.timeToNextDay,
       style: {
         display: "inline-block",
@@ -19402,7 +19402,7 @@ function Hx(e, t, n, o, s, a) {
         "font-size": "1.3em",
         width: "7ch"
       }
-    }, null, 8, ["time"])])]), t[6] || (t[6] = P("br", null, null, -1)), P("div", Lx, [(W(!0), ae(Be, null, Ft(a.rewardsExtend, f => (W(), ae("div", {
+    }, null, 8, ["time"])])]), t[6] || (t[6] = E("br", null, null, -1)), E("div", Lx, [(W(!0), le(Be, null, Ft(a.rewardsExtend, f => (W(), le("div", {
       class: ot(["rewardItem", {
         isTaken: !f.isTaken,
         isCanTake: f.isCanTake,
@@ -19410,9 +19410,9 @@ function Hx(e, t, n, o, s, a) {
       }]),
       key: f.key,
       onClick: m => f.isCanTake ? a.claimDailyReward(f) : ""
-    }, [P("div", Fx, M(e.t("Day")) + " " + M(f.key), 1), t[5] || (t[5] = P("div", {
+    }, [E("div", Fx, M(e.t("Day")) + " " + M(f.key), 1), t[5] || (t[5] = E("div", {
       class: "rewardIcon"
-    }, null, -1)), P("div", Vx, M(e._numberShort(f.rewardMoney)), 1), f.isTaken ? (W(), Me(r, {
+    }, null, -1)), E("div", Vx, M(e._numberShort(f.rewardMoney)), 1), f.isTaken ? (W(), Me(r, {
       key: 0,
       color: "#07c160",
       name: "success",
@@ -19424,7 +19424,7 @@ function Hx(e, t, n, o, s, a) {
         transform: "translate(-50%, -50%)",
         filter: "drop-shadow(2px 4px 6px yellow)"
       }
-    })) : Te("", !0)], 10, Nx))), 128))]), a.isDailyCanTake ? (W(), ae("div", zx, [h(u, {
+    })) : Te("", !0)], 10, Nx))), 128))]), a.isDailyCanTake ? (W(), le("div", zx, [h(u, {
       type: "warning",
       size: "large",
       round: "",
@@ -19434,7 +19434,7 @@ function Hx(e, t, n, o, s, a) {
       loading: s.isClaimLoading,
       onClick: t[1] || (t[1] = f => a.claimDailyReward(s.lastDailyRewardCanTake))
     }, {
-      default: le(() => [be(M(e.t("Claim Reward")), 1)]),
+      default: se(() => [be(M(e.t("Claim Reward")), 1)]),
       _: 1
     }, 8, ["loading"])])) : Te("", !0)]),
     _: 1
@@ -19594,11 +19594,11 @@ function pm(e, t, n = {}, o, s, a) {
       const D = function() {
         Ra(o);
         const S = Array.from(arguments),
-          I = [],
+          P = [],
           $ = [];
 
         function X(te) {
-          I.push(te)
+          P.push(te)
         }
 
         function ce(te) {
@@ -19617,7 +19617,7 @@ function pm(e, t, n = {}, o, s, a) {
         } catch (te) {
           throw Zo($, te), te
         }
-        return U instanceof Promise ? U.then(te => (Zo(I, te), te)).catch(te => (Zo($, te), Promise.reject(te))) : (Zo(I, U), U)
+        return U instanceof Promise ? U.then(te => (Zo(P, te), te)).catch(te => (Zo($, te), Promise.reject(te))) : (Zo(P, U), U)
       };
       return D[Qu] = !0, D[ml] = R, D
     },
@@ -19629,12 +19629,12 @@ function pm(e, t, n = {}, o, s, a) {
       $reset: w,
       $subscribe(T, R = {}) {
         const D = ju(f, T, R.detached, () => S()),
-          S = l.run(() => re(() => o.state.value[e], I => {
+          S = l.run(() => re(() => o.state.value[e], P => {
             (R.flush === "sync" ? d : u) && T({
               storeId: e,
               type: Ui.direct,
               events: g
-            }, I)
+            }, P)
           }, eo({}, c, R)));
         return D
       },
@@ -19936,9 +19936,9 @@ const ao = Wr("user", {
       for (var b = 1732584193, p = -271733879, w = -1732584194, y = 271733878, C = 0; C < g.length; C += 16) {
         var _ = b,
           k = p,
-          E = w,
+          I = w,
           B = y;
-        p = d(p = d(p = d(p = d(p = u(p = u(p = u(p = u(p = c(p = c(p = c(p = c(p = r(p = r(p = r(p = r(p, w = r(w, y = r(y, b = r(b, p, w, y, g[C + 0], 7, -680876936), p, w, g[C + 1], 12, -389564586), b, p, g[C + 2], 17, 606105819), y, b, g[C + 3], 22, -1044525330), w = r(w, y = r(y, b = r(b, p, w, y, g[C + 4], 7, -176418897), p, w, g[C + 5], 12, 1200080426), b, p, g[C + 6], 17, -1473231341), y, b, g[C + 7], 22, -45705983), w = r(w, y = r(y, b = r(b, p, w, y, g[C + 8], 7, 1770035416), p, w, g[C + 9], 12, -1958414417), b, p, g[C + 10], 17, -42063), y, b, g[C + 11], 22, -1990404162), w = r(w, y = r(y, b = r(b, p, w, y, g[C + 12], 7, 1804603682), p, w, g[C + 13], 12, -40341101), b, p, g[C + 14], 17, -1502002290), y, b, g[C + 15], 22, 1236535329), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 1], 5, -165796510), p, w, g[C + 6], 9, -1069501632), b, p, g[C + 11], 14, 643717713), y, b, g[C + 0], 20, -373897302), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 5], 5, -701558691), p, w, g[C + 10], 9, 38016083), b, p, g[C + 15], 14, -660478335), y, b, g[C + 4], 20, -405537848), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 9], 5, 568446438), p, w, g[C + 14], 9, -1019803690), b, p, g[C + 3], 14, -187363961), y, b, g[C + 8], 20, 1163531501), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 13], 5, -1444681467), p, w, g[C + 2], 9, -51403784), b, p, g[C + 7], 14, 1735328473), y, b, g[C + 12], 20, -1926607734), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 5], 4, -378558), p, w, g[C + 8], 11, -2022574463), b, p, g[C + 11], 16, 1839030562), y, b, g[C + 14], 23, -35309556), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 1], 4, -1530992060), p, w, g[C + 4], 11, 1272893353), b, p, g[C + 7], 16, -155497632), y, b, g[C + 10], 23, -1094730640), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 13], 4, 681279174), p, w, g[C + 0], 11, -358537222), b, p, g[C + 3], 16, -722521979), y, b, g[C + 6], 23, 76029189), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 9], 4, -640364487), p, w, g[C + 12], 11, -421815835), b, p, g[C + 15], 16, 530742520), y, b, g[C + 2], 23, -995338651), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 0], 6, -198630844), p, w, g[C + 7], 10, 1126891415), b, p, g[C + 14], 15, -1416354905), y, b, g[C + 5], 21, -57434055), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 12], 6, 1700485571), p, w, g[C + 3], 10, -1894986606), b, p, g[C + 10], 15, -1051523), y, b, g[C + 1], 21, -2054922799), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 8], 6, 1873313359), p, w, g[C + 15], 10, -30611744), b, p, g[C + 6], 15, -1560198380), y, b, g[C + 13], 21, 1309151649), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 4], 6, -145523070), p, w, g[C + 11], 10, -1120210379), b, p, g[C + 2], 15, 718787259), y, b, g[C + 9], 21, -343485551), b = f(b, _), p = f(p, k), w = f(w, E), y = f(y, B)
+        p = d(p = d(p = d(p = d(p = u(p = u(p = u(p = u(p = c(p = c(p = c(p = c(p = r(p = r(p = r(p = r(p, w = r(w, y = r(y, b = r(b, p, w, y, g[C + 0], 7, -680876936), p, w, g[C + 1], 12, -389564586), b, p, g[C + 2], 17, 606105819), y, b, g[C + 3], 22, -1044525330), w = r(w, y = r(y, b = r(b, p, w, y, g[C + 4], 7, -176418897), p, w, g[C + 5], 12, 1200080426), b, p, g[C + 6], 17, -1473231341), y, b, g[C + 7], 22, -45705983), w = r(w, y = r(y, b = r(b, p, w, y, g[C + 8], 7, 1770035416), p, w, g[C + 9], 12, -1958414417), b, p, g[C + 10], 17, -42063), y, b, g[C + 11], 22, -1990404162), w = r(w, y = r(y, b = r(b, p, w, y, g[C + 12], 7, 1804603682), p, w, g[C + 13], 12, -40341101), b, p, g[C + 14], 17, -1502002290), y, b, g[C + 15], 22, 1236535329), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 1], 5, -165796510), p, w, g[C + 6], 9, -1069501632), b, p, g[C + 11], 14, 643717713), y, b, g[C + 0], 20, -373897302), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 5], 5, -701558691), p, w, g[C + 10], 9, 38016083), b, p, g[C + 15], 14, -660478335), y, b, g[C + 4], 20, -405537848), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 9], 5, 568446438), p, w, g[C + 14], 9, -1019803690), b, p, g[C + 3], 14, -187363961), y, b, g[C + 8], 20, 1163531501), w = c(w, y = c(y, b = c(b, p, w, y, g[C + 13], 5, -1444681467), p, w, g[C + 2], 9, -51403784), b, p, g[C + 7], 14, 1735328473), y, b, g[C + 12], 20, -1926607734), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 5], 4, -378558), p, w, g[C + 8], 11, -2022574463), b, p, g[C + 11], 16, 1839030562), y, b, g[C + 14], 23, -35309556), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 1], 4, -1530992060), p, w, g[C + 4], 11, 1272893353), b, p, g[C + 7], 16, -155497632), y, b, g[C + 10], 23, -1094730640), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 13], 4, 681279174), p, w, g[C + 0], 11, -358537222), b, p, g[C + 3], 16, -722521979), y, b, g[C + 6], 23, 76029189), w = u(w, y = u(y, b = u(b, p, w, y, g[C + 9], 4, -640364487), p, w, g[C + 12], 11, -421815835), b, p, g[C + 15], 16, 530742520), y, b, g[C + 2], 23, -995338651), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 0], 6, -198630844), p, w, g[C + 7], 10, 1126891415), b, p, g[C + 14], 15, -1416354905), y, b, g[C + 5], 21, -57434055), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 12], 6, 1700485571), p, w, g[C + 3], 10, -1894986606), b, p, g[C + 10], 15, -1051523), y, b, g[C + 1], 21, -2054922799), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 8], 6, 1873313359), p, w, g[C + 15], 10, -30611744), b, p, g[C + 6], 15, -1560198380), y, b, g[C + 13], 21, 1309151649), w = d(w, y = d(y, b = d(b, p, w, y, g[C + 4], 6, -145523070), p, w, g[C + 11], 10, -1120210379), b, p, g[C + 2], 15, 718787259), y, b, g[C + 9], 21, -343485551), b = f(b, _), p = f(p, k), w = f(w, I), y = f(y, B)
       }
       return Array(b, p, w, y)
     }
@@ -20247,12 +20247,12 @@ function SA(e, t, n, o, s, a) {
     f = ge("van-cell"),
     m = ge("van-cell-group"),
     g = ge("van-loading");
-  return W(), ae("div", null, [n.lackOfCoin > 0 ? (W(), ae("div", sA, [P("h1", {
+  return W(), le("div", null, [n.lackOfCoin > 0 ? (W(), le("div", sA, [E("h1", {
     innerHTML: e.t("You are {count} {IMG_COIN} short to make this purchase", {
       count: e._number(n.lackOfCoin),
       IMG_COIN: e.IMG_COIN
     })
-  }, null, 8, aA), P("div", lA, M(e.t("Top up your balance:")), 1)])) : Te("", !0), h(r, {
+  }, null, 8, aA), E("div", lA, M(e.t("Top up your balance:")), 1)])) : Te("", !0), h(r, {
     active: e.paymentType,
     "onUpdate:active": t[0] || (t[0] = v => e.paymentType = v),
     type: "card",
@@ -20261,7 +20261,7 @@ function SA(e, t, n, o, s, a) {
       "margin-bottom": "5px"
     }
   }, {
-    default: le(() => [h(l, {
+    default: se(() => [h(l, {
       name: "stars",
       title: e.t("Stars")
     }, null, 8, ["title"]), h(l, {
@@ -20270,22 +20270,22 @@ function SA(e, t, n, o, s, a) {
       dot: !e._isOnboardingComplete(e.onBoard.buyTon)
     }, null, 8, ["dot"])]),
     _: 1
-  }, 8, ["active"]), e.paymentType === "ton" && e.isTonLoading ? (W(), ae("div", rA, [h(c, {
+  }, 8, ["active"]), e.paymentType === "ton" && e.isTonLoading ? (W(), le("div", rA, [h(c, {
     name: "warning-o"
-  }), P("div", cA, [be(" • " + M(e.t("Transaction processing may take a few minutes.")) + " ", 1), t[1] || (t[1] = P("br", null, null, -1)), be(" • " + M(e.t("You can leave this page, {COIN_NAME} will be credited automatically.", {
+  }), E("div", cA, [be(" • " + M(e.t("Transaction processing may take a few minutes.")) + " ", 1), t[1] || (t[1] = E("br", null, null, -1)), be(" • " + M(e.t("You can leave this page, {COIN_NAME} will be credited automatically.", {
     COIN_NAME: e.COIN_NAME
-  })), 1), t[2] || (t[2] = P("br", null, null, -1)), be(" • " + M(e.t("You can view the list of processed transactions in the history section at the bottom.")), 1)])])) : Te("", !0), h(m, {
+  })), 1), t[2] || (t[2] = E("br", null, null, -1)), be(" • " + M(e.t("You can view the list of processed transactions in the history section at the bottom.")), 1)])])) : Te("", !0), h(m, {
     inset: "",
     class: "noMargin"
   }, {
-    default: le(() => [(W(!0), ae(Be, null, Ft(e.dbPurchase, v => (W(), Me(f, {
+    default: se(() => [(W(!0), le(Be, null, Ft(e.dbPurchase, v => (W(), Me(f, {
       key: v.coins + "_" + v.price,
       center: ""
     }, {
-      title: le(() => [t[3] || (t[3] = P("span", {
+      title: se(() => [t[3] || (t[3] = E("span", {
         class: "coin33"
-      }, null, -1)), t[4] || (t[4] = be()), P("span", uA, M(e._number(v.coins)), 1)]),
-      "right-icon": le(() => [P("div", dA, [v.key === 1e4 ? (W(), ae("span", fA, M(e.t("Most popular!")), 1)) : Te("", !0), v.key === 25e4 ? (W(), ae("span", hA, M(e.t("Best Price!")), 1)) : Te("", !0), e.paymentType === "stars" ? (W(), Me(u, {
+      }, null, -1)), t[4] || (t[4] = be()), E("span", uA, M(e._number(v.coins)), 1)]),
+      "right-icon": se(() => [E("div", dA, [v.key === 1e4 ? (W(), le("span", fA, M(e.t("Most popular!")), 1)) : Te("", !0), v.key === 25e4 ? (W(), le("span", hA, M(e.t("Best Price!")), 1)) : Te("", !0), e.paymentType === "stars" ? (W(), Me(u, {
         key: 2,
         type: "success",
         size: "small",
@@ -20295,7 +20295,7 @@ function SA(e, t, n, o, s, a) {
         onClick: b => a.buyStars(v),
         loading: e.isBuyLoading
       }, {
-        default: le(() => [be("⭐️ " + M(e._number(v.price)), 1)]),
+        default: se(() => [be("⭐️ " + M(e._number(v.price)), 1)]),
         _: 2
       }, 1032, ["onClick", "loading"])) : Te("", !0), e.paymentType === "ton" ? (W(), Me(u, {
         key: 3,
@@ -20307,10 +20307,10 @@ function SA(e, t, n, o, s, a) {
         onClick: b => a.buyTon(v),
         loading: e.isTonLoading
       }, {
-        default: le(() => [h(d, {
+        default: se(() => [h(d, {
           dot: !e._isOnboardingComplete(e.onBoard.buyTon)
         }, {
-          default: le(() => [P("div", mA, [t[5] || (t[5] = P("img", {
+          default: se(() => [E("div", mA, [t[5] || (t[5] = E("img", {
             src: mm,
             alt: "",
             width: "15px"
@@ -20322,25 +20322,25 @@ function SA(e, t, n, o, s, a) {
       _: 2
     }, 1024))), 128))]),
     _: 1
-  }), e.paymentType === "ton" ? (W(), ae("div", gA, [P("h2", vA, [h(u, {
+  }), e.paymentType === "ton" ? (W(), le("div", gA, [E("h2", vA, [h(u, {
     size: "small",
     type: "warning",
     loading: e.isHistoryLoading,
     onClick: a.loadTonHistory
   }, {
-    default: le(() => [h(c, {
+    default: se(() => [h(c, {
       name: "replay"
     })]),
     _: 1
-  }, 8, ["loading", "onClick"]), P("span", yA, M(e.t("History")), 1)]), e.isHistoryLoading ? (W(), ae("div", pA, [h(g)])) : (W(), ae(Be, {
+  }, 8, ["loading", "onClick"]), E("span", yA, M(e.t("History")), 1)]), e.isHistoryLoading ? (W(), le("div", pA, [h(g)])) : (W(), le(Be, {
     key: 1
-  }, [e.tonTransactions.length > 0 ? (W(), ae("div", bA, [P("table", wA, [P("tbody", null, [P("tr", null, [P("td", null, M(e.t("Date")), 1), t[6] || (t[6] = P("td", null, [P("span", {
+  }, [e.tonTransactions.length > 0 ? (W(), le("div", bA, [E("table", wA, [E("tbody", null, [E("tr", null, [E("td", null, M(e.t("Date")), 1), t[6] || (t[6] = E("td", null, [E("span", {
     class: "coin25"
-  })], -1)), t[7] || (t[7] = P("td", null, "TON", -1)), t[8] || (t[8] = P("td", null, "tx", -1))]), (W(!0), ae(Be, null, Ft(e.tonTransactions, v => (W(), ae("tr", null, [P("td", null, M(new Date(v.date.replace(" ", "T") + "Z").toLocaleString()), 1), P("td", null, M(e._numberShort(v.coins)), 1), P("td", null, M(v.ton), 1), P("td", {
+  })], -1)), t[7] || (t[7] = E("td", null, "TON", -1)), t[8] || (t[8] = E("td", null, "tx", -1))]), (W(!0), le(Be, null, Ft(e.tonTransactions, v => (W(), le("tr", null, [E("td", null, M(new Date(v.date.replace(" ", "T") + "Z").toLocaleString()), 1), E("td", null, M(e._numberShort(v.coins)), 1), E("td", null, M(v.ton), 1), E("td", {
     onClick: b => e._openUrl("https://tonscan.org/tx/" + v.trx)
-  }, [P("span", _A, "..." + M(v.trx.slice(-8)), 1)], 8, CA)]))), 256))])]), e.tonTransactions.length === 10 ? (W(), ae("div", kA, M(e.t("The last {count} transactions are displayed", {
+  }, [E("span", _A, "..." + M(v.trx.slice(-8)), 1)], 8, CA)]))), 256))])]), e.tonTransactions.length === 10 ? (W(), le("div", kA, M(e.t("The last {count} transactions are displayed", {
     count: 10
-  })), 1)) : Te("", !0)])) : (W(), ae("p", TA, M(e.t("No transactions found")), 1))], 64))])) : Te("", !0)])
+  })), 1)) : Te("", !0)])) : (W(), le("p", TA, M(e.t("No transactions found")), 1))], 64))])) : Te("", !0)])
 }
 const Tm = St(iA, [
     ["render", SA],
@@ -20622,22 +20622,22 @@ function sE(e, t, n, o, s, a) {
     u = ge("topup"),
     d = ge("van-cell"),
     f = ge("van-cell-group");
-  return W(), ae("div", {
+  return W(), le("div", {
     class: ot(["topBar", {
       needBg: a.isNeedBg,
       noBg: a.isNoBg && !a.isNeedBg,
       staticBg: n.staticBg
     }])
-  }, [P("div", AA, [P("table", EA, [P("tbody", null, [P("tr", null, [P("td", IA, [P("div", {
+  }, [E("div", AA, [E("table", EA, [E("tbody", null, [E("tr", null, [E("td", IA, [E("div", {
     class: ot(["metric token nowrap panelBrown", [e.uFeed.isNeedFeed ? "panelRed" : "panelBrown"]]),
     id: "tokens",
     onClick: t[0] || (t[0] = (...m) => a.showTphPopup && a.showTphPopup(...m))
-  }, [t[13] || (t[13] = P("div", {
+  }, [t[13] || (t[13] = E("div", {
     class: "token30",
     style: {
       margin: "0 10px 0 -8px"
     }
-  }, null, -1)), e.uFeed.isNeedFeed ? (W(), ae("span", PA, M(e.t("Mining stopped")), 1)) : (W(), ae("span", {
+  }, null, -1)), e.uFeed.isNeedFeed ? (W(), le("span", PA, M(e.t("Mining stopped")), 1)) : (W(), le("span", {
     key: 1,
     style: an([{
       "font-size": "1.3em",
@@ -20657,7 +20657,7 @@ function sE(e, t, n, o, s, a) {
     class: "metricPopUp",
     closeable: ""
   }, {
-    default: le(() => [e.uFeed.isNeedFeed ? (W(), ae("div", OA, [P("div", RA, M(e.t("Token mining has stopped. ")), 1), P("div", DA, M(e.t("The animals need to be fed.")), 1), h(r, {
+    default: se(() => [e.uFeed.isNeedFeed ? (W(), le("div", OA, [E("div", RA, M(e.t("Token mining has stopped. ")), 1), E("div", DA, M(e.t("The animals need to be fed.")), 1), h(r, {
       type: "warning",
       size: "large",
       onClick: a.seeFeedDetails,
@@ -20665,38 +20665,38 @@ function sE(e, t, n, o, s, a) {
         "margin-top": "10px"
       }
     }, {
-      default: le(() => [be(M(e.t("See details")), 1)]),
+      default: se(() => [be(M(e.t("See details")), 1)]),
       _: 1
-    }, 8, ["onClick"])])) : Te("", !0), P("div", BA, [t[14] || (t[14] = P("span", {
+    }, 8, ["onClick"])])) : Te("", !0), E("div", BA, [t[14] || (t[14] = E("span", {
       class: "token50"
-    }, null, -1)), P("div", $A, [P("div", MA, M(e.t("{TOKEN_NAME} tokens", {
+    }, null, -1)), E("div", $A, [E("div", MA, M(e.t("{TOKEN_NAME} tokens", {
       TOKEN_NAME: e.TOKEN_NAME
-    })), 1), P("div", LA, M(e._number(e.uHero.tokens)), 1)])]), P("ul", NA, [P("li", null, M(e.t("This is the number of tokens you'll get from the AirDrop.")), 1)]), P("div", FA, [t[18] || (t[18] = P("span", {
+    })), 1), E("div", LA, M(e._number(e.uHero.tokens)), 1)])]), E("ul", NA, [E("li", null, M(e.t("This is the number of tokens you'll get from the AirDrop.")), 1)]), E("div", FA, [t[18] || (t[18] = E("span", {
       class: "tph50"
-    }, null, -1)), P("div", VA, [P("div", zA, M(e.t("Tokens per Hour")), 1), P("div", null, [P("span", HA, M(e._number(e.uHero.tph)), 1), e.uHero.tphBoost || e.uHero.tphAlliance ? (W(), ae("span", UA, [be(" (" + M(e._number(e.uHero.tphBase)) + " ", 1), e.uHero.tphBoost ? (W(), ae("span", WA, [be("+ " + M(e._number(e.uHero.tphBoost)) + " ", 1), t[15] || (t[15] = P("span", {
+    }, null, -1)), E("div", VA, [E("div", zA, M(e.t("Tokens per Hour")), 1), E("div", null, [E("span", HA, M(e._number(e.uHero.tph)), 1), e.uHero.tphBoost || e.uHero.tphAlliance ? (W(), le("span", UA, [be(" (" + M(e._number(e.uHero.tphBase)) + " ", 1), e.uHero.tphBoost ? (W(), le("span", WA, [be("+ " + M(e._number(e.uHero.tphBoost)) + " ", 1), t[15] || (t[15] = E("span", {
       class: "tphIcon",
       style: {
         "background-image": "url('/assets/img/decor/icon_boost.png')"
       }
-    }, null, -1))])) : Te("", !0), e.uHero.tphAlliance ? (W(), ae("span", jA, [be("+ " + M(e._number(e.uHero.tphAlliance)) + " ", 1), t[16] || (t[16] = P("span", {
+    }, null, -1))])) : Te("", !0), e.uHero.tphAlliance ? (W(), le("span", jA, [be("+ " + M(e._number(e.uHero.tphAlliance)) + " ", 1), t[16] || (t[16] = E("span", {
       class: "tphIcon",
       style: {
         "background-image": "url('/assets/img/decor/icon_ali.png')"
       }
-    }, null, -1))])) : Te("", !0), t[17] || (t[17] = be(") "))])) : Te("", !0)])])]), P("ul", QA, [P("li", null, M(e.t("Tokens are added automatically, even when you're offline.")), 1), P("li", null, M(e.t("Buy new animals, level them up, and boost your hourly income to earn more {TOKEN_NAME} tokens.", {
+    }, null, -1))])) : Te("", !0), t[17] || (t[17] = be(") "))])) : Te("", !0)])])]), E("ul", QA, [E("li", null, M(e.t("Tokens are added automatically, even when you're offline.")), 1), E("li", null, M(e.t("Buy new animals, level them up, and boost your hourly income to earn more {TOKEN_NAME} tokens.", {
       TOKEN_NAME: e.TOKEN_NAME
-    })), 1), P("li", null, M(e.t("The level of your alliance also increases your hourly earnings.")), 1), P("li", null, M(e.t("You can increase your hourly earnings by buying a boost.")), 1)])]),
+    })), 1), E("li", null, M(e.t("The level of your alliance also increases your hourly earnings.")), 1), E("li", null, M(e.t("You can increase your hourly earnings by buying a boost.")), 1)])]),
     _: 1
-  }, 8, ["show"]), P("div", {
+  }, 8, ["show"]), E("div", {
     class: "metric coin nowrap",
     id: "coins",
     onClick: t[2] || (t[2] = (...m) => a.showCoinPopup && a.showCoinPopup(...m))
-  }, [t[19] || (t[19] = P("div", {
+  }, [t[19] || (t[19] = E("div", {
     class: "coin38",
     style: {
       margin: "0 -10px"
     }
-  }, null, -1)), P("span", KA, M(e._numberShort(e.uHero.coins)), 1), h(r, {
+  }, null, -1)), E("span", KA, M(e._numberShort(e.uHero.coins)), 1), h(r, {
     type: "success",
     size: "small",
     style: {
@@ -20715,11 +20715,11 @@ function sE(e, t, n, o, s, a) {
     class: "metricPopUp",
     closeable: ""
   }, {
-    default: le(() => [P("div", YA, [t[20] || (t[20] = P("span", {
+    default: se(() => [E("div", YA, [t[20] || (t[20] = E("span", {
       class: "coin60"
-    }, null, -1)), P("div", qA, [P("div", GA, M(e.COIN_NAME), 1), P("div", ZA, M(e._number(e.uHero.coins)), 1)])]), P("ul", XA, [P("li", null, M(e.t("This is the in-game currency.")), 1), P("li", null, M(e.t("Complete quests and invite friends to earn more coins!")), 1)]), P("p", null, M(e.t("Or you can buy them!")), 1), h(u)]),
+    }, null, -1)), E("div", qA, [E("div", GA, M(e.COIN_NAME), 1), E("div", ZA, M(e._number(e.uHero.coins)), 1)])]), E("ul", XA, [E("li", null, M(e.t("This is the in-game currency.")), 1), E("li", null, M(e.t("Complete quests and invite friends to earn more coins!")), 1)]), E("p", null, M(e.t("Or you can buy them!")), 1), h(u)]),
     _: 1
-  }, 8, ["show"])]), P("td", {
+  }, 8, ["show"])]), E("td", {
     style: {
       width: "40px",
       position: "relative"
@@ -20740,13 +20740,13 @@ function sE(e, t, n, o, s, a) {
     position: "top",
     closeable: ""
   }, {
-    default: le(() => [h(f, {
+    default: se(() => [h(f, {
       inset: "",
       style: {
         "margin-top": "50px"
       }
     }, {
-      default: le(() => [h(d, {
+      default: se(() => [h(d, {
         center: "",
         title: " 🌐 " + e.t("Language"),
         value: e.dbLangByKey[e.localSettings.lang].title,
@@ -20762,7 +20762,7 @@ function sE(e, t, n, o, s, a) {
         "margin-top": "20px"
       }
     }, {
-      default: le(() => [h(d, {
+      default: se(() => [h(d, {
         center: "",
         title: " 🏆 " + e.t("Player Rankings"),
         "is-link": "",
@@ -20786,7 +20786,7 @@ function sE(e, t, n, o, s, a) {
         "margin-top": "20px"
       }
     }, {
-      default: le(() => [h(d, {
+      default: se(() => [h(d, {
         center: "",
         title: " 💬 " + e.t("Our Telegram channel"),
         "is-link": "",
@@ -20809,7 +20809,7 @@ function sE(e, t, n, o, s, a) {
         size: "large"
       }, null, 8, ["title"])]),
       _: 1
-    }), t[21] || (t[21] = P("br", null, null, -1))]),
+    }), t[21] || (t[21] = E("br", null, null, -1))]),
     _: 1
   }, 8, ["show"]), h(c, {
     show: e.isShowLangPicker,
@@ -20817,17 +20817,17 @@ function sE(e, t, n, o, s, a) {
     position: "top",
     closeable: ""
   }, {
-    default: le(() => [P("h2", JA, M(e.t("Select language")), 1), P("div", eE, [h(f, {
+    default: se(() => [E("h2", JA, M(e.t("Select language")), 1), E("div", eE, [h(f, {
       inset: ""
     }, {
-      default: le(() => [h(d, {
+      default: se(() => [h(d, {
         title: a.firstLang.title,
         "is-link": "",
         value: a.firstLang.key,
         center: "",
         onClick: t[10] || (t[10] = m => a.onLangSelect(a.firstLang.key))
       }, {
-        icon: le(() => [P("span", tE, M(a.firstLang.icon) + " ", 1)]),
+        icon: se(() => [E("span", tE, M(a.firstLang.icon) + " ", 1)]),
         _: 1
       }, 8, ["title", "value"]), a.userLang ? (W(), Me(d, {
         key: 0,
@@ -20837,16 +20837,16 @@ function sE(e, t, n, o, s, a) {
         center: "",
         onClick: t[11] || (t[11] = m => a.onLangSelect(a.userLang.key))
       }, {
-        icon: le(() => [P("span", nE, M(a.userLang.icon) + " ", 1)]),
+        icon: se(() => [E("span", nE, M(a.userLang.icon) + " ", 1)]),
         _: 1
       }, 8, ["title", "value"])) : Te("", !0)]),
       _: 1
-    }), (W(!0), ae(Be, null, Ft(a.langByFirstLetter, (m, g) => (W(), ae(Be, {
+    }), (W(!0), le(Be, null, Ft(a.langByFirstLetter, (m, g) => (W(), le(Be, {
       key: g
-    }, [P("div", oE, M(g), 1), h(f, {
+    }, [E("div", oE, M(g), 1), h(f, {
       inset: ""
     }, {
-      default: le(() => [(W(!0), ae(Be, null, Ft(m, v => (W(), Me(d, {
+      default: se(() => [(W(!0), le(Be, null, Ft(m, v => (W(), Me(d, {
         key: v.key,
         title: v.title,
         label: v.titleEn,
@@ -20855,7 +20855,7 @@ function sE(e, t, n, o, s, a) {
         center: "",
         onClick: b => a.onLangSelect(v.key)
       }, {
-        icon: le(() => [P("span", iE, M(v.icon) + " ", 1)]),
+        icon: se(() => [E("span", iE, M(v.icon) + " ", 1)]),
         _: 2
       }, 1032, ["title", "label", "value", "onClick"]))), 128))]),
       _: 2
@@ -20906,7 +20906,7 @@ const Qr = St(xA, [
 function dE(e, t, n, o, s, a) {
   const l = ge("QuestDailyReward"),
     r = ge("QuestChallenge");
-  return W(), ae("div", lE, [P("div", rE, [P("h1", cE, M(e.t("Tasks")), 1), P("div", uE, M(e.t("Do tasks and earn more {COIN_NAME}", {
+  return W(), le("div", lE, [E("div", rE, [E("h1", cE, M(e.t("Tasks")), 1), E("div", uE, M(e.t("Do tasks and earn more {COIN_NAME}", {
     COIN_NAME: e.COIN_NAME
   })), 1), h(l, {
     class: "container"
@@ -20984,20 +20984,20 @@ const Sm = St(aE, [
 function pE(e, t, n, o, s, a) {
   const l = ge("ton-wallet"),
     r = ge("van-icon");
-  return W(), ae("div", mE, [t[0] || (t[0] = P("h1", {
+  return W(), le("div", mE, [t[0] || (t[0] = E("h1", {
     class: "aniH1"
-  }, "Airdrop", -1)), P("div", null, [P("div", gE, M(e.t("Task for participating in {Airdrop}:")), 1), P("div", null, [h(l, {
+  }, "Airdrop", -1)), E("div", null, [E("div", gE, M(e.t("Task for participating in {Airdrop}:")), 1), E("div", null, [h(l, {
     loading: s.firstLoading,
     onWalletConnectHandler: a.tonConnectStatusHandler,
     "saved-wallet": s.connectedWallet,
     style: {
       "margin-top": "5px"
     }
-  }, null, 8, ["loading", "onWalletConnectHandler", "saved-wallet"])])]), P("div", vE, [P("div", null, [h(r, {
+  }, null, 8, ["loading", "onWalletConnectHandler", "saved-wallet"])])]), E("div", vE, [E("div", null, [h(r, {
     name: "warning-o"
-  }), be(" " + M(e.t("A wallet can only be connected to one account.")), 1)])]), P("div", yE, [P("p", null, M(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), P("p", null, M(e.t("We are currently in the mining phase where all players earn more {TOKEN_NAME} for the {airdrop}.", {
+  }), be(" " + M(e.t("A wallet can only be connected to one account.")), 1)])]), E("div", yE, [E("p", null, M(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), E("p", null, M(e.t("We are currently in the mining phase where all players earn more {TOKEN_NAME} for the {airdrop}.", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), P("p", null, M(e.t("The date and conditions for receiving the {Airdrop} will be announced soon in our telegram channel.")), 1)])])
+  })), 1), E("p", null, M(e.t("The date and conditions for receiving the {Airdrop} will be announced soon in our telegram channel.")), 1)])])
 }
 const xm = St(hE, [
     ["render", pE],
@@ -21083,14 +21083,14 @@ function NE(e, t, n, o, s, a) {
     d = ge("van-cell"),
     f = ge("van-cell-group"),
     m = ge("van-back-top");
-  return W(), ae("div", CE, [P("div", _E, [P("div", kE, [P("div", null, [P("h1", null, M(e.t("Invite Friends!")), 1), P("span", {
+  return W(), le("div", CE, [E("div", _E, [E("div", kE, [E("div", null, [E("h1", null, M(e.t("Invite Friends!")), 1), E("span", {
     onClick: t[0] || (t[0] = g => {
       this.isListVisible = !this.isListVisible
     }),
     style: {
       "border-bottom": "1px dashed #FFFFFF"
     }
-  }, [P("span", {
+  }, [E("span", {
     innerHTML: e.t("You can earn up to {COUNT} {IMG_COIN} {COIN_NAME} per friend:", {
       MIN: 1,
       MAX: 5,
@@ -21104,7 +21104,7 @@ function NE(e, t, n, o, s, a) {
   })) : (W(), Me(l, {
     key: 1,
     name: "arrow"
-  }))]), rt(P("ul", SE, [P("li", {
+  }))]), rt(E("ul", SE, [E("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 1,
       MAX: 5,
@@ -21112,7 +21112,7 @@ function NE(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, xE), P("li", {
+  }, null, 8, xE), E("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 6,
       MAX: 10,
@@ -21120,7 +21120,7 @@ function NE(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, AE), P("li", {
+  }, null, 8, AE), E("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 11,
       MAX: 20,
@@ -21128,7 +21128,7 @@ function NE(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, EE), P("li", {
+  }, null, 8, EE), E("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 21,
       MAX: 50,
@@ -21136,7 +21136,7 @@ function NE(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, IE), P("li", {
+  }, null, 8, IE), E("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 51,
       MAX: 100,
@@ -21144,7 +21144,7 @@ function NE(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, PE), P("li", {
+  }, null, 8, PE), E("li", {
     innerHTML: e.t("- Over {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MAX: 100,
       COUNT: e._number(50),
@@ -21153,30 +21153,30 @@ function NE(e, t, n, o, s, a) {
     })
   }, null, 8, OE)], 512), [
     [dt, s.isListVisible]
-  ]), P("p", {
+  ]), E("p", {
     innerHTML: e.t("If your friend has Telegram Premium, your bonus triples!", {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, RE), P("p", {
+  }, null, 8, RE), E("p", {
     innerHTML: e.t("Your friend get {BONUS_FRIEND}  {IMG_COIN} {COIN_NAME} or {BONUS_FRIEND_PREMIUM} {IMG_COIN} {COIN_NAME} if friend has Telegram Premium.", {
       COIN_NAME: e.COIN_NAME,
       BONUS_FRIEND: e.gameConfig["ref.bonus.basic"],
       BONUS_FRIEND_PREMIUM: e.gameConfig["ref.bonus.premium"],
       IMG_COIN: e.IMG_COIN
     })
-  }, null, 8, DE), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (W(), ae("p", BE, [be(M(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
+  }, null, 8, DE), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (W(), le("p", BE, [be(M(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
     PERCENT: 30
-  })) + " ", 1), P("span", {
+  })) + " ", 1), E("span", {
     onClick: t[1] || (t[1] = g => e.$router.push("/referral/commission")),
     style: {
       "border-bottom": "1px dashed #FFC04A"
     }
-  }, M(e.t("Check this out.")), 1)])) : Te("", !0), t[2] || (t[2] = P("br", null, null, -1))]), h(u, {
+  }, M(e.t("Check this out.")), 1)])) : Te("", !0), t[2] || (t[2] = E("br", null, null, -1))]), h(u, {
     "offset-top": "15",
     onChange: e._stickyChange
   }, {
-    default: le(() => [P("div", {
+    default: se(() => [E("div", {
       style: an([{
         display: "flex",
         "justify-content": "space-between"
@@ -21190,21 +21190,21 @@ function NE(e, t, n, o, s, a) {
       round: "",
       icon: "link-o"
     }, {
-      default: le(() => [h(r, {
+      default: se(() => [h(r, {
         dot: e.uProfile.friends < 1 && !e._isOnboardingComplete(e.onBoard.friendInvite)
       }, {
-        default: le(() => [be(M(e.t("Invite friends")), 1)]),
+        default: se(() => [be(M(e.t("Invite friends")), 1)]),
         _: 1
       }, 8, ["dot"])]),
       _: 1
     }, 8, ["onClick"])], 4)]),
     _: 1
-  }, 8, ["onChange"]), t[4] || (t[4] = P("br", null, null, -1)), t[5] || (t[5] = P("br", null, null, -1)), t[6] || (t[6] = P("br", null, null, -1)), a.friendsCount > 0 ? (W(), ae("div", {
+  }, 8, ["onChange"]), t[4] || (t[4] = E("br", null, null, -1)), t[5] || (t[5] = E("br", null, null, -1)), t[6] || (t[6] = E("br", null, null, -1)), a.friendsCount > 0 ? (W(), le("div", {
     key: 0,
     class: ot({
       blur: !e.stores.state.isAfterDataLoaded
     })
-  }, [P("div", {
+  }, [E("div", {
     style: {
       "margin-bottom": "5px"
     },
@@ -21217,15 +21217,15 @@ function NE(e, t, n, o, s, a) {
       margin: "0"
     }
   }, {
-    default: le(() => [(W(!0), ae(Be, null, Ft(e.uFriends, g => (W(), Me(d, {
+    default: se(() => [(W(!0), le(Be, null, Ft(e.uFriends, g => (W(), Me(d, {
       key: g.id,
       title: g.name,
       size: "large",
       center: ""
     }, {
-      "right-icon": le(() => [g.coins > 0 ? (W(), ae("div", ME, [be("+" + M(e._number(g.coins)) + " ", 1), t[3] || (t[3] = P("span", {
+      "right-icon": se(() => [g.coins > 0 ? (W(), le("div", ME, [be("+" + M(e._number(g.coins)) + " ", 1), t[3] || (t[3] = E("span", {
         class: "coin25"
-      }, null, -1))])) : (W(), ae("div", LE, M(e.t("Task not completed")), 1))]),
+      }, null, -1))])) : (W(), le("div", LE, M(e.t("Task not completed")), 1))]),
       _: 2
     }, 1032, ["title"]))), 128))]),
     _: 1
@@ -21391,7 +21391,7 @@ function GE(e, t, n, o, s, a) {
     c = ge("van-badge"),
     u = ge("van-button"),
     d = ge("van-swipe");
-  return W(), ae("div", zE, [h(d, {
+  return W(), le("div", zE, [h(d, {
     class: "onboardingSwipe",
     autoplay: 0,
     "show-indicators": !1,
@@ -21403,12 +21403,12 @@ function GE(e, t, n, o, s, a) {
     duration: e.isRtl ? 0 : 500,
     touchable: !1
   }, {
-    default: le(() => [(W(!0), ae(Be, null, Ft(n.quiz.questions, (f, m) => (W(), Me(r, {
+    default: se(() => [(W(!0), le(Be, null, Ft(n.quiz.questions, (f, m) => (W(), Me(r, {
       class: ot(["item", {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [P("div", HE, [P("h2", UE, M(f.desc), 1), P("div", WE, [(W(!0), ae(Be, null, Ft(f.options, g => (W(), ae("div", {
+      default: se(() => [E("div", HE, [E("h2", UE, M(f.desc), 1), E("div", WE, [(W(!0), le(Be, null, Ft(f.options, g => (W(), le("div", {
         class: "option",
         onClick: v => a.setAnswer(m, g)
       }, [e.selectedValues[m] === JSON.stringify(g.animals) ? (W(), Me(l, {
@@ -21419,7 +21419,7 @@ function GE(e, t, n, o, s, a) {
         key: 1,
         size: "30",
         name: "circle"
-      })), P("div", null, M(g.desc), 1)], 8, jE))), 256)), m > 0 ? (W(), ae("div", {
+      })), E("div", null, M(g.desc), 1)], 8, jE))), 256)), m > 0 ? (W(), le("div", {
         key: 0,
         class: "option",
         onClick: t[0] || (t[0] = (...g) => a.prev && a.prev(...g)),
@@ -21437,19 +21437,19 @@ function GE(e, t, n, o, s, a) {
         backgroundImage: "url(" + e._getQuizImg(n.quiz.key, a.calculatedResult) + ")"
       })
     }, {
-      default: le(() => {
+      default: se(() => {
         var f, m;
-        return [P("div", QE, [P("h2", KE, M(n.quiz.title), 1), P("div", YE, [P("p", qE, M((f = a.answerData) == null ? void 0 : f.title) + " - " + M((m = a.answerData) == null ? void 0 : m.desc), 1), h(u, {
+        return [E("div", QE, [E("h2", KE, M(n.quiz.title), 1), E("div", YE, [E("p", qE, M((f = a.answerData) == null ? void 0 : f.title) + " - " + M((m = a.answerData) == null ? void 0 : m.desc), 1), h(u, {
           onClick: a.shareStory,
           loading: e.isSharesLoading,
           type: "success",
           size: "large"
         }, {
-          default: le(() => [be(M(e.t("Share to your story")) + " ", 1), n.quiz.isRewarded ? Te("", !0) : (W(), Me(c, {
+          default: se(() => [be(M(e.t("Share to your story")) + " ", 1), n.quiz.isRewarded ? Te("", !0) : (W(), Me(c, {
             key: 0,
             dot: ""
           }, {
-            default: le(() => [be(M(n.quiz.reward) + " ", 1), t[2] || (t[2] = P("span", {
+            default: se(() => [be(M(n.quiz.reward) + " ", 1), t[2] || (t[2] = E("span", {
               class: "coin25"
             }, null, -1))]),
             _: 1
@@ -21463,7 +21463,7 @@ function GE(e, t, n, o, s, a) {
             width: "100%"
           }
         }, {
-          default: le(() => [h(l, {
+          default: se(() => [h(l, {
             name: "revoke"
           }), be(" " + M(e.t("Retake the quiz!")), 1)]),
           _: 1
@@ -21472,7 +21472,7 @@ function GE(e, t, n, o, s, a) {
       _: 1
     }, 8, ["class", "style"])]),
     _: 1
-  }, 8, ["duration"]), P("div", {
+  }, 8, ["duration"]), E("div", {
     class: "center",
     onClick: t[1] || (t[1] = (...f) => a.backToList && a.backToList(...f)),
     style: {
@@ -21577,9 +21577,9 @@ function uI(e, t, n, o, s, a) {
     key: 1,
     quiz: s.openedQuiz,
     onBackToList: a.backToList
-  }, null, 8, ["quiz", "onBackToList"])) : (W(), ae("div", eI, [P("div", tI, [P("h1", nI, M(e.t("Take the quiz and find out which animal you are!")), 1), P("div", oI, M(e.t("And get your reward!")), 1), t[3] || (t[3] = P("br", null, null, -1)), P("div", iI, [(W(!0), ae(Be, null, Ft(a.tests, u => {
+  }, null, 8, ["quiz", "onBackToList"])) : (W(), le("div", eI, [E("div", tI, [E("h1", nI, M(e.t("Take the quiz and find out which animal you are!")), 1), E("div", oI, M(e.t("And get your reward!")), 1), t[3] || (t[3] = E("br", null, null, -1)), E("div", iI, [(W(!0), le(Be, null, Ft(a.tests, u => {
     var d;
-    return W(), ae("div", {
+    return W(), le("div", {
       key: u.key,
       class: "testItem panelBrown",
       onClick: f => a.openQuiz(u),
@@ -21587,21 +21587,21 @@ function uI(e, t, n, o, s, a) {
         backgroundImage: "url(" + e._getQuizImg(u.key, u.result) + ")",
         backgroundPosition: "0 -20px"
       } : "")
-    }, [P("div", aI, M(u.title), 1), u.result ? (W(), ae("div", lI, [u.isRewarded ? Te("", !0) : (W(), Me(r, {
+    }, [E("div", aI, M(u.title), 1), u.result ? (W(), le("div", lI, [u.isRewarded ? Te("", !0) : (W(), Me(r, {
       key: 0,
       type: "success",
       size: "small"
     }, {
-      default: le(() => [h(l, {
+      default: se(() => [h(l, {
         dot: ""
       }, {
-        default: le(() => [be(M(e.t("Claim")) + " " + M(e._number(u.reward)) + " ", 1), t[0] || (t[0] = P("span", {
+        default: se(() => [be(M(e.t("Claim")) + " " + M(e._number(u.reward)) + " ", 1), t[0] || (t[0] = E("span", {
           class: "coin25"
         }, null, -1))]),
         _: 2
       }, 1024)]),
       _: 2
-    }, 1024)), P("div", rI, M((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (W(), ae("div", cI, [t[1] || (t[1] = P("img", {
+    }, 1024)), E("div", rI, M((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (W(), le("div", cI, [t[1] || (t[1] = E("img", {
       src: XE,
       alt: "",
       style: {
@@ -21612,16 +21612,16 @@ function uI(e, t, n, o, s, a) {
       type: "success",
       size: "large"
     }, {
-      default: le(() => [h(l, {
+      default: se(() => [h(l, {
         dot: ""
       }, {
-        default: le(() => [be(M(e.t("Take the quiz!")), 1)]),
+        default: se(() => [be(M(e.t("Take the quiz!")), 1)]),
         _: 1
       })]),
       _: 1
     }), be(" " + M(e.t("and get {count}", {
       count: e._number(u.reward)
-    })) + " ", 1), t[2] || (t[2] = P("span", {
+    })) + " ", 1), t[2] || (t[2] = E("span", {
       class: "coin25"
     }, null, -1))]))], 12, sI)
   }), 128))])])]))
@@ -21745,24 +21745,24 @@ function pI(e, t, n, o, s, a) {
     d = ge("quests-g"),
     f = ge("test-g"),
     m = ge("van-icon");
-  return a.isMainPage ? (W(), ae("div", {
+  return a.isMainPage ? (W(), le("div", {
     key: 0,
     class: ot(["BottomBar", {
       zIndexFix: a.isShowCloseBtn
     }])
-  }, [(W(!0), ae(Be, null, Ft(a.menuItems, g => (W(), ae("div", {
+  }, [(W(!0), le(Be, null, Ft(a.menuItems, g => (W(), le("div", {
     class: "flyBtn",
     key: g.key,
     onClick: v => s.isShowPopup[g.key] = !0
   }, [h(l, {
     dot: g.isDot
   }, {
-    default: le(() => [P("div", mI, [P("div", {
+    default: se(() => [E("div", mI, [E("div", {
       class: "flyBtnIcon",
       style: an({
         backgroundImage: `url(${g.image})`
       })
-    }, null, 4)]), P("div", gI, M(g.title), 1)]),
+    }, null, 4)]), E("div", gI, M(g.title), 1)]),
     _: 2
   }, 1032, ["dot"])], 8, hI))), 128)), h(c, {
     show: s.isShowPopup.airdrop,
@@ -21773,7 +21773,7 @@ function pI(e, t, n, o, s, a) {
     duration: .15,
     closeable: ""
   }, {
-    default: le(() => [h(r)]),
+    default: se(() => [h(r)]),
     _: 1
   }, 8, ["show"]), h(c, {
     show: s.isShowPopup.friends,
@@ -21784,7 +21784,7 @@ function pI(e, t, n, o, s, a) {
     duration: .15,
     closeable: ""
   }, {
-    default: le(() => [h(u)]),
+    default: se(() => [h(u)]),
     _: 1
   }, 8, ["show"]), h(c, {
     show: s.isShowPopup.quests,
@@ -21795,7 +21795,7 @@ function pI(e, t, n, o, s, a) {
     duration: .15,
     closeable: ""
   }, {
-    default: le(() => [h(d)]),
+    default: se(() => [h(d)]),
     _: 1
   }, 8, ["show"]), h(c, {
     show: s.isShowPopup.test,
@@ -21806,16 +21806,16 @@ function pI(e, t, n, o, s, a) {
     duration: .15,
     closeable: ""
   }, {
-    default: le(() => [h(f)]),
+    default: se(() => [h(f)]),
     _: 1
-  }, 8, ["show"])], 2)) : (W(), ae("div", {
+  }, 8, ["show"])], 2)) : (W(), le("div", {
     key: 1,
     class: "flyBtn BottomBar",
     onClick: t[4] || (t[4] = g => e.$router.push("/"))
-  }, [P("div", vI, [h(m, {
+  }, [E("div", vI, [h(m, {
     name: "wap-home",
     color: "#FFEDD9"
-  })]), P("div", yI, M(e.t("Home")), 1)]))
+  })]), E("div", yI, M(e.t("Home")), 1)]))
 }
 const bI = St(fI, [
     ["render", pI],
@@ -22047,25 +22047,25 @@ const xI = {
 function II(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-button");
-  return W(), ae("div", null, [P("h1", null, M(n.allianceData.name), 1), P("div", AI, [P("div", null, M(e.t("Founder:")) + " " + M(n.allianceData.ownerName), 1), P("div", null, "id:" + M(n.allianceData.id), 1)]), n.allianceData.channelLink ? (W(), ae("div", EI, [be(M(e.t("Channel:")) + " ", 1), P("span", {
+  return W(), le("div", null, [E("h1", null, M(n.allianceData.name), 1), E("div", AI, [E("div", null, M(e.t("Founder:")) + " " + M(n.allianceData.ownerName), 1), E("div", null, "id:" + M(n.allianceData.id), 1)]), n.allianceData.channelLink ? (W(), le("div", EI, [be(M(e.t("Channel:")) + " ", 1), E("span", {
     onClick: t[0] || (t[0] = c => e._openUrl("https://" + n.allianceData.channelLink)),
     style: {
       "border-bottom": "1px dashed #fff"
     }
-  }, M(n.allianceData.channelLink), 1)])) : Te("", !0), P("div", null, M(e.t("Level:")) + " " + M(n.allianceData.level), 1), P("div", null, [be(M(e.t("Members:")) + " " + M(e._number(n.allianceData.members)) + " ", 1), h(l, {
+  }, M(n.allianceData.channelLink), 1)])) : Te("", !0), E("div", null, M(e.t("Level:")) + " " + M(n.allianceData.level), 1), E("div", null, [be(M(e.t("Members:")) + " " + M(e._number(n.allianceData.members)) + " ", 1), h(l, {
     name: "friends"
-  })]), P("div", null, [be(M(e.t("Enter Fee:")) + " " + M(e._number(n.allianceData.enterFee)) + " ", 1), t[2] || (t[2] = P("span", {
+  })]), E("div", null, [be(M(e.t("Enter Fee:")) + " " + M(e._number(n.allianceData.enterFee)) + " ", 1), t[2] || (t[2] = E("span", {
     class: "coin25"
-  }, null, -1))]), t[5] || (t[5] = P("br", null, null, -1)), P("div", null, [be(M(e.t("Token per Hour bonus:")) + " +" + M(e.dbAllianceByLevel[n.allianceData.level].bonus) + "% ", 1), t[3] || (t[3] = P("span", {
+  }, null, -1))]), t[5] || (t[5] = E("br", null, null, -1)), E("div", null, [be(M(e.t("Token per Hour bonus:")) + " +" + M(e.dbAllianceByLevel[n.allianceData.level].bonus) + "% ", 1), t[3] || (t[3] = E("span", {
     class: "tph24"
-  }, null, -1))]), t[6] || (t[6] = P("br", null, null, -1)), e.uAlliance.id ? Te("", !0) : (W(), Me(r, {
+  }, null, -1))]), t[6] || (t[6] = E("br", null, null, -1)), e.uAlliance.id ? Te("", !0) : (W(), Me(r, {
     key: 1,
     size: "large",
     type: "success",
     loading: s.isJoinLoading,
     onClick: t[1] || (t[1] = c => a.joinToAlliance(n.allianceData.id, n.allianceData.enterFee))
   }, {
-    default: le(() => [be(M(e.t("Join")) + " " + M(e._number(n.allianceData.enterFee)) + " ", 1), t[4] || (t[4] = P("span", {
+    default: se(() => [be(M(e.t("Join")) + " " + M(e._number(n.allianceData.enterFee)) + " ", 1), t[4] || (t[4] = E("span", {
       class: "coin25"
     }, null, -1))]),
     _: 1
@@ -22099,7 +22099,7 @@ const PI = St(xI, [
             }
           }
         }
-        window.tonConnectUI = async function() {
+        this.isShowFriendsTask = !this._isOnboardingComplete(this.onBoard.friendTaskPopup), window.tonConnectUI = async function() {
           return this._tonConnectUI ? this._tonConnectUI : await OI.runExclusive(async () => {
             if (this._tonConnectUI) return this._tonConnectUI;
             const {
@@ -22139,6 +22139,7 @@ const PI = St(xI, [
         isPlatformOk: !0,
         dbLoaded: !1,
         isShowInviteRefAlliance: !1,
+        isShowFriendsTask: !1,
         invitedRefAllianceData: null
       }
     },
@@ -22257,20 +22258,25 @@ const PI = St(xI, [
   },
   LI = {
     class: "container"
+  },
+  NI = {
+    class: "container"
   };
 
-function NI(e, t, n, o, s, a) {
+function FI(e, t, n, o, s, a) {
   const l = ge("OnboardingStart"),
     r = ge("RouterView"),
     c = ge("BottomBar"),
     u = ge("alliance-info"),
     d = ge("van-popup"),
-    f = ge("topup");
-  return W(), ae("div", null, [s.dbLoaded ? e._isOnboardingComplete(e.onBoard.start) ? (W(), ae(Be, {
+    f = ge("van-badge"),
+    m = ge("van-button"),
+    g = ge("topup");
+  return W(), le("div", null, [s.dbLoaded ? e._isOnboardingComplete(e.onBoard.start) ? (W(), le(Be, {
     key: 2
-  }, [P("div", $I, [h(r)]), h(c), h(d, {
+  }, [E("div", $I, [h(r)]), h(c), h(d, {
     show: s.isShowInviteRefAlliance,
-    "onUpdate:show": t[0] || (t[0] = m => s.isShowInviteRefAlliance = m),
+    "onUpdate:show": t[0] || (t[0] = v => s.isShowInviteRefAlliance = v),
     round: "",
     closeable: "",
     style: {
@@ -22278,16 +22284,54 @@ function NI(e, t, n, o, s, a) {
     },
     duration: "0.15"
   }, {
-    default: le(() => [P("div", MI, M(e.t("You are invited to join an alliance.")), 1), h(u, {
+    default: se(() => [E("div", MI, M(e.t("You are invited to join an alliance.")), 1), h(u, {
       "alliance-data": s.invitedRefAllianceData,
       class: "container"
     }, null, 8, ["alliance-data"])]),
     _: 1
+  }, 8, ["show"]), h(d, {
+    show: s.isShowFriendsTask,
+    round: "",
+    closeable: "",
+    style: {
+      "min-width": "90%"
+    },
+    duration: "0.15",
+    onClose: t[1] || (t[1] = v => {
+      s.isShowFriendsTask = !1, e._completeOnboarding(e.onBoard.friendTaskPopup)
+    })
+  }, {
+    default: se(() => [E("div", LI, [E("h1", null, M(e.t("GET DROP FOR 1 ANIMAL FEED")), 1), t[4] || (t[4] = E("div", {
+      class: "center"
+    }, [E("img", {
+      src: "/assets/img/buildings/special/swan.png",
+      alt: "",
+      style: {
+        "max-width": "300px",
+        margin: "-20px 0"
+      }
+    })], -1)), E("p", null, M(e.t("Invite 10 more friends by January 18th, 12:00 UTC, and claim a Swan for only 1 Animal Feed!")), 1), E("p", null, M(e.t("Swan generates {count} {TOKEN_NAME} per hour.", {
+      count: e._number(5e4),
+      TOKEN_NAME: e.TOKEN_NAME
+    })), 1), E("p", null, M(e.t("Don't wait — start inviting your friends now!")), 1), h(m, {
+      type: "warning",
+      size: "large",
+      onClick: e._shareBtnClick,
+      round: "",
+      icon: "link-o"
+    }, {
+      default: se(() => [h(f, null, {
+        default: se(() => [be(M(e.t("Invite friends")), 1)]),
+        _: 1
+      })]),
+      _: 1
+    }, 8, ["onClick"])])]),
+    _: 1
   }, 8, ["show"])], 64)) : (W(), Me(l, {
     key: 1
-  })) : (W(), ae("div", DI, [P("div", BI, M(a.textLeft), 1), t[2] || (t[2] = P("div", {
+  })) : (W(), le("div", DI, [E("div", BI, M(a.textLeft), 1), t[3] || (t[3] = E("div", {
     class: "progressBar"
-  }, [P("div", {
+  }, [E("div", {
     class: "progressResult"
   })], -1))])), h(d, {
     show: this.stores.state.isShowTopup,
@@ -22297,17 +22341,17 @@ function NI(e, t, n, o, s, a) {
     style: {
       width: "90%"
     },
-    onClose: t[1] || (t[1] = m => e.stores.state.setIsShowTopUp(!1))
+    onClose: t[2] || (t[2] = v => e.stores.state.setIsShowTopUp(!1))
   }, {
-    default: le(() => [P("div", LI, [h(f, {
+    default: se(() => [E("div", NI, [h(g, {
       "lack-of-coin": this.stores.state.lackOfCoin
     }, null, 8, ["lack-of-coin"])])]),
     _: 1
   }, 8, ["show"])])
 }
-const FI = St(RI, [
-  ["render", NI],
-  ["__scopeId", "data-v-fe07dd4e"]
+const VI = St(RI, [
+  ["render", FI],
+  ["__scopeId", "data-v-0bc872d0"]
 ]);
 /*!
  * vue-router v4.4.5
@@ -22320,7 +22364,7 @@ function Om(e) {
   return typeof e == "object" || "displayName" in e || "props" in e || "__vccOpts" in e
 }
 
-function VI(e) {
+function zI(e) {
   return e.__esModule || e[Symbol.toStringTag] === "Module" || e.default && Om(e.default)
 }
 const Qe = Object.assign;
@@ -22336,42 +22380,42 @@ function gl(e, t) {
 const Wi = () => {},
   sn = Array.isArray,
   Rm = /#/g,
-  zI = /&/g,
-  HI = /\//g,
-  UI = /=/g,
-  WI = /\?/g,
+  HI = /&/g,
+  UI = /\//g,
+  WI = /=/g,
+  jI = /\?/g,
   Dm = /\+/g,
-  jI = /%5B/g,
-  QI = /%5D/g,
+  QI = /%5B/g,
+  KI = /%5D/g,
   Bm = /%5E/g,
-  KI = /%60/g,
+  YI = /%60/g,
   $m = /%7B/g,
-  YI = /%7C/g,
+  qI = /%7C/g,
   Mm = /%7D/g,
-  qI = /%20/g;
+  GI = /%20/g;
 
 function Kr(e) {
-  return encodeURI("" + e).replace(YI, "|").replace(jI, "[").replace(QI, "]")
+  return encodeURI("" + e).replace(qI, "|").replace(QI, "[").replace(KI, "]")
 }
 
-function GI(e) {
+function ZI(e) {
   return Kr(e).replace($m, "{").replace(Mm, "}").replace(Bm, "^")
 }
 
 function Kl(e) {
-  return Kr(e).replace(Dm, "%2B").replace(qI, "+").replace(Rm, "%23").replace(zI, "%26").replace(KI, "`").replace($m, "{").replace(Mm, "}").replace(Bm, "^")
-}
-
-function ZI(e) {
-  return Kl(e).replace(UI, "%3D")
+  return Kr(e).replace(Dm, "%2B").replace(GI, "+").replace(Rm, "%23").replace(HI, "%26").replace(YI, "`").replace($m, "{").replace(Mm, "}").replace(Bm, "^")
 }
 
 function XI(e) {
-  return Kr(e).replace(Rm, "%23").replace(WI, "%3F")
+  return Kl(e).replace(WI, "%3D")
 }
 
 function JI(e) {
-  return e == null ? "" : XI(e).replace(HI, "%2F")
+  return Kr(e).replace(Rm, "%23").replace(jI, "%3F")
+}
+
+function eP(e) {
+  return e == null ? "" : JI(e).replace(UI, "%2F")
 }
 
 function ns(e) {
@@ -22380,8 +22424,8 @@ function ns(e) {
   } catch {}
   return "" + e
 }
-const eP = /\/$/,
-  tP = e => e.replace(eP, "");
+const tP = /\/$/,
+  nP = e => e.replace(tP, "");
 
 function vl(e, t, n = "/") {
   let o, s = {},
@@ -22389,7 +22433,7 @@ function vl(e, t, n = "/") {
     l = "";
   const r = t.indexOf("#");
   let c = t.indexOf("?");
-  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = sP(o ?? t, n), {
+  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = aP(o ?? t, n), {
     fullPath: o + (a && "?") + a + l,
     path: o,
     query: s,
@@ -22397,7 +22441,7 @@ function vl(e, t, n = "/") {
   }
 }
 
-function nP(e, t) {
+function oP(e, t) {
   const n = t.query ? e(t.query) : "";
   return t.path + (n && "?") + n + (t.hash || "")
 }
@@ -22406,7 +22450,7 @@ function Yu(e, t) {
   return !t || !e.toLowerCase().startsWith(t.toLowerCase()) ? e : e.slice(t.length) || "/"
 }
 
-function oP(e, t, n) {
+function iP(e, t, n) {
   const o = t.matched.length - 1,
     s = n.matched.length - 1;
   return o > -1 && o === s && hi(t.matched[o], n.matched[s]) && Lm(t.params, n.params) && e(t.query) === e(n.query) && t.hash === n.hash
@@ -22419,11 +22463,11 @@ function hi(e, t) {
 function Lm(e, t) {
   if (Object.keys(e).length !== Object.keys(t).length) return !1;
   for (const n in e)
-    if (!iP(e[n], t[n])) return !1;
+    if (!sP(e[n], t[n])) return !1;
   return !0
 }
 
-function iP(e, t) {
+function sP(e, t) {
   return sn(e) ? qu(e, t) : sn(t) ? qu(t, e) : e === t
 }
 
@@ -22431,7 +22475,7 @@ function qu(e, t) {
   return sn(t) ? e.length === t.length && e.every((n, o) => n === t[o]) : e.length === 1 && e[0] === t
 }
 
-function sP(e, t) {
+function aP(e, t) {
   if (e.startsWith("/")) return e;
   if (!e) return t;
   const n = t.split("/"),
@@ -22466,21 +22510,21 @@ var ji;
   e.back = "back", e.forward = "forward", e.unknown = ""
 })(ji || (ji = {}));
 
-function aP(e) {
+function lP(e) {
   if (!e)
     if (Jo) {
       const t = document.querySelector("base");
       e = t && t.getAttribute("href") || "/", e = e.replace(/^\w+:\/\/[^\/]+/, "")
     } else e = "/";
-  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), tP(e)
+  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), nP(e)
 }
-const lP = /^[^#]+#/;
-
-function rP(e, t) {
-  return e.replace(lP, "#") + t
-}
+const rP = /^[^#]+#/;
 
 function cP(e, t) {
+  return e.replace(rP, "#") + t
+}
+
+function uP(e, t) {
   const n = document.documentElement.getBoundingClientRect(),
     o = e.getBoundingClientRect();
   return {
@@ -22494,14 +22538,14 @@ const Da = () => ({
   top: window.scrollY
 });
 
-function uP(e) {
+function dP(e) {
   let t;
   if ("el" in e) {
     const n = e.el,
       o = typeof n == "string" && n.startsWith("#"),
       s = typeof n == "string" ? o ? document.getElementById(n.slice(1)) : document.querySelector(n) : n;
     if (!s) return;
-    t = cP(s, e)
+    t = uP(s, e)
   } else t = e;
   "scrollBehavior" in document.documentElement.style ? window.scrollTo(t) : window.scrollTo(t.left != null ? t.left : window.scrollX, t.top != null ? t.top : window.scrollY)
 }
@@ -22511,15 +22555,15 @@ function Gu(e, t) {
 }
 const Yl = new Map;
 
-function dP(e, t) {
+function fP(e, t) {
   Yl.set(e, t)
 }
 
-function fP(e) {
+function hP(e) {
   const t = Yl.get(e);
   return Yl.delete(e), t
 }
-let hP = () => location.protocol + "//" + location.host;
+let mP = () => location.protocol + "//" + location.host;
 
 function Nm(e, t) {
   const {
@@ -22535,7 +22579,7 @@ function Nm(e, t) {
   return Yu(n, e) + o + s
 }
 
-function mP(e, t, n, o) {
+function gP(e, t, n, o) {
   let s = [],
     a = [],
     l = null;
@@ -22608,7 +22652,7 @@ function Zu(e, t, n, o = !1, s = !1) {
   }
 }
 
-function gP(e) {
+function vP(e) {
   const {
     history: t,
     location: n
@@ -22628,7 +22672,7 @@ function gP(e) {
 
   function a(c, u, d) {
     const f = e.indexOf("#"),
-      m = f > -1 ? (n.host && document.querySelector("base") ? e : e.slice(f)) + c : hP() + e + c;
+      m = f > -1 ? (n.host && document.querySelector("base") ? e : e.slice(f)) + c : mP() + e + c;
     try {
       t[d ? "replaceState" : "pushState"](u, "", m), s.value = u
     } catch (g) {
@@ -22662,10 +22706,10 @@ function gP(e) {
   }
 }
 
-function vP(e) {
-  e = aP(e);
-  const t = gP(e),
-    n = mP(e, t.state, t.location, t.replace);
+function yP(e) {
+  e = lP(e);
+  const t = vP(e),
+    n = gP(e, t.state, t.location, t.replace);
 
   function o(a, l = !0) {
     l || n.pauseListeners(), history.go(a)
@@ -22674,7 +22718,7 @@ function vP(e) {
     location: "",
     base: e,
     go: o,
-    createHref: rP.bind(null, e)
+    createHref: cP.bind(null, e)
   }, t, n);
   return Object.defineProperty(s, "location", {
     enumerable: !0,
@@ -22685,7 +22729,7 @@ function vP(e) {
   }), s
 }
 
-function yP(e) {
+function pP(e) {
   return typeof e == "string" || e && typeof e == "object"
 }
 
@@ -22709,16 +22753,16 @@ function In(e, t) {
   return e instanceof Error && Vm in e && (t == null || !!(e.type & t))
 }
 const Ju = "[^/]+?",
-  pP = {
+  bP = {
     sensitive: !1,
     strict: !1,
     start: !0,
     end: !0
   },
-  bP = /[.+*?^${}()[\]/\\]/g;
+  wP = /[.+*?^${}()[\]/\\]/g;
 
-function wP(e, t) {
-  const n = Qe({}, pP, t),
+function CP(e, t) {
+  const n = Qe({}, bP, t),
     o = [];
   let s = n.start ? "^" : "";
   const a = [];
@@ -22728,7 +22772,7 @@ function wP(e, t) {
     for (let f = 0; f < u.length; f++) {
       const m = u[f];
       let g = 40 + (n.sensitive ? .25 : 0);
-      if (m.type === 0) f || (s += "/"), s += m.value.replace(bP, "\\$&"), g += 40;
+      if (m.type === 0) f || (s += "/"), s += m.value.replace(wP, "\\$&"), g += 40;
       else if (m.type === 1) {
         const {
           value: v,
@@ -22808,7 +22852,7 @@ function wP(e, t) {
   }
 }
 
-function CP(e, t) {
+function _P(e, t) {
   let n = 0;
   for (; n < e.length && n < t.length;) {
     const o = t[n] - e[n];
@@ -22823,7 +22867,7 @@ function zm(e, t) {
   const o = e.score,
     s = t.score;
   for (; n < o.length && n < s.length;) {
-    const a = CP(o[n], s[n]);
+    const a = _P(o[n], s[n]);
     if (a) return a;
     n++
   }
@@ -22838,18 +22882,18 @@ function ed(e) {
   const t = e[e.length - 1];
   return e.length > 0 && t[t.length - 1] < 0
 }
-const _P = {
+const kP = {
     type: 0,
     value: ""
   },
-  kP = /[a-zA-Z0-9_]/;
+  TP = /[a-zA-Z0-9_]/;
 
-function TP(e) {
+function SP(e) {
   if (!e) return [
     []
   ];
   if (e === "/") return [
-    [_P]
+    [kP]
   ];
   if (!e.startsWith("/")) throw new Error(`Invalid path "${e}"`);
 
@@ -22897,7 +22941,7 @@ function TP(e) {
         m(), n = o;
         break;
       case 1:
-        c === "(" ? n = 2 : kP.test(c) ? m() : (f(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
+        c === "(" ? n = 2 : TP.test(c) ? m() : (f(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
         break;
       case 2:
         c === ")" ? d[d.length - 1] == "\\" ? d = d.slice(0, -1) + c : n = 3 : d += c;
@@ -22913,8 +22957,8 @@ function TP(e) {
   return n === 2 && t(`Unfinished custom RegExp for param "${u}"`), f(), l(), s
 }
 
-function SP(e, t, n) {
-  const o = wP(TP(e.path), n),
+function xP(e, t, n) {
+  const o = CP(SP(e.path), n),
     s = Qe(o, {
       record: e,
       parent: t,
@@ -22924,7 +22968,7 @@ function SP(e, t, n) {
   return t && !s.record.aliasOf == !t.record.aliasOf && t.children.push(s), s
 }
 
-function xP(e, t) {
+function AP(e, t) {
   const n = [],
     o = new Map;
   t = id({
@@ -22957,13 +23001,13 @@ function xP(e, t) {
         path: k
       } = _;
       if (m && k[0] !== "/") {
-        const E = m.record.path,
-          B = E[E.length - 1] === "/" ? "" : "/";
+        const I = m.record.path,
+          B = I[I.length - 1] === "/" ? "" : "/";
         _.path = m.record.path + (k && B + k)
       }
-      if (y = SP(_, m, p), g ? g.alias.push(y) : (C = C || y, C !== y && C.alias.push(y), v && f.name && !od(y) && l(f.name)), Hm(y) && c(y), b.children) {
-        const E = b.children;
-        for (let B = 0; B < E.length; B++) a(E[B], y, g && g.children[B])
+      if (y = xP(_, m, p), g ? g.alias.push(y) : (C = C || y, C !== y && C.alias.push(y), v && f.name && !od(y) && l(f.name)), Hm(y) && c(y), b.children) {
+        const I = b.children;
+        for (let B = 0; B < I.length; B++) a(I[B], y, g && g.children[B])
       }
       g = g || y
     }
@@ -22987,7 +23031,7 @@ function xP(e, t) {
   }
 
   function c(f) {
-    const m = IP(f, n);
+    const m = PP(f, n);
     n.splice(m, 0, f), f.record.name && !od(f) && o.set(f.record.name, f)
   }
 
@@ -23015,7 +23059,7 @@ function xP(e, t) {
       path: b,
       params: v,
       matched: w,
-      meta: EP(w)
+      meta: IP(w)
     }
   }
   e.forEach(f => a(f));
@@ -23047,7 +23091,7 @@ function nd(e) {
     meta: e.meta || {},
     aliasOf: e.aliasOf,
     beforeEnter: e.beforeEnter,
-    props: AP(e),
+    props: EP(e),
     children: e.children || [],
     instances: {},
     leaveGuards: new Set,
@@ -23062,7 +23106,7 @@ function nd(e) {
   }), t
 }
 
-function AP(e) {
+function EP(e) {
   const t = {},
     n = e.props || !1;
   if ("component" in e) t.default = n;
@@ -23079,7 +23123,7 @@ function od(e) {
   return !1
 }
 
-function EP(e) {
+function IP(e) {
   return e.reduce((t, n) => Qe(t, n.meta), {})
 }
 
@@ -23089,18 +23133,18 @@ function id(e, t) {
   return n
 }
 
-function IP(e, t) {
+function PP(e, t) {
   let n = 0,
     o = t.length;
   for (; n !== o;) {
     const a = n + o >> 1;
     zm(e, t[a]) < 0 ? o = a : n = a + 1
   }
-  const s = PP(e);
+  const s = OP(e);
   return s && (o = t.lastIndexOf(s, o - 1)), o
 }
 
-function PP(e) {
+function OP(e) {
   let t = e;
   for (; t = t.parent;)
     if (Hm(t) && zm(e, t) === 0) return t
@@ -23112,7 +23156,7 @@ function Hm({
   return !!(e.name || e.components && Object.keys(e.components).length || e.redirect)
 }
 
-function OP(e) {
+function RP(e) {
   const t = {};
   if (e === "" || e === "?") return t;
   const o = (e[0] === "?" ? e.slice(1) : e).split("&");
@@ -23133,7 +23177,7 @@ function sd(e) {
   let t = "";
   for (let n in e) {
     const o = e[n];
-    if (n = ZI(n), o == null) {
+    if (n = XI(n), o == null) {
       o !== void 0 && (t += (t.length ? "&" : "") + n);
       continue
     }(sn(o) ? o.map(a => a && Kl(a)) : [o && Kl(o)]).forEach(a => {
@@ -23143,7 +23187,7 @@ function sd(e) {
   return t
 }
 
-function RP(e) {
+function DP(e) {
   const t = {};
   for (const n in e) {
     const o = e[n];
@@ -23151,7 +23195,7 @@ function RP(e) {
   }
   return t
 }
-const DP = Symbol(""),
+const BP = Symbol(""),
   ad = Symbol(""),
   Yr = Symbol(""),
   Um = Symbol(""),
@@ -23184,7 +23228,7 @@ function io(e, t, n, o, s, a = l => l()) {
         m === !1 ? c(mi(4, {
           from: n,
           to: t
-        })) : m instanceof Error ? c(m) : yP(m) ? c(mi(2, {
+        })) : m instanceof Error ? c(m) : pP(m) ? c(mi(2, {
           from: t,
           to: m
         })) : (l && o.enterCallbacks[s] === l && typeof m == "function" && l.push(m), r())
@@ -23208,7 +23252,7 @@ function yl(e, t, n, o, s = a => a()) {
           let u = c();
           a.push(() => u.then(d => {
             if (!d) throw new Error(`Couldn't resolve component "${r}" at "${l.path}"`);
-            const f = VI(d) ? d.default : d;
+            const f = zI(d) ? d.default : d;
             l.mods[r] = d, l.components[r] = f;
             const g = (f.__vccOpts || f)[t];
             return g && io(g, n, o, l, r, s)()
@@ -23237,11 +23281,11 @@ function ld(e) {
       const g = rd(c[u - 2]);
       return u > 1 && rd(d) === g && f[f.length - 1].path !== g ? f.findIndex(hi.bind(null, c[u - 2])) : m
     }),
-    a = N(() => s.value > -1 && LP(n.params, o.value.params)),
+    a = N(() => s.value > -1 && NP(n.params, o.value.params)),
     l = N(() => s.value > -1 && s.value === n.matched.length - 1 && Lm(n.params, o.value.params));
 
   function r(c = {}) {
-    return MP(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
+    return LP(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
   }
   return {
     route: o,
@@ -23251,7 +23295,7 @@ function ld(e) {
     navigate: r
   }
 }
-const BP = K({
+const $P = K({
     name: "RouterLink",
     compatConfig: {
       MODE: 3
@@ -23293,9 +23337,9 @@ const BP = K({
       }
     }
   }),
-  $P = BP;
+  MP = $P;
 
-function MP(e) {
+function LP(e) {
   if (!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) && !e.defaultPrevented && !(e.button !== void 0 && e.button !== 0)) {
     if (e.currentTarget && e.currentTarget.getAttribute) {
       const t = e.currentTarget.getAttribute("target");
@@ -23305,7 +23349,7 @@ function MP(e) {
   }
 }
 
-function LP(e, t) {
+function NP(e, t) {
   for (const n in t) {
     const o = t[n],
       s = e[n];
@@ -23320,7 +23364,7 @@ function rd(e) {
   return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
 const cd = (e, t, n) => e ?? t ?? n,
-  NP = K({
+  FP = K({
     name: "RouterView",
     inheritAttrs: !1,
     props: {
@@ -23351,7 +23395,7 @@ const cd = (e, t, n) => e ?? t ?? n,
           return u
         }),
         r = N(() => s.value.matched[l.value]);
-      Bn(ad, N(() => l.value + 1)), Bn(DP, r), Bn(ql, s);
+      Bn(ad, N(() => l.value + 1)), Bn(BP, r), Bn(ql, s);
       const c = F();
       return re(() => [c.value, r.value, e.name], ([u, d, f], [m, g, v]) => {
         d && (d.instances[f] = u, g && g !== d && u && u === m && (d.leaveGuards.size || (d.leaveGuards = g.leaveGuards), d.updateGuards.size || (d.updateGuards = g.updateGuards))), u && d && (!g || !hi(d, g) || !m) && (d.enterCallbacks[f] || []).forEach(b => b(u))
@@ -23387,11 +23431,11 @@ function ud(e, t) {
   const n = e(t);
   return n.length === 1 ? n[0] : n
 }
-const FP = NP;
+const VP = FP;
 
-function VP(e) {
-  const t = xP(e.routes, e),
-    n = e.parseQuery || OP,
+function zP(e) {
+  const t = AP(e.routes, e),
+    n = e.parseQuery || RP,
     o = e.stringifyQuery || sd,
     s = e.history,
     a = Ri(),
@@ -23401,7 +23445,7 @@ function VP(e) {
   let u = Jn;
   Jo && e.scrollBehavior && "scrollRestoration" in history && (history.scrollRestoration = "manual");
   const d = gl.bind(null, A => "" + A),
-    f = gl.bind(null, JI),
+    f = gl.bind(null, eP),
     m = gl.bind(null, ns);
 
   function g(A, z) {
@@ -23450,15 +23494,15 @@ function VP(e) {
     const ne = t.resolve(H, z),
       ke = A.hash || "";
     ne.params = d(m(ne.params));
-    const Le = nP(o, Qe({}, A, {
-        hash: GI(ke),
+    const Le = oP(o, Qe({}, A, {
+        hash: ZI(ke),
         path: ne.path
       })),
       x = s.createHref(Le);
     return Qe({
       fullPath: Le,
       hash: ke,
-      query: o === sd ? RP(A.query) : A.query || {}
+      query: o === sd ? DP(A.query) : A.query || {}
     }, ne, {
       redirectedFrom: void 0,
       href: x
@@ -23486,7 +23530,7 @@ function VP(e) {
     }))
   }
 
-  function E(A) {
+  function I(A) {
     const z = A.matched[A.matched.length - 1];
     if (z && z.redirect) {
       const {
@@ -23509,7 +23553,7 @@ function VP(e) {
       ke = A.state,
       Le = A.force,
       x = A.replace === !0,
-      O = E(H);
+      O = I(H);
     if (O) return B(Qe(y(O), {
       state: typeof O == "object" ? Qe({}, ke, O.state) : ke,
       force: Le,
@@ -23518,7 +23562,7 @@ function VP(e) {
     const L = H;
     L.redirectedFrom = z;
     let q;
-    return !Le && oP(o, ne, H) && (q = mi(16, {
+    return !Le && iP(o, ne, H) && (q = mi(16, {
       to: L,
       from: ne
     }), V(ne, ne, !0, !1)), (q ? Promise.resolve(q) : D(L, ne)).catch(Q => In(Q) ? In(Q, 2) ? Q : Ne(Q) : ue(Q, L, ne)).then(Q => {
@@ -23529,7 +23573,7 @@ function VP(e) {
           state: typeof Q.to == "object" ? Qe({}, ke, Q.to.state) : ke,
           force: Le
         }), z || L)
-      } else Q = I(L, ne, !0, x, ke);
+      } else Q = P(L, ne, !0, x, ke);
       return S(L, ne, Q), Q
     })
   }
@@ -23546,7 +23590,7 @@ function VP(e) {
 
   function D(A, z) {
     let H;
-    const [ne, ke, Le] = zP(A, z);
+    const [ne, ke, Le] = HP(A, z);
     H = yl(ne.reverse(), "beforeRouteLeave", A, z);
     for (const O of ne) O.leaveGuards.forEach(L => {
       H.push(io(L, A, z))
@@ -23581,7 +23625,7 @@ function VP(e) {
     r.list().forEach(ne => R(() => ne(A, z, H)))
   }
 
-  function I(A, z, H, ne, ke) {
+  function P(A, z, H, ne, ke) {
     const Le = C(A, z);
     if (Le) return Le;
     const x = z === Jn,
@@ -23594,9 +23638,9 @@ function VP(e) {
 
   function X() {
     $ || ($ = s.listen((A, z, H) => {
-      if (!se.listening) return;
+      if (!ae.listening) return;
       const ne = w(A),
-        ke = E(ne);
+        ke = I(ne);
       if (ke) {
         B(Qe(ke, {
           replace: !0
@@ -23605,10 +23649,10 @@ function VP(e) {
       }
       u = ne;
       const Le = c.value;
-      Jo && dP(Gu(Le.fullPath, H.delta), Da()), D(ne, Le).catch(x => In(x, 12) ? x : In(x, 2) ? (B(x.to, ne).then(O => {
+      Jo && fP(Gu(Le.fullPath, H.delta), Da()), D(ne, Le).catch(x => In(x, 12) ? x : In(x, 2) ? (B(x.to, ne).then(O => {
         In(O, 20) && !H.delta && H.type === os.pop && s.go(-1, !1)
       }).catch(Wi), Promise.reject()) : (H.delta && s.go(-H.delta, !1), ue(x, ne, Le))).then(x => {
-        x = x || I(ne, Le, !1), x && (H.delta && !In(x, 8) ? s.go(-H.delta, !1) : H.type === os.pop && In(x, 20) && s.go(-1, !1)), S(ne, Le, x)
+        x = x || P(ne, Le, !1), x && (H.delta && !In(x, 8) ? s.go(-H.delta, !1) : H.type === os.pop && In(x, 20) && s.go(-1, !1)), S(ne, Le, x)
       }).catch(Wi)
     }))
   }
@@ -23637,13 +23681,13 @@ function VP(e) {
       scrollBehavior: ke
     } = e;
     if (!Jo || !ke) return Promise.resolve();
-    const Le = !H && fP(Gu(A.fullPath, 0)) || (ne || !H) && history.state && history.state.scroll || null;
-    return Oe().then(() => ke(A, z, Le)).then(x => x && uP(x)).catch(x => ue(x, A, z))
+    const Le = !H && hP(Gu(A.fullPath, 0)) || (ne || !H) && history.state && history.state.scroll || null;
+    return Oe().then(() => ke(A, z, Le)).then(x => x && dP(x)).catch(x => ue(x, A, z))
   }
   const Z = A => s.go(A);
   let ve;
   const we = new Set,
-    se = {
+    ae = {
       currentRoute: c,
       listening: !0,
       addRoute: g,
@@ -23665,7 +23709,7 @@ function VP(e) {
       isReady: Re,
       install(A) {
         const z = this;
-        A.component("RouterLink", $P), A.component("RouterView", FP), A.config.globalProperties.$router = z, Object.defineProperty(A.config.globalProperties, "$route", {
+        A.component("RouterLink", MP), A.component("RouterView", VP), A.config.globalProperties.$router = z, Object.defineProperty(A.config.globalProperties, "$route", {
           enumerable: !0,
           get: () => en(c)
         }), Jo && !ve && c.value === Jn && (ve = !0, _(s.location).catch(ke => {}));
@@ -23685,10 +23729,10 @@ function VP(e) {
   function ye(A) {
     return A.reduce((z, H) => z.then(() => R(H)), Promise.resolve())
   }
-  return se
+  return ae
 }
 
-function zP(e, t) {
+function HP(e, t) {
   const n = [],
     o = [],
     s = [],
@@ -23701,41 +23745,41 @@ function zP(e, t) {
   }
   return [n, o, s]
 }
-const ia = VP({
-    history: vP("/"),
+const ia = zP({
+    history: yP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-DAVoOPno.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-elQlLrB3.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-DAVoOPno.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-elQlLrB3.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => bE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-DK5_wZpr.js"), [])
+      component: () => It(() => import("./Terms-B44VJxyb.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => fE), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-ClgNsdlV.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-DKqCaw0i.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => FE), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-BOL04InR.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-BOjALlwV.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-C9Jmc_SR.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-BUqoTLIC.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-1SZ5lo1G.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-CgC6f_4n.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-B5Ja3GyI.js"), [])
+      component: () => It(() => import("./Support-ZTktWs75.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => dI), void 0)
@@ -23744,10 +23788,10 @@ const ia = VP({
       component: () => It(() => Promise.resolve().then(() => ZE), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-B_n3dagy.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-BJNQF6rv.js"), __vite__mapDeps([10, 11]))
     }]
   }),
-  HP = {
+  UP = {
     methods: {
       async dbLoadDbData(e = ["all"]) {
         try {
@@ -24405,7 +24449,7 @@ const ia = VP({
       return {}
     }
   },
-  UP = {
+  WP = {
     methods: {
       async auth() {
         const e = ao();
@@ -24517,7 +24561,7 @@ const ia = VP({
       }
     }
   },
-  WP = {
+  jP = {
     data: function() {
       return {
         TOKEN_NAME: "$ZOO",
@@ -24532,7 +24576,8 @@ const ia = VP({
           coin: ["30", "31"],
           changeLocation: ["40"],
           friendInvite: ["50"],
-          buyTon: ["60"]
+          buyTon: ["60"],
+          friendTaskPopup: ["70"]
         },
         isFixed: !1,
         GAME_DOMAIN: Cm,
@@ -24764,8 +24809,8 @@ const ia = VP({
       }
     }
   },
-  po = Bf(FI),
-  jP = jx();
+  po = Bf(VI),
+  QP = jx();
 let dd = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && dd ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), dd = !0
@@ -24773,17 +24818,17 @@ ia.afterEach(function() {
 window.Telegram.WebApp.onEvent("backButtonClicked", function() {
   window.history.state && window.history.state.popup && history.back(), ia.push("/")
 });
-po.use(jP);
+po.use(QP);
 po.use(ia);
 po.use(WS);
-po.mixin(HP);
 po.mixin(UP);
 po.mixin(WP);
+po.mixin(jP);
 po.mixin(oA);
 po.mount("#app");
 window.userStore = ao();
 window.stateStore = jr();
 window.dbStore = bm();
 export {
-  PI as A, Be as F, Qr as T, St as _, P as a, h as b, ae as c, be as d, Te as e, Me as f, ge as g, ot as h, rt as i, GS as j, za as k, $v as l, an as n, W as o, Ft as r, Bo as s, M as t, Py as u, dt as v, le as w
+  PI as A, Be as F, Qr as T, St as _, E as a, h as b, le as c, be as d, Te as e, Me as f, ge as g, ot as h, rt as i, GS as j, za as k, $v as l, an as n, W as o, Ft as r, Bo as s, M as t, Py as u, dt as v, se as w
 };
