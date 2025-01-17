@@ -16,7 +16,7 @@ import {
   s as x,
   F as k,
   r as E
-} from "./index-AqsdcLOq.js";
+} from "./index-DQPDta_N.js";
 const B = {
     props: {
       clickable: Boolean,

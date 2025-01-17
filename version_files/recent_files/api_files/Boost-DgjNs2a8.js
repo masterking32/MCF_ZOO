@@ -13,7 +13,7 @@ import {
   r as v,
   f as g,
   h as M
-} from "./index-AqsdcLOq.js";
+} from "./index-DQPDta_N.js";
 const C = {
     name: "Boost-g",
     components: {},
