@@ -17,10 +17,10 @@ import {
   n as B,
   h as E,
   i as I,
-  v as H
-} from "./index-pFYbAaRE.js";
-import z from "./Alliance-V1pPObkq.js";
-import x from "./Boost-drRVZ4Af.js";
+  v as x
+} from "./index-AqsdcLOq.js";
+import H from "./Alliance-CqIU85jO.js";
+import z from "./Boost-Dn5khbLm.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -217,8 +217,8 @@ const ne = M(K, [
   ie = {
     name: "Home-g",
     components: {
-      BoostG: x,
-      AllianceG: z,
+      BoostG: z,
+      AllianceG: H,
       FeedG: ne,
       TopBar: N
     },
@@ -277,7 +277,7 @@ const ne = M(K, [
         unboughtAnimals: [],
         map: {
           w: 768,
-          h: 4132
+          h: 5476
         },
         points: [{
           position: 1,
@@ -438,6 +438,58 @@ const ne = M(K, [
           position: 38,
           x: 650,
           y: 2920
+        }, {
+          position: 39,
+          x: 150,
+          y: 4248
+        }, {
+          position: 40,
+          x: 511,
+          y: 4241
+        }, {
+          position: 41,
+          x: 324,
+          y: 4340
+        }, {
+          position: 42,
+          x: 147,
+          y: 4444
+        }, {
+          position: 43,
+          x: 518,
+          y: 4445
+        }, {
+          position: 44,
+          x: 333,
+          y: 4553
+        }, {
+          position: 45,
+          x: 180,
+          y: 4670
+        }, {
+          position: 46,
+          x: 604,
+          y: 4666
+        }, {
+          position: 47,
+          x: 330,
+          y: 4787
+        }, {
+          position: 48,
+          x: 260,
+          y: 5010
+        }, {
+          position: 49,
+          x: 600,
+          y: 4908
+        }, {
+          position: 50,
+          x: 232,
+          y: 5160
+        }, {
+          position: 51,
+          x: 536,
+          y: 5180
         }],
         openPoint: null
       }
@@ -759,14 +811,14 @@ const ne = M(K, [
     key: 2,
     class: "container"
   },
-  He = {
+  xe = {
     key: 3,
     class: "container",
     style: {
       filter: "grayscale(1)"
     }
   },
-  ze = {
+  He = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
@@ -775,7 +827,7 @@ const ne = M(K, [
       "margin-top": "30px"
     }
   },
-  xe = ["src"],
+  ze = ["src"],
   Ke = {
     class: "desc"
   },
@@ -1040,7 +1092,7 @@ function Cs(e, s, d, c, r, i) {
     format: "mm:ss",
     onFinish: A => n.countdown = 0
   }, null, 8, ["time", "onFinish"])], 12, he)), [
-    [H, n.countdown > 0]
+    [x, n.countdown > 0]
   ])), 128))], 36), h(v, {
     show: r.isShowChest,
     "onUpdate:show": s[1] || (s[1] = n => r.isShowChest = n),
@@ -1136,7 +1188,7 @@ function Cs(e, s, d, c, r, i) {
     }, {
       default: p(() => [u(o(e.t("Follow our channel")), 1)]),
       _: 1
-    }, 8, ["onClick"])])), i.notAvailableForBuySpecial.length > 0 ? (l(), a("div", He, [t("div", ze, o(e.t("Unavailable offers")), 1), (l(!0), a(m, null, C(i.notAvailableForBuySpecial, n => (l(), a("div", {
+    }, 8, ["onClick"])])), i.notAvailableForBuySpecial.length > 0 ? (l(), a("div", xe, [t("div", He, o(e.t("Unavailable offers")), 1), (l(!0), a(m, null, C(i.notAvailableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1145,7 +1197,7 @@ function Cs(e, s, d, c, r, i) {
       style: {
         width: "100px"
       }
-    }, null, 8, xe)]), t("div", Ke, [t("div", Oe, o(n.title), 1), t("div", null, [u("+" + o(e._number(n.level1data.profit)) + " ", 1), s[26] || (s[26] = t("span", {
+    }, null, 8, ze)]), t("div", Ke, [t("div", Oe, o(n.title), 1), t("div", null, [u("+" + o(e._number(n.level1data.profit)) + " ", 1), s[26] || (s[26] = t("span", {
       class: "tph24"
     }, null, -1)), s[27] || (s[27] = u()), t("span", Ue, o(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", We, [u(o(e.t("Sales start in")) + " ", 1), h(S, {
       time: n.timeToStart,
@@ -1329,7 +1381,7 @@ function Cs(e, s, d, c, r, i) {
 }
 const Es = M(ie, [
   ["render", Cs],
-  ["__scopeId", "data-v-8072e055"]
+  ["__scopeId", "data-v-22a0893f"]
 ]);
 export {
   Es as
