@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-C8QCNvrU.js", "assets/Alliance-U5BVBMei.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CLBBHiyQ.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-DvTJgzge.js", "assets/Rating-DRysk5eI.css", "assets/Communities-CGhTdfI6.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-CxktsQl5.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-3fVqqik_.js", "assets/Alliance-DyG3hKq4.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CEYW1faX.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-DVvPzwK-.js", "assets/Rating-DRysk5eI.css", "assets/Communities-B5sWQBCH.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-bkpEC6fB.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -20126,7 +20126,7 @@ function uE(e, t, n, o, s, a) {
     }
   }, "🎁", -1)), x("div", lE, [x("h1", rE, $(e.t("Happy hour")), 1), x("div", cE, $(e.t("Ending in {time}", {
     time: e.stores.state.luckyHourTimerStr
-  })), 1)])]), x("div", null, $(e.t("When buying Animal Feed during happy hours, you can get a random bonus of up to {count}%.", {
+  })), 1)])]), x("div", null, $(e.t("When buying Animal Feed during happy hours, you can get a random bonus of up to {count}%. Minimum bonus 100%.", {
     count: 1e3
   })), 1)])) : we("", !0)
 }
@@ -20196,7 +20196,7 @@ const dE = pt(iE, [
               this.isBuyLoading = !1;
               return
             }
-            await this._delay(1e3), await this.loadHero(), this._animateMoneyFromCenter(e.coins), await this.loadTonHistory()
+            await this._delay(1e3), await this.loadHero(), this._animateMoneyFromCenter(e.coins), await this.loadStarsHistory()
           }), t && await t()
         } catch (n) {
           this._catchError(n)
@@ -20215,7 +20215,7 @@ const dE = pt(iE, [
           await this._delay(5e3);
           try {
             if (await this.loadHero(), this.uHero.coins > t) {
-              await this._completeOnboarding(this.onBoard.buyTon), this._animateMoneyFromCenter(e.coins);
+              await this._completeOnboarding(this.onBoard.buyTon), this._animateMoneyFromCenter(e.coins), await this.loadTonHistory();
               break
             }
           } catch (o) {
@@ -20299,48 +20299,58 @@ const dE = pt(iE, [
     }
   },
   OE = {
-    key: 0,
     style: {
       "margin-top": "10px"
     }
   },
   RE = {
-    key: 1,
-    class: "center"
-  },
-  DE = {
-    key: 3
-  },
-  BE = {
-    class: "flexLeft"
-  },
-  $E = {
-    style: {
-      margin: "0 10px"
-    }
-  },
-  ME = {
-    key: 0,
-    class: "center"
-  },
-  LE = {
-    key: 0
-  },
-  NE = {
-    class: "tableHistory"
-  },
-  FE = {
     key: 0,
     style: {
       "margin-top": "10px"
     }
   },
+  DE = {
+    key: 1,
+    class: "center"
+  },
+  BE = {
+    key: 3
+  },
+  $E = {
+    class: "flexLeft"
+  },
+  ME = {
+    style: {
+      margin: "0 10px"
+    }
+  },
+  LE = {
+    key: 0,
+    class: "center"
+  },
+  NE = {
+    key: 0
+  },
+  FE = {
+    class: "tableHistory"
+  },
   VE = {
+    style: {
+      "margin-top": "10px"
+    }
+  },
+  zE = {
+    key: 0,
+    style: {
+      "margin-top": "10px"
+    }
+  },
+  HE = {
     key: 1,
     class: "center"
   };
 
-function zE(e, t, n, o, s, a) {
+function UE(e, t, n, o, s, a) {
   const l = me("lucky-hours-inform"),
     r = me("van-tab"),
     c = me("van-tabs"),
@@ -20441,9 +20451,9 @@ function zE(e, t, n, o, s, a) {
     class: "coin25"
   })], -1)), t[7] || (t[7] = x("td", null, "TON", -1)), t[8] || (t[8] = x("td", null, "tx", -1))]), (z(!0), q(De, null, $t(e.tonTransactions, p => (z(), q("tr", null, [x("td", null, $(new Date(p.date.replace(" ", "T") + "Z").toLocaleString()), 1), x("td", null, $(e._numberShort(p.coins)), 1), x("td", null, $(p.ton), 1), x("td", {
     onClick: b => e._openUrl("https://tonscan.org/tx/" + p.trx)
-  }, [x("span", PE, "..." + $(p.trx.slice(-8)), 1)], 8, IE)]))), 256))])]), e.tonTransactions.length === 10 ? (z(), q("div", OE, $(e.t("The last {count} transactions are displayed", {
+  }, [x("span", PE, "..." + $(p.trx.slice(-8)), 1)], 8, IE)]))), 256))])]), x("div", OE, $(e.t("Bonuses earned during happy hours are not displayed in the list.")), 1), e.tonTransactions.length === 10 ? (z(), q("div", RE, $(e.t("The last {count} transactions are displayed", {
     count: 10
-  })), 1)) : we("", !0)])) : (z(), q("p", RE, $(e.t("No transactions found")), 1))], 64))])) : we("", !0), e.paymentType === "stars" ? (z(), q("div", DE, [x("h2", BE, [f(d, {
+  })), 1)) : we("", !0)])) : (z(), q("p", DE, $(e.t("No transactions found")), 1))], 64))])) : we("", !0), e.paymentType === "stars" ? (z(), q("div", BE, [x("h2", $E, [f(d, {
     size: "small",
     type: "warning",
     loading: e.isStarsHistoryLoading,
@@ -20453,19 +20463,19 @@ function zE(e, t, n, o, s, a) {
       name: "replay"
     })]),
     _: 1
-  }, 8, ["loading", "onClick"]), x("span", $E, $(e.t("History")), 1)]), e.isStarsHistoryLoading ? (z(), q("div", ME, [f(y)])) : (z(), q(De, {
+  }, 8, ["loading", "onClick"]), x("span", ME, $(e.t("History")), 1)]), e.isStarsHistoryLoading ? (z(), q("div", LE, [f(y)])) : (z(), q(De, {
     key: 1
-  }, [e.starsTransactions.length > 0 ? (z(), q("div", LE, [x("table", NE, [x("tbody", null, [x("tr", null, [x("td", null, $(e.t("Date")), 1), t[9] || (t[9] = x("td", null, [x("span", {
+  }, [e.starsTransactions.length > 0 ? (z(), q("div", NE, [x("table", FE, [x("tbody", null, [x("tr", null, [x("td", null, $(e.t("Date")), 1), t[9] || (t[9] = x("td", null, [x("span", {
     class: "coin25"
-  })], -1)), t[10] || (t[10] = x("td", null, "Stars", -1))]), (z(!0), q(De, null, $t(e.starsTransactions, p => (z(), q("tr", null, [x("td", null, $(new Date(p.date.replace(" ", "T") + "Z").toLocaleString()), 1), x("td", null, $(e._numberShort(p.coins)), 1), x("td", null, $(p.stars), 1)]))), 256))])]), e.starsTransactions.length === 10 ? (z(), q("div", FE, $(e.t("The last {count} transactions are displayed", {
+  })], -1)), t[10] || (t[10] = x("td", null, "Stars", -1))]), (z(!0), q(De, null, $t(e.starsTransactions, p => (z(), q("tr", null, [x("td", null, $(new Date(p.date.replace(" ", "T") + "Z").toLocaleString()), 1), x("td", null, $(e._numberShort(p.coins)), 1), x("td", null, $(p.stars) + " ⭐", 1)]))), 256))])]), x("div", VE, $(e.t("Bonuses earned during happy hours are not displayed in the list.")), 1), e.starsTransactions.length === 10 ? (z(), q("div", zE, $(e.t("The last {count} transactions are displayed", {
     count: 10
-  })), 1)) : we("", !0)])) : (z(), q("p", VE, $(e.t("No transactions found")), 1))], 64))])) : we("", !0)])
+  })), 1)) : we("", !0)])) : (z(), q("p", HE, $(e.t("No transactions found")), 1))], 64))])) : we("", !0)])
 }
 const Tm = pt(fE, [
-    ["render", zE],
-    ["__scopeId", "data-v-a3182897"]
+    ["render", UE],
+    ["__scopeId", "data-v-b4208acd"]
   ]),
-  HE = {
+  WE = {
     components: {
       Topup: Tm
     },
@@ -20562,113 +20572,113 @@ const Tm = pt(fE, [
       }
     }
   },
-  UE = {
+  jE = {
     style: {
       padding: "15px 15px 0 15px"
     }
   },
-  WE = {
+  QE = {
     width: "100%"
   },
-  jE = {
+  KE = {
     style: {
       width: "100%",
       display: "flex",
       "align-items": "center"
     }
   },
-  QE = {
+  YE = {
     key: 0,
     style: {
       "font-size": "0.8em"
     }
   },
-  KE = {
+  qE = {
     key: 0,
     class: "panelRed",
     style: {
       margin: "30px 0"
     }
   },
-  YE = {
+  GE = {
     style: {
       "font-weight": "800",
       "font-size": "1.4em"
     }
   },
-  qE = {
+  ZE = {
     class: "white"
   },
-  GE = {
+  XE = {
     class: "flexLeft",
     style: {
       margin: "0 0 0 -5px"
     }
   },
-  ZE = {
+  JE = {
     style: {
       "margin-left": "5px"
     }
   },
-  XE = {
+  eA = {
     class: "zTextShadow2sweet",
     style: {
       "font-weight": "800",
       "font-size": "1.5em"
     }
   },
-  JE = {
+  tA = {
     style: {
       "font-weight": "800",
       color: "#FFC04A",
       "font-size": "1.5em"
     }
   },
-  eA = {
+  nA = {
     class: "list"
   },
-  tA = {
+  oA = {
     class: "flexLeft",
     style: {
       margin: "30px 0 0 -5px"
     }
   },
-  nA = {
+  iA = {
     style: {
       "margin-left": "5px"
     }
   },
-  oA = {
+  sA = {
     class: "zTextShadow2sweet",
     style: {
       "font-weight": "800",
       "font-size": "1.5em"
     }
   },
-  iA = {
+  aA = {
     style: {
       "font-weight": "800",
       color: "#FFC04A",
       "font-size": "1.5em"
     }
   },
-  sA = {
+  lA = {
     key: 0,
     style: {
       color: "#fff",
       "font-size": "1.3em"
     }
   },
-  aA = {
+  rA = {
     key: 0
   },
-  lA = {
+  cA = {
     key: 1
   },
-  rA = {
+  uA = {
     class: "list"
   },
-  cA = {
+  dA = {
     style: {
       color: "#fff",
       "font-size": "1.3em",
@@ -20677,67 +20687,67 @@ const Tm = pt(fE, [
     },
     class: "zTextShadow2white"
   },
-  uA = {
+  fA = {
     key: 0
   },
-  dA = {
+  hA = {
     class: "flexLeft",
     style: {
       margin: "-10px 0 0 -5px"
     }
   },
-  fA = {
+  mA = {
     style: {
       "margin-left": "5px"
     }
   },
-  hA = {
+  gA = {
     class: "zTextShadow2sweet",
     style: {
       "font-weight": "800",
       "font-size": "1.5em"
     }
   },
-  mA = {
+  vA = {
     style: {
       "font-weight": "800",
       color: "#FFC04A"
     }
   },
-  gA = {
+  yA = {
     class: "list"
   },
-  vA = {
+  pA = {
     class: "container"
   },
-  yA = {
+  bA = {
     style: {
       height: "calc(100vh - 60px)",
       "overflow-y": "scroll"
     }
   },
-  pA = {
-    style: {
-      "font-size": "2em"
-    }
-  },
-  bA = {
-    style: {
-      "font-size": "2em"
-    }
-  },
   wA = {
     style: {
-      margin: "20px 0 10px 15px"
+      "font-size": "2em"
     }
   },
   CA = {
     style: {
       "font-size": "2em"
     }
+  },
+  _A = {
+    style: {
+      margin: "20px 0 10px 15px"
+    }
+  },
+  kA = {
+    style: {
+      "font-size": "2em"
+    }
   };
 
-function _A(e, t, n, o, s, a) {
+function TA(e, t, n, o, s, a) {
   const l = me("van-icon"),
     r = me("van-button"),
     c = me("van-popup"),
@@ -20750,7 +20760,7 @@ function _A(e, t, n, o, s, a) {
       noBg: a.isNoBg && !a.isNeedBg,
       staticBg: n.staticBg
     }])
-  }, [x("div", UE, [x("table", WE, [x("tbody", null, [x("tr", null, [x("td", jE, [x("div", {
+  }, [x("div", jE, [x("table", QE, [x("tbody", null, [x("tr", null, [x("td", KE, [x("div", {
     class: ot(["metric token nowrap panelBrown", [e.uFeed.isNeedFeed ? "panelRed" : "panelBrown"]]),
     id: "tokens",
     onClick: t[0] || (t[0] = (...m) => a.showTphPopup && a.showTphPopup(...m))
@@ -20759,7 +20769,7 @@ function _A(e, t, n, o, s, a) {
     style: {
       margin: "0 10px 0 -8px"
     }
-  }, null, -1)), e.uFeed.isNeedFeed ? (z(), q("span", QE, $(e.t("Mining stopped")), 1)) : (z(), q("span", {
+  }, null, -1)), e.uFeed.isNeedFeed ? (z(), q("span", YE, $(e.t("Mining stopped")), 1)) : (z(), q("span", {
     key: 1,
     style: an([{
       "font-size": "1.3em",
@@ -20779,7 +20789,7 @@ function _A(e, t, n, o, s, a) {
     class: "metricPopUp",
     closeable: ""
   }, {
-    default: se(() => [e.uFeed.isNeedFeed ? (z(), q("div", KE, [x("div", YE, $(e.t("Token mining has stopped. ")), 1), x("div", qE, $(e.t("The animals need to be fed.")), 1), f(r, {
+    default: se(() => [e.uFeed.isNeedFeed ? (z(), q("div", qE, [x("div", GE, $(e.t("Token mining has stopped. ")), 1), x("div", ZE, $(e.t("The animals need to be fed.")), 1), f(r, {
       type: "warning",
       size: "large",
       onClick: a.seeFeedDetails,
@@ -20789,23 +20799,23 @@ function _A(e, t, n, o, s, a) {
     }, {
       default: se(() => [be($(e.t("See details")), 1)]),
       _: 1
-    }, 8, ["onClick"])])) : we("", !0), x("div", GE, [t[14] || (t[14] = x("span", {
+    }, 8, ["onClick"])])) : we("", !0), x("div", XE, [t[14] || (t[14] = x("span", {
       class: "token50"
-    }, null, -1)), x("div", ZE, [x("div", XE, $(e.t("{TOKEN_NAME} tokens", {
+    }, null, -1)), x("div", JE, [x("div", eA, $(e.t("{TOKEN_NAME} tokens", {
       TOKEN_NAME: e.TOKEN_NAME
-    })), 1), x("div", JE, $(e._number(e.uHero.tokens)), 1)])]), x("ul", eA, [x("li", null, $(e.t("This is the number of tokens you'll get from the AirDrop.")), 1)]), x("div", tA, [t[18] || (t[18] = x("span", {
+    })), 1), x("div", tA, $(e._number(e.uHero.tokens)), 1)])]), x("ul", nA, [x("li", null, $(e.t("This is the number of tokens you'll get from the AirDrop.")), 1)]), x("div", oA, [t[18] || (t[18] = x("span", {
       class: "tph50"
-    }, null, -1)), x("div", nA, [x("div", oA, $(e.t("Tokens per Hour")), 1), x("div", null, [x("span", iA, $(e._number(e.uHero.tph)), 1), e.uHero.tphBoost || e.uHero.tphAlliance ? (z(), q("span", sA, [be(" (" + $(e._number(e.uHero.tphBase)) + " ", 1), e.uHero.tphBoost ? (z(), q("span", aA, [be("+ " + $(e._number(e.uHero.tphBoost)) + " ", 1), t[15] || (t[15] = x("span", {
+    }, null, -1)), x("div", iA, [x("div", sA, $(e.t("Tokens per Hour")), 1), x("div", null, [x("span", aA, $(e._number(e.uHero.tph)), 1), e.uHero.tphBoost || e.uHero.tphAlliance ? (z(), q("span", lA, [be(" (" + $(e._number(e.uHero.tphBase)) + " ", 1), e.uHero.tphBoost ? (z(), q("span", rA, [be("+ " + $(e._number(e.uHero.tphBoost)) + " ", 1), t[15] || (t[15] = x("span", {
       class: "tphIcon",
       style: {
         "background-image": "url('/assets/img/decor/icon_boost.png')"
       }
-    }, null, -1))])) : we("", !0), e.uHero.tphAlliance ? (z(), q("span", lA, [be("+ " + $(e._number(e.uHero.tphAlliance)) + " ", 1), t[16] || (t[16] = x("span", {
+    }, null, -1))])) : we("", !0), e.uHero.tphAlliance ? (z(), q("span", cA, [be("+ " + $(e._number(e.uHero.tphAlliance)) + " ", 1), t[16] || (t[16] = x("span", {
       class: "tphIcon",
       style: {
         "background-image": "url('/assets/img/decor/icon_ali.png')"
       }
-    }, null, -1))])) : we("", !0), t[17] || (t[17] = be(") "))])) : we("", !0)])])]), x("ul", rA, [x("li", null, $(e.t("Tokens are added automatically, even when you're offline.")), 1), x("li", null, $(e.t("Buy new animals, level them up, and boost your hourly income to earn more {TOKEN_NAME} tokens.", {
+    }, null, -1))])) : we("", !0), t[17] || (t[17] = be(") "))])) : we("", !0)])])]), x("ul", uA, [x("li", null, $(e.t("Tokens are added automatically, even when you're offline.")), 1), x("li", null, $(e.t("Buy new animals, level them up, and boost your hourly income to earn more {TOKEN_NAME} tokens.", {
       TOKEN_NAME: e.TOKEN_NAME
     })), 1), x("li", null, $(e.t("The level of your alliance also increases your hourly earnings.")), 1), x("li", null, $(e.t("You can increase your hourly earnings by buying a boost.")), 1)])]),
     _: 1
@@ -20818,7 +20828,7 @@ function _A(e, t, n, o, s, a) {
     style: {
       margin: "0 -10px"
     }
-  }, null, -1)), x("span", cA, [be($(e._numberShort(e.uHero.coins)) + " ", 1), e.stores.state.luckyHourTimerStr ? (z(), q("span", uA, "🎁")) : we("", !0)]), f(r, {
+  }, null, -1)), x("span", dA, [be($(e._numberShort(e.uHero.coins)) + " ", 1), e.stores.state.luckyHourTimerStr ? (z(), q("span", fA, "🎁")) : we("", !0)]), f(r, {
     type: "success",
     size: "small",
     style: {
@@ -20837,9 +20847,9 @@ function _A(e, t, n, o, s, a) {
     class: "metricPopUp",
     closeable: ""
   }, {
-    default: se(() => [x("div", dA, [t[20] || (t[20] = x("span", {
+    default: se(() => [x("div", hA, [t[20] || (t[20] = x("span", {
       class: "coin60"
-    }, null, -1)), x("div", fA, [x("div", hA, $(e.COIN_NAME), 1), x("div", mA, $(e._number(e.uHero.coins)), 1)])]), x("ul", gA, [x("li", null, $(e.t("This is the in-game currency.")), 1), x("li", null, $(e.t("Complete quests and invite friends to earn more coins!")), 1)]), x("p", null, $(e.t("Or you can buy them!")), 1), f(u)]),
+    }, null, -1)), x("div", mA, [x("div", gA, $(e.COIN_NAME), 1), x("div", vA, $(e._number(e.uHero.coins)), 1)])]), x("ul", yA, [x("li", null, $(e.t("This is the in-game currency.")), 1), x("li", null, $(e.t("Complete quests and invite friends to earn more coins!")), 1)]), x("p", null, $(e.t("Or you can buy them!")), 1), f(u)]),
     _: 1
   }, 8, ["show"])]), x("td", {
     style: {
@@ -20939,7 +20949,7 @@ function _A(e, t, n, o, s, a) {
     position: "top",
     closeable: ""
   }, {
-    default: se(() => [x("h2", vA, $(e.t("Select language")), 1), x("div", yA, [f(h, {
+    default: se(() => [x("h2", pA, $(e.t("Select language")), 1), x("div", bA, [f(h, {
       inset: ""
     }, {
       default: se(() => [f(d, {
@@ -20949,7 +20959,7 @@ function _A(e, t, n, o, s, a) {
         center: "",
         onClick: t[10] || (t[10] = m => a.onLangSelect(a.firstLang.key))
       }, {
-        icon: se(() => [x("span", pA, $(a.firstLang.icon) + " ", 1)]),
+        icon: se(() => [x("span", wA, $(a.firstLang.icon) + " ", 1)]),
         _: 1
       }, 8, ["title", "value"]), a.userLang ? (z(), Me(d, {
         key: 0,
@@ -20959,13 +20969,13 @@ function _A(e, t, n, o, s, a) {
         center: "",
         onClick: t[11] || (t[11] = m => a.onLangSelect(a.userLang.key))
       }, {
-        icon: se(() => [x("span", bA, $(a.userLang.icon) + " ", 1)]),
+        icon: se(() => [x("span", CA, $(a.userLang.icon) + " ", 1)]),
         _: 1
       }, 8, ["title", "value"])) : we("", !0)]),
       _: 1
     }), (z(!0), q(De, null, $t(a.langByFirstLetter, (m, g) => (z(), q(De, {
       key: g
-    }, [x("div", wA, $(g), 1), f(h, {
+    }, [x("div", _A, $(g), 1), f(h, {
       inset: ""
     }, {
       default: se(() => [(z(!0), q(De, null, $t(m, y => (z(), Me(d, {
@@ -20977,7 +20987,7 @@ function _A(e, t, n, o, s, a) {
         center: "",
         onClick: p => a.onLangSelect(y.key)
       }, {
-        icon: se(() => [x("span", CA, $(y.icon) + " ", 1)]),
+        icon: se(() => [x("span", kA, $(y.icon) + " ", 1)]),
         _: 2
       }, 1032, ["title", "label", "value", "onClick"]))), 128))]),
       _: 2
@@ -20985,11 +20995,11 @@ function _A(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])], 2)])])])])], 2)
 }
-const Qr = pt(HE, [
-    ["render", _A],
+const Qr = pt(WE, [
+    ["render", TA],
     ["__scopeId", "data-v-1b6c22bb"]
   ]),
-  kA = {
+  SA = {
     name: "Quests-g",
     components: {
       TopBar: Qr,
@@ -21007,28 +21017,28 @@ const Qr = pt(HE, [
     watch: {},
     methods: {}
   },
-  TA = {
+  xA = {
     class: "quests"
   },
-  SA = {
+  EA = {
     class: "pageContainer"
   },
-  xA = {
+  AA = {
     class: "aniH1",
     style: {
       margin: "15px 15px 0 15px"
     }
   },
-  EA = {
+  IA = {
     style: {
       margin: "0 15px 25px 15px"
     }
   };
 
-function AA(e, t, n, o, s, a) {
+function PA(e, t, n, o, s, a) {
   const l = me("QuestDailyReward"),
     r = me("QuestChallenge");
-  return z(), q("div", TA, [x("div", SA, [x("h1", xA, $(e.t("Tasks")), 1), x("div", EA, $(e.t("Do tasks and earn more {COIN_NAME}", {
+  return z(), q("div", xA, [x("div", EA, [x("h1", AA, $(e.t("Tasks")), 1), x("div", IA, $(e.t("Do tasks and earn more {COIN_NAME}", {
     COIN_NAME: e.COIN_NAME
   })), 1), f(l, {
     class: "container"
@@ -21039,16 +21049,16 @@ function AA(e, t, n, o, s, a) {
     })
   }, null, 8, ["class"])])])
 }
-const Sm = pt(kA, [
-    ["render", AA]
+const Sm = pt(SA, [
+    ["render", PA]
   ]),
-  IA = Object.freeze(Object.defineProperty({
+  OA = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Sm
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  PA = {
+  RA = {
     name: "Airdrop-g",
     components: {
       TopBar: Qr,
@@ -21112,106 +21122,106 @@ const Sm = pt(kA, [
       }
     }
   },
-  OA = {
+  DA = {
     class: "airdrop container pageContainer"
   },
-  RA = {
+  BA = {
     style: {
       "font-size": "1.1em",
       "margin-bottom": "15px",
       "font-weight": "bold"
     }
   },
-  DA = {
+  $A = {
     style: {
       "padding-left": "5px",
       "margin-bottom": "15px"
     }
   },
-  BA = {
+  MA = {
     style: {
       "margin-bottom": "30px"
     }
   },
-  $A = {
+  LA = {
     class: "panelBrown",
     style: {
       "margin-top": "10px"
     }
   },
-  MA = {
+  NA = {
     style: {
       "margin-top": "5px"
     }
   },
-  LA = {
+  FA = {
     key: 0
   },
-  NA = {
+  VA = {
     key: 0,
     style: {
       "font-size": "1.3em"
     }
   },
-  FA = {
+  zA = {
     key: 1
   },
-  VA = {
+  HA = {
     key: 0
   },
-  zA = {
+  UA = {
     key: 0,
     class: "tips"
   },
-  HA = {
+  WA = {
     key: 1,
     class: "tips"
   },
-  UA = {
+  jA = {
     key: 1
   },
-  WA = {
+  QA = {
     style: {
       "margin-top": "50px"
     }
   };
 
-function jA(e, t, n, o, s, a) {
+function KA(e, t, n, o, s, a) {
   const l = me("ton-wallet"),
     r = me("van-icon");
-  return z(), q("div", OA, [t[0] || (t[0] = x("h1", {
+  return z(), q("div", DA, [t[0] || (t[0] = x("h1", {
     class: "aniH1"
-  }, "Airdrop", -1)), x("div", null, [x("div", RA, $(e.t("Task for participating in {Airdrop}:")), 1), x("div", null, [x("ol", DA, [x("li", BA, [be($(e.t("1. Connect a wallet:")) + " ", 1), x("div", null, [f(l, {
+  }, "Airdrop", -1)), x("div", null, [x("div", BA, $(e.t("Task for participating in {Airdrop}:")), 1), x("div", null, [x("ol", $A, [x("li", MA, [be($(e.t("1. Connect a wallet:")) + " ", 1), x("div", null, [f(l, {
     loading: s.firstLoading,
     onWalletConnectHandler: a.tonConnectStatusHandler,
     "saved-wallet": s.connectedWallet,
     style: {
       "margin-top": "5px"
     }
-  }, null, 8, ["loading", "onWalletConnectHandler", "saved-wallet"])]), x("div", $A, [x("div", null, [f(r, {
+  }, null, 8, ["loading", "onWalletConnectHandler", "saved-wallet"])]), x("div", LA, [x("div", null, [f(r, {
     name: "warning-o"
-  }), be(" " + $(e.t("A wallet can only be connected to one account.")), 1)])])]), x("li", null, [be($(e.t("2. Complete a TON transaction to verify that you are not a bot:")) + " ", 1), x("div", MA, [a.isWalletConnected ? (z(), q("span", LA, [a.isTonTransactionCompleted ? (z(), q("span", NA, [f(r, {
+  }), be(" " + $(e.t("A wallet can only be connected to one account.")), 1)])])]), x("li", null, [be($(e.t("2. Complete a TON transaction to verify that you are not a bot:")) + " ", 1), x("div", NA, [a.isWalletConnected ? (z(), q("span", FA, [a.isTonTransactionCompleted ? (z(), q("span", VA, [f(r, {
     name: "checked"
-  }), be(" " + $(e.t("Transaction has been sent.")), 1)])) : (z(), q("span", FA, [a.isTransactionSend ? we("", !0) : (z(), q("div", VA, [f(l, {
+  }), be(" " + $(e.t("Transaction has been sent.")), 1)])) : (z(), q("span", zA, [a.isTransactionSend ? we("", !0) : (z(), q("div", HA, [f(l, {
     "transaction-value": e.uProfile.isAlfaTester ? .01 : e.gameConfig["ton.test_transaction_value"] ?? .5,
     "saved-wallet": s.connectedWallet,
     onPaid: a.handlePaid,
     loading: s.transactionLoading
-  }, null, 8, ["transaction-value", "saved-wallet", "onPaid", "loading"]), s.transactionLoading ? we("", !0) : (z(), q("span", zA, " *" + $(e.t("If you have already sent a transaction, go to the quest and click «Check Action» there.")), 1))])), s.transactionLoading ? (z(), q("span", HA, $(e.t("Waiting blockchain, it could take few minutes...")), 1)) : we("", !0)]))])) : (z(), q("span", UA, $(e.t("Please connect your wallet first.")), 1))])])])])]), x("div", WA, [x("p", null, $(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), x("p", null, $(e.t("We are currently in the mining phase where all players earn more {TOKEN_NAME} for the {airdrop}.", {
+  }, null, 8, ["transaction-value", "saved-wallet", "onPaid", "loading"]), s.transactionLoading ? we("", !0) : (z(), q("span", UA, " *" + $(e.t("If you have already sent a transaction, go to the quest and click «Check Action» there.")), 1))])), s.transactionLoading ? (z(), q("span", WA, $(e.t("Waiting blockchain, it could take few minutes...")), 1)) : we("", !0)]))])) : (z(), q("span", jA, $(e.t("Please connect your wallet first.")), 1))])])])])]), x("div", QA, [x("p", null, $(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), x("p", null, $(e.t("We are currently in the mining phase where all players earn more {TOKEN_NAME} for the {airdrop}.", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), x("p", null, $(e.t("The date and conditions for receiving the {Airdrop} will be announced soon in our telegram channel.")), 1)])])
 }
-const xm = pt(PA, [
-    ["render", jA],
+const xm = pt(RA, [
+    ["render", KA],
     ["__scopeId", "data-v-73f357d7"]
   ]),
-  QA = Object.freeze(Object.defineProperty({
+  YA = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: xm
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  KA = {
+  qA = {
     name: "Friends-g",
     components: {},
     async created() {
@@ -21237,47 +21247,47 @@ const xm = pt(PA, [
       }
     }
   },
-  YA = {
+  GA = {
     class: "friends"
   },
-  qA = {
+  ZA = {
     class: "pageContainer container"
   },
-  GA = {
+  XA = {
     class: "",
     style: {
       "padding-bottom": "50px"
     }
   },
-  ZA = ["innerHTML"],
-  XA = {
+  JA = ["innerHTML"],
+  eI = {
     class: "reward-list"
   },
-  JA = ["innerHTML"],
-  eI = ["innerHTML"],
   tI = ["innerHTML"],
   nI = ["innerHTML"],
   oI = ["innerHTML"],
   iI = ["innerHTML"],
   sI = ["innerHTML"],
   aI = ["innerHTML"],
-  lI = {
-    key: 0,
-    class: "panelBrown"
-  },
+  lI = ["innerHTML"],
   rI = ["innerHTML"],
   cI = {
     key: 0,
+    class: "panelBrown"
+  },
+  uI = ["innerHTML"],
+  dI = {
+    key: 0,
     class: "right"
   },
-  uI = {
+  fI = {
     key: 1,
     style: {
       "font-size": "0.7em"
     }
   };
 
-function dI(e, t, n, o, s, a) {
+function hI(e, t, n, o, s, a) {
   const l = me("van-icon"),
     r = me("van-badge"),
     c = me("van-button"),
@@ -21285,7 +21295,7 @@ function dI(e, t, n, o, s, a) {
     d = me("van-cell"),
     h = me("van-cell-group"),
     m = me("van-back-top");
-  return z(), q("div", YA, [x("div", qA, [x("div", GA, [x("div", null, [x("h1", null, $(e.t("Invite Friends!")), 1), x("span", {
+  return z(), q("div", GA, [x("div", ZA, [x("div", XA, [x("div", null, [x("h1", null, $(e.t("Invite Friends!")), 1), x("span", {
     onClick: t[0] || (t[0] = g => {
       this.isListVisible = !this.isListVisible
     }),
@@ -21300,13 +21310,13 @@ function dI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, ZA), s.isListVisible ? (z(), Me(l, {
+  }, null, 8, JA), s.isListVisible ? (z(), Me(l, {
     key: 0,
     name: "arrow-down"
   })) : (z(), Me(l, {
     key: 1,
     name: "arrow"
-  }))]), rt(x("ul", XA, [x("li", {
+  }))]), rt(x("ul", eI, [x("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 1,
       MAX: 5,
@@ -21314,7 +21324,7 @@ function dI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, JA), x("li", {
+  }, null, 8, tI), x("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 6,
       MAX: 10,
@@ -21322,7 +21332,7 @@ function dI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, eI), x("li", {
+  }, null, 8, nI), x("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 11,
       MAX: 20,
@@ -21330,7 +21340,7 @@ function dI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, tI), x("li", {
+  }, null, 8, oI), x("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 21,
       MAX: 50,
@@ -21338,7 +21348,7 @@ function dI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, nI), x("li", {
+  }, null, 8, iI), x("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 51,
       MAX: 100,
@@ -21346,28 +21356,28 @@ function dI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, oI), x("li", {
+  }, null, 8, sI), x("li", {
     innerHTML: e.t("- Over {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MAX: 100,
       COUNT: e._number(50),
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, iI)], 512), [
+  }, null, 8, aI)], 512), [
     [dt, s.isListVisible]
   ]), x("p", {
     innerHTML: e.t("If your friend has Telegram Premium, your bonus triples!", {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, sI), x("p", {
+  }, null, 8, lI), x("p", {
     innerHTML: e.t("Your friend get {BONUS_FRIEND}  {IMG_COIN} {COIN_NAME} or {BONUS_FRIEND_PREMIUM} {IMG_COIN} {COIN_NAME} if friend has Telegram Premium.", {
       COIN_NAME: e.COIN_NAME,
       BONUS_FRIEND: e.gameConfig["ref.bonus.basic"],
       BONUS_FRIEND_PREMIUM: e.gameConfig["ref.bonus.premium"],
       IMG_COIN: e.IMG_COIN
     })
-  }, null, 8, aI), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (z(), q("p", lI, [be($(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
+  }, null, 8, rI), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (z(), q("p", cI, [be($(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
     PERCENT: 30
   })) + " ", 1), x("span", {
     onClick: t[1] || (t[1] = g => e.$router.push("/referral/commission")),
@@ -21413,7 +21423,7 @@ function dI(e, t, n, o, s, a) {
     innerHTML: e.t(a.friendsCount === 1 ? "You have {friendsCount} friend." : "You have {friendsCount} friends.", {
       friendsCount: "<b>" + a.friendsCount + "</b>"
     })
-  }, null, 8, rI), f(h, {
+  }, null, 8, uI), f(h, {
     inset: "",
     style: {
       margin: "0"
@@ -21425,9 +21435,9 @@ function dI(e, t, n, o, s, a) {
       size: "large",
       center: ""
     }, {
-      "right-icon": se(() => [g.coins > 0 ? (z(), q("div", cI, [be("+" + $(e._number(g.coins)) + " ", 1), t[3] || (t[3] = x("span", {
+      "right-icon": se(() => [g.coins > 0 ? (z(), q("div", dI, [be("+" + $(e._number(g.coins)) + " ", 1), t[3] || (t[3] = x("span", {
         class: "coin25"
-      }, null, -1))])) : (z(), q("div", uI, $(e.t("Task not completed")), 1))]),
+      }, null, -1))])) : (z(), q("div", fI, $(e.t("Task not completed")), 1))]),
       _: 2
     }, 1032, ["title"]))), 128))]),
     _: 1
@@ -21435,17 +21445,17 @@ function dI(e, t, n, o, s, a) {
     bottom: "140"
   })])])
 }
-const Em = pt(KA, [
-    ["render", dI],
+const Em = pt(qA, [
+    ["render", hI],
     ["__scopeId", "data-v-b743d51c"]
   ]),
-  fI = Object.freeze(Object.defineProperty({
+  mI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Em
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  hI = {
+  gI = {
     components: {},
     async created() {},
     mounted() {
@@ -21545,23 +21555,23 @@ const Em = pt(KA, [
       }
     }
   },
-  mI = {
+  vI = {
     class: "test",
     style: {
       direction: "ltr"
     }
   },
-  gI = {
+  yI = {
     class: "con"
   },
-  vI = {
+  pI = {
     class: "zTextShadow2white center"
   },
-  yI = {
+  bI = {
     class: "options"
   },
-  pI = ["onClick"],
-  bI = {
+  wI = ["onClick"],
+  CI = {
     class: "con container",
     style: {
       display: "flex",
@@ -21570,30 +21580,30 @@ const Em = pt(KA, [
       height: "100%"
     }
   },
-  wI = {
+  _I = {
     class: "zTextShadow2white center",
     style: {
       "padding-top": "50px",
       margin: "0"
     }
   },
-  CI = {
+  kI = {
     class: "",
     style: {
       "padding-bottom": "30px"
     }
   },
-  _I = {
+  TI = {
     class: "panel"
   };
 
-function kI(e, t, n, o, s, a) {
+function SI(e, t, n, o, s, a) {
   const l = me("van-icon"),
     r = me("van-swipe-item"),
     c = me("van-badge"),
     u = me("van-button"),
     d = me("van-swipe");
-  return z(), q("div", mI, [f(d, {
+  return z(), q("div", vI, [f(d, {
     class: "onboardingSwipe",
     autoplay: 0,
     "show-indicators": !1,
@@ -21610,7 +21620,7 @@ function kI(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: se(() => [x("div", gI, [x("h2", vI, $(h.desc), 1), x("div", yI, [(z(!0), q(De, null, $t(h.options, g => (z(), q("div", {
+      default: se(() => [x("div", yI, [x("h2", pI, $(h.desc), 1), x("div", bI, [(z(!0), q(De, null, $t(h.options, g => (z(), q("div", {
         class: "option",
         onClick: y => a.setAnswer(m, g)
       }, [e.selectedValues[m] === JSON.stringify(g.animals) ? (z(), Me(l, {
@@ -21621,7 +21631,7 @@ function kI(e, t, n, o, s, a) {
         key: 1,
         size: "30",
         name: "circle"
-      })), x("div", null, $(g.desc), 1)], 8, pI))), 256)), m > 0 ? (z(), q("div", {
+      })), x("div", null, $(g.desc), 1)], 8, wI))), 256)), m > 0 ? (z(), q("div", {
         key: 0,
         class: "option",
         onClick: t[0] || (t[0] = (...g) => a.prev && a.prev(...g)),
@@ -21641,7 +21651,7 @@ function kI(e, t, n, o, s, a) {
     }, {
       default: se(() => {
         var h, m;
-        return [x("div", bI, [x("h2", wI, $(n.quiz.title), 1), x("div", CI, [x("p", _I, $((h = a.answerData) == null ? void 0 : h.title) + " - " + $((m = a.answerData) == null ? void 0 : m.desc), 1), f(u, {
+        return [x("div", CI, [x("h2", _I, $(n.quiz.title), 1), x("div", kI, [x("p", TI, $((h = a.answerData) == null ? void 0 : h.title) + " - " + $((m = a.answerData) == null ? void 0 : m.desc), 1), f(u, {
           onClick: a.shareStory,
           loading: e.isSharesLoading,
           type: "success",
@@ -21688,18 +21698,18 @@ function kI(e, t, n, o, s, a) {
     name: "arrow-left"
   }), be(" " + $(e.t("Back to quiz selection")), 1)])])
 }
-const Am = pt(hI, [
-    ["render", kI],
+const Am = pt(gI, [
+    ["render", SI],
     ["__scopeId", "data-v-ac2bbb0f"]
   ]),
-  TI = Object.freeze(Object.defineProperty({
+  xI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Am
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  SI = "/assets/paw-5F38omYJ.png",
-  xI = {
+  EI = "/assets/paw-5F38omYJ.png",
+  AI = {
     name: "Test-g",
     components: {
       TestProcess: Am
@@ -21730,48 +21740,48 @@ const Am = pt(hI, [
       }
     }
   },
-  EI = {
+  II = {
     key: 0,
     class: "Test"
   },
-  AI = {
+  PI = {
     class: "pageContainer container"
   },
-  II = {
+  OI = {
     style: {
       "margin-bottom": "0"
     }
   },
-  PI = {
+  RI = {
     class: "zTextShadow2white"
   },
-  OI = {
+  DI = {
     class: "testList"
   },
-  RI = ["onClick"],
-  DI = {
+  BI = ["onClick"],
+  $I = {
     class: "title"
   },
-  BI = {
+  MI = {
     key: 0,
     class: "zTextShadow2white",
     style: {
       width: "100%"
     }
   },
-  $I = {
+  LI = {
     style: {
       "font-size": "1.5em"
     }
   },
-  MI = {
+  NI = {
     key: 1,
     style: {
       width: "100%"
     }
   };
 
-function LI(e, t, n, o, s, a) {
+function FI(e, t, n, o, s, a) {
   const l = me("van-badge"),
     r = me("van-button"),
     c = me("test-process");
@@ -21779,7 +21789,7 @@ function LI(e, t, n, o, s, a) {
     key: 1,
     quiz: s.openedQuiz,
     onBackToList: a.backToList
-  }, null, 8, ["quiz", "onBackToList"])) : (z(), q("div", EI, [x("div", AI, [x("h1", II, $(e.t("Take the quiz and find out which animal you are!")), 1), x("div", PI, $(e.t("And get your reward!")), 1), t[3] || (t[3] = x("br", null, null, -1)), x("div", OI, [(z(!0), q(De, null, $t(a.tests, u => {
+  }, null, 8, ["quiz", "onBackToList"])) : (z(), q("div", II, [x("div", PI, [x("h1", OI, $(e.t("Take the quiz and find out which animal you are!")), 1), x("div", RI, $(e.t("And get your reward!")), 1), t[3] || (t[3] = x("br", null, null, -1)), x("div", DI, [(z(!0), q(De, null, $t(a.tests, u => {
     var d;
     return z(), q("div", {
       key: u.key,
@@ -21789,7 +21799,7 @@ function LI(e, t, n, o, s, a) {
         backgroundImage: "url(" + e._getQuizImg(u.key, u.result) + ")",
         backgroundPosition: "0 -20px"
       } : "")
-    }, [x("div", DI, $(u.title), 1), u.result ? (z(), q("div", BI, [u.isRewarded ? we("", !0) : (z(), Me(r, {
+    }, [x("div", $I, $(u.title), 1), u.result ? (z(), q("div", MI, [u.isRewarded ? we("", !0) : (z(), Me(r, {
       key: 0,
       type: "success",
       size: "small"
@@ -21803,8 +21813,8 @@ function LI(e, t, n, o, s, a) {
         _: 2
       }, 1024)]),
       _: 2
-    }, 1024)), x("div", $I, $((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (z(), q("div", MI, [t[1] || (t[1] = x("img", {
-      src: SI,
+    }, 1024)), x("div", LI, $((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (z(), q("div", NI, [t[1] || (t[1] = x("img", {
+      src: EI,
       alt: "",
       style: {
         width: "60%",
@@ -21825,20 +21835,20 @@ function LI(e, t, n, o, s, a) {
       count: e._number(u.reward)
     })) + " ", 1), t[2] || (t[2] = x("span", {
       class: "coin25"
-    }, null, -1))]))], 12, RI)
+    }, null, -1))]))], 12, BI)
   }), 128))])])]))
 }
-const Im = pt(xI, [
-    ["render", LI],
+const Im = pt(AI, [
+    ["render", FI],
     ["__scopeId", "data-v-130bb5a5"]
   ]),
-  NI = Object.freeze(Object.defineProperty({
+  VI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Im
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  FI = {
+  zI = {
     components: {
       TestG: Im,
       FriendsG: Em,
@@ -21925,21 +21935,21 @@ const Im = pt(xI, [
     },
     methods: {}
   },
-  VI = ["onClick"],
-  zI = {
-    class: "flyBtnCont"
-  },
-  HI = {
-    class: "flyBtnTitle"
-  },
+  HI = ["onClick"],
   UI = {
     class: "flyBtnCont"
   },
   WI = {
     class: "flyBtnTitle"
+  },
+  jI = {
+    class: "flyBtnCont"
+  },
+  QI = {
+    class: "flyBtnTitle"
   };
 
-function jI(e, t, n, o, s, a) {
+function KI(e, t, n, o, s, a) {
   const l = me("van-badge"),
     r = me("airdrop-g"),
     c = me("van-popup"),
@@ -21959,14 +21969,14 @@ function jI(e, t, n, o, s, a) {
   }, [f(l, {
     dot: g.isDot
   }, {
-    default: se(() => [x("div", zI, [x("div", {
+    default: se(() => [x("div", UI, [x("div", {
       class: "flyBtnIcon",
       style: an({
         backgroundImage: `url(${g.image})`
       })
-    }, null, 4)]), x("div", HI, $(g.title), 1)]),
+    }, null, 4)]), x("div", WI, $(g.title), 1)]),
     _: 2
-  }, 1032, ["dot"])], 8, VI))), 128)), f(c, {
+  }, 1032, ["dot"])], 8, HI))), 128)), f(c, {
     show: s.isShowPopup.airdrop,
     "onUpdate:show": t[0] || (t[0] = g => s.isShowPopup.airdrop = g),
     position: "bottom",
@@ -22014,17 +22024,17 @@ function jI(e, t, n, o, s, a) {
     key: 1,
     class: "flyBtn BottomBar",
     onClick: t[4] || (t[4] = g => e.$router.push("/"))
-  }, [x("div", UI, [f(m, {
+  }, [x("div", jI, [f(m, {
     name: "wap-home",
     color: "#FFEDD9"
-  })]), x("div", WI, $(e.t("Home")), 1)]))
+  })]), x("div", QI, $(e.t("Home")), 1)]))
 }
-const QI = pt(FI, [
-    ["render", jI],
+const YI = pt(zI, [
+    ["render", KI],
     ["__scopeId", "data-v-2386ef5b"]
   ]),
-  KI = new Error("request for lock canceled");
-var YI = function(e, t, n, o) {
+  qI = new Error("request for lock canceled");
+var GI = function(e, t, n, o) {
   function s(a) {
     return a instanceof n ? a : new n(function(l) {
       l(a)
@@ -22053,8 +22063,8 @@ var YI = function(e, t, n, o) {
     u((o = o.apply(e, t || [])).next())
   })
 };
-class qI {
-  constructor(t, n = KI) {
+class ZI {
+  constructor(t, n = qI) {
     this._value = t, this._cancelError = n, this._queue = [], this._weightedWaiters = []
   }
   acquire(t = 1, n = 0) {
@@ -22071,7 +22081,7 @@ class qI {
     })
   }
   runExclusive(t) {
-    return YI(this, arguments, void 0, function*(n, o = 1, s = 0) {
+    return GI(this, arguments, void 0, function*(n, o = 1, s = 0) {
       const [a, l] = yield this.acquire(o, s);
       try {
         return yield n(a)
@@ -22083,7 +22093,7 @@ class qI {
   waitForUnlock(t = 1, n = 0) {
     if (t <= 0) throw new Error(`invalid weight ${t}: must be positive`);
     return this._couldLockImmediately(t, n) ? Promise.resolve() : new Promise(o => {
-      this._weightedWaiters[t - 1] || (this._weightedWaiters[t - 1] = []), GI(this._weightedWaiters[t - 1], {
+      this._weightedWaiters[t - 1] || (this._weightedWaiters[t - 1] = []), XI(this._weightedWaiters[t - 1], {
         resolve: o,
         priority: n
       })
@@ -22138,7 +22148,7 @@ class qI {
   }
 }
 
-function GI(e, t) {
+function XI(e, t) {
   const n = Pm(e, o => t.priority <= o.priority);
   e.splice(n + 1, 0, t)
 }
@@ -22148,7 +22158,7 @@ function Pm(e, t) {
     if (t(e[n])) return n;
   return -1
 }
-var ZI = function(e, t, n, o) {
+var JI = function(e, t, n, o) {
   function s(a) {
     return a instanceof n ? a : new n(function(l) {
       l(a)
@@ -22177,12 +22187,12 @@ var ZI = function(e, t, n, o) {
     u((o = o.apply(e, t || [])).next())
   })
 };
-class XI {
+class eP {
   constructor(t) {
-    this._semaphore = new qI(1, t)
+    this._semaphore = new ZI(1, t)
   }
   acquire() {
-    return ZI(this, arguments, void 0, function*(t = 0) {
+    return JI(this, arguments, void 0, function*(t = 0) {
       const [, n] = yield this._semaphore.acquire(1, t);
       return n
     })
@@ -22203,7 +22213,7 @@ class XI {
     return this._semaphore.cancel()
   }
 }
-const JI = {
+const tP = {
     name: "AllianceInfo",
     props: {
       allianceData: {
@@ -22236,20 +22246,20 @@ const JI = {
       }
     }
   },
-  eP = {
+  nP = {
     class: "flexBeetween",
     style: {
       margin: "-20px 0 20px 0"
     }
   },
-  tP = {
+  oP = {
     key: 0
   };
 
-function nP(e, t, n, o, s, a) {
+function iP(e, t, n, o, s, a) {
   const l = me("van-icon"),
     r = me("van-button");
-  return z(), q("div", null, [x("h1", null, $(n.allianceData.name), 1), x("div", eP, [x("div", null, $(e.t("Founder:")) + " " + $(n.allianceData.ownerName), 1), x("div", null, "id:" + $(n.allianceData.id), 1)]), n.allianceData.channelLink ? (z(), q("div", tP, [be($(e.t("Channel:")) + " ", 1), x("span", {
+  return z(), q("div", null, [x("h1", null, $(n.allianceData.name), 1), x("div", nP, [x("div", null, $(e.t("Founder:")) + " " + $(n.allianceData.ownerName), 1), x("div", null, "id:" + $(n.allianceData.id), 1)]), n.allianceData.channelLink ? (z(), q("div", oP, [be($(e.t("Channel:")) + " ", 1), x("span", {
     onClick: t[0] || (t[0] = c => e._openUrl("https://" + n.allianceData.channelLink)),
     style: {
       "border-bottom": "1px dashed #fff"
@@ -22273,17 +22283,17 @@ function nP(e, t, n, o, s, a) {
     _: 1
   }, 8, ["loading"]))])
 }
-const oP = pt(JI, [
-    ["render", nP],
+const sP = pt(tP, [
+    ["render", iP],
     ["__scopeId", "data-v-e3c39631"]
   ]),
-  iP = new XI,
-  sP = {
+  aP = new eP,
+  lP = {
     components: {
-      AllianceInfo: oP,
+      AllianceInfo: sP,
       Topup: Tm,
       TopBar: Qr,
-      BottomBar: QI,
+      BottomBar: YI,
       OnboardingStart: x2
     },
     async created() {
@@ -22302,7 +22312,7 @@ const oP = pt(JI, [
           }
         }
         this.isShowFriendsTask = !this._isOnboardingComplete(this.onBoard.friendTaskPopup), window.tonConnectUI = async function() {
-          return this._tonConnectUI ? this._tonConnectUI : await iP.runExclusive(async () => {
+          return this._tonConnectUI ? this._tonConnectUI : await aP.runExclusive(async () => {
             if (this._tonConnectUI) return this._tonConnectUI;
             const {
               TonConnectUI: t
@@ -22454,34 +22464,34 @@ const oP = pt(JI, [
       }
     }
   },
-  aP = {
+  rP = {
     key: 0,
     class: "loadingScreen"
   },
-  lP = {
+  cP = {
     style: {
       "font-weight": "700",
       "font-size": "1.2em"
     }
   },
-  rP = {
+  uP = {
     id: "scrollable",
     class: "scrollable"
   },
-  cP = {
+  dP = {
     class: "panelBrown",
     style: {
       margin: "10px"
     }
   },
-  uP = {
+  fP = {
     class: "container"
   },
-  dP = {
+  hP = {
     class: "container"
   };
 
-function fP(e, t, n, o, s, a) {
+function mP(e, t, n, o, s, a) {
   const l = me("OnboardingStart"),
     r = me("RouterView"),
     c = me("BottomBar"),
@@ -22492,7 +22502,7 @@ function fP(e, t, n, o, s, a) {
     g = me("topup");
   return z(), q("div", null, [s.dbLoaded ? e._isOnboardingComplete(e.onBoard.start) ? (z(), q(De, {
     key: 2
-  }, [x("div", rP, [f(r)]), f(c), f(d, {
+  }, [x("div", uP, [f(r)]), f(c), f(d, {
     show: s.isShowInviteRefAlliance,
     "onUpdate:show": t[0] || (t[0] = y => s.isShowInviteRefAlliance = y),
     round: "",
@@ -22502,7 +22512,7 @@ function fP(e, t, n, o, s, a) {
     },
     duration: "0.15"
   }, {
-    default: se(() => [x("div", cP, $(e.t("You are invited to join an alliance.")), 1), f(u, {
+    default: se(() => [x("div", dP, $(e.t("You are invited to join an alliance.")), 1), f(u, {
       "alliance-data": s.invitedRefAllianceData,
       class: "container"
     }, null, 8, ["alliance-data"])]),
@@ -22519,7 +22529,7 @@ function fP(e, t, n, o, s, a) {
       s.isShowFriendsTask = !1, e._completeOnboarding(e.onBoard.friendTaskPopup)
     })
   }, {
-    default: se(() => [x("div", uP, [x("h1", null, $(e.t("GET UNIQUE ANIMAL")), 1), t[4] || (t[4] = x("div", {
+    default: se(() => [x("div", fP, [x("h1", null, $(e.t("GET UNIQUE ANIMAL")), 1), t[4] || (t[4] = x("div", {
       class: "center"
     }, [x("img", {
       src: "/assets/img/buildings/special/swan.png",
@@ -22547,7 +22557,7 @@ function fP(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])], 64)) : (z(), Me(l, {
     key: 1
-  })) : (z(), q("div", aP, [x("div", lP, $(a.textLeft), 1), t[3] || (t[3] = x("div", {
+  })) : (z(), q("div", rP, [x("div", cP, $(a.textLeft), 1), t[3] || (t[3] = x("div", {
     class: "progressBar"
   }, [x("div", {
     class: "progressResult"
@@ -22561,14 +22571,14 @@ function fP(e, t, n, o, s, a) {
     },
     onClose: t[2] || (t[2] = y => e.stores.state.setIsShowTopUp(!1))
   }, {
-    default: se(() => [x("div", dP, [f(g, {
+    default: se(() => [x("div", hP, [f(g, {
       "lack-of-coin": this.stores.state.lackOfCoin
     }, null, 8, ["lack-of-coin"])])]),
     _: 1
   }, 8, ["show"])])
 }
-const hP = pt(sP, [
-  ["render", fP],
+const gP = pt(lP, [
+  ["render", mP],
   ["__scopeId", "data-v-bfcc0bf2"]
 ]);
 /*!
@@ -22582,7 +22592,7 @@ function Om(e) {
   return typeof e == "object" || "displayName" in e || "props" in e || "__vccOpts" in e
 }
 
-function mP(e) {
+function vP(e) {
   return e.__esModule || e[Symbol.toStringTag] === "Module" || e.default && Om(e.default)
 }
 const Qe = Object.assign;
@@ -22598,42 +22608,42 @@ function gl(e, t) {
 const Wi = () => {},
   sn = Array.isArray,
   Rm = /#/g,
-  gP = /&/g,
-  vP = /\//g,
-  yP = /=/g,
-  pP = /\?/g,
+  yP = /&/g,
+  pP = /\//g,
+  bP = /=/g,
+  wP = /\?/g,
   Dm = /\+/g,
-  bP = /%5B/g,
-  wP = /%5D/g,
+  CP = /%5B/g,
+  _P = /%5D/g,
   Bm = /%5E/g,
-  CP = /%60/g,
+  kP = /%60/g,
   $m = /%7B/g,
-  _P = /%7C/g,
+  TP = /%7C/g,
   Mm = /%7D/g,
-  kP = /%20/g;
+  SP = /%20/g;
 
 function Kr(e) {
-  return encodeURI("" + e).replace(_P, "|").replace(bP, "[").replace(wP, "]")
+  return encodeURI("" + e).replace(TP, "|").replace(CP, "[").replace(_P, "]")
 }
 
-function TP(e) {
+function xP(e) {
   return Kr(e).replace($m, "{").replace(Mm, "}").replace(Bm, "^")
 }
 
 function Kl(e) {
-  return Kr(e).replace(Dm, "%2B").replace(kP, "+").replace(Rm, "%23").replace(gP, "%26").replace(CP, "`").replace($m, "{").replace(Mm, "}").replace(Bm, "^")
-}
-
-function SP(e) {
-  return Kl(e).replace(yP, "%3D")
-}
-
-function xP(e) {
-  return Kr(e).replace(Rm, "%23").replace(pP, "%3F")
+  return Kr(e).replace(Dm, "%2B").replace(SP, "+").replace(Rm, "%23").replace(yP, "%26").replace(kP, "`").replace($m, "{").replace(Mm, "}").replace(Bm, "^")
 }
 
 function EP(e) {
-  return e == null ? "" : xP(e).replace(vP, "%2F")
+  return Kl(e).replace(bP, "%3D")
+}
+
+function AP(e) {
+  return Kr(e).replace(Rm, "%23").replace(wP, "%3F")
+}
+
+function IP(e) {
+  return e == null ? "" : AP(e).replace(pP, "%2F")
 }
 
 function os(e) {
@@ -22642,8 +22652,8 @@ function os(e) {
   } catch {}
   return "" + e
 }
-const AP = /\/$/,
-  IP = e => e.replace(AP, "");
+const PP = /\/$/,
+  OP = e => e.replace(PP, "");
 
 function vl(e, t, n = "/") {
   let o, s = {},
@@ -22651,7 +22661,7 @@ function vl(e, t, n = "/") {
     l = "";
   const r = t.indexOf("#");
   let c = t.indexOf("?");
-  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = DP(o ?? t, n), {
+  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = $P(o ?? t, n), {
     fullPath: o + (a && "?") + a + l,
     path: o,
     query: s,
@@ -22659,7 +22669,7 @@ function vl(e, t, n = "/") {
   }
 }
 
-function PP(e, t) {
+function RP(e, t) {
   const n = t.query ? e(t.query) : "";
   return t.path + (n && "?") + n + (t.hash || "")
 }
@@ -22668,7 +22678,7 @@ function Yu(e, t) {
   return !t || !e.toLowerCase().startsWith(t.toLowerCase()) ? e : e.slice(t.length) || "/"
 }
 
-function OP(e, t, n) {
+function DP(e, t, n) {
   const o = t.matched.length - 1,
     s = n.matched.length - 1;
   return o > -1 && o === s && hi(t.matched[o], n.matched[s]) && Lm(t.params, n.params) && e(t.query) === e(n.query) && t.hash === n.hash
@@ -22681,11 +22691,11 @@ function hi(e, t) {
 function Lm(e, t) {
   if (Object.keys(e).length !== Object.keys(t).length) return !1;
   for (const n in e)
-    if (!RP(e[n], t[n])) return !1;
+    if (!BP(e[n], t[n])) return !1;
   return !0
 }
 
-function RP(e, t) {
+function BP(e, t) {
   return sn(e) ? qu(e, t) : sn(t) ? qu(t, e) : e === t
 }
 
@@ -22693,7 +22703,7 @@ function qu(e, t) {
   return sn(t) ? e.length === t.length && e.every((n, o) => n === t[o]) : e.length === 1 && e[0] === t
 }
 
-function DP(e, t) {
+function $P(e, t) {
   if (e.startsWith("/")) return e;
   if (!e) return t;
   const n = t.split("/"),
@@ -22728,21 +22738,21 @@ var ji;
   e.back = "back", e.forward = "forward", e.unknown = ""
 })(ji || (ji = {}));
 
-function BP(e) {
+function MP(e) {
   if (!e)
     if (Jo) {
       const t = document.querySelector("base");
       e = t && t.getAttribute("href") || "/", e = e.replace(/^\w+:\/\/[^\/]+/, "")
     } else e = "/";
-  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), IP(e)
+  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), OP(e)
 }
-const $P = /^[^#]+#/;
+const LP = /^[^#]+#/;
 
-function MP(e, t) {
-  return e.replace($P, "#") + t
+function NP(e, t) {
+  return e.replace(LP, "#") + t
 }
 
-function LP(e, t) {
+function FP(e, t) {
   const n = document.documentElement.getBoundingClientRect(),
     o = e.getBoundingClientRect();
   return {
@@ -22756,14 +22766,14 @@ const Da = () => ({
   top: window.scrollY
 });
 
-function NP(e) {
+function VP(e) {
   let t;
   if ("el" in e) {
     const n = e.el,
       o = typeof n == "string" && n.startsWith("#"),
       s = typeof n == "string" ? o ? document.getElementById(n.slice(1)) : document.querySelector(n) : n;
     if (!s) return;
-    t = LP(s, e)
+    t = FP(s, e)
   } else t = e;
   "scrollBehavior" in document.documentElement.style ? window.scrollTo(t) : window.scrollTo(t.left != null ? t.left : window.scrollX, t.top != null ? t.top : window.scrollY)
 }
@@ -22773,15 +22783,15 @@ function Gu(e, t) {
 }
 const Yl = new Map;
 
-function FP(e, t) {
+function zP(e, t) {
   Yl.set(e, t)
 }
 
-function VP(e) {
+function HP(e) {
   const t = Yl.get(e);
   return Yl.delete(e), t
 }
-let zP = () => location.protocol + "//" + location.host;
+let UP = () => location.protocol + "//" + location.host;
 
 function Nm(e, t) {
   const {
@@ -22797,7 +22807,7 @@ function Nm(e, t) {
   return Yu(n, e) + o + s
 }
 
-function HP(e, t, n, o) {
+function WP(e, t, n, o) {
   let s = [],
     a = [],
     l = null;
@@ -22870,7 +22880,7 @@ function Zu(e, t, n, o = !1, s = !1) {
   }
 }
 
-function UP(e) {
+function jP(e) {
   const {
     history: t,
     location: n
@@ -22890,7 +22900,7 @@ function UP(e) {
 
   function a(c, u, d) {
     const h = e.indexOf("#"),
-      m = h > -1 ? (n.host && document.querySelector("base") ? e : e.slice(h)) + c : zP() + e + c;
+      m = h > -1 ? (n.host && document.querySelector("base") ? e : e.slice(h)) + c : UP() + e + c;
     try {
       t[d ? "replaceState" : "pushState"](u, "", m), s.value = u
     } catch (g) {
@@ -22924,10 +22934,10 @@ function UP(e) {
   }
 }
 
-function WP(e) {
-  e = BP(e);
-  const t = UP(e),
-    n = HP(e, t.state, t.location, t.replace);
+function QP(e) {
+  e = MP(e);
+  const t = jP(e),
+    n = WP(e, t.state, t.location, t.replace);
 
   function o(a, l = !0) {
     l || n.pauseListeners(), history.go(a)
@@ -22936,7 +22946,7 @@ function WP(e) {
     location: "",
     base: e,
     go: o,
-    createHref: MP.bind(null, e)
+    createHref: NP.bind(null, e)
   }, t, n);
   return Object.defineProperty(s, "location", {
     enumerable: !0,
@@ -22947,7 +22957,7 @@ function WP(e) {
   }), s
 }
 
-function jP(e) {
+function KP(e) {
   return typeof e == "string" || e && typeof e == "object"
 }
 
@@ -22971,16 +22981,16 @@ function In(e, t) {
   return e instanceof Error && Vm in e && (t == null || !!(e.type & t))
 }
 const Ju = "[^/]+?",
-  QP = {
+  YP = {
     sensitive: !1,
     strict: !1,
     start: !0,
     end: !0
   },
-  KP = /[.+*?^${}()[\]/\\]/g;
+  qP = /[.+*?^${}()[\]/\\]/g;
 
-function YP(e, t) {
-  const n = Qe({}, QP, t),
+function GP(e, t) {
+  const n = Qe({}, YP, t),
     o = [];
   let s = n.start ? "^" : "";
   const a = [];
@@ -22990,7 +23000,7 @@ function YP(e, t) {
     for (let h = 0; h < u.length; h++) {
       const m = u[h];
       let g = 40 + (n.sensitive ? .25 : 0);
-      if (m.type === 0) h || (s += "/"), s += m.value.replace(KP, "\\$&"), g += 40;
+      if (m.type === 0) h || (s += "/"), s += m.value.replace(qP, "\\$&"), g += 40;
       else if (m.type === 1) {
         const {
           value: y,
@@ -23070,7 +23080,7 @@ function YP(e, t) {
   }
 }
 
-function qP(e, t) {
+function ZP(e, t) {
   let n = 0;
   for (; n < e.length && n < t.length;) {
     const o = t[n] - e[n];
@@ -23085,7 +23095,7 @@ function zm(e, t) {
   const o = e.score,
     s = t.score;
   for (; n < o.length && n < s.length;) {
-    const a = qP(o[n], s[n]);
+    const a = ZP(o[n], s[n]);
     if (a) return a;
     n++
   }
@@ -23100,18 +23110,18 @@ function ed(e) {
   const t = e[e.length - 1];
   return e.length > 0 && t[t.length - 1] < 0
 }
-const GP = {
+const XP = {
     type: 0,
     value: ""
   },
-  ZP = /[a-zA-Z0-9_]/;
+  JP = /[a-zA-Z0-9_]/;
 
-function XP(e) {
+function eO(e) {
   if (!e) return [
     []
   ];
   if (e === "/") return [
-    [GP]
+    [XP]
   ];
   if (!e.startsWith("/")) throw new Error(`Invalid path "${e}"`);
 
@@ -23159,7 +23169,7 @@ function XP(e) {
         m(), n = o;
         break;
       case 1:
-        c === "(" ? n = 2 : ZP.test(c) ? m() : (h(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
+        c === "(" ? n = 2 : JP.test(c) ? m() : (h(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
         break;
       case 2:
         c === ")" ? d[d.length - 1] == "\\" ? d = d.slice(0, -1) + c : n = 3 : d += c;
@@ -23175,8 +23185,8 @@ function XP(e) {
   return n === 2 && t(`Unfinished custom RegExp for param "${u}"`), h(), l(), s
 }
 
-function JP(e, t, n) {
-  const o = YP(XP(e.path), n),
+function tO(e, t, n) {
+  const o = GP(eO(e.path), n),
     s = Qe(o, {
       record: e,
       parent: t,
@@ -23186,7 +23196,7 @@ function JP(e, t, n) {
   return t && !s.record.aliasOf == !t.record.aliasOf && t.children.push(s), s
 }
 
-function eO(e, t) {
+function nO(e, t) {
   const n = [],
     o = new Map;
   t = id({
@@ -23223,7 +23233,7 @@ function eO(e, t) {
           B = I[I.length - 1] === "/" ? "" : "/";
         _.path = m.record.path + (k && B + k)
       }
-      if (v = JP(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), y && h.name && !od(v) && l(h.name)), Hm(v) && c(v), p.children) {
+      if (v = tO(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), y && h.name && !od(v) && l(h.name)), Hm(v) && c(v), p.children) {
         const I = p.children;
         for (let B = 0; B < I.length; B++) a(I[B], v, g && g.children[B])
       }
@@ -23249,7 +23259,7 @@ function eO(e, t) {
   }
 
   function c(h) {
-    const m = oO(h, n);
+    const m = sO(h, n);
     n.splice(m, 0, h), h.record.name && !od(h) && o.set(h.record.name, h)
   }
 
@@ -23277,7 +23287,7 @@ function eO(e, t) {
       path: p,
       params: y,
       matched: w,
-      meta: nO(w)
+      meta: iO(w)
     }
   }
   e.forEach(h => a(h));
@@ -23309,7 +23319,7 @@ function nd(e) {
     meta: e.meta || {},
     aliasOf: e.aliasOf,
     beforeEnter: e.beforeEnter,
-    props: tO(e),
+    props: oO(e),
     children: e.children || [],
     instances: {},
     leaveGuards: new Set,
@@ -23324,7 +23334,7 @@ function nd(e) {
   }), t
 }
 
-function tO(e) {
+function oO(e) {
   const t = {},
     n = e.props || !1;
   if ("component" in e) t.default = n;
@@ -23341,7 +23351,7 @@ function od(e) {
   return !1
 }
 
-function nO(e) {
+function iO(e) {
   return e.reduce((t, n) => Qe(t, n.meta), {})
 }
 
@@ -23351,18 +23361,18 @@ function id(e, t) {
   return n
 }
 
-function oO(e, t) {
+function sO(e, t) {
   let n = 0,
     o = t.length;
   for (; n !== o;) {
     const a = n + o >> 1;
     zm(e, t[a]) < 0 ? o = a : n = a + 1
   }
-  const s = iO(e);
+  const s = aO(e);
   return s && (o = t.lastIndexOf(s, o - 1)), o
 }
 
-function iO(e) {
+function aO(e) {
   let t = e;
   for (; t = t.parent;)
     if (Hm(t) && zm(e, t) === 0) return t
@@ -23374,7 +23384,7 @@ function Hm({
   return !!(e.name || e.components && Object.keys(e.components).length || e.redirect)
 }
 
-function sO(e) {
+function lO(e) {
   const t = {};
   if (e === "" || e === "?") return t;
   const o = (e[0] === "?" ? e.slice(1) : e).split("&");
@@ -23395,7 +23405,7 @@ function sd(e) {
   let t = "";
   for (let n in e) {
     const o = e[n];
-    if (n = SP(n), o == null) {
+    if (n = EP(n), o == null) {
       o !== void 0 && (t += (t.length ? "&" : "") + n);
       continue
     }(sn(o) ? o.map(a => a && Kl(a)) : [o && Kl(o)]).forEach(a => {
@@ -23405,7 +23415,7 @@ function sd(e) {
   return t
 }
 
-function aO(e) {
+function rO(e) {
   const t = {};
   for (const n in e) {
     const o = e[n];
@@ -23413,7 +23423,7 @@ function aO(e) {
   }
   return t
 }
-const lO = Symbol(""),
+const cO = Symbol(""),
   ad = Symbol(""),
   Yr = Symbol(""),
   Um = Symbol(""),
@@ -23446,7 +23456,7 @@ function io(e, t, n, o, s, a = l => l()) {
         m === !1 ? c(mi(4, {
           from: n,
           to: t
-        })) : m instanceof Error ? c(m) : jP(m) ? c(mi(2, {
+        })) : m instanceof Error ? c(m) : KP(m) ? c(mi(2, {
           from: t,
           to: m
         })) : (l && o.enterCallbacks[s] === l && typeof m == "function" && l.push(m), r())
@@ -23470,7 +23480,7 @@ function yl(e, t, n, o, s = a => a()) {
           let u = c();
           a.push(() => u.then(d => {
             if (!d) throw new Error(`Couldn't resolve component "${r}" at "${l.path}"`);
-            const h = mP(d) ? d.default : d;
+            const h = vP(d) ? d.default : d;
             l.mods[r] = d, l.components[r] = h;
             const g = (h.__vccOpts || h)[t];
             return g && io(g, n, o, l, r, s)()
@@ -23499,11 +23509,11 @@ function ld(e) {
       const g = rd(c[u - 2]);
       return u > 1 && rd(d) === g && h[h.length - 1].path !== g ? h.findIndex(hi.bind(null, c[u - 2])) : m
     }),
-    a = N(() => s.value > -1 && dO(n.params, o.value.params)),
+    a = N(() => s.value > -1 && hO(n.params, o.value.params)),
     l = N(() => s.value > -1 && s.value === n.matched.length - 1 && Lm(n.params, o.value.params));
 
   function r(c = {}) {
-    return uO(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
+    return fO(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
   }
   return {
     route: o,
@@ -23513,7 +23523,7 @@ function ld(e) {
     navigate: r
   }
 }
-const rO = K({
+const uO = K({
     name: "RouterLink",
     compatConfig: {
       MODE: 3
@@ -23555,9 +23565,9 @@ const rO = K({
       }
     }
   }),
-  cO = rO;
+  dO = uO;
 
-function uO(e) {
+function fO(e) {
   if (!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) && !e.defaultPrevented && !(e.button !== void 0 && e.button !== 0)) {
     if (e.currentTarget && e.currentTarget.getAttribute) {
       const t = e.currentTarget.getAttribute("target");
@@ -23567,7 +23577,7 @@ function uO(e) {
   }
 }
 
-function dO(e, t) {
+function hO(e, t) {
   for (const n in t) {
     const o = t[n],
       s = e[n];
@@ -23582,7 +23592,7 @@ function rd(e) {
   return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
 const cd = (e, t, n) => e ?? t ?? n,
-  fO = K({
+  mO = K({
     name: "RouterView",
     inheritAttrs: !1,
     props: {
@@ -23613,7 +23623,7 @@ const cd = (e, t, n) => e ?? t ?? n,
           return u
         }),
         r = N(() => s.value.matched[l.value]);
-      Bn(ad, N(() => l.value + 1)), Bn(lO, r), Bn(ql, s);
+      Bn(ad, N(() => l.value + 1)), Bn(cO, r), Bn(ql, s);
       const c = F();
       return re(() => [c.value, r.value, e.name], ([u, d, h], [m, g, y]) => {
         d && (d.instances[h] = u, g && g !== d && u && u === m && (d.leaveGuards.size || (d.leaveGuards = g.leaveGuards), d.updateGuards.size || (d.updateGuards = g.updateGuards))), u && d && (!g || !hi(d, g) || !m) && (d.enterCallbacks[h] || []).forEach(p => p(u))
@@ -23649,11 +23659,11 @@ function ud(e, t) {
   const n = e(t);
   return n.length === 1 ? n[0] : n
 }
-const hO = fO;
+const gO = mO;
 
-function mO(e) {
-  const t = eO(e.routes, e),
-    n = e.parseQuery || sO,
+function vO(e) {
+  const t = nO(e.routes, e),
+    n = e.parseQuery || lO,
     o = e.stringifyQuery || sd,
     s = e.history,
     a = Ri(),
@@ -23663,7 +23673,7 @@ function mO(e) {
   let u = Jn;
   Jo && e.scrollBehavior && "scrollRestoration" in history && (history.scrollRestoration = "manual");
   const d = gl.bind(null, A => "" + A),
-    h = gl.bind(null, EP),
+    h = gl.bind(null, IP),
     m = gl.bind(null, os);
 
   function g(A, H) {
@@ -23712,15 +23722,15 @@ function mO(e) {
     const oe = t.resolve(U, H),
       Te = A.hash || "";
     oe.params = d(m(oe.params));
-    const Le = PP(o, Qe({}, A, {
-        hash: TP(Te),
+    const Le = RP(o, Qe({}, A, {
+        hash: xP(Te),
         path: oe.path
       })),
       E = s.createHref(Le);
     return Qe({
       fullPath: Le,
       hash: Te,
-      query: o === sd ? aO(A.query) : A.query || {}
+      query: o === sd ? rO(A.query) : A.query || {}
     }, oe, {
       redirectedFrom: void 0,
       href: E
@@ -23780,7 +23790,7 @@ function mO(e) {
     const L = U;
     L.redirectedFrom = H;
     let G;
-    return !Le && OP(o, oe, U) && (G = mi(16, {
+    return !Le && DP(o, oe, U) && (G = mi(16, {
       to: L,
       from: oe
     }), V(oe, oe, !0, !1)), (G ? Promise.resolve(G) : D(L, oe)).catch(Q => In(Q) ? In(Q, 2) ? Q : Ne(Q) : ue(Q, L, oe)).then(Q => {
@@ -23808,7 +23818,7 @@ function mO(e) {
 
   function D(A, H) {
     let U;
-    const [oe, Te, Le] = gO(A, H);
+    const [oe, Te, Le] = yO(A, H);
     U = yl(oe.reverse(), "beforeRouteLeave", A, H);
     for (const O of oe) O.leaveGuards.forEach(L => {
       U.push(io(L, A, H))
@@ -23867,7 +23877,7 @@ function mO(e) {
       }
       u = oe;
       const Le = c.value;
-      Jo && FP(Gu(Le.fullPath, U.delta), Da()), D(oe, Le).catch(E => In(E, 12) ? E : In(E, 2) ? (B(E.to, oe).then(O => {
+      Jo && zP(Gu(Le.fullPath, U.delta), Da()), D(oe, Le).catch(E => In(E, 12) ? E : In(E, 2) ? (B(E.to, oe).then(O => {
         In(O, 20) && !U.delta && U.type === is.pop && s.go(-1, !1)
       }).catch(Wi), Promise.reject()) : (U.delta && s.go(-U.delta, !1), ue(E, oe, Le))).then(E => {
         E = E || P(oe, Le, !1), E && (U.delta && !In(E, 8) ? s.go(-U.delta, !1) : U.type === is.pop && In(E, 20) && s.go(-1, !1)), S(oe, Le, E)
@@ -23899,8 +23909,8 @@ function mO(e) {
       scrollBehavior: Te
     } = e;
     if (!Jo || !Te) return Promise.resolve();
-    const Le = !U && VP(Gu(A.fullPath, 0)) || (oe || !U) && history.state && history.state.scroll || null;
-    return Oe().then(() => Te(A, H, Le)).then(E => E && NP(E)).catch(E => ue(E, A, H))
+    const Le = !U && HP(Gu(A.fullPath, 0)) || (oe || !U) && history.state && history.state.scroll || null;
+    return Oe().then(() => Te(A, H, Le)).then(E => E && VP(E)).catch(E => ue(E, A, H))
   }
   const X = A => s.go(A);
   let ve;
@@ -23927,7 +23937,7 @@ function mO(e) {
       isReady: Re,
       install(A) {
         const H = this;
-        A.component("RouterLink", cO), A.component("RouterView", hO), A.config.globalProperties.$router = H, Object.defineProperty(A.config.globalProperties, "$route", {
+        A.component("RouterLink", dO), A.component("RouterView", gO), A.config.globalProperties.$router = H, Object.defineProperty(A.config.globalProperties, "$route", {
           enumerable: !0,
           get: () => en(c)
         }), Jo && !ve && c.value === Jn && (ve = !0, _(s.location).catch(Te => {}));
@@ -23950,7 +23960,7 @@ function mO(e) {
   return le
 }
 
-function gO(e, t) {
+function yO(e, t) {
   const n = [],
     o = [],
     s = [],
@@ -23963,53 +23973,53 @@ function gO(e, t) {
   }
   return [n, o, s]
 }
-const ia = mO({
-    history: WP("/"),
+const ia = vO({
+    history: QP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-C8QCNvrU.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-3fVqqik_.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-C8QCNvrU.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-3fVqqik_.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
-      component: () => It(() => Promise.resolve().then(() => QA), void 0)
+      component: () => It(() => Promise.resolve().then(() => YA), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-oss77CSj.js"), [])
+      component: () => It(() => import("./Terms-BEeLPTdA.js"), [])
     }, {
       path: "/quests",
-      component: () => It(() => Promise.resolve().then(() => IA), void 0)
+      component: () => It(() => Promise.resolve().then(() => OA), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-DvTJgzge.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-DVvPzwK-.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
-      component: () => It(() => Promise.resolve().then(() => fI), void 0)
+      component: () => It(() => Promise.resolve().then(() => mI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-CGhTdfI6.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-B5sWQBCH.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-U5BVBMei.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-DyG3hKq4.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-CLBBHiyQ.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-CEYW1faX.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-BCMwp_jJ.js"), [])
+      component: () => It(() => import("./Support-DNovVOjq.js"), [])
     }, {
       path: "/test",
-      component: () => It(() => Promise.resolve().then(() => NI), void 0)
+      component: () => It(() => Promise.resolve().then(() => VI), void 0)
     }, {
       path: "/test2",
-      component: () => It(() => Promise.resolve().then(() => TI), void 0)
+      component: () => It(() => Promise.resolve().then(() => xI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-CxktsQl5.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-bkpEC6fB.js"), __vite__mapDeps([10, 11]))
     }]
   }),
-  vO = {
+  pO = {
     methods: {
       async dbLoadDbData(e = ["all"]) {
         try {
@@ -24733,7 +24743,7 @@ const ia = mO({
       return {}
     }
   },
-  yO = {
+  bO = {
     methods: {
       async auth() {
         const e = ao();
@@ -24845,7 +24855,7 @@ const ia = mO({
       }
     }
   },
-  pO = {
+  wO = {
     data: function() {
       return {
         TOKEN_NAME: "$ZOO",
@@ -25093,8 +25103,8 @@ const ia = mO({
       }
     }
   },
-  bo = Bf(hP),
-  bO = jx();
+  bo = Bf(gP),
+  CO = jx();
 let dd = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && dd ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), dd = !0
@@ -25102,17 +25112,17 @@ ia.afterEach(function() {
 window.Telegram.WebApp.onEvent("backButtonClicked", function() {
   window.history.state && window.history.state.popup && history.back(), ia.push("/")
 });
-bo.use(bO);
+bo.use(CO);
 bo.use(ia);
 bo.use(WS);
-bo.mixin(vO);
-bo.mixin(yO);
 bo.mixin(pO);
+bo.mixin(bO);
+bo.mixin(wO);
 bo.mixin(oE);
 bo.mount("#app");
 window.userStore = ao();
 window.stateStore = jr();
 window.dbStore = bm();
 export {
-  oP as A, De as F, dE as L, Qr as T, pt as _, x as a, f as b, q as c, be as d, we as e, Me as f, me as g, ot as h, rt as i, GS as j, za as k, $v as l, an as n, z as o, $t as r, uo as s, $ as t, Py as u, dt as v, se as w
+  sP as A, De as F, dE as L, Qr as T, pt as _, x as a, f as b, q as c, be as d, we as e, Me as f, me as g, ot as h, rt as i, GS as j, za as k, $v as l, an as n, z as o, $t as r, uo as s, $ as t, Py as u, dt as v, se as w
 };
