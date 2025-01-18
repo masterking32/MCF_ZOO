@@ -18,9 +18,9 @@ import {
   h as E,
   i as I,
   v as x
-} from "./index-DM8EQJgr.js";
-import H from "./Alliance-BQ0f024y.js";
-import z from "./Boost-DUkyHXpT.js";
+} from "./index-DXaCf7Pi.js";
+import H from "./Alliance-BCvwLGHZ.js";
+import z from "./Boost--D_8I9UD.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -653,7 +653,7 @@ const ne = M(K, [
         this.isShowChangeLocation = !0, await this._completeOnboarding(this.onBoard.changeLocation)
       },
       getBuildingImg(e, s = 1) {
-        return ["ticket_booth", "roller_coaster", "alpaca", "attraction", "bat", "camel", "capybara", "cat", "dog", "doge", "duck", "horse", "lemur", "mountain_goat", "ostrich", "owl", "peacock", "pepe", "platypus", "raccoon", "scorpion", "seahorse", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "starfish", "swan", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
+        return ["spider", "puma", "lizard", "leopard", "ticket_booth", "roller_coaster", "alpaca", "attraction", "bat", "camel", "capybara", "cat", "dog", "doge", "duck", "horse", "lemur", "mountain_goat", "ostrich", "owl", "peacock", "pepe", "platypus", "raccoon", "scorpion", "seahorse", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "starfish", "swan", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
       },
       buyPopup(e) {
         this.openPoint = e, this.isBuyPopupShow = !0
@@ -1387,7 +1387,7 @@ function Cs(e, s, r, c, d, o) {
 }
 const Es = M(oe, [
   ["render", Cs],
-  ["__scopeId", "data-v-7cca1b30"]
+  ["__scopeId", "data-v-2a298b9a"]
 ]);
 export {
   Es as

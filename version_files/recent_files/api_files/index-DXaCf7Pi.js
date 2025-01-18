@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-C8KlK23S.js", "assets/Alliance-BQ0f024y.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-DUkyHXpT.js", "assets/Boost-CeTnVcsX.css", "assets/Home-R5P9aIs-.css", "assets/Rating-_LyiZk0j.js", "assets/Rating-DRysk5eI.css", "assets/Communities-Dq2JFXPq.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BWJz8ctP.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DUkJDsPc.js", "assets/Alliance-BCvwLGHZ.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost--D_8I9UD.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-aLIqOXIY.js", "assets/Rating-DRysk5eI.css", "assets/Communities-CgKHfNge.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-DqSAmotf.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -20125,11 +20125,9 @@ function uE(e, t, n, o, s, a) {
     }
   }, "🎁", -1)), x("div", lE, [x("h1", rE, $(e.t("Happy hour")), 1), x("div", cE, $(e.t("Ending in {time}", {
     time: e.stores.state.luckyHourTimerStr
-  })), 1)])]), x("div", null, " • " + $(e.t("A purchase can bring a random bonus of up to {count}%", {
-    count: 300
-  })) + " 🎁", 1), x("div", null, " • " + $(e.t("There is also a small chance to get {count}%.", {
+  })), 1)])]), x("div", null, $(e.t("A purchase can bring a random bonus of up to {count}%", {
     count: 1e3
-  })), 1)])) : Ce("", !0)
+  })) + " 🎁", 1)])) : Ce("", !0)
 }
 const dE = pt(iE, [
     ["render", uE]
@@ -23914,37 +23912,37 @@ const ia = aO({
     history: MP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-C8KlK23S.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DUkJDsPc.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-C8KlK23S.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DUkJDsPc.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => NA), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-fKzPX8cL.js"), [])
+      component: () => It(() => import("./Terms-BhhLCHKE.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => CA), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-_LyiZk0j.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-aLIqOXIY.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => iI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-Dq2JFXPq.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-CgKHfNge.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-BQ0f024y.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-BCvwLGHZ.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-DUkyHXpT.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost--D_8I9UD.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-Bf0oHNFm.js"), [])
+      component: () => It(() => import("./Support-BPSIZFSg.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => PI), void 0)
@@ -23953,7 +23951,7 @@ const ia = aO({
       component: () => It(() => Promise.resolve().then(() => vI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-BWJz8ctP.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-DqSAmotf.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   rO = {
