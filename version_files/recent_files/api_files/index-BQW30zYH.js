@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CauFo_k8.js", "assets/Alliance-BohNPNJc.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-DY1xZ-G5.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-BxakL7B_.js", "assets/Rating-DRysk5eI.css", "assets/Communities-DlC4fv8s.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-Ccnxk3ib.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-D4wnLimV.js", "assets/Alliance-CEnFqyUr.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CXDFSIg5.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-CYhTsDrR.js", "assets/Rating-DRysk5eI.css", "assets/Communities-Dgp1T-z_.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-B_Dfruh_.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -18764,7 +18764,7 @@ const Ur = pt(L2, [
             const a = this.uQuests.find(l => l.key === "donate_ton_01");
             a && (a == null ? void 0 : a.creationDate) < "2024-12-18 06:20:00" && (o.isArchived = !1)
           }
-          return o.key === "donate_ton_06" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_01")), o.key === "donate_ton_1" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_06")), o.key === "donate_ton_3" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_1")), o.key === "donate_ton_5" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_3")), o.key === "donate_ton_10" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_5")), o.key === "donate_ton_25" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_10")), o.key === "donate_ton_50" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_25")), o.key === "donate_ton_75" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_50")), o
+          return o.key === "donate_ton_06" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_01")), o.key === "donate_ton_1" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_06")), o.key === "donate_ton_3" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_1")), o.key === "donate_ton_5" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_3")), o.key === "donate_ton_10" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_5")), o.key === "donate_ton_25" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_10")), o.key === "donate_ton_50" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_25")), o.key === "donate_ton_75" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_50")), o.key === "donate_ton_100" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_75")), o.key === "donate_ton_125" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_100")), o.key === "donate_ton_150" && (o.isArchived = !this.uQuests.find(a => a.key === "donate_ton_125")), o
         }).filter(o => !o.key.includes("chest_")).filter(o => !(o.isArchived && (o.status === "new" || o.key.includes("rebus_") || o.key.includes("riddle_"))));
         this.extendQuestsAll = e, this.extendQuestsFinished = e.filter(o => o.status === "finished").sort((o, s) => s.reward - o.reward);
         const t = e.filter(o => o.status !== "finished"),
@@ -19242,7 +19242,7 @@ function xx(e, t, n, o, s, a) {
 }
 const Ex = pt(W2, [
     ["render", xx],
-    ["__scopeId", "data-v-4beec549"]
+    ["__scopeId", "data-v-78a6c881"]
   ]),
   Ax = {
     components: {
@@ -20126,8 +20126,9 @@ function uE(e, t, n, o, s, a) {
     }
   }, "🎁", -1)), x("div", lE, [x("h1", rE, $(e.t("Happy hour")), 1), x("div", cE, $(e.t("Ending in {time}", {
     time: e.stores.state.luckyHourTimerStr
-  })), 1)])]), x("div", null, $(e.t("When buying Animal Feed during happy hours, you can get a random bonus of up to {count}%. Minimum bonus 100%.", {
-    count: 1e3
+  })), 1)])]), x("div", null, $(e.t("When buying Animal Feed during happy hours, you can get a random bonus of up to {count}%. Minimum bonus {minBonus}%.", {
+    count: 1e3,
+    minBonus: 10
   })), 1)])) : we("", !0)
 }
 const dE = pt(iE, [
@@ -23933,37 +23934,37 @@ const ia = gO({
     history: jP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-CauFo_k8.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-D4wnLimV.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-CauFo_k8.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-D4wnLimV.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => YA), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-uuYoy7IG.js"), [])
+      component: () => It(() => import("./Terms-DnU0yP7h.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => OA), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-BxakL7B_.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-CYhTsDrR.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => mI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-DlC4fv8s.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-Dgp1T-z_.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-BohNPNJc.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-CEnFqyUr.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-DY1xZ-G5.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-CXDFSIg5.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-C8hvTVJl.js"), [])
+      component: () => It(() => import("./Support-BAIWOnsN.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -23972,7 +23973,7 @@ const ia = gO({
       component: () => It(() => Promise.resolve().then(() => xI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-Ccnxk3ib.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-B_Dfruh_.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   yO = {
