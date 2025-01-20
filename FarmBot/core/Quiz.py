@@ -83,7 +83,15 @@ class Quiz:
 
         for quiz in self.completed_quizzes:
             if not quiz.is_rewarded:
-                if self._claim_quiz(quiz):
+                quiz_data = next(
+                    (q for q in self.quizzes_data if q.key == quiz.key), None
+                )
+                if quiz_data is None:
+                    self.log.info(
+                        f"🟡 <c>{self.mcf_api.account_name}</c> | Quiz with key {quiz.key} not found in quizzes data."
+                    )
+                    continue
+                if self._claim_quiz(quiz_data):
                     quiz.is_rewarded = True
 
         completed_quiz_keys = {quiz.key for quiz in self.completed_quizzes}
@@ -146,9 +154,8 @@ class Quiz:
 
     def _claim_quiz(self, quiz: DataQuizMdl):
         try:
-            name = quiz.title if quiz.title else quiz.key
             self.log.info(
-                f"🟡 <c>{self.mcf_api.account_name}</c> | Claiming the quiz <c>{name}</c>."
+                f"🟡 <c>{self.mcf_api.account_name}</c> | Claiming the quiz <c>{quiz.title}</c>."
             )
             payload = {
                 "key": quiz.key,
@@ -160,7 +167,7 @@ class Quiz:
 
             if resp is None:
                 raise Exception(
-                    f"Failed to claim quiz <c>{name}</c>, response: <m>{resp}</m>"
+                    f"Failed to claim quiz <c>{quiz.title}</c>, response: <m>{resp}</m>"
                 )
 
             is_success = resp.get("success")
@@ -169,9 +176,8 @@ class Quiz:
                 data = resp.get("data", {})
                 self.user.hero = data.get("hero")
                 self.user.completed_quizes = data.get("quizzes")
-                reward = f", reward: <y>{zsutils.rnd(quiz.reward)}</y>" if quiz.reward else ""
                 self.log.info(
-                    f"🟢 <c>{self.mcf_api.account_name}</c> | Quiz <c>{name}</c> claimed{reward}."
+                    f"🟢 <c>{self.mcf_api.account_name}</c> | Quiz <c>{quiz.title}</c> claimed, reward: <y>{zsutils.rnd(quiz.reward)}</y>."
                 )
 
             return is_success

@@ -329,11 +329,20 @@ class Task:
             for task in self.user.tasks_data
             if task["key"] not in completed_keys and "chest_" in task["key"]
         ]
-        claimed = False
+
+        attempts = utils.getConfig("chest_claim_attempts", 15)
         for chest in pending_chests:
-            while self._can_claim_chest(chest) and not claimed:
-                claimed = self._claim_task(chest)
+            attempts_tmp = attempts
             claimed = False
+            while attempts_tmp > 0 and not claimed and self._can_claim_chest(chest):
+                claimed = self._claim_task(chest)
+                if not claimed:
+                    attempts_tmp -= 1
+                    pause = random.randint(3, 5)
+                    self.log.info(
+                        f"🟡 <c>{self.mcf_api.account_name}</c> | <y>Attempt to claim chest unsuccessful, retry in <c>{pause}</c> sec. Remaining: <c>{attempts_tmp}</c></y>"
+                    )
+                    time.sleep(pause)
             continue
 
     def _can_claim_chest(self, chest: dict):

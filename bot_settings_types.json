@@ -37,6 +37,15 @@
     "description": "Automatically claim chests"
   },
   {
+    "key": "chest_claim_attempts",
+    "name": "Attempts to claim chest if claim failed",
+    "type": "number",
+    "default_value": 15,
+    "description": "Attempts to claim chest if claim failed",
+    "min": 1,
+    "max": 999
+  },
+  {
     "key": "ignore_chest_claim_time",
     "name": "Ignore chest claim time",
     "type": "checkbox",
