@@ -146,8 +146,9 @@ class Quiz:
 
     def _claim_quiz(self, quiz: DataQuizMdl):
         try:
+            name = quiz.title if quiz.title else quiz.key
             self.log.info(
-                f"🟡 <c>{self.mcf_api.account_name}</c> | Claiming the quiz <c>{quiz.title}</c>."
+                f"🟡 <c>{self.mcf_api.account_name}</c> | Claiming the quiz <c>{name}</c>."
             )
             payload = {
                 "key": quiz.key,
@@ -159,7 +160,7 @@ class Quiz:
 
             if resp is None:
                 raise Exception(
-                    f"Failed to claim quiz <c>{quiz.title}</c>, response: <m>{resp}</m>"
+                    f"Failed to claim quiz <c>{name}</c>, response: <m>{resp}</m>"
                 )
 
             is_success = resp.get("success")
@@ -168,8 +169,9 @@ class Quiz:
                 data = resp.get("data", {})
                 self.user.hero = data.get("hero")
                 self.user.completed_quizes = data.get("quizzes")
+                reward = f", reward: <y>{zsutils.rnd(quiz.reward)}</y>" if quiz.reward else ""
                 self.log.info(
-                    f"🟢 <c>{self.mcf_api.account_name}</c> | Quiz <c>{quiz.title}</c> claimed, reward: <y>{zsutils.rnd(quiz.reward)}</y>."
+                    f"🟢 <c>{self.mcf_api.account_name}</c> | Quiz <c>{name}</c> claimed{reward}."
                 )
 
             return is_success
