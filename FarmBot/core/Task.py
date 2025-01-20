@@ -131,7 +131,7 @@ class Task:
 
             time.sleep(random.randint(1, 3))
 
-            return True
+            return success
         except Exception as e:
             msg = str(e) if str(e) else "Unknown error."
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
@@ -329,9 +329,11 @@ class Task:
             for task in self.user.tasks_data
             if task["key"] not in completed_keys and "chest_" in task["key"]
         ]
+        claimed = False
         for chest in pending_chests:
-            if self._can_claim_chest(chest):
-                self._claim_task(chest)
+            while self._can_claim_chest(chest) and not claimed:
+                claimed = self._claim_task(chest)
+            claimed = False
             continue
 
     def _can_claim_chest(self, chest: dict):
