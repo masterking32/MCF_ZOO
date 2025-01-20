@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-D4wnLimV.js", "assets/Alliance-CEnFqyUr.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CXDFSIg5.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-CYhTsDrR.js", "assets/Rating-DRysk5eI.css", "assets/Communities-Dgp1T-z_.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-B_Dfruh_.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CbzqJtjx.js", "assets/Alliance-2CzBZurC.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-BdBtEqQ6.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Db4gZlin.css", "assets/Rating-CrK9WvO-.js", "assets/Rating-DRysk5eI.css", "assets/Communities-B2F5l08S.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BmXRejfC.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -22300,7 +22300,7 @@ const sP = pt(tP, [
     async created() {
       window.location.href.endsWith("?popup") && (this.$router.push("/"), history.replaceState(null, "", "/"));
       try {
-        if (await Promise.all([await this.auth(), this.loadPageData(), this._delay(500)]), this.dbLoaded = !0, await this.loadPageDataAfter(), this.stores.user.startParam && !this.uAlliance.id) {
+        if (await Promise.all([await this.auth(), this.loadPageData(), this._delay(2e3)]), this.dbLoaded = !0, await this.loadPageDataAfter(), this.stores.user.startParam && !this.uAlliance.id) {
           const t = this.stores.user.startParam.match(/ref(\d+)/);
           if (t) {
             const n = t[1];
@@ -22536,7 +22536,7 @@ function hP(e, t, n, o, s, a) {
 }
 const mP = pt(lP, [
   ["render", hP],
-  ["__scopeId", "data-v-85519491"]
+  ["__scopeId", "data-v-04184050"]
 ]);
 /*!
  * vue-router v4.4.5
@@ -23934,37 +23934,37 @@ const ia = gO({
     history: jP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-D4wnLimV.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-CbzqJtjx.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-D4wnLimV.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-CbzqJtjx.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => YA), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-DnU0yP7h.js"), [])
+      component: () => It(() => import("./Terms-Cy_A1lIY.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => OA), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-CYhTsDrR.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-CrK9WvO-.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => mI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-Dgp1T-z_.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-B2F5l08S.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-CEnFqyUr.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-2CzBZurC.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-CXDFSIg5.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-BdBtEqQ6.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-BAIWOnsN.js"), [])
+      component: () => It(() => import("./Support--8FSUk-f.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -23973,7 +23973,7 @@ const ia = gO({
       component: () => It(() => Promise.resolve().then(() => xI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-B_Dfruh_.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-BmXRejfC.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   yO = {
@@ -24907,7 +24907,7 @@ const ia = gO({
         })
       },
       _getQuestImg(e) {
-        return e.includes("riddle_") ? "/assets/img/quests/riddle.jpg?v=2" : e.includes("rebus_") ? "/assets/img/quests/rebus.jpg?v=2" : e.includes("donate_ton_") ? "/assets/img/quests/donate_ton.jpg?v=2" : "/assets/img/quests/" + e + ".jpg?v=2"
+        return e.includes("riddle_") ? "/assets/img/quests/riddle.jpg?v=3" : e.includes("rebus_") ? "/assets/img/quests/rebus.jpg?v=3" : e.includes("donate_ton_") ? "/assets/img/quests/donate_ton.jpg?v=3" : "/assets/img/quests/" + e + ".jpg?v=3"
       },
       _getQuizImg(e, t) {
         return "/assets/img/quiz/" + e + "/" + t + ".jpg?v=1"
