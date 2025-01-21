@@ -1,5 +1,5 @@
 import {
-  _ as M,
+  _ as D,
   o as l,
   c as a,
   a as t,
@@ -7,20 +7,20 @@ import {
   b as h,
   w as p,
   d as u,
-  e as b,
+  e as C,
   F as m,
-  r as C,
+  r as b,
   f as _,
   g as y,
   T as N,
   u as P,
   n as B,
-  h as E,
+  h as L,
   i as I,
-  v as x
-} from "./index-CumxeNe6.js";
-import H from "./Alliance-D65UpDod.js";
-import z from "./Boost-BDKo-lpZ.js";
+  v as H
+} from "./index-ClzQ_v0R.js";
+import x from "./Alliance-C7lt8_Bv.js";
+import z from "./Boost-BD61D_sP.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -52,10 +52,10 @@ const K = {
         }
         try {
           this.isBuyLoading = !0;
-          const r = await this.apiCall("autoFeedBuy", e.key);
-          this.stores.user.setFeed(r.feed), this.stores.user.setHero(r.hero)
-        } catch (r) {
-          this._catchError(r)
+          const d = await this.apiCall("autoFeedBuy", e.key);
+          this.stores.user.setFeed(d.feed), this.stores.user.setHero(d.hero)
+        } catch (d) {
+          this._catchError(d)
         }
         this.isBuyLoading = !1
       }
@@ -132,19 +132,19 @@ const K = {
     key: 3
   };
 
-function te(e, s, r, c, d, o) {
-  var v, k;
+function te(e, s, d, c, r, o) {
+  var f, S;
   const g = y("van-button"),
-    f = y("van-badge"),
-    S = y("van-cell"),
-    L = y("van-cell-group");
+    v = y("van-badge"),
+    A = y("van-cell"),
+    E = y("van-cell-group");
   return l(), a("div", O, [t("h1", U, i(e.t("Feed the animals to keep token {TOKEN_NAME} mining going!", {
     TOKEN_NAME: e.TOKEN_NAME
-  })), 1), (v = e.uFeed) != null && v.isNeedFeed ? (l(), a("div", W, [t("div", Y, i(e.t("Token mining has stopped. ")), 1), t("div", Q, i(e.t("The animals need to be fed.")), 1), h(g, {
+  })), 1), (f = e.uFeed) != null && f.isNeedFeed ? (l(), a("div", W, [t("div", Y, i(e.t("Token mining has stopped. ")), 1), t("div", Q, i(e.t("The animals need to be fed.")), 1), h(g, {
     type: "warning",
     size: "large",
     onClick: s[0] || (s[0] = w => o.buyAutoFeed(o.instantItem)),
-    loading: d.isBuyLoading,
+    loading: r.isBuyLoading,
     style: {
       "margin-top": "10px"
     }
@@ -153,9 +153,9 @@ function te(e, s, r, c, d, o) {
       class: "coin25"
     }, null, -1)), u(" " + i(e._number(o.calcPrice(o.instantItem))), 1)]),
     _: 1
-  }, 8, ["loading"])])) : (k = e.uFeed) != null && k.autoFeedEndDateStr ? (l(), a("div", G, [t("div", X, i(e.t("Automatic animal feeding is active")), 1), t("div", R, i(e.t("Time Remaining: {TIME}", {
+  }, 8, ["loading"])])) : (S = e.uFeed) != null && S.autoFeedEndDateStr ? (l(), a("div", G, [t("div", X, i(e.t("Automatic animal feeding is active")), 1), t("div", R, i(e.t("Time Remaining: {TIME}", {
     TIME: e.uFeed.autoFeedEndDateStr
-  })), 1)])) : b("", !0), t("ul", j, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
+  })), 1)])) : C("", !0), t("ul", j, [t("li", null, i(e.t("To keep your animals mining {TOKEN_NAME} tokens, you need to feed them regularly.", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), t("li", null, i(e.t("Feeding time occurs eight times at random intervals throughout the day.")), 1), t("li", {
     innerHTML: e.t("The cost of one feeding depends on the Tokens per Hour and is currently <b>{count} {IMG_COIN} {COIN_NAME}</b>.", {
@@ -167,14 +167,14 @@ function te(e, s, r, c, d, o) {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), t("li", null, i(e.t("Check on your zoo often, and don't let your animals go hungry!")), 1)]), s[3] || (s[3] = t("br", null, null, -1)), s[4] || (s[4] = t("br", null, null, -1)), t("h2", Z, i(e.t("Buy automatic animal feeding")), 1), e.uHero.tph > 300 ? (l(), a(m, {
     key: 2
-  }, [t("div", q, i(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), h(L, {
+  }, [t("div", q, i(e.t("You can buy automatic feeding, and while it’s active, token mining will not stop.")), 1), h(E, {
     inset: "",
     class: "noMargin",
     style: {
       "margin-top": "5px"
     }
   }, {
-    default: p(() => [(l(!0), a(m, null, C(e.dbAutoFeed.filter(w => w.time > 1), w => (l(), _(S, {
+    default: p(() => [(l(!0), a(m, null, b(e.dbAutoFeed.filter(w => w.time > 1), w => (l(), _(A, {
       key: w.key,
       center: ""
     }, {
@@ -191,9 +191,9 @@ function te(e, s, r, c, d, o) {
         type: "success",
         size: "small",
         onClick: T => o.buyAutoFeed(w),
-        loading: d.isBuyLoading
+        loading: r.isBuyLoading
       }, {
-        default: p(() => [h(f, {
+        default: p(() => [h(v, {
           dot: !e.uFeed.autoFeedEndDateStr
         }, {
           default: p(() => [s[2] || (s[2] = t("span", {
@@ -210,7 +210,7 @@ function te(e, s, r, c, d, o) {
     count: 300
   })), 1))])
 }
-const ne = M(K, [
+const ne = D(K, [
     ["render", te],
     ["__scopeId", "data-v-8fd75eaa"]
   ]),
@@ -219,7 +219,7 @@ const ne = M(K, [
     name: "Home-g",
     components: {
       BoostG: z,
-      AllianceG: H,
+      AllianceG: x,
       FeedG: ne,
       TopBar: N
     },
@@ -227,34 +227,35 @@ const ne = M(K, [
       this.stores.state.setPageSettings()
     },
     mounted() {
+      var e;
       setInterval((function() {
         if (this.uAnimals.length < 1) return;
         this.tick++;
-        const e = this.uAnimals.length,
-          s = this.uAnimals[Math.floor(Math.random() * e)];
-        let r = 1,
-          c = 1;
-        switch (e) {
+        const s = this.uAnimals.length,
+          d = this.uAnimals[Math.floor(Math.random() * s)];
+        let c = 1,
+          r = 1;
+        switch (s) {
           case 1:
           case 2:
-            r = 1, c = 5;
+            c = 1, r = 5;
             break;
           case 3:
-            r = 2, c = 3;
+            c = 2, r = 3;
             break;
           case 4:
           case 5:
           case 6:
-            r = 4, c = 2;
+            c = 4, r = 2;
             break;
           default:
-            r = 7, c = 1;
+            c = 7, r = 1;
             break
         }
-        this.tick % c === 0 && (this.animateAnimalKeys.push(s.key), this.animateAnimalKeys.length > r && this.animateAnimalKeys.shift())
+        this.tick % r === 0 && (this.animateAnimalKeys.push(d.key), this.animateAnimalKeys.length > c && this.animateAnimalKeys.shift())
       }).bind(this), 500), this.calcChests(), setInterval((function() {
         this.calcChests()
-      }).bind(this), 5e3)
+      }).bind(this), 5e3), this.isShowSpecialPromo = ((e = this.availableAndWillForBuySpecial) == null ? void 0 : e.length) > 0
     },
     data() {
       return {
@@ -276,6 +277,7 @@ const ne = M(K, [
         isClaimChestLoading: !1,
         activeChest: null,
         unboughtAnimals: [],
+        isShowSpecialPromo: !1,
         map: {
           w: 768,
           h: 5476
@@ -516,12 +518,12 @@ const ne = M(K, [
         let e = this._cloneObject(this.points);
         return e.map(s => {
           if (s.x = Math.round(s.x * this.k), s.y = Math.round(s.y * this.k), s.position in this.animalByPosition) {
-            const r = this.animalByPosition[s.position];
-            if (r.key in this.dbAnimalsByKey) {
-              s.animalKey = r.key, s.animalLevel = r.level, s.isAnimalCanBuy = !1;
-              const c = this.dbAnimalsByKey[r.key].levels.find(o => o.level === r.level),
-                d = this.dbAnimalsByKey[r.key].levels.find(o => o.level === r.level + 1);
-              d && d.price <= this.uHero.coins && (s.isAnimalCanBuy = !0), s.animalProfit = c.profit
+            const d = this.animalByPosition[s.position];
+            if (d.key in this.dbAnimalsByKey) {
+              s.animalKey = d.key, s.animalLevel = d.level, s.isAnimalCanBuy = !1;
+              const c = this.dbAnimalsByKey[d.key].levels.find(o => o.level === d.level),
+                r = this.dbAnimalsByKey[d.key].levels.find(o => o.level === d.level + 1);
+              r && r.price <= this.uHero.coins && (s.isAnimalCanBuy = !0), s.animalProfit = c.profit
             }
           }
           return s
@@ -529,6 +531,9 @@ const ne = M(K, [
       },
       freePoints() {
         return this.extPoints.filter(e => !e.animalKey).map(e => e.position)
+      },
+      availableAndWillForBuySpecial() {
+        return this.unboughtAnimals.filter(e => e.isSpecial && e.timeToEnd > 0)
       },
       availableForBuySpecial() {
         return this.unboughtAnimals.filter(e => e.isSpecial && e.timeToStart < 0 && e.timeToEnd > 0)
@@ -544,12 +549,12 @@ const ne = M(K, [
         let e = {};
         e = this.dbAnimalsByKey[this.openPoint.animalKey];
         const s = this.uAnimalsByKey[this.openPoint.animalKey].level,
-          r = s + 1,
+          d = s + 1,
           c = this._arrayByKey(e.levels, "level"),
-          d = c[s],
-          o = !(r in c);
+          r = c[s],
+          o = !(d in c);
         let g = null;
-        return o || (g = c[r]), e.isMaxLevel = o, e.currentLevelData = d, e.nextLevelData = g, e
+        return o || (g = c[d]), e.isMaxLevel = o, e.currentLevelData = r, e.nextLevelData = g, e
       }
     },
     watch: {
@@ -586,8 +591,8 @@ const ne = M(K, [
     },
     methods: {
       calcUnboughtAnimals() {
-        let e = this.dbAnimals.filter(s => !this.uAnimals.some(r => r.key === s.key));
-        e = e.map(s => (s.level1data = s.levels.find(r => r.level === 1), s.isSpecial = s.dateStart && s.dateEnd, s.isSpecial && (s.timeToStart = new Date(s.dateStart.replace(" ", "T") + "Z") - new Date + 5e3, s.timeToEnd = new Date(s.dateEnd.replace(" ", "T") + "Z") - new Date - 5e3), s)), this.unboughtAnimals = e
+        let e = this.dbAnimals.filter(s => !this.uAnimals.some(d => d.key === s.key));
+        e = e.map(s => (s.level1data = s.levels.find(d => d.level === 1), s.isSpecial = s.dateStart && s.dateEnd, s.isSpecial && (s.timeToStart = new Date(s.dateStart.replace(" ", "T") + "Z") - new Date + 5e3, s.timeToEnd = new Date(s.dateEnd.replace(" ", "T") + "Z") - new Date - 5e3), s)), this.unboughtAnimals = e
       },
       openFeedDetails() {
         this.isShowFeed = !0
@@ -620,18 +625,18 @@ const ne = M(K, [
           y: 1486
         }];
         let s = [];
-        this.dbQuests.filter(r => r.key.includes("chest_")).forEach(r => {
-          const c = new Date(r.actionTo.replace(" ", "T") + "Z"),
-            d = new Date;
-          if (c < d) {
-            let o = e[Number(r.checkData) - 1] || null;
-            if (o && !this.uQuests.find(g => g.key === r.key)) {
-              r.x = Math.round(o.x * this.k), r.y = Math.round(o.y * this.k);
-              const g = r.dateEnd.replace(" ", "T") + "Z",
-                f = new Date(g);
-              r.countdown = f - d;
-              const S = r.key.includes("chest_s") ? "chest_s" : r.key.includes("chest_m") ? "chest_m" : "chest_l";
-              r.img = "/assets/img/decor/" + S + ".png?v1", r.countdown > 0 && s.push(r)
+        this.dbQuests.filter(d => d.key.includes("chest_")).forEach(d => {
+          const c = new Date(d.actionTo.replace(" ", "T") + "Z"),
+            r = new Date;
+          if (c < r) {
+            let o = e[Number(d.checkData) - 1] || null;
+            if (o && !this.uQuests.find(g => g.key === d.key)) {
+              d.x = Math.round(o.x * this.k), d.y = Math.round(o.y * this.k);
+              const g = d.dateEnd.replace(" ", "T") + "Z",
+                v = new Date(g);
+              d.countdown = v - r;
+              const A = d.key.includes("chest_s") ? "chest_s" : d.key.includes("chest_m") ? "chest_m" : "chest_l";
+              d.img = "/assets/img/decor/" + A + ".png?v1", d.countdown > 0 && s.push(d)
             }
           }
         }), this.chests = s
@@ -661,7 +666,7 @@ const ne = M(K, [
       upgradePopup(e) {
         this.openPoint = e, this.isUpgradePopupShow = !0
       },
-      async buy(e, s, r = !1) {
+      async buy(e, s, d = !1) {
         if (s > this.uHero.coins) {
           this.stores.state.setLackOfCoin(s - this.uHero.coins), this.stores.state.setIsShowTopUp(!0);
           return
@@ -677,7 +682,7 @@ const ne = M(K, [
         } catch (c) {
           this._catchError(c)
         }
-        r && (this.isBuyPopupShow = !1, this.isUpgradePopupShow = !1), this.isBuyLoading = !1
+        d && (this.isBuyPopupShow = !1, this.isUpgradePopupShow = !1), this.isBuyLoading = !1
       },
       async changeLocation() {
         const e = this.priceChangeLocation;
@@ -724,11 +729,11 @@ const ne = M(K, [
     class: "container center"
   },
   ye = ["src"],
-  ge = {
+  me = {
     key: 1,
     class: "flexCenter"
   },
-  me = {
+  ge = {
     style: {
       "font-size": "3em",
       "font-weight": "800"
@@ -764,10 +769,10 @@ const ne = M(K, [
   be = {
     class: "desc"
   },
-  Ce = {
+  Se = {
     class: "title"
   },
-  Se = {
+  Ce = {
     style: {
       "font-size": "0.8em"
     }
@@ -780,11 +785,11 @@ const ne = M(K, [
       "font-size": "0.7em"
     }
   },
-  Le = {
+  Ee = {
     key: 1,
     class: "container"
   },
-  Ee = {
+  Le = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
@@ -797,10 +802,10 @@ const ne = M(K, [
   Fe = {
     class: "desc"
   },
-  Me = {
+  De = {
     class: "title"
   },
-  De = {
+  Me = {
     style: {
       "font-size": "0.8em"
     }
@@ -817,14 +822,14 @@ const ne = M(K, [
     key: 2,
     class: "container"
   },
-  xe = {
+  He = {
     key: 3,
     class: "container",
     style: {
       filter: "grayscale(1)"
     }
   },
-  He = {
+  xe = {
     class: "title panelBrown",
     style: {
       "font-size": "2.5em",
@@ -961,7 +966,7 @@ const ne = M(K, [
   ys = {
     class: "flyBtnCont"
   },
-  gs = {
+  ms = {
     key: 0,
     style: {
       "font-weight": "800",
@@ -969,7 +974,7 @@ const ne = M(K, [
       color: "#daae7d"
     }
   },
-  ms = {
+  gs = {
     key: 1,
     class: "flyBtnIcon",
     style: {
@@ -1005,29 +1010,53 @@ const ne = M(K, [
   },
   bs = {
     class: "flyBtnTitle nowrap"
+  },
+  Ss = {
+    class: "container"
+  },
+  Cs = {
+    class: "flexCenter"
+  },
+  Bs = ["src"],
+  _s = {
+    class: "desc"
+  },
+  Es = {
+    class: "title"
+  },
+  Ls = {
+    style: {
+      "font-size": "1.5em"
+    }
+  },
+  Ts = {
+    key: 0
+  },
+  Fs = {
+    key: 1
   };
 
-function Cs(e, s, r, c, d, o) {
+function Ds(e, s, d, c, r, o) {
   var F;
   const g = y("top-bar"),
-    f = y("van-badge"),
-    S = y("van-count-down"),
-    L = y("van-loading"),
-    v = y("van-popup"),
-    k = y("van-button"),
+    v = y("van-badge"),
+    A = y("van-count-down"),
+    E = y("van-loading"),
+    f = y("van-popup"),
+    S = y("van-button"),
     w = y("alliance-g"),
     T = y("boost-g"),
-    D = y("feed-g");
+    M = y("feed-g");
   return l(), a("div", null, [h(g, {
     onOpenFeedDetails: o.openFeedDetails
   }, null, 8, ["onOpenFeedDetails"]), t("div", {
     class: "globalMap",
     style: B({
-      height: Math.round(d.map.h * o.k) + "px"
+      height: Math.round(r.map.h * o.k) + "px"
     }),
     onPointerdown: s[0] || (s[0] = (...n) => o.mapClick && o.mapClick(...n)),
     id: "globalMap"
-  }, [(l(!0), a(m, null, C(o.extPoints, n => (l(), a("div", {
+  }, [(l(!0), a(m, null, b(o.extPoints, n => (l(), a("div", {
     key: n.position,
     class: "point",
     style: B({
@@ -1041,7 +1070,7 @@ function Cs(e, s, r, c, d, o) {
     style: B({
       width: Math.round(220 * o.k) + "px"
     })
-  }, null, 12, ae), e.uFeed.isNeedFeed ? (l(), a("div", re, s[13] || (s[13] = [t("img", {
+  }, null, 12, ae), e.uFeed.isNeedFeed ? (l(), a("div", re, s[14] || (s[14] = [t("img", {
     src: ie,
     alt: "",
     style: {
@@ -1049,10 +1078,10 @@ function Cs(e, s, r, c, d, o) {
     }
   }, null, -1)]))) : (l(), a("div", {
     key: 1,
-    class: E(["level", {
-      aniLevel: d.animateAnimalKeys.includes(n.animalKey)
+    class: L(["level", {
+      aniLevel: r.animateAnimalKeys.includes(n.animalKey)
     }])
-  }, [h(f, {
+  }, [h(v, {
     dot: n.isAnimalCanBuy,
     style: {
       padding: "3px 0"
@@ -1060,15 +1089,15 @@ function Cs(e, s, r, c, d, o) {
   }, {
     default: p(() => [u(" +" + i(e._numberShort(n.animalProfit)), 1)]),
     _: 2
-  }, 1032, ["dot"]), d.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", de)) : b("", !0)], 2))])) : (l(), a("div", {
+  }, 1032, ["dot"]), r.animateAnimalKeys.includes(n.animalKey) ? (l(), a("span", de)) : C("", !0)], 2))])) : (l(), a("div", {
     key: 1,
-    class: E(["emptySlot", {
+    class: L(["emptySlot", {
       winter: n.isWinter
     }]),
     style: B({
       width: Math.round(210 * o.k) + "px"
     })
-  }, null, 6))], 4))), 128)), (l(!0), a(m, null, C(o.extPoints, n => (l(), a("div", {
+  }, null, 6))], 4))), 128)), (l(!0), a(m, null, b(o.extPoints, n => (l(), a("div", {
     key: n.position,
     class: "pointClick",
     style: B({
@@ -1076,11 +1105,11 @@ function Cs(e, s, r, c, d, o) {
       top: n.y + "px",
       width: Math.round(210 * o.k) + "px"
     }),
-    onClick: A => (n == null ? void 0 : n.animalLevel) > 0 ? o.upgradePopup(n) : o.buyPopup(n)
-  }, null, 12, ue))), 128)), (l(!0), a(m, null, C(d.chests, n => I((l(), a("div", {
+    onClick: k => (n == null ? void 0 : n.animalLevel) > 0 ? o.upgradePopup(n) : o.buyPopup(n)
+  }, null, 12, ue))), 128)), (l(!0), a(m, null, b(r.chests, n => I((l(), a("div", {
     key: n.key,
     class: "pointChest center",
-    onClick: A => o.openChest(n),
+    onClick: k => o.openChest(n),
     style: B({
       left: n.x + "px",
       top: n.y + "px",
@@ -1092,16 +1121,16 @@ function Cs(e, s, r, c, d, o) {
     style: {
       width: "100%"
     }
-  }, null, 8, pe), h(S, {
+  }, null, 8, pe), h(A, {
     time: n.countdown,
     class: "timer",
     format: "mm:ss",
-    onFinish: A => n.countdown = 0
+    onFinish: k => n.countdown = 0
   }, null, 8, ["time", "onFinish"])], 12, he)), [
-    [x, n.countdown > 0]
-  ])), 128))], 36), h(v, {
-    show: d.isShowChest,
-    "onUpdate:show": s[1] || (s[1] = n => d.isShowChest = n),
+    [H, n.countdown > 0]
+  ])), 128))], 36), h(f, {
+    show: r.isShowChest,
+    "onUpdate:show": s[1] || (s[1] = n => r.isShowChest = n),
     closeable: "",
     round: "",
     style: {
@@ -1110,21 +1139,21 @@ function Cs(e, s, r, c, d, o) {
     duration: .15
   }, {
     default: p(() => [t("div", ce, [t("h1", null, i(e.t("Congratulations! You found it.")), 1), t("img", {
-      src: d.activeChest.img,
+      src: r.activeChest.img,
       alt: "",
       style: {
         width: "100%",
         margin: "-30px 0"
       }
-    }, null, 8, ye), d.isClaimChestLoading ? (l(), _(L, {
+    }, null, 8, ye), r.isClaimChestLoading ? (l(), _(E, {
       key: 0
-    })) : (l(), a("div", ge, [t("span", me, i(e._number(d.activeChest.reward)), 1), s[14] || (s[14] = u("  ")), s[15] || (s[15] = t("span", {
+    })) : (l(), a("div", me, [t("span", ge, i(e._number(r.activeChest.reward)), 1), s[15] || (s[15] = u("  ")), s[16] || (s[16] = t("span", {
       class: "coin60"
     }, null, -1))])), t("div", fe, [t("div", null, i(e.t("Surprises may appear on the map throughout the day. Be quick to collect them!")), 1)])])]),
     _: 1
-  }, 8, ["show"]), h(v, {
-    show: d.isBuyPopupShow,
-    "onUpdate:show": s[2] || (s[2] = n => d.isBuyPopupShow = n),
+  }, 8, ["show"]), h(f, {
+    show: r.isBuyPopupShow,
+    "onUpdate:show": s[2] || (s[2] = n => r.isBuyPopupShow = n),
     position: "bottom",
     round: "",
     closeable: "",
@@ -1135,7 +1164,7 @@ function Cs(e, s, r, c, d, o) {
     },
     duration: .15
   }, {
-    default: p(() => [t("div", ve, "#" + i(d.openPoint.position), 1), o.availableForBuySpecial.length > 0 ? (l(), a("div", we, [t("div", Ae, i(e.t("Special Time Offer")), 1), (l(!0), a(m, null, C(o.availableForBuySpecial, n => (l(), a("div", {
+    default: p(() => [t("div", ve, "#" + i(r.openPoint.position), 1), o.availableForBuySpecial.length > 0 ? (l(), a("div", we, [t("div", Ae, i(e.t("Special Time Offer")), 1), (l(!0), a(m, null, b(o.availableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1144,19 +1173,19 @@ function Cs(e, s, r, c, d, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, ke)]), t("div", be, [t("div", Ce, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[16] || (s[16] = t("span", {
+    }, null, 8, ke)]), t("div", be, [t("div", Se, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[17] || (s[17] = t("span", {
       class: "tph24"
-    }, null, -1)), s[17] || (s[17] = u()), t("span", Se, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
+    }, null, -1)), s[18] || (s[18] = u()), t("span", Ce, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(S, {
       round: "",
       type: "success",
-      onClick: A => o.buy(n.key, n.level1data.price, !0),
-      loading: d.isBuyLoading
+      onClick: k => o.buy(n.key, n.level1data.price, !0),
+      loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Be, [t("span", _e, i(e.t("Buy animal")), 1), s[18] || (s[18] = u()), s[19] || (s[19] = t("br", null, null, -1)), s[20] || (s[20] = t("span", {
+      default: p(() => [t("div", Be, [t("span", _e, i(e.t("Buy animal")), 1), s[19] || (s[19] = u()), s[20] || (s[20] = t("br", null, null, -1)), s[21] || (s[21] = t("span", {
         class: "coin25"
       }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"]), h(S, {
+    }, 1032, ["onClick", "loading"]), h(A, {
       time: n.timeToEnd,
       class: "panelRed center",
       format: n.timeToEnd > 6e4 ? "HH:mm:ss" : "mm:ss",
@@ -1166,7 +1195,7 @@ function Cs(e, s, r, c, d, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : b("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Le, [t("div", Ee, i(e.t("Select animal")), 1), (l(!0), a(m, null, C(o.availableForBuyAnimalList, n => (l(), a("div", {
+    }, null, 8, ["time", "format", "onFinish"])])]))), 128))])) : C("", !0), o.availableForBuyAnimalList.length > 0 ? (l(), a("div", Ee, [t("div", Le, i(e.t("Select animal")), 1), (l(!0), a(m, null, b(o.availableForBuyAnimalList, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1175,26 +1204,26 @@ function Cs(e, s, r, c, d, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, Te)]), t("div", Fe, [t("div", Me, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[21] || (s[21] = t("span", {
+    }, null, 8, Te)]), t("div", Fe, [t("div", De, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[22] || (s[22] = t("span", {
       class: "tph24"
-    }, null, -1)), s[22] || (s[22] = u()), t("span", De, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(k, {
+    }, null, -1)), s[23] || (s[23] = u()), t("span", Me, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [h(S, {
       round: "",
       type: "success",
-      onClick: A => o.buy(n.key, n.level1data.price, !0),
-      loading: d.isBuyLoading
+      onClick: k => o.buy(n.key, n.level1data.price, !0),
+      loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Ne, [t("span", Pe, i(e.t("Buy animal")), 1), s[23] || (s[23] = u()), s[24] || (s[24] = t("br", null, null, -1)), s[25] || (s[25] = t("span", {
+      default: p(() => [t("div", Ne, [t("span", Pe, i(e.t("Buy animal")), 1), s[24] || (s[24] = u()), s[25] || (s[25] = t("br", null, null, -1)), s[26] || (s[26] = t("span", {
         class: "coin25"
       }, null, -1)), u("  " + i(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(k, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, i(e.t("New animals coming soon - follow our telegram channel.")), 1), h(S, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
     }, {
       default: p(() => [u(i(e.t("Follow our channel")), 1)]),
       _: 1
-    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", xe, [t("div", He, i(e.t("Unavailable offers")), 1), (l(!0), a(m, null, C(o.notAvailableForBuySpecial, n => (l(), a("div", {
+    }, 8, ["onClick"])])), o.notAvailableForBuySpecial.length > 0 ? (l(), a("div", He, [t("div", xe, i(e.t("Unavailable offers")), 1), (l(!0), a(m, null, b(o.notAvailableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1203,9 +1232,9 @@ function Cs(e, s, r, c, d, o) {
       style: {
         width: "100px"
       }
-    }, null, 8, ze)]), t("div", Ke, [t("div", Oe, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[26] || (s[26] = t("span", {
+    }, null, 8, ze)]), t("div", Ke, [t("div", Oe, i(n.title), 1), t("div", null, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[27] || (s[27] = t("span", {
       class: "tph24"
-    }, null, -1)), s[27] || (s[27] = u()), t("span", Ue, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", We, [u(i(e.t("Sales start in")) + " ", 1), h(S, {
+    }, null, -1)), s[28] || (s[28] = u()), t("span", Ue, i(e.t("Tokens per Hour")), 1)])]), t("div", null, [n.timeToStart > 0 ? (l(), a("div", We, [u(i(e.t("Sales start in")) + " ", 1), h(A, {
       time: n.timeToStart,
       format: n.timeToStart > 6e4 ? "HH:mm:ss" : "mm:ss",
       onFinish: o.calcUnboughtAnimals,
@@ -1214,11 +1243,11 @@ function Cs(e, s, r, c, d, o) {
         "margin-top": "5px",
         "font-weight": "700"
       }
-    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Ye, i(e.t("Missed offer")), 1))])]))), 128))])) : b("", !0)]),
+    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Ye, i(e.t("Missed offer")), 1))])]))), 128))])) : C("", !0)]),
     _: 1
-  }, 8, ["show"]), h(v, {
-    show: d.isUpgradePopupShow,
-    "onUpdate:show": s[6] || (s[6] = n => d.isUpgradePopupShow = n),
+  }, 8, ["show"]), h(f, {
+    show: r.isUpgradePopupShow,
+    "onUpdate:show": s[6] || (s[6] = n => r.isUpgradePopupShow = n),
     position: "bottom",
     closeable: "",
     round: "",
@@ -1237,7 +1266,7 @@ function Cs(e, s, r, c, d, o) {
         display: "inline-block"
       },
       onClick: s[3] || (s[3] = (...n) => o.showChangeLocation && o.showChangeLocation(...n))
-    }, [h(f, {
+    }, [h(v, {
       dot: !e._isOnboardingComplete(e.onBoard.changeLocation)
     }, {
       default: p(() => [t("span", Ge, i(e.t("Change location")), 1)]),
@@ -1255,52 +1284,52 @@ function Cs(e, s, r, c, d, o) {
       }])
     }, null, 12, Xe)]), t("div", Re, [t("div", je, [t("div", Je, i(o.openAnimal.title), 1)]), t("div", null, [t("div", Ze, i(e.t("Level")) + " " + i(o.openAnimal.currentLevelData.level), 1), t("div", null, [u(i(e.t("Current {TOKEN_NAME} per hour:", {
       TOKEN_NAME: e.TOKEN_NAME
-    })) + " ", 1), s[28] || (s[28] = t("span", {
-      class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", qe, i(e.t("This is the maximum level.")), 1)) : b("", !0), o.openAnimal.isMaxLevel ? b("", !0) : (l(), a("div", Ve, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
-      TOKEN_NAME: e.TOKEN_NAME
     })) + " ", 1), s[29] || (s[29] = t("span", {
       class: "tph24"
-    }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", $e, [t("div", es, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[30] || (s[30] = t("br", null, null, -1)), s[31] || (s[31] = t("span", {
+    }, null, -1)), u(i(e._number(o.openAnimal.currentLevelData.profit)), 1)]), o.openAnimal.isMaxLevel ? (l(), a("div", qe, i(e.t("This is the maximum level.")), 1)) : C("", !0), o.openAnimal.isMaxLevel ? C("", !0) : (l(), a("div", Ve, [t("div", null, [u(i(e.t("Next level {TOKEN_NAME} per hour:", {
+      TOKEN_NAME: e.TOKEN_NAME
+    })) + " ", 1), s[30] || (s[30] = t("span", {
+      class: "tph24"
+    }, null, -1)), u(i(e._number(o.openAnimal.nextLevelData.profit)), 1)]), t("div", $e, [t("div", es, [u(i(e.t("Increase at the next level: ")) + " ", 1), s[31] || (s[31] = t("br", null, null, -1)), s[32] || (s[32] = t("span", {
       class: "tph50"
-    }, null, -1)), t("span", ss, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(k, {
+    }, null, -1)), t("span", ss, "+" + i(e._number(o.openAnimal.nextLevelData.profit - o.openAnimal.currentLevelData.profit)), 1)]), h(S, {
       type: "success",
       size: "large",
       onClick: s[4] || (s[4] = n => o.buy(o.openAnimal.key, o.openAnimal.nextLevelData.price)),
-      loading: d.isBuyLoading,
+      loading: r.isBuyLoading,
       style: {
         "margin-top": "15px"
       }
     }, {
-      default: p(() => [h(f, {
+      default: p(() => [h(v, {
         dot: o.openAnimal.nextLevelData.price <= e.uHero.coins
       }, {
-        default: p(() => [t("div", ts, [u(i(e.t("Level up ")) + "  ", 1), s[32] || (s[32] = t("span", {
+        default: p(() => [t("div", ts, [u(i(e.t("Level up ")) + "  ", 1), s[33] || (s[33] = t("span", {
           class: "coin33"
         }, null, -1)), u("  " + i(e._number(o.openAnimal.nextLevelData.price)), 1)])]),
         _: 1
       }, 8, ["dot"])]),
       _: 1
-    }, 8, ["loading"])])]))])]), h(v, {
-      show: d.isShowChangeLocation,
-      "onUpdate:show": s[5] || (s[5] = n => d.isShowChangeLocation = n),
+    }, 8, ["loading"])])]))])]), h(f, {
+      show: r.isShowChangeLocation,
+      "onUpdate:show": s[5] || (s[5] = n => r.isShowChangeLocation = n),
       closeable: "",
       round: ""
     }, {
       default: p(() => [t("div", ns, [t("h2", null, i(e.t("Change location for {animalTitle}", {
         animalTitle: o.openAnimal.title
-      })), 1), o.freePoints.length > 0 ? (l(), a("div", is, [t("div", os, [(l(!0), a(m, null, C(o.freePoints, n => (l(), a("div", {
-        class: E(["freePoint clicked flexCenter", {
-          active: d.newLocation === n
+      })), 1), o.freePoints.length > 0 ? (l(), a("div", is, [t("div", os, [(l(!0), a(m, null, b(o.freePoints, n => (l(), a("div", {
+        class: L(["freePoint clicked flexCenter", {
+          active: r.newLocation === n
         }]),
-        onClick: A => d.newLocation = n
-      }, i(n), 11, ls))), 256))]), s[34] || (s[34] = t("br", null, null, -1)), h(k, {
+        onClick: k => r.newLocation = n
+      }, i(n), 11, ls))), 256))]), s[35] || (s[35] = t("br", null, null, -1)), h(S, {
         type: "success",
         size: "large",
         onClick: o.changeLocation,
-        loading: d.isChangeLocationLoading
+        loading: r.isChangeLocationLoading
       }, {
-        default: p(() => [u(i(e.t("Change")) + " " + i(e._number(o.priceChangeLocation)) + " ", 1), s[33] || (s[33] = t("span", {
+        default: p(() => [u(i(e.t("Change")) + " " + i(e._number(o.priceChangeLocation)) + " ", 1), s[34] || (s[34] = t("span", {
           class: "coin25"
         }, null, -1))]),
         _: 1
@@ -1308,15 +1337,15 @@ function Cs(e, s, r, c, d, o) {
       _: 1
     }, 8, ["show"])]),
     _: 1
-  }, 8, ["show"]), t("div", ds, [h(f, {
+  }, 8, ["show"]), t("div", ds, [h(v, {
     dot: !e.uAlliance.id
   }, {
     default: p(() => [t("div", {
       class: "flyBtn",
-      onClick: s[7] || (s[7] = n => d.isShowAlliance = !0)
+      onClick: s[7] || (s[7] = n => r.isShowAlliance = !0)
     }, [t("div", us, [e.uAlliance.id ? (l(), a("span", hs, "+" + i(e.dbAllianceByLevel[e.uAlliance.level].bonus) + "%", 1)) : (l(), a("div", ps))]), t("div", cs, i(e.t("Alliance")), 1)])]),
     _: 1
-  }, 8, ["dot"]), e.uHero.tph > 0 ? (l(), _(f, {
+  }, 8, ["dot"]), e.uHero.tph > 0 ? (l(), _(v, {
     key: 0,
     dot: !((F = e.uHero) != null && F.boostPercent)
   }, {
@@ -1324,29 +1353,29 @@ function Cs(e, s, r, c, d, o) {
       var n;
       return [t("div", {
         class: "flyBtn",
-        onClick: s[8] || (s[8] = A => d.isShowBoost = !0)
-      }, [t("div", ys, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", gs, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", ms))]), t("div", fs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
+        onClick: s[8] || (s[8] = k => r.isShowBoost = !0)
+      }, [t("div", ys, [((n = e.uHero) == null ? void 0 : n.boostPercent) > 0 ? (l(), a("span", ms, "+" + i(e.uHero.boostPercent) + "%", 1)) : (l(), a("div", gs))]), t("div", fs, i(e.uHero.boostShortDateStr ? e.uHero.boostShortDateStr : e.t("Boost")), 1)])]
     }),
     _: 1
-  }, 8, ["dot"])) : b("", !0), e.uHero.tph > 0 ? (l(), _(f, {
+  }, 8, ["dot"])) : C("", !0), e.uHero.tph > 0 ? (l(), _(v, {
     key: 1,
     dot: !e.uFeed.autoFeedEndDateStr && e.uHero.tph > 300
   }, {
     default: p(() => {
-      var n, A;
+      var n, k;
       return [t("div", {
         class: "flyBtn",
-        onClick: s[9] || (s[9] = Ss => d.isShowFeed = !0)
-      }, [t("div", vs, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", ws)) : (A = e.uFeed) != null && A.autoFeedEndDateStr ? (l(), a("div", As)) : (l(), a("div", ks))]), t("div", bs, [e.uFeed.isNeedFeed ? (l(), a(m, {
+        onClick: s[9] || (s[9] = Ms => r.isShowFeed = !0)
+      }, [t("div", vs, [(n = e.uFeed) != null && n.isNeedFeed ? (l(), a("div", ws)) : (k = e.uFeed) != null && k.autoFeedEndDateStr ? (l(), a("div", As)) : (l(), a("div", ks))]), t("div", bs, [e.uFeed.isNeedFeed ? (l(), a(m, {
         key: 0
       }, [u(i(e.t("HUNGER")), 1)], 64)) : (l(), a(m, {
         key: 1
       }, [u(i(e.uFeed.autoFeedEndDateStr ? e.uFeed.autoFeedEndDateStr : e.t("Feeding")), 1)], 64))])])]
     }),
     _: 1
-  }, 8, ["dot"])) : b("", !0)]), h(v, {
-    show: d.isShowAlliance,
-    "onUpdate:show": s[10] || (s[10] = n => d.isShowAlliance = n),
+  }, 8, ["dot"])) : C("", !0)]), h(f, {
+    show: r.isShowAlliance,
+    "onUpdate:show": s[10] || (s[10] = n => r.isShowAlliance = n),
     position: "right",
     closeable: "",
     round: "",
@@ -1357,9 +1386,9 @@ function Cs(e, s, r, c, d, o) {
   }, {
     default: p(() => [h(w)]),
     _: 1
-  }, 8, ["show"]), h(v, {
-    show: d.isShowBoost,
-    "onUpdate:show": s[11] || (s[11] = n => d.isShowBoost = n),
+  }, 8, ["show"]), h(f, {
+    show: r.isShowBoost,
+    "onUpdate:show": s[11] || (s[11] = n => r.isShowBoost = n),
     position: "right",
     closeable: "",
     round: "",
@@ -1370,9 +1399,9 @@ function Cs(e, s, r, c, d, o) {
   }, {
     default: p(() => [h(T)]),
     _: 1
-  }, 8, ["show"]), h(v, {
-    show: d.isShowFeed,
-    "onUpdate:show": s[12] || (s[12] = n => d.isShowFeed = n),
+  }, 8, ["show"]), h(f, {
+    show: r.isShowFeed,
+    "onUpdate:show": s[12] || (s[12] = n => r.isShowFeed = n),
     position: "right",
     closeable: "",
     round: "",
@@ -1381,15 +1410,60 @@ function Cs(e, s, r, c, d, o) {
     },
     duration: .15
   }, {
-    default: p(() => [h(D)]),
+    default: p(() => [h(M)]),
+    _: 1
+  }, 8, ["show"]), h(f, {
+    show: r.isShowSpecialPromo,
+    "onUpdate:show": s[13] || (s[13] = n => r.isShowSpecialPromo = n),
+    closeable: "",
+    round: "",
+    style: {
+      width: "90%"
+    },
+    duration: .15
+  }, {
+    default: p(() => [t("div", Ss, [t("h1", null, i(e.t("Special offer")), 1), t("p", null, i(e.t("Don't miss out on great deals with high yields!")), 1), t("div", Cs, [(l(!0), a(m, null, b(o.availableAndWillForBuySpecial, n => (l(), a("div", {
+      key: n.key,
+      class: "center",
+      style: {
+        "min-width": "50%"
+      }
+    }, [t("div", null, [t("img", {
+      src: "/assets/img/animals/" + n.key + ".png",
+      alt: "",
+      style: {
+        width: "100px"
+      }
+    }, null, 8, Bs)]), t("div", _s, [t("div", Es, i(n.title), 1), t("div", Ls, [u("+" + i(e._number(n.level1data.profit)) + " ", 1), s[36] || (s[36] = t("span", {
+      class: "tph24"
+    }, null, -1))])]), n.timeToStart > 0 ? (l(), a("div", Ts, [u(i(e.t("Sales start in")) + " ", 1), h(A, {
+      time: n.timeToStart,
+      format: n.timeToStart > 6e4 ? "HH:mm:ss" : "mm:ss",
+      onFinish: o.calcUnboughtAnimals,
+      class: "center",
+      style: {
+        "margin-top": "5px",
+        "font-weight": "700"
+      }
+    }, null, 8, ["time", "format", "onFinish"])])) : (l(), a("div", Fs, [u(i(e.t("Time left")) + " ", 1), h(A, {
+      time: n.timeToEnd,
+      class: "panelRed center",
+      format: n.timeToEnd > 6e4 ? "HH:mm:ss" : "mm:ss",
+      onFinish: o.calcUnboughtAnimals,
+      style: {
+        "font-size": "1.5em",
+        "margin-top": "5px",
+        "font-weight": "700"
+      }
+    }, null, 8, ["time", "format", "onFinish"])]))]))), 128))])])]),
     _: 1
   }, 8, ["show"])])
 }
-const Es = M(oe, [
-  ["render", Cs],
-  ["__scopeId", "data-v-2a298b9a"]
+const Hs = D(oe, [
+  ["render", Ds],
+  ["__scopeId", "data-v-51e9ca8f"]
 ]);
 export {
-  Es as
+  Hs as
   default
 };
