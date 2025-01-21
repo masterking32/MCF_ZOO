@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-Dkni-rnw.js", "assets/Alliance-Dr7oNi2O.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-BVJSx8_h.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Cl5vbEmT.css", "assets/Rating-o-qPQODq.js", "assets/Rating-DRysk5eI.css", "assets/Communities-C8J7x3Sf.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-DiIy-wXF.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DD_NLWQA.js", "assets/Alliance-Dmae7ZUK.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-0IUtMfIN.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Cl5vbEmT.css", "assets/Rating-pZG_u2Lw.js", "assets/Rating-DRysk5eI.css", "assets/Communities-BypJdgU1.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-D68wlr9x.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -21238,9 +21238,9 @@ const xm = pt(vE, [
 function YE(e, t, n, o, s, a) {
   const l = ve("ton-wallet"),
     r = ve("van-icon");
-  return V(), G("div", SE, [t[6] || (t[6] = x("h1", {
+  return V(), G("div", SE, [t[9] || (t[9] = x("h1", {
     class: "aniH1"
-  }, "Airdrop", -1)), x("div", TE, [x("div", xE, [x("span", null, $(e.t("Mining phase ends in:")), 1)]), x("div", AE, $(s.countdown), 1)]), t[7] || (t[7] = x("br", null, null, -1)), x("div", null, [x("div", EE, $(e.t("Task for participating in {Airdrop}:")), 1), x("div", null, [x("ol", IE, [x("li", PE, [he($(e.t("1. Connect a wallet:")) + " ", 1), x("div", null, [h(l, {
+  }, "Airdrop", -1)), x("div", TE, [x("div", xE, [x("span", null, $(e.t("Mining phase ends in:")), 1)]), x("div", AE, $(s.countdown), 1)]), t[10] || (t[10] = x("br", null, null, -1)), x("div", null, [x("div", EE, $(e.t("Task for participating in {Airdrop}:")), 1), x("div", null, [x("ol", IE, [x("li", PE, [he($(e.t("1. Connect a wallet:")) + " ", 1), x("div", null, [h(l, {
     loading: s.firstLoading,
     onWalletConnectHandler: a.tonConnectStatusHandler,
     "saved-wallet": s.connectedWallet,
@@ -21256,31 +21256,31 @@ function YE(e, t, n, o, s, a) {
     "saved-wallet": s.connectedWallet,
     onPaid: a.handlePaid,
     loading: s.transactionLoading
-  }, null, 8, ["transaction-value", "saved-wallet", "onPaid", "loading"]), s.transactionLoading ? Ce("", !0) : (V(), G("span", LE, " *" + $(e.t("If you have already sent a transaction, go to the quest and click «Check Action» there.")), 1))])), s.transactionLoading ? (V(), G("span", NE, $(e.t("Waiting blockchain, it could take few minutes...")), 1)) : Ce("", !0)]))])) : (V(), G("span", FE, $(e.t("Please connect your wallet first.")), 1))])])])])]), x("div", zE, [x("p", VE, $(e.t("How to earn more $ZOO?")), 1), x("ul", HE, [x("li", UE, [he($(e.t("— Join ")) + " ", 1), x("span", {
+  }, null, 8, ["transaction-value", "saved-wallet", "onPaid", "loading"]), s.transactionLoading ? Ce("", !0) : (V(), G("span", LE, " *" + $(e.t("If you have already sent a transaction, go to the quest and click «Check Action» there.")), 1))])), s.transactionLoading ? (V(), G("span", NE, $(e.t("Waiting blockchain, it could take few minutes...")), 1)) : Ce("", !0)]))])) : (V(), G("span", FE, $(e.t("Please connect your wallet first.")), 1))])])])])]), x("div", zE, [x("p", VE, $(e.t("How to earn more $ZOO?")), 1), x("ul", HE, [x("li", UE, [t[3] || (t[3] = he(" — ")), x("span", {
     onClick: t[0] || (t[0] = (...c) => a.openAlliancePopup && a.openAlliancePopup(...c)),
     style: {
       cursor: "pointer",
       "text-decoration": "underline"
     }
-  }, $(e.t("alliances")), 1), t[3] || (t[3] = he(". "))]), x("li", WE, [he($(e.t("— Purchase a ")) + " ", 1), x("span", {
+  }, $(e.t("Join alliances")), 1), t[4] || (t[4] = he(". "))]), x("li", WE, [t[5] || (t[5] = he(" — ")), x("span", {
     onClick: t[1] || (t[1] = (...c) => a.openBoostPopup && a.openBoostPopup(...c)),
     style: {
       cursor: "pointer",
       "text-decoration": "underline"
     }
-  }, $(e.t("boost")), 1), t[4] || (t[4] = he(". "))]), x("li", jE, [he($(e.t("— Get Automatic ")) + " ", 1), x("span", {
+  }, $(e.t("Purchase a boost")), 1), t[6] || (t[6] = he(". "))]), x("li", jE, [t[7] || (t[7] = he(" — ")), x("span", {
     onClick: t[2] || (t[2] = (...c) => a.openFeedPopup && a.openFeedPopup(...c)),
     style: {
       cursor: "pointer",
       "text-decoration": "underline"
     }
-  }, $(e.t("Animal Feeding")), 1), t[5] || (t[5] = he(". "))]), x("li", QE, $(e.t("— Buy animals and participate in drops for the most profitable enclosures.")), 1), x("li", null, $(e.t("— Complete quests and invite friends to earn more Animal Feed and enhance your zoo.")), 1)])]), x("div", KE, [x("p", null, $(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), x("p", null, $(e.t("We are currently in the mining phase where all players earn more {TOKEN_NAME} for the {airdrop}.", {
+  }, $(e.t("Get Automatic Animal Feeding")), 1), t[8] || (t[8] = he(". "))]), x("li", QE, $(e.t("— Buy animals and participate in drops for the most profitable enclosures.")), 1), x("li", null, $(e.t("— Complete quests and invite friends to earn more Animal Feed and enhance your zoo.")), 1)])]), x("div", KE, [x("p", null, $(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), x("p", null, $(e.t("We are currently in the mining phase where all players earn more {TOKEN_NAME} for the {airdrop}.", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), x("p", null, $(e.t("The date and conditions for receiving the {Airdrop} will be announced soon in our telegram channel.")), 1)])])
 }
 const Am = pt(kE, [
     ["render", YE],
-    ["__scopeId", "data-v-b10bba41"]
+    ["__scopeId", "data-v-3bb4ccfc"]
   ]),
   qE = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -24000,37 +24000,37 @@ const ia = vO({
     history: QP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-Dkni-rnw.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DD_NLWQA.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-Dkni-rnw.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DD_NLWQA.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => qE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-FOG3ovX-.js"), [])
+      component: () => It(() => import("./Terms-CO_YEPMx.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => _E), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-o-qPQODq.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-pZG_u2Lw.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => gI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-C8J7x3Sf.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-BypJdgU1.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-Dr7oNi2O.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-Dmae7ZUK.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-BVJSx8_h.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-0IUtMfIN.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-yAoWfTaW.js"), [])
+      component: () => It(() => import("./Support-DUgcW9SN.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -24039,7 +24039,7 @@ const ia = vO({
       component: () => It(() => Promise.resolve().then(() => AI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-DiIy-wXF.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-D68wlr9x.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   pO = {
