@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-e8XAz2wj.js", "assets/Alliance-r2t9CJNf.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-BTs1g80U.js", "assets/Boost-CeTnVcsX.css", "assets/Home-_dI_eWBS.css", "assets/Rating-BqFkmafq.js", "assets/Rating-DRysk5eI.css", "assets/Communities-CzJ8k4nX.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BOivVJsY.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DrDLWv3u.js", "assets/Alliance-Ce7sOlgu.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-BBHNA7JW.js", "assets/Boost-CeTnVcsX.css", "assets/Home-_dI_eWBS.css", "assets/Rating-BrJPpthv.js", "assets/Rating-DRysk5eI.css", "assets/Communities-CjOKjKoW.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-C1n691NI.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -22657,7 +22657,7 @@ function vP(e, t, n, o, s, a) {
 }
 const yP = pt(rP, [
   ["render", vP],
-  ["__scopeId", "data-v-64cad66d"]
+  ["__scopeId", "data-v-e40f7912"]
 ]);
 /*!
  * vue-router v4.4.5
@@ -24055,37 +24055,37 @@ const ia = pO({
     history: YP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-e8XAz2wj.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DrDLWv3u.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-e8XAz2wj.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DrDLWv3u.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => qE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-De2L_Kr_.js"), [])
+      component: () => It(() => import("./Terms-D8dkG36W.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => _E), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-BqFkmafq.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-BrJPpthv.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => gI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-CzJ8k4nX.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-CjOKjKoW.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-r2t9CJNf.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-Ce7sOlgu.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-BTs1g80U.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-BBHNA7JW.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-8DDqDE9-.js"), [])
+      component: () => It(() => import("./Support-DGSudIAl.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -24094,7 +24094,7 @@ const ia = pO({
       component: () => It(() => Promise.resolve().then(() => AI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-BOivVJsY.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-C1n691NI.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   wO = {
