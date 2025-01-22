@@ -15,7 +15,7 @@ import {
   F as S,
   r as D,
   f as L
-} from "./index-DqDqX7ZU.js";
+} from "./index-DFThG6bh.js";
 const B = {
     components: {
       LuckyHoursInform: k
