@@ -8,7 +8,7 @@ import {
   g as u,
   o as h,
   d as r
-} from "./index-BeKRa2Y1.js";
+} from "./index-DqDqX7ZU.js";
 const N = {
     name: "Support-o",
     components: {},
