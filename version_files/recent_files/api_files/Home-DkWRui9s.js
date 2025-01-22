@@ -19,9 +19,9 @@ import {
   h as T,
   i as H,
   v as x
-} from "./index-DFThG6bh.js";
-import z from "./Alliance-DkV0nJNu.js";
-import U from "./Boost-CagvKDdC.js";
+} from "./index-BjPbDHAj.js";
+import z from "./Alliance-Bf_AjBPC.js";
+import U from "./Boost-rlHwCiPA.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -254,7 +254,7 @@ const oe = M(K, [
             break
         }
         this.tick % r === 0 && (this.animateAnimalKeys.push(d.key), this.animateAnimalKeys.length > c && this.animateAnimalKeys.shift())
-      }).bind(this), 500), this.calcChests(), setInterval((function() {
+      }).bind(this), 500), setInterval((function() {
         this.calcChests()
       }).bind(this), 5e3), this.isShowSpecialPromo = ((e = this.availableAndWillForBuySpecial) == null ? void 0 : e.length) > 0
     },
@@ -1471,7 +1471,7 @@ function Ms(e, s, d, c, r, i) {
 }
 const xs = M(le, [
   ["render", Ms],
-  ["__scopeId", "data-v-a45111c0"]
+  ["__scopeId", "data-v-20e12fc8"]
 ]);
 export {
   xs as

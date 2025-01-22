@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-CZlHg637.js", "assets/Alliance-DkV0nJNu.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CagvKDdC.js", "assets/Boost-CeTnVcsX.css", "assets/Home-Cl5vbEmT.css", "assets/Rating-CVf1DKVC.js", "assets/Rating-DRysk5eI.css", "assets/Communities-m4tx8dPN.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-JeUW9_PX.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DkWRui9s.js", "assets/Alliance-Bf_AjBPC.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-rlHwCiPA.js", "assets/Boost-CeTnVcsX.css", "assets/Home-_dI_eWBS.css", "assets/Rating-BNkDCS4S.js", "assets/Rating-DRysk5eI.css", "assets/Communities-DcE1Rwbr.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-CCDBoBD0.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -24055,37 +24055,37 @@ const ia = p5({
     history: YP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-CZlHg637.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DkWRui9s.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-CZlHg637.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-DkWRui9s.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => qE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-B9jBYrFX.js"), [])
+      component: () => It(() => import("./Terms-a20ns11u.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => _E), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-CVf1DKVC.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-BNkDCS4S.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => gI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-m4tx8dPN.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-DcE1Rwbr.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-DkV0nJNu.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-Bf_AjBPC.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-CagvKDdC.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-rlHwCiPA.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-BoK4o_y2.js"), [])
+      component: () => It(() => import("./Support-rX5fsIwP.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -24094,7 +24094,7 @@ const ia = p5({
       component: () => It(() => Promise.resolve().then(() => AI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-JeUW9_PX.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-CCDBoBD0.js"), __vite__mapDeps([10, 11]))
     }]
   }),
   w5 = {
