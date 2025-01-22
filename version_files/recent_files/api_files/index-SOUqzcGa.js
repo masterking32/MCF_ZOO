@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DkWRui9s.js", "assets/Alliance-Bf_AjBPC.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-rlHwCiPA.js", "assets/Boost-CeTnVcsX.css", "assets/Home-_dI_eWBS.css", "assets/Rating-BNkDCS4S.js", "assets/Rating-DRysk5eI.css", "assets/Communities-DcE1Rwbr.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-CCDBoBD0.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-e8XAz2wj.js", "assets/Alliance-r2t9CJNf.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-BTs1g80U.js", "assets/Boost-CeTnVcsX.css", "assets/Home-_dI_eWBS.css", "assets/Rating-BqFkmafq.js", "assets/Rating-DRysk5eI.css", "assets/Communities-CzJ8k4nX.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BOivVJsY.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -22378,7 +22378,7 @@ const aP = pt(nP, [
             }
           }
         }
-        window.tonConnectUI = async function() {
+        this.isShowFriendsTask = !this._isOnboardingComplete(this.onBoard.friendTaskPopup2), window.tonConnectUI = async function() {
           return this._tonConnectUI ? this._tonConnectUI : await lP.runExclusive(async () => {
             if (this._tonConnectUI) return this._tonConnectUI;
             const {
@@ -22657,7 +22657,7 @@ function vP(e, t, n, o, s, a) {
 }
 const yP = pt(rP, [
   ["render", vP],
-  ["__scopeId", "data-v-acc7f25c"]
+  ["__scopeId", "data-v-64cad66d"]
 ]);
 /*!
  * vue-router v4.4.5
@@ -23188,18 +23188,18 @@ function nd(e) {
   const t = e[e.length - 1];
   return e.length > 0 && t[t.length - 1] < 0
 }
-const e5 = {
+const eO = {
     type: 0,
     value: ""
   },
-  t5 = /[a-zA-Z0-9_]/;
+  tO = /[a-zA-Z0-9_]/;
 
-function n5(e) {
+function nO(e) {
   if (!e) return [
     []
   ];
   if (e === "/") return [
-    [e5]
+    [eO]
   ];
   if (!e.startsWith("/")) throw new Error(`Invalid path "${e}"`);
 
@@ -23247,7 +23247,7 @@ function n5(e) {
         m(), n = o;
         break;
       case 1:
-        c === "(" ? n = 2 : t5.test(c) ? m() : (h(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
+        c === "(" ? n = 2 : tO.test(c) ? m() : (h(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
         break;
       case 2:
         c === ")" ? d[d.length - 1] == "\\" ? d = d.slice(0, -1) + c : n = 3 : d += c;
@@ -23263,8 +23263,8 @@ function n5(e) {
   return n === 2 && t(`Unfinished custom RegExp for param "${u}"`), h(), l(), s
 }
 
-function o5(e, t, n) {
-  const o = XP(n5(e.path), n),
+function oO(e, t, n) {
+  const o = XP(nO(e.path), n),
     s = Qe(o, {
       record: e,
       parent: t,
@@ -23274,7 +23274,7 @@ function o5(e, t, n) {
   return t && !s.record.aliasOf == !t.record.aliasOf && t.children.push(s), s
 }
 
-function i5(e, t) {
+function iO(e, t) {
   const n = [],
     o = new Map;
   t = ad({
@@ -23311,7 +23311,7 @@ function i5(e, t) {
           B = I[I.length - 1] === "/" ? "" : "/";
         _.path = m.record.path + (k && B + k)
       }
-      if (v = o5(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), y && h.name && !sd(v) && l(h.name)), Um(v) && c(v), p.children) {
+      if (v = oO(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), y && h.name && !sd(v) && l(h.name)), Um(v) && c(v), p.children) {
         const I = p.children;
         for (let B = 0; B < I.length; B++) a(I[B], v, g && g.children[B])
       }
@@ -23337,7 +23337,7 @@ function i5(e, t) {
   }
 
   function c(h) {
-    const m = l5(h, n);
+    const m = lO(h, n);
     n.splice(m, 0, h), h.record.name && !sd(h) && o.set(h.record.name, h)
   }
 
@@ -23365,7 +23365,7 @@ function i5(e, t) {
       path: p,
       params: y,
       matched: w,
-      meta: a5(w)
+      meta: aO(w)
     }
   }
   e.forEach(h => a(h));
@@ -23397,7 +23397,7 @@ function id(e) {
     meta: e.meta || {},
     aliasOf: e.aliasOf,
     beforeEnter: e.beforeEnter,
-    props: s5(e),
+    props: sO(e),
     children: e.children || [],
     instances: {},
     leaveGuards: new Set,
@@ -23412,7 +23412,7 @@ function id(e) {
   }), t
 }
 
-function s5(e) {
+function sO(e) {
   const t = {},
     n = e.props || !1;
   if ("component" in e) t.default = n;
@@ -23429,7 +23429,7 @@ function sd(e) {
   return !1
 }
 
-function a5(e) {
+function aO(e) {
   return e.reduce((t, n) => Qe(t, n.meta), {})
 }
 
@@ -23439,18 +23439,18 @@ function ad(e, t) {
   return n
 }
 
-function l5(e, t) {
+function lO(e, t) {
   let n = 0,
     o = t.length;
   for (; n !== o;) {
     const a = n + o >> 1;
     Hm(e, t[a]) < 0 ? o = a : n = a + 1
   }
-  const s = r5(e);
+  const s = rO(e);
   return s && (o = t.lastIndexOf(s, o - 1)), o
 }
 
-function r5(e) {
+function rO(e) {
   let t = e;
   for (; t = t.parent;)
     if (Um(t) && Hm(e, t) === 0) return t
@@ -23462,7 +23462,7 @@ function Um({
   return !!(e.name || e.components && Object.keys(e.components).length || e.redirect)
 }
 
-function c5(e) {
+function cO(e) {
   const t = {};
   if (e === "" || e === "?") return t;
   const o = (e[0] === "?" ? e.slice(1) : e).split("&");
@@ -23493,7 +23493,7 @@ function ld(e) {
   return t
 }
 
-function u5(e) {
+function uO(e) {
   const t = {};
   for (const n in e) {
     const o = e[n];
@@ -23501,7 +23501,7 @@ function u5(e) {
   }
   return t
 }
-const d5 = Symbol(""),
+const dO = Symbol(""),
   rd = Symbol(""),
   Gr = Symbol(""),
   Wm = Symbol(""),
@@ -23587,11 +23587,11 @@ function cd(e) {
       const g = ud(c[u - 2]);
       return u > 1 && ud(d) === g && h[h.length - 1].path !== g ? h.findIndex(hi.bind(null, c[u - 2])) : m
     }),
-    a = N(() => s.value > -1 && g5(n.params, o.value.params)),
+    a = N(() => s.value > -1 && gO(n.params, o.value.params)),
     l = N(() => s.value > -1 && s.value === n.matched.length - 1 && Nm(n.params, o.value.params));
 
   function r(c = {}) {
-    return m5(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
+    return mO(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
   }
   return {
     route: o,
@@ -23601,7 +23601,7 @@ function cd(e) {
     navigate: r
   }
 }
-const f5 = K({
+const fO = K({
     name: "RouterLink",
     compatConfig: {
       MODE: 3
@@ -23643,9 +23643,9 @@ const f5 = K({
       }
     }
   }),
-  h5 = f5;
+  hO = fO;
 
-function m5(e) {
+function mO(e) {
   if (!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) && !e.defaultPrevented && !(e.button !== void 0 && e.button !== 0)) {
     if (e.currentTarget && e.currentTarget.getAttribute) {
       const t = e.currentTarget.getAttribute("target");
@@ -23655,7 +23655,7 @@ function m5(e) {
   }
 }
 
-function g5(e, t) {
+function gO(e, t) {
   for (const n in t) {
     const o = t[n],
       s = e[n];
@@ -23670,7 +23670,7 @@ function ud(e) {
   return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
 const dd = (e, t, n) => e ?? t ?? n,
-  v5 = K({
+  vO = K({
     name: "RouterView",
     inheritAttrs: !1,
     props: {
@@ -23701,7 +23701,7 @@ const dd = (e, t, n) => e ?? t ?? n,
           return u
         }),
         r = N(() => s.value.matched[l.value]);
-      Bn(rd, N(() => l.value + 1)), Bn(d5, r), Bn(Gl, s);
+      Bn(rd, N(() => l.value + 1)), Bn(dO, r), Bn(Gl, s);
       const c = F();
       return re(() => [c.value, r.value, e.name], ([u, d, h], [m, g, y]) => {
         d && (d.instances[h] = u, g && g !== d && u && u === m && (d.leaveGuards.size || (d.leaveGuards = g.leaveGuards), d.updateGuards.size || (d.updateGuards = g.updateGuards))), u && d && (!g || !hi(d, g) || !m) && (d.enterCallbacks[h] || []).forEach(p => p(u))
@@ -23737,11 +23737,11 @@ function fd(e, t) {
   const n = e(t);
   return n.length === 1 ? n[0] : n
 }
-const y5 = v5;
+const yO = vO;
 
-function p5(e) {
-  const t = i5(e.routes, e),
-    n = e.parseQuery || c5,
+function pO(e) {
+  const t = iO(e.routes, e),
+    n = e.parseQuery || cO,
     o = e.stringifyQuery || ld,
     s = e.history,
     a = Di(),
@@ -23808,7 +23808,7 @@ function p5(e) {
     return Qe({
       fullPath: Le,
       hash: Se,
-      query: o === ld ? u5(E.query) : E.query || {}
+      query: o === ld ? uO(E.query) : E.query || {}
     }, oe, {
       redirectedFrom: void 0,
       href: A
@@ -23896,7 +23896,7 @@ function p5(e) {
 
   function R(E, H) {
     let U;
-    const [oe, Se, Le] = b5(E, H);
+    const [oe, Se, Le] = bO(E, H);
     U = pl(oe.reverse(), "beforeRouteLeave", E, H);
     for (const O of oe) O.leaveGuards.forEach(L => {
       U.push(io(L, E, H))
@@ -24015,7 +24015,7 @@ function p5(e) {
       isReady: Re,
       install(E) {
         const H = this;
-        E.component("RouterLink", h5), E.component("RouterView", y5), E.config.globalProperties.$router = H, Object.defineProperty(E.config.globalProperties, "$route", {
+        E.component("RouterLink", hO), E.component("RouterView", yO), E.config.globalProperties.$router = H, Object.defineProperty(E.config.globalProperties, "$route", {
           enumerable: !0,
           get: () => en(c)
         }), Jo && !ye && c.value === Jn && (ye = !0, _(s.location).catch(Se => {}));
@@ -24038,7 +24038,7 @@ function p5(e) {
   return le
 }
 
-function b5(e, t) {
+function bO(e, t) {
   const n = [],
     o = [],
     s = [],
@@ -24051,41 +24051,41 @@ function b5(e, t) {
   }
   return [n, o, s]
 }
-const ia = p5({
+const ia = pO({
     history: YP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-DkWRui9s.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-e8XAz2wj.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-DkWRui9s.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-e8XAz2wj.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => qE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-a20ns11u.js"), [])
+      component: () => It(() => import("./Terms-De2L_Kr_.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => _E), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-BNkDCS4S.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-BqFkmafq.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => gI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-DcE1Rwbr.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-CzJ8k4nX.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-Bf_AjBPC.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-r2t9CJNf.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-rlHwCiPA.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-BTs1g80U.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-rX5fsIwP.js"), [])
+      component: () => It(() => import("./Support-8DDqDE9-.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -24094,10 +24094,10 @@ const ia = p5({
       component: () => It(() => Promise.resolve().then(() => AI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-CCDBoBD0.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-BOivVJsY.js"), __vite__mapDeps([10, 11]))
     }]
   }),
-  w5 = {
+  wO = {
     methods: {
       async dbLoadDbData(e = ["all"]) {
         try {
@@ -24821,7 +24821,7 @@ const ia = p5({
       return {}
     }
   },
-  C5 = {
+  CO = {
     methods: {
       async auth() {
         const e = ao();
@@ -24933,7 +24933,7 @@ const ia = p5({
       }
     }
   },
-  _5 = {
+  _O = {
     data: function() {
       return {
         TOKEN_NAME: "$ZOO",
@@ -25183,7 +25183,7 @@ const ia = p5({
     }
   },
   bo = Mf(yP),
-  k5 = Qx();
+  kO = Qx();
 let hd = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && hd ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), hd = !0
@@ -25191,12 +25191,12 @@ ia.afterEach(function() {
 window.Telegram.WebApp.onEvent("backButtonClicked", function() {
   window.history.state && window.history.state.popup && history.back(), ia.push("/")
 });
-bo.use(k5);
+bo.use(kO);
 bo.use(ia);
 bo.use(jT);
-bo.mixin(w5);
-bo.mixin(C5);
-bo.mixin(_5);
+bo.mixin(wO);
+bo.mixin(CO);
+bo.mixin(_O);
 bo.mixin(iA);
 bo.mount("#app");
 window.userStore = ao();
