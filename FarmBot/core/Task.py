@@ -211,9 +211,9 @@ class Task:
             ):
                 continue
 
-            # self.log.info(
-            #     f"🔵 <c>{self.mcf_api.account_name}</c> | Performing task <c>{task_name}</c>"
-            # )
+            self.log.info(
+                f"🔵 <c>{self.mcf_api.account_name}</c> | Performing task <c>{task_name}</c>"
+            )
 
             if task.get("checkType") == "invite":
                 try:
@@ -306,9 +306,37 @@ class Task:
             if task_key == "ton_wallet_transaction":
                 continue
 
-            # self.log.info(
-            #     f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Task <c>{task_name}</c> unsupported right now. Devs check required.</y>"
-            # )
+            if task_key == "coin_market_cap":
+                self._claim_task(task)
+                continue
+
+            if task_key in ["trump", "time_farm", "boinkers", "dropee_bot"]:
+                if not self.mcf_api.tgAccount:
+                    continue
+                if not utils.getConfig("auto_start_bots", True):
+                    self.log.info(
+                        f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Auto start bots <r>DISABLED</r></y>"
+                    )
+                    continue
+                url = task.get("actionUrl", "")
+                api_resp = self.mcf_api.get_invite_link(url)
+                if not api_resp:
+                    self.log.info(
+                        f"🔗 <g>Failed to get invite link for <y>{task.name}</y> ...</g>"
+                    )
+                    continue
+                ref_link = api_resp.get("referral")
+                bot_id = api_resp.get("bot_id")
+                if not await self.mcf_api.start_bot(bot_id, ref_link):
+                    continue
+                if not self._check_task(task):
+                    continue
+                continue
+
+
+            self.log.info(
+                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Task <c>{task_name}</c> unsupported right now. Devs check required.</y>"
+            )
 
     def claim_chests(self):
         if not utils.getConfig("auto_claim_chests", True):

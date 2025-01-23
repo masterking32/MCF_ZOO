@@ -129,25 +129,24 @@ class User:
             msg = str(e) if str(e) else "Unknown error."
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
             return False
-
-    def _complete_registering(self):
+        
+    def _finish_onboard(self, id):
         try:
-            payload = 1
             resp = self.requests.post_request(
                 "/hero/onboarding/finish",
-                payload,
+                id,
             )
 
             if resp is None or not resp.get("success"):
                 raise Exception(
-                    f"Failed to complete registering, response: <m>{resp}</m>"
+                    f"Failed to finish onboard {id}, response: <m>{resp}</m>"
                 )
 
             success = resp.get("success")
             data = resp.get("data", {})
             self.after = data
 
-            return self.after
+            return success
         except Exception as e:
             msg = str(e) if str(e) else "Unknown error."
             self.log.error(f"🔴 <c>{self.mcf_api.account_name}</c> | <r>{msg}</r>")
@@ -164,8 +163,10 @@ class User:
             if not self._get_after():
                 return False
             if not "1" in self.hero.get("onboarding", []):
-                if not self._complete_registering():
+                if not self._finish_onboard(1):
                     return False
+            if not "1" in self.hero.get("onboarding", []):
+                self._finish_onboard(80)
 
             f_name = self.profile.get("firstName")
             l_name = self.profile.get("lastName")

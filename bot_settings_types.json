@@ -60,6 +60,13 @@
     "description": "Automatically join channels. ONLY FOR SESSIONS"
   },
   {
+    "key": "auto_start_bots",
+    "name": "Auto start bots",
+    "type": "checkbox",
+    "default_value": "on",
+    "description": "Automatically start bots. ONLY FOR SESSIONS"
+  },
+  {
     "key": "auto_change_name",
     "name": "Auto change name",
     "type": "checkbox",
