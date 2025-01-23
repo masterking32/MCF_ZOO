@@ -208,6 +208,7 @@ class Task:
                 "boost_" in task_key
                 or "donate_ton" in task_key
                 or "ton_wallet_" in task_key
+                or task_key in ["boinkers", "trump"]
             ):
                 continue
 
@@ -322,7 +323,7 @@ class Task:
                 api_resp = self.mcf_api.get_invite_link(url)
                 if not api_resp:
                     self.log.info(
-                        f"🔗 <g>Failed to get invite link for <y>{task.name}</y> ...</g>"
+                        f"🔗 <g>Failed to get invite link for <y>{task_name}</y> ...</g>"
                     )
                     continue
                 ref_link = api_resp.get("referral")
