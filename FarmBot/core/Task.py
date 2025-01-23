@@ -211,9 +211,9 @@ class Task:
             ):
                 continue
 
-            self.log.info(
-                f"🔵 <c>{self.mcf_api.account_name}</c> | Performing task <c>{task_name}</c>"
-            )
+            # self.log.info(
+            #     f"🔵 <c>{self.mcf_api.account_name}</c> | Performing task <c>{task_name}</c>"
+            # )
 
             if task.get("checkType") == "invite":
                 try:
