@@ -19,9 +19,9 @@ import {
   h as T,
   i as H,
   v as x
-} from "./index-CUZaVO8L.js";
-import z from "./Alliance-Ce7sOlgu.js";
-import U from "./Boost-BBHNA7JW.js";
+} from "./index-YMb7dd5m.js";
+import z from "./Alliance-BDR7mW9J.js";
+import U from "./Boost-C92JcNQP.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -668,7 +668,7 @@ const oe = M(K, [
         this.isShowChangeLocation = !0, await this._completeOnboarding(this.onBoard.changeLocation)
       },
       getBuildingImg(e, s = 1) {
-        return ["spider", "puma", "lizard", "leopard", "ticket_booth", "roller_coaster", "alpaca", "attraction", "bat", "camel", "capybara", "cat", "dog", "doge", "duck", "horse", "lemur", "mountain_goat", "ostrich", "owl", "peacock", "pepe", "platypus", "raccoon", "scorpion", "seahorse", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "starfish", "swan", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
+        return ["waterfall", "souvenirs", "okx", "bybit", "bitget", "aquarium", "spider", "puma", "lizard", "leopard", "ticket_booth", "roller_coaster", "alpaca", "attraction", "bat", "camel", "capybara", "cat", "dog", "doge", "duck", "horse", "lemur", "mountain_goat", "ostrich", "owl", "peacock", "pepe", "platypus", "raccoon", "scorpion", "seahorse", "seal", "special_icecream", "special_snake_aspid", "special_snake_cobra", "special_snake_python", "starfish", "swan", "walrus"].includes(e) ? "/assets/img/buildings/special/" + e + ".png?v3" : s <= 10 ? "/assets/img/buildings/" + s + "/" + e + ".png?v2" : "/assets/img/buildings/10/" + e + ".png?v2"
       },
       buyPopup(e) {
         this.openPoint = e, this.isBuyPopupShow = !0
@@ -1471,7 +1471,7 @@ function Ms(e, s, d, c, r, i) {
 }
 const xs = M(le, [
   ["render", Ms],
-  ["__scopeId", "data-v-20e12fc8"]
+  ["__scopeId", "data-v-d066e905"]
 ]);
 export {
   xs as
