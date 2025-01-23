@@ -306,9 +306,9 @@ class Task:
             if task_key == "ton_wallet_transaction":
                 continue
 
-            self.log.info(
-                f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Task <c>{task_name}</c> unsupported right now. Devs check required.</y>"
-            )
+            # self.log.info(
+            #     f"🟠 <c>{self.mcf_api.account_name}</c> | <y>Task <c>{task_name}</c> unsupported right now. Devs check required.</y>"
+            # )
 
     def claim_chests(self):
         if not utils.getConfig("auto_claim_chests", True):
