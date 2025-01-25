@@ -17,11 +17,11 @@ import {
   u as I,
   n as B,
   h as T,
-  i as H,
-  v as x
-} from "./index-DlGGXOHP.js";
-import z from "./Alliance-D_1rzqrw.js";
-import U from "./Boost-t0aXTCF8.js";
+  i as x,
+  v as H
+} from "./index-B_YWuAEy.js";
+import z from "./Alliance-D8eR5xhe.js";
+import U from "./Boost-CcjFroJY.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -828,11 +828,11 @@ const oe = M(K, [
       "font-size": "0.7em"
     }
   },
-  He = {
+  xe = {
     key: 2,
     class: "container"
   },
-  xe = {
+  He = {
     key: 3,
     class: "container",
     style: {
@@ -1025,7 +1025,11 @@ const oe = M(K, [
     class: "container"
   },
   Bs = {
-    class: "flexCenter"
+    class: "flexCenter",
+    style: {
+      "flex-wrap": "wrap",
+      "margin-bottom": "20px"
+    }
   },
   _s = ["src"],
   Es = {
@@ -1116,7 +1120,7 @@ function Ms(e, s, d, c, r, i) {
       width: Math.round(210 * i.k) + "px"
     }),
     onClick: b => (n == null ? void 0 : n.animalLevel) > 0 ? i.upgradePopup(n) : i.buyPopup(n)
-  }, null, 12, he))), 128)), (l(!0), a(m, null, k(r.chests, n => H((l(), a("div", {
+  }, null, 12, he))), 128)), (l(!0), a(m, null, k(r.chests, n => x((l(), a("div", {
     key: n.key,
     class: "pointChest center",
     onClick: b => i.openChest(n),
@@ -1137,7 +1141,7 @@ function Ms(e, s, d, c, r, i) {
     format: "mm:ss",
     onFinish: b => n.countdown = 0
   }, null, 8, ["time", "onFinish"])], 12, pe)), [
-    [x, n.countdown > 0]
+    [H, n.countdown > 0]
   ])), 128))], 36), h(f, {
     show: r.isShowChest,
     "onUpdate:show": s[1] || (s[1] = n => r.isShowChest = n),
@@ -1226,14 +1230,14 @@ function Ms(e, s, d, c, r, i) {
         class: "coin25"
       }, null, -1)), u("  " + o(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", He, [t("h1", null, o(e.t("New animals coming soon - follow our telegram channel.")), 1), h(S, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", xe, [t("h1", null, o(e.t("New animals coming soon - follow our telegram channel.")), 1), h(S, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
     }, {
       default: p(() => [u(o(e.t("Follow our channel")), 1)]),
       _: 1
-    }, 8, ["onClick"])])), i.notAvailableForBuySpecial.length > 0 ? (l(), a("div", xe, [t("div", ze, o(e.t("Unavailable offers")), 1), (l(!0), a(m, null, k(i.notAvailableForBuySpecial, n => (l(), a("div", {
+    }, 8, ["onClick"])])), i.notAvailableForBuySpecial.length > 0 ? (l(), a("div", He, [t("div", ze, o(e.t("Unavailable offers")), 1), (l(!0), a(m, null, k(i.notAvailableForBuySpecial, n => (l(), a("div", {
       key: n.key,
       class: "animalForBuy"
     }, [t("div", null, [t("img", {
@@ -1469,11 +1473,11 @@ function Ms(e, s, d, c, r, i) {
     _: 1
   }, 8, ["show"])])
 }
-const xs = M(le, [
+const Hs = M(le, [
   ["render", Ms],
-  ["__scopeId", "data-v-d066e905"]
+  ["__scopeId", "data-v-2a9a2a18"]
 ]);
 export {
-  xs as
+  Hs as
   default
 };
