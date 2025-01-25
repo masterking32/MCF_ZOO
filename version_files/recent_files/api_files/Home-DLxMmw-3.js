@@ -14,14 +14,14 @@ import {
   g as y,
   T as N,
   E as _,
-  u as I,
+  u as x,
   n as B,
   h as T,
-  i as x,
+  i as I,
   v as H
-} from "./index-B_YWuAEy.js";
-import z from "./Alliance-D8eR5xhe.js";
-import U from "./Boost-CcjFroJY.js";
+} from "./index-BpKauX47.js";
+import z from "./Alliance-C2YoFa2Y.js";
+import U from "./Boost-DXvtA5Ya.js";
 const K = {
     name: "Feed-g",
     components: {},
@@ -489,7 +489,7 @@ const oe = M(K, [
         }, {
           position: 48,
           x: 260,
-          y: 5010
+          y: 4970
         }, {
           position: 49,
           x: 600,
@@ -501,7 +501,15 @@ const oe = M(K, [
         }, {
           position: 51,
           x: 536,
-          y: 5180
+          y: 5160
+        }, {
+          position: 53,
+          x: 410,
+          y: 5050
+        }, {
+          position: 54,
+          x: 629,
+          y: 5290
         }],
         openPoint: null
       }
@@ -512,7 +520,7 @@ const oe = M(K, [
         return "level" in ((e = this.openAnimal) == null ? void 0 : e.currentLevelData) ? this.openAnimal.currentLevelData.level * this.openAnimal.currentLevelData.level * (gameConfig["animal.min_change_position_price"] ?? 50) : null
       },
       k() {
-        let e = I();
+        let e = x();
         return (e.width.value > 768 ? 768 : e.width.value) / this.map.w
       },
       animalByPosition() {
@@ -823,12 +831,12 @@ const oe = M(K, [
   Ne = {
     class: ""
   },
-  Ie = {
+  xe = {
     style: {
       "font-size": "0.7em"
     }
   },
-  xe = {
+  Ie = {
     key: 2,
     class: "container"
   },
@@ -1120,7 +1128,7 @@ function Ms(e, s, d, c, r, i) {
       width: Math.round(210 * i.k) + "px"
     }),
     onClick: b => (n == null ? void 0 : n.animalLevel) > 0 ? i.upgradePopup(n) : i.buyPopup(n)
-  }, null, 12, he))), 128)), (l(!0), a(m, null, k(r.chests, n => x((l(), a("div", {
+  }, null, 12, he))), 128)), (l(!0), a(m, null, k(r.chests, n => I((l(), a("div", {
     key: n.key,
     class: "pointChest center",
     onClick: b => i.openChest(n),
@@ -1226,11 +1234,11 @@ function Ms(e, s, d, c, r, i) {
       onClick: b => i.buy(n.key, n.level1data.price, !0),
       loading: r.isBuyLoading
     }, {
-      default: p(() => [t("div", Ne, [t("span", Ie, o(e.t("Buy animal")), 1), s[24] || (s[24] = u()), s[25] || (s[25] = t("br", null, null, -1)), s[26] || (s[26] = t("span", {
+      default: p(() => [t("div", Ne, [t("span", xe, o(e.t("Buy animal")), 1), s[24] || (s[24] = u()), s[25] || (s[25] = t("br", null, null, -1)), s[26] || (s[26] = t("span", {
         class: "coin25"
       }, null, -1)), u("  " + o(e._number(n.level1data.price)), 1)])]),
       _: 2
-    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", xe, [t("h1", null, o(e.t("New animals coming soon - follow our telegram channel.")), 1), h(S, {
+    }, 1032, ["onClick", "loading"])])]))), 128))])) : (l(), a("div", Ie, [t("h1", null, o(e.t("New animals coming soon - follow our telegram channel.")), 1), h(S, {
       size: "large",
       type: "warning",
       onClick: e._ourTgClick
@@ -1475,7 +1483,7 @@ function Ms(e, s, d, c, r, i) {
 }
 const Hs = M(le, [
   ["render", Ms],
-  ["__scopeId", "data-v-2a9a2a18"]
+  ["__scopeId", "data-v-c24a1dc8"]
 ]);
 export {
   Hs as
