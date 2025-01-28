@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-DjiCnNC7.js", "assets/Alliance-C_It-jhx.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-JmKYaKMm.js", "assets/Boost-CeTnVcsX.css", "assets/Home-D7bRs4ra.css", "assets/Rating-CR-1531k.js", "assets/Rating-DRysk5eI.css", "assets/Communities-B6IP5J4w.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BBA5QGYT.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Home-G13Q7-GE.js", "assets/Alliance-YWMEd9Lp.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CPVAXA57.js", "assets/Boost-CeTnVcsX.css", "assets/Home-D7bRs4ra.css", "assets/Rating-QdFSbABj.js", "assets/Rating-DRysk5eI.css", "assets/Communities-DBJHE94s.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-CJqo_4Sy.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -18044,11 +18044,11 @@ const QT = "modulepreload",
   };
 
 function GT(e, t, n, o, s, a) {
-  return V(), G("div", qT, t[0] || (t[0] = [Mv('<h1 class="center" data-v-6ae2a584>Zoo Terms of Use</h1><div class="center" data-v-6ae2a584>Last Updated: 12/12/2024</div><h2 data-v-6ae2a584>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-6ae2a584>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-6ae2a584>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-6ae2a584>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-6ae2a584>• Alliance - consolidation of the App Users in the App. <br data-v-6ae2a584>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-6ae2a584>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-6ae2a584>• Interface - the visible part of the App. <br data-v-6ae2a584>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-6ae2a584>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-6ae2a584>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-6ae2a584>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-6ae2a584>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-6ae2a584>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-6ae2a584>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-6ae2a584>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-6ae2a584>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-6ae2a584>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-6ae2a584>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-6ae2a584>3. The App&#39;s Mechanics</h2><h3 data-v-6ae2a584>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-6ae2a584>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-6ae2a584>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-6ae2a584>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-6ae2a584>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-6ae2a584>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-6ae2a584>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-6ae2a584>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-6ae2a584>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-6ae2a584>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-6ae2a584>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-6ae2a584>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-6ae2a584>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-6ae2a584>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-6ae2a584>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-6ae2a584>4. Prohibited Activities</h2> Using of any form of technical automation, including but not limited to bots, scripts, or other automated tools, to interact with or manipulate the App is strictly prohibited. Using of any other form of disruption to the mechanics of the App, including but not limited to refunding Telegram Stars for in-app purchases, is also strictly prohibited. Such actions may lead to immediate account suspension or a permanent ban without prior notice. <h2 data-v-6ae2a584>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-6ae2a584>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-6ae2a584>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-6ae2a584>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-6ae2a584>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-6ae2a584>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-6ae2a584>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-6ae2a584>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-6ae2a584>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-6ae2a584>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-6ae2a584>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-6ae2a584>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-6ae2a584>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-6ae2a584>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-6ae2a584>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-6ae2a584>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-6ae2a584>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-6ae2a584>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-6ae2a584>Telegram Mini App Terms of Use</a>. <h2 data-v-6ae2a584>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
+  return V(), G("div", qT, t[0] || (t[0] = [Mv('<h1 class="center" data-v-926f3a68>Zoo Terms of Use</h1><div class="center" data-v-926f3a68>Last Updated: 12/12/2024</div><h2 data-v-926f3a68>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-926f3a68>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-926f3a68>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-926f3a68>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-926f3a68>• Alliance - consolidation of the App Users in the App. <br data-v-926f3a68>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-926f3a68>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-926f3a68>• Interface - the visible part of the App. <br data-v-926f3a68>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-926f3a68>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-926f3a68>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-926f3a68>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-926f3a68>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-926f3a68>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-926f3a68>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-926f3a68>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-926f3a68>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-926f3a68>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-926f3a68>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-926f3a68>3. The App&#39;s Mechanics</h2><h3 data-v-926f3a68>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-926f3a68>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-926f3a68>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-926f3a68>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-926f3a68>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-926f3a68>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-926f3a68>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-926f3a68>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-926f3a68>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-926f3a68>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-926f3a68>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-926f3a68>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-926f3a68>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-926f3a68>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-926f3a68>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-926f3a68>4. Prohibited Activities</h2> Any form of technical automation, including but not limited to bots, scripts, or other automated tools, used to interact with, manipulate, or exploit the App is strictly prohibited. This includes, but is not limited to, launching bot farms, automated systems, or coordinated accounts to generate resources for the purpose of unfairly benefiting another account or alliance. Actions intended to obscure violations, such as funneling resources or benefits to a main account while maintaining the appearance of compliance, are likewise prohibited. Any disruption to the mechanics of the App, including practices such as refunding Telegram Stars for in-app purchases or similar exploits, will result in immediate account suspension or permanent ban without prior notice. <h2 data-v-926f3a68>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-926f3a68>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-926f3a68>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-926f3a68>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-926f3a68>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-926f3a68>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-926f3a68>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-926f3a68>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-926f3a68>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-926f3a68>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-926f3a68>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-926f3a68>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-926f3a68>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-926f3a68>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-926f3a68>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-926f3a68>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-926f3a68>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-926f3a68>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-926f3a68>Telegram Mini App Terms of Use</a>. <h2 data-v-926f3a68>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
 }
 const ZT = pt(YT, [
     ["render", GT],
-    ["__scopeId", "data-v-6ae2a584"]
+    ["__scopeId", "data-v-926f3a68"]
   ]),
   XT = "/assets/onboarding_1-C7MzEQXq.jpg",
   JT = "/assets/onboarding_2-UoTZ07w1.jpg",
@@ -23197,18 +23197,18 @@ function nd(e) {
   const t = e[e.length - 1];
   return e.length > 0 && t[t.length - 1] < 0
 }
-const e5 = {
+const eO = {
     type: 0,
     value: ""
   },
-  t5 = /[a-zA-Z0-9_]/;
+  tO = /[a-zA-Z0-9_]/;
 
-function n5(e) {
+function nO(e) {
   if (!e) return [
     []
   ];
   if (e === "/") return [
-    [e5]
+    [eO]
   ];
   if (!e.startsWith("/")) throw new Error(`Invalid path "${e}"`);
 
@@ -23256,7 +23256,7 @@ function n5(e) {
         m(), n = o;
         break;
       case 1:
-        c === "(" ? n = 2 : t5.test(c) ? m() : (h(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
+        c === "(" ? n = 2 : tO.test(c) ? m() : (h(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
         break;
       case 2:
         c === ")" ? d[d.length - 1] == "\\" ? d = d.slice(0, -1) + c : n = 3 : d += c;
@@ -23272,8 +23272,8 @@ function n5(e) {
   return n === 2 && t(`Unfinished custom RegExp for param "${u}"`), h(), l(), s
 }
 
-function o5(e, t, n) {
-  const o = XP(n5(e.path), n),
+function oO(e, t, n) {
+  const o = XP(nO(e.path), n),
     s = Qe(o, {
       record: e,
       parent: t,
@@ -23283,7 +23283,7 @@ function o5(e, t, n) {
   return t && !s.record.aliasOf == !t.record.aliasOf && t.children.push(s), s
 }
 
-function i5(e, t) {
+function iO(e, t) {
   const n = [],
     o = new Map;
   t = ad({
@@ -23320,7 +23320,7 @@ function i5(e, t) {
           B = I[I.length - 1] === "/" ? "" : "/";
         _.path = m.record.path + (k && B + k)
       }
-      if (v = o5(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), y && h.name && !sd(v) && l(h.name)), Um(v) && c(v), p.children) {
+      if (v = oO(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), y && h.name && !sd(v) && l(h.name)), Um(v) && c(v), p.children) {
         const I = p.children;
         for (let B = 0; B < I.length; B++) a(I[B], v, g && g.children[B])
       }
@@ -23346,7 +23346,7 @@ function i5(e, t) {
   }
 
   function c(h) {
-    const m = l5(h, n);
+    const m = lO(h, n);
     n.splice(m, 0, h), h.record.name && !sd(h) && o.set(h.record.name, h)
   }
 
@@ -23374,7 +23374,7 @@ function i5(e, t) {
       path: p,
       params: y,
       matched: w,
-      meta: a5(w)
+      meta: aO(w)
     }
   }
   e.forEach(h => a(h));
@@ -23406,7 +23406,7 @@ function id(e) {
     meta: e.meta || {},
     aliasOf: e.aliasOf,
     beforeEnter: e.beforeEnter,
-    props: s5(e),
+    props: sO(e),
     children: e.children || [],
     instances: {},
     leaveGuards: new Set,
@@ -23421,7 +23421,7 @@ function id(e) {
   }), t
 }
 
-function s5(e) {
+function sO(e) {
   const t = {},
     n = e.props || !1;
   if ("component" in e) t.default = n;
@@ -23438,7 +23438,7 @@ function sd(e) {
   return !1
 }
 
-function a5(e) {
+function aO(e) {
   return e.reduce((t, n) => Qe(t, n.meta), {})
 }
 
@@ -23448,18 +23448,18 @@ function ad(e, t) {
   return n
 }
 
-function l5(e, t) {
+function lO(e, t) {
   let n = 0,
     o = t.length;
   for (; n !== o;) {
     const a = n + o >> 1;
     Hm(e, t[a]) < 0 ? o = a : n = a + 1
   }
-  const s = r5(e);
+  const s = rO(e);
   return s && (o = t.lastIndexOf(s, o - 1)), o
 }
 
-function r5(e) {
+function rO(e) {
   let t = e;
   for (; t = t.parent;)
     if (Um(t) && Hm(e, t) === 0) return t
@@ -23471,7 +23471,7 @@ function Um({
   return !!(e.name || e.components && Object.keys(e.components).length || e.redirect)
 }
 
-function c5(e) {
+function cO(e) {
   const t = {};
   if (e === "" || e === "?") return t;
   const o = (e[0] === "?" ? e.slice(1) : e).split("&");
@@ -23502,7 +23502,7 @@ function ld(e) {
   return t
 }
 
-function u5(e) {
+function uO(e) {
   const t = {};
   for (const n in e) {
     const o = e[n];
@@ -23510,7 +23510,7 @@ function u5(e) {
   }
   return t
 }
-const d5 = Symbol(""),
+const dO = Symbol(""),
   rd = Symbol(""),
   Gr = Symbol(""),
   Wm = Symbol(""),
@@ -23596,11 +23596,11 @@ function cd(e) {
       const g = ud(c[u - 2]);
       return u > 1 && ud(d) === g && h[h.length - 1].path !== g ? h.findIndex(hi.bind(null, c[u - 2])) : m
     }),
-    a = N(() => s.value > -1 && g5(n.params, o.value.params)),
+    a = N(() => s.value > -1 && gO(n.params, o.value.params)),
     l = N(() => s.value > -1 && s.value === n.matched.length - 1 && Nm(n.params, o.value.params));
 
   function r(c = {}) {
-    return m5(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
+    return mO(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
   }
   return {
     route: o,
@@ -23610,7 +23610,7 @@ function cd(e) {
     navigate: r
   }
 }
-const f5 = K({
+const fO = K({
     name: "RouterLink",
     compatConfig: {
       MODE: 3
@@ -23652,9 +23652,9 @@ const f5 = K({
       }
     }
   }),
-  h5 = f5;
+  hO = fO;
 
-function m5(e) {
+function mO(e) {
   if (!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) && !e.defaultPrevented && !(e.button !== void 0 && e.button !== 0)) {
     if (e.currentTarget && e.currentTarget.getAttribute) {
       const t = e.currentTarget.getAttribute("target");
@@ -23664,7 +23664,7 @@ function m5(e) {
   }
 }
 
-function g5(e, t) {
+function gO(e, t) {
   for (const n in t) {
     const o = t[n],
       s = e[n];
@@ -23679,7 +23679,7 @@ function ud(e) {
   return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
 const dd = (e, t, n) => e ?? t ?? n,
-  v5 = K({
+  vO = K({
     name: "RouterView",
     inheritAttrs: !1,
     props: {
@@ -23710,7 +23710,7 @@ const dd = (e, t, n) => e ?? t ?? n,
           return u
         }),
         r = N(() => s.value.matched[l.value]);
-      Bn(rd, N(() => l.value + 1)), Bn(d5, r), Bn(Gl, s);
+      Bn(rd, N(() => l.value + 1)), Bn(dO, r), Bn(Gl, s);
       const c = F();
       return re(() => [c.value, r.value, e.name], ([u, d, h], [m, g, y]) => {
         d && (d.instances[h] = u, g && g !== d && u && u === m && (d.leaveGuards.size || (d.leaveGuards = g.leaveGuards), d.updateGuards.size || (d.updateGuards = g.updateGuards))), u && d && (!g || !hi(d, g) || !m) && (d.enterCallbacks[h] || []).forEach(p => p(u))
@@ -23746,11 +23746,11 @@ function fd(e, t) {
   const n = e(t);
   return n.length === 1 ? n[0] : n
 }
-const y5 = v5;
+const yO = vO;
 
-function p5(e) {
-  const t = i5(e.routes, e),
-    n = e.parseQuery || c5,
+function pO(e) {
+  const t = iO(e.routes, e),
+    n = e.parseQuery || cO,
     o = e.stringifyQuery || ld,
     s = e.history,
     a = Ri(),
@@ -23817,7 +23817,7 @@ function p5(e) {
     return Qe({
       fullPath: Le,
       hash: Se,
-      query: o === ld ? u5(E.query) : E.query || {}
+      query: o === ld ? uO(E.query) : E.query || {}
     }, oe, {
       redirectedFrom: void 0,
       href: A
@@ -23905,7 +23905,7 @@ function p5(e) {
 
   function D(E, H) {
     let U;
-    const [oe, Se, Le] = b5(E, H);
+    const [oe, Se, Le] = bO(E, H);
     U = pl(oe.reverse(), "beforeRouteLeave", E, H);
     for (const O of oe) O.leaveGuards.forEach(L => {
       U.push(io(L, E, H))
@@ -24024,7 +24024,7 @@ function p5(e) {
       isReady: De,
       install(E) {
         const H = this;
-        E.component("RouterLink", h5), E.component("RouterView", y5), E.config.globalProperties.$router = H, Object.defineProperty(E.config.globalProperties, "$route", {
+        E.component("RouterLink", hO), E.component("RouterView", yO), E.config.globalProperties.$router = H, Object.defineProperty(E.config.globalProperties, "$route", {
           enumerable: !0,
           get: () => en(c)
         }), Jo && !ye && c.value === Jn && (ye = !0, _(s.location).catch(Se => {}));
@@ -24047,7 +24047,7 @@ function p5(e) {
   return le
 }
 
-function b5(e, t) {
+function bO(e, t) {
   const n = [],
     o = [],
     s = [],
@@ -24060,41 +24060,41 @@ function b5(e, t) {
   }
   return [n, o, s]
 }
-const ia = p5({
+const ia = pO({
     history: YP("/"),
     routes: [{
       path: "/",
-      component: () => It(() => import("./Home-DjiCnNC7.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-G13Q7-GE.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/home",
-      component: () => It(() => import("./Home-DjiCnNC7.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
+      component: () => It(() => import("./Home-G13Q7-GE.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))
     }, {
       path: "/airdrop",
       component: () => It(() => Promise.resolve().then(() => qE), void 0)
     }, {
       path: "/terms",
-      component: () => It(() => import("./Terms-Br7l99vp.js"), [])
+      component: () => It(() => import("./Terms-CSRkyV-P.js"), [])
     }, {
       path: "/quests",
       component: () => It(() => Promise.resolve().then(() => _E), void 0)
     }, {
       path: "/rating",
-      component: () => It(() => import("./Rating-CR-1531k.js"), __vite__mapDeps([6, 7]))
+      component: () => It(() => import("./Rating-QdFSbABj.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/friends",
       component: () => It(() => Promise.resolve().then(() => gI), void 0)
     }, {
       path: "/communities",
-      component: () => It(() => import("./Communities-B6IP5J4w.js"), __vite__mapDeps([8, 9]))
+      component: () => It(() => import("./Communities-DBJHE94s.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/alliance",
-      component: () => It(() => import("./Alliance-C_It-jhx.js"), __vite__mapDeps([1, 2]))
+      component: () => It(() => import("./Alliance-YWMEd9Lp.js"), __vite__mapDeps([1, 2]))
     }, {
       path: "/boost",
-      component: () => It(() => import("./Boost-JmKYaKMm.js"), __vite__mapDeps([3, 4]))
+      component: () => It(() => import("./Boost-CPVAXA57.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/support",
-      component: () => It(() => import("./Support-BoO3O-lI.js"), [])
+      component: () => It(() => import("./Support-KXoRnAao.js"), [])
     }, {
       path: "/test",
       component: () => It(() => Promise.resolve().then(() => VI), void 0)
@@ -24103,10 +24103,10 @@ const ia = p5({
       component: () => It(() => Promise.resolve().then(() => AI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => It(() => import("./ReferralCommission-BBA5QGYT.js"), __vite__mapDeps([10, 11]))
+      component: () => It(() => import("./ReferralCommission-CJqo_4Sy.js"), __vite__mapDeps([10, 11]))
     }]
   }),
-  w5 = {
+  wO = {
     methods: {
       async dbLoadDbData(e = ["all"]) {
         try {
@@ -24830,7 +24830,7 @@ const ia = p5({
       return {}
     }
   },
-  C5 = {
+  CO = {
     methods: {
       async auth() {
         const e = ao();
@@ -24942,7 +24942,7 @@ const ia = p5({
       }
     }
   },
-  _5 = {
+  _O = {
     data: function() {
       return {
         TOKEN_NAME: "$ZOO",
@@ -25192,7 +25192,7 @@ const ia = p5({
     }
   },
   bo = Mf(yP),
-  k5 = Qx();
+  kO = Qx();
 let hd = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && hd ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), hd = !0
@@ -25200,12 +25200,12 @@ ia.afterEach(function() {
 window.Telegram.WebApp.onEvent("backButtonClicked", function() {
   window.history.state && window.history.state.popup && history.back(), ia.push("/")
 });
-bo.use(k5);
+bo.use(kO);
 bo.use(ia);
 bo.use(jT);
-bo.mixin(w5);
-bo.mixin(C5);
-bo.mixin(_5);
+bo.mixin(wO);
+bo.mixin(CO);
+bo.mixin(_O);
 bo.mixin(iA);
 bo.mount("#app");
 window.userStore = ao();
