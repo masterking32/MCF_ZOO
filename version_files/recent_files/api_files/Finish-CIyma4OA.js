@@ -1,21 +1,26 @@
 import {
   _ as d,
-  M as c,
-  c as l,
+  M as r,
+  c,
   a as t,
   b as o,
   t as n,
-  w as r,
+  w as l,
   g as s,
   o as p,
-  d as _
-} from "./index-DBgN-iwC.js";
-const u = {
+  d as u
+} from "./index-Cz8hFxyo.js";
+const _ = {
     name: "Empty-g",
     components: {
-      Menu: c
+      Menu: r
     },
     async created() {},
+    mounted() {
+      this.stores.state.setPageSettings({
+        bg: "url(/assets/img/decor/finish_bg.jpg?v=3) no-repeat center center / cover fixed, #2e3c63"
+      })
+    },
     data() {
       return {}
     },
@@ -31,13 +36,13 @@ const u = {
       "z-index": "1"
     }
   },
-  m = {
+  g = {
     class: "center",
     style: {
       padding: "50px 15px 0 15px"
     }
   },
-  g = {
+  m = {
     style: {
       "font-size": "2em",
       "font-weight": "700"
@@ -61,10 +66,10 @@ const u = {
     }
   };
 
-function N(e, w, E, M, T, k) {
+function N(e, w, E, M, b, T) {
   const i = s("Menu"),
     a = s("van-button");
-  return p(), l("div", null, [t("div", h, [o(i)]), t("div", m, [t("h1", null, n(e.t("Mining has ended.")), 1), t("div", null, n(e.t("You've mined:")), 1), t("div", g, n(e._number(e.uHero.tokens)) + " " + n(e.TOKEN_NAME), 1), t("div", f, n(e.t("Bonus {TOKEN_NAME} for activity: ", {
+  return p(), c("div", null, [t("div", h, [o(i)]), t("div", g, [t("h1", null, n(e.t("Mining has ended.")), 1), t("div", null, n(e.t("You've mined:")), 1), t("div", m, n(e._number(e.uHero.tokens)) + " " + n(e.TOKEN_NAME), 1), t("div", f, n(e.t("Bonus {TOKEN_NAME} for activity: ", {
     TOKEN_NAME: e.TOKEN_NAME
   })), 1), t("div", v, n(e.t("calculation in progress")), 1), t("div", y, n(e.t("Listing details will be announced soon in the official channel.")), 1), o(a, {
     size: "large",
@@ -74,13 +79,13 @@ function N(e, w, E, M, T, k) {
       "margin-top": "15px"
     }
   }, {
-    default: r(() => [_(n(e.t("Follow our channel")), 1)]),
+    default: l(() => [u(n(e.t("Follow our channel")), 1)]),
     _: 1
   }, 8, ["onClick"])])])
 }
-const x = d(u, [
+const x = d(_, [
   ["render", N],
-  ["__scopeId", "data-v-7504cc0c"]
+  ["__scopeId", "data-v-bdeefe56"]
 ]);
 export {
   x as
