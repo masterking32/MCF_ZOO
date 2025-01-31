@@ -1,17 +1,17 @@
 import {
   _ as s,
   T as o,
-  j as t,
-  c as r,
+  j as r,
+  c as t,
   b as n,
   o as c,
-  g as a
-} from "./index-_QcPBza3.js";
+  r as a
+} from "./index-CiMXAbSw.js";
 const m = {
     name: "Terms-o",
     components: {
       TopBar: o,
-      TermsOfUse: t
+      TermsOfUse: r
     }
   },
   _ = {
@@ -20,7 +20,7 @@ const m = {
 
 function p(f, d, T, i, l, u) {
   const e = a("TermsOfUse");
-  return c(), r("div", _, [n(e)])
+  return c(), t("div", _, [n(e)])
 }
 const x = s(m, [
   ["render", p]

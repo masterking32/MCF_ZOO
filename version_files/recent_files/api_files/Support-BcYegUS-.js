@@ -5,10 +5,10 @@ import {
   t as o,
   b as a,
   w as n,
-  g as u,
+  r as u,
   o as h,
   d as r
-} from "./index-_QcPBza3.js";
+} from "./index-CiMXAbSw.js";
 const N = {
     name: "Support-o",
     components: {},

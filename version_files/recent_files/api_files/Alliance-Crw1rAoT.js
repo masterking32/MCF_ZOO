@@ -7,16 +7,16 @@ import {
   h as T,
   n as k,
   b as a,
-  f as x,
+  g as x,
   e as E,
   w as o,
   d as u,
   t as l,
-  g as c,
+  r as c,
   A as N,
   F as S,
-  r as I
-} from "./index-_QcPBza3.js";
+  f as I
+} from "./index-CiMXAbSw.js";
 const M = {
   name: "Progressbar-g",
   props: {
