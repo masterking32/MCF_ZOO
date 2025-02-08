@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Finish-Cquye4IZ.js", "assets/Finish-CWRl7QfM.css", "assets/Home-Cwud3cdQ.js", "assets/Alliance-Bt0udCKh.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-DSz6Ccx1.js", "assets/Boost-CeTnVcsX.css", "assets/Home-BT9Zzn6w.css", "assets/Rating-DAkP04L0.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-D8D3TQXg.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-CeUG0GOL.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Finish-BykBEOBk.js", "assets/Finish-CWRl7QfM.css", "assets/Home-DrUy90pL.js", "assets/Alliance-DVt_h5N1.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-C1Thxg9R.js", "assets/Boost-CeTnVcsX.css", "assets/Home-BT9Zzn6w.css", "assets/Rating-BdDzXcvD.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-Bn4g3ytT.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-WHVrVLk_.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -21921,7 +21921,7 @@ const Om = yt(_I, [
         return Object.values(this.isShowPopup).some(e => e === !0)
       },
       isCanTakeQuestRewards() {
-        return Object.values(this.uDailyRewards).some(e => e === "canTake") || Object.values(this.uQuests).some(e => e.isRewarded === !1)
+        return Object.values(this.uQuests).some(e => e.isRewarded === !1)
       },
       isCanDoQuiz() {
         return Object.values(this.uQuizzes).some(e => e.isRewarded === !1) || this.uQuizzes.length < this.dbQuizzes.length
@@ -22022,7 +22022,7 @@ function zI(e, t, n, o, s, a) {
 }
 const HI = yt($I, [
     ["render", zI],
-    ["__scopeId", "data-v-0159e7f5"]
+    ["__scopeId", "data-v-85ae0f54"]
   ]),
   UI = new Error("request for lock canceled");
 var WI = function(e, t, n, o) {
@@ -22494,7 +22494,9 @@ function rP(e, t, n, o, s, a) {
     g = me("topup");
   return z(), q("div", null, [s.dbLoaded ? e._isOnboardingComplete(e.onBoard.start) ? (z(), q(Oe, {
     key: 2
-  }, [A("div", iP, [h(r)]), h(c), h(d, {
+  }, [A("div", iP, [h(r)]), e.uProfile.isAlfaTester ? (z(), $e(c, {
+    key: 0
+  })) : we("", !0), h(d, {
     show: s.isShowInviteRefAlliance,
     "onUpdate:show": t[0] || (t[0] = p => s.isShowInviteRefAlliance = p),
     round: "",
@@ -22575,7 +22577,7 @@ function rP(e, t, n, o, s, a) {
 }
 const cP = yt(tP, [
   ["render", rP],
-  ["__scopeId", "data-v-d4a92b9d"]
+  ["__scopeId", "data-v-a06c5482"]
 ]);
 /*!
  * vue-router v4.4.5
@@ -23976,40 +23978,40 @@ const fO = new Date,
     history: VP("/"),
     routes: [{
       path: "/",
-      component: () => ht(hd ? () => import("./Finish-Cquye4IZ.js") : () => import("./Home-Cwud3cdQ.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
+      component: () => ht(hd ? () => import("./Finish-BykBEOBk.js") : () => import("./Home-DrUy90pL.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
     }, {
       path: "/finish",
-      component: () => ht(() => import("./Finish-Cquye4IZ.js"), __vite__mapDeps([0, 1]))
+      component: () => ht(() => import("./Finish-BykBEOBk.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/home",
-      component: () => ht(hd ? () => import("./Finish-Cquye4IZ.js") : () => import("./Home-Cwud3cdQ.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
+      component: () => ht(hd ? () => import("./Finish-BykBEOBk.js") : () => import("./Home-DrUy90pL.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
     }, {
       path: "/airdrop",
       component: () => ht(() => Promise.resolve().then(() => HE), void 0)
     }, {
       path: "/terms",
-      component: () => ht(() => import("./Terms-DyzJab44.js"), [])
+      component: () => ht(() => import("./Terms-B0erWcxO.js"), [])
     }, {
       path: "/quests",
       component: () => ht(() => Promise.resolve().then(() => TE), void 0)
     }, {
       path: "/rating",
-      component: () => ht(() => import("./Rating-DAkP04L0.js"), __vite__mapDeps([8, 9]))
+      component: () => ht(() => import("./Rating-BdDzXcvD.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/friends",
       component: () => ht(() => Promise.resolve().then(() => rI), void 0)
     }, {
       path: "/communities",
-      component: () => ht(() => import("./Communities-D8D3TQXg.js"), __vite__mapDeps([10, 11]))
+      component: () => ht(() => import("./Communities-Bn4g3ytT.js"), __vite__mapDeps([10, 11]))
     }, {
       path: "/alliance",
-      component: () => ht(() => import("./Alliance-Bt0udCKh.js"), __vite__mapDeps([3, 4]))
+      component: () => ht(() => import("./Alliance-DVt_h5N1.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/boost",
-      component: () => ht(() => import("./Boost-DSz6Ccx1.js"), __vite__mapDeps([5, 6]))
+      component: () => ht(() => import("./Boost-C1Thxg9R.js"), __vite__mapDeps([5, 6]))
     }, {
       path: "/support",
-      component: () => ht(() => import("./Support-DSuJP6ks.js"), [])
+      component: () => ht(() => import("./Support-CHxwy_sm.js"), [])
     }, {
       path: "/test",
       component: () => ht(() => Promise.resolve().then(() => RI), void 0)
@@ -24018,7 +24020,7 @@ const fO = new Date,
       component: () => ht(() => Promise.resolve().then(() => wI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => ht(() => import("./ReferralCommission-CeUG0GOL.js"), __vite__mapDeps([12, 13]))
+      component: () => ht(() => import("./ReferralCommission-WHVrVLk_.js"), __vite__mapDeps([12, 13]))
     }]
   }),
   mO = {
