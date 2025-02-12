@@ -3,7 +3,7 @@ import {
   o as r,
   c as p,
   a as t,
-  l as U,
+  m as U,
   h as T,
   n as k,
   b as a,
@@ -16,7 +16,7 @@ import {
   A as N,
   F as S,
   f as I
-} from "./index-qeLGY85n.js";
+} from "./index-D67o0KlN.js";
 const M = {
   name: "Progressbar-g",
   props: {

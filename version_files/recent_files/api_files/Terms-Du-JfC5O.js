@@ -1,12 +1,12 @@
 import {
   _ as s,
   T as o,
-  k as r,
+  l as r,
   c as t,
   b as n,
   o as c,
   r as a
-} from "./index-qeLGY85n.js";
+} from "./index-D67o0KlN.js";
 const m = {
     name: "Terms-o",
     components: {
@@ -18,14 +18,14 @@ const m = {
     class: "terms"
   };
 
-function p(f, d, T, i, l, u) {
+function p(f, d, l, T, i, u) {
   const e = a("TermsOfUse");
   return c(), t("div", _, [n(e)])
 }
-const k = s(m, [
+const x = s(m, [
   ["render", p]
 ]);
 export {
-  k as
+  x as
   default
 };
