@@ -4,18 +4,18 @@ import {
   c as i,
   a as s,
   t as a,
-  l as C,
+  m as C,
   h as T,
   d as o,
   e as u,
   b as p,
   w as d,
   r as f,
-  o as l,
+  o as r,
   F as S,
   f as D,
   g as L
-} from "./index-hhInX-NY.js";
+} from "./index-qeLGY85n.js";
 const B = {
     components: {
       LuckyHoursInform: k
@@ -121,13 +121,13 @@ function E(e, n, m, v, Y, t) {
     g = f("van-button"),
     y = f("van-cell"),
     b = f("van-cell-group");
-  return e.uProfile.isAlfaTester || e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (l(), i("div", w, [s("h3", null, a(e.t("Your referral commission")), 1), n[4] || (n[4] = C('<br data-v-89f81142><div style="display:flex;align-items:baseline;gap:10px;" data-v-89f81142><div style="flex:1;" data-v-89f81142></div><div style="font-size:40px;" data-v-89f81142>⭐</div><div style="font-size:60px;" data-v-89f81142>⭐</div><div style="font-size:40px;" data-v-89f81142>⭐</div><div style="flex:1;" data-v-89f81142></div></div><br data-v-89f81142>', 3)), s("div", {
+  return e.uProfile.isAlfaTester || e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (r(), i("div", w, [s("h3", null, a(e.t("Your referral commission")), 1), n[4] || (n[4] = C('<br data-v-89f81142><div style="display:flex;align-items:baseline;gap:10px;" data-v-89f81142><div style="flex:1;" data-v-89f81142></div><div style="font-size:40px;" data-v-89f81142>⭐</div><div style="font-size:60px;" data-v-89f81142>⭐</div><div style="font-size:40px;" data-v-89f81142>⭐</div><div style="flex:1;" data-v-89f81142></div></div><br data-v-89f81142>', 3)), s("div", {
     class: T({
       blur: e.isLoading
     })
   }, [s("div", P, a(e._number(e.balance)), 1), n[0] || (n[0] = s("div", null, "Telegram Stars", -1)), s("div", U, "~" + a(t.balanceUSDT) + " USDT", 1)], 2), n[5] || (n[5] = s("br", null, null, -1)), n[6] || (n[6] = s("br", null, null, -1)), s("div", null, [o(a(e.t("You receive {n}% for each purchase made by your friends. To withdraw funds, please contact customer support.", {
     n: e.uReferralCommission
-  })) + " ", 1), e.gameConfig["referral.support.channel"] ? (l(), i("a", {
+  })) + " ", 1), e.gameConfig["referral.support.channel"] ? (r(), i("a", {
     key: 0,
     href: t.supportLink
   }, "@" + a(e.gameConfig["referral.support.channel"]), 9, z)) : u("", !0), o(". " + a(e.t("The minimum withdrawal amount is {count} USDT.", {
@@ -136,29 +136,29 @@ function E(e, n, m, v, Y, t) {
     n: 50
   })), 1), n[1] || (n[1] = o()), s("span", null, a(e.t("Telegram is taking {n}% commission for exchange stars for {USDT}.", {
     n: 35
-  })), 1)]), n[9] || (n[9] = s("br", null, null, -1)), n[10] || (n[10] = s("br", null, null, -1)), t.paidUSDT > 0 ? (l(), i("div", M, [s("div", null, a(e.t("Paid out {n} {stars}", {
+  })), 1)]), n[9] || (n[9] = s("br", null, null, -1)), n[10] || (n[10] = s("br", null, null, -1)), t.paidUSDT > 0 ? (r(), i("div", M, [s("div", null, a(e.t("Paid out {n} {stars}", {
     n: e.paid
-  })), 1), s("div", R, "~" + a(t.paidUSDT) + " USDT", 1)])) : u("", !0), t.availablePurchase.length > 0 ? (l(), i("div", _, [s("h2", null, a(e.t("You can use these stars to buy {Animals Food}.")), 1), p(c), p(b, {
+  })), 1), s("div", R, "~" + a(t.paidUSDT) + " USDT", 1)])) : u("", !0), t.availablePurchase.length > 0 ? (r(), i("div", _, [s("h2", null, a(e.t("You can use these stars to buy {Animals Food}.")), 1), p(c), p(b, {
     inset: "",
     class: "noMargin left"
   }, {
-    default: d(() => [(l(!0), i(S, null, D(t.availablePurchase, r => (l(), L(y, {
-      key: r.coins + "_" + r.price,
+    default: d(() => [(r(!0), i(S, null, D(t.availablePurchase, l => (r(), L(y, {
+      key: l.coins + "_" + l.price,
       center: ""
     }, {
       title: d(() => [n[2] || (n[2] = s("span", {
         class: "coin33"
-      }, null, -1)), n[3] || (n[3] = o()), s("span", F, a(e._number(r.coins)), 1)]),
-      "right-icon": d(() => [s("div", N, [r.key === 25e4 ? (l(), i("span", V, a(e.t("Best Price!")), 1)) : u("", !0), p(g, {
+      }, null, -1)), n[3] || (n[3] = o()), s("span", F, a(e._number(l.coins)), 1)]),
+      "right-icon": d(() => [s("div", N, [l.key === 25e4 ? (r(), i("span", V, a(e.t("Best Price!")), 1)) : u("", !0), p(g, {
         type: "success",
         size: "small",
         style: {
           "margin-left": "10px"
         },
-        onClick: A => t.buyRefStars(r),
+        onClick: A => t.buyRefStars(l),
         loading: e.isBuyLoading
       }, {
-        default: d(() => [o("⭐️ " + a(e._number(r.price)), 1)]),
+        default: d(() => [o("⭐️ " + a(e._number(l.price)), 1)]),
         _: 2
       }, 1032, ["onClick", "loading"])])]),
       _: 2
