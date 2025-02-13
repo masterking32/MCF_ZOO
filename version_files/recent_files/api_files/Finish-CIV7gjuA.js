@@ -9,7 +9,7 @@ import {
   r as s,
   o as p,
   d as u
-} from "./index-D67o0KlN.js";
+} from "./index-C82cJFWI.js";
 const _ = {
     name: "Empty-g",
     components: {
@@ -51,27 +51,14 @@ const _ = {
   },
   f = {
     style: {
-      "margin-top": "30px"
-    }
-  },
-  v = {
-    style: {
-      "font-size": "1em",
-      "font-weight": "700"
-    }
-  },
-  y = {
-    style: {
       "margin-top": "50px"
     }
   };
 
-function N(e, w, E, M, b, T) {
-  const i = s("Menu"),
-    a = s("van-button");
-  return p(), c("div", null, [t("div", h, [o(i)]), t("div", g, [t("h1", null, n(e.t("Mining has ended.")), 1), t("div", null, n(e.t("You've mined:")), 1), t("div", m, n(e._number(e.uHero.tokens)) + " " + n(e.TOKEN_NAME), 1), t("div", f, n(e.t("Bonus {TOKEN_NAME} for activity: ", {
-    TOKEN_NAME: e.TOKEN_NAME
-  })), 1), t("div", v, n(e.t("calculation in progress")), 1), t("div", y, n(e.t("Listing details will be announced soon in the official channel.")), 1), o(a, {
+function v(e, b, w, y, x, k) {
+  const a = s("Menu"),
+    i = s("van-button");
+  return p(), c("div", null, [t("div", h, [o(a)]), t("div", g, [t("h1", null, n(e.t("Mining has ended.")), 1), t("div", null, n(e.t("You've tokens:")), 1), t("div", m, n(e._number(e.uHero.tokens)) + " " + n(e.TOKEN_NAME), 1), t("div", f, n(e.t("Listing details will be announced soon in the official channel.")), 1), o(i, {
     size: "large",
     type: "warning",
     onClick: e._ourTgClick,
@@ -83,11 +70,11 @@ function N(e, w, E, M, b, T) {
     _: 1
   }, 8, ["onClick"])])])
 }
-const x = d(_, [
-  ["render", N],
-  ["__scopeId", "data-v-bdeefe56"]
+const C = d(_, [
+  ["render", v],
+  ["__scopeId", "data-v-dbeb89d2"]
 ]);
 export {
-  x as
+  C as
   default
 };
