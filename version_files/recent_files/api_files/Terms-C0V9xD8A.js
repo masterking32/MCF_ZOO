@@ -6,7 +6,7 @@ import {
   b as n,
   o as c,
   r as a
-} from "./index-C82cJFWI.js";
+} from "./index-BqTnrUKT.js";
 const m = {
     name: "Terms-o",
     components: {

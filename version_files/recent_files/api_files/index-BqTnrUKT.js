@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Finish-CIV7gjuA.js", "assets/Finish-BM1B5wr0.css", "assets/Home-C7Zr5ZBZ.js", "assets/Alliance-Be_GDyQH.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-BUzTcwoq.js", "assets/Boost-CeTnVcsX.css", "assets/Home-BT9Zzn6w.css", "assets/Airdrop2-U2H6qfdM.js", "assets/Airdrop2-_9OIPUE1.css", "assets/Rating-DYONxqdk.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-BWEzu1Zo.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-D2U4Pysr.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Finish-BHKuFmRv.js", "assets/Finish-BM1B5wr0.css", "assets/Home-Bo6xkQgU.js", "assets/Alliance-CwynDYOC.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-luu4_0DB.js", "assets/Boost-CeTnVcsX.css", "assets/Home-BT9Zzn6w.css", "assets/Airdrop2-DfV6x3lj.js", "assets/Airdrop2-ldIOLzl_.css", "assets/Rating-Ch5ZQZh8.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-CdNvUXuD.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-BqOOYbYZ.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -20547,7 +20547,7 @@ function UA(e, t, n, o, s, a) {
     [ft, !e.isMenuOpen && !e.isShowLangPicker]
   ]), h(u, {
     show: e.isMenuOpen,
-    "onUpdate:show": t[5] || (t[5] = d => e.isMenuOpen = d),
+    "onUpdate:show": t[6] || (t[6] = d => e.isMenuOpen = d),
     round: "",
     position: "top",
     closeable: ""
@@ -20591,7 +20591,17 @@ function UA(e, t, n, o, s, a) {
           e.isMenuOpen = !1
         }),
         size: "large"
-      }, null, 8, ["title"])) : we("", !0)]),
+      }, null, 8, ["title"])) : we("", !0), e.uProfile.isAlfaTester ? (z(), $e(r, {
+        key: 2,
+        center: "",
+        title: "Claim",
+        "is-link": "",
+        to: "/airdrop2",
+        onClick: t[3] || (t[3] = d => {
+          e.isMenuOpen = !1
+        }),
+        size: "large"
+      })) : we("", !0)]),
       _: 1
     }), h(c, {
       inset: "",
@@ -20610,7 +20620,7 @@ function UA(e, t, n, o, s, a) {
         title: " 🛠️ " + e.t("Support"),
         "is-link": "",
         to: "/support",
-        onClick: t[3] || (t[3] = d => {
+        onClick: t[4] || (t[4] = d => {
           e.isMenuOpen = !1
         }),
         size: "large"
@@ -20618,15 +20628,15 @@ function UA(e, t, n, o, s, a) {
         center: "",
         title: " ⚖️ " + e.t("Terms of use"),
         "is-link": "",
-        onClick: t[4] || (t[4] = d => e.$router.push("/terms")),
+        onClick: t[5] || (t[5] = d => e.$router.push("/terms")),
         size: "large"
       }, null, 8, ["title"])]),
       _: 1
-    }), t[9] || (t[9] = A("br", null, null, -1))]),
+    }), t[10] || (t[10] = A("br", null, null, -1))]),
     _: 1
   }, 8, ["show"]), h(u, {
     show: e.isShowLangPicker,
-    "onUpdate:show": t[8] || (t[8] = d => e.isShowLangPicker = d),
+    "onUpdate:show": t[9] || (t[9] = d => e.isShowLangPicker = d),
     position: "top",
     closeable: ""
   }, {
@@ -20638,7 +20648,7 @@ function UA(e, t, n, o, s, a) {
         "is-link": "",
         value: a.firstLang.key,
         center: "",
-        onClick: t[6] || (t[6] = d => a.onLangSelect(a.firstLang.key))
+        onClick: t[7] || (t[7] = d => a.onLangSelect(a.firstLang.key))
       }, {
         icon: le(() => [A("span", FA, M(a.firstLang.icon) + " ", 1)]),
         _: 1
@@ -20648,7 +20658,7 @@ function UA(e, t, n, o, s, a) {
         "is-link": "",
         value: a.userLang.key,
         center: "",
-        onClick: t[7] || (t[7] = d => a.onLangSelect(a.userLang.key))
+        onClick: t[8] || (t[8] = d => a.onLangSelect(a.userLang.key))
       }, {
         icon: le(() => [A("span", VA, M(a.userLang.icon) + " ", 1)]),
         _: 1
@@ -20678,7 +20688,7 @@ function UA(e, t, n, o, s, a) {
 }
 const WA = yt(MA, [
     ["render", UA],
-    ["__scopeId", "data-v-3b695b73"]
+    ["__scopeId", "data-v-3f4cbef6"]
   ]),
   jA = {
     components: {
@@ -23960,43 +23970,43 @@ const fO = new Date,
     history: VP("/"),
     routes: [{
       path: "/",
-      component: () => ct(hd ? () => import("./Finish-CIV7gjuA.js") : () => import("./Home-C7Zr5ZBZ.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
+      component: () => ct(hd ? () => import("./Finish-BHKuFmRv.js") : () => import("./Home-Bo6xkQgU.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
     }, {
       path: "/finish",
-      component: () => ct(() => import("./Finish-CIV7gjuA.js"), __vite__mapDeps([0, 1]))
+      component: () => ct(() => import("./Finish-BHKuFmRv.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/home",
-      component: () => ct(hd ? () => import("./Finish-CIV7gjuA.js") : () => import("./Home-C7Zr5ZBZ.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
+      component: () => ct(hd ? () => import("./Finish-BHKuFmRv.js") : () => import("./Home-Bo6xkQgU.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
     }, {
       path: "/airdrop",
       component: () => ct(() => Promise.resolve().then(() => HE), void 0)
     }, {
       path: "/airdrop2",
-      component: () => ct(() => import("./Airdrop2-U2H6qfdM.js"), __vite__mapDeps([8, 9]))
+      component: () => ct(() => import("./Airdrop2-DfV6x3lj.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/terms",
-      component: () => ct(() => import("./Terms-BRb3bIBq.js"), [])
+      component: () => ct(() => import("./Terms-C0V9xD8A.js"), [])
     }, {
       path: "/quests",
       component: () => ct(() => Promise.resolve().then(() => TE), void 0)
     }, {
       path: "/rating",
-      component: () => ct(() => import("./Rating-DYONxqdk.js"), __vite__mapDeps([10, 11]))
+      component: () => ct(() => import("./Rating-Ch5ZQZh8.js"), __vite__mapDeps([10, 11]))
     }, {
       path: "/friends",
       component: () => ct(() => Promise.resolve().then(() => rI), void 0)
     }, {
       path: "/communities",
-      component: () => ct(() => import("./Communities-BWEzu1Zo.js"), __vite__mapDeps([12, 13]))
+      component: () => ct(() => import("./Communities-CdNvUXuD.js"), __vite__mapDeps([12, 13]))
     }, {
       path: "/alliance",
-      component: () => ct(() => import("./Alliance-Be_GDyQH.js"), __vite__mapDeps([3, 4]))
+      component: () => ct(() => import("./Alliance-CwynDYOC.js"), __vite__mapDeps([3, 4]))
     }, {
       path: "/boost",
-      component: () => ct(() => import("./Boost-BUzTcwoq.js"), __vite__mapDeps([5, 6]))
+      component: () => ct(() => import("./Boost-luu4_0DB.js"), __vite__mapDeps([5, 6]))
     }, {
       path: "/support",
-      component: () => ct(() => import("./Support-qRCXGByz.js"), [])
+      component: () => ct(() => import("./Support-DZQXQhbh.js"), [])
     }, {
       path: "/test",
       component: () => ct(() => Promise.resolve().then(() => DI), void 0)
@@ -24005,7 +24015,7 @@ const fO = new Date,
       component: () => ct(() => Promise.resolve().then(() => wI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => ct(() => import("./ReferralCommission-D2U4Pysr.js"), __vite__mapDeps([14, 15]))
+      component: () => ct(() => import("./ReferralCommission-BqOOYbYZ.js"), __vite__mapDeps([14, 15]))
     }]
   }),
   mO = {
@@ -25114,5 +25124,5 @@ window.userStore = ao();
 window.stateStore = Kr();
 window.dbStore = Cm();
 export {
-  JI as A, gl as E, Oe as F, vm as G, hA as L, WA as M, Yr as T, yt as _, A as a, h as b, q as c, ve as d, we as e, Ft as f, $e as g, at as h, rt as i, jr as j, hf as k, XT as l, za as m, an as n, z as o, Lv as p, ge as r, uo as s, M as t, Ry as u, ft as v, le as w
+  ri as A, gl as E, Oe as F, vm as G, hA as L, WA as M, Yr as T, yt as _, A as a, h as b, q as c, ve as d, we as e, Ft as f, $e as g, at as h, rt as i, jr as j, hf as k, XT as l, za as m, an as n, z as o, JI as p, Lv as q, ge as r, uo as s, M as t, Ry as u, ft as v, le as w
 };

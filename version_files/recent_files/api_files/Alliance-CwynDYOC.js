@@ -13,10 +13,10 @@ import {
   d as u,
   t as l,
   r as c,
-  A as N,
+  p as N,
   F as S,
   f as I
-} from "./index-C82cJFWI.js";
+} from "./index-BqTnrUKT.js";
 const M = {
   name: "Progressbar-g",
   props: {
@@ -235,8 +235,8 @@ function $(e, n, h, _, i, s) {
     v = c("van-button"),
     b = c("progressbar-g"),
     y = c("van-field"),
-    A = c("van-stepper"),
-    w = c("van-cell-group"),
+    w = c("van-stepper"),
+    A = c("van-cell-group"),
     C = c("van-form"),
     g = c("van-popup"),
     f = c("van-slider");
@@ -306,7 +306,7 @@ function $(e, n, h, _, i, s) {
     default: o(() => [t("h1", null, l(e.t("Edit Alliance info")), 1), a(C, {
       onSubmit: s.save
     }, {
-      default: o(() => [a(w, {
+      default: o(() => [a(A, {
         inset: "",
         class: "noMargin",
         style: {
@@ -342,7 +342,7 @@ function $(e, n, h, _, i, s) {
           label: o(() => [u(l(e.t("Enter Fee")) + " ", 1), n[17] || (n[17] = t("span", {
             class: "coin25"
           }, null, -1))]),
-          input: o(() => [a(A, {
+          input: o(() => [a(w, {
             modelValue: i.allianceEditableInfo.enterFee,
             "onUpdate:modelValue": n[6] || (n[6] = d => i.allianceEditableInfo.enterFee = d),
             min: e.gameConfig["alliance.fee.enter"] ?? 1e3,
@@ -510,10 +510,10 @@ function re(e, n, h, _, i, s) {
     v = c("van-icon"),
     b = c("van-cell"),
     y = c("van-cell-group"),
-    A = c("van-loading"),
-    w = c("alliance-info"),
+    w = c("van-loading"),
+    A = c("alliance-info"),
     C = c("van-popup");
-  return r(), p("div", null, [t("h3", null, l(e.t("Alliance List by Exp")), 1), i.isTopListLoading ? (r(), p("div", oe, [a(A)])) : (r(), p(S, {
+  return r(), p("div", null, [t("h3", null, l(e.t("Alliance List by Exp")), 1), i.isTopListLoading ? (r(), p("div", oe, [a(w)])) : (r(), p(S, {
     key: 0
   }, [i.topList.length ? (r(), p("div", le, [(r(!0), p(S, null, I(s.sortedLevels, g => (r(), p("div", {
     key: "level" + g
@@ -560,7 +560,7 @@ function re(e, n, h, _, i, s) {
       "min-width": "90%"
     }
   }, {
-    default: o(() => [a(w, {
+    default: o(() => [a(A, {
       "alliance-data": i.selectedAlliance,
       class: "container"
     }, null, 8, ["alliance-data"])]),
