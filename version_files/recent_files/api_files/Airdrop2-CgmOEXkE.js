@@ -18,7 +18,7 @@ import {
   g as p,
   o as r,
   h as W
-} from "./index-4S2gbC6Z.js";
+} from "./index-DJ8aYN9l.js";
 const K = {
     name: "Airdrop2-g",
     components: {
@@ -27,7 +27,7 @@ const K = {
       Menu: R
     },
     async created() {
-      await window.listenTonConnect()
+      await window.listenTonConnect(), this.wallet = (await window.tonConnectUI()).wallet, this.unsubscribe = (await window.tonConnectUI()).onStatusChange(e => this.wallet = e)
     },
     async mounted() {
       this.stores.state.setPageSettings({
@@ -35,7 +35,7 @@ const K = {
       }), this.isPageLoading = !0;
       try {
         const e = await this.apiCall("airdropData");
-        this.selectedMethod = e.method, this.selectedMethodData = e.data, this.tokens = e.tokens, this.wallet = (await window.tonConnectUI()).wallet, this.unsubscribe = (await window.tonConnectUI()).onStatusChange(t => this.wallet = t)
+        this.selectedMethod = e.method, this.selectedMethodData = e.data, this.tokens = e.tokens
       } catch (e) {
         this._catchError(e)
       }
@@ -899,7 +899,7 @@ function Ze(e, t, h, S, s, c) {
 }
 const qe = Y(K, [
   ["render", Ze],
-  ["__scopeId", "data-v-8c72af8d"]
+  ["__scopeId", "data-v-290516d5"]
 ]);
 export {
   qe as

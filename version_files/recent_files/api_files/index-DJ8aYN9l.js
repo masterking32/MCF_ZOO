@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-DHSbLyHW.js", "assets/Airdrop2-hN_dVisC.css", "assets/Finish-X7-PAckC.js", "assets/Finish-Gzapn-3U.css", "assets/Rating-B2EdpDhX.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-Cr7rRY5B.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-D99vDKMl.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-5HnBNLR-.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-CKfDIpKi.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-CgmOEXkE.js", "assets/Airdrop2-D-bm_VtJ.css", "assets/Finish-BFkZhlt3.js", "assets/Finish-Gzapn-3U.css", "assets/Rating-DodnOJHB.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-D8rUZz1S.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-Cd0xH3zf.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CBWRROWF.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-BSBlsG9y.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -23960,43 +23960,43 @@ const ia = cO({
     history: FP("/"),
     routes: [{
       path: "/",
-      component: () => yt(() => import("./Airdrop2-DHSbLyHW.js"), __vite__mapDeps([0, 1]))
+      component: () => yt(() => import("./Airdrop2-CgmOEXkE.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/home",
       component: () => yt(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/finish",
-      component: () => yt(() => import("./Finish-X7-PAckC.js"), __vite__mapDeps([2, 3]))
+      component: () => yt(() => import("./Finish-BFkZhlt3.js"), __vite__mapDeps([2, 3]))
     }, {
       path: "/airdrop",
       component: () => yt(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/airdrop2",
-      component: () => yt(() => import("./Airdrop2-DHSbLyHW.js"), __vite__mapDeps([0, 1]))
+      component: () => yt(() => import("./Airdrop2-CgmOEXkE.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/terms",
-      component: () => yt(() => import("./Terms-D1dOr0ON.js"), [])
+      component: () => yt(() => import("./Terms-pnvspnKD.js"), [])
     }, {
       path: "/quests",
       component: () => yt(() => Promise.resolve().then(() => TE), void 0)
     }, {
       path: "/rating",
-      component: () => yt(() => import("./Rating-B2EdpDhX.js"), __vite__mapDeps([4, 5]))
+      component: () => yt(() => import("./Rating-DodnOJHB.js"), __vite__mapDeps([4, 5]))
     }, {
       path: "/friends",
       component: () => yt(() => Promise.resolve().then(() => lI), void 0)
     }, {
       path: "/communities",
-      component: () => yt(() => import("./Communities-Cr7rRY5B.js"), __vite__mapDeps([6, 7]))
+      component: () => yt(() => import("./Communities-D8rUZz1S.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/alliance",
-      component: () => yt(() => import("./Alliance-D99vDKMl.js"), __vite__mapDeps([8, 9]))
+      component: () => yt(() => import("./Alliance-Cd0xH3zf.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/boost",
-      component: () => yt(() => import("./Boost-5HnBNLR-.js"), __vite__mapDeps([10, 11]))
+      component: () => yt(() => import("./Boost-CBWRROWF.js"), __vite__mapDeps([10, 11]))
     }, {
       path: "/support",
-      component: () => yt(() => import("./Support-d1FCFtro.js"), [])
+      component: () => yt(() => import("./Support-BeSa7UfV.js"), [])
     }, {
       path: "/test",
       component: () => yt(() => Promise.resolve().then(() => RI), void 0)
@@ -24005,7 +24005,7 @@ const ia = cO({
       component: () => yt(() => Promise.resolve().then(() => bI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => yt(() => import("./ReferralCommission-CKfDIpKi.js"), __vite__mapDeps([12, 13]))
+      component: () => yt(() => import("./ReferralCommission-BSBlsG9y.js"), __vite__mapDeps([12, 13]))
     }]
   }),
   dO = {
