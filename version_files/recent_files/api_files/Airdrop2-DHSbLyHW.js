@@ -1,24 +1,24 @@
 import {
-  _ as Z,
+  _ as Y,
   G as q,
-  j as G,
+  T as G,
   M as R,
   A as H,
   c as u,
   a as o,
   b as d,
-  g as f,
+  d as f,
   t as n,
   w as a,
-  h as P,
-  d as l,
-  e as m,
+  n as P,
+  e as l,
+  f as m,
   F as w,
-  f as _,
-  r as p,
+  r as _,
+  g as p,
   o as r,
-  k as W
-} from "./index-7rbK73ZE.js";
+  h as W
+} from "./index-4S2gbC6Z.js";
 const K = {
     name: "Airdrop2-g",
     components: {
@@ -127,7 +127,7 @@ const K = {
           isExchange: !0,
           isNeedGas: !1,
           inputs: ["uid", "deposit_address"],
-          registerLink: "https://bitget.com/",
+          registerLink: "https://partner.bitget.com/bg/ZOOxBITGET",
           datesInfo: [{
             date: "2025-02-22T09:00:00.000Z",
             title: "Deposit end"
@@ -167,7 +167,7 @@ const K = {
           isExchange: !0,
           isNeedGas: !1,
           inputs: ["uid", "deposit_address", "memo"],
-          registerLink: "https://www.kucoin.com/ucenter/signup",
+          registerLink: "https://www.kucoin.com/r/af/rE35ETZ",
           datesInfo: [{
             date: "2025-02-22T09:00:00.000Z",
             title: "Deposit end"
@@ -508,7 +508,7 @@ const K = {
     }
   };
 
-function Ye(e, t, h, S, s, c) {
+function Ze(e, t, h, S, s, c) {
   var E, x, M;
   const F = p("Menu"),
     N = p("van-loading"),
@@ -834,7 +834,7 @@ function Ye(e, t, h, S, s, c) {
             key: g
           }, [o("p", ze, n(c.getInputTitle(g, s.activeSelectedExchange)) + ":", 1), d(V, {
             modelValue: s.depositFormInputsValue[g],
-            "onUpdate:modelValue": Y => s.depositFormInputsValue[g] = Y,
+            "onUpdate:modelValue": Z => s.depositFormInputsValue[g] = Z,
             center: "",
             autofocus: !0,
             clearable: "",
@@ -897,9 +897,9 @@ function Ye(e, t, h, S, s, c) {
     _: 1
   }, 8, ["onClick"])]))], 64)
 }
-const qe = Z(K, [
-  ["render", Ye],
-  ["__scopeId", "data-v-ffc7928d"]
+const qe = Y(K, [
+  ["render", Ze],
+  ["__scopeId", "data-v-8c72af8d"]
 ]);
 export {
   qe as

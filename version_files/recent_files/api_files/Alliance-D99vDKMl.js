@@ -3,20 +3,20 @@ import {
   o as r,
   c as p,
   a as t,
-  m as U,
-  h as T,
-  n as k,
+  l as U,
+  n as T,
+  k,
   b as a,
-  g as x,
-  e as E,
+  d as x,
+  f as E,
   w as o,
-  d as u,
+  e as u,
   t as l,
-  r as c,
-  p as N,
+  g as c,
+  m as N,
   F as S,
-  f as I
-} from "./index-7rbK73ZE.js";
+  r as I
+} from "./index-4S2gbC6Z.js";
 const M = {
   name: "Progressbar-g",
   props: {
@@ -181,14 +181,14 @@ const B = L(M, [
   P = {
     class: "white"
   },
-  G = {
+  R = {
     class: "flexBeetween",
     style: {
       "font-size": "0.8em",
       "margin-bottom": "10px"
     }
   },
-  R = {
+  G = {
     key: 0
   },
   q = {
@@ -259,7 +259,7 @@ function $(e, n, h, _, i, s) {
   }, {
     default: o(() => [u(l(e.t("Leave")), 1)]),
     _: 1
-  })])]), t("div", P, [t("div", G, [t("div", null, l(e.t("Founder:")) + " " + l(s.extUAlliance.ownerName), 1), t("div", null, "#" + l(s.extUAlliance.id), 1)]), s.extUAlliance.channelLink || s.extUAlliance.isOwner ? (r(), p("div", R, [u(l(e.t("Channel:")) + " ", 1), t("span", q, [s.extUAlliance.channelLink ? (r(), p("span", {
+  })])]), t("div", P, [t("div", R, [t("div", null, l(e.t("Founder:")) + " " + l(s.extUAlliance.ownerName), 1), t("div", null, "#" + l(s.extUAlliance.id), 1)]), s.extUAlliance.channelLink || s.extUAlliance.isOwner ? (r(), p("div", G, [u(l(e.t("Channel:")) + " ", 1), t("span", q, [s.extUAlliance.channelLink ? (r(), p("span", {
     key: 0,
     onClick: n[1] || (n[1] = d => e._openUrl("https://" + s.extUAlliance.channelLink))
   }, l(s.extUAlliance.channelLink), 1)) : (r(), p("span", {

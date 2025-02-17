@@ -1,21 +1,21 @@
 import {
   _ as R,
-  T as N,
+  i as N,
   c as p,
   a as o,
   t as s,
   b as i,
   w as e,
-  g,
-  r,
+  d as g,
+  g as r,
   o as l,
-  n as f,
-  d as u,
-  F as h,
-  f as k,
-  h as T
-} from "./index-7rbK73ZE.js";
-const w = {
+  k as f,
+  e as u,
+  F as k,
+  r as b,
+  n as w
+} from "./index-4S2gbC6Z.js";
+const C = {
     name: "Rating-o",
     components: {
       TopBar: N
@@ -48,7 +48,7 @@ const w = {
       }
     }
   },
-  C = {
+  T = {
     class: "rating"
   },
   B = {
@@ -62,13 +62,13 @@ const w = {
   };
 
 function I(t, n, S, M, d, c) {
-  const b = r("van-loading"),
+  const h = r("van-loading"),
     m = r("van-cell"),
     _ = r("van-cell-group"),
     v = r("van-sticky"),
     y = r("van-skeleton-paragraph"),
     L = r("van-back-top");
-  return l(), p("div", C, [o("div", B, [o("div", E, [o("h1", null, s(t.t("Player Rankings")), 1), i(v, {
+  return l(), p("div", T, [o("div", B, [o("div", E, [o("h1", null, s(t.t("Player Rankings")), 1), i(v, {
     "offset-top": "0",
     onChange: t._stickyChange
   }, {
@@ -88,7 +88,7 @@ function I(t, n, S, M, d, c) {
       }, {
         title: e(() => [u(s(t.uProfile.firstName) + " " + s(t.uProfile.lastName), 1)]),
         label: e(() => [u(s(t._number(t.uHero.tokens)) + " " + s(t.TOKEN_NAME), 1)]),
-        "right-icon": e(() => [d.isTopListLoading ? (l(), g(b, {
+        "right-icon": e(() => [d.isTopListLoading ? (l(), g(h, {
           key: 0,
           style: {
             margin: "0 auto"
@@ -106,7 +106,7 @@ function I(t, n, S, M, d, c) {
       margin: "0"
     }
   }, {
-    default: e(() => [(l(), p(h, null, k(15, a => i(m, {
+    default: e(() => [(l(), p(k, null, b(15, a => i(m, {
       center: "",
       key: "top" + a,
       style: {
@@ -130,10 +130,10 @@ function I(t, n, S, M, d, c) {
       margin: "0"
     }
   }, {
-    default: e(() => [(l(!0), p(h, null, k(d.topList, a => (l(), g(m, {
+    default: e(() => [(l(!0), p(k, null, b(d.topList, a => (l(), g(m, {
       center: "",
       key: "top" + a.rating,
-      class: T({
+      class: w({
         isMe: a.isSelf
       })
     }, {
@@ -147,7 +147,7 @@ function I(t, n, S, M, d, c) {
     bottom: "100px"
   }), n[2] || (n[2] = o("br", null, null, -1)), n[3] || (n[3] = o("br", null, null, -1)), n[4] || (n[4] = o("br", null, null, -1)), n[5] || (n[5] = o("br", null, null, -1)), n[6] || (n[6] = o("br", null, null, -1))])])])
 }
-const P = R(w, [
+const P = R(C, [
   ["render", I],
   ["__scopeId", "data-v-d33cf167"]
 ]);

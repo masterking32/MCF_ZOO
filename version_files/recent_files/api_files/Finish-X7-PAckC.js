@@ -6,10 +6,10 @@ import {
   b as o,
   t,
   w as a,
-  r as i,
+  g as i,
   o as _,
-  d as r
-} from "./index-7rbK73ZE.js";
+  e as r
+} from "./index-4S2gbC6Z.js";
 const g = {
     name: "Empty-g",
     components: {

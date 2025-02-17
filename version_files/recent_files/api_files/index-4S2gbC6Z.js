@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Finish-Bbs2DSw_.js", "assets/Finish-Gzapn-3U.css", "assets/Home-2xRNc8dp.js", "assets/Alliance-C_Z4MaZ4.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-JA0_YPW6.js", "assets/Boost-CeTnVcsX.css", "assets/Home-BT9Zzn6w.css", "assets/Airdrop2-C7H4xJ3j.js", "assets/Airdrop2-Dfb-GZKv.css", "assets/Rating-BrW5s71U.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-3pHGwFzG.js", "assets/Communities-DpnpFDuu.css", "assets/ReferralCommission-B2--nxfX.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-DHSbLyHW.js", "assets/Airdrop2-hN_dVisC.css", "assets/Finish-X7-PAckC.js", "assets/Finish-Gzapn-3U.css", "assets/Rating-B2EdpDhX.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-Cr7rRY5B.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-D99vDKMl.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-5HnBNLR-.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-CKfDIpKi.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -61,7 +61,7 @@ const pn = (e, t) => JSON.stringify(e) === JSON.stringify(t),
     type: Boolean,
     default: !0
   },
-  vt = e => ({
+  gt = e => ({
     type: e,
     required: !0
   }),
@@ -98,7 +98,7 @@ const Ke = {},
   Ym = () => !1,
   sa = e => e.charCodeAt(0) === 111 && e.charCodeAt(1) === 110 && (e.charCodeAt(2) > 122 || e.charCodeAt(2) < 97),
   Jl = e => e.startsWith("onUpdate:"),
-  ht = Object.assign,
+  ft = Object.assign,
   er = (e, t) => {
     const n = e.indexOf(t);
     n > -1 && e.splice(n, 1)
@@ -1368,15 +1368,15 @@ function Gd(e) {
     vn = -1, Ot.length = 0, qd(), Qs = null, (Ot.length || ni.length) && Gd()
   }
 }
-let dt = null,
+let ut = null,
   Zd = null;
 
 function Ks(e) {
-  const t = dt;
-  return dt = e, Zd = e && e.type.__scopeId || null, t
+  const t = ut;
+  return ut = e, Zd = e && e.type.__scopeId || null, t
 }
 
-function le(e, t = dt, n) {
+function le(e, t = ut, n) {
   if (!t || e._n) return e;
   const o = (...s) => {
     o._d && bc(-1);
@@ -1393,8 +1393,8 @@ function le(e, t = dt, n) {
 }
 
 function rt(e, t) {
-  if (dt === null) return e;
-  const n = va(dt),
+  if (ut === null) return e;
+  const n = va(ut),
     o = e.dirs || (e.dirs = []);
   for (let s = 0; s < t.length; s++) {
     let [a, l, r, c = Ke] = t[s];
@@ -1775,7 +1775,7 @@ function af(e, t = !1, n) {
   return o
 } /*! #__NO_SIDE_EFFECTS__ */
 function K(e, t) {
-  return Ee(e) ? ht({
+  return Ee(e) ? ft({
     name: e.name
   }, t, {
     setup: e
@@ -1829,7 +1829,7 @@ function _n(e, t) {
   rf(e, "da", t)
 }
 
-function rf(e, t, n = gt) {
+function rf(e, t, n = mt) {
   const o = e.__wdc || (e.__wdc = () => {
     let s = n;
     for (; s;) {
@@ -1851,7 +1851,7 @@ function Gg(e, t, n, o) {
   }, n)
 }
 
-function ha(e, t, n = gt, o = !1) {
+function ha(e, t, n = mt, o = !1) {
   if (n) {
     const s = n[e] || (n[e] = []),
       a = t.__weh || (t.__weh = (...l) => {
@@ -1863,7 +1863,7 @@ function ha(e, t, n = gt, o = !1) {
     return o ? s.unshift(a) : s.push(a), a
   }
 }
-const zn = e => (t, n = gt) => {
+const zn = e => (t, n = mt) => {
     (!ga || e === "sp") && ha(e, (...o) => t(...o), n)
   },
   Zg = zn("bm"),
@@ -1876,7 +1876,7 @@ const zn = e => (t, n = gt) => {
   Jg = zn("rtg"),
   ev = zn("rtc");
 
-function tv(e, t = gt) {
+function tv(e, t = mt) {
   ha("ec", e, t)
 }
 const df = "components",
@@ -1892,7 +1892,7 @@ function iv(e) {
 }
 
 function ff(e, t, n = !0, o = !1) {
-  const s = dt || gt;
+  const s = ut || mt;
   if (s) {
     const a = s.type;
     if (e === df) {
@@ -1948,7 +1948,7 @@ function hf(e, t) {
 }
 
 function za(e, t, n = {}, o, s) {
-  if (dt.ce || dt.parent && oi(dt.parent) && dt.parent.ce) return t !== "default" && (n.name = t), z(), $e(Oe, null, [h("slot", n, o)], 64);
+  if (ut.ce || ut.parent && oi(ut.parent) && ut.parent.ce) return t !== "default" && (n.name = t), z(), $e(Oe, null, [h("slot", n, o)], 64);
   let a = e[t];
   a && a._c && (a._d = !1), z();
   const l = a && mf(a(n)),
@@ -1962,7 +1962,7 @@ function mf(e) {
   return e.some(t => ui(t) ? !(t.type === pt || t.type === Oe && !mf(t.children)) : !0) ? e : null
 }
 const Tl = e => e ? Bf(e) ? va(e) : Tl(e.parent) : null,
-  Ni = ht(Object.create(null), {
+  Ni = ft(Object.create(null), {
     $: e => e,
     $el: e => e.vnode.el,
     $data: e => e.data,
@@ -2232,7 +2232,7 @@ const rv = {
 
 function mc(e, t) {
   return t ? e ? function() {
-    return ht(Ee(e) ? e.call(this, this) : e, Ee(t) ? t.call(this, this) : t)
+    return ft(Ee(e) ? e.call(this, this) : e, Ee(t) ? t.call(this, this) : t)
   } : t : e
 }
 
@@ -2254,17 +2254,17 @@ function It(e, t) {
 }
 
 function Ri(e, t) {
-  return e ? ht(Object.create(null), e, t) : t
+  return e ? ft(Object.create(null), e, t) : t
 }
 
 function gc(e, t) {
-  return e ? xe(e) && xe(t) ? [...new Set([...e, ...t])] : ht(Object.create(null), fc(e), fc(t ?? {})) : t
+  return e ? xe(e) && xe(t) ? [...new Set([...e, ...t])] : ft(Object.create(null), fc(e), fc(t ?? {})) : t
 }
 
 function uv(e, t) {
   if (!e) return t;
   if (!t) return e;
-  const n = ht(Object.create(null), e);
+  const n = ft(Object.create(null), e);
   for (const o in t) n[o] = It(e[o], t[o]);
   return n
 }
@@ -2294,7 +2294,7 @@ let dv = 0;
 
 function fv(e, t) {
   return function(o, s = null) {
-    Ee(o) || (o = ht({}, o)), s != null && !Je(s) && (s = null);
+    Ee(o) || (o = ft({}, o)), s != null && !Je(s) && (s = null);
     const a = vf(),
       l = new WeakSet,
       r = [];
@@ -2354,15 +2354,15 @@ function fv(e, t) {
 let Po = null;
 
 function Dn(e, t) {
-  if (gt) {
-    let n = gt.provides;
-    const o = gt.parent && gt.parent.provides;
-    o === n && (n = gt.provides = Object.create(o)), n[e] = t
+  if (mt) {
+    let n = mt.provides;
+    const o = mt.parent && mt.parent.provides;
+    o === n && (n = mt.provides = Object.create(o)), n[e] = t
   }
 }
 
 function Bt(e, t, n = !1) {
-  const o = gt || dt;
+  const o = mt || ut;
   if (o || Po) {
     const s = Po ? Po._context.provides : o ? o.parent == null ? o.vnode.appContext && o.vnode.appContext.provides : o.parent.provides : void 0;
     if (s && e in s) return s[e];
@@ -2371,7 +2371,7 @@ function Bt(e, t, n = !1) {
 }
 
 function hv() {
-  return !!(gt || dt || Po)
+  return !!(mt || ut || Po)
 }
 const yf = {},
   pf = () => Object.create(yf),
@@ -2478,7 +2478,7 @@ function Cf(e, t, n = !1) {
     const d = f => {
       c = !0;
       const [m, g] = Cf(f, t, !0);
-      ht(l, m), g && r.push(...g)
+      ft(l, m), g && r.push(...g)
     };
     !n && t.mixins.length && t.mixins.forEach(d), e.extends && d(e.extends), e.mixins && e.mixins.forEach(d)
   }
@@ -2494,7 +2494,7 @@ function Cf(e, t, n = !1) {
           const m = a[d],
             g = l[f] = xe(m) || Ee(m) ? {
               type: m
-            } : ht({}, m),
+            } : ft({}, m),
             p = g.type;
           let y = !1,
             b = !0;
@@ -3124,7 +3124,7 @@ function vr(e, t, n = Ke) {
     deep: s,
     flush: a,
     once: l
-  } = n, r = ht({}, n);
+  } = n, r = ft({}, n);
   let c;
   if (ga)
     if (a === "sync") {
@@ -3135,7 +3135,7 @@ function vr(e, t, n = Ke) {
     const m = () => {};
     return m.stop = bn, m.resume = bn, m.pause = bn, m
   }
-  const u = gt;
+  const u = mt;
   r.call = (m, g, p) => on(m, u, g, p);
   let d = !1;
   a === "post" ? r.scheduler = m => {
@@ -3196,11 +3196,11 @@ function Ef(e, t, n = !1) {
   if (!Ee(e)) {
     const c = u => {
       const d = Ef(u, t, !0);
-      d && (r = !0, ht(l, d))
+      d && (r = !0, ft(l, d))
     };
     !n && t.mixins.length && t.mixins.forEach(c), e.extends && c(e.extends), e.mixins && e.mixins.forEach(c)
   }
-  return !a && !r ? (Je(e) && o.set(e, null), null) : (xe(a) ? a.forEach(c => l[c] = null) : ht(l, a), Je(e) && o.set(e, l), l)
+  return !a && !r ? (Je(e) && o.set(e, null), null) : (xe(a) ? a.forEach(c => l[c] = null) : ft(l, a), Je(e) && o.set(e, l), l)
 }
 
 function ma(e, t) {
@@ -3360,7 +3360,7 @@ const Of = ({
     ref_key: t,
     ref_for: n
   }) => (typeof e == "number" && (e = "" + e), e != null ? tt(e) || ot(e) || Ee(e) ? {
-    i: dt,
+    i: ut,
     r: e,
     k: t,
     f: !!n
@@ -3394,7 +3394,7 @@ function A(e, t = null, n = null, o = 0, s = null, a = e === Oe ? 0 : 1, l = !1,
     dynamicProps: s,
     dynamicChildren: null,
     appContext: null,
-    ctx: dt
+    ctx: ut
   };
   return r ? (yr(c, n), a & 128 && e.normalize(c)) : n && (c.shapeFlag |= tt(n) ? 8 : 16), Zi > 0 && !l && Nt && (c.patchFlag > 0 || a & 6) && c.patchFlag !== 32 && Nt.push(c), c
 }
@@ -3411,14 +3411,14 @@ function $v(e, t = null, n = null, o = 0, s = null, a = !1) {
       class: r,
       style: c
     } = t;
-    r && !tt(r) && (t.class = at(r)), Je(c) && (cr(c) && !xe(c) && (c = ht({}, c)), t.style = an(c))
+    r && !tt(r) && (t.class = at(r)), Je(c) && (cr(c) && !xe(c) && (c = ft({}, c)), t.style = an(c))
   }
   const l = tt(e) ? 1 : If(e) ? 128 : Jd(e) ? 64 : Je(e) ? 4 : Ee(e) ? 2 : 0;
   return A(e, t, n, o, s, l, a, !0)
 }
 
 function Mv(e) {
-  return e ? cr(e) || bf(e) ? ht({}, e) : e : null
+  return e ? cr(e) || bf(e) ? ft({}, e) : e : null
 }
 
 function co(e, t, n = !1, o = !1) {
@@ -3497,11 +3497,11 @@ function yr(e, t) {
     } else {
       n = 32;
       const s = t._;
-      !s && !bf(t) ? t._ctx = dt : s === 3 && dt && (dt.slots._ === 1 ? t._ = 1 : (t._ = 2, e.patchFlag |= 1024))
+      !s && !bf(t) ? t._ctx = ut : s === 3 && ut && (ut.slots._ === 1 ? t._ = 1 : (t._ = 2, e.patchFlag |= 1024))
     }
   else Ee(t) ? (t = {
     default: t,
-    _ctx: dt
+    _ctx: ut
   }, n = 32) : (t = String(t), o & 64 ? (n = 16, t = [ve(t)]) : n = 8);
   e.children = t, e.shapeFlag |= n
 }
@@ -3595,8 +3595,8 @@ function Vv(e, t, n) {
     _: a
   }, a.root = t ? t.root : a, a.emit = Ev.bind(null, a), e.ce && e.ce(a), a
 }
-let gt = null;
-const ln = () => gt || dt;
+let mt = null;
+const ln = () => mt || ut;
 let qs, Il;
 {
   const e = _d(),
@@ -3606,16 +3606,16 @@ let qs, Il;
         s.length > 1 ? s.forEach(l => l(a)) : s[0](a)
       }
     };
-  qs = t("__VUE_INSTANCE_SETTERS__", n => gt = n), Il = t("__VUE_SSR_SETTERS__", n => ga = n)
+  qs = t("__VUE_INSTANCE_SETTERS__", n => mt = n), Il = t("__VUE_SSR_SETTERS__", n => ga = n)
 }
 const as = e => {
-    const t = gt;
+    const t = mt;
     return qs(e), e.scope.on(), () => {
       e.scope.off(), qs(t)
     }
   },
   wc = () => {
-    gt && gt.scope.off(), qs(null)
+    mt && mt.scope.off(), qs(null)
   };
 
 function Bf(e) {
@@ -3673,7 +3673,7 @@ function Rf(e, t, n) {
         } = e.appContext.config, {
           delimiters: r,
           compilerOptions: c
-        } = o, u = ht(ht({
+        } = o, u = ft(ft({
           isCustomElement: a,
           delimiters: r
         }, l), c);
@@ -3818,7 +3818,7 @@ const Df = Pl ? e => Pl.createHTML(e) : e => e,
     leaveActiveClass: String,
     leaveToClass: String
   },
-  Zv = ht({}, tf, $f),
+  Zv = ft({}, tf, $f),
   Xv = e => (e.displayName = "Transition", e.props = Zv, e),
   ya = Xv((e, {
     slots: t
@@ -3865,7 +3865,7 @@ function Jv(e) {
       ko($, P ? c : a), Kn($, P ? d : r), Tc(ce) || Ac($, o, y, W)
     })
   };
-  return ht(t, {
+  return ft(t, {
     onBeforeEnter(P) {
       _o(w, [P]), Kn(P, a), Kn(P, l)
     },
@@ -3989,7 +3989,7 @@ function iy(e, t, n) {
 }
 const Gs = Symbol("_vod"),
   Mf = Symbol("_vsh"),
-  ft = {
+  dt = {
     beforeMount(e, {
       value: t
     }, {
@@ -4188,7 +4188,7 @@ const by = {
       if (t.some(l => l === a || by[l] === a)) return e(s)
     })
   },
-  Cy = ht({
+  Cy = ft({
     patchProp: yy
   }, Gv);
 let Nc;
@@ -4640,7 +4640,7 @@ function Xt(e, t = 2) {
   for (; n.length < t;) n = "0" + n;
   return n
 }
-const mt = (e, t, n) => Math.min(Math.max(e, t), n);
+const ht = (e, t, n) => Math.min(Math.max(e, t), n);
 
 function Uc(e, t, n) {
   const o = e.indexOf(t);
@@ -5509,7 +5509,7 @@ var Mp = K({
           style: r,
           class: [Dp(), e.className]
         }, [(l = t.default) == null ? void 0 : l.call(t)]), [
-          [ft, e.show]
+          [dt, e.show]
         ])
       });
     return it("touchmove", s, {
@@ -5638,7 +5638,7 @@ var Fp = K({
           }],
           onKeydown: C
         }, n, Js()), [(I = o.default) == null ? void 0 : I.call(o), y()]), [
-          [ft, e.show]
+          [dt, e.show]
         ])
       }),
       k = () => {
@@ -5797,7 +5797,7 @@ function Qp(e, t) {
 }
 
 function Vs(e, t) {
-  t = mt(t, 0, e.length);
+  t = ht(t, 0, e.length);
   for (let n = t; n < e.length; n++)
     if (!e[n].disabled) return n;
   for (let n = t - 1; n >= 0; n--)
@@ -5853,13 +5853,13 @@ var Zp = K({
   name: ah,
   props: {
     value: Z,
-    fields: vt(Object),
+    fields: gt(Object),
     options: Xe(),
     readonly: Boolean,
     allowHtml: Boolean,
-    optionHeight: vt(Number),
-    swipeDuration: vt(Z),
-    visibleOptionNum: vt(Z)
+    optionHeight: gt(Number),
+    swipeDuration: gt(Z),
+    visibleOptionNum: gt(Z)
   },
   emits: ["change", "clickOption", "scrollInto"],
   setup(e, {
@@ -5888,7 +5888,7 @@ var Zp = K({
       w = R => {
         o || b() || (r = null, f.value = eu, y(R), t("clickOption", e.options[R]))
       },
-      v = R => mt(Math.round(-R / e.optionHeight), 0, g() - 1),
+      v = R => ht(Math.round(-R / e.optionHeight), 0, g() - 1),
       C = N(() => v(d.value)),
       _ = (R, T) => {
         const P = Math.abs(R / T);
@@ -5911,7 +5911,7 @@ var Zp = K({
       D = R => {
         if (b()) return;
         m.move(R), m.isVertical() && (o = !0, Ge(R, !0));
-        const T = mt(s + m.deltaY.value, -(g() * e.optionHeight), e.optionHeight),
+        const T = ht(s + m.deltaY.value, -(g() * e.optionHeight), e.optionHeight),
           P = v(T);
         P !== C.value && t("scrollInto", e.options[P]), d.value = T;
         const $ = Date.now();
@@ -6267,13 +6267,13 @@ var r0 = K({
         const {
           active: X
         } = a;
-        return V ? e.loop ? mt(X + V, -1, d.value) : mt(X + V, 0, p.value) : X
+        return V ? e.loop ? ht(X + V, -1, d.value) : ht(X + V, 0, p.value) : X
       },
       _ = (V, X = 0) => {
         let ye = V * f.value;
         e.loop || (ye = Math.min(ye, -g.value));
         let Ce = X - ye;
-        return e.loop || (Ce = mt(Ce, g.value, 0)), Ce
+        return e.loop || (Ce = ht(Ce, g.value, 0)), Ce
       },
       k = ({
         pace: V = 0,
@@ -6445,13 +6445,13 @@ const Ar = ee(r0),
 var u0 = K({
   name: c0,
   props: {
-    count: vt(Number),
+    count: gt(Number),
     inited: Boolean,
     animated: Boolean,
-    duration: vt(Z),
+    duration: gt(Z),
     swipeable: Boolean,
     lazyRender: Boolean,
-    currentIndex: vt(Number)
+    currentIndex: gt(Number)
   },
   emits: ["change"],
   setup(e, {
@@ -6987,7 +6987,7 @@ var C0 = K({
         "aria-labelledby": y,
         "data-allow-mismatch": "attribute"
       }, [I]), [
-        [ft, _]
+        [dt, _]
       ])
     }
   }
@@ -7764,7 +7764,7 @@ var Q0 = K({
         const Le = Tn(Se) - Tn(E);
         if (e.type === "number" || e.type === "digit") {
           const O = e.type === "number";
-          E = Dl(E, O, O), H === "onBlur" && E !== "" && (E = mt(+E, (U = e.min) != null ? U : -1 / 0, (oe = e.max) != null ? oe : 1 / 0).toString())
+          E = Dl(E, O, O), H === "onBlur" && E !== "" && (E = ht(+E, (U = e.min) != null ? U : -1 / 0, (oe = e.max) != null ? oe : 1 / 0).toString())
         }
         let x = 0;
         if (e.formatter && H === e.formatTrigger) {
@@ -8483,7 +8483,7 @@ var db = K({
             title: At("defaultAddress"),
             class: Ho("default")
           }, I), [
-            [ft, !u.value]
+            [dt, !u.value]
           ])
         }
       };
@@ -8541,7 +8541,7 @@ var db = K({
               t("clickArea"), a.value = !I
             }
           }, null), [
-            [ft, e.showArea]
+            [dt, e.showArea]
           ]), h(rb, {
             show: e.showDetail,
             rows: e.detailRows,
@@ -8573,7 +8573,7 @@ var db = K({
             text: e.deleteButtonText || At("delete"),
             onClick: w
           }, null)]), [
-            [ft, !u.value]
+            [dt, !u.value]
           ]), h(cn, {
             show: a.value,
             "onUpdate:show": S => a.value = S,
@@ -8755,7 +8755,7 @@ const Ea = ee(Cb),
   };
 var Ih = K({
   props: ke({}, $r, {
-    bem: vt(Function),
+    bem: gt(Function),
     role: String,
     shape: String,
     parent: Object,
@@ -8946,7 +8946,7 @@ const Lr = ee(Ib),
 var Ob = K({
   name: Pb,
   props: {
-    address: vt(Object),
+    address: gt(Object),
     disabled: Boolean,
     switchable: Boolean,
     singleChoice: Boolean,
@@ -9387,7 +9387,7 @@ const Rh = (e, t) => 32 - new Date(e, t - 1, 32).getDate(),
     if (s.length) {
       const a = +s[0].value,
         l = +s[s.length - 1].value;
-      return Xt(mt(+n, a, l))
+      return Xt(ht(+n, a, l))
     }
     return n
   }),
@@ -9395,7 +9395,7 @@ const Rh = (e, t) => 32 - new Date(e, t - 1, 32).getDate(),
 var Xb = K({
   name: Zb,
   props: {
-    item: vt(Object),
+    item: gt(Object),
     color: String,
     index: Number,
     offset: lt(0),
@@ -9488,7 +9488,7 @@ var Xb = K({
   }
 });
 const [Jb] = Y("calendar-month"), e1 = {
-  date: vt(Date),
+  date: gt(Date),
   type: String,
   color: String,
   minDate: Date,
@@ -10887,7 +10887,7 @@ var W1 = K({
           ref: o,
           class: Ts("content")
         }, [(y = t.default) == null ? void 0 : y.call(t)])]), [
-          [ft, c.value]
+          [dt, c.value]
         ])
       });
     return Me({
@@ -11175,7 +11175,7 @@ var mw = K({
   name: hw,
   props: {
     chosen: Boolean,
-    coupon: vt(Object),
+    coupon: gt(Object),
     disabled: Boolean,
     currency: te("¥")
   },
@@ -11765,7 +11765,7 @@ var xw = K({
       text: e.closeButtonText || Qo("close"),
       onClick: () => t("change", Array.isArray(e.chosenCoupon) ? [] : -1)
     }, null), [
-      [ft, e.showCloseButton]
+      [dt, e.showCloseButton]
     ])])])
   }
 });
@@ -12330,7 +12330,7 @@ var Qw = K({
             return [e.options.map(b), (T = n.default) == null ? void 0 : T.call(n)]
           }
         })]), [
-          [ft, s.showWrapper]
+          [dt, s.showWrapper]
         ])
       };
     return Me({
@@ -12476,7 +12476,7 @@ var Zw = K({
         name: e.icon,
         class: ku("icon")
       }, null)]), [
-        [ft, v.value]
+        [dt, v.value]
       ]);
       return e.teleport ? h($o, {
         to: e.teleport
@@ -12738,7 +12738,7 @@ const uC = ee(cC),
     caseSensitive: Boolean,
     highlightClass: String,
     highlightTag: te("span"),
-    keywords: vt([String, Array]),
+    keywords: gt([String, Array]),
     sourceString: te(""),
     tag: te("div"),
     unhighlightClass: String,
@@ -12847,10 +12847,10 @@ const mC = ee(hC),
     src: String,
     show: Boolean,
     active: Number,
-    minZoom: vt(Z),
-    maxZoom: vt(Z),
-    rootWidth: vt(Number),
-    rootHeight: vt(Number),
+    minZoom: gt(Z),
+    maxZoom: gt(Z),
+    rootWidth: gt(Number),
+    rootHeight: gt(Number),
     disableZoom: Boolean,
     doubleScale: Boolean,
     closeOnClickImage: Boolean,
@@ -12914,7 +12914,7 @@ var yC = K({
       }),
       g = (W, ne) => {
         var ue;
-        if (W = mt(W, +e.minZoom, +e.maxZoom + 1), W !== o.scale) {
+        if (W = ht(W, +e.minZoom, +e.maxZoom + 1), W !== o.scale) {
           const Re = W / o.scale;
           if (o.scale = W, ne) {
             const Ne = Ue((ue = a.value) == null ? void 0 : ue.$el),
@@ -12924,7 +12924,7 @@ var yC = K({
               },
               X = o.moveX - (ne.x - Ne.left - V.x) * (Re - 1),
               ye = o.moveY - (ne.y - Ne.top - V.y) * (Re - 1);
-            o.moveX = mt(X, -f.value, f.value), o.moveY = mt(ye, -m.value, m.value)
+            o.moveX = ht(X, -f.value, f.value), o.moveY = ht(ye, -m.value, m.value)
           } else o.moveX = 0, o.moveY = c.value ? u : 0;
           t("scale", {
             scale: W,
@@ -12966,7 +12966,7 @@ var yC = K({
             o.moving = !1;
             return
           }
-          S = !0, Ge(W, !0), o.moveX = mt(Ne, -f.value, f.value), o.moveY = mt(V, -m.value, m.value)
+          S = !0, Ge(W, !0), o.moveX = ht(Ne, -f.value, f.value), o.moveY = ht(V, -m.value, m.value)
         }
         if (o.zooming && (Ge(W, !0), ne.length === 2)) {
           const ue = Tu(ne),
@@ -12994,7 +12994,7 @@ var yC = K({
       $ = W => {
         let ne = !1;
         if ((o.moving || o.zooming) && (ne = !0, o.moving && w === o.moveX && v === o.moveY && (ne = !1), !W.touches.length)) {
-          o.zooming && (o.moveX = mt(o.moveX, -f.value, f.value), o.moveY = mt(o.moveY, -m.value, m.value), o.zooming = !1), o.moving = !1, w = 0, v = 0, C = 1, o.scale < 1 && p();
+          o.zooming && (o.moveX = ht(o.moveX, -f.value, f.value), o.moveY = ht(o.moveY, -m.value, m.value), o.zooming = !1), o.moving = !1, w = 0, v = 0, C = 1, o.scale < 1 && p();
           const ue = +e.maxZoom;
           o.scale > ue && g(ue, k)
         }
@@ -13793,7 +13793,7 @@ var jC = K({
           background: v
         }
       }, [u(), p(), m()]), [
-        [ft, c.show]
+        [dt, c.show]
       ])
     }
   }
@@ -14118,7 +14118,7 @@ var c_ = K({
           }, [h("div", {
             class: Gn("keys")
           }, [p()]), y()])]), [
-            [ft, e.show]
+            [dt, e.show]
           ])]
         });
       return e.teleport ? h($o, {
@@ -14194,7 +14194,7 @@ var h_ = K({
         return d
       }),
       a = (d, f) => {
-        d = mt(d, 1, o.value), e.modelValue !== d && (t("update:modelValue", d), f && t("change", d))
+        d = ht(d, 1, o.value), e.modelValue !== d && (t("update:modelValue", d), f && t("change", d))
       };
     vi(() => a(e.modelValue));
     const l = () => h("li", {
@@ -16366,7 +16366,7 @@ var FS = K({
         const P = +e.min,
           $ = +e.max,
           J = +e.step;
-        T = mt(T, P, $);
+        T = ht(T, P, $);
         const ce = Math.round((T - P) / J) * J;
         return Hf(P, ce)
       },
@@ -16809,7 +16809,7 @@ var JS = K({
       }],
       "aria-disabled": r.value || void 0
     }, D("minus")), null), [
-      [ft, e.showMinus]
+      [dt, e.showMinus]
     ]), rt(h("input", {
       ref: a,
       type: e.integer ? "tel" : "text",
@@ -16830,7 +16830,7 @@ var JS = K({
       onFocus: y,
       onMousedown: I
     }, null), [
-      [ft, e.showInput]
+      [dt, e.showInput]
     ]), rt(h("button", De({
       type: "button",
       style: d.value,
@@ -16841,7 +16841,7 @@ var JS = K({
       }],
       "aria-disabled": c.value || void 0
     }, D("plus")), null), [
-      [ft, e.showPlus]
+      [dt, e.showPlus]
     ])])
   }
 });
@@ -16998,7 +16998,7 @@ var cT = K({
         const {
           deltaX: B
         } = f;
-        f.move(S), f.isHorizontal() && (s = !0, d.dragging = !0, (!o || B.value * a < 0) && Ge(S, e.stopPropagation), d.offset = mt(B.value + a, -p.value, g.value))
+        f.move(S), f.isHorizontal() && (s = !0, d.dragging = !0, (!o || B.value * a < 0) && Ge(S, e.stopPropagation), d.offset = ht(B.value + a, -p.value, g.value))
       },
       _ = () => {
         d.dragging && (d.dragging = !1, w(d.offset > 0 ? "left" : "right"), setTimeout(() => {
@@ -17518,7 +17518,7 @@ var IT = K({
   }
 });
 const PT = ee(IT),
-  [OT, ut, BT] = Y("uploader");
+  [OT, ct, BT] = Y("uploader");
 
 function Wu(e, t) {
   return new Promise(n => {
@@ -17556,7 +17556,7 @@ function gm(e) {
 var MT = K({
   props: {
     name: Z,
-    item: vt(Object),
+    item: gt(Object),
     index: Number,
     imageFit: String,
     lazyLoad: Boolean,
@@ -17578,15 +17578,15 @@ var MT = K({
         if (d === "uploading" || d === "failed") {
           const m = d === "failed" ? h(Pe, {
               name: "close",
-              class: ut("mask-icon")
+              class: ct("mask-icon")
             }, null) : h(rn, {
-              class: ut("loading")
+              class: ct("loading")
             }, null),
             g = Fe(f) && f !== "";
           return h("div", {
-            class: ut("mask")
+            class: ct("mask")
           }, [m, g && h("div", {
-            class: ut("mask-message")
+            class: ct("mask-message")
           }, [f])])
         }
       },
@@ -17612,7 +17612,7 @@ var MT = K({
           const d = n["preview-delete"];
           return h("div", {
             role: "button",
-            class: ut("preview-delete", {
+            class: ct("preview-delete", {
               shadow: !d
             }),
             tabindex: 0,
@@ -17620,7 +17620,7 @@ var MT = K({
             onClick: s
           }, [d ? d() : h(Pe, {
             name: "cross",
-            class: ut("preview-delete-icon")
+            class: ct("preview-delete-icon")
           }, null)])
         }
       },
@@ -17631,7 +17631,7 @@ var MT = K({
             item: f
           } = e;
           return h("div", {
-            class: ut("preview-cover")
+            class: ct("preview-cover")
           }, [n["preview-cover"](ke({
             index: d
           }, f))])
@@ -17648,7 +17648,7 @@ var MT = K({
         return gm(d) ? h(Ia, {
           fit: m,
           src: d.objectUrl || d.content || d.url,
-          class: ut("preview-image"),
+          class: ct("preview-image"),
           width: Array.isArray(g) ? g[0] : g,
           height: Array.isArray(g) ? g[1] : g,
           lazyLoad: f,
@@ -17656,17 +17656,17 @@ var MT = K({
         }, {
           default: c
         }) : h("div", {
-          class: ut("file"),
+          class: ct("file"),
           style: Hn(e.previewSize)
         }, [h(Pe, {
-          class: ut("file-icon"),
+          class: ct("file-icon"),
           name: "description"
         }, null), h("div", {
-          class: [ut("file-name"), "van-ellipsis"]
+          class: [ct("file-name"), "van-ellipsis"]
         }, [d.file ? d.file.name : d.url]), c()])
       };
     return () => h("div", {
-      class: ut("preview")
+      class: ct("preview")
     }, [u(), o(), r()])
   }
 });
@@ -17830,7 +17830,7 @@ var NT = K({
           B = e.readonly ? null : h("input", {
             ref: o,
             type: "file",
-            class: ut("input"),
+            class: ct("input"),
             accept: e.accept,
             capture: e.capture,
             multiple: e.multiple && a.value === -1,
@@ -17839,23 +17839,23 @@ var NT = K({
             onClick: v
           }, null);
         return n.default ? rt(h("div", {
-          class: ut("input-wrapper"),
+          class: ct("input-wrapper"),
           onClick: k
         }, [n.default(), B]), [
-          [ft, S]
+          [dt, S]
         ]) : rt(h("div", {
-          class: ut("upload", {
+          class: ct("upload", {
             readonly: e.readonly
           }),
           style: Hn(e.previewSize),
           onClick: k
         }, [h(Pe, {
           name: e.uploadIcon,
-          class: ut("upload-icon")
+          class: ct("upload-icon")
         }, null), e.uploadText && h("span", {
-          class: ut("upload-text")
+          class: ct("upload-text")
         }, [e.uploadText]), B]), [
-          [ft, e.showUpload && S]
+          [dt, e.showUpload && S]
         ])
       },
       D = () => {
@@ -17868,9 +17868,9 @@ var NT = K({
       reuploadFile: w,
       closeImagePreview: y
     }), vo(() => e.modelValue), () => h("div", {
-      class: ut()
+      class: ct()
     }, [h("div", {
-      class: ut("wrapper", {
+      class: ct("wrapper", {
         disabled: e.disabled
       })
     }, [_(), I()])])
@@ -17998,7 +17998,7 @@ const KT = "modulepreload",
     return "/" + e
   },
   Qu = {},
-  ct = function(t, n, o) {
+  yt = function(t, n, o) {
     let s = Promise.resolve();
     if (n && n.length > 0) {
       document.getElementsByTagName("link");
@@ -18028,7 +18028,7 @@ const KT = "modulepreload",
       return t().catch(a)
     })
   },
-  yt = (e, t) => {
+  vt = (e, t) => {
     const n = e.__vccOpts || e;
     for (const [o, s] of t) n[o] = s;
     return n
@@ -18046,7 +18046,7 @@ const KT = "modulepreload",
 function ZT(e, t, n, o, s, a) {
   return z(), q("div", GT, t[0] || (t[0] = [Lv('<h1 class="center" data-v-926f3a68>Zoo Terms of Use</h1><div class="center" data-v-926f3a68>Last Updated: 12/12/2024</div><h2 data-v-926f3a68>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-926f3a68>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-926f3a68>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-926f3a68>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-926f3a68>• Alliance - consolidation of the App Users in the App. <br data-v-926f3a68>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-926f3a68>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-926f3a68>• Interface - the visible part of the App. <br data-v-926f3a68>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-926f3a68>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-926f3a68>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-926f3a68>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-926f3a68>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-926f3a68>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-926f3a68>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-926f3a68>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-926f3a68>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-926f3a68>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-926f3a68>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-926f3a68>3. The App&#39;s Mechanics</h2><h3 data-v-926f3a68>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-926f3a68>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-926f3a68>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-926f3a68>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-926f3a68>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-926f3a68>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-926f3a68>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-926f3a68>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-926f3a68>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-926f3a68>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-926f3a68>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-926f3a68>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-926f3a68>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-926f3a68>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-926f3a68>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-926f3a68>4. Prohibited Activities</h2> Any form of technical automation, including but not limited to bots, scripts, or other automated tools, used to interact with, manipulate, or exploit the App is strictly prohibited. This includes, but is not limited to, launching bot farms, automated systems, or coordinated accounts to generate resources for the purpose of unfairly benefiting another account or alliance. Actions intended to obscure violations, such as funneling resources or benefits to a main account while maintaining the appearance of compliance, are likewise prohibited. Any disruption to the mechanics of the App, including practices such as refunding Telegram Stars for in-app purchases or similar exploits, will result in immediate account suspension or permanent ban without prior notice. <h2 data-v-926f3a68>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-926f3a68>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-926f3a68>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-926f3a68>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-926f3a68>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-926f3a68>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-926f3a68>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-926f3a68>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-926f3a68>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-926f3a68>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-926f3a68>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-926f3a68>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-926f3a68>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-926f3a68>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-926f3a68>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-926f3a68>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-926f3a68>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-926f3a68>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-926f3a68>Telegram Mini App Terms of Use</a>. <h2 data-v-926f3a68>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
 }
-const XT = yt(qT, [
+const XT = vt(qT, [
     ["render", ZT],
     ["__scopeId", "data-v-926f3a68"]
   ]),
@@ -18314,7 +18314,7 @@ function A2(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const E2 = yt(n2, [
+const E2 = vt(n2, [
   ["render", A2],
   ["__scopeId", "data-v-630ce1d4"]
 ]);
@@ -18462,7 +18462,7 @@ function N2(e, t, n, o, s, a) {
     _: 3
   }, 8, ["class", "round", "closeable", "position", "duration"])
 }
-const vm = yt(B2, [
+const vm = vt(B2, [
     ["render", N2],
     ["__scopeId", "data-v-5796a2f7"]
   ]),
@@ -18668,7 +18668,7 @@ function j2(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show", "title"])])
 }
-const jr = yt(F2, [
+const jr = vt(F2, [
     ["render", j2],
     ["__scopeId", "data-v-49c142f1"]
   ]),
@@ -19241,7 +19241,7 @@ function Ex(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const Ix = yt(Q2, [
+const Ix = vt(Q2, [
     ["render", Ex],
     ["__scopeId", "data-v-1b09d251"]
   ]),
@@ -19441,7 +19441,7 @@ function Wx(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show", "style"])])
 }
-const jx = yt(Px, [
+const jx = vt(Px, [
   ["render", Wx],
   ["__scopeId", "data-v-8158abb7"]
 ]);
@@ -20141,7 +20141,7 @@ function fA(e, t, n, o, s, a) {
     minBonus: 10
   })), 1)])) : we("", !0)
 }
-const hA = yt(aA, [
+const hA = vt(aA, [
     ["render", fA]
   ]),
   mA = {
@@ -20425,7 +20425,7 @@ function $A(e, t, n, o, s, a) {
     count: 10
   })), 1)) : we("", !0)])) : (z(), q("p", DA, M(e.t("No transactions found")), 1))], 64))])])
 }
-const xm = yt(mA, [
+const xm = vt(mA, [
     ["render", $A],
     ["__scopeId", "data-v-891859f4"]
   ]),
@@ -20544,7 +20544,7 @@ function UA(e, t, n, o, s, a) {
     onClick: a.toggleMenu,
     class: "menuBtn"
   }, null, 8, ["onClick"]), [
-    [ft, !e.isMenuOpen && !e.isShowLangPicker]
+    [dt, !e.isMenuOpen && !e.isShowLangPicker]
   ]), h(u, {
     show: e.isMenuOpen,
     "onUpdate:show": t[6] || (t[6] = d => e.isMenuOpen = d),
@@ -20686,7 +20686,7 @@ function UA(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const WA = yt(MA, [
+const WA = vt(MA, [
     ["render", UA],
     ["__scopeId", "data-v-3f4cbef6"]
   ]),
@@ -21007,7 +21007,7 @@ function bE(e, t, n, o, s, a) {
     })
   }, [h(d)], 2)])])])])], 2)
 }
-const Yr = yt(jA, [
+const Yr = vt(jA, [
     ["render", bE],
     ["__scopeId", "data-v-562de27d"]
   ]),
@@ -21049,7 +21049,7 @@ function SE(e, t, n, o, s, a) {
     })
   }, null, 8, ["class"])])])
 }
-const Am = yt(wE, [
+const Am = vt(wE, [
     ["render", SE]
   ]),
   TE = Object.freeze(Object.defineProperty({
@@ -21253,17 +21253,17 @@ function zE(e, t, n, o, s, a) {
     loading: s.transactionLoading
   }, null, 8, ["transaction-value", "saved-wallet", "onPaid", "loading"]), s.transactionLoading ? we("", !0) : (z(), q("span", LE, " *" + M(e.t("If you have already sent a transaction, go to the quest and click «Check Action» there.")), 1))])), s.transactionLoading ? (z(), q("span", NE, M(e.t("Waiting blockchain, it could take few minutes...")), 1)) : we("", !0)]))])) : (z(), q("span", FE, M(e.t("Please connect your wallet first.")), 1))])])])])]), t[1] || (t[1] = A("br", null, null, -1)), A("div", VE, [A("p", null, M(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), A("p", null, M(e.t("The date and conditions for receiving the {Airdrop} will be announced soon in our telegram channel.")), 1)])])
 }
-const Em = yt(xE, [
+const Em = vt(xE, [
     ["render", zE],
     ["__scopeId", "data-v-9d4a3abc"]
   ]),
-  HE = Object.freeze(Object.defineProperty({
+  Gu = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Em
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  UE = {
+  HE = {
     name: "Friends-g",
     components: {},
     async created() {},
@@ -21287,22 +21287,23 @@ const Em = yt(xE, [
       }
     }
   },
-  WE = {
+  UE = {
     class: "friends"
   },
-  jE = {
+  WE = {
     class: "pageContainer container"
   },
-  QE = {
+  jE = {
     class: "",
     style: {
       "padding-bottom": "50px"
     }
   },
-  KE = ["innerHTML"],
-  YE = {
+  QE = ["innerHTML"],
+  KE = {
     class: "reward-list"
   },
+  YE = ["innerHTML"],
   qE = ["innerHTML"],
   GE = ["innerHTML"],
   ZE = ["innerHTML"],
@@ -21310,24 +21311,23 @@ const Em = yt(xE, [
   JE = ["innerHTML"],
   eI = ["innerHTML"],
   tI = ["innerHTML"],
-  nI = ["innerHTML"],
-  oI = {
+  nI = {
     key: 0,
     class: "panelBrown"
   },
-  iI = ["innerHTML"],
-  sI = {
+  oI = ["innerHTML"],
+  iI = {
     key: 0,
     class: "right"
   },
-  aI = {
+  sI = {
     key: 1,
     style: {
       "font-size": "0.7em"
     }
   };
 
-function lI(e, t, n, o, s, a) {
+function aI(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-badge"),
     c = ge("van-button"),
@@ -21335,7 +21335,7 @@ function lI(e, t, n, o, s, a) {
     d = ge("van-cell"),
     f = ge("van-cell-group"),
     m = ge("van-back-top");
-  return z(), q("div", WE, [A("div", jE, [A("div", QE, [A("div", null, [A("h1", null, M(e.t("Invite Friends!")), 1), A("span", {
+  return z(), q("div", UE, [A("div", WE, [A("div", jE, [A("div", null, [A("h1", null, M(e.t("Invite Friends!")), 1), A("span", {
     onClick: t[0] || (t[0] = g => {
       this.isListVisible = !this.isListVisible
     }),
@@ -21350,13 +21350,13 @@ function lI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, KE), s.isListVisible ? (z(), $e(l, {
+  }, null, 8, QE), s.isListVisible ? (z(), $e(l, {
     key: 0,
     name: "arrow-down"
   })) : (z(), $e(l, {
     key: 1,
     name: "arrow"
-  }))]), rt(A("ul", YE, [A("li", {
+  }))]), rt(A("ul", KE, [A("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 1,
       MAX: 5,
@@ -21364,7 +21364,7 @@ function lI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, qE), A("li", {
+  }, null, 8, YE), A("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 6,
       MAX: 10,
@@ -21372,7 +21372,7 @@ function lI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, GE), A("li", {
+  }, null, 8, qE), A("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 11,
       MAX: 20,
@@ -21380,7 +21380,7 @@ function lI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, ZE), A("li", {
+  }, null, 8, GE), A("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 21,
       MAX: 50,
@@ -21388,7 +21388,7 @@ function lI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, XE), A("li", {
+  }, null, 8, ZE), A("li", {
     innerHTML: e.t("- from {MIN} to {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MIN: 51,
       MAX: 100,
@@ -21396,28 +21396,28 @@ function lI(e, t, n, o, s, a) {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, JE), A("li", {
+  }, null, 8, XE), A("li", {
     innerHTML: e.t("- Over {MAX} friends: {COUNT} {IMG_COIN} {COIN_NAME} per friend", {
       MAX: 100,
       COUNT: e._number(50),
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, eI)], 512), [
-    [ft, s.isListVisible]
+  }, null, 8, JE)], 512), [
+    [dt, s.isListVisible]
   ]), A("p", {
     innerHTML: e.t("If your friend has Telegram Premium, your bonus triples!", {
       IMG_COIN: e.IMG_COIN,
       COIN_NAME: e.COIN_NAME
     })
-  }, null, 8, tI), A("p", {
+  }, null, 8, eI), A("p", {
     innerHTML: e.t("Your friend get {BONUS_FRIEND}  {IMG_COIN} {COIN_NAME} or {BONUS_FRIEND_PREMIUM} {IMG_COIN} {COIN_NAME} if friend has Telegram Premium.", {
       COIN_NAME: e.COIN_NAME,
       BONUS_FRIEND: e.gameConfig["ref.bonus.basic"],
       BONUS_FRIEND_PREMIUM: e.gameConfig["ref.bonus.premium"],
       IMG_COIN: e.IMG_COIN
     })
-  }, null, 8, nI), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (z(), q("p", oI, [ve(M(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
+  }, null, 8, tI), e.gameConfig["referral.commission.friend_count"] > 0 && e.uProfile.friends >= e.gameConfig["referral.commission.friend_count"] ? (z(), q("p", nI, [ve(M(e.t("You have access to earning {PERCENT}% referral commissions from your friends payments.", {
     PERCENT: 30
   })) + " ", 1), A("span", {
     onClick: t[1] || (t[1] = g => e.$router.push("/referral/commission")),
@@ -21463,7 +21463,7 @@ function lI(e, t, n, o, s, a) {
     innerHTML: e.t(a.friendsCount === 1 ? "You have {friendsCount} friend." : "You have {friendsCount} friends.", {
       friendsCount: "<b>" + a.friendsCount + "</b>"
     })
-  }, null, 8, iI), h(f, {
+  }, null, 8, oI), h(f, {
     inset: "",
     style: {
       margin: "0"
@@ -21475,9 +21475,9 @@ function lI(e, t, n, o, s, a) {
       size: "large",
       center: ""
     }, {
-      "right-icon": le(() => [g.coins > 0 ? (z(), q("div", sI, [ve("+" + M(e._number(g.coins)) + " ", 1), t[3] || (t[3] = A("span", {
+      "right-icon": le(() => [g.coins > 0 ? (z(), q("div", iI, [ve("+" + M(e._number(g.coins)) + " ", 1), t[3] || (t[3] = A("span", {
         class: "coin25"
-      }, null, -1))])) : (z(), q("div", aI, M(e.t("Task not completed")), 1))]),
+      }, null, -1))])) : (z(), q("div", sI, M(e.t("Task not completed")), 1))]),
       _: 2
     }, 1032, ["title"]))), 128))]),
     _: 1
@@ -21485,17 +21485,17 @@ function lI(e, t, n, o, s, a) {
     bottom: "140"
   })])])
 }
-const Im = yt(UE, [
-    ["render", lI],
+const Im = vt(HE, [
+    ["render", aI],
     ["__scopeId", "data-v-646da5c3"]
   ]),
-  rI = Object.freeze(Object.defineProperty({
+  lI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Im
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  cI = {
+  rI = {
     components: {},
     async created() {},
     mounted() {
@@ -21595,23 +21595,23 @@ const Im = yt(UE, [
       }
     }
   },
-  uI = {
+  cI = {
     class: "test",
     style: {
       direction: "ltr"
     }
   },
-  dI = {
+  uI = {
     class: "con"
   },
-  fI = {
+  dI = {
     class: "zTextShadow2white center"
   },
-  hI = {
+  fI = {
     class: "options"
   },
-  mI = ["onClick"],
-  gI = {
+  hI = ["onClick"],
+  mI = {
     class: "con container",
     style: {
       display: "flex",
@@ -21620,30 +21620,30 @@ const Im = yt(UE, [
       height: "100%"
     }
   },
-  vI = {
+  gI = {
     class: "zTextShadow2white center",
     style: {
       "padding-top": "50px",
       margin: "0"
     }
   },
-  yI = {
+  vI = {
     class: "",
     style: {
       "padding-bottom": "30px"
     }
   },
-  pI = {
+  yI = {
     class: "panel"
   };
 
-function bI(e, t, n, o, s, a) {
+function pI(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-swipe-item"),
     c = ge("van-badge"),
     u = ge("van-button"),
     d = ge("van-swipe");
-  return z(), q("div", uI, [h(d, {
+  return z(), q("div", cI, [h(d, {
     class: "onboardingSwipe",
     autoplay: 0,
     "show-indicators": !1,
@@ -21660,7 +21660,7 @@ function bI(e, t, n, o, s, a) {
         rtl: e.isRtl
       }])
     }, {
-      default: le(() => [A("div", dI, [A("h2", fI, M(f.desc), 1), A("div", hI, [(z(!0), q(Oe, null, Ft(f.options, g => (z(), q("div", {
+      default: le(() => [A("div", uI, [A("h2", dI, M(f.desc), 1), A("div", fI, [(z(!0), q(Oe, null, Ft(f.options, g => (z(), q("div", {
         class: "option",
         onClick: p => a.setAnswer(m, g)
       }, [e.selectedValues[m] === JSON.stringify(g.animals) ? (z(), $e(l, {
@@ -21671,7 +21671,7 @@ function bI(e, t, n, o, s, a) {
         key: 1,
         size: "30",
         name: "circle"
-      })), A("div", null, M(g.desc), 1)], 8, mI))), 256)), m > 0 ? (z(), q("div", {
+      })), A("div", null, M(g.desc), 1)], 8, hI))), 256)), m > 0 ? (z(), q("div", {
         key: 0,
         class: "option",
         onClick: t[0] || (t[0] = (...g) => a.prev && a.prev(...g)),
@@ -21691,7 +21691,7 @@ function bI(e, t, n, o, s, a) {
     }, {
       default: le(() => {
         var f, m;
-        return [A("div", gI, [A("h2", vI, M(n.quiz.title), 1), A("div", yI, [A("p", pI, M((f = a.answerData) == null ? void 0 : f.title) + " - " + M((m = a.answerData) == null ? void 0 : m.desc), 1), h(u, {
+        return [A("div", mI, [A("h2", gI, M(n.quiz.title), 1), A("div", vI, [A("p", yI, M((f = a.answerData) == null ? void 0 : f.title) + " - " + M((m = a.answerData) == null ? void 0 : m.desc), 1), h(u, {
           onClick: a.shareStory,
           loading: e.isSharesLoading,
           type: "success",
@@ -21738,18 +21738,18 @@ function bI(e, t, n, o, s, a) {
     name: "arrow-left"
   }), ve(" " + M(e.t("Back to quiz selection")), 1)])])
 }
-const Pm = yt(cI, [
-    ["render", bI],
+const Pm = vt(rI, [
+    ["render", pI],
     ["__scopeId", "data-v-ac2bbb0f"]
   ]),
-  wI = Object.freeze(Object.defineProperty({
+  bI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Pm
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  CI = "/assets/paw-5F38omYJ.png",
-  _I = {
+  wI = "/assets/paw-5F38omYJ.png",
+  CI = {
     name: "Test-g",
     components: {
       TestProcess: Pm
@@ -21778,48 +21778,48 @@ const Pm = yt(cI, [
       }
     }
   },
-  kI = {
+  _I = {
     key: 0,
     class: "Test"
   },
-  SI = {
+  kI = {
     class: "pageContainer container"
   },
-  TI = {
+  SI = {
     style: {
       "margin-bottom": "0"
     }
   },
-  xI = {
+  TI = {
     class: "zTextShadow2white"
   },
-  AI = {
+  xI = {
     class: "testList"
   },
-  EI = ["onClick"],
-  II = {
+  AI = ["onClick"],
+  EI = {
     class: "title"
   },
-  PI = {
+  II = {
     key: 0,
     class: "zTextShadow2white",
     style: {
       width: "100%"
     }
   },
-  OI = {
+  PI = {
     style: {
       "font-size": "1.5em"
     }
   },
-  BI = {
+  OI = {
     key: 1,
     style: {
       width: "100%"
     }
   };
 
-function RI(e, t, n, o, s, a) {
+function BI(e, t, n, o, s, a) {
   const l = ge("van-badge"),
     r = ge("van-button"),
     c = ge("test-process");
@@ -21827,7 +21827,7 @@ function RI(e, t, n, o, s, a) {
     key: 1,
     quiz: s.openedQuiz,
     onBackToList: a.backToList
-  }, null, 8, ["quiz", "onBackToList"])) : (z(), q("div", kI, [A("div", SI, [A("h1", TI, M(e.t("Take the quiz and find out which animal you are!")), 1), A("div", xI, M(e.t("And get your reward!")), 1), t[3] || (t[3] = A("br", null, null, -1)), A("div", AI, [(z(!0), q(Oe, null, Ft(a.tests, u => {
+  }, null, 8, ["quiz", "onBackToList"])) : (z(), q("div", _I, [A("div", kI, [A("h1", SI, M(e.t("Take the quiz and find out which animal you are!")), 1), A("div", TI, M(e.t("And get your reward!")), 1), t[3] || (t[3] = A("br", null, null, -1)), A("div", xI, [(z(!0), q(Oe, null, Ft(a.tests, u => {
     var d;
     return z(), q("div", {
       key: u.key,
@@ -21837,7 +21837,7 @@ function RI(e, t, n, o, s, a) {
         backgroundImage: "url(" + e._getQuizImg(u.key, u.result) + ")",
         backgroundPosition: "0 -20px"
       } : "")
-    }, [A("div", II, M(u.title), 1), u.result ? (z(), q("div", PI, [u.isRewarded ? we("", !0) : (z(), $e(r, {
+    }, [A("div", EI, M(u.title), 1), u.result ? (z(), q("div", II, [u.isRewarded ? we("", !0) : (z(), $e(r, {
       key: 0,
       type: "success",
       size: "small"
@@ -21851,8 +21851,8 @@ function RI(e, t, n, o, s, a) {
         _: 2
       }, 1024)]),
       _: 2
-    }, 1024)), A("div", OI, M((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (z(), q("div", BI, [t[1] || (t[1] = A("img", {
-      src: CI,
+    }, 1024)), A("div", PI, M((d = u.answers[u.result]) == null ? void 0 : d.title), 1)])) : (z(), q("div", OI, [t[1] || (t[1] = A("img", {
+      src: wI,
       alt: "",
       style: {
         width: "60%",
@@ -21873,20 +21873,20 @@ function RI(e, t, n, o, s, a) {
       count: e._number(u.reward)
     })) + " ", 1), t[2] || (t[2] = A("span", {
       class: "coin25"
-    }, null, -1))]))], 12, EI)
+    }, null, -1))]))], 12, AI)
   }), 128))])])]))
 }
-const Om = yt(_I, [
-    ["render", RI],
+const Om = vt(CI, [
+    ["render", BI],
     ["__scopeId", "data-v-e3e48fee"]
   ]),
-  DI = Object.freeze(Object.defineProperty({
+  RI = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Om
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  $I = {
+  DI = {
     components: {
       TestG: Om,
       FriendsG: Im,
@@ -21945,21 +21945,21 @@ const Om = yt(_I, [
     },
     methods: {}
   },
-  MI = ["onClick"],
-  LI = {
+  $I = ["onClick"],
+  MI = {
     class: "flyBtnCont"
   },
-  NI = {
+  LI = {
     class: "flyBtnTitle"
   },
-  FI = {
+  NI = {
     class: "flyBtnCont"
   },
-  VI = {
+  FI = {
     class: "flyBtnTitle"
   };
 
-function zI(e, t, n, o, s, a) {
+function VI(e, t, n, o, s, a) {
   const l = ge("van-badge"),
     r = ge("quests-g"),
     c = ge("van-popup"),
@@ -21976,14 +21976,14 @@ function zI(e, t, n, o, s, a) {
   }, [h(l, {
     dot: d.isDot
   }, {
-    default: le(() => [A("div", LI, [A("div", {
+    default: le(() => [A("div", MI, [A("div", {
       class: "flyBtnIcon",
       style: an({
         backgroundImage: `url(${d.image})`
       })
-    }, null, 4)]), A("div", NI, M(d.title), 1)]),
+    }, null, 4)]), A("div", LI, M(d.title), 1)]),
     _: 2
-  }, 1032, ["dot"])], 8, MI))), 128)), h(c, {
+  }, 1032, ["dot"])], 8, $I))), 128)), h(c, {
     show: s.isShowPopup.quests,
     "onUpdate:show": t[0] || (t[0] = d => s.isShowPopup.quests = d),
     position: "bottom",
@@ -22002,17 +22002,17 @@ function zI(e, t, n, o, s, a) {
     key: 1,
     class: "flyBtn BottomBar",
     onClick: t[1] || (t[1] = d => e.$router.push("/"))
-  }, [A("div", FI, [h(u, {
+  }, [A("div", NI, [h(u, {
     name: "wap-home",
     color: "#FFEDD9"
-  })]), A("div", VI, M(e.t("Home")), 1)]))
+  })]), A("div", FI, M(e.t("Home")), 1)]))
 }
-const HI = yt($I, [
-    ["render", zI],
+const zI = vt(DI, [
+    ["render", VI],
     ["__scopeId", "data-v-50d9e7ab"]
   ]),
-  UI = new Error("request for lock canceled");
-var WI = function(e, t, n, o) {
+  HI = new Error("request for lock canceled");
+var UI = function(e, t, n, o) {
   function s(a) {
     return a instanceof n ? a : new n(function(l) {
       l(a)
@@ -22041,8 +22041,8 @@ var WI = function(e, t, n, o) {
     u((o = o.apply(e, t || [])).next())
   })
 };
-class jI {
-  constructor(t, n = UI) {
+class WI {
+  constructor(t, n = HI) {
     this._value = t, this._cancelError = n, this._queue = [], this._weightedWaiters = []
   }
   acquire(t = 1, n = 0) {
@@ -22059,7 +22059,7 @@ class jI {
     })
   }
   runExclusive(t) {
-    return WI(this, arguments, void 0, function*(n, o = 1, s = 0) {
+    return UI(this, arguments, void 0, function*(n, o = 1, s = 0) {
       const [a, l] = yield this.acquire(o, s);
       try {
         return yield n(a)
@@ -22071,7 +22071,7 @@ class jI {
   waitForUnlock(t = 1, n = 0) {
     if (t <= 0) throw new Error(`invalid weight ${t}: must be positive`);
     return this._couldLockImmediately(t, n) ? Promise.resolve() : new Promise(o => {
-      this._weightedWaiters[t - 1] || (this._weightedWaiters[t - 1] = []), QI(this._weightedWaiters[t - 1], {
+      this._weightedWaiters[t - 1] || (this._weightedWaiters[t - 1] = []), jI(this._weightedWaiters[t - 1], {
         resolve: o,
         priority: n
       })
@@ -22126,7 +22126,7 @@ class jI {
   }
 }
 
-function QI(e, t) {
+function jI(e, t) {
   const n = Bm(e, o => t.priority <= o.priority);
   e.splice(n + 1, 0, t)
 }
@@ -22136,7 +22136,7 @@ function Bm(e, t) {
     if (t(e[n])) return n;
   return -1
 }
-var KI = function(e, t, n, o) {
+var QI = function(e, t, n, o) {
   function s(a) {
     return a instanceof n ? a : new n(function(l) {
       l(a)
@@ -22165,12 +22165,12 @@ var KI = function(e, t, n, o) {
     u((o = o.apply(e, t || [])).next())
   })
 };
-class YI {
+class KI {
   constructor(t) {
-    this._semaphore = new jI(1, t)
+    this._semaphore = new WI(1, t)
   }
   acquire() {
-    return KI(this, arguments, void 0, function*(t = 0) {
+    return QI(this, arguments, void 0, function*(t = 0) {
       const [, n] = yield this._semaphore.acquire(1, t);
       return n
     })
@@ -22191,7 +22191,7 @@ class YI {
     return this._semaphore.cancel()
   }
 }
-const qI = {
+const YI = {
     name: "AllianceInfo",
     props: {
       allianceData: {
@@ -22224,20 +22224,20 @@ const qI = {
       }
     }
   },
-  GI = {
+  qI = {
     class: "flexBeetween",
     style: {
       margin: "-20px 0 20px 0"
     }
   },
-  ZI = {
+  GI = {
     key: 0
   };
 
-function XI(e, t, n, o, s, a) {
+function ZI(e, t, n, o, s, a) {
   const l = ge("van-icon"),
     r = ge("van-button");
-  return z(), q("div", null, [A("h1", null, M(n.allianceData.name), 1), A("div", GI, [A("div", null, M(e.t("Founder:")) + " " + M(n.allianceData.ownerName), 1), A("div", null, "id:" + M(n.allianceData.id), 1)]), n.allianceData.channelLink ? (z(), q("div", ZI, [ve(M(e.t("Channel:")) + " ", 1), A("span", {
+  return z(), q("div", null, [A("h1", null, M(n.allianceData.name), 1), A("div", qI, [A("div", null, M(e.t("Founder:")) + " " + M(n.allianceData.ownerName), 1), A("div", null, "id:" + M(n.allianceData.id), 1)]), n.allianceData.channelLink ? (z(), q("div", GI, [ve(M(e.t("Channel:")) + " ", 1), A("span", {
     onClick: t[0] || (t[0] = c => e._openUrl("https://" + n.allianceData.channelLink)),
     style: {
       "border-bottom": "1px dashed #fff"
@@ -22261,17 +22261,17 @@ function XI(e, t, n, o, s, a) {
     _: 1
   }, 8, ["loading"]))])
 }
-const JI = yt(qI, [
-    ["render", XI],
+const XI = vt(YI, [
+    ["render", ZI],
     ["__scopeId", "data-v-e3c39631"]
   ]),
-  eP = new YI,
-  tP = {
+  JI = new KI,
+  eP = {
     components: {
-      AllianceInfo: JI,
+      AllianceInfo: XI,
       Topup: xm,
       TopBar: Yr,
-      BottomBar: HI,
+      BottomBar: zI,
       OnboardingStart: E2
     },
     async created() {
@@ -22290,11 +22290,11 @@ const JI = yt(qI, [
           }
         }
         window.tonConnectUI = async function() {
-          return this._tonConnectUI ? this._tonConnectUI : await eP.runExclusive(async () => {
+          return this._tonConnectUI ? this._tonConnectUI : await JI.runExclusive(async () => {
             if (this._tonConnectUI) return this._tonConnectUI;
             const {
               TonConnectUI: t
-            } = await ct(async () => {
+            } = await yt(async () => {
               const {
                 TonConnectUI: n
               } = await import("./index-DR1bxtYK.js");
@@ -22437,15 +22437,15 @@ const JI = yt(qI, [
       }
     }
   },
-  nP = {
+  tP = {
     key: 0,
     class: "loadingScreen"
   },
-  oP = {
+  nP = {
     class: "center",
     style: {
       position: "absolute",
-      top: "50%",
+      top: "45%",
       left: "50%",
       transform: "translate(-50%, -50%)",
       color: "#47484c",
@@ -22453,24 +22453,24 @@ const JI = yt(qI, [
       "font-size": "1.5em"
     }
   },
-  iP = {
+  oP = {
     id: "scrollable",
     class: "scrollable"
   },
-  sP = {
+  iP = {
     class: "panelBrown",
     style: {
       margin: "10px"
     }
   },
-  aP = {
+  sP = {
     class: "container"
   },
-  lP = {
+  aP = {
     class: "container"
   };
 
-function rP(e, t, n, o, s, a) {
+function lP(e, t, n, o, s, a) {
   const l = ge("OnboardingStart"),
     r = ge("RouterView"),
     c = ge("BottomBar"),
@@ -22481,7 +22481,7 @@ function rP(e, t, n, o, s, a) {
     g = ge("topup");
   return z(), q("div", null, [s.dbLoaded ? e._isOnboardingComplete(e.onBoard.start) ? (z(), q(Oe, {
     key: 2
-  }, [A("div", iP, [h(r)]), h(c), h(d, {
+  }, [A("div", oP, [h(r)]), h(c), h(d, {
     show: s.isShowInviteRefAlliance,
     "onUpdate:show": t[0] || (t[0] = p => s.isShowInviteRefAlliance = p),
     round: "",
@@ -22491,7 +22491,7 @@ function rP(e, t, n, o, s, a) {
     },
     duration: "0.15"
   }, {
-    default: le(() => [A("div", sP, M(e.t("You are invited to join an alliance.")), 1), h(u, {
+    default: le(() => [A("div", iP, M(e.t("You are invited to join an alliance.")), 1), h(u, {
       "alliance-data": s.invitedRefAllianceData,
       class: "container"
     }, null, 8, ["alliance-data"])]),
@@ -22508,7 +22508,7 @@ function rP(e, t, n, o, s, a) {
       s.isShowFriendsTask = !1, e._completeOnboarding(e.onBoard.friendTaskPopup2)
     })
   }, {
-    default: le(() => [A("div", aP, [A("h1", null, M(e.t("GET UNIQUE ANIMAL")), 1), t[4] || (t[4] = A("div", {
+    default: le(() => [A("div", sP, [A("h1", null, M(e.t("GET UNIQUE ANIMAL")), 1), t[4] || (t[4] = A("div", {
       class: "center"
     }, [A("img", {
       src: "/assets/img/buildings/special/special_snake_aspid.png",
@@ -22536,9 +22536,9 @@ function rP(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])], 64)) : (z(), $e(l, {
     key: 1
-  })) : (z(), q("div", nP, [A("div", oP, [e.stores.state.isMiningStop ? (z(), q(Oe, {
+  })) : (z(), q("div", tP, [A("div", nP, [e.stores.state.isMiningStop ? (z(), q(Oe, {
     key: 0
-  }, [ve("Mining has ended")], 64)) : (z(), q(Oe, {
+  }, [ve("Claim is in progress")], 64)) : (z(), q(Oe, {
     key: 1
   }, [ve("Last day of mining")], 64))]), t[3] || (t[3] = A("div", {
     class: "progressBar"
@@ -22554,15 +22554,15 @@ function rP(e, t, n, o, s, a) {
     },
     onClose: t[2] || (t[2] = p => e.stores.state.setIsShowTopUp(!1))
   }, {
-    default: le(() => [A("div", lP, [h(g, {
+    default: le(() => [A("div", aP, [h(g, {
       "lack-of-coin": this.stores.state.lackOfCoin
     }, null, 8, ["lack-of-coin"])])]),
     _: 1
   }, 8, ["show"])])
 }
-const cP = yt(tP, [
-  ["render", rP],
-  ["__scopeId", "data-v-d4a92b9d"]
+const rP = vt(eP, [
+  ["render", lP],
+  ["__scopeId", "data-v-2b3cbfea"]
 ]);
 /*!
  * vue-router v4.4.5
@@ -22575,7 +22575,7 @@ function Rm(e) {
   return typeof e == "object" || "displayName" in e || "props" in e || "__vccOpts" in e
 }
 
-function uP(e) {
+function cP(e) {
   return e.__esModule || e[Symbol.toStringTag] === "Module" || e.default && Rm(e.default)
 }
 const Qe = Object.assign;
@@ -22591,42 +22591,42 @@ function vl(e, t) {
 const Wi = () => {},
   sn = Array.isArray,
   Dm = /#/g,
-  dP = /&/g,
-  fP = /\//g,
-  hP = /=/g,
-  mP = /\?/g,
+  uP = /&/g,
+  dP = /\//g,
+  fP = /=/g,
+  hP = /\?/g,
   $m = /\+/g,
-  gP = /%5B/g,
-  vP = /%5D/g,
+  mP = /%5B/g,
+  gP = /%5D/g,
   Mm = /%5E/g,
-  yP = /%60/g,
+  vP = /%60/g,
   Lm = /%7B/g,
-  pP = /%7C/g,
+  yP = /%7C/g,
   Nm = /%7D/g,
-  bP = /%20/g;
+  pP = /%20/g;
 
 function qr(e) {
-  return encodeURI("" + e).replace(pP, "|").replace(gP, "[").replace(vP, "]")
+  return encodeURI("" + e).replace(yP, "|").replace(mP, "[").replace(gP, "]")
 }
 
-function wP(e) {
+function bP(e) {
   return qr(e).replace(Lm, "{").replace(Nm, "}").replace(Mm, "^")
 }
 
 function Yl(e) {
-  return qr(e).replace($m, "%2B").replace(bP, "+").replace(Dm, "%23").replace(dP, "%26").replace(yP, "`").replace(Lm, "{").replace(Nm, "}").replace(Mm, "^")
+  return qr(e).replace($m, "%2B").replace(pP, "+").replace(Dm, "%23").replace(uP, "%26").replace(vP, "`").replace(Lm, "{").replace(Nm, "}").replace(Mm, "^")
+}
+
+function wP(e) {
+  return Yl(e).replace(fP, "%3D")
 }
 
 function CP(e) {
-  return Yl(e).replace(hP, "%3D")
+  return qr(e).replace(Dm, "%23").replace(hP, "%3F")
 }
 
 function _P(e) {
-  return qr(e).replace(Dm, "%23").replace(mP, "%3F")
-}
-
-function kP(e) {
-  return e == null ? "" : _P(e).replace(fP, "%2F")
+  return e == null ? "" : CP(e).replace(dP, "%2F")
 }
 
 function ns(e) {
@@ -22635,8 +22635,8 @@ function ns(e) {
   } catch {}
   return "" + e
 }
-const SP = /\/$/,
-  TP = e => e.replace(SP, "");
+const kP = /\/$/,
+  SP = e => e.replace(kP, "");
 
 function yl(e, t, n = "/") {
   let o, s = {},
@@ -22644,7 +22644,7 @@ function yl(e, t, n = "/") {
     l = "";
   const r = t.indexOf("#");
   let c = t.indexOf("?");
-  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = IP(o ?? t, n), {
+  return r < c && r >= 0 && (c = -1), c > -1 && (o = t.slice(0, c), a = t.slice(c + 1, r > -1 ? r : t.length), s = e(a)), r > -1 && (o = o || t.slice(0, r), l = t.slice(r, t.length)), o = EP(o ?? t, n), {
     fullPath: o + (a && "?") + a + l,
     path: o,
     query: s,
@@ -22652,16 +22652,16 @@ function yl(e, t, n = "/") {
   }
 }
 
-function xP(e, t) {
+function TP(e, t) {
   const n = t.query ? e(t.query) : "";
   return t.path + (n && "?") + n + (t.hash || "")
 }
 
-function Gu(e, t) {
+function Zu(e, t) {
   return !t || !e.toLowerCase().startsWith(t.toLowerCase()) ? e : e.slice(t.length) || "/"
 }
 
-function AP(e, t, n) {
+function xP(e, t, n) {
   const o = t.matched.length - 1,
     s = n.matched.length - 1;
   return o > -1 && o === s && hi(t.matched[o], n.matched[s]) && Fm(t.params, n.params) && e(t.query) === e(n.query) && t.hash === n.hash
@@ -22674,19 +22674,19 @@ function hi(e, t) {
 function Fm(e, t) {
   if (Object.keys(e).length !== Object.keys(t).length) return !1;
   for (const n in e)
-    if (!EP(e[n], t[n])) return !1;
+    if (!AP(e[n], t[n])) return !1;
   return !0
 }
 
-function EP(e, t) {
-  return sn(e) ? Zu(e, t) : sn(t) ? Zu(t, e) : e === t
+function AP(e, t) {
+  return sn(e) ? Xu(e, t) : sn(t) ? Xu(t, e) : e === t
 }
 
-function Zu(e, t) {
+function Xu(e, t) {
   return sn(t) ? e.length === t.length && e.every((n, o) => n === t[o]) : e.length === 1 && e[0] === t
 }
 
-function IP(e, t) {
+function EP(e, t) {
   if (e.startsWith("/")) return e;
   if (!e) return t;
   const n = t.split("/"),
@@ -22721,21 +22721,21 @@ var ji;
   e.back = "back", e.forward = "forward", e.unknown = ""
 })(ji || (ji = {}));
 
-function PP(e) {
+function IP(e) {
   if (!e)
     if (Jo) {
       const t = document.querySelector("base");
       e = t && t.getAttribute("href") || "/", e = e.replace(/^\w+:\/\/[^\/]+/, "")
     } else e = "/";
-  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), TP(e)
+  return e[0] !== "/" && e[0] !== "#" && (e = "/" + e), SP(e)
 }
-const OP = /^[^#]+#/;
+const PP = /^[^#]+#/;
+
+function OP(e, t) {
+  return e.replace(PP, "#") + t
+}
 
 function BP(e, t) {
-  return e.replace(OP, "#") + t
-}
-
-function RP(e, t) {
   const n = document.documentElement.getBoundingClientRect(),
     o = e.getBoundingClientRect();
   return {
@@ -22749,32 +22749,32 @@ const Ra = () => ({
   top: window.scrollY
 });
 
-function DP(e) {
+function RP(e) {
   let t;
   if ("el" in e) {
     const n = e.el,
       o = typeof n == "string" && n.startsWith("#"),
       s = typeof n == "string" ? o ? document.getElementById(n.slice(1)) : document.querySelector(n) : n;
     if (!s) return;
-    t = RP(s, e)
+    t = BP(s, e)
   } else t = e;
   "scrollBehavior" in document.documentElement.style ? window.scrollTo(t) : window.scrollTo(t.left != null ? t.left : window.scrollX, t.top != null ? t.top : window.scrollY)
 }
 
-function Xu(e, t) {
+function Ju(e, t) {
   return (history.state ? history.state.position - t : -1) + e
 }
 const ql = new Map;
 
-function $P(e, t) {
+function DP(e, t) {
   ql.set(e, t)
 }
 
-function MP(e) {
+function $P(e) {
   const t = ql.get(e);
   return ql.delete(e), t
 }
-let LP = () => location.protocol + "//" + location.host;
+let MP = () => location.protocol + "//" + location.host;
 
 function Vm(e, t) {
   const {
@@ -22785,12 +22785,12 @@ function Vm(e, t) {
   if (a > -1) {
     let r = s.includes(e.slice(a)) ? e.slice(a).length : 1,
       c = s.slice(r);
-    return c[0] !== "/" && (c = "/" + c), Gu(c, "")
+    return c[0] !== "/" && (c = "/" + c), Zu(c, "")
   }
-  return Gu(n, e) + o + s
+  return Zu(n, e) + o + s
 }
 
-function NP(e, t, n, o) {
+function LP(e, t, n, o) {
   let s = [],
     a = [],
     l = null;
@@ -22852,7 +22852,7 @@ function NP(e, t, n, o) {
   }
 }
 
-function Ju(e, t, n, o = !1, s = !1) {
+function ed(e, t, n, o = !1, s = !1) {
   return {
     back: e,
     current: t,
@@ -22863,7 +22863,7 @@ function Ju(e, t, n, o = !1, s = !1) {
   }
 }
 
-function FP(e) {
+function NP(e) {
   const {
     history: t,
     location: n
@@ -22883,7 +22883,7 @@ function FP(e) {
 
   function a(c, u, d) {
     const f = e.indexOf("#"),
-      m = f > -1 ? (n.host && document.querySelector("base") ? e : e.slice(f)) + c : LP() + e + c;
+      m = f > -1 ? (n.host && document.querySelector("base") ? e : e.slice(f)) + c : MP() + e + c;
     try {
       t[d ? "replaceState" : "pushState"](u, "", m), s.value = u
     } catch (g) {
@@ -22892,7 +22892,7 @@ function FP(e) {
   }
 
   function l(c, u) {
-    const d = Qe({}, t.state, Ju(s.value.back, c, s.value.forward, !0), u, {
+    const d = Qe({}, t.state, ed(s.value.back, c, s.value.forward, !0), u, {
       position: s.value.position
     });
     a(c, d, !0), o.value = c
@@ -22904,7 +22904,7 @@ function FP(e) {
       scroll: Ra()
     });
     a(d.current, d, !0);
-    const f = Qe({}, Ju(o.value, c, null), {
+    const f = Qe({}, ed(o.value, c, null), {
       position: d.position + 1
     }, u);
     a(c, f, !1), o.value = c
@@ -22917,10 +22917,10 @@ function FP(e) {
   }
 }
 
-function VP(e) {
-  e = PP(e);
-  const t = FP(e),
-    n = NP(e, t.state, t.location, t.replace);
+function FP(e) {
+  e = IP(e);
+  const t = NP(e),
+    n = LP(e, t.state, t.location, t.replace);
 
   function o(a, l = !0) {
     l || n.pauseListeners(), history.go(a)
@@ -22929,7 +22929,7 @@ function VP(e) {
     location: "",
     base: e,
     go: o,
-    createHref: BP.bind(null, e)
+    createHref: OP.bind(null, e)
   }, t, n);
   return Object.defineProperty(s, "location", {
     enumerable: !0,
@@ -22940,7 +22940,7 @@ function VP(e) {
   }), s
 }
 
-function zP(e) {
+function VP(e) {
   return typeof e == "string" || e && typeof e == "object"
 }
 
@@ -22948,10 +22948,10 @@ function zm(e) {
   return typeof e == "string" || typeof e == "symbol"
 }
 const Hm = Symbol("");
-var ed;
+var td;
 (function(e) {
   e[e.aborted = 4] = "aborted", e[e.cancelled = 8] = "cancelled", e[e.duplicated = 16] = "duplicated"
-})(ed || (ed = {}));
+})(td || (td = {}));
 
 function mi(e, t) {
   return Qe(new Error, {
@@ -22963,17 +22963,17 @@ function mi(e, t) {
 function In(e, t) {
   return e instanceof Error && Hm in e && (t == null || !!(e.type & t))
 }
-const td = "[^/]+?",
-  HP = {
+const nd = "[^/]+?",
+  zP = {
     sensitive: !1,
     strict: !1,
     start: !0,
     end: !0
   },
-  UP = /[.+*?^${}()[\]/\\]/g;
+  HP = /[.+*?^${}()[\]/\\]/g;
 
-function WP(e, t) {
-  const n = Qe({}, HP, t),
+function UP(e, t) {
+  const n = Qe({}, zP, t),
     o = [];
   let s = n.start ? "^" : "";
   const a = [];
@@ -22983,7 +22983,7 @@ function WP(e, t) {
     for (let f = 0; f < u.length; f++) {
       const m = u[f];
       let g = 40 + (n.sensitive ? .25 : 0);
-      if (m.type === 0) f || (s += "/"), s += m.value.replace(UP, "\\$&"), g += 40;
+      if (m.type === 0) f || (s += "/"), s += m.value.replace(HP, "\\$&"), g += 40;
       else if (m.type === 1) {
         const {
           value: p,
@@ -22996,8 +22996,8 @@ function WP(e, t) {
           repeatable: y,
           optional: b
         });
-        const v = w || td;
-        if (v !== td) {
+        const v = w || nd;
+        if (v !== nd) {
           g += 10;
           try {
             new RegExp(`(${v})`)
@@ -23063,7 +23063,7 @@ function WP(e, t) {
   }
 }
 
-function jP(e, t) {
+function WP(e, t) {
   let n = 0;
   for (; n < e.length && n < t.length;) {
     const o = t[n] - e[n];
@@ -23078,33 +23078,33 @@ function Um(e, t) {
   const o = e.score,
     s = t.score;
   for (; n < o.length && n < s.length;) {
-    const a = jP(o[n], s[n]);
+    const a = WP(o[n], s[n]);
     if (a) return a;
     n++
   }
   if (Math.abs(s.length - o.length) === 1) {
-    if (nd(o)) return 1;
-    if (nd(s)) return -1
+    if (od(o)) return 1;
+    if (od(s)) return -1
   }
   return s.length - o.length
 }
 
-function nd(e) {
+function od(e) {
   const t = e[e.length - 1];
   return e.length > 0 && t[t.length - 1] < 0
 }
-const QP = {
+const jP = {
     type: 0,
     value: ""
   },
-  KP = /[a-zA-Z0-9_]/;
+  QP = /[a-zA-Z0-9_]/;
 
-function YP(e) {
+function KP(e) {
   if (!e) return [
     []
   ];
   if (e === "/") return [
-    [QP]
+    [jP]
   ];
   if (!e.startsWith("/")) throw new Error(`Invalid path "${e}"`);
 
@@ -23152,7 +23152,7 @@ function YP(e) {
         m(), n = o;
         break;
       case 1:
-        c === "(" ? n = 2 : KP.test(c) ? m() : (f(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
+        c === "(" ? n = 2 : QP.test(c) ? m() : (f(), n = 0, c !== "*" && c !== "?" && c !== "+" && r--);
         break;
       case 2:
         c === ")" ? d[d.length - 1] == "\\" ? d = d.slice(0, -1) + c : n = 3 : d += c;
@@ -23168,8 +23168,8 @@ function YP(e) {
   return n === 2 && t(`Unfinished custom RegExp for param "${u}"`), f(), l(), s
 }
 
-function qP(e, t, n) {
-  const o = WP(YP(e.path), n),
+function YP(e, t, n) {
+  const o = UP(KP(e.path), n),
     s = Qe(o, {
       record: e,
       parent: t,
@@ -23179,10 +23179,10 @@ function qP(e, t, n) {
   return t && !s.record.aliasOf == !t.record.aliasOf && t.children.push(s), s
 }
 
-function GP(e, t) {
+function qP(e, t) {
   const n = [],
     o = new Map;
-  t = ad({
+  t = ld({
     strict: !1,
     end: !0,
     sensitive: !1
@@ -23194,13 +23194,13 @@ function GP(e, t) {
 
   function a(f, m, g) {
     const p = !g,
-      y = id(f);
+      y = sd(f);
     y.aliasOf = g && g.record;
-    const b = ad(t, f),
+    const b = ld(t, f),
       w = [y];
     if ("alias" in f) {
       const _ = typeof f.alias == "string" ? [f.alias] : f.alias;
-      for (const k of _) w.push(id(Qe({}, y, {
+      for (const k of _) w.push(sd(Qe({}, y, {
         components: g ? g.record.components : y.components,
         path: k,
         aliasOf: g ? g.record : y
@@ -23216,7 +23216,7 @@ function GP(e, t) {
           D = I[I.length - 1] === "/" ? "" : "/";
         _.path = m.record.path + (k && D + k)
       }
-      if (v = qP(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), p && f.name && !sd(v) && l(f.name)), Wm(v) && c(v), y.children) {
+      if (v = YP(_, m, b), g ? g.alias.push(v) : (C = C || v, C !== v && C.alias.push(v), p && f.name && !ad(v) && l(f.name)), Wm(v) && c(v), y.children) {
         const I = y.children;
         for (let D = 0; D < I.length; D++) a(I[D], v, g && g.children[D])
       }
@@ -23242,8 +23242,8 @@ function GP(e, t) {
   }
 
   function c(f) {
-    const m = JP(f, n);
-    n.splice(m, 0, f), f.record.name && !sd(f) && o.set(f.record.name, f)
+    const m = XP(f, n);
+    n.splice(m, 0, f), f.record.name && !ad(f) && o.set(f.record.name, f)
   }
 
   function u(f, m) {
@@ -23253,7 +23253,7 @@ function GP(e, t) {
       if (g = o.get(f.name), !g) throw mi(1, {
         location: f
       });
-      b = g.record.name, p = Qe(od(m.params, g.keys.filter(C => !C.optional).concat(g.parent ? g.parent.keys.filter(C => C.optional) : []).map(C => C.name)), f.params && od(f.params, g.keys.map(C => C.name))), y = g.stringify(p)
+      b = g.record.name, p = Qe(id(m.params, g.keys.filter(C => !C.optional).concat(g.parent ? g.parent.keys.filter(C => C.optional) : []).map(C => C.name)), f.params && id(f.params, g.keys.map(C => C.name))), y = g.stringify(p)
     } else if (f.path != null) y = f.path, g = n.find(C => C.re.test(y)), g && (p = g.parse(y), b = g.record.name);
     else {
       if (g = m.name ? o.get(m.name) : n.find(C => C.re.test(m.path)), !g) throw mi(1, {
@@ -23270,7 +23270,7 @@ function GP(e, t) {
       path: y,
       params: p,
       matched: w,
-      meta: XP(w)
+      meta: ZP(w)
     }
   }
   e.forEach(f => a(f));
@@ -23288,13 +23288,13 @@ function GP(e, t) {
   }
 }
 
-function od(e, t) {
+function id(e, t) {
   const n = {};
   for (const o of t) o in e && (n[o] = e[o]);
   return n
 }
 
-function id(e) {
+function sd(e) {
   const t = {
     path: e.path,
     redirect: e.redirect,
@@ -23302,7 +23302,7 @@ function id(e) {
     meta: e.meta || {},
     aliasOf: e.aliasOf,
     beforeEnter: e.beforeEnter,
-    props: ZP(e),
+    props: GP(e),
     children: e.children || [],
     instances: {},
     leaveGuards: new Set,
@@ -23317,7 +23317,7 @@ function id(e) {
   }), t
 }
 
-function ZP(e) {
+function GP(e) {
   const t = {},
     n = e.props || !1;
   if ("component" in e) t.default = n;
@@ -23326,7 +23326,7 @@ function ZP(e) {
   return t
 }
 
-function sd(e) {
+function ad(e) {
   for (; e;) {
     if (e.record.aliasOf) return !0;
     e = e.parent
@@ -23334,28 +23334,28 @@ function sd(e) {
   return !1
 }
 
-function XP(e) {
+function ZP(e) {
   return e.reduce((t, n) => Qe(t, n.meta), {})
 }
 
-function ad(e, t) {
+function ld(e, t) {
   const n = {};
   for (const o in e) n[o] = o in t ? t[o] : e[o];
   return n
 }
 
-function JP(e, t) {
+function XP(e, t) {
   let n = 0,
     o = t.length;
   for (; n !== o;) {
     const a = n + o >> 1;
     Um(e, t[a]) < 0 ? o = a : n = a + 1
   }
-  const s = eO(e);
+  const s = JP(e);
   return s && (o = t.lastIndexOf(s, o - 1)), o
 }
 
-function eO(e) {
+function JP(e) {
   let t = e;
   for (; t = t.parent;)
     if (Wm(t) && Um(e, t) === 0) return t
@@ -23367,7 +23367,7 @@ function Wm({
   return !!(e.name || e.components && Object.keys(e.components).length || e.redirect)
 }
 
-function tO(e) {
+function eO(e) {
   const t = {};
   if (e === "" || e === "?") return t;
   const o = (e[0] === "?" ? e.slice(1) : e).split("&");
@@ -23384,11 +23384,11 @@ function tO(e) {
   return t
 }
 
-function ld(e) {
+function rd(e) {
   let t = "";
   for (let n in e) {
     const o = e[n];
-    if (n = CP(n), o == null) {
+    if (n = wP(n), o == null) {
       o !== void 0 && (t += (t.length ? "&" : "") + n);
       continue
     }(sn(o) ? o.map(a => a && Yl(a)) : [o && Yl(o)]).forEach(a => {
@@ -23398,7 +23398,7 @@ function ld(e) {
   return t
 }
 
-function nO(e) {
+function tO(e) {
   const t = {};
   for (const n in e) {
     const o = e[n];
@@ -23406,8 +23406,8 @@ function nO(e) {
   }
   return t
 }
-const oO = Symbol(""),
-  rd = Symbol(""),
+const nO = Symbol(""),
+  cd = Symbol(""),
   Gr = Symbol(""),
   jm = Symbol(""),
   Gl = Symbol("");
@@ -23439,7 +23439,7 @@ function io(e, t, n, o, s, a = l => l()) {
         m === !1 ? c(mi(4, {
           from: n,
           to: t
-        })) : m instanceof Error ? c(m) : zP(m) ? c(mi(2, {
+        })) : m instanceof Error ? c(m) : VP(m) ? c(mi(2, {
           from: t,
           to: m
         })) : (l && o.enterCallbacks[s] === l && typeof m == "function" && l.push(m), r())
@@ -23463,7 +23463,7 @@ function pl(e, t, n, o, s = a => a()) {
           let u = c();
           a.push(() => u.then(d => {
             if (!d) throw new Error(`Couldn't resolve component "${r}" at "${l.path}"`);
-            const f = uP(d) ? d.default : d;
+            const f = cP(d) ? d.default : d;
             l.mods[r] = d, l.components[r] = f;
             const g = (f.__vccOpts || f)[t];
             return g && io(g, n, o, l, r, s)()
@@ -23473,7 +23473,7 @@ function pl(e, t, n, o, s = a => a()) {
   return a
 }
 
-function cd(e) {
+function ud(e) {
   const t = Bt(Gr),
     n = Bt(jm),
     o = N(() => {
@@ -23489,14 +23489,14 @@ function cd(e) {
       if (!d || !f.length) return -1;
       const m = f.findIndex(hi.bind(null, d));
       if (m > -1) return m;
-      const g = ud(c[u - 2]);
-      return u > 1 && ud(d) === g && f[f.length - 1].path !== g ? f.findIndex(hi.bind(null, c[u - 2])) : m
+      const g = dd(c[u - 2]);
+      return u > 1 && dd(d) === g && f[f.length - 1].path !== g ? f.findIndex(hi.bind(null, c[u - 2])) : m
     }),
-    a = N(() => s.value > -1 && lO(n.params, o.value.params)),
+    a = N(() => s.value > -1 && aO(n.params, o.value.params)),
     l = N(() => s.value > -1 && s.value === n.matched.length - 1 && Fm(n.params, o.value.params));
 
   function r(c = {}) {
-    return aO(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
+    return sO(c) ? t[en(e.replace) ? "replace" : "push"](en(e.to)).catch(Wi) : Promise.resolve()
   }
   return {
     route: o,
@@ -23506,7 +23506,7 @@ function cd(e) {
     navigate: r
   }
 }
-const iO = K({
+const oO = K({
     name: "RouterLink",
     compatConfig: {
       MODE: 3
@@ -23525,17 +23525,17 @@ const iO = K({
         default: "page"
       }
     },
-    useLink: cd,
+    useLink: ud,
     setup(e, {
       slots: t
     }) {
-      const n = Ze(cd(e)),
+      const n = Ze(ud(e)),
         {
           options: o
         } = Bt(Gr),
         s = N(() => ({
-          [dd(e.activeClass, o.linkActiveClass, "router-link-active")]: n.isActive,
-          [dd(e.exactActiveClass, o.linkExactActiveClass, "router-link-exact-active")]: n.isExactActive
+          [fd(e.activeClass, o.linkActiveClass, "router-link-active")]: n.isActive,
+          [fd(e.exactActiveClass, o.linkExactActiveClass, "router-link-exact-active")]: n.isExactActive
         }));
       return () => {
         const a = t.default && t.default(n);
@@ -23548,9 +23548,9 @@ const iO = K({
       }
     }
   }),
-  sO = iO;
+  iO = oO;
 
-function aO(e) {
+function sO(e) {
   if (!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) && !e.defaultPrevented && !(e.button !== void 0 && e.button !== 0)) {
     if (e.currentTarget && e.currentTarget.getAttribute) {
       const t = e.currentTarget.getAttribute("target");
@@ -23560,7 +23560,7 @@ function aO(e) {
   }
 }
 
-function lO(e, t) {
+function aO(e, t) {
   for (const n in t) {
     const o = t[n],
       s = e[n];
@@ -23571,11 +23571,11 @@ function lO(e, t) {
   return !0
 }
 
-function ud(e) {
+function dd(e) {
   return e ? e.aliasOf ? e.aliasOf.path : e.path : ""
 }
-const dd = (e, t, n) => e ?? t ?? n,
-  rO = K({
+const fd = (e, t, n) => e ?? t ?? n,
+  lO = K({
     name: "RouterView",
     inheritAttrs: !1,
     props: {
@@ -23594,7 +23594,7 @@ const dd = (e, t, n) => e ?? t ?? n,
     }) {
       const o = Bt(Gl),
         s = N(() => e.route || o.value),
-        a = Bt(rd, 0),
+        a = Bt(cd, 0),
         l = N(() => {
           let u = en(a);
           const {
@@ -23606,7 +23606,7 @@ const dd = (e, t, n) => e ?? t ?? n,
           return u
         }),
         r = N(() => s.value.matched[l.value]);
-      Dn(rd, N(() => l.value + 1)), Dn(oO, r), Dn(Gl, s);
+      Dn(cd, N(() => l.value + 1)), Dn(nO, r), Dn(Gl, s);
       const c = F();
       return re(() => [c.value, r.value, e.name], ([u, d, f], [m, g, p]) => {
         d && (d.instances[f] = u, g && g !== d && u && u === m && (d.leaveGuards.size || (d.leaveGuards = g.leaveGuards), d.updateGuards.size || (d.updateGuards = g.updateGuards))), u && d && (!g || !hi(d, g) || !m) && (d.enterCallbacks[f] || []).forEach(y => y(u))
@@ -23617,7 +23617,7 @@ const dd = (e, t, n) => e ?? t ?? n,
           d = e.name,
           f = r.value,
           m = f && f.components[d];
-        if (!m) return fd(n.default, {
+        if (!m) return hd(n.default, {
           Component: m,
           route: u
         });
@@ -23629,7 +23629,7 @@ const dd = (e, t, n) => e ?? t ?? n,
             },
             ref: c
           }));
-        return fd(n.default, {
+        return hd(n.default, {
           Component: b,
           route: u
         }) || b
@@ -23637,17 +23637,17 @@ const dd = (e, t, n) => e ?? t ?? n,
     }
   });
 
-function fd(e, t) {
+function hd(e, t) {
   if (!e) return null;
   const n = e(t);
   return n.length === 1 ? n[0] : n
 }
-const cO = rO;
+const rO = lO;
 
-function uO(e) {
-  const t = GP(e.routes, e),
-    n = e.parseQuery || tO,
-    o = e.stringifyQuery || ld,
+function cO(e) {
+  const t = qP(e.routes, e),
+    n = e.parseQuery || eO,
+    o = e.stringifyQuery || rd,
     s = e.history,
     a = Bi(),
     l = Bi(),
@@ -23656,7 +23656,7 @@ function uO(e) {
   let u = Jn;
   Jo && e.scrollBehavior && "scrollRestoration" in history && (history.scrollRestoration = "manual");
   const d = vl.bind(null, E => "" + E),
-    f = vl.bind(null, kP),
+    f = vl.bind(null, _P),
     m = vl.bind(null, ns);
 
   function g(E, H) {
@@ -23705,15 +23705,15 @@ function uO(e) {
     const oe = t.resolve(U, H),
       Se = E.hash || "";
     oe.params = d(m(oe.params));
-    const Le = xP(o, Qe({}, E, {
-        hash: wP(Se),
+    const Le = TP(o, Qe({}, E, {
+        hash: bP(Se),
         path: oe.path
       })),
       x = s.createHref(Le);
     return Qe({
       fullPath: Le,
       hash: Se,
-      query: o === ld ? nO(E.query) : E.query || {}
+      query: o === rd ? tO(E.query) : E.query || {}
     }, oe, {
       redirectedFrom: void 0,
       href: x
@@ -23773,7 +23773,7 @@ function uO(e) {
     const L = U;
     L.redirectedFrom = H;
     let G;
-    return !Le && AP(o, oe, U) && (G = mi(16, {
+    return !Le && xP(o, oe, U) && (G = mi(16, {
       to: L,
       from: oe
     }), V(oe, oe, !0, !1)), (G ? Promise.resolve(G) : R(L, oe)).catch(Q => In(Q) ? In(Q, 2) ? Q : Ne(Q) : ue(Q, L, oe)).then(Q => {
@@ -23801,7 +23801,7 @@ function uO(e) {
 
   function R(E, H) {
     let U;
-    const [oe, Se, Le] = dO(E, H);
+    const [oe, Se, Le] = uO(E, H);
     U = pl(oe.reverse(), "beforeRouteLeave", E, H);
     for (const O of oe) O.leaveGuards.forEach(L => {
       U.push(io(L, E, H))
@@ -23860,7 +23860,7 @@ function uO(e) {
       }
       u = oe;
       const Le = c.value;
-      Jo && $P(Xu(Le.fullPath, U.delta), Ra()), R(oe, Le).catch(x => In(x, 12) ? x : In(x, 2) ? (D(x.to, oe).then(O => {
+      Jo && DP(Ju(Le.fullPath, U.delta), Ra()), R(oe, Le).catch(x => In(x, 12) ? x : In(x, 2) ? (D(x.to, oe).then(O => {
         In(O, 20) && !U.delta && U.type === os.pop && s.go(-1, !1)
       }).catch(Wi), Promise.reject()) : (U.delta && s.go(-U.delta, !1), ue(x, oe, Le))).then(x => {
         x = x || P(oe, Le, !1), x && (U.delta && !In(x, 8) ? s.go(-U.delta, !1) : U.type === os.pop && In(x, 20) && s.go(-1, !1)), T(oe, Le, x)
@@ -23892,8 +23892,8 @@ function uO(e) {
       scrollBehavior: Se
     } = e;
     if (!Jo || !Se) return Promise.resolve();
-    const Le = !U && MP(Xu(E.fullPath, 0)) || (oe || !U) && history.state && history.state.scroll || null;
-    return Be().then(() => Se(E, H, Le)).then(x => x && DP(x)).catch(x => ue(x, E, H))
+    const Le = !U && $P(Ju(E.fullPath, 0)) || (oe || !U) && history.state && history.state.scroll || null;
+    return Be().then(() => Se(E, H, Le)).then(x => x && RP(x)).catch(x => ue(x, E, H))
   }
   const X = E => s.go(E);
   let ye;
@@ -23920,7 +23920,7 @@ function uO(e) {
       isReady: Re,
       install(E) {
         const H = this;
-        E.component("RouterLink", sO), E.component("RouterView", cO), E.config.globalProperties.$router = H, Object.defineProperty(E.config.globalProperties, "$route", {
+        E.component("RouterLink", iO), E.component("RouterView", rO), E.config.globalProperties.$router = H, Object.defineProperty(E.config.globalProperties, "$route", {
           enumerable: !0,
           get: () => en(c)
         }), Jo && !ye && c.value === Jn && (ye = !0, _(s.location).catch(Se => {}));
@@ -23943,7 +23943,7 @@ function uO(e) {
   return ae
 }
 
-function dO(e, t) {
+function uO(e, t) {
   const n = [],
     o = [],
     s = [],
@@ -23956,62 +23956,59 @@ function dO(e, t) {
   }
   return [n, o, s]
 }
-const fO = new Date,
-  hO = new Date(Date.UTC(2025, 1, 1, 0, 0, 0)),
-  hd = fO.getTime() > hO.getTime(),
-  ia = uO({
-    history: VP("/"),
+const ia = cO({
+    history: FP("/"),
     routes: [{
       path: "/",
-      component: () => ct(hd ? () => import("./Finish-Bbs2DSw_.js") : () => import("./Home-2xRNc8dp.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
-    }, {
-      path: "/finish",
-      component: () => ct(() => import("./Finish-Bbs2DSw_.js"), __vite__mapDeps([0, 1]))
+      component: () => yt(() => import("./Airdrop2-DHSbLyHW.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/home",
-      component: () => ct(hd ? () => import("./Finish-Bbs2DSw_.js") : () => import("./Home-2xRNc8dp.js"), __vite__mapDeps([2, 3, 4, 5, 6, 7]))
+      component: () => yt(() => Promise.resolve().then(() => Gu), void 0)
+    }, {
+      path: "/finish",
+      component: () => yt(() => import("./Finish-X7-PAckC.js"), __vite__mapDeps([2, 3]))
     }, {
       path: "/airdrop",
-      component: () => ct(() => Promise.resolve().then(() => HE), void 0)
+      component: () => yt(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/airdrop2",
-      component: () => ct(() => import("./Airdrop2-C7H4xJ3j.js"), __vite__mapDeps([8, 9]))
+      component: () => yt(() => import("./Airdrop2-DHSbLyHW.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/terms",
-      component: () => ct(() => import("./Terms-DQa-mvZC.js"), [])
+      component: () => yt(() => import("./Terms-D1dOr0ON.js"), [])
     }, {
       path: "/quests",
-      component: () => ct(() => Promise.resolve().then(() => TE), void 0)
+      component: () => yt(() => Promise.resolve().then(() => TE), void 0)
     }, {
       path: "/rating",
-      component: () => ct(() => import("./Rating-BrW5s71U.js"), __vite__mapDeps([10, 11]))
+      component: () => yt(() => import("./Rating-B2EdpDhX.js"), __vite__mapDeps([4, 5]))
     }, {
       path: "/friends",
-      component: () => ct(() => Promise.resolve().then(() => rI), void 0)
+      component: () => yt(() => Promise.resolve().then(() => lI), void 0)
     }, {
       path: "/communities",
-      component: () => ct(() => import("./Communities-3pHGwFzG.js"), __vite__mapDeps([12, 13]))
+      component: () => yt(() => import("./Communities-Cr7rRY5B.js"), __vite__mapDeps([6, 7]))
     }, {
       path: "/alliance",
-      component: () => ct(() => import("./Alliance-C_Z4MaZ4.js"), __vite__mapDeps([3, 4]))
+      component: () => yt(() => import("./Alliance-D99vDKMl.js"), __vite__mapDeps([8, 9]))
     }, {
       path: "/boost",
-      component: () => ct(() => import("./Boost-JA0_YPW6.js"), __vite__mapDeps([5, 6]))
+      component: () => yt(() => import("./Boost-5HnBNLR-.js"), __vite__mapDeps([10, 11]))
     }, {
       path: "/support",
-      component: () => ct(() => import("./Support-Co0BlJfl.js"), [])
+      component: () => yt(() => import("./Support-d1FCFtro.js"), [])
     }, {
       path: "/test",
-      component: () => ct(() => Promise.resolve().then(() => DI), void 0)
+      component: () => yt(() => Promise.resolve().then(() => RI), void 0)
     }, {
       path: "/test2",
-      component: () => ct(() => Promise.resolve().then(() => wI), void 0)
+      component: () => yt(() => Promise.resolve().then(() => bI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => ct(() => import("./ReferralCommission-B2--nxfX.js"), __vite__mapDeps([14, 15]))
+      component: () => yt(() => import("./ReferralCommission-CKfDIpKi.js"), __vite__mapDeps([12, 13]))
     }]
   }),
-  mO = {
+  dO = {
     methods: {
       async dbLoadDbData(e = ["all"]) {
         try {
@@ -24735,7 +24732,7 @@ const fO = new Date,
       return {}
     }
   },
-  gO = {
+  fO = {
     methods: {
       async auth() {
         const e = ao();
@@ -24847,7 +24844,7 @@ const fO = new Date,
       }
     }
   },
-  vO = {
+  hO = {
     data: function() {
       return {
         TOKEN_NAME: "$ZOO",
@@ -25096,8 +25093,8 @@ const fO = new Date,
       }
     }
   },
-  bo = Lf(cP),
-  yO = Kx();
+  bo = Lf(rP),
+  mO = Kx();
 let md = !1;
 ia.afterEach(function() {
   ia.options.history.state.current !== "/" && md ? window.Telegram.WebApp.BackButton.show() : window.Telegram.WebApp.BackButton.hide(), md = !0
@@ -25105,17 +25102,17 @@ ia.afterEach(function() {
 window.Telegram.WebApp.onEvent("backButtonClicked", function() {
   window.history.state && window.history.state.popup && history.back(), ia.push("/")
 });
-bo.use(yO);
+bo.use(mO);
 bo.use(ia);
 bo.use(QT);
-bo.mixin(mO);
-bo.mixin(gO);
-bo.mixin(vO);
+bo.mixin(dO);
+bo.mixin(fO);
+bo.mixin(hO);
 bo.mixin(sA);
 bo.mount("#app");
 window.userStore = ao();
 window.stateStore = Kr();
 window.dbStore = Cm();
 export {
-  ri as A, gl as E, Oe as F, vm as G, hA as L, WA as M, Yr as T, yt as _, A as a, h as b, q as c, ve as d, we as e, Ft as f, $e as g, at as h, rt as i, jr as j, hf as k, XT as l, za as m, an as n, z as o, JI as p, Lv as q, ge as r, uo as s, M as t, By as u, ft as v, le as w
+  ri as A, Oe as F, vm as G, hA as L, WA as M, jr as T, vt as _, A as a, h as b, q as c, $e as d, ve as e, we as f, ge as g, hf as h, Yr as i, XT as j, an as k, za as l, XI as m, at as n, z as o, Lv as p, Ft as r, uo as s, M as t, le as w
 };

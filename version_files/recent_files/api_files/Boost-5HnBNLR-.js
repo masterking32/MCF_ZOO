@@ -2,18 +2,18 @@ import {
   _ as H,
   c as r,
   a as s,
-  d as h,
-  t as o,
   e as b,
+  t as o,
+  f as h,
   b as p,
   w as l,
-  r as u,
+  g as u,
   o as a,
   F as f,
-  f as v,
-  g,
-  h as M
-} from "./index-7rbK73ZE.js";
+  r as v,
+  d as g,
+  n as M
+} from "./index-4S2gbC6Z.js";
 const C = {
     name: "Boost-g",
     components: {},
@@ -76,10 +76,10 @@ const C = {
   N = {
     class: "white"
   },
-  G = {
+  E = {
     class: "list"
   },
-  E = ["innerHTML"],
+  G = ["innerHTML"],
   S = ["innerHTML"],
   U = {
     key: 2
@@ -92,13 +92,13 @@ function D(e, t, F, K, i, _) {
     k = u("van-cell-group"),
     B = u("van-tab"),
     w = u("van-tabs");
-  return a(), r("div", I, [s("h1", L, [h(o(e.t("Boost your profit per hour")) + " ", 1), t[1] || (t[1] = s("span", {
+  return a(), r("div", I, [s("h1", L, [b(o(e.t("Boost your profit per hour")) + " ", 1), t[1] || (t[1] = s("span", {
     class: "tph40"
   }, null, -1))]), ((y = e.uHero) == null ? void 0 : y.boostPercent) > 0 ? (a(), r("div", O, [s("div", P, o(e.t("Boost {COUNT}% working now!", {
     COUNT: e.uHero.boostPercent
   })), 1), s("div", N, [s("div", null, o(e.t("Time Remaining: {TIME}", {
     TIME: e.uHero.boostShortDateStr
-  })), 1)])])) : b("", !0), s("ul", G, [s("li", null, o(e.t("Only one boost will work at a time — they don't stack.")), 1), s("li", null, o(e.t("The boost purchased last will be the one that remains active.")), 1), s("li", null, o(e.t("The boost starts working immediately after purchase.")), 1)]), p(w, {
+  })), 1)])])) : h("", !0), s("ul", E, [s("li", null, o(e.t("Only one boost will work at a time — they don't stack.")), 1), s("li", null, o(e.t("The boost purchased last will be the one that remains active.")), 1), s("li", null, o(e.t("The boost starts working immediately after purchase.")), 1)]), p(w, {
     active: i.activeTab,
     "onUpdate:active": t[0] || (t[0] = c => i.activeTab = c),
     swipeable: !e.isRtl,
@@ -127,14 +127,14 @@ function D(e, t, F, K, i, _) {
               value: n.boost,
               IMG_TPH: e.IMG_TPH
             })
-          }, null, 8, E)) : (a(), r("div", {
+          }, null, 8, G)) : (a(), r("div", {
             key: 1,
             innerHTML: e.t("+{value}% {IMG_TPH} boost for {days} days", {
               value: n.boost,
               days: n.days,
               IMG_TPH: e.IMG_TPH
             })
-          }, null, 8, S)), i.superOfferKeys.includes(n.key) ? (a(), r("span", U, o(e.t("SUPER OFFER")), 1)) : b("", !0)]),
+          }, null, 8, S)), i.superOfferKeys.includes(n.key) ? (a(), r("span", U, o(e.t("SUPER OFFER")), 1)) : h("", !0)]),
           "right-icon": l(() => [p(m, {
             type: i.superOfferKeys.includes(n.key) ? "warning" : "success",
             size: "small",
@@ -143,7 +143,7 @@ function D(e, t, F, K, i, _) {
           }, {
             default: l(() => [t[2] || (t[2] = s("span", {
               class: "coin25"
-            }, null, -1)), h(" " + o(e._number(n.price)), 1)]),
+            }, null, -1)), b(" " + o(e._number(n.price)), 1)]),
             _: 2
           }, 1032, ["type", "onClick", "loading"])]),
           _: 2

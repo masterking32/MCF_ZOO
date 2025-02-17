@@ -1,26 +1,26 @@
 import {
   _ as s,
-  T as o,
-  l as r,
-  c as t,
+  i as o,
+  j as t,
+  c as r,
   b as n,
   o as c,
-  r as a
-} from "./index-7rbK73ZE.js";
+  g as a
+} from "./index-4S2gbC6Z.js";
 const m = {
     name: "Terms-o",
     components: {
       TopBar: o,
-      TermsOfUse: r
+      TermsOfUse: t
     }
   },
   _ = {
     class: "terms"
   };
 
-function p(f, d, l, T, i, u) {
+function p(f, d, i, l, T, u) {
   const e = a("TermsOfUse");
-  return c(), t("div", _, [n(e)])
+  return c(), r("div", _, [n(e)])
 }
 const x = s(m, [
   ["render", p]

@@ -1,22 +1,22 @@
 import {
   _ as w,
   o as i,
-  g as u,
+  d as u,
   w as n,
   a as d,
-  d as C,
+  e as C,
   t as m,
-  e as p,
+  f as p,
   c as y,
   b as a,
-  m as F,
-  h as N,
-  r as s,
-  T as j,
+  l as F,
+  n as N,
+  g as s,
+  i as j,
   s as x,
   F as k,
-  f as E
-} from "./index-7rbK73ZE.js";
+  r as E
+} from "./index-4S2gbC6Z.js";
 const B = {
     props: {
       clickable: Boolean,
@@ -244,12 +244,12 @@ function ne(e, t, c, V, o, r) {
     h = s("van-button"),
     g = s("community-cell"),
     f = s("van-cell-group"),
-    T = s("van-space"),
+    I = s("van-space"),
     z = s("van-field"),
     A = s("van-config-provider"),
     M = s("van-loading"),
     L = s("van-col"),
-    I = s("van-icon"),
+    T = s("van-icon"),
     O = s("van-tab"),
     S = s("game-tabs");
   return i(), y("div", null, [d("div", H, [a(_, {
@@ -318,7 +318,7 @@ function ne(e, t, c, V, o, r) {
           height: "64px"
         }
       }, {
-        button: n(() => [a(T, null, {
+        button: n(() => [a(I, null, {
           default: n(() => [a(h, {
             disabled: o.isCreatingCommunity,
             loading: o.isCreatingCommunity,
@@ -378,15 +378,15 @@ function ne(e, t, c, V, o, r) {
           clickable: "",
           onClick: te => r.openChannel(b)
         }, {
-          "right-icon": n(() => [a(T, {
+          "right-icon": n(() => [a(I, {
             size: "4px"
           }, {
-            default: n(() => [v < 3 ? (i(), u(I, {
+            default: n(() => [v < 3 ? (i(), u(T, {
               key: 0,
               class: N(["award-" + v, "award"]),
               name: "award",
               size: "20"
-            }, null, 8, ["class"])) : (i(), y("span", $, "#" + m(v + 1), 1)), a(I, {
+            }, null, 8, ["class"])) : (i(), y("span", $, "#" + m(v + 1), 1)), a(T, {
               name: "arrow"
             })]),
             _: 2
