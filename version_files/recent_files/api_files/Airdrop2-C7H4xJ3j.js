@@ -1,30 +1,30 @@
 import {
-  _ as Y,
+  _ as Z,
   G as q,
-  j as Z,
-  M as G,
-  A as R,
+  j as G,
+  M as R,
+  A as H,
   c as u,
   a as o,
   b as d,
-  g as y,
+  g as f,
   t as n,
-  w as l,
-  h as D,
-  d as a,
+  w as a,
+  h as P,
+  d as l,
   e as m,
-  F as k,
+  F as w,
   f as _,
   r as p,
   o as r,
   k as W
-} from "./index-8T1hBt4i.js";
-const j = {
+} from "./index-7rbK73ZE.js";
+const K = {
     name: "Airdrop2-g",
     components: {
       GamePopup: q,
-      TonWallet: Z,
-      Menu: G
+      TonWallet: G,
+      Menu: R
     },
     async created() {
       await window.listenTonConnect()
@@ -137,7 +137,8 @@ const j = {
           }, {
             date: "2025-02-25T12:00:00.000Z",
             title: "You'll get your Airdrop"
-          }]
+          }],
+          docLink: "https://docs.google.com/document/d/1y9DLt8Wn5KfLh8scSvNAoNlc4yU91BvnrvNim8vc6ko/edit?usp=sharing"
         }, {
           key: "gate",
           title: "Gate.io Exchange",
@@ -146,7 +147,7 @@ const j = {
           isExchange: !0,
           isNeedGas: !1,
           inputs: ["uid", "deposit_address", "memo"],
-          registerLink: "https://www.gate.io/signup",
+          registerLink: "https://www.gate.io/signup?ch=signupZOO",
           datesInfo: [{
             date: "2025-02-22T09:00:00.000Z",
             title: "Deposit end"
@@ -156,7 +157,8 @@ const j = {
           }, {
             date: "2025-02-25T12:00:00.000Z",
             title: "You'll get your Airdrop"
-          }]
+          }],
+          registerHelp: "https://www.gate.io/help/guide/register_install/22296"
         }, {
           key: "kucoin",
           title: "KuCoin Exchange",
@@ -214,7 +216,7 @@ const j = {
     methods: {
       getAddressNonBounceableMedium(e) {
         if (!e || e.length < 1) return "";
-        const h = new R(e).toString(!0, !0, !1, !1);
+        const h = new H(e).toString(!0, !0, !1, !1);
         return h.substring(0, 8) + "...." + h.substring(h.length - 8)
       },
       async tonConnectStatusHandler(e) {
@@ -312,7 +314,7 @@ const j = {
       }
     }
   },
-  H = {
+  j = {
     style: {
       position: "fixed",
       top: "10px",
@@ -320,7 +322,7 @@ const j = {
       "z-index": "1"
     }
   },
-  K = {
+  Q = {
     key: 1,
     style: {
       position: "absolute",
@@ -329,24 +331,18 @@ const j = {
       transform: "translate3d(-50%, -50%, 0)"
     }
   },
-  Q = {
+  X = {
     key: 2
   },
-  X = {
+  J = {
     style: {
       padding: "30% 0",
       "text-align": "center"
     }
   },
-  J = {
+  $ = {
     key: 3,
     class: "container"
-  },
-  $ = {
-    class: "",
-    style: {
-      color: "#fff"
-    }
   },
   ee = {
     class: "",
@@ -355,18 +351,24 @@ const j = {
     }
   },
   te = {
-    class: "date center"
+    class: "",
+    style: {
+      color: "#fff"
+    }
   },
   oe = {
-    class: "tokenCount"
+    class: "date center"
   },
   ne = {
-    class: "tips"
+    class: "tokenCount"
   },
   se = {
-    class: "title"
+    class: "tips"
   },
   ie = {
+    class: "title"
+  },
+  le = {
     style: {
       color: "#000",
       padding: "15px"
@@ -375,71 +377,68 @@ const j = {
   ae = {
     class: "zTextShadow2white"
   },
-  le = {
+  re = {
     key: 0
   },
-  re = {
+  de = {
     style: {
       "font-size": "0.7em"
     }
   },
-  de = {
+  ue = {
     key: 0,
     style: {
       "line-height": "1",
       padding: "5px 10px"
     }
   },
-  ue = {
+  he = {
     class: "tips"
   },
-  he = {
+  ce = {
     key: 0,
     class: "preTitle center"
   },
-  ce = ["src", "alt"],
-  pe = {
-    style: {
-      margin: "0 10px"
-    }
-  },
+  pe = ["src", "alt"],
   me = {
     style: {
       margin: "0 10px"
     }
   },
   ge = {
-    key: 1
+    style: {
+      margin: "0 10px"
+    }
   },
   fe = {
-    style: {
-      "font-size": "1.3em",
-      "font-weight": "700"
-    }
+    key: 0
   },
   ye = {
+    key: 1
+  },
+  ke = {
     style: {
       "font-size": "1.3em",
       "font-weight": "700"
     }
   },
-  ke = {
+  we = {
+    style: {
+      "font-size": "1.3em",
+      "font-weight": "700"
+    }
+  },
+  be = {
     key: 2,
     style: {
       margin: "40px 0"
     }
   },
-  we = {
+  ve = {
     style: {
       margin: "40px 0",
       "padding-bottom": "40px"
     }
-  },
-  be = {
-    class: "faqItemContent"
-  },
-  ve = {
-    class: "faqItemContent"
   },
   _e = {
     class: "faqItemContent"
@@ -451,49 +450,55 @@ const j = {
     class: "faqItemContent"
   },
   Se = {
-    class: "resetOptionsPopup container"
+    class: "faqItemContent"
   },
   Ie = {
-    class: "title"
+    class: "faqItemContent"
   },
   Ee = {
-    class: "exchangeInfoPopup container center"
+    class: "resetOptionsPopup container"
   },
   xe = {
-    class: "depositPopup container"
-  },
-  Me = {
-    class: "info"
-  },
-  De = ["src", "alt"],
-  Pe = {
     class: "title"
   },
-  Fe = {
-    class: "description"
+  Me = {
+    class: "exchangeInfoPopup container center"
+  },
+  De = {
+    class: "depositPopup container"
+  },
+  Pe = {
+    class: "info"
+  },
+  Fe = ["src", "alt"],
+  Ne = {
+    class: "title"
   },
   Oe = {
+    class: "description"
+  },
+  Ue = {
     class: "walletButtons"
   },
-  Ne = {
+  Le = {
     class: "panelBrown",
     style: {
       "margin-top": "30px"
     }
   },
-  Ue = {
+  Ae = {
     class: "depositFields"
   },
-  Le = {
+  ze = {
     class: "label"
   },
-  Ae = {
+  Ve = {
     style: {
       display: "inline-block",
       "border-bottom": "1px dashed #ccc"
     }
   },
-  ze = {
+  Be = {
     class: "center",
     style: {
       "font-size": "1.3em",
@@ -503,23 +508,24 @@ const j = {
     }
   };
 
-function Ve(e, t, h, S, s, c) {
-  var I, E, x;
-  const P = p("Menu"),
-    F = p("van-loading"),
-    g = p("van-button"),
-    w = p("van-icon"),
+function Ye(e, t, h, S, s, c) {
+  var E, x, M;
+  const F = p("Menu"),
+    N = p("van-loading"),
+    y = p("van-button"),
+    b = p("van-icon"),
     O = p("van-popover"),
-    N = p("van-cell"),
-    U = p("van-cell-group"),
+    I = p("van-tag"),
+    U = p("van-cell"),
+    L = p("van-cell-group"),
     C = p("van-notice-bar"),
     v = p("van-collapse-item"),
-    L = p("van-collapse"),
+    A = p("van-collapse"),
     T = p("van-popup"),
-    A = p("ton-wallet"),
-    z = p("van-field"),
-    V = p("van-form");
-  return r(), u(k, null, [o("div", H, [d(P)]), s.isPageLoading ? (r(), y(F, {
+    z = p("ton-wallet"),
+    V = p("van-field"),
+    B = p("van-form");
+  return r(), u(w, null, [o("div", j, [d(F)]), s.isPageLoading ? (r(), f(N, {
     key: 0,
     style: {
       position: "absolute",
@@ -527,63 +533,63 @@ function Ve(e, t, h, S, s, c) {
       left: "50%",
       transform: "translate3d(-50%, -50%, 0)"
     }
-  })) : isNaN(s.tokens.total) ? (r(), u("div", K, n(e.t("Please reload page")), 1)) : c.isMaintenance ? (r(), u("div", Q, [o("div", X, [o("p", null, n(e.t("We are currently making the snapshot of the data to make {on-chain} airdrop.")), 1), o("p", null, n(e.t("It could take several minutes.")), 1), o("p", null, n(e.t("Try again later.")), 1)])])) : s.tokens.total ? (r(), u("div", {
+  })) : isNaN(s.tokens.total) ? (r(), u("div", Q, n(e.t("Please reload page")), 1)) : c.isMaintenance ? (r(), u("div", X, [o("div", J, [o("p", null, n(e.t("We are currently making the snapshot of the data to make {on-chain} airdrop.")), 1), o("p", null, n(e.t("It could take several minutes.")), 1), o("p", null, n(e.t("Try again later.")), 1)])])) : s.tokens.total ? (r(), u("div", {
     key: 4,
-    class: D(["airdrop container pageContainer", {
+    class: P(["airdrop container pageContainer", {
       blur: s.isPageLoading
     }]),
     style: {
       "padding-top": "20px"
     }
-  }, [t[25] || (t[25] = o("h1", {
+  }, [t[30] || (t[30] = o("h1", {
     class: "center aniH1 goldText"
-  }, "Airdrop", -1)), o("h2", te, n(e.t("February 25, 2025. 12:00 UTC")), 1), o("div", oe, [o("div", ne, n(e.t("Tokens")), 1), o("div", se, [d(O, {
+  }, "Airdrop", -1)), o("h2", oe, n(e.t("February 25, 2025. 12:00 UTC")), 1), o("div", ne, [o("div", se, n(e.t("Tokens")), 1), o("div", ie, [d(O, {
     style: {
       "max-width": "calc(100% - 20px)"
     }
   }, {
-    reference: l(() => [o("div", ae, [a(n(e._number(Math.ceil(c.tokensTotal / 1e3))) + " $ZOO ", 1), d(w, {
+    reference: a(() => [o("div", ae, [l(n(e._number(Math.ceil(c.tokensTotal / 1e3))) + " $ZOO ", 1), d(b, {
       name: "question-o",
       style: {
         "font-size": "0.9em"
       }
     })])]),
-    default: l(() => [o("div", ie, [a(n(e.t("The displayed token amount reflects the post-denomination value. The rounding was done upward.")) + " " + n(e.t("You can read more about the denomination in our Telegram channel.")), 1), t[12] || (t[12] = o("br", null, null, -1)), d(g, {
+    default: a(() => [o("div", le, [l(n(e.t("The displayed token amount reflects the post-denomination value. The rounding was done upward.")) + " " + n(e.t("You can read more about the denomination in our Telegram channel.")), 1), t[13] || (t[13] = o("br", null, null, -1)), d(y, {
       type: "warning",
       onClick: t[0] || (t[0] = i => e._openUrl("https://t.me/zoo_story/315")),
       style: {
         "margin-top": "15px"
       }
     }, {
-      default: l(() => [a(n(e.t("News here")), 1)]),
+      default: a(() => [l(n(e.t("News here")), 1)]),
       _: 1
     })])]),
     _: 1
-  })]), o("table", null, [o("tbody", null, [((I = s.tokens.sentToCex) == null ? void 0 : I.tokens) > 0 ? (r(), u("tr", le, [o("td", re, [a(n(e.t("Sent to {cex}", {
+  })]), o("table", null, [o("tbody", null, [((E = s.tokens.sentToCex) == null ? void 0 : E.tokens) > 0 ? (r(), u("tr", re, [o("td", de, [l(n(e.t("Sent to {cex}", {
     cex: c.cexText
-  })) + " ", 1), t[13] || (t[13] = o("br", null, null, -1)), a(" " + n(e.t("You will be able to see your balance on 25 February at 12:00 UTC")), 1)])])) : m("", !0), (r(!0), u(k, null, _(s.tokens.airdropsData, (i, b) => (r(), u("tr", {
-    key: `airdrop_tokens_${b}`
-  }, [(i == null ? void 0 : i.tokens) > 0 ? (r(), u("td", de, [a(" On-Chain Airdrop #" + n(b + 1) + " ", 1), o("div", ue, n(c.getAddressNonBounceableMedium(i == null ? void 0 : i.method_wallet)), 1)])) : m("", !0)]))), 128))])])]), (E = this.tokens) != null && E.isCexFinish && s.selectedMethod && s.selectedMethod !== "onchain_airdrop" ? m("", !0) : (r(), u(k, {
+  })) + " ", 1), t[14] || (t[14] = o("br", null, null, -1)), l(" " + n(e.t("You will be able to see your balance on 25 February at 12:00 UTC")), 1)])])) : m("", !0), (r(!0), u(w, null, _(s.tokens.airdropsData, (i, k) => (r(), u("tr", {
+    key: `airdrop_tokens_${k}`
+  }, [(i == null ? void 0 : i.tokens) > 0 ? (r(), u("td", ue, [l(" On-Chain Airdrop #" + n(k + 1) + " ", 1), o("div", he, n(c.getAddressNonBounceableMedium(i == null ? void 0 : i.method_wallet)), 1)])) : m("", !0)]))), 128))])])]), (x = this.tokens) != null && x.isCexFinish && s.selectedMethod && s.selectedMethod !== "onchain_airdrop" ? m("", !0) : (r(), u(w, {
     key: 0
-  }, [s.selectedMethod ? m("", !0) : (r(), u("div", he, n(e.t("Choose withdrawal option:")), 1)), d(U, {
+  }, [s.selectedMethod ? m("", !0) : (r(), u("div", ce, n(e.t("Choose withdrawal option:")), 1)), d(L, {
     inset: "",
     style: {
       margin: "10px 0 0 0"
     },
     class: "exchanges"
   }, {
-    default: l(() => [(r(!0), u(k, null, _(c.dbExchange, i => (r(), y(N, {
+    default: a(() => [(r(!0), u(w, null, _(c.dbExchange, i => (r(), f(U, {
       key: i == null ? void 0 : i.key,
-      class: D(["exchange", {
+      class: P(["exchange", {
         bold: (i == null ? void 0 : i.key) === "onchain_airdrop",
         disabled: s.selectedMethod && i.key !== s.selectedMethod
       }]),
-      onClick: b => c.showExchangeInfo(i),
       size: "large",
       center: "",
-      "is-link": ""
+      "is-link": "",
+      onClick: k => c.showExchangeInfo(i)
     }, W({
-      icon: l(() => [o("img", {
+      icon: a(() => [o("img", {
         class: "image",
         src: c.getImage(i == null ? void 0 : i.key),
         alt: i.key,
@@ -591,22 +597,38 @@ function Ve(e, t, h, S, s, c) {
           width: "40px",
           "border-radius": "100px"
         }
-      }, null, 8, ce)]),
-      title: l(() => [o("span", pe, n(i.title), 1)]),
+      }, null, 8, pe)]),
+      title: a(() => [o("span", me, n(i.title), 1)]),
+      "right-icon": a(() => [s.selectedMethod ? (r(), u("span", fe, [l(n(e.t("Connected")) + "   ", 1), d(b, {
+        name: "checked"
+      })])) : (r(), u(w, {
+        key: 1
+      }, [(i == null ? void 0 : i.key) === "onchain_airdrop" ? (r(), f(I, {
+        key: 0,
+        type: "primary",
+        color: "#99723b"
+      }, {
+        default: a(() => t[15] || (t[15] = [l("No KYC")])),
+        _: 1
+      })) : (r(), f(I, {
+        key: 1,
+        type: "primary",
+        color: "#99723b"
+      }, {
+        default: a(() => t[16] || (t[16] = [l("No Gas Fee")])),
+        _: 1
+      })), t[17] || (t[17] = l("   ")), d(b, {
+        name: "arrow",
+        color: "#969799"
+      })], 64))]),
       _: 2
     }, [s.selectedMethod ? {
       name: "label",
-      fn: l(() => [o("span", me, n(e.t("This method is chosen")), 1)]),
+      fn: a(() => [o("span", ge, n(e.t("This method is chosen")), 1)]),
       key: "0"
-    } : void 0, s.selectedMethod ? {
-      name: "right-icon",
-      fn: l(() => [o("span", null, [a(n(e.t("Connected")) + "   ", 1), d(w, {
-        name: "checked"
-      })])]),
-      key: "1"
     } : void 0]), 1032, ["class", "onClick"]))), 128))]),
     _: 1
-  })], 64)), s.selectedMethod ? (r(), u("div", ge, [s.selectedMethod === "onchain_airdrop" ? (r(), y(C, {
+  })], 64)), s.selectedMethod ? (r(), u("div", ye, [s.selectedMethod === "onchain_airdrop" ? (r(), f(C, {
     key: 0,
     wrapable: "",
     scrollable: !1,
@@ -616,11 +638,11 @@ function Ve(e, t, h, S, s, c) {
       "line-height": "normal"
     }
   }, {
-    default: l(() => [o("div", fe, [d(w, {
+    default: a(() => [o("div", ke, [d(b, {
       name: "warning-o"
-    }), a(" " + n(e.t("Warning:")), 1)]), a(" • " + n(e.t("The tokens will not appear automatically in your wallet.")) + " ", 1), t[14] || (t[14] = o("br", null, null, -1)), a(" • " + n(e.t("You will need to collect them manually by paying a fee of about 0.1 TON.")), 1), t[15] || (t[15] = o("br", null, null, -1)), a(" • " + n(e.t("The button to collect the tokens will appear on 25 February at 12:00 {UTC} on this page")), 1), t[16] || (t[16] = o("br", null, null, -1)), a(" • " + n(e.t("You can pick them up between 25th and 28th February 12:00 {UTC}")), 1), t[17] || (t[17] = o("br", null, null, -1)), a(" • " + n(e.t("It will not be possible to collect later than this interval.")), 1)]),
+    }), l(" " + n(e.t("Warning:")), 1)]), l(" • " + n(e.t("The tokens will not appear automatically in your wallet.")) + " ", 1), t[18] || (t[18] = o("br", null, null, -1)), l(" • " + n(e.t("You will need to collect them manually by paying a fee of about 0.1 TON.")), 1), t[19] || (t[19] = o("br", null, null, -1)), l(" • " + n(e.t("The button to collect the tokens will appear on 25 February at 12:00 {UTC} on this page")), 1), t[20] || (t[20] = o("br", null, null, -1)), l(" • " + n(e.t("You can pick them up between 25th and 28th February 12:00 {UTC}")), 1), t[21] || (t[21] = o("br", null, null, -1)), l(" • " + n(e.t("It will not be possible to collect later than this interval.")), 1)]),
     _: 1
-  })) : (r(), y(C, {
+  })) : (r(), f(C, {
     key: 1,
     wrapable: "",
     scrollable: !1,
@@ -630,11 +652,11 @@ function Ve(e, t, h, S, s, c) {
       "line-height": "normal"
     }
   }, {
-    default: l(() => [o("div", ye, [d(w, {
+    default: a(() => [o("div", we, [d(b, {
       name: "warning-o"
-    }), a(" " + n(e.t("Warning:")), 1)]), a(" • " + n(e.t("If you have entered incorrect data, you will not be able to get tokens and we will not be able to help you in any way.")) + " ", 1), t[18] || (t[18] = o("br", null, null, -1)), a(" • " + n(e.t("Exchange details can only be used once.")) + " ", 1), t[19] || (t[19] = o("br", null, null, -1)), a(" • " + n(e.t("For various reasons, the exchange may refuse to receive tokens for your data.")) + " ", 1), t[20] || (t[20] = o("br", null, null, -1)), a(" • " + n(e.t("If on 25 February at 12:00 {UTC} you have reset the type of claim you need to select {On-chain}.")) + " ", 1), t[21] || (t[21] = o("br", null, null, -1))]),
+    }), l(" " + n(e.t("Warning:")), 1)]), l(" • " + n(e.t("If you have entered incorrect data, you will not be able to get tokens and we will not be able to help you in any way.")) + " ", 1), t[22] || (t[22] = o("br", null, null, -1)), l(" • " + n(e.t("Exchange details can only be used once.")) + " ", 1), t[23] || (t[23] = o("br", null, null, -1)), l(" • " + n(e.t("For various reasons, the exchange may refuse to receive tokens for your data.")) + " ", 1), t[24] || (t[24] = o("br", null, null, -1)), l(" • " + n(e.t("If on 25 February at 12:00 {UTC} you have reset the type of claim you need to select {On-chain}.")) + " ", 1), t[25] || (t[25] = o("br", null, null, -1))]),
     _: 1
-  })), (x = this.tokens) != null && x.isCexFinish && s.selectedMethod && s.selectedMethod !== "onchain_airdrop" ? m("", !0) : (r(), y(g, {
+  })), (M = this.tokens) != null && M.isCexFinish && s.selectedMethod && s.selectedMethod !== "onchain_airdrop" ? m("", !0) : (r(), f(y, {
     key: 2,
     loading: s.isPageLoading,
     onClick: t[1] || (t[1] = i => s.isResetPopupShow = !0),
@@ -647,17 +669,17 @@ function Ve(e, t, h, S, s, c) {
       "margin-bottom": "30px"
     }
   }, {
-    default: l(() => [a(n(e.t("Reset withdrawal option")), 1)]),
+    default: a(() => [l(n(e.t("Reset withdrawal option")), 1)]),
     _: 1
-  }, 8, ["loading"]))])) : m("", !0), s.tokens.isOnChainStarted && s.selectedMethod === "onchain_airdrop" && c.tokensToAirdropClaim ? (r(), u("div", ke, [d(g, {
+  }, 8, ["loading"]))])) : m("", !0), s.tokens.isOnChainStarted && s.selectedMethod === "onchain_airdrop" && c.tokensToAirdropClaim ? (r(), u("div", be, [d(y, {
     type: "success",
     size: "large",
     round: "",
     onClick: t[2] || (t[2] = i => e.$router.push("/on-chain-airdrop"))
   }, {
-    default: l(() => [a(n(e.t("Go to claim page")), 1)]),
+    default: a(() => [l(n(e.t("Go to claim page")), 1)]),
     _: 1
-  })])) : m("", !0), s.tokens.isOnChainStarted && s.selectedMethod === "onchain_airdrop" && !c.tokensToAirdropClaim && s.tokens.total > 0 ? (r(), y(C, {
+  })])) : m("", !0), s.tokens.isOnChainStarted && s.selectedMethod === "onchain_airdrop" && !c.tokensToAirdropClaim && s.tokens.total > 0 ? (r(), f(C, {
     key: 3,
     wrapable: "",
     scrollable: !1,
@@ -668,9 +690,9 @@ function Ve(e, t, h, S, s, c) {
       "line-height": "normal"
     }
   }, {
-    default: l(() => [a(n(e.t("Your {on-chain} withdrawal request is in the processing queue. Please come back later to collect your tokens.")), 1)]),
+    default: a(() => [l(n(e.t("Your {on-chain} withdrawal request is in the processing queue. Please come back later to collect your tokens.")), 1)]),
     _: 1
-  })) : m("", !0), o("div", we, [t[22] || (t[22] = o("h2", null, "FAQ", -1)), d(L, {
+  })) : m("", !0), o("div", ve, [t[26] || (t[26] = o("h2", null, "FAQ", -1)), d(A, {
     modelValue: s.faqValue,
     "onUpdate:modelValue": t[3] || (t[3] = i => s.faqValue = i),
     style: {
@@ -678,40 +700,40 @@ function Ve(e, t, h, S, s, c) {
       overflow: "hidden"
     }
   }, {
-    default: l(() => [d(v, {
+    default: a(() => [d(v, {
       name: "1",
       border: !1
     }, {
-      title: l(() => [a(n(e.t("When will I receive my tokens?")), 1)]),
-      default: l(() => [o("div", be, [o("p", null, n(e.t("If you have submitted an application and CEX has approved it, the tokens will appear in your account on the selected exchange at the time of listing. There may be slight delays in token distribution on the exchange side.")) + " " + n(e.t("You will be able to collect {on-chain} tokens from 25 February 12:00 utc, but the speed depends on network load and technical issues.")), 1)])]),
+      title: a(() => [l(n(e.t("When will I receive my tokens?")), 1)]),
+      default: a(() => [o("div", _e, [o("p", null, n(e.t("If you have submitted an application and CEX has approved it, the tokens will appear in your account on the selected exchange at the time of listing. There may be slight delays in token distribution on the exchange side.")) + " " + n(e.t("You will be able to collect {on-chain} tokens from 25 February 12:00 utc, but the speed depends on network load and technical issues.")), 1)])]),
       _: 1
     }), d(v, {
       name: "2",
       border: !1
     }, {
-      title: l(() => [a(n(e.t("What is the difference between Off-Chain and On-Chain Claim?")), 1)]),
-      default: l(() => [o("div", ve, [o("p", null, n(e.t("An {Off-Chain} transaction does not require you to pay gas fees, and the claim will occur on your selected exchange for free. This feature is available to you only until February 22, 2025, 09:00 UTC, and works exclusively with the list of exchanges mentioned above.")), 1), o("p", null, n(e.t("An {On-Chain} transaction will require you to have gas (approximately 0.1 {TON}). You will receive the tokens only a few hours after the listing, depending on the load on the {TON} network.")), 1)])]),
+      title: a(() => [l(n(e.t("What is the difference between Off-Chain and On-Chain Claim?")), 1)]),
+      default: a(() => [o("div", Ce, [o("p", null, n(e.t("An {Off-Chain} transaction does not require you to pay gas fees, and the claim will occur on your selected exchange for free. This feature is available to you only until February 22, 2025, 09:00 UTC, and works exclusively with the list of exchanges mentioned above.")), 1), o("p", null, n(e.t("An {On-Chain} transaction will require you to have fee (approximately 0.1 {TON}). You will receive the tokens only a few hours after the listing, depending on the load on the {TON} network.")), 1)])]),
       _: 1
     }), d(v, {
       name: "3",
       border: !1
     }, {
-      title: l(() => [a(n(e.t("Can I change the exchange if I have already chosen one?")), 1)]),
-      default: l(() => [o("div", _e, [o("p", null, n(e.t("Yes, you can change the platform for token withdrawal until February 22, 2025, 09:00 UTC.")), 1)])]),
+      title: a(() => [l(n(e.t("Can I change the exchange if I have already chosen one?")), 1)]),
+      default: a(() => [o("div", Te, [o("p", null, n(e.t("Yes, you can change the platform for token withdrawal until February 22, 2025, 09:00 UTC.")), 1)])]),
       _: 1
     }), d(v, {
       name: "4",
       border: !1
     }, {
-      title: l(() => [a(n(e.t("Until what date can I withdraw tokens from {Zoo}?")), 1)]),
-      default: l(() => [o("div", Ce, [o("p", null, n(e.t("Token withdrawals will be available until February 28, 2025, 12:00 UTC.")), 1)])]),
+      title: a(() => [l(n(e.t("Until what date can I withdraw tokens from {Zoo}?")), 1)]),
+      default: a(() => [o("div", Se, [o("p", null, n(e.t("Token withdrawals will be available until February 28, 2025, 12:00 UTC.")), 1)])]),
       _: 1
     }), d(v, {
       name: "11",
       border: !1
     }, {
-      title: l(() => [a(n(e.t("Important notes")), 1)]),
-      default: l(() => [o("div", Te, [o("p", null, n(e.t("In some cases, the exchange may refuse your token claim (if you provided incorrect account details, the account is blocked or unverified, etc.). In this case, the tokens will be returned to our app, and you will be able to claim them again, but only via {On-Chain}.")), 1)])]),
+      title: a(() => [l(n(e.t("Important notes")), 1)]),
+      default: a(() => [o("div", Ie, [o("p", null, n(e.t("In some cases, the exchange may refuse your token claim (if you provided incorrect account details, the account is blocked or unverified, etc.). In this case, the tokens will be returned to our app, and you will be able to claim them again, but only via {On-Chain}.")), 1)])]),
       _: 1
     })]),
     _: 1
@@ -722,84 +744,97 @@ function Ve(e, t, h, S, s, c) {
     closeable: "",
     position: "center"
   }, {
-    default: l(() => [o("div", Se, [o("h3", Ie, n(e.t("Are you sure you want to reset your withdrawal options?")), 1), o("p", null, n(e.t("All information about deposit addresses, UID, and memo will be deleted. This action cannot be undone. You will be able to reenter all data.")), 1), d(g, {
+    default: a(() => [o("div", Ee, [o("h3", xe, n(e.t("Are you sure you want to reset your withdrawal options?")), 1), o("p", null, n(e.t("All information about deposit addresses, UID, and memo will be deleted. This action cannot be undone. You will be able to reenter all data.")), 1), d(y, {
       class: "resetButton",
       type: "danger",
       size: "large",
       onClick: c.handleResetOptions
     }, {
-      default: l(() => [a(n(e.t("Reset and choose another option")), 1)]),
+      default: a(() => [l(n(e.t("Reset and choose another option")), 1)]),
       _: 1
-    }, 8, ["onClick"]), d(g, {
+    }, 8, ["onClick"]), d(y, {
       size: "large",
       onClick: t[4] || (t[4] = i => s.isResetPopupShow = !1),
       type: "warning"
     }, {
-      default: l(() => [a(n(e.t("Cancel")), 1)]),
+      default: a(() => [l(n(e.t("Cancel")), 1)]),
       _: 1
     })])]),
     _: 1
   }, 8, ["show"]), d(T, {
     show: s.isExchangeInfoPopupShow,
-    "onUpdate:show": t[7] || (t[7] = i => s.isExchangeInfoPopupShow = i),
+    "onUpdate:show": t[8] || (t[8] = i => s.isExchangeInfoPopupShow = i),
     round: "",
     closeable: "",
     position: "bottom"
   }, {
-    default: l(() => [o("div", Ee, [o("h1", null, n(s.activeSelectedExchange.title), 1), o("p", null, n(e.t("Do you have a {exchange} account?", {
-      exchange: s.activeSelectedExchange.title.replace("Exchange", "")
-    })), 1), d(g, {
-      onClick: t[6] || (t[6] = i => e._openUrl(s.activeSelectedExchange.registerLink)),
-      type: "warning",
-      round: "",
-      size: "normal"
-    }, {
-      default: l(() => [a(n(e.t("No, let's create it")), 1)]),
-      _: 1
-    }), d(g, {
-      class: "confirmButton",
-      type: "success",
-      round: "",
-      size: "large",
-      onClick: c.showDepositInfo
-    }, {
-      default: l(() => [a(n(e.t("Yes, I have it")), 1)]),
-      _: 1
-    }, 8, ["onClick"])])]),
+    default: a(() => {
+      var i;
+      return [o("div", Me, [o("h1", null, n(s.activeSelectedExchange.title), 1), o("p", null, n(e.t("Do you have a {exchange} account?", {
+        exchange: s.activeSelectedExchange.title.replace("Exchange", "")
+      })), 1), d(y, {
+        onClick: t[6] || (t[6] = k => e._openUrl(s.activeSelectedExchange.registerLink)),
+        type: "warning",
+        round: "",
+        size: "normal"
+      }, {
+        default: a(() => [l(n(e.t("No, let's create it")), 1)]),
+        _: 1
+      }), t[27] || (t[27] = o("br", null, null, -1)), (i = s.activeSelectedExchange) != null && i.registerHelp ? (r(), u("span", {
+        key: 0,
+        style: {
+          "font-size": "0.9em",
+          "border-bottom": "1px dashed #fff"
+        },
+        onClick: t[7] || (t[7] = k => {
+          var g;
+          return e._openUrl((g = s.activeSelectedExchange) == null ? void 0 : g.registerHelp)
+        })
+      }, n(e.t("View instructions on how to register.")), 1)) : m("", !0), d(y, {
+        class: "confirmButton",
+        type: "success",
+        round: "",
+        size: "large",
+        onClick: c.showDepositInfo
+      }, {
+        default: a(() => [l(n(e.t("Yes, I have it")), 1)]),
+        _: 1
+      }, 8, ["onClick"])])]
+    }),
     _: 1
   }, 8, ["show"]), d(T, {
     show: s.isDepositPopupShow,
-    "onUpdate:show": t[10] || (t[10] = i => s.isDepositPopupShow = i),
+    "onUpdate:show": t[11] || (t[11] = i => s.isDepositPopupShow = i),
     round: "",
     closeable: "",
     position: "bottom"
   }, {
-    default: l(() => {
-      var i, b;
-      return [o("div", xe, [o("div", Me, [o("img", {
+    default: a(() => {
+      var i, k;
+      return [o("div", De, [o("div", Pe, [o("img", {
         class: "image",
         src: c.getImage((i = s.activeSelectedExchange) == null ? void 0 : i.key),
         alt: s.activeSelectedExchange.key
-      }, null, 8, De), o("h2", Pe, n(s.activeSelectedExchange.title), 1)]), o("p", Fe, n(c.getExchangeDescription), 1), o("div", Oe, [this.activeSelectedExchange.key === "onchain_airdrop" ? (r(), y(A, {
+      }, null, 8, Fe), o("h2", Ne, n(s.activeSelectedExchange.title), 1)]), o("p", Oe, n(c.getExchangeDescription), 1), o("div", Ue, [this.activeSelectedExchange.key === "onchain_airdrop" ? (r(), f(z, {
         key: 0,
         onWalletConnectHandler: c.tonConnectStatusHandler,
         "saved-wallet": s.selectedMethodData.deposit_address ? s.selectedMethodData.deposit_address : ""
-      }, null, 8, ["onWalletConnectHandler", "saved-wallet"])) : m("", !0)]), o("div", Ne, [(r(!0), u(k, null, _(c.getNormalizedDates(s.activeSelectedExchange.datesInfo), f => (r(), u("div", {
-        key: f,
+      }, null, 8, ["onWalletConnectHandler", "saved-wallet"])) : m("", !0)]), o("div", Le, [(r(!0), u(w, null, _(c.getNormalizedDates(s.activeSelectedExchange.datesInfo), g => (r(), u("div", {
+        key: g,
         style: {
           "font-size": "0.8em"
         }
-      }, [t[23] || (t[23] = a(" • ")), o("span", null, n(f), 1)]))), 128))]), ((b = s.activeSelectedExchange.inputs) == null ? void 0 : b.length) > 0 ? (r(), y(V, {
+      }, [t[28] || (t[28] = l(" • ")), o("span", null, n(g), 1)]))), 128))]), ((k = s.activeSelectedExchange.inputs) == null ? void 0 : k.length) > 0 ? (r(), f(B, {
         key: 0,
         onSubmit: c.onSubmit
       }, {
-        default: l(() => [o("div", Ue, [(r(!0), u(k, null, _(s.activeSelectedExchange.inputs, f => {
-          var M;
+        default: a(() => [o("div", Ae, [(r(!0), u(w, null, _(s.activeSelectedExchange.inputs, g => {
+          var D;
           return r(), u("div", {
-            key: f
-          }, [o("p", Le, n(c.getInputTitle(f, s.activeSelectedExchange)) + ":", 1), d(z, {
-            modelValue: s.depositFormInputsValue[f],
-            "onUpdate:modelValue": B => s.depositFormInputsValue[f] = B,
+            key: g
+          }, [o("p", ze, n(c.getInputTitle(g, s.activeSelectedExchange)) + ":", 1), d(V, {
+            modelValue: s.depositFormInputsValue[g],
+            "onUpdate:modelValue": Y => s.depositFormInputsValue[g] = Y,
             center: "",
             autofocus: !0,
             clearable: "",
@@ -808,17 +843,17 @@ function Ve(e, t, h, S, s, c) {
               "font-size": "1.1em"
             },
             border: !1,
-            disabled: !!((M = s.selectedMethodData) != null && M[f] || s.isPageLoading)
+            disabled: !!((D = s.selectedMethodData) != null && D[g] || s.isPageLoading)
           }, null, 8, ["modelValue", "onUpdate:modelValue", "disabled"])])
         }), 128))]), s.activeSelectedExchange.docLink ? (r(), u("div", {
           key: 0,
-          onClick: t[8] || (t[8] = f => e._openUrl(s.activeSelectedExchange.docLink)),
+          onClick: t[9] || (t[9] = g => e._openUrl(s.activeSelectedExchange.docLink)),
           style: {
             padding: "15px 0"
           }
-        }, [d(w, {
+        }, [d(b, {
           name: "question-o"
-        }), t[24] || (t[24] = a("  ")), o("span", Ae, n(e.t("See instructions on how to find these fields.")), 1)])) : m("", !0), s.selectedMethod ? m("", !0) : (r(), y(g, {
+        }), t[29] || (t[29] = l("  ")), o("span", Ve, n(e.t("See instructions on how to find these fields.")), 1)])) : m("", !0), s.selectedMethod ? m("", !0) : (r(), f(y, {
           key: 1,
           loading: s.isPageLoading,
           class: "saveButton",
@@ -827,30 +862,30 @@ function Ve(e, t, h, S, s, c) {
           size: "large",
           disabled: c.isExchangeSaveButtonDisabled
         }, {
-          default: l(() => [a(n(e.t("Save and choose")), 1)]),
+          default: a(() => [l(n(e.t("Save and choose")), 1)]),
           _: 1
         }, 8, ["loading", "disabled"]))]),
         _: 1
-      }, 8, ["onSubmit"])) : m("", !0), s.selectedMethod ? (r(), u(k, {
+      }, 8, ["onSubmit"])) : m("", !0), s.selectedMethod ? (r(), u(w, {
         key: 1
-      }, [o("div", ze, [d(w, {
+      }, [o("div", Be, [d(b, {
         name: "success"
-      }), a(" " + n(e.t("This method is chosen to withdraw tokens.")), 1)]), d(g, {
+      }), l(" " + n(e.t("This method is chosen to withdraw tokens.")), 1)]), d(y, {
         loading: s.isPageLoading,
-        onClick: t[9] || (t[9] = f => s.isResetPopupShow = !0),
+        onClick: t[10] || (t[10] = g => s.isResetPopupShow = !0),
         class: "saveButton",
         type: "danger",
         size: "large",
         icon: "replay"
       }, {
-        default: l(() => [a(n(e.t("Reset withdrawal option")), 1)]),
+        default: a(() => [l(n(e.t("Reset withdrawal option")), 1)]),
         _: 1
       }, 8, ["loading"])], 64)) : m("", !0)])]
     }),
     _: 1
-  }, 8, ["show"])], 2)) : (r(), u("div", J, [t[11] || (t[11] = o("h1", {
+  }, 8, ["show"])], 2)) : (r(), u("div", $, [t[12] || (t[12] = o("h1", {
     class: "center aniH1 goldText"
-  }, "Airdrop", -1)), o("p", $, n(e.t("You have not mined tokens in the mining phase.")), 1), o("p", ee, n(e.t("Subscribe to our Telegram channel, there will be announcements of other projects.")), 1), d(g, {
+  }, "Airdrop", -1)), o("p", ee, n(e.t("You have not mined tokens in the mining phase.")), 1), o("p", te, n(e.t("Subscribe to our Telegram channel, there will be announcements of other projects.")), 1), d(y, {
     size: "large",
     type: "warning",
     onClick: e._ourTgClick,
@@ -858,15 +893,15 @@ function Ve(e, t, h, S, s, c) {
       "margin-top": "15px"
     }
   }, {
-    default: l(() => [a(n(e.t("Follow our channel")), 1)]),
+    default: a(() => [l(n(e.t("Follow our channel")), 1)]),
     _: 1
   }, 8, ["onClick"])]))], 64)
 }
-const Ye = Y(j, [
-  ["render", Ve],
-  ["__scopeId", "data-v-9d67eba6"]
+const qe = Z(K, [
+  ["render", Ye],
+  ["__scopeId", "data-v-ffc7928d"]
 ]);
 export {
-  Ye as
+  qe as
   default
 };
