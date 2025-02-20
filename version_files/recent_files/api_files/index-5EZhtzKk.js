@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-CgmOEXkE.js", "assets/Airdrop2-D-bm_VtJ.css", "assets/Finish-BFkZhlt3.js", "assets/Finish-Gzapn-3U.css", "assets/Rating-DodnOJHB.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-D8rUZz1S.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-Cd0xH3zf.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-CBWRROWF.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-BSBlsG9y.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-C_yUViqq.js", "assets/Airdrop2-D-bm_VtJ.css", "assets/Finish-BHxLm_Hg.js", "assets/Finish-Gzapn-3U.css", "assets/AirdropOnChain-DaZmyMxe.js", "assets/index-Duh1NKkB.js", "assets/AirdropOnChain-lhB0_m5n.css", "assets/Rating-DhtI9QCN.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-Cp2Fhl04.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-DYg0ks7i.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-B5Fakbdm.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-dnN6De3M.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -61,7 +61,7 @@ const pn = (e, t) => JSON.stringify(e) === JSON.stringify(t),
     type: Boolean,
     default: !0
   },
-  gt = e => ({
+  vt = e => ({
     type: e,
     required: !0
   }),
@@ -1829,7 +1829,7 @@ function _n(e, t) {
   rf(e, "da", t)
 }
 
-function rf(e, t, n = mt) {
+function rf(e, t, n = gt) {
   const o = e.__wdc || (e.__wdc = () => {
     let s = n;
     for (; s;) {
@@ -1851,7 +1851,7 @@ function Gg(e, t, n, o) {
   }, n)
 }
 
-function ha(e, t, n = mt, o = !1) {
+function ha(e, t, n = gt, o = !1) {
   if (n) {
     const s = n[e] || (n[e] = []),
       a = t.__weh || (t.__weh = (...l) => {
@@ -1863,7 +1863,7 @@ function ha(e, t, n = mt, o = !1) {
     return o ? s.unshift(a) : s.push(a), a
   }
 }
-const zn = e => (t, n = mt) => {
+const zn = e => (t, n = gt) => {
     (!ga || e === "sp") && ha(e, (...o) => t(...o), n)
   },
   Zg = zn("bm"),
@@ -1876,7 +1876,7 @@ const zn = e => (t, n = mt) => {
   Jg = zn("rtg"),
   ev = zn("rtc");
 
-function tv(e, t = mt) {
+function tv(e, t = gt) {
   ha("ec", e, t)
 }
 const df = "components",
@@ -1892,7 +1892,7 @@ function iv(e) {
 }
 
 function ff(e, t, n = !0, o = !1) {
-  const s = ut || mt;
+  const s = ut || gt;
   if (s) {
     const a = s.type;
     if (e === df) {
@@ -2354,15 +2354,15 @@ function fv(e, t) {
 let Po = null;
 
 function Dn(e, t) {
-  if (mt) {
-    let n = mt.provides;
-    const o = mt.parent && mt.parent.provides;
-    o === n && (n = mt.provides = Object.create(o)), n[e] = t
+  if (gt) {
+    let n = gt.provides;
+    const o = gt.parent && gt.parent.provides;
+    o === n && (n = gt.provides = Object.create(o)), n[e] = t
   }
 }
 
 function Bt(e, t, n = !1) {
-  const o = mt || ut;
+  const o = gt || ut;
   if (o || Po) {
     const s = Po ? Po._context.provides : o ? o.parent == null ? o.vnode.appContext && o.vnode.appContext.provides : o.parent.provides : void 0;
     if (s && e in s) return s[e];
@@ -2371,7 +2371,7 @@ function Bt(e, t, n = !1) {
 }
 
 function hv() {
-  return !!(mt || ut || Po)
+  return !!(gt || ut || Po)
 }
 const yf = {},
   pf = () => Object.create(yf),
@@ -3135,7 +3135,7 @@ function vr(e, t, n = Ke) {
     const m = () => {};
     return m.stop = bn, m.resume = bn, m.pause = bn, m
   }
-  const u = mt;
+  const u = gt;
   r.call = (m, g, p) => on(m, u, g, p);
   let d = !1;
   a === "post" ? r.scheduler = m => {
@@ -3595,8 +3595,8 @@ function Vv(e, t, n) {
     _: a
   }, a.root = t ? t.root : a, a.emit = Ev.bind(null, a), e.ce && e.ce(a), a
 }
-let mt = null;
-const ln = () => mt || ut;
+let gt = null;
+const ln = () => gt || ut;
 let qs, Il;
 {
   const e = _d(),
@@ -3606,16 +3606,16 @@ let qs, Il;
         s.length > 1 ? s.forEach(l => l(a)) : s[0](a)
       }
     };
-  qs = t("__VUE_INSTANCE_SETTERS__", n => mt = n), Il = t("__VUE_SSR_SETTERS__", n => ga = n)
+  qs = t("__VUE_INSTANCE_SETTERS__", n => gt = n), Il = t("__VUE_SSR_SETTERS__", n => ga = n)
 }
 const as = e => {
-    const t = mt;
+    const t = gt;
     return qs(e), e.scope.on(), () => {
       e.scope.off(), qs(t)
     }
   },
   wc = () => {
-    mt && mt.scope.off(), qs(null)
+    gt && gt.scope.off(), qs(null)
   };
 
 function Bf(e) {
@@ -4640,7 +4640,7 @@ function Xt(e, t = 2) {
   for (; n.length < t;) n = "0" + n;
   return n
 }
-const ht = (e, t, n) => Math.min(Math.max(e, t), n);
+const mt = (e, t, n) => Math.min(Math.max(e, t), n);
 
 function Uc(e, t, n) {
   const o = e.indexOf(t);
@@ -5797,7 +5797,7 @@ function Qp(e, t) {
 }
 
 function Vs(e, t) {
-  t = ht(t, 0, e.length);
+  t = mt(t, 0, e.length);
   for (let n = t; n < e.length; n++)
     if (!e[n].disabled) return n;
   for (let n = t - 1; n >= 0; n--)
@@ -5853,13 +5853,13 @@ var Zp = K({
   name: ah,
   props: {
     value: Z,
-    fields: gt(Object),
+    fields: vt(Object),
     options: Xe(),
     readonly: Boolean,
     allowHtml: Boolean,
-    optionHeight: gt(Number),
-    swipeDuration: gt(Z),
-    visibleOptionNum: gt(Z)
+    optionHeight: vt(Number),
+    swipeDuration: vt(Z),
+    visibleOptionNum: vt(Z)
   },
   emits: ["change", "clickOption", "scrollInto"],
   setup(e, {
@@ -5888,7 +5888,7 @@ var Zp = K({
       w = R => {
         o || b() || (r = null, f.value = eu, y(R), t("clickOption", e.options[R]))
       },
-      v = R => ht(Math.round(-R / e.optionHeight), 0, g() - 1),
+      v = R => mt(Math.round(-R / e.optionHeight), 0, g() - 1),
       C = N(() => v(d.value)),
       _ = (R, T) => {
         const P = Math.abs(R / T);
@@ -5911,7 +5911,7 @@ var Zp = K({
       D = R => {
         if (b()) return;
         m.move(R), m.isVertical() && (o = !0, Ge(R, !0));
-        const T = ht(s + m.deltaY.value, -(g() * e.optionHeight), e.optionHeight),
+        const T = mt(s + m.deltaY.value, -(g() * e.optionHeight), e.optionHeight),
           P = v(T);
         P !== C.value && t("scrollInto", e.options[P]), d.value = T;
         const $ = Date.now();
@@ -6267,13 +6267,13 @@ var r0 = K({
         const {
           active: X
         } = a;
-        return V ? e.loop ? ht(X + V, -1, d.value) : ht(X + V, 0, p.value) : X
+        return V ? e.loop ? mt(X + V, -1, d.value) : mt(X + V, 0, p.value) : X
       },
       _ = (V, X = 0) => {
         let ye = V * f.value;
         e.loop || (ye = Math.min(ye, -g.value));
         let Ce = X - ye;
-        return e.loop || (Ce = ht(Ce, g.value, 0)), Ce
+        return e.loop || (Ce = mt(Ce, g.value, 0)), Ce
       },
       k = ({
         pace: V = 0,
@@ -6445,13 +6445,13 @@ const Ar = ee(r0),
 var u0 = K({
   name: c0,
   props: {
-    count: gt(Number),
+    count: vt(Number),
     inited: Boolean,
     animated: Boolean,
-    duration: gt(Z),
+    duration: vt(Z),
     swipeable: Boolean,
     lazyRender: Boolean,
-    currentIndex: gt(Number)
+    currentIndex: vt(Number)
   },
   emits: ["change"],
   setup(e, {
@@ -7764,7 +7764,7 @@ var Q0 = K({
         const Le = Tn(Se) - Tn(E);
         if (e.type === "number" || e.type === "digit") {
           const O = e.type === "number";
-          E = Dl(E, O, O), H === "onBlur" && E !== "" && (E = ht(+E, (U = e.min) != null ? U : -1 / 0, (oe = e.max) != null ? oe : 1 / 0).toString())
+          E = Dl(E, O, O), H === "onBlur" && E !== "" && (E = mt(+E, (U = e.min) != null ? U : -1 / 0, (oe = e.max) != null ? oe : 1 / 0).toString())
         }
         let x = 0;
         if (e.formatter && H === e.formatTrigger) {
@@ -8755,7 +8755,7 @@ const Ea = ee(Cb),
   };
 var Ih = K({
   props: ke({}, $r, {
-    bem: gt(Function),
+    bem: vt(Function),
     role: String,
     shape: String,
     parent: Object,
@@ -8946,7 +8946,7 @@ const Lr = ee(Ib),
 var Ob = K({
   name: Pb,
   props: {
-    address: gt(Object),
+    address: vt(Object),
     disabled: Boolean,
     switchable: Boolean,
     singleChoice: Boolean,
@@ -9387,7 +9387,7 @@ const Rh = (e, t) => 32 - new Date(e, t - 1, 32).getDate(),
     if (s.length) {
       const a = +s[0].value,
         l = +s[s.length - 1].value;
-      return Xt(ht(+n, a, l))
+      return Xt(mt(+n, a, l))
     }
     return n
   }),
@@ -9395,7 +9395,7 @@ const Rh = (e, t) => 32 - new Date(e, t - 1, 32).getDate(),
 var Xb = K({
   name: Zb,
   props: {
-    item: gt(Object),
+    item: vt(Object),
     color: String,
     index: Number,
     offset: lt(0),
@@ -9488,7 +9488,7 @@ var Xb = K({
   }
 });
 const [Jb] = Y("calendar-month"), e1 = {
-  date: gt(Date),
+  date: vt(Date),
   type: String,
   color: String,
   minDate: Date,
@@ -11175,7 +11175,7 @@ var mw = K({
   name: hw,
   props: {
     chosen: Boolean,
-    coupon: gt(Object),
+    coupon: vt(Object),
     disabled: Boolean,
     currency: te("¥")
   },
@@ -12738,7 +12738,7 @@ const uC = ee(cC),
     caseSensitive: Boolean,
     highlightClass: String,
     highlightTag: te("span"),
-    keywords: gt([String, Array]),
+    keywords: vt([String, Array]),
     sourceString: te(""),
     tag: te("div"),
     unhighlightClass: String,
@@ -12847,10 +12847,10 @@ const mC = ee(hC),
     src: String,
     show: Boolean,
     active: Number,
-    minZoom: gt(Z),
-    maxZoom: gt(Z),
-    rootWidth: gt(Number),
-    rootHeight: gt(Number),
+    minZoom: vt(Z),
+    maxZoom: vt(Z),
+    rootWidth: vt(Number),
+    rootHeight: vt(Number),
     disableZoom: Boolean,
     doubleScale: Boolean,
     closeOnClickImage: Boolean,
@@ -12914,7 +12914,7 @@ var yC = K({
       }),
       g = (W, ne) => {
         var ue;
-        if (W = ht(W, +e.minZoom, +e.maxZoom + 1), W !== o.scale) {
+        if (W = mt(W, +e.minZoom, +e.maxZoom + 1), W !== o.scale) {
           const Re = W / o.scale;
           if (o.scale = W, ne) {
             const Ne = Ue((ue = a.value) == null ? void 0 : ue.$el),
@@ -12924,7 +12924,7 @@ var yC = K({
               },
               X = o.moveX - (ne.x - Ne.left - V.x) * (Re - 1),
               ye = o.moveY - (ne.y - Ne.top - V.y) * (Re - 1);
-            o.moveX = ht(X, -f.value, f.value), o.moveY = ht(ye, -m.value, m.value)
+            o.moveX = mt(X, -f.value, f.value), o.moveY = mt(ye, -m.value, m.value)
           } else o.moveX = 0, o.moveY = c.value ? u : 0;
           t("scale", {
             scale: W,
@@ -12966,7 +12966,7 @@ var yC = K({
             o.moving = !1;
             return
           }
-          S = !0, Ge(W, !0), o.moveX = ht(Ne, -f.value, f.value), o.moveY = ht(V, -m.value, m.value)
+          S = !0, Ge(W, !0), o.moveX = mt(Ne, -f.value, f.value), o.moveY = mt(V, -m.value, m.value)
         }
         if (o.zooming && (Ge(W, !0), ne.length === 2)) {
           const ue = Tu(ne),
@@ -12994,7 +12994,7 @@ var yC = K({
       $ = W => {
         let ne = !1;
         if ((o.moving || o.zooming) && (ne = !0, o.moving && w === o.moveX && v === o.moveY && (ne = !1), !W.touches.length)) {
-          o.zooming && (o.moveX = ht(o.moveX, -f.value, f.value), o.moveY = ht(o.moveY, -m.value, m.value), o.zooming = !1), o.moving = !1, w = 0, v = 0, C = 1, o.scale < 1 && p();
+          o.zooming && (o.moveX = mt(o.moveX, -f.value, f.value), o.moveY = mt(o.moveY, -m.value, m.value), o.zooming = !1), o.moving = !1, w = 0, v = 0, C = 1, o.scale < 1 && p();
           const ue = +e.maxZoom;
           o.scale > ue && g(ue, k)
         }
@@ -14194,7 +14194,7 @@ var h_ = K({
         return d
       }),
       a = (d, f) => {
-        d = ht(d, 1, o.value), e.modelValue !== d && (t("update:modelValue", d), f && t("change", d))
+        d = mt(d, 1, o.value), e.modelValue !== d && (t("update:modelValue", d), f && t("change", d))
       };
     vi(() => a(e.modelValue));
     const l = () => h("li", {
@@ -16366,7 +16366,7 @@ var FS = K({
         const P = +e.min,
           $ = +e.max,
           J = +e.step;
-        T = ht(T, P, $);
+        T = mt(T, P, $);
         const ce = Math.round((T - P) / J) * J;
         return Hf(P, ce)
       },
@@ -16998,7 +16998,7 @@ var cT = K({
         const {
           deltaX: B
         } = f;
-        f.move(S), f.isHorizontal() && (s = !0, d.dragging = !0, (!o || B.value * a < 0) && Ge(S, e.stopPropagation), d.offset = ht(B.value + a, -p.value, g.value))
+        f.move(S), f.isHorizontal() && (s = !0, d.dragging = !0, (!o || B.value * a < 0) && Ge(S, e.stopPropagation), d.offset = mt(B.value + a, -p.value, g.value))
       },
       _ = () => {
         d.dragging && (d.dragging = !1, w(d.offset > 0 ? "left" : "right"), setTimeout(() => {
@@ -17556,7 +17556,7 @@ function gm(e) {
 var MT = K({
   props: {
     name: Z,
-    item: gt(Object),
+    item: vt(Object),
     index: Number,
     imageFit: String,
     lazyLoad: Boolean,
@@ -17998,7 +17998,7 @@ const KT = "modulepreload",
     return "/" + e
   },
   Qu = {},
-  yt = function(t, n, o) {
+  ht = function(t, n, o) {
     let s = Promise.resolve();
     if (n && n.length > 0) {
       document.getElementsByTagName("link");
@@ -18028,7 +18028,7 @@ const KT = "modulepreload",
       return t().catch(a)
     })
   },
-  vt = (e, t) => {
+  yt = (e, t) => {
     const n = e.__vccOpts || e;
     for (const [o, s] of t) n[o] = s;
     return n
@@ -18046,7 +18046,7 @@ const KT = "modulepreload",
 function ZT(e, t, n, o, s, a) {
   return z(), q("div", GT, t[0] || (t[0] = [Lv('<h1 class="center" data-v-926f3a68>Zoo Terms of Use</h1><div class="center" data-v-926f3a68>Last Updated: 12/12/2024</div><h2 data-v-926f3a68>1. Definitions</h2> The following sections define the capitalised definitions of expressions that begin with capital letters. These definitions should be applied consistently, regardless of whether the expressions are presented in the singular or plural: <br data-v-926f3a68>• Zoo / The App - is a Mini App available on Telegram, named Zoo, with its usage rules outlined in this document. <br data-v-926f3a68>• Company - the legal entity named Zorimal Ltd (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). <br data-v-926f3a68>• Airdrop - the distribution of Tokens to Users of the App, carried out at the Company&#39;s discretion. In case of Token withdrawal after Airdrop, a fee will be deducted by Third-Party Services (e.g., blockchain fee and other fees). The Airdrop is not intended for financial benefit, as the App serves an entertainment purpose and may be discontinued at any time. <br data-v-926f3a68>• Alliance - consolidation of the App Users in the App. <br data-v-926f3a68>• In-game Coin «Animal Feed» / Coin - a coin that Users may obtain by engaging with the App&#39;s functionality and/or purchasing them with Telegram Stars. These In-game Coins are designed solely for use within the App, with their usage governed by the Terms and the App&#39;s mechanics. <br data-v-926f3a68>• Friend - a Telegram messenger user who received an invitation link from you and who is not a member of the App at the time of clicking the invitation link. <br data-v-926f3a68>• Interface - the visible part of the App. <br data-v-926f3a68>• Token Zoo / $ZOO - a token that the User can get in case of Airdrop. <br data-v-926f3a68>• Task - instructions and/or tasks given to Users for the purpose of completing them and obtaining rewards in the form of In-game Coin in the App in accordance with the Terms. <br data-v-926f3a68>• Third-Party Services - all third-party services to which the Zoo provides access. <br data-v-926f3a68>• You / you / User - the individual accessing or using the Zoo. Each User is permitted to create and maintain only one account in the App. <h2 data-v-926f3a68>2. Acceptance of Terms</h2> These Zoo Terms of Use, and any additional policies or terms mentioned in them, establish a legally binding agreement (collectively, the ‘Terms’) between you and Zorimal Ltd, a company incorporated in the British Virgin Islands (#2166965, Intershore Chambers, Road Town, Tortola, VG1110). This agreement regulates your access to and use of the App. <br data-v-926f3a68>By accessing or using Zoo, you acknowledge that you have read, understood and agreed to be bound by these Terms, including our Privacy Policy. Your continued use of the App serves to confirm your agreement to these Terms and any subsequent changes or updates to them. <br data-v-926f3a68>The App is not intended for distribution or use by individuals or entities in jurisdictions where such actions would breach local laws or regulations or impose registration or compliance obligations on us. As a result, it is your sole responsibility to ensure that your use of the App complies with all applicable laws in your jurisdiction. <br data-v-926f3a68>You understand and agree that the use of multiple accounts for a single User is strictly prohibited. Violation of this rule may result in suspension or permanent banning of all associated accounts. <br data-v-926f3a68>You agree to obtain prior approval before sending a Telegram user an invitation link to our App as well as other promotional links to our App. The Company is not responsible for the actions of Users who violate this requirement. <br data-v-926f3a68>Use of the App by residents of the United States is strictly prohibited. By accessing or using the App, you certify that you are not a resident of the United States. If you become a resident of the United States or become aware of anyone using the App in the United States, you should immediately report it to us. <br data-v-926f3a68>You acknowledge and accept that if it is discovered you have misrepresented your residency, citizenship, or location, the Company reserves the right to take appropriate actions, including but not limited to, immediate termination of your access to the App. Furthermore, you accept full responsibility for any failure to disclose your U.S. location and agree to bear any consequences arising from regulatory claims or actions brought by U.S. authorities against the Company. <h2 data-v-926f3a68>3. The App&#39;s Mechanics</h2><h3 data-v-926f3a68>3.1 General</h3> Zoo is a Mini App on Telegram that allows Users to create their own in-game zoo by purchasing in-game animals. The User is given the ability to join Alliances, invite Friends and complete Tasks. The User has the ability to earn Token Zoo and receive In-game Coin “Animal Feed” in the ways described below. <h3 data-v-926f3a68>3.2 In-game Coin “Animal Feed”</h3> Using In-game Coin “Animal Feed” the User can realize the main functionality of the App - to develop the game zoo by purchasing animals and increasing the level of their enclosures. The User can use other functionality of the App with the help of Coin, which is displayed in the App Interface. The User Coin balance is displayed in the App Interface. <br data-v-926f3a68>In-game Coin “Animal Feed” can be obtained in the following ways: <br data-v-926f3a68>• Inviting Friends: The User can receive In-game Coins “Animal Feed” by sending an invitation link to a Friend who followed the link in the App. The number of Coins and the conditions for receiving them for inviting friends is displayed in the App Interface. <br data-v-926f3a68>• Completion of Tasks: The User can receive In-game Coin “Animal Feed” by completing certain Tasks. Tasks are displayed in the App Interface. <br data-v-926f3a68>• Development of the Alliance: The User can create an Alliance or join an existing Alliance by paying In-game Coin “Animal Feed”. For the development of the Alliance, the User can receive In-game Coin “Animal Feed”. <br data-v-926f3a68>• Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. <br data-v-926f3a68>• The amount of Coins you can get with the above actions is displayed in the App Interface. In-game Coins are not cash and their use is limited by the Terms and App mechanics. <br data-v-926f3a68>Purchase using Telegram Stars: The User buys In-game Coins “Animal Feed” through Telegram Stars. The cost of buying Сoins is displayed in the App Interface. The User is strictly forbidden to refund by any technical means to Telegram Stars that the User spent on in-app purchases. <h3 data-v-926f3a68>3.3 Token Zoo</h3> The amount of Tokens Zoo of the User depends on the number and level of animal’s enclosures in zoo, as well as on the level of Alliance in which User can be a member. Each animal brings a certain amount of Tokens Zoo in a certain amount of time depending on the level of animal’s enclosures. The User Token Zoo balance is displayed in the App Interface. <br data-v-926f3a68>The User can increase the number of Tokens Zoo earned from each animal enclosure in the following ways: <br data-v-926f3a68>• Increasing level of animal’s enclosures: The User can upgrade the level of the animal enclosure with In-game Coins “Animal Feed”. Each new level increases the number of Tokens Zoo that can be obtained. <br data-v-926f3a68>• Join the Alliance: Alliances are divided by levels. The level of an Alliance in which the User participates affects the number of bonuses that increase your Token Zoo accumulation. A User can only be a member of one Alliance. The list of Alliances and the amount of bonuses from participation in them is displayed in the App Interface. <br data-v-926f3a68>• Using boosts: Boosts allow the User to increase the number of Tokens Zoo earned from animal enclosures for a certain amount of time. The boost conditions are displayed in the App Interface. <br data-v-926f3a68>You can receive earned Tokens Zoo during the Airdrop, which will happen on dates determined by the Company. The number of Tokens Zoo does not depend on the number of your In-game Coins in the App. <h2 data-v-926f3a68>4. Prohibited Activities</h2> Any form of technical automation, including but not limited to bots, scripts, or other automated tools, used to interact with, manipulate, or exploit the App is strictly prohibited. This includes, but is not limited to, launching bot farms, automated systems, or coordinated accounts to generate resources for the purpose of unfairly benefiting another account or alliance. Actions intended to obscure violations, such as funneling resources or benefits to a main account while maintaining the appearance of compliance, are likewise prohibited. Any disruption to the mechanics of the App, including practices such as refunding Telegram Stars for in-app purchases or similar exploits, will result in immediate account suspension or permanent ban without prior notice. <h2 data-v-926f3a68>5. In-App Purchases</h2> All In-App purchases are for entertainment purposes only. By making a purchase, you do so on a voluntary basis and take full responsibility for your decisions. The App disclaims any responsibility for financial or other consequences caused by in-app purchases. <h2 data-v-926f3a68>6. Changes to Features and Balances</h2> We reserve the right to modify, adjust, or remove any App features, mechanics, balances, or other functionalities at any time without prior notice. Such changes are made at our sole discretion to improve the App or ensure fair usage. Continued use of the App following any changes constitutes your acceptance of the updated features or mechanics. <h2 data-v-926f3a68>7. Intellectual Property</h2> Unless explicitly stated otherwise, the App, along with all content and materials within it —including but not limited to designs (structural or landscape), text, graphics (static or animated), pictures, data, software, sound files (including music and recordings), audiovisual effects, and their arrangement — are the proprietary property of the Company, its affiliates, licensors, or users, as applicable. <br data-v-926f3a68>The Zoo logo, as well as the names, services, logos, slogans, and trade names associated with Zorimal Ltd products, are either owned by the Company or used under license and are safeguarded by copyright, trademark laws, and international intellectual property agreements. <br data-v-926f3a68>Unless explicitly authorized by these Terms, no part of the App or its content may be duplicated, reproduced, compiled, republished, uploaded, shared, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise used for commercial purposes without obtaining prior written consent from the Company. Any mention of products, services, trademarks, manufacturers, or suppliers is provided solely for reference and does not signify endorsement, sponsorship, or recommendation by Zorimal Ltd. <h2 data-v-926f3a68>8. Disclaimer</h2> General Disclaimer: Zoo is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any guarantees or assurances, whether explicit or implied, regarding its functionality, information, content, materials, or products contained within. By using the App, you acknowledge and agree that you do so entirely at your own risk and solely for entertainment purposes. <br data-v-926f3a68>No Warranty for Performance: Zorimal Ltd makes no guarantees that the App will fulfill your particular needs, operate without interruption, be timely, secure, or free from errors. We also do not guarantee the outcomes from using the App or the accuracy and reliability of any information obtained through it. <br data-v-926f3a68>No Warranty for Technical Issues: Zorimal Ltd assumes no liability for any technical issues, including but not limited to problems with blockchain technology, server failures, software glitches, artificial intelligence errors, or connectivity disruptions that could impact the App&#39;s performance or availability. <br data-v-926f3a68>No Liability for User Conduct: Zorimal Ltd does not support, guarantee, or take responsibility for the actions or conduct of App users. The Company is not accountable for any content created by users or their activities within the App. <br data-v-926f3a68>No Warranty for Third-Party Services: The App may contain links to third-party websites or services that are not owned or managed by Zorimal Ltd. The Company has no control over and accepts no responsibility for the content, privacy policies, or practices of these external websites or services. We advise you to review the terms and policies of any third-party services you engage with. By using such links, you acknowledge and agree that Zorimal Ltd is not liable for any damages or losses arising from your use of or reliance on the content, products, or services provided by these third parties. <br data-v-926f3a68>Limitation of Liability for Damages: To the maximum extent allowed by law, Zorimal Ltd disclaims liability for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, goodwill, data, or other intangible losses. This limitation applies to damages resulting from (i) your use or inability to use the App, (ii) unauthorized access to or modification of your data or transmissions, (iii) actions or statements by third parties within the App, or (iv) any other matter related to the App. <h2 data-v-926f3a68>9. Privacy</h2> Details about how we collect and use your personal information are outlined in our Privacy Policy. By using the App, you agree to the collection and use of your personal information as described in the Privacy Policy. <h2 data-v-926f3a68>10. Termination</h2> We reserve the right to revoke or suspend your access to the App at any time, without prior notice or responsibility, for any reason, including but not limited to violations of these Terms. Once terminated, your permission to use the App will cease immediately. Any in-game purchases and achievements will be cancelled and unavailable to you. Any sections of these Terms that are meant to remain in effect after termination will continue to apply, including but not limited to provisions on ownership rights, disclaimers of warranties, indemnity obligations, and limitations of liability. <h2 data-v-926f3a68>11. Indemnification</h2> You agree to defend, indemnify, and protect the Company, along with its officers, directors, employees, and agents, from any claims, liabilities, damages, losses, or costs — such as reasonable legal and accounting expenses — that result from or relate to your use of the App or any breach of these Terms on your part. <h2 data-v-926f3a68>12. Governing Law</h2> This Terms is governed by the laws of the British Virgin Islands and will be interpreted in accordance with those laws, without regard to their conflict-of-law rules. <h2 data-v-926f3a68>13. Dispute Resolution</h2> In case of a dispute, you agree to first attempt to resolve the issue amicably by submitting your complaint to us at dispute@zoo.team. We will provide a response within 30 calendar days. If the matter cannot be resolved through negotiation, it will be decided in the courts of the British Virgin Islands. <h2 data-v-926f3a68>14. Changes to Terms</h2> We retain the right to revise or amend these terms at any time. By continuing to use or access the App after the updated terms take effect, you acknowledge and accept the changes. <h2 data-v-926f3a68>15. Binding Terms of Use</h2> By accepting these Terms, you also agree to comply with the <a href="https://telegram.org/tos/mini-apps" data-v-926f3a68>Telegram Mini App Terms of Use</a>. <h2 data-v-926f3a68>16. Contact Us</h2> For any questions about these Terms or to share ideas, suggestions, or feedback, please contact us at support@zoo.team. ', 113)]))
 }
-const XT = vt(qT, [
+const XT = yt(qT, [
     ["render", ZT],
     ["__scopeId", "data-v-926f3a68"]
   ]),
@@ -18314,7 +18314,7 @@ function A2(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const E2 = vt(n2, [
+const E2 = yt(n2, [
   ["render", A2],
   ["__scopeId", "data-v-630ce1d4"]
 ]);
@@ -18462,7 +18462,7 @@ function N2(e, t, n, o, s, a) {
     _: 3
   }, 8, ["class", "round", "closeable", "position", "duration"])
 }
-const vm = vt(B2, [
+const vm = yt(B2, [
     ["render", N2],
     ["__scopeId", "data-v-5796a2f7"]
   ]),
@@ -18668,7 +18668,7 @@ function j2(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show", "title"])])
 }
-const jr = vt(F2, [
+const jr = yt(F2, [
     ["render", j2],
     ["__scopeId", "data-v-49c142f1"]
   ]),
@@ -19241,7 +19241,7 @@ function Ex(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const Ix = vt(Q2, [
+const Ix = yt(Q2, [
     ["render", Ex],
     ["__scopeId", "data-v-1b09d251"]
   ]),
@@ -19441,7 +19441,7 @@ function Wx(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show", "style"])])
 }
-const jx = vt(Px, [
+const jx = yt(Px, [
   ["render", Wx],
   ["__scopeId", "data-v-8158abb7"]
 ]);
@@ -20141,7 +20141,7 @@ function fA(e, t, n, o, s, a) {
     minBonus: 10
   })), 1)])) : we("", !0)
 }
-const hA = vt(aA, [
+const hA = yt(aA, [
     ["render", fA]
   ]),
   mA = {
@@ -20425,7 +20425,7 @@ function $A(e, t, n, o, s, a) {
     count: 10
   })), 1)) : we("", !0)])) : (z(), q("p", DA, M(e.t("No transactions found")), 1))], 64))])])
 }
-const xm = vt(mA, [
+const xm = yt(mA, [
     ["render", $A],
     ["__scopeId", "data-v-891859f4"]
   ]),
@@ -20686,7 +20686,7 @@ function UA(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const WA = vt(MA, [
+const WA = yt(MA, [
     ["render", UA],
     ["__scopeId", "data-v-3f4cbef6"]
   ]),
@@ -21007,7 +21007,7 @@ function bE(e, t, n, o, s, a) {
     })
   }, [h(d)], 2)])])])])], 2)
 }
-const Yr = vt(jA, [
+const Yr = yt(jA, [
     ["render", bE],
     ["__scopeId", "data-v-562de27d"]
   ]),
@@ -21049,7 +21049,7 @@ function SE(e, t, n, o, s, a) {
     })
   }, null, 8, ["class"])])])
 }
-const Am = vt(wE, [
+const Am = yt(wE, [
     ["render", SE]
   ]),
   TE = Object.freeze(Object.defineProperty({
@@ -21253,7 +21253,7 @@ function zE(e, t, n, o, s, a) {
     loading: s.transactionLoading
   }, null, 8, ["transaction-value", "saved-wallet", "onPaid", "loading"]), s.transactionLoading ? we("", !0) : (z(), q("span", LE, " *" + M(e.t("If you have already sent a transaction, go to the quest and click «Check Action» there.")), 1))])), s.transactionLoading ? (z(), q("span", NE, M(e.t("Waiting blockchain, it could take few minutes...")), 1)) : we("", !0)]))])) : (z(), q("span", FE, M(e.t("Please connect your wallet first.")), 1))])])])])]), t[1] || (t[1] = A("br", null, null, -1)), A("div", VE, [A("p", null, M(e.t("An {airdrop} is the distribution of tokens to players wallets. These tokens will be traded on top exchanges, and you can either sell or hold them.")), 1), A("p", null, M(e.t("The date and conditions for receiving the {Airdrop} will be announced soon in our telegram channel.")), 1)])])
 }
-const Em = vt(xE, [
+const Em = yt(xE, [
     ["render", zE],
     ["__scopeId", "data-v-9d4a3abc"]
   ]),
@@ -21485,7 +21485,7 @@ function aI(e, t, n, o, s, a) {
     bottom: "140"
   })])])
 }
-const Im = vt(HE, [
+const Im = yt(HE, [
     ["render", aI],
     ["__scopeId", "data-v-646da5c3"]
   ]),
@@ -21738,7 +21738,7 @@ function pI(e, t, n, o, s, a) {
     name: "arrow-left"
   }), ve(" " + M(e.t("Back to quiz selection")), 1)])])
 }
-const Pm = vt(rI, [
+const Pm = yt(rI, [
     ["render", pI],
     ["__scopeId", "data-v-ac2bbb0f"]
   ]),
@@ -21876,7 +21876,7 @@ function BI(e, t, n, o, s, a) {
     }, null, -1))]))], 12, AI)
   }), 128))])])]))
 }
-const Om = vt(CI, [
+const Om = yt(CI, [
     ["render", BI],
     ["__scopeId", "data-v-e3e48fee"]
   ]),
@@ -22007,7 +22007,7 @@ function VI(e, t, n, o, s, a) {
     color: "#FFEDD9"
   })]), A("div", FI, M(e.t("Home")), 1)]))
 }
-const zI = vt(DI, [
+const zI = yt(DI, [
     ["render", VI],
     ["__scopeId", "data-v-50d9e7ab"]
   ]),
@@ -22261,7 +22261,7 @@ function ZI(e, t, n, o, s, a) {
     _: 1
   }, 8, ["loading"]))])
 }
-const XI = vt(YI, [
+const XI = yt(YI, [
     ["render", ZI],
     ["__scopeId", "data-v-e3c39631"]
   ]),
@@ -22294,10 +22294,10 @@ const XI = vt(YI, [
             if (this._tonConnectUI) return this._tonConnectUI;
             const {
               TonConnectUI: t
-            } = await yt(async () => {
+            } = await ht(async () => {
               const {
                 TonConnectUI: n
-              } = await import("./index-DR1bxtYK.js");
+              } = await import("./index-Duh1NKkB.js").then(o => o.i);
               return {
                 TonConnectUI: n
               }
@@ -22560,7 +22560,7 @@ function lP(e, t, n, o, s, a) {
     _: 1
   }, 8, ["show"])])
 }
-const rP = vt(eP, [
+const rP = yt(eP, [
   ["render", lP],
   ["__scopeId", "data-v-2b3cbfea"]
 ]);
@@ -23960,52 +23960,55 @@ const ia = cO({
     history: FP("/"),
     routes: [{
       path: "/",
-      component: () => yt(() => import("./Airdrop2-CgmOEXkE.js"), __vite__mapDeps([0, 1]))
+      component: () => ht(() => import("./Airdrop2-C_yUViqq.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/home",
-      component: () => yt(() => Promise.resolve().then(() => Gu), void 0)
+      component: () => ht(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/finish",
-      component: () => yt(() => import("./Finish-BFkZhlt3.js"), __vite__mapDeps([2, 3]))
+      component: () => ht(() => import("./Finish-BHxLm_Hg.js"), __vite__mapDeps([2, 3]))
     }, {
       path: "/airdrop",
-      component: () => yt(() => Promise.resolve().then(() => Gu), void 0)
+      component: () => ht(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/airdrop2",
-      component: () => yt(() => import("./Airdrop2-CgmOEXkE.js"), __vite__mapDeps([0, 1]))
+      component: () => ht(() => import("./Airdrop2-C_yUViqq.js"), __vite__mapDeps([0, 1]))
+    }, {
+      path: "/on-chain-airdrop",
+      component: () => ht(() => import("./AirdropOnChain-DaZmyMxe.js"), __vite__mapDeps([4, 5, 6]))
     }, {
       path: "/terms",
-      component: () => yt(() => import("./Terms-pnvspnKD.js"), [])
+      component: () => ht(() => import("./Terms-BTt0AvP7.js"), [])
     }, {
       path: "/quests",
-      component: () => yt(() => Promise.resolve().then(() => TE), void 0)
+      component: () => ht(() => Promise.resolve().then(() => TE), void 0)
     }, {
       path: "/rating",
-      component: () => yt(() => import("./Rating-DodnOJHB.js"), __vite__mapDeps([4, 5]))
+      component: () => ht(() => import("./Rating-DhtI9QCN.js"), __vite__mapDeps([7, 8]))
     }, {
       path: "/friends",
-      component: () => yt(() => Promise.resolve().then(() => lI), void 0)
+      component: () => ht(() => Promise.resolve().then(() => lI), void 0)
     }, {
       path: "/communities",
-      component: () => yt(() => import("./Communities-D8rUZz1S.js"), __vite__mapDeps([6, 7]))
+      component: () => ht(() => import("./Communities-Cp2Fhl04.js"), __vite__mapDeps([9, 10]))
     }, {
       path: "/alliance",
-      component: () => yt(() => import("./Alliance-Cd0xH3zf.js"), __vite__mapDeps([8, 9]))
+      component: () => ht(() => import("./Alliance-DYg0ks7i.js"), __vite__mapDeps([11, 12]))
     }, {
       path: "/boost",
-      component: () => yt(() => import("./Boost-CBWRROWF.js"), __vite__mapDeps([10, 11]))
+      component: () => ht(() => import("./Boost-B5Fakbdm.js"), __vite__mapDeps([13, 14]))
     }, {
       path: "/support",
-      component: () => yt(() => import("./Support-BeSa7UfV.js"), [])
+      component: () => ht(() => import("./Support-D-zsjGoU.js"), [])
     }, {
       path: "/test",
-      component: () => yt(() => Promise.resolve().then(() => RI), void 0)
+      component: () => ht(() => Promise.resolve().then(() => RI), void 0)
     }, {
       path: "/test2",
-      component: () => yt(() => Promise.resolve().then(() => bI), void 0)
+      component: () => ht(() => Promise.resolve().then(() => bI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => yt(() => import("./ReferralCommission-BSBlsG9y.js"), __vite__mapDeps([12, 13]))
+      component: () => ht(() => import("./ReferralCommission-dnN6De3M.js"), __vite__mapDeps([15, 16]))
     }]
   }),
   dO = {
@@ -25114,5 +25117,5 @@ window.userStore = ao();
 window.stateStore = Kr();
 window.dbStore = Cm();
 export {
-  ri as A, Oe as F, vm as G, hA as L, WA as M, jr as T, vt as _, A as a, h as b, q as c, $e as d, ve as e, we as f, ge as g, hf as h, Yr as i, XT as j, an as k, za as l, XI as m, at as n, z as o, Lv as p, Ft as r, uo as s, M as t, le as w
+  ri as A, Oe as F, vm as G, hA as L, WA as M, jr as T, yt as _, A as a, h as b, q as c, $e as d, ve as e, we as f, ge as g, hf as h, Yr as i, XT as j, an as k, za as l, XI as m, at as n, z as o, Lv as p, Ft as r, uo as s, M as t, le as w
 };
