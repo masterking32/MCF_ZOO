@@ -1,26 +1,27 @@
 import {
-  g as Zl,
+  g as ec,
   c as pe,
-  n as Yo,
-  C as ec
-} from "./index-Duh1NKkB.js";
+  b as be,
+  n as Xo,
+  C as tc
+} from "./index-CiSMjUBN.js";
 import {
-  _ as tc,
-  c as Ot,
-  a as tt,
-  t as wt,
-  b as vt,
-  w as $t,
-  f as xt,
-  d as hr,
-  F as nc,
-  e as pr,
-  g as Ut,
-  o as bt
-} from "./index-5EZhtzKk.js";
-var ra = {};
+  _ as nc,
+  c as xt,
+  a as nt,
+  t as vt,
+  b as kt,
+  w as Ht,
+  f as Ut,
+  d as pr,
+  F as rc,
+  e as gr,
+  g as Rt,
+  o as yt
+} from "./index-dYMJ6MmR.js";
+var ia = {};
 let d;
-const Xo = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
+const Jo = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -28,48 +29,48 @@ const Xo = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
     throw Error("TextDecoder not available")
   }
 };
-typeof TextDecoder < "u" && Xo.decode();
-let Ir = null;
+typeof TextDecoder < "u" && Jo.decode();
+let Cr = null;
 
-function Jn() {
-  return (Ir === null || Ir.byteLength === 0) && (Ir = new Uint8Array(d.memory.buffer)), Ir
+function Qn() {
+  return (Cr === null || Cr.byteLength === 0) && (Cr = new Uint8Array(d.memory.buffer)), Cr
 }
 
-function je(e, t) {
-  return e = e >>> 0, Xo.decode(Jn().subarray(e, e + t))
+function Le(e, t) {
+  return e = e >>> 0, Jo.decode(Qn().subarray(e, e + t))
 }
-const Lt = new Array(128).fill(void 0);
-Lt.push(void 0, null, !0, !1);
-let Tr = Lt.length;
+const zt = new Array(128).fill(void 0);
+zt.push(void 0, null, !0, !1);
+let Er = zt.length;
 
 function me(e) {
-  Tr === Lt.length && Lt.push(Lt.length + 1);
-  const t = Tr;
-  return Tr = Lt[t], Lt[t] = e, t
+  Er === zt.length && zt.push(zt.length + 1);
+  const t = Er;
+  return Er = zt[t], zt[t] = e, t
 }
 
-function _e(e) {
-  return Lt[e]
+function we(e) {
+  return zt[e]
 }
 
-function De(e) {
+function Fe(e) {
   return e == null
 }
-let gn = null;
+let mn = null;
 
 function $() {
-  return (gn === null || gn.buffer.detached === !0 || gn.buffer.detached === void 0 && gn.buffer !== d.memory.buffer) && (gn = new DataView(d.memory.buffer)), gn
+  return (mn === null || mn.buffer.detached === !0 || mn.buffer.detached === void 0 && mn.buffer !== d.memory.buffer) && (mn = new DataView(d.memory.buffer)), mn
 }
 let fe = 0;
-const Vr = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
+const Gr = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
     encode: () => {
       throw Error("TextEncoder not available")
     }
   },
-  rc = typeof Vr.encodeInto == "function" ? function(e, t) {
-    return Vr.encodeInto(e, t)
+  ic = typeof Gr.encodeInto == "function" ? function(e, t) {
+    return Gr.encodeInto(e, t)
   } : function(e, t) {
-    const n = Vr.encode(e);
+    const n = Gr.encode(e);
     return t.set(n), {
       read: e.length,
       written: n.length
@@ -78,13 +79,13 @@ const Vr = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 
 function ge(e, t, n) {
   if (n === void 0) {
-    const s = Vr.encode(e),
+    const s = Gr.encode(e),
       c = t(s.length, 1) >>> 0;
-    return Jn().subarray(c, c + s.length).set(s), fe = s.length, c
+    return Qn().subarray(c, c + s.length).set(s), fe = s.length, c
   }
   let r = e.length,
     i = t(r, 1) >>> 0;
-  const o = Jn();
+  const o = Qn();
   let a = 0;
   for (; a < r; a++) {
     const s = e.charCodeAt(a);
@@ -93,23 +94,23 @@ function ge(e, t, n) {
   }
   if (a !== r) {
     a !== 0 && (e = e.slice(a)), i = n(i, r, r = a + e.length * 3, 1) >>> 0;
-    const s = Jn().subarray(i + a, i + r),
-      c = rc(e, s);
+    const s = Qn().subarray(i + a, i + r),
+      c = ic(e, s);
     a += c.written, i = n(i, r, a, 1) >>> 0
   }
   return fe = a, i
 }
 
-function ic(e) {
-  e < 132 || (Lt[e] = Tr, Tr = e)
+function ac(e) {
+  e < 132 || (zt[e] = Er, Er = e)
 }
 
 function oe(e) {
-  const t = _e(e);
-  return ic(e), t
+  const t = we(e);
+  return ac(e), t
 }
 
-function ia(e) {
+function aa(e) {
   const t = typeof e;
   if (t == "number" || t == "boolean" || e == null) return `${e}`;
   if (t == "string") return `"${e}"`;
@@ -124,8 +125,8 @@ function ia(e) {
   if (Array.isArray(e)) {
     const i = e.length;
     let o = "[";
-    i > 0 && (o += ia(e[0]));
-    for (let a = 1; a < i; a++) o += ", " + ia(e[a]);
+    i > 0 && (o += aa(e[0]));
+    for (let a = 1; a < i; a++) o += ", " + aa(e[a]);
     return o += "]", o
   }
   const n = /\[object ([^\]]+)\]/.exec(toString.call(e));
@@ -140,14 +141,14 @@ function ia(e) {
   return e instanceof Error ? `${e.name}: ${e.message}
 ${e.stack}` : r
 }
-const Ga = typeof FinalizationRegistry > "u" ? {
+const Wa = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => {
   d.__wbindgen_export_2.get(e.dtor)(e.a, e.b)
 });
 
-function ac(e, t, n, r) {
+function oc(e, t, n, r) {
   const i = {
       a: e,
       b: t,
@@ -161,26 +162,26 @@ function ac(e, t, n, r) {
       try {
         return r(s, i.b, ...a)
       } finally {
-        --i.cnt === 0 ? (d.__wbindgen_export_2.get(i.dtor)(s, i.b), Ga.unregister(i)) : i.a = s
+        --i.cnt === 0 ? (d.__wbindgen_export_2.get(i.dtor)(s, i.b), Wa.unregister(i)) : i.a = s
       }
     };
-  return o.original = i, Ga.register(o, i, i), o
+  return o.original = i, Wa.register(o, i, i), o
 }
 
-function oc(e, t, n) {
+function sc(e, t, n) {
   d._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h0fff6d0ad1f7528f(e, t, me(n))
 }
 
-function sc(e, t) {
-  return e = e >>> 0, Jn().subarray(e / 1, e / 1 + t)
-}
-
 function lc(e, t) {
-  const n = t(e.length * 1, 1) >>> 0;
-  return Jn().set(e, n / 1), fe = e.length, n
+  return e = e >>> 0, Qn().subarray(e / 1, e / 1 + t)
 }
 
-function Xe(e, t) {
+function cc(e, t) {
+  const n = t(e.length * 1, 1) >>> 0;
+  return Qn().set(e, n / 1), fe = e.length, n
+}
+
+function Je(e, t) {
   try {
     return e.apply(this, t)
   } catch (n) {
@@ -188,18 +189,18 @@ function Xe(e, t) {
   }
 }
 
-function At(e, t) {
+function It(e, t) {
   if (!(e instanceof t)) throw new Error(`expected instance of ${t.name}`);
   return e.ptr
 }
 
-function cc(e) {
+function uc(e) {
   const t = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
     n = fe;
   return d.checkAddress(t, n) !== 0
 }
 
-function uc(e) {
+function dc(e) {
   let t, n;
   try {
     const f = d.__wbindgen_add_to_stack_pointer(-16),
@@ -213,23 +214,23 @@ function uc(e) {
       s = r,
       c = i;
     if (a) throw s = 0, c = 0, oe(o);
-    return t = s, n = c, je(s, c)
+    return t = s, n = c, Le(s, c)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
   }
 }
 
-function dc(e, t, n, r, i, o, a) {
+function fc(e, t, n, r, i, o, a) {
   try {
     const u = d.__wbindgen_add_to_stack_pointer(-16);
-    At(e, zt);
+    It(e, Nt);
     const _ = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       B = fe,
       y = ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       S = fe,
       m = ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       v = fe;
-    d.runLocal(u, e.__wbg_ptr, _, B, y, S, m, v, me(i), o, !De(a), De(a) ? 0 : a);
+    d.runLocal(u, e.__wbg_ptr, _, B, y, S, m, v, me(i), o, !Fe(a), Fe(a) ? 0 : a);
     var s = $().getInt32(u + 4 * 0, !0),
       c = $().getInt32(u + 4 * 1, !0),
       f = $().getInt32(u + 4 * 2, !0);
@@ -240,11 +241,11 @@ function dc(e, t, n, r, i, o, a) {
   }
 }
 
-function fc(e) {
+function hc(e) {
   let t, n;
   try {
     const _ = d.__wbindgen_add_to_stack_pointer(-16);
-    var r = De(e) ? 0 : ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var r = Fe(e) ? 0 : ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
       i = fe;
     d.makeFullAccountBoc(_, r, i);
     var o = $().getInt32(_ + 4 * 0, !0),
@@ -254,13 +255,13 @@ function fc(e) {
       f = o,
       u = a;
     if (c) throw f = 0, u = 0, oe(s);
-    return t = f, n = u, je(f, u)
+    return t = f, n = u, Le(f, u)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
   }
 }
 
-function hc(e) {
+function pc(e) {
   try {
     const i = d.__wbindgen_add_to_stack_pointer(-16),
       o = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -276,7 +277,7 @@ function hc(e) {
   }
 }
 
-function pc(e) {
+function gc(e) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -288,13 +289,13 @@ function pc(e) {
       i = $().getInt32(o + 4 * 3, !0);
     if (i) throw oe(r);
     let c;
-    return t !== 0 && (c = je(t, n).slice(), d.__wbindgen_free(t, n * 1, 1)), c
+    return t !== 0 && (c = Le(t, n).slice(), d.__wbindgen_free(t, n * 1, 1)), c
   } finally {
     d.__wbindgen_add_to_stack_pointer(16)
   }
 }
 
-function gc(e, t, n, r) {
+function mc(e, t, n, r) {
   try {
     const s = d.__wbindgen_add_to_stack_pointer(-16),
       c = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -312,7 +313,7 @@ function gc(e, t, n, r) {
   }
 }
 
-function mc(e, t, n, r, i, o, a) {
+function bc(e, t, n, r, i, o, a) {
   try {
     const B = d.__wbindgen_add_to_stack_pointer(-16),
       y = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -321,9 +322,9 @@ function mc(e, t, n, r, i, o, a) {
       v = fe,
       x = ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       M = fe;
-    var s = De(o) ? 0 : ge(o, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var s = Fe(o) ? 0 : ge(o, d.__wbindgen_malloc, d.__wbindgen_realloc),
       c = fe;
-    d.executeLocal(B, y, S, m, v, x, M, r, i, s, c, !De(a), De(a) ? 0 : a);
+    d.executeLocal(B, y, S, m, v, x, M, r, i, s, c, !Fe(a), Fe(a) ? 0 : a);
     var f = $().getInt32(B + 4 * 0, !0),
       u = $().getInt32(B + 4 * 1, !0),
       _ = $().getInt32(B + 4 * 2, !0);
@@ -334,14 +335,14 @@ function mc(e, t, n, r, i, o, a) {
   }
 }
 
-function bc(e, t, n, r, i) {
+function yc(e, t, n, r, i) {
   try {
     const u = d.__wbindgen_add_to_stack_pointer(-16),
       _ = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
       B = fe,
       y = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       S = fe;
-    var o = De(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var o = Fe(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       a = fe;
     d.getExpectedAddress(u, _, B, y, S, n, o, a, me(i));
     var s = $().getInt32(u + 4 * 0, !0),
@@ -354,7 +355,7 @@ function bc(e, t, n, r, i) {
   }
 }
 
-function yc(e, t, n) {
+function _c(e, t, n) {
   try {
     const a = d.__wbindgen_add_to_stack_pointer(-16),
       s = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -372,7 +373,7 @@ function yc(e, t, n) {
   }
 }
 
-function _c(e, t) {
+function wc(e, t) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -390,7 +391,7 @@ function _c(e, t) {
   }
 }
 
-function wc(e) {
+function vc(e) {
   let t, n;
   try {
     const f = d.__wbindgen_add_to_stack_pointer(-16),
@@ -404,16 +405,16 @@ function wc(e) {
       s = r,
       c = i;
     if (a) throw s = 0, c = 0, oe(o);
-    return t = s, n = c, je(s, c)
+    return t = s, n = c, Le(s, c)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
   }
 }
 
-function vc(e, t, n) {
+function kc(e, t, n) {
   try {
     const c = d.__wbindgen_add_to_stack_pointer(-16);
-    var r = De(n) ? 0 : ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var r = Fe(n) ? 0 : ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       i = fe;
     d.packIntoCell(c, me(e), me(t), r, i);
     var o = $().getInt32(c + 4 * 0, !0),
@@ -426,12 +427,12 @@ function vc(e, t, n) {
   }
 }
 
-function kc(e, t, n, r) {
+function Sc(e, t, n, r) {
   try {
     const f = d.__wbindgen_add_to_stack_pointer(-16),
       u = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       _ = fe;
-    var i = De(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var i = Fe(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       o = fe;
     d.unpackFromCell(f, me(e), u, _, n, i, o);
     var a = $().getInt32(f + 4 * 0, !0),
@@ -444,7 +445,7 @@ function kc(e, t, n, r) {
   }
 }
 
-function Sc(e) {
+function Ac(e) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -456,13 +457,13 @@ function Sc(e) {
       i = $().getInt32(o + 4 * 3, !0);
     if (i) throw oe(r);
     let c;
-    return t !== 0 && (c = je(t, n).slice(), d.__wbindgen_free(t, n * 1, 1)), c
+    return t !== 0 && (c = Le(t, n).slice(), d.__wbindgen_free(t, n * 1, 1)), c
   } finally {
     d.__wbindgen_add_to_stack_pointer(16)
   }
 }
 
-function Ac(e) {
+function Ic(e) {
   let t, n;
   try {
     const f = d.__wbindgen_add_to_stack_pointer(-16),
@@ -476,13 +477,13 @@ function Ac(e) {
       s = r,
       c = i;
     if (a) throw s = 0, c = 0, oe(o);
-    return t = s, n = c, je(s, c)
+    return t = s, n = c, Le(s, c)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
   }
 }
 
-function Ic(e) {
+function Cc(e) {
   try {
     const i = d.__wbindgen_add_to_stack_pointer(-16),
       o = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -498,7 +499,7 @@ function Ic(e) {
   }
 }
 
-function Cc(e, t) {
+function Bc(e, t) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -516,7 +517,7 @@ function Cc(e, t) {
   }
 }
 
-function Bc(e) {
+function Pc(e) {
   try {
     const i = d.__wbindgen_add_to_stack_pointer(-16),
       o = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -532,7 +533,7 @@ function Bc(e) {
   }
 }
 
-function Pc(e, t) {
+function Mc(e, t) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -550,7 +551,7 @@ function Pc(e, t) {
   }
 }
 
-function Mc(e) {
+function Tc(e) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -562,13 +563,13 @@ function Mc(e) {
       i = $().getInt32(o + 4 * 3, !0);
     if (i) throw oe(r);
     let c;
-    return t !== 0 && (c = je(t, n).slice(), d.__wbindgen_free(t, n * 1, 1)), c
+    return t !== 0 && (c = Le(t, n).slice(), d.__wbindgen_free(t, n * 1, 1)), c
   } finally {
     d.__wbindgen_add_to_stack_pointer(16)
   }
 }
 
-function Tc(e, t, n) {
+function Ec(e, t, n) {
   let r, i;
   try {
     const _ = d.__wbindgen_add_to_stack_pointer(-16),
@@ -584,27 +585,27 @@ function Tc(e, t, n) {
       f = o,
       u = a;
     if (c) throw f = 0, u = 0, oe(s);
-    return r = f, i = u, je(f, u)
+    return r = f, i = u, Le(f, u)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(r, i, 1)
   }
 }
 
-function Ec(e, t, n, r, i, o, a) {
+function Oc(e, t, n, r, i, o, a) {
   let s, c;
   try {
     const P = d.__wbindgen_add_to_stack_pointer(-16);
-    var f = De(e) ? 0 : ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var f = Fe(e) ? 0 : ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
       u = fe;
     const k = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       T = fe;
-    var _ = De(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var _ = Fe(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       B = fe,
-      y = De(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
+      y = Fe(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
       S = fe;
     const J = ge(o, d.__wbindgen_malloc, d.__wbindgen_realloc),
       ne = fe;
-    d.encodeInternalMessage(P, f, u, k, T, n, _, B, y, S, J, ne, De(a) ? 16777215 : a ? 1 : 0);
+    d.encodeInternalMessage(P, f, u, k, T, n, _, B, y, S, J, ne, Fe(a) ? 16777215 : a ? 1 : 0);
     var m = $().getInt32(P + 4 * 0, !0),
       v = $().getInt32(P + 4 * 1, !0),
       x = $().getInt32(P + 4 * 2, !0),
@@ -612,13 +613,13 @@ function Ec(e, t, n, r, i, o, a) {
       p = m,
       h = v;
     if (M) throw p = 0, h = 0, oe(x);
-    return s = p, c = h, je(p, h)
+    return s = p, c = h, Le(p, h)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(s, c, 1)
   }
 }
 
-function Oc(e, t, n, r) {
+function xc(e, t, n, r) {
   try {
     const s = d.__wbindgen_add_to_stack_pointer(-16),
       c = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -636,7 +637,7 @@ function Oc(e, t, n, r) {
   }
 }
 
-function xc(e, t, n) {
+function Uc(e, t, n) {
   try {
     const a = d.__wbindgen_add_to_stack_pointer(-16),
       s = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -654,7 +655,7 @@ function xc(e, t, n) {
   }
 }
 
-function Uc(e, t, n) {
+function Rc(e, t, n) {
   try {
     const a = d.__wbindgen_add_to_stack_pointer(-16),
       s = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -672,7 +673,7 @@ function Uc(e, t, n) {
   }
 }
 
-function Rc(e, t, n) {
+function jc(e, t, n) {
   try {
     const a = d.__wbindgen_add_to_stack_pointer(-16),
       s = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -688,7 +689,7 @@ function Rc(e, t, n) {
   }
 }
 
-function jc(e, t) {
+function Lc(e, t) {
   try {
     const o = d.__wbindgen_add_to_stack_pointer(-16),
       a = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -704,7 +705,7 @@ function jc(e, t) {
   }
 }
 
-function Lc(e) {
+function zc(e) {
   try {
     const i = d.__wbindgen_add_to_stack_pointer(-16),
       o = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -720,7 +721,7 @@ function Lc(e) {
   }
 }
 
-function zc(e) {
+function Nc(e) {
   let t, n;
   try {
     const f = d.__wbindgen_add_to_stack_pointer(-16),
@@ -734,13 +735,13 @@ function zc(e) {
       s = r,
       c = i;
     if (a) throw s = 0, c = 0, oe(o);
-    return t = s, n = c, je(s, c)
+    return t = s, n = c, Le(s, c)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
   }
 }
 
-function Nc() {
+function Dc() {
   try {
     const r = d.__wbindgen_add_to_stack_pointer(-16);
     d.ed25519_generateKeyPair(r);
@@ -754,7 +755,7 @@ function Nc() {
   }
 }
 
-function Dc(e, t, n) {
+function Fc(e, t, n) {
   let r, i;
   try {
     const _ = d.__wbindgen_add_to_stack_pointer(-16),
@@ -762,7 +763,7 @@ function Dc(e, t, n) {
       y = fe,
       S = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       m = fe;
-    d.ed25519_sign(_, B, y, S, m, !De(n), De(n) ? 0 : n);
+    d.ed25519_sign(_, B, y, S, m, !Fe(n), Fe(n) ? 0 : n);
     var o = $().getInt32(_ + 4 * 0, !0),
       a = $().getInt32(_ + 4 * 1, !0),
       s = $().getInt32(_ + 4 * 2, !0),
@@ -770,13 +771,13 @@ function Dc(e, t, n) {
       f = o,
       u = a;
     if (c) throw f = 0, u = 0, oe(s);
-    return r = f, i = u, je(f, u)
+    return r = f, i = u, Le(f, u)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(r, i, 1)
   }
 }
 
-function Fc(e) {
+function Kc(e) {
   try {
     const i = d.__wbindgen_add_to_stack_pointer(-16),
       o = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -792,7 +793,7 @@ function Fc(e) {
   }
 }
 
-function Kc(e, t, n, r) {
+function $c(e, t, n, r) {
   try {
     const s = d.__wbindgen_add_to_stack_pointer(-16),
       c = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
@@ -801,7 +802,7 @@ function Kc(e, t, n, r) {
       _ = fe,
       B = ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       y = fe;
-    d.verifySignature(s, c, f, u, _, B, y, !De(r), De(r) ? 0 : r);
+    d.verifySignature(s, c, f, u, _, B, y, !Fe(r), Fe(r) ? 0 : r);
     var i = $().getInt32(s + 4 * 0, !0),
       o = $().getInt32(s + 4 * 1, !0),
       a = $().getInt32(s + 4 * 2, !0);
@@ -812,14 +813,14 @@ function Kc(e, t, n, r) {
   }
 }
 
-function $c(e, t, n, r) {
+function Hc(e, t, n, r) {
   try {
     const _ = d.__wbindgen_add_to_stack_pointer(-16),
       B = ge(e, d.__wbindgen_malloc, d.__wbindgen_realloc),
       y = fe;
-    var i = De(t) ? 0 : ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var i = Fe(t) ? 0 : ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       o = fe,
-      a = De(n) ? 0 : ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
+      a = Fe(n) ? 0 : ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       s = fe;
     d.createRawExternalMessage(_, B, y, i, o, a, s, r);
     var c = $().getInt32(_ + 4 * 0, !0),
@@ -832,17 +833,17 @@ function $c(e, t, n, r) {
   }
 }
 
-function Hc(e, t, n, r, i, o, a) {
+function Vc(e, t, n, r, i, o, a) {
   try {
     const B = d.__wbindgen_add_to_stack_pointer(-16);
-    At(e, zt);
+    It(e, Nt);
     const y = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       S = fe,
       m = ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       v = fe,
       x = ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       M = fe;
-    var s = De(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var s = Fe(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
       c = fe;
     d.createExternalMessageWithoutSignature(B, e.__wbg_ptr, y, S, m, v, x, M, s, c, me(o), a);
     var f = $().getInt32(B + 4 * 0, !0),
@@ -855,17 +856,17 @@ function Hc(e, t, n, r, i, o, a) {
   }
 }
 
-function Vc(e, t, n, r, i, o, a, s) {
+function Gc(e, t, n, r, i, o, a, s) {
   try {
     const y = d.__wbindgen_add_to_stack_pointer(-16);
-    At(e, zt);
+    It(e, Nt);
     const S = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
       m = fe,
       v = ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
       x = fe,
       M = ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       p = fe;
-    var c = De(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var c = Fe(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
       f = fe;
     const h = ge(a, d.__wbindgen_malloc, d.__wbindgen_realloc),
       P = fe;
@@ -874,28 +875,28 @@ function Vc(e, t, n, r, i, o, a, s) {
       _ = $().getInt32(y + 4 * 1, !0),
       B = $().getInt32(y + 4 * 2, !0);
     if (B) throw oe(_);
-    return si.__wrap(u)
+    return li.__wrap(u)
   } finally {
     d.__wbindgen_add_to_stack_pointer(16)
   }
 }
 
-function Gc(e, t, n, r) {
+function Wc(e, t, n, r) {
   d.wasm_bindgen__convert__closures__invoke2_mut__h5874b044d3e8a56e(e, t, me(n), me(r))
 }
-const Wa = typeof FinalizationRegistry > "u" ? {
+const Ya = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => d.__wbg_bytesquery_free(e >>> 0, 1));
-class ai {
+class oi {
   static __wrap(t) {
     t = t >>> 0;
-    const n = Object.create(ai.prototype);
-    return n.__wbg_ptr = t, Wa.register(n, n.__wbg_ptr, n), n
+    const n = Object.create(oi.prototype);
+    return n.__wbg_ptr = t, Ya.register(n, n.__wbg_ptr, n), n
   }
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, Wa.unregister(this), t
+    return this.__wbg_ptr = 0, Ya.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
@@ -903,7 +904,7 @@ class ai {
   }
   onReceive(t) {
     const n = this.__destroy_into_raw(),
-      r = lc(t, d.__wbindgen_malloc),
+      r = cc(t, d.__wbindgen_malloc),
       i = fe;
     d.bytesquery_onReceive(n, r, i)
   }
@@ -916,14 +917,14 @@ class ai {
     d.bytesquery_onTimeout(t)
   }
 }
-const Ya = typeof FinalizationRegistry > "u" ? {
+const Xa = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => d.__wbg_clockwithoffset_free(e >>> 0, 1));
-class zt {
+class Nt {
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, Ya.unregister(this), t
+    return this.__wbg_ptr = 0, Xa.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
@@ -931,7 +932,7 @@ class zt {
   }
   constructor() {
     const t = d.clockwithoffset_new();
-    return this.__wbg_ptr = t >>> 0, Ya.register(this, this.__wbg_ptr, this), this
+    return this.__wbg_ptr = t >>> 0, Xa.register(this, this.__wbg_ptr, this), this
   }
   get nowMs() {
     return d.clockwithoffset_nowMs(this.__wbg_ptr)
@@ -943,19 +944,19 @@ class zt {
     return d.clockwithoffset_offsetMs(this.__wbg_ptr)
   }
 }
-const Xa = typeof FinalizationRegistry > "u" ? {
+const Ja = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => d.__wbg_genericcontract_free(e >>> 0, 1));
-class oi {
+class si {
   static __wrap(t) {
     t = t >>> 0;
-    const n = Object.create(oi.prototype);
-    return n.__wbg_ptr = t, Xa.register(n, n.__wbg_ptr, n), n
+    const n = Object.create(si.prototype);
+    return n.__wbg_ptr = t, Ja.register(n, n.__wbg_ptr, n), n
   }
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, Xa.unregister(this), t
+    return this.__wbg_ptr = 0, Ja.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
@@ -968,7 +969,7 @@ class oi {
       d.genericcontract_address(o, this.__wbg_ptr);
       var r = $().getInt32(o + 4 * 0, !0),
         i = $().getInt32(o + 4 * 1, !0);
-      return t = r, n = i, je(r, i)
+      return t = r, n = i, Le(r, i)
     } finally {
       d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
     }
@@ -1029,14 +1030,14 @@ class oi {
     return oe(t)
   }
 }
-const Ja = typeof FinalizationRegistry > "u" ? {
+const Qa = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => d.__wbg_gqlconnection_free(e >>> 0, 1));
-class Jo {
+class Qo {
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, Ja.unregister(this), t
+    return this.__wbg_ptr = 0, Qa.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
@@ -1044,7 +1045,7 @@ class Jo {
   }
   constructor(t) {
     const n = d.gqlconnection_new(me(t));
-    return this.__wbg_ptr = n >>> 0, Ja.register(this, this.__wbg_ptr, this), this
+    return this.__wbg_ptr = n >>> 0, Qa.register(this, this.__wbg_ptr, this), this
   }
   getLatestBlock(t) {
     try {
@@ -1079,28 +1080,10 @@ class Jo {
     }
   }
 }
-const Qa = typeof FinalizationRegistry > "u" ? {
-  register: () => {},
-  unregister: () => {}
-} : new FinalizationRegistry(e => d.__wbg_jrpcconnection_free(e >>> 0, 1));
-class Qo {
-  __destroy_into_raw() {
-    const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, Qa.unregister(this), t
-  }
-  free() {
-    const t = this.__destroy_into_raw();
-    d.__wbg_jrpcconnection_free(t, 0)
-  }
-  constructor(t) {
-    const n = d.gqlconnection_new(me(t));
-    return this.__wbg_ptr = n >>> 0, Qa.register(this, this.__wbg_ptr, this), this
-  }
-}
 const qa = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
-} : new FinalizationRegistry(e => d.__wbg_protoconnection_free(e >>> 0, 1));
+} : new FinalizationRegistry(e => d.__wbg_jrpcconnection_free(e >>> 0, 1));
 class qo {
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
@@ -1108,7 +1091,7 @@ class qo {
   }
   free() {
     const t = this.__destroy_into_raw();
-    d.__wbg_protoconnection_free(t, 0)
+    d.__wbg_jrpcconnection_free(t, 0)
   }
   constructor(t) {
     const n = d.gqlconnection_new(me(t));
@@ -1118,7 +1101,7 @@ class qo {
 const Za = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
-} : new FinalizationRegistry(e => d.__wbg_proxyconnection_free(e >>> 0, 1));
+} : new FinalizationRegistry(e => d.__wbg_protoconnection_free(e >>> 0, 1));
 class Zo {
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
@@ -1126,7 +1109,7 @@ class Zo {
   }
   free() {
     const t = this.__destroy_into_raw();
-    d.__wbg_proxyconnection_free(t, 0)
+    d.__wbg_protoconnection_free(t, 0)
   }
   constructor(t) {
     const n = d.gqlconnection_new(me(t));
@@ -1136,16 +1119,34 @@ class Zo {
 const eo = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
-} : new FinalizationRegistry(e => d.__wbg_stringquery_free(e >>> 0, 1));
-class Or {
-  static __wrap(t) {
-    t = t >>> 0;
-    const n = Object.create(Or.prototype);
-    return n.__wbg_ptr = t, eo.register(n, n.__wbg_ptr, n), n
-  }
+} : new FinalizationRegistry(e => d.__wbg_proxyconnection_free(e >>> 0, 1));
+class es {
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
     return this.__wbg_ptr = 0, eo.unregister(this), t
+  }
+  free() {
+    const t = this.__destroy_into_raw();
+    d.__wbg_proxyconnection_free(t, 0)
+  }
+  constructor(t) {
+    const n = d.gqlconnection_new(me(t));
+    return this.__wbg_ptr = n >>> 0, eo.register(this, this.__wbg_ptr, this), this
+  }
+}
+const to = typeof FinalizationRegistry > "u" ? {
+  register: () => {},
+  unregister: () => {}
+} : new FinalizationRegistry(e => d.__wbg_stringquery_free(e >>> 0, 1));
+class xr {
+  static __wrap(t) {
+    t = t >>> 0;
+    const n = Object.create(xr.prototype);
+    return n.__wbg_ptr = t, to.register(n, n.__wbg_ptr, n), n
+  }
+  __destroy_into_raw() {
+    const t = this.__wbg_ptr;
+    return this.__wbg_ptr = 0, to.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
@@ -1166,43 +1167,43 @@ class Or {
     d.bytesquery_onTimeout(t)
   }
 }
-const to = typeof FinalizationRegistry > "u" ? {
+const no = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => d.__wbg_transport_free(e >>> 0, 1));
-class mn {
+class bn {
   static __wrap(t) {
     t = t >>> 0;
-    const n = Object.create(mn.prototype);
-    return n.__wbg_ptr = t, to.register(n, n.__wbg_ptr, n), n
+    const n = Object.create(bn.prototype);
+    return n.__wbg_ptr = t, no.register(n, n.__wbg_ptr, n), n
   }
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, to.unregister(this), t
+    return this.__wbg_ptr = 0, no.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
     d.__wbg_transport_free(t, 0)
   }
   static fromGqlConnection(t, n) {
-    At(t, Jo), At(n, zt);
+    It(t, Qo), It(n, Nt);
     const r = d.transport_fromGqlConnection(t.__wbg_ptr, n.__wbg_ptr);
-    return mn.__wrap(r)
+    return bn.__wrap(r)
   }
   static fromJrpcConnection(t, n) {
-    At(t, Qo), At(n, zt);
+    It(t, qo), It(n, Nt);
     const r = d.transport_fromJrpcConnection(t.__wbg_ptr, n.__wbg_ptr);
-    return mn.__wrap(r)
+    return bn.__wrap(r)
   }
   static fromProtoConnection(t, n) {
-    At(t, qo), At(n, zt);
+    It(t, Zo), It(n, Nt);
     const r = d.transport_fromProtoConnection(t.__wbg_ptr, n.__wbg_ptr);
-    return mn.__wrap(r)
+    return bn.__wrap(r)
   }
   static fromProxyConnection(t, n) {
-    At(t, Zo), At(n, zt);
+    It(t, es), It(n, Nt);
     const r = d.transport_fromProxyConnection(t.__wbg_ptr, n.__wbg_ptr);
-    return mn.__wrap(r)
+    return bn.__wrap(r)
   }
   getNetworkDescription() {
     const t = d.transport_getNetworkDescription(this.__wbg_ptr);
@@ -1213,7 +1214,7 @@ class mn {
     return oe(t)
   }
   getBlockchainConfig(t) {
-    const n = d.transport_getBlockchainConfig(this.__wbg_ptr, De(t) ? 16777215 : t ? 1 : 0);
+    const n = d.transport_getBlockchainConfig(this.__wbg_ptr, Fe(t) ? 16777215 : t ? 1 : 0);
     return oe(n)
   }
   subscribeToGenericContract(t, n) {
@@ -1251,7 +1252,7 @@ class mn {
       const f = d.__wbindgen_add_to_stack_pointer(-16),
         u = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
         _ = fe;
-      var i = De(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
+      var i = Fe(r) ? 0 : ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
         o = fe;
       d.transport_getAccountsByCodeHash(f, this.__wbg_ptr, u, _, n, i, o);
       var a = $().getInt32(f + 4 * 0, !0),
@@ -1268,7 +1269,7 @@ class mn {
       const f = d.__wbindgen_add_to_stack_pointer(-16),
         u = ge(t, d.__wbindgen_malloc, d.__wbindgen_realloc),
         _ = fe;
-      var i = De(n) ? 0 : ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
+      var i = Fe(n) ? 0 : ge(n, d.__wbindgen_malloc, d.__wbindgen_realloc),
         o = fe;
       d.transport_getTransactions(f, this.__wbg_ptr, u, _, i, o, r);
       var a = $().getInt32(f + 4 * 0, !0),
@@ -1311,26 +1312,26 @@ class mn {
     }
   }
 }
-const no = typeof FinalizationRegistry > "u" ? {
+const ro = typeof FinalizationRegistry > "u" ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => d.__wbg_unsignedmessage_free(e >>> 0, 1));
-class si {
+class li {
   static __wrap(t) {
     t = t >>> 0;
-    const n = Object.create(si.prototype);
-    return n.__wbg_ptr = t, no.register(n, n.__wbg_ptr, n), n
+    const n = Object.create(li.prototype);
+    return n.__wbg_ptr = t, ro.register(n, n.__wbg_ptr, n), n
   }
   __destroy_into_raw() {
     const t = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, no.unregister(this), t
+    return this.__wbg_ptr = 0, ro.unregister(this), t
   }
   free() {
     const t = this.__destroy_into_raw();
     d.__wbg_unsignedmessage_free(t, 0)
   }
   refreshTimeout(t) {
-    At(t, zt), d.unsignedmessage_refreshTimeout(this.__wbg_ptr, t.__wbg_ptr)
+    It(t, Nt), d.unsignedmessage_refreshTimeout(this.__wbg_ptr, t.__wbg_ptr)
   }
   expireAt() {
     return d.unsignedmessage_expireAt(this.__wbg_ptr) >>> 0
@@ -1342,7 +1343,7 @@ class si {
       d.unsignedmessage_hash(o, this.__wbg_ptr);
       var r = $().getInt32(o + 4 * 0, !0),
         i = $().getInt32(o + 4 * 1, !0);
-      return t = r, n = i, je(r, i)
+      return t = r, n = i, Le(r, i)
     } finally {
       d.__wbindgen_add_to_stack_pointer(16), d.__wbindgen_free(t, n, 1)
     }
@@ -1376,7 +1377,7 @@ class si {
     }
   }
 }
-async function Wc(e, t) {
+async function Yc(e, t) {
   if (typeof Response == "function" && e instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(e, t)
@@ -1395,34 +1396,34 @@ async function Wc(e, t) {
   }
 }
 
-function es() {
+function ts() {
   const e = {};
   return e.wbg = {}, e.wbg.__wbindgen_string_new = function(t, n) {
-    const r = je(t, n);
+    const r = Le(t, n);
     return me(r)
   }, e.wbg.__wbg_length_ae22078168b726f5 = function(t) {
-    return _e(t).length
+    return we(t).length
   }, e.wbg.__wbindgen_is_undefined = function(t) {
-    return _e(t) === void 0
+    return we(t) === void 0
   }, e.wbg.__wbindgen_number_get = function(t, n) {
-    const r = _e(n),
+    const r = we(n),
       i = typeof r == "number" ? r : void 0;
-    $().setFloat64(t + 8 * 1, De(i) ? 0 : i, !0), $().setInt32(t + 4 * 0, !De(i), !0)
+    $().setFloat64(t + 8 * 1, Fe(i) ? 0 : i, !0), $().setInt32(t + 4 * 0, !Fe(i), !0)
   }, e.wbg.__wbindgen_is_null = function(t) {
-    return _e(t) === null
+    return we(t) === null
   }, e.wbg.__wbindgen_string_get = function(t, n) {
-    const r = _e(n),
+    const r = we(n),
       i = typeof r == "string" ? r : void 0;
-    var o = De(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
+    var o = Fe(i) ? 0 : ge(i, d.__wbindgen_malloc, d.__wbindgen_realloc),
       a = fe;
     $().setInt32(t + 4 * 1, a, !0), $().setInt32(t + 4 * 0, o, !0)
   }, e.wbg.__wbindgen_is_object = function(t) {
-    const n = _e(t);
+    const n = we(t);
     return typeof n == "object" && n !== null
   }, e.wbg.__wbindgen_is_string = function(t) {
-    return typeof _e(t) == "string"
+    return typeof we(t) == "string"
   }, e.wbg.__wbg_new_796382978dfd4fb0 = function(t, n) {
-    const r = new Error(je(t, n));
+    const r = new Error(Le(t, n));
     return me(r)
   }, e.wbg.__wbg_new_525245e2b9901204 = function() {
     const t = new Object;
@@ -1431,26 +1432,26 @@ function es() {
     const t = new Array;
     return me(t)
   }, e.wbg.__wbg_push_37c89022f34c01ca = function(t, n) {
-    return _e(t).push(_e(n))
+    return we(t).push(we(n))
   }, e.wbg.__wbg_genericcontract_new = function(t) {
-    const n = oi.__wrap(t);
+    const n = si.__wrap(t);
     return me(n)
   }, e.wbg.__wbg_instanceof_Error_69bde193b0cc95e3 = function(t) {
     let n;
     try {
-      n = _e(t) instanceof Error
+      n = we(t) instanceof Error
     } catch {
       n = !1
     }
     return n
   }, e.wbg.__wbg_name_ac78212e803c7941 = function(t) {
-    const n = _e(t).name;
+    const n = we(t).name;
     return me(n)
   }, e.wbg.__wbg_message_e18bae0a0e2c097a = function(t) {
-    const n = _e(t).message;
+    const n = we(t).message;
     return me(n)
   }, e.wbg.__wbg_toString_9d18e102ca933e68 = function(t) {
-    const n = _e(t).toString();
+    const n = we(t).toString();
     return me(n)
   }, e.wbg.__wbindgen_object_drop_ref = function(t) {
     oe(t)
@@ -1459,33 +1460,33 @@ function es() {
   }, e.wbg.__wbg_now_b7a162010a9e75b4 = function() {
     return Date.now()
   }, e.wbg.__wbg_onMessageSent_2c1ae08491ab9850 = function(t, n, r) {
-    _e(t).onMessageSent(oe(n), oe(r))
+    we(t).onMessageSent(oe(n), oe(r))
   }, e.wbg.__wbg_onMessageExpired_25cd422e9328ee8a = function(t, n) {
-    _e(t).onMessageExpired(oe(n))
+    we(t).onMessageExpired(oe(n))
   }, e.wbg.__wbg_onStateChanged_3d54166d152ed7c7 = function(t, n) {
-    _e(t).onStateChanged(oe(n))
+    we(t).onStateChanged(oe(n))
   }, e.wbg.__wbg_onTransactionsFound_bf3f4ff44694cccd = function(t, n, r) {
-    _e(t).onTransactionsFound(oe(n), oe(r))
+    we(t).onTransactionsFound(oe(n), oe(r))
   }, e.wbg.__wbindgen_object_clone_ref = function(t) {
-    const n = _e(t);
+    const n = we(t);
     return me(n)
   }, e.wbg.__wbg_keys_7840ae453e408eab = function(t) {
-    const n = Object.keys(_e(t));
+    const n = Object.keys(we(t));
     return me(n)
   }, e.wbg.__wbindgen_boolean_get = function(t) {
-    const n = _e(t);
+    const n = we(t);
     return typeof n == "boolean" ? n ? 1 : 0 : 2
   }, e.wbg.__wbg_get_3baa728f9d58d3f6 = function(t, n) {
-    const r = _e(t)[n >>> 0];
+    const r = we(t)[n >>> 0];
     return me(r)
   }, e.wbg.__wbg_isLocal_c89a0f06d00eb44d = function(t) {
-    return _e(t).isLocal()
+    return we(t).isLocal()
   }, e.wbg.__wbg_send_3a6112602f38b674 = function(t, n, r, i, o) {
-    _e(t).send(je(n, r), Or.__wrap(i), o !== 0)
+    we(t).send(Le(n, r), xr.__wrap(i), o !== 0)
   }, e.wbg.__wbg_send_bd8357f2e836b323 = function(t, n, r, i, o) {
-    _e(t).send(je(n, r), Or.__wrap(i), o !== 0)
+    we(t).send(Le(n, r), xr.__wrap(i), o !== 0)
   }, e.wbg.__wbg_send_1699c4cfc0bbee60 = function(t, n, r, i, o) {
-    _e(t).send(sc(n, r), ai.__wrap(i), o !== 0)
+    we(t).send(lc(n, r), oi.__wrap(i), o !== 0)
   }, e.wbg.__wbg_new_b85e72ed1bfd57f9 = function(t, n) {
     try {
       var r = {
@@ -1496,7 +1497,7 @@ function es() {
           const c = r.a;
           r.a = 0;
           try {
-            return Gc(c, r.b, a, s)
+            return Wc(c, r.b, a, s)
           } finally {
             r.a = c
           }
@@ -1507,160 +1508,160 @@ function es() {
       r.a = r.b = 0
     }
   }, e.wbg.__wbg_info_2ffec7e533c4f23d = function() {
-    return Xe(function(t) {
-      const n = _e(t).info();
+    return Je(function(t) {
+      const n = we(t).info();
       return me(n)
     }, arguments)
   }, e.wbg.__wbg_sendMessage_8d09b0e227438eb5 = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).sendMessage(je(n, r));
+    return Je(function(t, n, r) {
+      const i = we(t).sendMessage(Le(n, r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbg_getContractState_a832ca559ffd8b92 = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).getContractState(je(n, r));
+    return Je(function(t, n, r) {
+      const i = we(t).getContractState(Le(n, r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbg_getAccountsByCodeHash_c75072db79c08409 = function() {
-    return Xe(function(t, n, r, i, o, a) {
+    return Je(function(t, n, r, i, o, a) {
       let s;
-      o !== 0 && (s = je(o, a).slice(), d.__wbindgen_free(o, a * 1, 1));
-      const c = _e(t).getAccountsByCodeHash(je(n, r), i, s);
+      o !== 0 && (s = Le(o, a).slice(), d.__wbindgen_free(o, a * 1, 1));
+      const c = we(t).getAccountsByCodeHash(Le(n, r), i, s);
       return me(c)
     }, arguments)
   }, e.wbg.__wbg_getTransactions_eb09ca0ff4ac3072 = function() {
-    return Xe(function(t, n, r, i, o, a) {
-      const s = _e(t).getTransactions(je(n, r), je(i, o), a);
+    return Je(function(t, n, r, i, o, a) {
+      const s = we(t).getTransactions(Le(n, r), Le(i, o), a);
       return me(s)
     }, arguments)
   }, e.wbg.__wbg_getTransaction_c4bdcf967b80c793 = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).getTransaction(je(n, r));
+    return Je(function(t, n, r) {
+      const i = we(t).getTransaction(Le(n, r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbg_getDstTransaction_84b6163592386f1b = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).getDstTransaction(je(n, r));
+    return Je(function(t, n, r) {
+      const i = we(t).getDstTransaction(Le(n, r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbg_getLatestKeyBlock_934ef847dfb13892 = function() {
-    return Xe(function(t) {
-      const n = _e(t).getLatestKeyBlock();
+    return Je(function(t) {
+      const n = we(t).getLatestKeyBlock();
       return me(n)
     }, arguments)
   }, e.wbg.__wbg_getCapabilities_b340b48cfe2a8c0d = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).getCapabilities(je(n, r));
+    return Je(function(t, n, r) {
+      const i = we(t).getCapabilities(Le(n, r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbg_getBlockchainConfig_c208c7ae79b4d1c0 = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).getBlockchainConfig(je(n, r));
+    return Je(function(t, n, r) {
+      const i = we(t).getBlockchainConfig(Le(n, r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbindgen_memory = function() {
     const t = d.memory;
     return me(t)
   }, e.wbg.__wbg_buffer_b7b08af79b0b0974 = function(t) {
-    const n = _e(t).buffer;
+    const n = we(t).buffer;
     return me(n)
   }, e.wbg.__wbg_newwithbyteoffsetandlength_8a2cb9ca96b27ec9 = function(t, n, r) {
-    const i = new Uint8Array(_e(t), n >>> 0, r >>> 0);
+    const i = new Uint8Array(we(t), n >>> 0, r >>> 0);
     return me(i)
   }, e.wbg.__wbg_randomFillSync_dc1e9a60c158336d = function() {
-    return Xe(function(t, n) {
-      _e(t).randomFillSync(oe(n))
+    return Je(function(t, n) {
+      we(t).randomFillSync(oe(n))
     }, arguments)
   }, e.wbg.__wbg_subarray_7c2e3576afe181d1 = function(t, n, r) {
-    const i = _e(t).subarray(n >>> 0, r >>> 0);
+    const i = we(t).subarray(n >>> 0, r >>> 0);
     return me(i)
   }, e.wbg.__wbg_getRandomValues_37fa2ca9e4e07fab = function() {
-    return Xe(function(t, n) {
-      _e(t).getRandomValues(_e(n))
+    return Je(function(t, n) {
+      we(t).getRandomValues(we(n))
     }, arguments)
   }, e.wbg.__wbg_new_ea1883e1e5e86686 = function(t) {
-    const n = new Uint8Array(_e(t));
+    const n = new Uint8Array(we(t));
     return me(n)
   }, e.wbg.__wbg_set_d1e79e2388520f18 = function(t, n, r) {
-    _e(t).set(_e(n), r >>> 0)
+    we(t).set(we(n), r >>> 0)
   }, e.wbg.__wbg_crypto_c48a774b022d20ac = function(t) {
-    const n = _e(t).crypto;
+    const n = we(t).crypto;
     return me(n)
   }, e.wbg.__wbg_process_298734cf255a885d = function(t) {
-    const n = _e(t).process;
+    const n = we(t).process;
     return me(n)
   }, e.wbg.__wbg_versions_e2e78e134e3e5d01 = function(t) {
-    const n = _e(t).versions;
+    const n = we(t).versions;
     return me(n)
   }, e.wbg.__wbg_node_1cd7a5d853dbea79 = function(t) {
-    const n = _e(t).node;
+    const n = we(t).node;
     return me(n)
   }, e.wbg.__wbg_require_8f08ceecec0f4fee = function() {
-    return Xe(function() {
+    return Je(function() {
       const t = module.require;
       return me(t)
     }, arguments)
   }, e.wbg.__wbindgen_is_function = function(t) {
-    return typeof _e(t) == "function"
+    return typeof we(t) == "function"
   }, e.wbg.__wbg_msCrypto_bcb970640f50a1e8 = function(t) {
-    const n = _e(t).msCrypto;
+    const n = we(t).msCrypto;
     return me(n)
   }, e.wbg.__wbg_newwithlength_ec548f448387c968 = function(t) {
     const n = new Uint8Array(t >>> 0);
     return me(n)
   }, e.wbg.__wbg_get_224d16597dbbfd96 = function() {
-    return Xe(function(t, n) {
-      const r = Reflect.get(_e(t), _e(n));
+    return Je(function(t, n) {
+      const r = Reflect.get(we(t), we(n));
       return me(r)
     }, arguments)
   }, e.wbg.__wbg_self_3093d5d1f7bcb682 = function() {
-    return Xe(function() {
+    return Je(function() {
       const t = self.self;
       return me(t)
     }, arguments)
   }, e.wbg.__wbg_window_3bcfc4d31bc012f8 = function() {
-    return Xe(function() {
+    return Je(function() {
       const t = window.window;
       return me(t)
     }, arguments)
   }, e.wbg.__wbg_globalThis_86b222e13bdf32ed = function() {
-    return Xe(function() {
+    return Je(function() {
       const t = globalThis.globalThis;
       return me(t)
     }, arguments)
   }, e.wbg.__wbg_global_e5a3fe56f8be9485 = function() {
-    return Xe(function() {
+    return Je(function() {
       const t = global.global;
       return me(t)
     }, arguments)
   }, e.wbg.__wbg_newnoargs_76313bd6ff35d0f2 = function(t, n) {
-    const r = new Function(je(t, n));
+    const r = new Function(Le(t, n));
     return me(r)
   }, e.wbg.__wbg_call_1084a111329e68ce = function() {
-    return Xe(function(t, n) {
-      const r = _e(t).call(_e(n));
+    return Je(function(t, n) {
+      const r = we(t).call(we(n));
       return me(r)
     }, arguments)
   }, e.wbg.__wbg_isArray_8364a5371e9737d8 = function(t) {
-    return Array.isArray(_e(t))
+    return Array.isArray(we(t))
   }, e.wbg.__wbg_call_89af060b4e1523f2 = function() {
-    return Xe(function(t, n, r) {
-      const i = _e(t).call(_e(n), _e(r));
+    return Je(function(t, n, r) {
+      const i = we(t).call(we(n), we(r));
       return me(i)
     }, arguments)
   }, e.wbg.__wbg_set_eacc7d73fefaafdf = function() {
-    return Xe(function(t, n, r) {
-      return Reflect.set(_e(t), _e(n), _e(r))
+    return Je(function(t, n, r) {
+      return Reflect.set(we(t), we(n), we(r))
     }, arguments)
   }, e.wbg.__wbg_stringify_bbf45426c92a6bf5 = function() {
-    return Xe(function(t) {
-      const n = JSON.stringify(_e(t));
+    return Je(function(t) {
+      const n = JSON.stringify(we(t));
       return me(n)
     }, arguments)
   }, e.wbg.__wbindgen_throw = function(t, n) {
-    throw new Error(je(t, n))
+    throw new Error(Le(t, n))
   }, e.wbg.__wbindgen_debug_string = function(t, n) {
-    const r = ia(_e(n)),
+    const r = aa(we(n)),
       i = ge(r, d.__wbindgen_malloc, d.__wbindgen_realloc),
       o = fe;
     $().setInt32(t + 4 * 1, o, !0), $().setInt32(t + 4 * 0, i, !0)
@@ -1668,207 +1669,157 @@ function es() {
     const n = oe(t).original;
     return n.cnt-- == 1 ? (n.a = 0, !0) : !1
   }, e.wbg.__wbg_then_95e6edc0f89b73b1 = function(t, n) {
-    const r = _e(t).then(_e(n));
+    const r = we(t).then(we(n));
     return me(r)
   }, e.wbg.__wbg_queueMicrotask_12a30234db4045d3 = function(t) {
-    queueMicrotask(_e(t))
+    queueMicrotask(we(t))
   }, e.wbg.__wbg_then_876bb3c633745cc6 = function(t, n, r) {
-    const i = _e(t).then(_e(n), _e(r));
+    const i = we(t).then(we(n), we(r));
     return me(i)
   }, e.wbg.__wbg_queueMicrotask_48421b3cc9052b68 = function(t) {
-    const n = _e(t).queueMicrotask;
+    const n = we(t).queueMicrotask;
     return me(n)
   }, e.wbg.__wbg_resolve_570458cb99d56a43 = function(t) {
-    const n = Promise.resolve(_e(t));
+    const n = Promise.resolve(we(t));
     return me(n)
   }, e.wbg.__wbindgen_closure_wrapper5481 = function(t, n, r) {
-    const i = ac(t, n, 981, oc);
+    const i = oc(t, n, 981, sc);
     return me(i)
   }, e
 }
 
-function ts(e, t) {
-  return d = e.exports, ns.__wbindgen_wasm_module = t, gn = null, Ir = null, d
+function ns(e, t) {
+  return d = e.exports, rs.__wbindgen_wasm_module = t, mn = null, Cr = null, d
 }
 
-function Yc(e) {
+function Xc(e) {
   if (d !== void 0) return d;
   typeof e < "u" && Object.getPrototypeOf(e) === Object.prototype ? {
     module: e
   } = e : console.warn("using deprecated parameters for `initSync()`; pass a single object instead");
-  const t = es();
+  const t = ts();
   e instanceof WebAssembly.Module || (e = new WebAssembly.Module(e));
   const n = new WebAssembly.Instance(e, t);
-  return ts(n, e)
+  return ns(n, e)
 }
-async function ns(e) {
+async function rs(e) {
   if (d !== void 0) return d;
   typeof e < "u" && Object.getPrototypeOf(e) === Object.prototype ? {
     module_or_path: e
   } = e : console.warn("using deprecated parameters for the initialization function; pass a single object instead"), typeof e > "u" && (e = new URL("/assets/nekoton_wasm_bg-CMYqFJ-k.wasm", import.meta.url));
-  const t = es();
+  const t = ts();
   (typeof e == "string" || typeof Request == "function" && e instanceof Request || typeof URL == "function" && e instanceof URL) && (e = fetch(e));
   const {
     instance: n,
     module: r
-  } = await Wc(await e, t);
-  return ts(n, r)
+  } = await Yc(await e, t);
+  return ns(n, r)
 }
-const Xc = Object.freeze(Object.defineProperty({
+const Jc = Object.freeze(Object.defineProperty({
     __proto__: null,
-    BytesQuery: ai,
-    ClockWithOffset: zt,
-    GenericContract: oi,
-    GqlConnection: Jo,
-    JrpcConnection: Qo,
-    ProtoConnection: qo,
-    ProxyConnection: Zo,
-    StringQuery: Or,
-    Transport: mn,
-    UnsignedMessage: si,
-    checkAddress: cc,
-    codeToTvc: Ic,
-    computeStorageFee: gc,
-    createExternalMessage: Vc,
-    createExternalMessageWithoutSignature: Hc,
-    createRawExternalMessage: $c,
-    decodeEvent: xc,
-    decodeInput: Oc,
-    decodeOutput: Uc,
-    decodeTransaction: Rc,
-    decodeTransactionEvents: jc,
-    default: ns,
-    ed25519_generateKeyPair: Nc,
-    ed25519_sign: Dc,
-    encodeInternalInput: Tc,
-    encodeInternalMessage: Ec,
-    executeLocal: mc,
-    extendSignature: Fc,
-    extractContractData: Sc,
-    extractPublicKey: Ac,
-    getBocHash: wc,
-    getCodeSalt: Mc,
-    getDataHash: zc,
-    getExpectedAddress: bc,
-    initSync: Yc,
-    makeFullAccountBoc: fc,
-    mergeTvc: Cc,
-    packIntoCell: vc,
-    parseFullAccountBoc: hc,
-    parseFullAccountStateInit: pc,
-    repackAddress: uc,
-    runLocal: dc,
-    setCodeSalt: Pc,
-    splitTvc: Bc,
-    unpackContractFields: yc,
-    unpackFromCell: kc,
-    unpackInitData: _c,
-    unpackTransactionTree: Lc,
-    verifySignature: Kc
+    BytesQuery: oi,
+    ClockWithOffset: Nt,
+    GenericContract: si,
+    GqlConnection: Qo,
+    JrpcConnection: qo,
+    ProtoConnection: Zo,
+    ProxyConnection: es,
+    StringQuery: xr,
+    Transport: bn,
+    UnsignedMessage: li,
+    checkAddress: uc,
+    codeToTvc: Cc,
+    computeStorageFee: mc,
+    createExternalMessage: Gc,
+    createExternalMessageWithoutSignature: Vc,
+    createRawExternalMessage: Hc,
+    decodeEvent: Uc,
+    decodeInput: xc,
+    decodeOutput: Rc,
+    decodeTransaction: jc,
+    decodeTransactionEvents: Lc,
+    default: rs,
+    ed25519_generateKeyPair: Dc,
+    ed25519_sign: Fc,
+    encodeInternalInput: Ec,
+    encodeInternalMessage: Oc,
+    executeLocal: bc,
+    extendSignature: Kc,
+    extractContractData: Ac,
+    extractPublicKey: Ic,
+    getBocHash: vc,
+    getCodeSalt: Tc,
+    getDataHash: Nc,
+    getExpectedAddress: yc,
+    initSync: Xc,
+    makeFullAccountBoc: hc,
+    mergeTvc: Bc,
+    packIntoCell: kc,
+    parseFullAccountBoc: pc,
+    parseFullAccountStateInit: gc,
+    repackAddress: dc,
+    runLocal: fc,
+    setCodeSalt: Mc,
+    splitTvc: Pc,
+    unpackContractFields: _c,
+    unpackFromCell: Sc,
+    unpackInitData: wc,
+    unpackTransactionTree: zc,
+    verifySignature: $c
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  Jc = Zl(Xc);
-var St = {};
-Object.defineProperty(St, "__esModule", {
+  Qc = ec(Jc);
+var At = {};
+Object.defineProperty(At, "__esModule", {
   value: !0
 });
-const Qc = {
+const qc = {
   ensureNekotonLoaded: void 0,
   nekoton: void 0,
   fetch: void 0,
   fetchAgent: () => {},
   debugLog: void 0
 };
-St.default = Qc;
-var rs = {},
-  qc = xr;
-xr.default = xr;
-xr.stable = os;
-xr.stableStringify = os;
-var Jr = "[...]",
-  is = "[Circular]",
-  _n = [],
-  yn = [];
+At.default = qc;
+var is = {},
+  Zc = Ur;
+Ur.default = Ur;
+Ur.stable = ss;
+Ur.stableStringify = ss;
+var Qr = "[...]",
+  as = "[Circular]",
+  wn = [],
+  _n = [];
 
-function as() {
+function os() {
   return {
     depthLimit: Number.MAX_SAFE_INTEGER,
     edgesLimit: Number.MAX_SAFE_INTEGER
   }
 }
 
-function xr(e, t, n, r) {
-  typeof r > "u" && (r = as()), aa(e, "", 0, [], void 0, 0, r);
+function Ur(e, t, n, r) {
+  typeof r > "u" && (r = os()), oa(e, "", 0, [], void 0, 0, r);
   var i;
   try {
-    yn.length === 0 ? i = JSON.stringify(e, t, n) : i = JSON.stringify(e, ss(t), n)
+    _n.length === 0 ? i = JSON.stringify(e, t, n) : i = JSON.stringify(e, ls(t), n)
   } catch {
     return JSON.stringify("[unable to serialize, circular reference is too complex to analyze]")
   } finally {
-    for (; _n.length !== 0;) {
-      var o = _n.pop();
+    for (; wn.length !== 0;) {
+      var o = wn.pop();
       o.length === 4 ? Object.defineProperty(o[0], o[1], o[3]) : o[0][o[1]] = o[2]
     }
   }
   return i
 }
 
-function Qn(e, t, n, r) {
+function qn(e, t, n, r) {
   var i = Object.getOwnPropertyDescriptor(r, n);
   i.get !== void 0 ? i.configurable ? (Object.defineProperty(r, n, {
     value: e
-  }), _n.push([r, n, t, i])) : yn.push([t, n, e]) : (r[n] = e, _n.push([r, n, t]))
-}
-
-function aa(e, t, n, r, i, o, a) {
-  o += 1;
-  var s;
-  if (typeof e == "object" && e !== null) {
-    for (s = 0; s < r.length; s++)
-      if (r[s] === e) {
-        Qn(is, e, t, i);
-        return
-      } if (typeof a.depthLimit < "u" && o > a.depthLimit) {
-      Qn(Jr, e, t, i);
-      return
-    }
-    if (typeof a.edgesLimit < "u" && n + 1 > a.edgesLimit) {
-      Qn(Jr, e, t, i);
-      return
-    }
-    if (r.push(e), Array.isArray(e))
-      for (s = 0; s < e.length; s++) aa(e[s], s, s, r, e, o, a);
-    else {
-      var c = Object.keys(e);
-      for (s = 0; s < c.length; s++) {
-        var f = c[s];
-        aa(e[f], f, s, r, e, o, a)
-      }
-    }
-    r.pop()
-  }
-}
-
-function Zc(e, t) {
-  return e < t ? -1 : e > t ? 1 : 0
-}
-
-function os(e, t, n, r) {
-  typeof r > "u" && (r = as());
-  var i = oa(e, "", 0, [], void 0, 0, r) || e,
-    o;
-  try {
-    yn.length === 0 ? o = JSON.stringify(i, t, n) : o = JSON.stringify(i, ss(t), n)
-  } catch {
-    return JSON.stringify("[unable to serialize, circular reference is too complex to analyze]")
-  } finally {
-    for (; _n.length !== 0;) {
-      var a = _n.pop();
-      a.length === 4 ? Object.defineProperty(a[0], a[1], a[3]) : a[0][a[1]] = a[2]
-    }
-  }
-  return o
+  }), wn.push([r, n, t, i])) : _n.push([t, n, e]) : (r[n] = e, wn.push([r, n, t]))
 }
 
 function oa(e, t, n, r, i, o, a) {
@@ -1877,7 +1828,57 @@ function oa(e, t, n, r, i, o, a) {
   if (typeof e == "object" && e !== null) {
     for (s = 0; s < r.length; s++)
       if (r[s] === e) {
-        Qn(is, e, t, i);
+        qn(as, e, t, i);
+        return
+      } if (typeof a.depthLimit < "u" && o > a.depthLimit) {
+      qn(Qr, e, t, i);
+      return
+    }
+    if (typeof a.edgesLimit < "u" && n + 1 > a.edgesLimit) {
+      qn(Qr, e, t, i);
+      return
+    }
+    if (r.push(e), Array.isArray(e))
+      for (s = 0; s < e.length; s++) oa(e[s], s, s, r, e, o, a);
+    else {
+      var c = Object.keys(e);
+      for (s = 0; s < c.length; s++) {
+        var f = c[s];
+        oa(e[f], f, s, r, e, o, a)
+      }
+    }
+    r.pop()
+  }
+}
+
+function eu(e, t) {
+  return e < t ? -1 : e > t ? 1 : 0
+}
+
+function ss(e, t, n, r) {
+  typeof r > "u" && (r = os());
+  var i = sa(e, "", 0, [], void 0, 0, r) || e,
+    o;
+  try {
+    _n.length === 0 ? o = JSON.stringify(i, t, n) : o = JSON.stringify(i, ls(t), n)
+  } catch {
+    return JSON.stringify("[unable to serialize, circular reference is too complex to analyze]")
+  } finally {
+    for (; wn.length !== 0;) {
+      var a = wn.pop();
+      a.length === 4 ? Object.defineProperty(a[0], a[1], a[3]) : a[0][a[1]] = a[2]
+    }
+  }
+  return o
+}
+
+function sa(e, t, n, r, i, o, a) {
+  o += 1;
+  var s;
+  if (typeof e == "object" && e !== null) {
+    for (s = 0; s < r.length; s++)
+      if (r[s] === e) {
+        qn(as, e, t, i);
         return
       } try {
       if (typeof e.toJSON == "function") return
@@ -1885,49 +1886,49 @@ function oa(e, t, n, r, i, o, a) {
       return
     }
     if (typeof a.depthLimit < "u" && o > a.depthLimit) {
-      Qn(Jr, e, t, i);
+      qn(Qr, e, t, i);
       return
     }
     if (typeof a.edgesLimit < "u" && n + 1 > a.edgesLimit) {
-      Qn(Jr, e, t, i);
+      qn(Qr, e, t, i);
       return
     }
     if (r.push(e), Array.isArray(e))
-      for (s = 0; s < e.length; s++) oa(e[s], s, s, r, e, o, a);
+      for (s = 0; s < e.length; s++) sa(e[s], s, s, r, e, o, a);
     else {
       var c = {},
-        f = Object.keys(e).sort(Zc);
+        f = Object.keys(e).sort(eu);
       for (s = 0; s < f.length; s++) {
         var u = f[s];
-        oa(e[u], u, s, r, e, o, a), c[u] = e[u]
+        sa(e[u], u, s, r, e, o, a), c[u] = e[u]
       }
-      if (typeof i < "u") _n.push([i, t, e]), i[t] = c;
+      if (typeof i < "u") wn.push([i, t, e]), i[t] = c;
       else return c
     }
     r.pop()
   }
 }
 
-function ss(e) {
+function ls(e) {
   return e = typeof e < "u" ? e : function(t, n) {
       return n
     },
     function(t, n) {
-      if (yn.length > 0)
-        for (var r = 0; r < yn.length; r++) {
-          var i = yn[r];
+      if (_n.length > 0)
+        for (var r = 0; r < _n.length; r++) {
+          var i = _n[r];
           if (i[1] === t && i[0] === n) {
-            n = i[2], yn.splice(r, 1);
+            n = i[2], _n.splice(r, 1);
             break
           }
         }
       return e.call(this, t, n)
     }
 }
-var pt = {},
-  nn = {},
-  Ye = {},
-  Zn = {};
+var gt = {},
+  rn = {},
+  Xe = {},
+  er = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", {
     value: !0
@@ -2077,14 +2078,14 @@ var pt = {},
     return _ = (_ + 1) % u, _
   }
   e.getUniqueId = B
-})(Zn);
-Object.defineProperty(Ye, "__esModule", {
+})(er);
+Object.defineProperty(Xe, "__esModule", {
   value: !0
 });
-Ye.parsePartialTokensObject = Ye.parseTokensObject = Ye.serializeTokensObject = Ye.parseAccountInteraction = Ye.parsePermissions = Ye.parseMessage = Ye.serializeMessage = Ye.parseTransaction = Ye.serializeTransaction = void 0;
-const Ur = Zn;
+Xe.parsePartialTokensObject = Xe.parseTokensObject = Xe.serializeTokensObject = Xe.parseAccountInteraction = Xe.parsePermissions = Xe.parseMessage = Xe.serializeMessage = Xe.parseTransaction = Xe.serializeTransaction = void 0;
+const Rr = er;
 
-function eu(e) {
+function tu(e) {
   return {
     id: {
       hash: e.id.hash,
@@ -2101,22 +2102,22 @@ function eu(e) {
     origStatus: e.origStatus,
     endStatus: e.endStatus,
     totalFees: e.totalFees,
-    inMessage: sa(e.inMessage),
-    outMessages: e.outMessages.map(sa)
-  }
-}
-Ye.serializeTransaction = eu;
-
-function tu(e) {
-  return {
-    ...e,
     inMessage: la(e.inMessage),
     outMessages: e.outMessages.map(la)
   }
 }
-Ye.parseTransaction = tu;
+Xe.serializeTransaction = tu;
 
-function sa(e) {
+function nu(e) {
+  return {
+    ...e,
+    inMessage: ca(e.inMessage),
+    outMessages: e.outMessages.map(ca)
+  }
+}
+Xe.parseTransaction = nu;
+
+function la(e) {
   return {
     hash: e.hash,
     src: e.src ? e.src.toString() : void 0,
@@ -2128,75 +2129,75 @@ function sa(e) {
     bodyHash: e.bodyHash
   }
 }
-Ye.serializeMessage = sa;
-
-function la(e) {
-  return {
-    ...e,
-    src: e.src ? new Ur.Address(e.src) : void 0,
-    dst: e.dst ? new Ur.Address(e.dst) : void 0
-  }
-}
-Ye.parseMessage = la;
-
-function nu(e) {
-  return {
-    ...e,
-    accountInteraction: e.accountInteraction ? ls(e.accountInteraction) : void 0
-  }
-}
-Ye.parsePermissions = nu;
-
-function ls(e) {
-  return {
-    ...e,
-    address: new Ur.Address(e.address)
-  }
-}
-Ye.parseAccountInteraction = ls;
-
-function ru(e) {
-  return ca(e)
-}
-Ye.serializeTokensObject = ru;
+Xe.serializeMessage = la;
 
 function ca(e) {
-  if (typeof e == "object" && (0, Ur.isAddressObject)(e)) return e.toString();
+  return {
+    ...e,
+    src: e.src ? new Rr.Address(e.src) : void 0,
+    dst: e.dst ? new Rr.Address(e.dst) : void 0
+  }
+}
+Xe.parseMessage = ca;
+
+function ru(e) {
+  return {
+    ...e,
+    accountInteraction: e.accountInteraction ? cs(e.accountInteraction) : void 0
+  }
+}
+Xe.parsePermissions = ru;
+
+function cs(e) {
+  return {
+    ...e,
+    address: new Rr.Address(e.address)
+  }
+}
+Xe.parseAccountInteraction = cs;
+
+function iu(e) {
+  return ua(e)
+}
+Xe.serializeTokensObject = iu;
+
+function ua(e) {
+  if (typeof e == "object" && (0, Rr.isAddressObject)(e)) return e.toString();
   if (Array.isArray(e)) {
     const t = [];
-    for (const n of e) t.push(ca(n));
+    for (const n of e) t.push(ua(n));
     return t
   } else if (e != null && typeof e == "object") {
     const t = {};
-    for (const [n, r] of Object.entries(e)) t[n] = ca(r);
+    for (const [n, r] of Object.entries(e)) t[n] = ua(r);
     return t
   } else return e
 }
 
-function iu(e, t) {
-  const n = {};
-  for (const r of e) n[r.name] = bn(r, t[r.name]);
-  return n
-}
-Ye.parseTokensObject = iu;
-
 function au(e, t) {
   const n = {};
-  for (const r of e) Object.prototype.hasOwnProperty.call(t, r.name) && (n[r.name] = bn(r, !t[r.name]));
+  for (const r of e) n[r.name] = yn(r, t[r.name]);
   return n
 }
-Ye.parsePartialTokensObject = au;
+Xe.parseTokensObject = au;
 
-function bn(e, t) {
+function ou(e, t) {
+  const n = {};
+  for (const r of e) Object.prototype.hasOwnProperty.call(t, r.name) && (n[r.name] = yn(r, !t[r.name]));
+  return n
+}
+Xe.parsePartialTokensObject = ou;
+
+function yn(e, t) {
   if (e.type.startsWith("map")) {
     const n = e.type.indexOf(","),
       r = e.type.slice(4, n),
       i = e.type.slice(n + 1, -1),
       o = [];
-    for (const [a, s] of t) o.push([bn({
+    for (const [a, s] of t) o.push([yn({
       name: "",
       type: r
-    }, a), bn({
+    }, a), yn({
       name: "",
       type: i,
       components: e.components
@@ -2213,7 +2214,7 @@ function bn(e, t) {
           components: e.components
         },
         a = [];
-      for (const s of t) a.push(bn(o, s));
+      for (const s of t) a.push(yn(o, s));
       return a
     } else if (r) {
       if (t == null) return null;
@@ -2223,24 +2224,24 @@ function bn(e, t) {
           type: i,
           components: e.components
         };
-        return bn(o, t)
+        return yn(o, t)
       }
     } else if (i === "tuple") {
       const o = {};
       if (e.components != null)
-        for (const a of e.components) o[a.name] = bn(a, t[a.name]);
+        for (const a of e.components) o[a.name] = yn(a, t[a.name]);
       return o
-    } else return i === "address" ? new Ur.Address(t) : t
+    } else return i === "address" ? new Rr.Address(t) : t
   }
 }
-var Rr = {};
-Object.defineProperty(Rr, "__esModule", {
+var jr = {};
+Object.defineProperty(jr, "__esModule", {
   value: !0
 });
-Rr.Subscriber = void 0;
-const Er = Zn,
-  ou = Ye;
-class su {
+jr.Subscriber = void 0;
+const Or = er,
+  su = Xe;
+class lu {
   constructor(t) {
     this.provider = t, this.subscriptions = new Map, this.scanners = new Map, this.unsubscribe = async () => this._unsubscribe()
   }
@@ -2248,9 +2249,9 @@ class su {
     return this._addSubscription("transactionsFound", t, !1)
   }
   trace(t) {
-    const n = (0, Er.getUniqueId)();
-    return new ut((r, i) => {
-      const o = new cu(this.provider, {
+    const n = (0, Or.getUniqueId)();
+    return new dt((r, i) => {
+      const o = new uu(this.provider, {
         origin: t,
         onData: r,
         onEnd: a => {
@@ -2261,12 +2262,12 @@ class su {
     }, async () => {
       const r = this.scanners.get(n);
       r != null && (this.scanners.delete(n), await r.stop())
-    }, Xi, !0)
+    }, Ji, !0)
   }
   oldTransactions(t, n) {
-    const r = (0, Er.getUniqueId)();
-    return new ut((i, o) => {
-      const a = new lu(this.provider, {
+    const r = (0, Or.getUniqueId)();
+    return new dt((i, o) => {
+      const a = new cu(this.provider, {
         address: t,
         onData: i,
         onEnd: s => {
@@ -2278,7 +2279,7 @@ class su {
     }, async () => {
       const i = this.scanners.get(r);
       i != null && (this.scanners.delete(r), await i.stop())
-    }, Xi, !0)
+    }, Ji, !0)
   }
   states(t) {
     return this._addSubscription("contractStateChanged", t, !1)
@@ -2315,8 +2316,8 @@ class su {
         }
         c.contractStateChanged == null && c.transactionsFound == null && this.subscriptions.delete(i)
       },
-      a = (0, Er.getUniqueId)();
-    return new ut((s, c) => {
+      a = (0, Or.getUniqueId)();
+    return new dt((s, c) => {
       const f = this.subscriptions.get(i);
       let u = f == null ? void 0 : f[t];
       const _ = {
@@ -2326,7 +2327,7 @@ class su {
         B = {
           onData: s,
           onEnd: c,
-          queue: new Ca,
+          queue: new Ba,
           state: _
         };
       if (u != null) return u.handlers.set(a, B), Promise.resolve();
@@ -2356,14 +2357,14 @@ class su {
       }, f == null ? this.subscriptions.set(i, {
         [t]: u
       }) : f[t] = u, S.then(() => {})
-    }, () => o(a), Xi, r)
+    }, () => o(a), Ji, r)
   }
 }
-Rr.Subscriber = su;
-async function Xi(e, t) {
+jr.Subscriber = lu;
+async function Ji(e, t) {
   return t(e)
 }
-class ut {
+class dt {
   constructor(t, n, r, i) {
     this.makeProducer = t, this.stopProducer = n, this.extractor = r, this.isFinite = i, this.fold = this.onlyFinite((o, a, s) => {
       let c = o;
@@ -2438,7 +2439,7 @@ class ut {
     n != null && (n.subscribed = r)
   }
   merge(t) {
-    return new ut((n, r) => {
+    return new dt((n, r) => {
       const i = {
           stopped: !1,
           counter: 0
@@ -2455,31 +2456,31 @@ class ut {
     const t = {
       index: 0
     };
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => r({
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => r({
       index: t.index++,
       item: i
     })), this.isFinite)
   }
   tap(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => (await t(i), r(i))), this.isFinite)
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => (await t(i), r(i))), this.isFinite)
   }
   filter(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => await t(i) ? r(i) : !0), this.isFinite)
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => await t(i) ? r(i) : !0), this.isFinite)
   }
   filterMap(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
       const o = await t(i);
       return o !== void 0 ? r(o) : !0
     }), this.isFinite)
   }
   map(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
       const o = await t(i);
       return r(o)
     }), this.isFinite)
   }
   flatMap(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
       const o = await t(i);
       for (const a of o)
         if (!await r(a)) return !1;
@@ -2490,25 +2491,25 @@ class ut {
     const n = {
       index: 0
     };
-    return new ut(this.makeProducer, this.stopProducer, (r, i) => this.extractor(r, o => n.index >= t ? i(o) : (++n.index, !0)), this.isFinite)
+    return new dt(this.makeProducer, this.stopProducer, (r, i) => this.extractor(r, o => n.index >= t ? i(o) : (++n.index, !0)), this.isFinite)
   }
   skipWhile(t) {
     const n = {
       shouldSkip: !0
     };
-    return new ut(this.makeProducer, this.stopProducer, (r, i) => this.extractor(r, async o => !n.shouldSkip || !await t(o) ? (n.shouldSkip = !1, i(o)) : !0), this.isFinite)
+    return new dt(this.makeProducer, this.stopProducer, (r, i) => this.extractor(r, async o => !n.shouldSkip || !await t(o) ? (n.shouldSkip = !1, i(o)) : !0), this.isFinite)
   }
   take(t) {
     const n = {
       index: 0
     };
-    return new ut(this.makeProducer, this.stopProducer, (r, i) => this.extractor(r, o => n.index < t ? (++n.index, i(o) && n.index < t) : !1), !0)
+    return new dt(this.makeProducer, this.stopProducer, (r, i) => this.extractor(r, o => n.index < t ? (++n.index, i(o) && n.index < t) : !1), !0)
   }
   takeWhile(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => await t(i) ? r(i) : !1), !0)
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => await t(i) ? r(i) : !1), !0)
   }
   takeWhileMap(t) {
-    return new ut(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
+    return new dt(this.makeProducer, this.stopProducer, (n, r) => this.extractor(n, async i => {
       const o = await t(i);
       return o !== void 0 ? r(o) : !1
     }), !0)
@@ -2517,9 +2518,9 @@ class ut {
     if (this.isFinite) return t
   }
 }
-class lu {
+class cu {
   constructor(t, n) {
-    this.provider = t, this.params = n, this.queue = new Ca, this.isRunning = !1
+    this.provider = t, this.params = n, this.queue = new Ba, this.isRunning = !1
   }
   start() {
     this.isRunning || this.promise != null || (this.isRunning = !0, this.promise = (async () => {
@@ -2536,7 +2537,7 @@ class lu {
           continuation: this.continuation
         });
         if (n.complete = !n.complete && r.length == null, !this.isRunning || n.complete) break;
-        const o = r.filter(s => (t.fromLt == null || Er.LT_COLLATOR.compare(s.id.lt, t.fromLt) > 0) && (t.fromUtime == null || s.createdAt > t.fromUtime));
+        const o = r.filter(s => (t.fromLt == null || Or.LT_COLLATOR.compare(s.id.lt, t.fromLt) > 0) && (t.fromUtime == null || s.createdAt > t.fromUtime));
         if (o.length == 0) {
           n.complete = !0;
           break
@@ -2567,9 +2568,9 @@ class lu {
     this.isRunning = !1, this.queue.clear(), this.promise != null ? await this.promise : this.params.onEnd(!1)
   }
 }
-class cu {
+class uu {
   constructor(t, n) {
-    this.provider = t, this.params = n, this.queue = new Ca, this.isRunning = !1, this.semaphore = new Er.Semaphore(10)
+    this.provider = t, this.params = n, this.queue = new Ba, this.isRunning = !1, this.semaphore = new Or.Semaphore(10)
   }
   start() {
     if (this.isRunning || this.promise != null) return;
@@ -2598,7 +2599,7 @@ class cu {
                 })).finally(() => u());
                 if (a.stopped) return;
                 if (_.transaction != null) {
-                  const S = (0, ou.parseTransaction)(_.transaction);
+                  const S = (0, su.parseTransaction)(_.transaction);
                   return S.account = S.inMessage.dst, S
                 }
                 let B;
@@ -2659,7 +2660,7 @@ class cu {
     this.semaphore.releaseAll()
   }
 }
-class Ca {
+class Ba {
   constructor() {
     this.queue = [], this.workingOnPromise = !1
   }
@@ -2679,21 +2680,21 @@ class Ca {
     }))
   }
 }
-var wn = {};
-Object.defineProperty(wn, "__esModule", {
+var vn = {};
+Object.defineProperty(vn, "__esModule", {
   value: !0
 });
-wn.TvmException = wn.Contract = void 0;
-const Yn = Zn,
-  Je = Ye;
-class uu {
+vn.TvmException = vn.Contract = void 0;
+const Xn = er,
+  Qe = Xe;
+class du {
   constructor(t, n, r) {
     if (!Array.isArray(n.functions)) throw new Error("Invalid abi. Functions array required");
     if (!Array.isArray(n.events)) throw new Error("Invalid abi. Events array required");
     this._provider = t, this._abi = JSON.stringify(n), this.methodsAbi = n.functions.reduce((i, o) => (o.inputs == null && (o.inputs = []), o.outputs == null && (o.outputs = []), i[o.name] = o, i), {}), this.eventsAbi = n.events.reduce((i, o) => (o.inputs == null && (o.inputs = []), i[o.name] = o, i), {}), this.fieldsAbi = n.fields, this._address = r, this._methods = new Proxy({}, {
       get: (i, o) => {
         const a = this.methodsAbi[o];
-        return (s = {}) => new du(this._provider, a, this._abi, this._address, o, s)
+        return (s = {}) => new fu(this._provider, a, this._abi, this._address, o, s)
       }
     }), this._fields = new Proxy({}, {
       get: (i, o) => async (a = {}) => {
@@ -2708,7 +2709,7 @@ class uu {
           allowPartial: (a == null ? void 0 : a.allowPartial) == null ? !1 : a.allowPartial
         });
         if (s == null) throw c == null ? new Error("Account does not exist") : c.isDeployed ? new Error("Invalid account data") : new Error("Account is not deployed");
-        const f = (0, Je.parseTokensObject)(this.fieldsAbi, s);
+        const f = (0, Qe.parseTokensObject)(this.fieldsAbi, s);
         if (f == null || !Object.prototype.hasOwnProperty.call(f, o)) throw new Error("Unknown field");
         return f[o]
       }
@@ -2743,7 +2744,7 @@ class uu {
       allowPartial: t.allowPartial == null ? !1 : t.allowPartial
     });
     return {
-      fields: n != null ? (0, Je.parseTokensObject)(this.fieldsAbi, n) : void 0,
+      fields: n != null ? (0, Qe.parseTokensObject)(this.fieldsAbi, n) : void 0,
       state: r
     }
   }
@@ -2769,7 +2770,7 @@ class uu {
     let o = t.subscriber;
     const a = o == null;
     o == null && (o = new this._provider.Subscriber);
-    const s = await ((n == null ? void 0 : n.fromLt) != null || (n == null ? void 0 : n.fromUtime) != null ? o.oldTransactions(this._address, n).merge(o.transactions(this._address)) : o.transactions(this.address)).flatMap(c => c.transactions).takeWhile(c => n == null || (n.fromLt == null || Yn.LT_COLLATOR.compare(c.id.lt, n.fromLt) > 0) && (n.fromUtime == null || c.createdAt > n.fromUtime) && (n.toLt == null || Yn.LT_COLLATOR.compare(c.id.lt, n.toLt) < 0) && (n.toUtime == null || c.createdAt < n.toUtime)).flatMap(c => this.decodeTransactionEvents({
+    const s = await ((n == null ? void 0 : n.fromLt) != null || (n == null ? void 0 : n.fromUtime) != null ? o.oldTransactions(this._address, n).merge(o.transactions(this._address)) : o.transactions(this.address)).flatMap(c => c.transactions).takeWhile(c => n == null || (n.fromLt == null || Xn.LT_COLLATOR.compare(c.id.lt, n.fromLt) > 0) && (n.fromUtime == null || c.createdAt > n.fromUtime) && (n.toLt == null || Xn.LT_COLLATOR.compare(c.id.lt, n.toLt) < 0) && (n.toUtime == null || c.createdAt < n.toUtime)).flatMap(c => this.decodeTransactionEvents({
       transaction: c
     }).then(f => (f.forEach(u => u.transaction = c), f))).filterMap(async c => {
       if (i == null || await i(c)) return c
@@ -2794,7 +2795,7 @@ class uu {
         continuation: s
       });
       if (c.length === null) break;
-      const u = c.filter(_ => ((n == null ? void 0 : n.fromLt) == null || Yn.LT_COLLATOR.compare(_.id.lt, n.fromLt) > 0) && ((n == null ? void 0 : n.fromUtime) == null || _.createdAt > n.fromUtime) && ((n == null ? void 0 : n.toLt) == null || Yn.LT_COLLATOR.compare(_.id.lt, n.toLt) < 0) && ((n == null ? void 0 : n.toUtime) == null || _.createdAt < n.toUtime));
+      const u = c.filter(_ => ((n == null ? void 0 : n.fromLt) == null || Xn.LT_COLLATOR.compare(_.id.lt, n.fromLt) > 0) && ((n == null ? void 0 : n.fromUtime) == null || _.createdAt > n.fromUtime) && ((n == null ? void 0 : n.toLt) == null || Xn.LT_COLLATOR.compare(_.id.lt, n.toLt) < 0) && ((n == null ? void 0 : n.toUtime) == null || _.createdAt < n.toUtime));
       if (u.length > 0) {
         const _ = await Promise.all(u.map(async B => ({
           tx: B,
@@ -2826,7 +2827,7 @@ class uu {
     await this._provider.ensureInitialized();
     try {
       const n = await this._provider.rawApi.decodeTransaction({
-        transaction: (0, Je.serializeTransaction)(t.transaction),
+        transaction: (0, Qe.serializeTransaction)(t.transaction),
         abi: this._abi,
         method: t.methods
       });
@@ -2838,8 +2839,8 @@ class uu {
       } = n, a = this.methodsAbi[r];
       return {
         method: r,
-        input: a.inputs != null ? (0, Je.parseTokensObject)(a.inputs, i) : {},
-        output: a.outputs != null ? (0, Je.parseTokensObject)(a.outputs, o) : {}
+        input: a.inputs != null ? (0, Qe.parseTokensObject)(a.inputs, i) : {},
+        output: a.outputs != null ? (0, Qe.parseTokensObject)(a.outputs, o) : {}
       }
     } catch {
       return
@@ -2851,7 +2852,7 @@ class uu {
       const {
         events: n
       } = await this._provider.rawApi.decodeTransactionEvents({
-        transaction: (0, Je.serializeTransaction)(t.transaction),
+        transaction: (0, Qe.serializeTransaction)(t.transaction),
         abi: this._abi
       }), r = [];
       for (const {
@@ -2862,7 +2863,7 @@ class uu {
         const a = this.eventsAbi[i];
         r.push({
           event: i,
-          data: a.inputs != null ? (0, Je.parseTokensObject)(a.inputs, o) : {}
+          data: a.inputs != null ? (0, Qe.parseTokensObject)(a.inputs, o) : {}
         })
       }
       return r
@@ -2886,7 +2887,7 @@ class uu {
       } = n, o = this.methodsAbi[r];
       return {
         method: r,
-        input: o.inputs != null ? (0, Je.parseTokensObject)(o.inputs, i) : {}
+        input: o.inputs != null ? (0, Qe.parseTokensObject)(o.inputs, i) : {}
       }
     } catch {
       return
@@ -2907,7 +2908,7 @@ class uu {
       } = n, o = this.methodsAbi[r];
       return {
         method: r,
-        output: o.outputs != null ? (0, Je.parseTokensObject)(o.outputs, i) : {}
+        output: o.outputs != null ? (0, Qe.parseTokensObject)(o.outputs, i) : {}
       }
     } catch {
       return
@@ -2928,23 +2929,23 @@ class uu {
       } = n, o = this.eventsAbi[r];
       return {
         event: r,
-        data: o.inputs != null ? (0, Je.parseTokensObject)(o.inputs, i) : {}
+        data: o.inputs != null ? (0, Qe.parseTokensObject)(o.inputs, i) : {}
       }
     } catch {
       return
     }
   }
 }
-wn.Contract = uu;
-class cs extends Error {
+vn.Contract = du;
+class us extends Error {
   constructor(t) {
     super(`TvmException: ${t}`), this.code = t
   }
 }
-wn.TvmException = cs;
-class du {
+vn.TvmException = us;
+class fu {
   constructor(t, n, r, i, o, a) {
-    this.provider = t, this.functionAbi = n, this.abi = r, this.address = i, this.method = o, this.params = (0, Je.serializeTokensObject)(a)
+    this.provider = t, this.functionAbi = n, this.abi = r, this.address = i, this.method = o, this.params = (0, Qe.serializeTokensObject)(a)
   }
   async send(t) {
     await this.provider.ensureInitialized();
@@ -2962,11 +2963,11 @@ class du {
       },
       stateInit: t.stateInit
     });
-    return (0, Je.parseTransaction)(n)
+    return (0, Qe.parseTransaction)(n)
   }
   async sendDelayed(t) {
     await this.provider.ensureInitialized();
-    const n = new Yn.DelayedTransactions,
+    const n = new Xn.DelayedTransactions,
       r = await this.provider.subscribe("messageStatusUpdated");
     r.on("data", a => {
       a.address.equals(t.from) && n.fillTransaction(a.hash, a.transaction)
@@ -3025,11 +3026,11 @@ class du {
       let B;
       try {
         const y = await this.provider.rawApi.decodeTransaction({
-          transaction: (0, Je.serializeTransaction)(_),
+          transaction: (0, Qe.serializeTransaction)(_),
           abi: this.abi,
           method: this.method
         });
-        y != null && (B = this.functionAbi.outputs != null ? (0, Je.parseTokensObject)(this.functionAbi.outputs, y.output) : {})
+        y != null && (B = this.functionAbi.outputs != null ? (0, Qe.parseTokensObject)(this.functionAbi.outputs, y.output) : {})
       } catch (y) {
         console.error(y)
       }
@@ -3081,13 +3082,13 @@ class du {
         } : void 0
       });
     return {
-      transaction: (0, Je.parseTransaction)(r),
-      output: i != null ? (0, Je.parseTokensObject)(this.functionAbi.outputs, i) : void 0
+      transaction: (0, Qe.parseTransaction)(r),
+      output: i != null ? (0, Qe.parseTokensObject)(this.functionAbi.outputs, i) : void 0
     }
   }
   async sendExternalDelayed(t) {
     await this.provider.ensureInitialized();
-    const n = new Yn.DelayedTransactions,
+    const n = new Xn.DelayedTransactions,
       r = await this.provider.subscribe("messageStatusUpdated");
     r.on("data", a => {
       a.address.equals(this.address) && n.fillTransaction(a.hash, a.transaction)
@@ -3127,8 +3128,8 @@ class du {
         params: this.params
       }
     });
-    if (n == null || r != 0) throw new cs(r);
-    return (0, Je.parseTokensObject)(this.functionAbi.outputs, n)
+    if (n == null || r != 0) throw new us(r);
+    return (0, Qe.parseTokensObject)(this.functionAbi.outputs, n)
   }
   async executeExternal(t) {
     await this.provider.ensureInitialized();
@@ -3156,9 +3157,9 @@ class du {
       } : void 0
     });
     return {
-      transaction: (0, Je.parseTransaction)(n),
+      transaction: (0, Qe.parseTransaction)(n),
       newState: r,
-      output: i !== void 0 ? (0, Je.parseTokensObject)(this.functionAbi.outputs, i) : void 0
+      output: i !== void 0 ? (0, Qe.parseTokensObject)(this.functionAbi.outputs, i) : void 0
     }
   }
   async executeInternal(t) {
@@ -3189,9 +3190,9 @@ class du {
       } : void 0
     });
     return {
-      transaction: (0, Je.parseTransaction)(n),
+      transaction: (0, Qe.parseTransaction)(n),
       newState: r,
-      output: i !== void 0 ? (0, Je.parseTokensObject)(this.functionAbi.outputs, i) : void 0
+      output: i !== void 0 ? (0, Qe.parseTokensObject)(this.functionAbi.outputs, i) : void 0
     }
   }
   async encodeInternal() {
@@ -3206,8 +3207,8 @@ class du {
     return t
   }
 }
-var us = {};
-Object.defineProperty(us, "__esModule", {
+var ds = {};
+Object.defineProperty(ds, "__esModule", {
   value: !0
 });
 (function(e) {
@@ -3244,19 +3245,19 @@ Object.defineProperty(us, "__esModule", {
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.ProviderNotInitializedException = e.ProviderNotFoundException = e.ProviderRpcClient = e.hasEverscaleProvider = e.LT_COLLATOR = e.isAddressObject = e.mergeTransactions = e.MessageExpiredException = e.AddressLiteral = e.Address = e.Subscriber = void 0;
-  const o = Ye,
-    a = Zn,
-    s = r(Rr),
-    c = r(wn);
-  i(us, e), i(Ye, e), i(wn, e);
-  var f = Rr;
+  const o = Xe,
+    a = er,
+    s = r(jr),
+    c = r(vn);
+  i(ds, e), i(Xe, e), i(vn, e);
+  var f = jr;
   Object.defineProperty(e, "Subscriber", {
     enumerable: !0,
     get: function() {
       return f.Subscriber
     }
   });
-  var u = Zn;
+  var u = er;
   Object.defineProperty(e, "Address", {
     enumerable: !0,
     get: function() {
@@ -3339,7 +3340,7 @@ Object.defineProperty(us, "__esModule", {
         if (this._provider = y(), this._provider != null) ne();
         else {
           const q = window.__hasEverscaleProvider === !0 ? "ever#initialized" : "ton#initialized";
-          window.addEventListener(q, we => {
+          window.addEventListener(q, ve => {
             this._provider = y(), ne()
           })
         }
@@ -3386,28 +3387,28 @@ Object.defineProperty(us, "__esModule", {
     }
     async subscribe(h, P) {
       class k {
-        constructor(q, we) {
-          this._subscribe = q, this._unsubscribe = we, this._listeners = {
+        constructor(q, ve) {
+          this._subscribe = q, this._unsubscribe = ve, this._listeners = {
             data: [],
             subscribed: [],
             unsubscribed: []
           }, this._subscribed = !1, this.subscribe = async () => {
             if (!this._subscribed) {
               this._subscribed = !0, await this._subscribe(this);
-              for (const ke of this._listeners.subscribed) ke()
+              for (const Se of this._listeners.subscribed) Se()
             }
           }, this.unsubscribe = async () => {
             if (this._subscribed) {
               this._subscribed = !1, await this._unsubscribe();
-              for (const ke of this._listeners.unsubscribed) ke()
+              for (const Se of this._listeners.unsubscribed) Se()
             }
           }
         }
-        on(q, we) {
-          return this._listeners[q].push(we), this
+        on(q, ve) {
+          return this._listeners[q].push(ve), this
         }
         notify(q) {
-          for (const we of this._listeners.data) we(q)
+          for (const ve of this._listeners.data) ve(q)
         }
       }
       const T = this._subscriptions[h],
@@ -3420,8 +3421,8 @@ Object.defineProperty(us, "__esModule", {
         case "permissionsChanged":
         case "loggedOut": {
           const ne = new k(async q => {
-            T.has(J) || T.set(J, we => {
-              q.notify(we)
+            T.has(J) || T.set(J, ve => {
+              q.notify(ve)
             })
           }, async () => {
             T.delete(J)
@@ -3433,40 +3434,40 @@ Object.defineProperty(us, "__esModule", {
           if (P == null) throw new Error("Address must be specified for the subscription");
           await this.ensureInitialized();
           const ne = P.address.toString(),
-            q = new k(async we => {
+            q = new k(async ve => {
               if (T.has(J)) return;
-              T.set(J, ve => {
-                ve.address.toString() === ne && we.notify(ve)
+              T.set(J, ke => {
+                ke.address.toString() === ne && ve.notify(ke)
               });
-              let ke = this._contractSubscriptions.get(ne);
-              ke == null && (ke = new Map, this._contractSubscriptions.set(ne, ke));
+              let Se = this._contractSubscriptions.get(ne);
+              Se == null && (Se = new Map, this._contractSubscriptions.set(ne, Se));
               const V = {
                 state: h === "contractStateChanged",
                 transactions: h === "transactionsFound"
               };
-              ke.set(J, V);
+              Se.set(J, V);
               const {
                 total: z,
                 withoutExcluded: ie
-              } = M(ke.values(), V);
+              } = M(Se.values(), V);
               try {
                 (z.transactions !== ie.transactions || z.state !== ie.state) && await this.rawApi.subscribe({
                   address: ne,
                   subscriptions: z
                 })
-              } catch (ve) {
-                throw T.delete(J), ke.delete(J), ve
+              } catch (ke) {
+                throw T.delete(J), Se.delete(J), ke
               }
             }, async () => {
               T.delete(J);
-              const we = this._contractSubscriptions.get(ne);
-              if (we == null) return;
-              const ke = we.get(J),
+              const ve = this._contractSubscriptions.get(ne);
+              if (ve == null) return;
+              const Se = ve.get(J),
                 {
                   total: V,
                   withoutExcluded: z
-                } = M(we.values(), ke);
-              we.delete(J), !z.transactions && !z.state ? await this.rawApi.unsubscribe({
+                } = M(ve.values(), Se);
+              ve.delete(J), !z.transactions && !z.state ? await this.rawApi.unsubscribe({
                 address: ne
               }) : (V.transactions !== z.transactions || V.state !== z.state) && await this.rawApi.subscribe({
                 address: ne,
@@ -3796,7 +3797,7 @@ Object.defineProperty(us, "__esModule", {
       for (const [k, T] of Object.entries(P)) h.addListener(k, J => {
         const ne = this._subscriptions[k],
           q = T(J);
-        for (const we of ne.values()) we(q)
+        for (const ve of ne.values()) ve(q)
       })
     }
   }
@@ -3829,67 +3830,67 @@ Object.defineProperty(us, "__esModule", {
       withoutExcluded: k
     }
   }
-})(nn);
-var Ba = {
+})(rn);
+var Pa = {
     exports: {}
   },
-  qn = typeof Reflect == "object" ? Reflect : null,
-  ro = qn && typeof qn.apply == "function" ? qn.apply : function(t, n, r) {
+  Zn = typeof Reflect == "object" ? Reflect : null,
+  io = Zn && typeof Zn.apply == "function" ? Zn.apply : function(t, n, r) {
     return Function.prototype.apply.call(t, n, r)
   },
-  Gr;
-qn && typeof qn.ownKeys == "function" ? Gr = qn.ownKeys : Object.getOwnPropertySymbols ? Gr = function(t) {
+  Wr;
+Zn && typeof Zn.ownKeys == "function" ? Wr = Zn.ownKeys : Object.getOwnPropertySymbols ? Wr = function(t) {
   return Object.getOwnPropertyNames(t).concat(Object.getOwnPropertySymbols(t))
-} : Gr = function(t) {
+} : Wr = function(t) {
   return Object.getOwnPropertyNames(t)
 };
 
-function fu(e) {
+function hu(e) {
   console && console.warn && console.warn(e)
 }
-var ds = Number.isNaN || function(t) {
+var fs = Number.isNaN || function(t) {
   return t !== t
 };
 
-function ze() {
-  ze.init.call(this)
+function Ne() {
+  Ne.init.call(this)
 }
-Ba.exports = ze;
-Ba.exports.once = mu;
-ze.EventEmitter = ze;
-ze.prototype._events = void 0;
-ze.prototype._eventsCount = 0;
-ze.prototype._maxListeners = void 0;
-var io = 10;
+Pa.exports = Ne;
+Pa.exports.once = bu;
+Ne.EventEmitter = Ne;
+Ne.prototype._events = void 0;
+Ne.prototype._eventsCount = 0;
+Ne.prototype._maxListeners = void 0;
+var ao = 10;
 
-function li(e) {
+function ci(e) {
   if (typeof e != "function") throw new TypeError('The "listener" argument must be of type Function. Received type ' + typeof e)
 }
-Object.defineProperty(ze, "defaultMaxListeners", {
+Object.defineProperty(Ne, "defaultMaxListeners", {
   enumerable: !0,
   get: function() {
-    return io
+    return ao
   },
   set: function(e) {
-    if (typeof e != "number" || e < 0 || ds(e)) throw new RangeError('The value of "defaultMaxListeners" is out of range. It must be a non-negative number. Received ' + e + ".");
-    io = e
+    if (typeof e != "number" || e < 0 || fs(e)) throw new RangeError('The value of "defaultMaxListeners" is out of range. It must be a non-negative number. Received ' + e + ".");
+    ao = e
   }
 });
-ze.init = function() {
+Ne.init = function() {
   (this._events === void 0 || this._events === Object.getPrototypeOf(this)._events) && (this._events = Object.create(null), this._eventsCount = 0), this._maxListeners = this._maxListeners || void 0
 };
-ze.prototype.setMaxListeners = function(t) {
-  if (typeof t != "number" || t < 0 || ds(t)) throw new RangeError('The value of "n" is out of range. It must be a non-negative number. Received ' + t + ".");
+Ne.prototype.setMaxListeners = function(t) {
+  if (typeof t != "number" || t < 0 || fs(t)) throw new RangeError('The value of "n" is out of range. It must be a non-negative number. Received ' + t + ".");
   return this._maxListeners = t, this
 };
 
-function fs(e) {
-  return e._maxListeners === void 0 ? ze.defaultMaxListeners : e._maxListeners
+function hs(e) {
+  return e._maxListeners === void 0 ? Ne.defaultMaxListeners : e._maxListeners
 }
-ze.prototype.getMaxListeners = function() {
-  return fs(this)
+Ne.prototype.getMaxListeners = function() {
+  return hs(this)
 };
-ze.prototype.emit = function(t) {
+Ne.prototype.emit = function(t) {
   for (var n = [], r = 1; r < arguments.length; r++) n.push(arguments[r]);
   var i = t === "error",
     o = this._events;
@@ -3903,35 +3904,35 @@ ze.prototype.emit = function(t) {
   }
   var c = o[t];
   if (c === void 0) return !1;
-  if (typeof c == "function") ro(c, this, n);
+  if (typeof c == "function") io(c, this, n);
   else
-    for (var f = c.length, u = bs(c, f), r = 0; r < f; ++r) ro(u[r], this, n);
+    for (var f = c.length, u = ys(c, f), r = 0; r < f; ++r) io(u[r], this, n);
   return !0
 };
 
-function hs(e, t, n, r) {
+function ps(e, t, n, r) {
   var i, o, a;
-  if (li(n), o = e._events, o === void 0 ? (o = e._events = Object.create(null), e._eventsCount = 0) : (o.newListener !== void 0 && (e.emit("newListener", t, n.listener ? n.listener : n), o = e._events), a = o[t]), a === void 0) a = o[t] = n, ++e._eventsCount;
-  else if (typeof a == "function" ? a = o[t] = r ? [n, a] : [a, n] : r ? a.unshift(n) : a.push(n), i = fs(e), i > 0 && a.length > i && !a.warned) {
+  if (ci(n), o = e._events, o === void 0 ? (o = e._events = Object.create(null), e._eventsCount = 0) : (o.newListener !== void 0 && (e.emit("newListener", t, n.listener ? n.listener : n), o = e._events), a = o[t]), a === void 0) a = o[t] = n, ++e._eventsCount;
+  else if (typeof a == "function" ? a = o[t] = r ? [n, a] : [a, n] : r ? a.unshift(n) : a.push(n), i = hs(e), i > 0 && a.length > i && !a.warned) {
     a.warned = !0;
     var s = new Error("Possible EventEmitter memory leak detected. " + a.length + " " + String(t) + " listeners added. Use emitter.setMaxListeners() to increase limit");
-    s.name = "MaxListenersExceededWarning", s.emitter = e, s.type = t, s.count = a.length, fu(s)
+    s.name = "MaxListenersExceededWarning", s.emitter = e, s.type = t, s.count = a.length, hu(s)
   }
   return e
 }
-ze.prototype.addListener = function(t, n) {
-  return hs(this, t, n, !1)
+Ne.prototype.addListener = function(t, n) {
+  return ps(this, t, n, !1)
 };
-ze.prototype.on = ze.prototype.addListener;
-ze.prototype.prependListener = function(t, n) {
-  return hs(this, t, n, !0)
+Ne.prototype.on = Ne.prototype.addListener;
+Ne.prototype.prependListener = function(t, n) {
+  return ps(this, t, n, !0)
 };
 
-function hu() {
+function pu() {
   if (!this.fired) return this.target.removeListener(this.type, this.wrapFn), this.fired = !0, arguments.length === 0 ? this.listener.call(this.target) : this.listener.apply(this.target, arguments)
 }
 
-function ps(e, t, n) {
+function gs(e, t, n) {
   var r = {
       fired: !1,
       wrapFn: void 0,
@@ -3939,18 +3940,18 @@ function ps(e, t, n) {
       type: t,
       listener: n
     },
-    i = hu.bind(r);
+    i = pu.bind(r);
   return i.listener = n, r.wrapFn = i, i
 }
-ze.prototype.once = function(t, n) {
-  return li(n), this.on(t, ps(this, t, n)), this
+Ne.prototype.once = function(t, n) {
+  return ci(n), this.on(t, gs(this, t, n)), this
 };
-ze.prototype.prependOnceListener = function(t, n) {
-  return li(n), this.prependListener(t, ps(this, t, n)), this
+Ne.prototype.prependOnceListener = function(t, n) {
+  return ci(n), this.prependListener(t, gs(this, t, n)), this
 };
-ze.prototype.removeListener = function(t, n) {
+Ne.prototype.removeListener = function(t, n) {
   var r, i, o, a, s;
-  if (li(n), i = this._events, i === void 0) return this;
+  if (ci(n), i = this._events, i === void 0) return this;
   if (r = i[t], r === void 0) return this;
   if (r === n || r.listener === n) --this._eventsCount === 0 ? this._events = Object.create(null) : (delete i[t], i.removeListener && this.emit("removeListener", t, r.listener || n));
   else if (typeof r != "function") {
@@ -3959,12 +3960,12 @@ ze.prototype.removeListener = function(t, n) {
         s = r[a].listener, o = a;
         break
       } if (o < 0) return this;
-    o === 0 ? r.shift() : pu(r, o), r.length === 1 && (i[t] = r[0]), i.removeListener !== void 0 && this.emit("removeListener", t, s || n)
+    o === 0 ? r.shift() : gu(r, o), r.length === 1 && (i[t] = r[0]), i.removeListener !== void 0 && this.emit("removeListener", t, s || n)
   }
   return this
 };
-ze.prototype.off = ze.prototype.removeListener;
-ze.prototype.removeAllListeners = function(t) {
+Ne.prototype.off = Ne.prototype.removeListener;
+Ne.prototype.removeAllListeners = function(t) {
   var n, r, i;
   if (r = this._events, r === void 0) return this;
   if (r.removeListener === void 0) return arguments.length === 0 ? (this._events = Object.create(null), this._eventsCount = 0) : r[t] !== void 0 && (--this._eventsCount === 0 ? this._events = Object.create(null) : delete r[t]), this;
@@ -3980,24 +3981,24 @@ ze.prototype.removeAllListeners = function(t) {
   return this
 };
 
-function gs(e, t, n) {
+function ms(e, t, n) {
   var r = e._events;
   if (r === void 0) return [];
   var i = r[t];
-  return i === void 0 ? [] : typeof i == "function" ? n ? [i.listener || i] : [i] : n ? gu(i) : bs(i, i.length)
+  return i === void 0 ? [] : typeof i == "function" ? n ? [i.listener || i] : [i] : n ? mu(i) : ys(i, i.length)
 }
-ze.prototype.listeners = function(t) {
-  return gs(this, t, !0)
+Ne.prototype.listeners = function(t) {
+  return ms(this, t, !0)
 };
-ze.prototype.rawListeners = function(t) {
-  return gs(this, t, !1)
+Ne.prototype.rawListeners = function(t) {
+  return ms(this, t, !1)
 };
-ze.listenerCount = function(e, t) {
-  return typeof e.listenerCount == "function" ? e.listenerCount(t) : ms.call(e, t)
+Ne.listenerCount = function(e, t) {
+  return typeof e.listenerCount == "function" ? e.listenerCount(t) : bs.call(e, t)
 };
-ze.prototype.listenerCount = ms;
+Ne.prototype.listenerCount = bs;
 
-function ms(e) {
+function bs(e) {
   var t = this._events;
   if (t !== void 0) {
     var n = t[e];
@@ -4006,26 +4007,26 @@ function ms(e) {
   }
   return 0
 }
-ze.prototype.eventNames = function() {
-  return this._eventsCount > 0 ? Gr(this._events) : []
+Ne.prototype.eventNames = function() {
+  return this._eventsCount > 0 ? Wr(this._events) : []
 };
 
-function bs(e, t) {
+function ys(e, t) {
   for (var n = new Array(t), r = 0; r < t; ++r) n[r] = e[r];
   return n
 }
 
-function pu(e, t) {
+function gu(e, t) {
   for (; t + 1 < e.length; t++) e[t] = e[t + 1];
   e.pop()
 }
 
-function gu(e) {
+function mu(e) {
   for (var t = new Array(e.length), n = 0; n < t.length; ++n) t[n] = e[n].listener || e[n];
   return t
 }
 
-function mu(e, t) {
+function bu(e, t) {
   return new Promise(function(n, r) {
     function i(a) {
       e.removeListener(t, o), r(a)
@@ -4034,34 +4035,34 @@ function mu(e, t) {
     function o() {
       typeof e.removeListener == "function" && e.removeListener("error", i), n([].slice.call(arguments))
     }
-    ys(e, t, o, {
+    _s(e, t, o, {
       once: !0
-    }), t !== "error" && bu(e, i, {
+    }), t !== "error" && yu(e, i, {
       once: !0
     })
   })
 }
 
-function bu(e, t, n) {
-  typeof e.on == "function" && ys(e, "error", t, n)
+function yu(e, t, n) {
+  typeof e.on == "function" && _s(e, "error", t, n)
 }
 
-function ys(e, t, n, r) {
+function _s(e, t, n, r) {
   if (typeof e.on == "function") r.once ? e.once(t, n) : e.on(t, n);
   else if (typeof e.addEventListener == "function") e.addEventListener(t, function i(o) {
     r.once && e.removeEventListener(t, i), n(o)
   });
   else throw new TypeError('The "emitter" argument must be of type EventEmitter. Received type ' + typeof e)
 }
-var yu = Ba.exports;
-Object.defineProperty(pt, "__esModule", {
+var _u = Pa.exports;
+Object.defineProperty(gt, "__esModule", {
   value: !0
 });
-pt.getUniqueId = pt.convertVersionToInt32 = pt.convertToAddressObject = pt.SafeEventEmitter = void 0;
-const ao = nn,
-  _u = yu;
+gt.getUniqueId = gt.convertVersionToInt32 = gt.convertToAddressObject = gt.SafeEventEmitter = void 0;
+const oo = rn,
+  wu = _u;
 
-function oo(e, t, n) {
+function so(e, t, n) {
   try {
     Reflect.apply(e, t, n)
   } catch (r) {
@@ -4071,13 +4072,13 @@ function oo(e, t, n) {
   }
 }
 
-function wu(e) {
+function vu(e) {
   const t = e.length,
     n = new Array(t);
   for (let r = 0; r < t; r += 1) n[r] = e[r];
   return n
 }
-class vu extends _u.EventEmitter {
+class ku extends wu.EventEmitter {
   emit(t, ...n) {
     let r = t === "error";
     const i = this._events;
@@ -4091,23 +4092,23 @@ class vu extends _u.EventEmitter {
     }
     const o = i[t];
     if (o === void 0) return !1;
-    if (typeof o == "function") oo(o, this, n);
+    if (typeof o == "function") so(o, this, n);
     else {
       const a = o.length,
-        s = wu(o);
-      for (let c = 0; c < a; c += 1) oo(s[c], this, n)
+        s = vu(o);
+      for (let c = 0; c < a; c += 1) so(s[c], this, n)
     }
     return !0
   }
 }
-pt.SafeEventEmitter = vu;
+gt.SafeEventEmitter = ku;
 
-function ku(e) {
-  if (typeof e == "object" && !(0, ao.isAddressObject)(e)) throw new Error("Invalid address object");
-  return typeof e == "object" ? e : new ao.Address(e)
+function Su(e) {
+  if (typeof e == "object" && !(0, oo.isAddressObject)(e)) throw new Error("Invalid address object");
+  return typeof e == "object" ? e : new oo.Address(e)
 }
-pt.convertToAddressObject = ku;
-const Su = e => {
+gt.convertToAddressObject = Su;
+const Au = e => {
   const t = e.split(".");
   if (t.length !== 3) throw new Error("Received invalid version string");
   t.forEach(i => {
@@ -4118,27 +4119,27 @@ const Su = e => {
   for (let i = 0; i < 3; i++) r += ~~t[i] * n, n /= 1e3;
   return r
 };
-pt.convertVersionToInt32 = Su;
-const _s = 4294967295;
-let Ji = Math.floor(Math.random() * _s);
+gt.convertVersionToInt32 = Au;
+const ws = 4294967295;
+let Qi = Math.floor(Math.random() * ws);
 
-function Au() {
-  return Ji = (Ji + 1) % _s, Ji
+function Iu() {
+  return Qi = (Qi + 1) % ws, Qi
 }
-pt.getUniqueId = Au;
-var Wr = {},
-  Zt = {};
-Object.defineProperty(Zt, "__esModule", {
+gt.getUniqueId = Iu;
+var Yr = {},
+  en = {};
+Object.defineProperty(en, "__esModule", {
   value: !0
 });
-Zt.Mutex = Zt.Semaphore = void 0;
+en.Mutex = en.Semaphore = void 0;
 
-function Yr(e) {
+function Xr(e) {
   if (typeof e != "function") throw new TypeError(e + " is not a function");
   return e
 }
 
-function so(e) {
+function lo(e) {
   const t = document.createTextNode("");
   let n, r, i = 0,
     o = 0;
@@ -4158,30 +4159,30 @@ function so(e) {
       characterData: !0
     }),
     function(a) {
-      if (Yr(a), n) {
+      if (Xr(a), n) {
         typeof n == "function" ? n = [n, a] : n.push(a);
         return
       }
       n = a, t.data = i = ++i % 2
     }
 }
-const Iu = function() {
+const Cu = function() {
   if (typeof queueMicrotask == "function") return function(e) {
-    queueMicrotask(Yr(e))
+    queueMicrotask(Xr(e))
   };
   if (typeof document == "object" && document) {
-    if (typeof MutationObserver == "function") return so(MutationObserver);
-    if (typeof window.WebKitMutationObserver == "function") return so(window.WebKitMutationObserver)
+    if (typeof MutationObserver == "function") return lo(MutationObserver);
+    if (typeof window.WebKitMutationObserver == "function") return lo(window.WebKitMutationObserver)
   }
   if (typeof setImmediate == "function") return function(e) {
-    setImmediate(Yr(e))
+    setImmediate(Xr(e))
   };
   if (typeof setTimeout == "function" || typeof setTimeout == "object") return function(e) {
-    setTimeout(Yr(e), 0)
+    setTimeout(Xr(e), 0)
   };
   throw new Error("No `nextTick` implementation found")
 }();
-class ws {
+class vs {
   constructor(t) {
     this.tasks = [], this.count = t
   }
@@ -4201,7 +4202,7 @@ class ws {
           i || (i = !0, this.count++, this.sched())
         })
       };
-      this.tasks.push(r), Iu(this.sched.bind(this))
+      this.tasks.push(r), Cu(this.sched.bind(this))
     })
   }
   use(t) {
@@ -4210,29 +4211,29 @@ class ws {
     }))
   }
 }
-Zt.Semaphore = ws;
-class Cu extends ws {
+en.Semaphore = vs;
+class Bu extends vs {
   constructor() {
     super(1)
   }
 }
-Zt.Mutex = Cu;
-var ci = {},
-  Bu = pe && pe.__importDefault || function(e) {
+en.Mutex = Bu;
+var ui = {},
+  Pu = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(ci, "__esModule", {
+Object.defineProperty(ui, "__esModule", {
   value: !0
 });
-ci.GqlSocket = void 0;
-const ua = Bu(St);
-class jr {
+ui.GqlSocket = void 0;
+const da = Pu(At);
+class Lr {
   async connect(t) {
     class n {
       constructor(i) {
-        this.nextLatencyDetectionTime = 0, this.local = i.local === !0, this.maxLatency = i.maxLatency || 6e4, this.latencyDetectionInterval = i.latencyDetectionInterval || 6e4, this.endpoints = i.endpoints.map(jr.expandAddress), this.endpoints.length == 1 && (this.currentEndpoint = this.endpoints[0], this.nextLatencyDetectionTime = Number.MAX_VALUE)
+        this.nextLatencyDetectionTime = 0, this.local = i.local === !0, this.maxLatency = i.maxLatency || 6e4, this.latencyDetectionInterval = i.latencyDetectionInterval || 6e4, this.endpoints = i.endpoints.map(Lr.expandAddress), this.endpoints.length == 1 && (this.currentEndpoint = this.endpoints[0], this.nextLatencyDetectionTime = Number.MAX_VALUE)
       }
       isLocal() {
         return this.local
@@ -4245,7 +4246,7 @@ class jr {
             this.currentEndpoint != null && s < this.nextLatencyDetectionTime ? c = this.currentEndpoint : this.resolutionPromise != null ? (c = await this.resolutionPromise, delete this.resolutionPromise) : (delete this.currentEndpoint, this.resolutionPromise = this._selectQueryingEndpoint().then(u => (this.currentEndpoint = u, this.nextLatencyDetectionTime = Date.now() + this.latencyDetectionInterval, u)), c = await this.resolutionPromise, delete this.resolutionPromise);
             const f = await fetch(c.url, {
               method: "post",
-              headers: Pu,
+              headers: Mu,
               body: i,
               agent: c.agent
             }).then(u => u.text());
@@ -4268,7 +4269,7 @@ class jr {
           });
           let f = 0,
             u;
-          for (const _ of this.endpoints) jr.checkLatency(_).then(B => {
+          for (const _ of this.endpoints) Lr.checkLatency(_).then(B => {
             if (++f, B !== void 0 && B <= i) return s.resolve(_);
             (u === void 0 || u.latency === void 0 || B !== void 0 && B < u.latency) && (u = {
               endpoint: _,
@@ -4288,14 +4289,14 @@ class jr {
         throw new Error("Not available endpoint found")
       }
     }
-    return new ua.default.nekoton.GqlConnection(new n(t))
+    return new da.default.nekoton.GqlConnection(new n(t))
   }
   static async checkLatency(t) {
     const n = await fetch(`${t.url}?query=%7Binfo%7Bversion%20time%20latency%7D%7D`, {
       method: "get",
       agent: t.agent
     }).then(a => a.json()).catch(a => {
-      ua.default.debugLog(a)
+      da.default.debugLog(a)
     });
     if (typeof n != "object" || n == null) return;
     const r = n.data;
@@ -4306,35 +4307,35 @@ class jr {
     if (typeof o == "number") return o
   }
 }
-ci.GqlSocket = jr;
-jr.expandAddress = e => {
+ui.GqlSocket = Lr;
+Lr.expandAddress = e => {
   const t = e.lastIndexOf("/");
   e = t < 0 ? e : e.substring(0, t);
   let n;
   return e.startsWith("http://") || e.startsWith("https://") ? n = `${e}/graphql` : ["localhost", "127.0.0.1"].indexOf(e) >= 0 ? n = `http://${e}/graphql` : n = `https://${e}/graphql`, {
     url: n,
-    agent: ua.default.fetchAgent(n)
+    agent: da.default.fetchAgent(n)
   }
 };
-const Pu = {
+const Mu = {
   "Content-Type": "application/json"
 };
-var ui = {},
-  Mu = pe && pe.__importDefault || function(e) {
+var di = {},
+  Tu = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(ui, "__esModule", {
+Object.defineProperty(di, "__esModule", {
   value: !0
 });
-ui.JrpcSocket = void 0;
-const Qi = Mu(St);
-class Tu {
+di.JrpcSocket = void 0;
+const qi = Tu(At);
+class Eu {
   async connect(t) {
     class n {
       constructor(i) {
-        this.endpoint = i.endpoint, this.endpointAgent = Qi.default.fetchAgent(this.endpoint), this.alternativeEndpoint = i.alternativeEndpoint != null ? i.alternativeEndpoint : i.endpoint, this.alternativeEndpointAgent = Qi.default.fetchAgent(this.alternativeEndpoint)
+        this.endpoint = i.endpoint, this.endpointAgent = qi.default.fetchAgent(this.endpoint), this.alternativeEndpoint = i.alternativeEndpoint != null ? i.alternativeEndpoint : i.endpoint, this.alternativeEndpointAgent = qi.default.fetchAgent(this.alternativeEndpoint)
       }
       send(i, o, a) {
         (async () => {
@@ -4343,7 +4344,7 @@ class Tu {
               c = a ? this.endpointAgent : this.alternativeEndpointAgent,
               f = await fetch(s, {
                 method: "post",
-                headers: Eu,
+                headers: Ou,
                 body: i,
                 agent: c
               }).then(u => u.text());
@@ -4354,36 +4355,36 @@ class Tu {
         })()
       }
     }
-    return new Qi.default.nekoton.JrpcConnection(new n(t))
+    return new qi.default.nekoton.JrpcConnection(new n(t))
   }
 }
-ui.JrpcSocket = Tu;
-const Eu = {
+di.JrpcSocket = Eu;
+const Ou = {
   "Content-Type": "application/json"
 };
-var di = {},
-  Ou = pe && pe.__importDefault || function(e) {
+var fi = {},
+  xu = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(di, "__esModule", {
+Object.defineProperty(fi, "__esModule", {
   value: !0
 });
-di.ProtoSocket = void 0;
-const lo = Ou(St);
-class xu {
+fi.ProtoSocket = void 0;
+const co = xu(At);
+class Uu {
   async connect(t) {
     class n {
       constructor(i) {
-        this.endpoint = i.endpoint, this.endpointAgent = lo.default.fetchAgent(this.endpoint)
+        this.endpoint = i.endpoint, this.endpointAgent = co.default.fetchAgent(this.endpoint)
       }
       send(i, o, a) {
         (async () => {
           try {
             const s = await fetch(this.endpoint, {
               method: "post",
-              headers: Uu,
+              headers: Ru,
               body: new Uint8Array(i),
               agent: this.endpointAgent
             }).then(c => c.arrayBuffer());
@@ -4394,11 +4395,11 @@ class xu {
         })()
       }
     }
-    return new lo.default.nekoton.ProtoConnection(new n(t))
+    return new co.default.nekoton.ProtoConnection(new n(t))
   }
 }
-di.ProtoSocket = xu;
-const Uu = {
+fi.ProtoSocket = Uu;
+const Ru = {
   "Content-Type": "application/x-protobuf"
 };
 (function(e) {
@@ -4410,11 +4411,11 @@ const Uu = {
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.ConnectionController = e.createConnectionController = e.ConnectionError = e.checkConnection = e.NETWORK_PRESETS = void 0;
-  const n = Zt,
-    r = t(St),
-    i = ci,
-    o = ui,
-    a = di;
+  const n = en,
+    r = t(At),
+    i = ui,
+    o = di,
+    a = fi;
   e.NETWORK_PRESETS = {
     mainnetJrpc: {
       id: 1,
@@ -4647,21 +4648,21 @@ const Uu = {
   function S(m) {
     if (m == null) throw new Error("Connection is not initialized")
   }
-})(Wr);
-var fi = {},
-  hi = {},
-  Ru = pe && pe.__importDefault || function(e) {
+})(Yr);
+var hi = {},
+  pi = {},
+  ju = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(hi, "__esModule", {
+Object.defineProperty(pi, "__esModule", {
   value: !0
 });
-hi.ContractSubscription = void 0;
-const ju = Zt,
-  ct = Ru(St);
-class Pa {
+pi.ContractSubscription = void 0;
+const Lu = en,
+  ut = ju(At);
+class Ma {
   static async subscribe(t, n, r) {
     const {
       transport: {
@@ -4675,71 +4676,71 @@ class Pa {
     try {
       const s = await o.subscribeToGenericContract(n, r);
       if (s == null) throw new Error(`Failed to subscribe to contract: ${n}`);
-      return new Pa(i, a, n, s)
+      return new Ma(i, a, n, s)
     } catch (s) {
       throw a(), s
     }
   }
   constructor(t, n, r, i) {
-    this._contractMutex = new ju.Mutex, this._pollingInterval = Nu, this._isRunning = !1, this._skipIteration = !1, this._connection = t, this._address = r, this._contract = i, this._releaseTransport = n, this._currentPollingMethod = i.pollingMethod
+    this._contractMutex = new Lu.Mutex, this._pollingInterval = Du, this._isRunning = !1, this._skipIteration = !1, this._connection = t, this._address = r, this._contract = i, this._releaseTransport = n, this._currentPollingMethod = i.pollingMethod
   }
   setPollingInterval(t) {
     this._pollingInterval = t
   }
   async start() {
     if (this._releaseTransport == null) throw new Error("Contract subscription must not be started after being closed");
-    this._loopPromise && (ct.default.debugLog("ContractSubscription -> awaiting loop promise"), await this._loopPromise), ct.default.debugLog("ContractSubscription -> loop started"), this._loopPromise = (async () => {
-      const t = !(this._connection instanceof ct.default.nekoton.GqlConnection),
-        n = this._connection instanceof ct.default.nekoton.ProxyConnection;
+    this._loopPromise && (ut.default.debugLog("ContractSubscription -> awaiting loop promise"), await this._loopPromise), ut.default.debugLog("ContractSubscription -> loop started"), this._loopPromise = (async () => {
+      const t = !(this._connection instanceof ut.default.nekoton.GqlConnection),
+        n = this._connection instanceof ut.default.nekoton.ProxyConnection;
       this._isRunning = !0;
       let r = this._currentPollingMethod;
       for (; this._isRunning;) {
         this._skipIteration = !1;
         const i = r != this._currentPollingMethod;
         if (r = this._currentPollingMethod, t || this._currentPollingMethod == "manual") {
-          this._currentBlockId = void 0, ct.default.debugLog("ContractSubscription -> manual -> waiting begins");
-          const o = this._currentPollingMethod == "manual" || n ? this._pollingInterval : zu;
+          this._currentBlockId = void 0, ut.default.debugLog("ContractSubscription -> manual -> waiting begins");
+          const o = this._currentPollingMethod == "manual" || n ? this._pollingInterval : Nu;
           if (await new Promise(a => {
               const s = setTimeout(() => {
                 this._refreshTimer = void 0, a()
               }, o);
               this._refreshTimer = [s, a]
-            }), ct.default.debugLog("ContractSubscription -> manual -> waiting ends"), this._skipIteration) continue;
+            }), ut.default.debugLog("ContractSubscription -> manual -> waiting ends"), this._skipIteration) continue;
           if (!this._isRunning) break;
-          ct.default.debugLog("ContractSubscription -> manual -> refreshing begins");
+          ut.default.debugLog("ContractSubscription -> manual -> refreshing begins");
           try {
             this._currentPollingMethod = await this._contractMutex.use(async () => (await this._contract.refresh(), this._contract.pollingMethod))
           } catch (a) {
-            ct.default.debugLog(`Error during account refresh (${this._address})`, a)
+            ut.default.debugLog(`Error during account refresh (${this._address})`, a)
           }
-          ct.default.debugLog("ContractSubscription -> manual -> refreshing ends")
+          ut.default.debugLog("ContractSubscription -> manual -> refreshing ends")
         } else {
           const o = this._connection;
-          ct.default.debugLog("ContractSubscription -> reliable start"), i && this._suggestedBlockId != null && (this._currentBlockId = this._suggestedBlockId), this._suggestedBlockId = void 0;
+          ut.default.debugLog("ContractSubscription -> reliable start"), i && this._suggestedBlockId != null && (this._currentBlockId = this._suggestedBlockId), this._suggestedBlockId = void 0;
           let a;
           if (this._currentBlockId == null) {
-            ct.default.debugLog("ContractSubscription -> starting reliable connection with unknown block");
+            ut.default.debugLog("ContractSubscription -> starting reliable connection with unknown block");
             try {
               const s = await o.getLatestBlock(this._address);
               this._currentBlockId = s.id, a = this._currentBlockId
             } catch (s) {
-              ct.default.debugLog(`Failed to get latest block for ${this._address}`, s);
+              ut.default.debugLog(`Failed to get latest block for ${this._address}`, s);
               continue
             }
           } else try {
-            a = await o.waitForNextBlock(this._currentBlockId, this._address, Lu)
+            a = await o.waitForNextBlock(this._currentBlockId, this._address, zu)
           } catch {
-            ct.default.debugLog(`Failed to wait for next block for ${this._address}`);
+            ut.default.debugLog(`Failed to wait for next block for ${this._address}`);
             continue
           }
           try {
             this._currentPollingMethod = await this._contractMutex.use(async () => (await this._contract.handleBlock(a), this._contract.pollingMethod)), this._currentBlockId = a
           } catch (s) {
-            ct.default.debugLog(`Failed to handle block for ${this._address}`, s)
+            ut.default.debugLog(`Failed to handle block for ${this._address}`, s)
           }
         }
       }
-      ct.default.debugLog("ContractSubscription -> loop finished")
+      ut.default.debugLog("ContractSubscription -> loop finished")
     })()
   }
   skipRefreshTimer(t) {
@@ -4755,7 +4756,7 @@ class Pa {
   }
   async prepareReliablePolling() {
     try {
-      this._connection instanceof ct.default.nekoton.GqlConnection && (this._suggestedBlockId = (await this._connection.getLatestBlock(this._address)).id)
+      this._connection instanceof ut.default.nekoton.GqlConnection && (this._suggestedBlockId = (await this._connection.getLatestBlock(this._address)).id)
     } catch (t) {
       throw new Error(`Failed to prepare reliable polling: ${t.toString()}`)
     }
@@ -4767,27 +4768,27 @@ class Pa {
     })
   }
 }
-hi.ContractSubscription = Pa;
-const Lu = 60,
-  zu = 2e3,
-  Nu = 6e4;
-Object.defineProperty(fi, "__esModule", {
+pi.ContractSubscription = Ma;
+const zu = 60,
+  Nu = 2e3,
+  Du = 6e4;
+Object.defineProperty(hi, "__esModule", {
   value: !0
 });
-fi.SubscriptionController = void 0;
-const Du = Zt,
-  co = pt,
-  Fu = hi,
-  Ku = 1e4;
-class $u {
+hi.SubscriptionController = void 0;
+const Fu = en,
+  uo = gt,
+  Ku = pi,
+  $u = 1e4;
+class Hu {
   constructor(t, n) {
-    this._subscriptions = new Map, this._subscriptionsMutex = new Du.Mutex, this._sendMessageRequests = new Map, this._subscriptionStates = new Map, this._pollingInterval = Ku, this._connectionController = t, this._notify = n
+    this._subscriptions = new Map, this._subscriptionsMutex = new Fu.Mutex, this._sendMessageRequests = new Map, this._subscriptionStates = new Map, this._pollingInterval = $u, this._connectionController = t, this._notify = n
   }
   setPollingInterval(t) {
     this._pollingInterval = t
   }
   async sendMessageLocally(t, n, r) {
-    const i = (0, co.getUniqueId)();
+    const i = (0, uo.getUniqueId)();
     try {
       await this.subscribeToContract(t, {
         state: !0
@@ -4804,7 +4805,7 @@ class $u {
     let i = this._sendMessageRequests.get(t);
     if (i == null) i = new Map, this._sendMessageRequests.set(t, i);
     else if (i.has(r)) throw new Error(`Trying to send a duplicate message with id '${r}'`);
-    const o = (0, co.getUniqueId)();
+    const o = (0, uo.getUniqueId)();
     return new Promise((a, s) => {
       i.set(r, {
         resolve: a,
@@ -4838,12 +4839,12 @@ class $u {
             }
           }), _
         },
-        o = this._subscriptionStates.get(t) || Hu();
+        o = this._subscriptionStates.get(t) || Vu();
       let a;
       if (r == null) a = i(o.client);
       else {
         const u = o.internal.get(r);
-        u != null ? (a = i(u), uo(a) && o.internal.delete(r)) : a = i({
+        u != null ? (a = i(u), fo(a) && o.internal.delete(r)) : a = i({
           state: !1,
           transactions: !1
         })
@@ -4852,7 +4853,7 @@ class $u {
         ...a
       };
       for (const u of o.internal.values()) s.state || (s.state = u.state), s.transactions || (s.transactions = u.transactions);
-      if (uo(s)) return this._subscriptionStates.delete(t), await this._tryUnsubscribe(t), {
+      if (fo(s)) return this._subscriptionStates.delete(t), await this._tryUnsubscribe(t), {
         ...s
       };
       let c = this._subscriptions.get(t);
@@ -4900,7 +4901,7 @@ class $u {
       }
     }
     const r = new n(t, this),
-      i = await Fu.ContractSubscription.subscribe(this._connectionController, t, r);
+      i = await Ku.ContractSubscription.subscribe(this._connectionController, t, r);
     return i.setPollingInterval(this._pollingInterval), r.enableNotifications(), this._subscriptions.set(t, i), i
   }
   async _tryUnsubscribe(t) {
@@ -4943,23 +4944,23 @@ class $u {
     r && (r.delete(n), r.size == 0 && this._sendMessageRequests.delete(t))
   }
 }
-fi.SubscriptionController = $u;
-const Hu = () => ({
+hi.SubscriptionController = Hu;
+const Vu = () => ({
     internal: new Map,
     client: {
       state: !1,
       transactions: !1
     }
   }),
-  uo = e => !e.state && !e.transactions;
-var da = {},
-  pi = {};
-Object.defineProperty(pi, "__esModule", {
+  fo = e => !e.state && !e.transactions;
+var fa = {},
+  gi = {};
+Object.defineProperty(gi, "__esModule", {
   value: !0
 });
-pi.GiverAccount = void 0;
-const Vu = pt;
-class Lr {
+gi.GiverAccount = void 0;
+const Gu = gt;
+class zr {
   static fromVersion(t) {
     let n;
     switch (t) {
@@ -4972,13 +4973,13 @@ class Lr {
       default:
         throw new Error("Unknown version")
     }
-    return new Lr({
+    return new zr({
       address: n,
-      publicKey: Lr.GIVER_KEY_PAIR.publicKey
+      publicKey: zr.GIVER_KEY_PAIR.publicKey
     })
   }
   constructor(t) {
-    this.address = (0, Vu.convertToAddressObject)(t.address), this.publicKey = t.publicKey
+    this.address = (0, Gu.convertToAddressObject)(t.address), this.publicKey = t.publicKey
   }
   async fetchPublicKey(t) {
     return this.publicKey
@@ -4991,7 +4992,7 @@ class Lr {
       address: this.address,
       signer: r,
       timeout: t.timeout,
-      abi: Gu,
+      abi: Wu,
       method: "sendTransaction",
       params: {
         dest: t.recipient,
@@ -5002,12 +5003,12 @@ class Lr {
     })
   }
 }
-pi.GiverAccount = Lr;
-Lr.GIVER_KEY_PAIR = {
+gi.GiverAccount = zr;
+zr.GIVER_KEY_PAIR = {
   secretKey: "172af540e43a524763dd53b26a066d472a97c4de37d5498170564510608250c3",
   publicKey: "2ada2e65ab8eeab09490e3521415f45b6e42df9c760a639bcf53957550b25a16"
 };
-const Gu = `{
+const Wu = `{
   "ABI version": 2,
   "header": ["time", "expire"],
   "functions": [{
@@ -5021,15 +5022,15 @@ const Gu = `{
   }],
   "events": []
 }`;
-var er = {};
-Object.defineProperty(er, "__esModule", {
+var tr = {};
+Object.defineProperty(tr, "__esModule", {
   value: !0
 });
-er.MsigAccount = er.GenericAccount = void 0;
-const Wu = pt;
-class vs {
+tr.MsigAccount = tr.GenericAccount = void 0;
+const Yu = gt;
+class ks {
   constructor(t) {
-    this.address = (0, Wu.convertToAddressObject)(t.address), this.abi = typeof t.abi == "string" ? t.abi : JSON.stringify(t.abi), this.prepareMessageImpl = t.prepareMessage, this.publicKey = t.publicKey
+    this.address = (0, Yu.convertToAddressObject)(t.address), this.abi = typeof t.abi == "string" ? t.abi : JSON.stringify(t.abi), this.prepareMessageImpl = t.prepareMessage, this.publicKey = t.publicKey
   }
   async fetchPublicKey(t) {
     return this.publicKey != null ? this.publicKey : (this.publicKey = await t.fetchPublicKey(this.address), this.publicKey)
@@ -5054,14 +5055,14 @@ class vs {
     })
   }
 }
-er.GenericAccount = vs;
-class Yu extends vs {
+tr.GenericAccount = ks;
+class Xu extends ks {
   constructor(t) {
     const n = t.type === "multisig2";
     super({
       address: t.address,
       publicKey: t.publicKey,
-      abi: n ? Ju : Xu,
+      abi: n ? Qu : Ju,
       prepareMessage: async (r, i) => {
         if (!n && r.stateInit != null) throw new Error("Old multisig contract does not support state init in an internal message");
         const o = r.payload ? i.encodeInternalInput(r.payload) : "";
@@ -5089,8 +5090,8 @@ class Yu extends vs {
     })
   }
 }
-er.MsigAccount = Yu;
-const Xu = `{
+tr.MsigAccount = Xu;
+const Ju = `{
   "ABI version": 2,
   "header": ["pubkey", "time", "expire"],
   "functions": [{
@@ -5106,7 +5107,7 @@ const Xu = `{
   }],
   "events": []
 }`,
-  Ju = `{
+  Qu = `{
   "ABI version": 2,
   "version": "2.3",
   "header": ["pubkey", "time", "expire"],
@@ -5134,8 +5135,8 @@ const Xu = `{
   }],
   "events": []
 }`;
-var gi = {},
-  ks = {
+var mi = {},
+  Ss = {
     exports: {}
   };
 (function(e) {
@@ -5158,17 +5159,17 @@ var gi = {},
           toString: null,
           valueOf: null
         },
-        we = new he(1),
-        ke = 20,
+        ve = new he(1),
+        Se = 20,
         V = 4,
         z = -7,
         ie = 21,
-        ve = -1e7,
-        Ce = 1e7,
-        Ee = !1,
+        ke = -1e7,
+        Be = 1e7,
+        Oe = !1,
         F = 1,
-        Ve = 0,
-        Fe = {
+        Ge = 0,
+        Ke = {
           prefix: "",
           groupSize: 3,
           secondaryGroupSize: 0,
@@ -5178,21 +5179,21 @@ var gi = {},
           fractionGroupSeparator: " ",
           suffix: ""
         },
-        gt = "0123456789abcdefghijklmnopqrstuvwxyz",
-        on = !0;
+        mt = "0123456789abcdefghijklmnopqrstuvwxyz",
+        sn = !0;
 
       function he(w, C) {
         var O, W, N, H, X, L, K, Y, G = this;
         if (!(G instanceof he)) return new he(w, C);
         if (C == null) {
           if (w && w._isBigNumber === !0) {
-            G.s = w.s, !w.c || w.e > Ce ? G.c = G.e = null : w.e < ve ? G.c = [G.e = 0] : (G.e = w.e, G.c = w.c.slice());
+            G.s = w.s, !w.c || w.e > Be ? G.c = G.e = null : w.e < ke ? G.c = [G.e = 0] : (G.e = w.e, G.c = w.c.slice());
             return
           }
           if ((L = typeof w == "number") && w * 0 == 0) {
             if (G.s = 1 / w < 0 ? (w = -w, -1) : 1, w === ~~w) {
               for (H = 0, X = w; X >= 10; X /= 10, H++);
-              H > Ce ? G.c = G.e = null : (G.e = H, G.c = [w]);
+              H > Be ? G.c = G.e = null : (G.e = H, G.c = [w]);
               return
             }
             Y = String(w)
@@ -5201,12 +5202,12 @@ var gi = {},
             G.s = Y.charCodeAt(0) == 45 ? (Y = Y.slice(1), -1) : 1
           }(H = Y.indexOf(".")) > -1 && (Y = Y.replace(".", "")), (X = Y.search(/e/i)) > 0 ? (H < 0 && (H = X), H += +Y.slice(X + 1), Y = Y.substring(0, X)) : H < 0 && (H = Y.length)
         } else {
-          if (M(C, 2, gt.length, "Base"), C == 10 && on) return G = new he(w), st(G, ke + G.e + 1, V);
+          if (M(C, 2, mt.length, "Base"), C == 10 && sn) return G = new he(w), lt(G, Se + G.e + 1, V);
           if (Y = String(w), L = typeof w == "number") {
             if (w * 0 != 0) return ne(G, Y, L, C);
             if (G.s = 1 / w < 0 ? (Y = Y.slice(1), -1) : 1, he.DEBUG && Y.replace(/^0\.0*|\./, "").length > 15) throw Error(s + w)
           } else G.s = Y.charCodeAt(0) === 45 ? (Y = Y.slice(1), -1) : 1;
-          for (O = gt.slice(0, C), H = X = 0, K = Y.length; X < K; X++)
+          for (O = mt.slice(0, C), H = X = 0, K = Y.length; X < K; X++)
             if (O.indexOf(W = Y.charAt(X)) < 0) {
               if (W == ".") {
                 if (X > H) {
@@ -5224,8 +5225,8 @@ var gi = {},
         for (K = Y.length; Y.charCodeAt(--K) === 48;);
         if (Y = Y.slice(X, ++K)) {
           if (K -= X, L && he.DEBUG && K > 15 && (w > u || w !== o(w))) throw Error(s + G.s * w);
-          if ((H = H - X - 1) > Ce) G.c = G.e = null;
-          else if (H < ve) G.c = [G.e = 0];
+          if ((H = H - X - 1) > Be) G.c = G.e = null;
+          else if (H < ke) G.c = [G.e = 0];
           else {
             if (G.e = H, G.c = [], X = (H + 1) % f, H < 0 && (X += f), X < K) {
               for (X && G.c.push(+Y.slice(0, X)), K -= f; X < K;) G.c.push(+Y.slice(X, X += f));
@@ -5240,34 +5241,34 @@ var gi = {},
         var C, O;
         if (w != null)
           if (typeof w == "object") {
-            if (w.hasOwnProperty(C = "DECIMAL_PLACES") && (O = w[C], M(O, 0, y, C), ke = O), w.hasOwnProperty(C = "ROUNDING_MODE") && (O = w[C], M(O, 0, 8, C), V = O), w.hasOwnProperty(C = "EXPONENTIAL_AT") && (O = w[C], O && O.pop ? (M(O[0], -y, 0, C), M(O[1], 0, y, C), z = O[0], ie = O[1]) : (M(O, -y, y, C), z = -(ie = O < 0 ? -O : O))), w.hasOwnProperty(C = "RANGE"))
-              if (O = w[C], O && O.pop) M(O[0], -y, -1, C), M(O[1], 1, y, C), ve = O[0], Ce = O[1];
-              else if (M(O, -y, y, C), O) ve = -(Ce = O < 0 ? -O : O);
+            if (w.hasOwnProperty(C = "DECIMAL_PLACES") && (O = w[C], M(O, 0, y, C), Se = O), w.hasOwnProperty(C = "ROUNDING_MODE") && (O = w[C], M(O, 0, 8, C), V = O), w.hasOwnProperty(C = "EXPONENTIAL_AT") && (O = w[C], O && O.pop ? (M(O[0], -y, 0, C), M(O[1], 0, y, C), z = O[0], ie = O[1]) : (M(O, -y, y, C), z = -(ie = O < 0 ? -O : O))), w.hasOwnProperty(C = "RANGE"))
+              if (O = w[C], O && O.pop) M(O[0], -y, -1, C), M(O[1], 1, y, C), ke = O[0], Be = O[1];
+              else if (M(O, -y, y, C), O) ke = -(Be = O < 0 ? -O : O);
             else throw Error(a + C + " cannot be zero: " + O);
             if (w.hasOwnProperty(C = "CRYPTO"))
               if (O = w[C], O === !!O)
                 if (O)
-                  if (typeof crypto < "u" && crypto && (crypto.getRandomValues || crypto.randomBytes)) Ee = O;
-                  else throw Ee = !O, Error(a + "crypto unavailable");
-            else Ee = O;
+                  if (typeof crypto < "u" && crypto && (crypto.getRandomValues || crypto.randomBytes)) Oe = O;
+                  else throw Oe = !O, Error(a + "crypto unavailable");
+            else Oe = O;
             else throw Error(a + C + " not true or false: " + O);
-            if (w.hasOwnProperty(C = "MODULO_MODE") && (O = w[C], M(O, 0, 9, C), F = O), w.hasOwnProperty(C = "POW_PRECISION") && (O = w[C], M(O, 0, y, C), Ve = O), w.hasOwnProperty(C = "FORMAT"))
-              if (O = w[C], typeof O == "object") Fe = O;
+            if (w.hasOwnProperty(C = "MODULO_MODE") && (O = w[C], M(O, 0, 9, C), F = O), w.hasOwnProperty(C = "POW_PRECISION") && (O = w[C], M(O, 0, y, C), Ge = O), w.hasOwnProperty(C = "FORMAT"))
+              if (O = w[C], typeof O == "object") Ke = O;
               else throw Error(a + C + " not an object: " + O);
             if (w.hasOwnProperty(C = "ALPHABET"))
-              if (O = w[C], typeof O == "string" && !/^.?$|[+\-.\s]|(.).*\1/.test(O)) on = O.slice(0, 10) == "0123456789", gt = O;
+              if (O = w[C], typeof O == "string" && !/^.?$|[+\-.\s]|(.).*\1/.test(O)) sn = O.slice(0, 10) == "0123456789", mt = O;
               else throw Error(a + C + " invalid: " + O)
           } else throw Error(a + "Object expected: " + w);
         return {
-          DECIMAL_PLACES: ke,
+          DECIMAL_PLACES: Se,
           ROUNDING_MODE: V,
           EXPONENTIAL_AT: [z, ie],
-          RANGE: [ve, Ce],
-          CRYPTO: Ee,
+          RANGE: [ke, Be],
+          CRYPTO: Oe,
           MODULO_MODE: F,
-          POW_PRECISION: Ve,
-          FORMAT: Fe,
-          ALPHABET: gt
+          POW_PRECISION: Ge,
+          FORMAT: Ke,
+          ALPHABET: mt
         }
       }, he.isBigNumber = function(w) {
         if (!w || w._isBigNumber !== !0) return !1;
@@ -5290,9 +5291,9 @@ var gi = {},
         } else if (W === null && N === null && (H === null || H === 1 || H === -1)) return !0;
         throw Error(a + "Invalid BigNumber: " + w)
       }, he.maximum = he.max = function() {
-        return ot(arguments, -1)
+        return st(arguments, -1)
       }, he.minimum = he.min = function() {
-        return ot(arguments, 1)
+        return st(arguments, 1)
       }, he.random = function() {
         var w = 9007199254740992,
           C = Math.random() * w & 2097151 ? function() {
@@ -5303,16 +5304,16 @@ var gi = {},
         return function(O) {
           var W, N, H, X, L, K = 0,
             Y = [],
-            G = new he(we);
-          if (O == null ? O = ke : M(O, 0, y), X = i(O / f), Ee)
+            G = new he(ve);
+          if (O == null ? O = Se : M(O, 0, y), X = i(O / f), Oe)
             if (crypto.getRandomValues) {
               for (W = crypto.getRandomValues(new Uint32Array(X *= 2)); K < X;) L = W[K] * 131072 + (W[K + 1] >>> 11), L >= 9e15 ? (N = crypto.getRandomValues(new Uint32Array(2)), W[K] = N[0], W[K + 1] = N[1]) : (Y.push(L % 1e14), K += 2);
               K = X / 2
             } else if (crypto.randomBytes) {
             for (W = crypto.randomBytes(X *= 7); K < X;) L = (W[K] & 31) * 281474976710656 + W[K + 1] * 1099511627776 + W[K + 2] * 4294967296 + W[K + 3] * 16777216 + (W[K + 4] << 16) + (W[K + 5] << 8) + W[K + 6], L >= 9e15 ? crypto.randomBytes(7).copy(W, K) : (Y.push(L % 1e14), K += 7);
             K = X / 7
-          } else throw Ee = !1, Error(a + "crypto unavailable");
-          if (!Ee)
+          } else throw Oe = !1, Error(a + "crypto unavailable");
+          if (!Oe)
             for (; K < X;) L = C(), L < 9e15 && (Y[K++] = L % 1e14);
           for (X = Y[--K], O %= f, X && O && (L = _[f - O], Y[K] = o(X / L) * L); Y[K] === 0; Y.pop(), K--);
           if (K < 0) Y = [H = 0];
@@ -5337,17 +5338,17 @@ var gi = {},
           return L.reverse()
         }
         return function(O, W, N, H, X) {
-          var L, K, Y, G, ee, Ae, be, Be, A = O.indexOf("."),
-            g = ke,
+          var L, K, Y, G, ee, Ie, ye, Pe, A = O.indexOf("."),
+            g = Se,
             I = V;
-          for (A >= 0 && (G = Ve, Ve = 0, O = O.replace(".", ""), Be = new he(W), Ae = Be.pow(O.length - A), Ve = G, Be.c = C(P(v(Ae.c), Ae.e, "0"), 10, N, w), Be.e = Be.c.length), be = C(O, W, N, X ? (L = gt, w) : (L = w, gt)), Y = G = be.length; be[--G] == 0; be.pop());
-          if (!be[0]) return L.charAt(0);
-          if (A < 0 ? --Y : (Ae.c = be, Ae.e = Y, Ae.s = H, Ae = T(Ae, Be, g, I, N), be = Ae.c, ee = Ae.r, Y = Ae.e), K = Y + g + 1, A = be[K], G = N / 2, ee = ee || K < 0 || be[K + 1] != null, ee = I < 4 ? (A != null || ee) && (I == 0 || I == (Ae.s < 0 ? 3 : 2)) : A > G || A == G && (I == 4 || ee || I == 6 && be[K - 1] & 1 || I == (Ae.s < 0 ? 8 : 7)), K < 1 || !be[0]) O = ee ? P(L.charAt(1), -g, L.charAt(0)) : L.charAt(0);
+          for (A >= 0 && (G = Ge, Ge = 0, O = O.replace(".", ""), Pe = new he(W), Ie = Pe.pow(O.length - A), Ge = G, Pe.c = C(P(v(Ie.c), Ie.e, "0"), 10, N, w), Pe.e = Pe.c.length), ye = C(O, W, N, X ? (L = mt, w) : (L = w, mt)), Y = G = ye.length; ye[--G] == 0; ye.pop());
+          if (!ye[0]) return L.charAt(0);
+          if (A < 0 ? --Y : (Ie.c = ye, Ie.e = Y, Ie.s = H, Ie = T(Ie, Pe, g, I, N), ye = Ie.c, ee = Ie.r, Y = Ie.e), K = Y + g + 1, A = ye[K], G = N / 2, ee = ee || K < 0 || ye[K + 1] != null, ee = I < 4 ? (A != null || ee) && (I == 0 || I == (Ie.s < 0 ? 3 : 2)) : A > G || A == G && (I == 4 || ee || I == 6 && ye[K - 1] & 1 || I == (Ie.s < 0 ? 8 : 7)), K < 1 || !ye[0]) O = ee ? P(L.charAt(1), -g, L.charAt(0)) : L.charAt(0);
           else {
-            if (be.length = K, ee)
-              for (--N; ++be[--K] > N;) be[K] = 0, K || (++Y, be = [1].concat(be));
-            for (G = be.length; !be[--G];);
-            for (A = 0, O = ""; A <= G; O += L.charAt(be[A++]));
+            if (ye.length = K, ee)
+              for (--N; ++ye[--K] > N;) ye[K] = 0, K || (++Y, ye = [1].concat(ye));
+            for (G = ye.length; !ye[--G];);
+            for (A = 0, O = ""; A <= G; O += L.charAt(ye[A++]));
             O = P(O, Y, L.charAt(0))
           }
           return O
@@ -5356,9 +5357,9 @@ var gi = {},
         function w(W, N, H) {
           var X, L, K, Y, G = 0,
             ee = W.length,
-            Ae = N % B,
-            be = N / B | 0;
-          for (W = W.slice(); ee--;) K = W[ee] % B, Y = W[ee] / B | 0, X = be * K + Y * Ae, L = Ae * K + X % B * B + G, G = (L / H | 0) + (X / B | 0) + be * Y, W[ee] = L % H;
+            Ie = N % B,
+            ye = N / B | 0;
+          for (W = W.slice(); ee--;) K = W[ee] % B, Y = W[ee] / B | 0, X = ye * K + Y * Ie, L = Ie * K + X % B * B + G, G = (L / H | 0) + (X / B | 0) + ye * Y, W[ee] = L % H;
           return G && (W = [G].concat(W)), W
         }
 
@@ -5378,40 +5379,40 @@ var gi = {},
           for (; !W[0] && W.length > 1; W.splice(0, 1));
         }
         return function(W, N, H, X, L) {
-          var K, Y, G, ee, Ae, be, Be, A, g, I, E, j, b, Q, te, re, se, ye = W.s == N.s ? 1 : -1,
+          var K, Y, G, ee, Ie, ye, Pe, A, g, I, E, j, b, Q, te, re, se, _e = W.s == N.s ? 1 : -1,
             ae = W.c,
             le = N.c;
-          if (!ae || !ae[0] || !le || !le[0]) return new he(!W.s || !N.s || (ae ? le && ae[0] == le[0] : !le) ? NaN : ae && ae[0] == 0 || !le ? ye * 0 : ye / 0);
-          for (A = new he(ye), g = A.c = [], Y = W.e - N.e, ye = H + Y + 1, L || (L = c, Y = m(W.e / f) - m(N.e / f), ye = ye / f | 0), G = 0; le[G] == (ae[G] || 0); G++);
-          if (le[G] > (ae[G] || 0) && Y--, ye < 0) g.push(1), ee = !0;
+          if (!ae || !ae[0] || !le || !le[0]) return new he(!W.s || !N.s || (ae ? le && ae[0] == le[0] : !le) ? NaN : ae && ae[0] == 0 || !le ? _e * 0 : _e / 0);
+          for (A = new he(_e), g = A.c = [], Y = W.e - N.e, _e = H + Y + 1, L || (L = c, Y = m(W.e / f) - m(N.e / f), _e = _e / f | 0), G = 0; le[G] == (ae[G] || 0); G++);
+          if (le[G] > (ae[G] || 0) && Y--, _e < 0) g.push(1), ee = !0;
           else {
-            for (Q = ae.length, re = le.length, G = 0, ye += 2, Ae = o(L / (le[0] + 1)), Ae > 1 && (le = w(le, Ae, L), ae = w(ae, Ae, L), re = le.length, Q = ae.length), b = re, I = ae.slice(0, re), E = I.length; E < re; I[E++] = 0);
+            for (Q = ae.length, re = le.length, G = 0, _e += 2, Ie = o(L / (le[0] + 1)), Ie > 1 && (le = w(le, Ie, L), ae = w(ae, Ie, L), re = le.length, Q = ae.length), b = re, I = ae.slice(0, re), E = I.length; E < re; I[E++] = 0);
             se = le.slice(), se = [0].concat(se), te = le[0], le[1] >= L / 2 && te++;
             do {
-              if (Ae = 0, K = C(le, I, re, E), K < 0) {
-                if (j = I[0], re != E && (j = j * L + (I[1] || 0)), Ae = o(j / te), Ae > 1)
-                  for (Ae >= L && (Ae = L - 1), be = w(le, Ae, L), Be = be.length, E = I.length; C(be, I, Be, E) == 1;) Ae--, O(be, re < Be ? se : le, Be, L), Be = be.length, K = 1;
-                else Ae == 0 && (K = Ae = 1), be = le.slice(), Be = be.length;
-                if (Be < E && (be = [0].concat(be)), O(I, be, E, L), E = I.length, K == -1)
-                  for (; C(le, I, re, E) < 1;) Ae++, O(I, re < E ? se : le, E, L), E = I.length
-              } else K === 0 && (Ae++, I = [0]);
-              g[G++] = Ae, I[0] ? I[E++] = ae[b] || 0 : (I = [ae[b]], E = 1)
-            } while ((b++ < Q || I[0] != null) && ye--);
+              if (Ie = 0, K = C(le, I, re, E), K < 0) {
+                if (j = I[0], re != E && (j = j * L + (I[1] || 0)), Ie = o(j / te), Ie > 1)
+                  for (Ie >= L && (Ie = L - 1), ye = w(le, Ie, L), Pe = ye.length, E = I.length; C(ye, I, Pe, E) == 1;) Ie--, O(ye, re < Pe ? se : le, Pe, L), Pe = ye.length, K = 1;
+                else Ie == 0 && (K = Ie = 1), ye = le.slice(), Pe = ye.length;
+                if (Pe < E && (ye = [0].concat(ye)), O(I, ye, E, L), E = I.length, K == -1)
+                  for (; C(le, I, re, E) < 1;) Ie++, O(I, re < E ? se : le, E, L), E = I.length
+              } else K === 0 && (Ie++, I = [0]);
+              g[G++] = Ie, I[0] ? I[E++] = ae[b] || 0 : (I = [ae[b]], E = 1)
+            } while ((b++ < Q || I[0] != null) && _e--);
             ee = I[0] != null, g[0] || g.splice(0, 1)
           }
           if (L == c) {
-            for (G = 1, ye = g[0]; ye >= 10; ye /= 10, G++);
-            st(A, H + (A.e = G + Y * f - 1) + 1, X, ee)
+            for (G = 1, _e = g[0]; _e >= 10; _e /= 10, G++);
+            lt(A, H + (A.e = G + Y * f - 1) + 1, X, ee)
           } else A.e = Y, A.r = +ee;
           return A
         }
       }();
 
-      function sn(w, C, O, W) {
+      function ln(w, C, O, W) {
         var N, H, X, L, K;
         if (O == null ? O = V : M(O, 0, 8), !w.c) return w.toString();
         if (N = w.c[0], X = w.e, C == null) K = v(w.c), K = W == 1 || W == 2 && (X <= z || X >= ie) ? h(K, X) : P(K, X, "0");
-        else if (w = st(new he(w), C, O), H = w.e, K = v(w.c), L = K.length, W == 1 || W == 2 && (C <= H || H <= z)) {
+        else if (w = lt(new he(w), C, O), H = w.e, K = v(w.c), L = K.length, W == 1 || W == 2 && (C <= H || H <= z)) {
           for (; L < C; K += "0", L++);
           K = h(K, H)
         } else if (C -= X, K = P(K, H, "0"), H + 1 > L) {
@@ -5422,15 +5423,15 @@ var gi = {},
         return w.s < 0 && N ? "-" + K : K
       }
 
-      function ot(w, C) {
+      function st(w, C) {
         for (var O, W, N = 1, H = new he(w[0]); N < w.length; N++) W = new he(w[N]), (!W.s || (O = x(H, W)) === C || O === 0 && H.s === C) && (H = W);
         return H
       }
 
-      function ln(w, C, O) {
+      function cn(w, C, O) {
         for (var W = 1, N = C.length; !C[--N]; C.pop());
         for (N = C[0]; N >= 10; N /= 10, W++);
-        return (O = W + O * f - 1) > Ce ? w.c = w.e = null : O < ve ? w.c = [w.e = 0] : (w.e = O, w.c = C), w
+        return (O = W + O * f - 1) > Be ? w.c = w.e = null : O < ke ? w.c = [w.e = 0] : (w.e = O, w.c = C), w
       }
       ne = function() {
         var w = /^(-?)0([xbo])(?=\w[\w.]*$)/i,
@@ -5442,8 +5443,8 @@ var gi = {},
           var Y, G = L ? X : X.replace(N, "");
           if (W.test(G)) H.s = isNaN(G) ? null : G < 0 ? -1 : 1;
           else {
-            if (!L && (G = G.replace(w, function(ee, Ae, be) {
-                return Y = (be = be.toLowerCase()) == "x" ? 16 : be == "b" ? 2 : 8, !K || K == Y ? Ae : ee
+            if (!L && (G = G.replace(w, function(ee, Ie, ye) {
+                return Y = (ye = ye.toLowerCase()) == "x" ? 16 : ye == "b" ? 2 : 8, !K || K == Y ? Ie : ee
               }), K && (Y = K, G = G.replace(C, "$1").replace(O, "0.$1")), X != G)) return new he(G, Y);
             if (he.DEBUG) throw Error(a + "Not a" + (K ? " base " + K : "") + " number: " + X);
             H.s = null
@@ -5452,16 +5453,16 @@ var gi = {},
         }
       }();
 
-      function st(w, C, O, W) {
+      function lt(w, C, O, W) {
         var N, H, X, L, K, Y, G, ee = w.c,
-          Ae = _;
+          Ie = _;
         if (ee) {
           e: {
             for (N = 1, L = ee[0]; L >= 10; L /= 10, N++);
             if (H = C - N, H < 0) H += f,
             X = C,
             K = ee[Y = 0],
-            G = o(K / Ae[N - X - 1] % 10);
+            G = o(K / Ie[N - X - 1] % 10);
             else if (Y = i((H + 1) / f), Y >= ee.length)
               if (W) {
                 for (; ee.length <= Y; ee.push(0));
@@ -5469,12 +5470,12 @@ var gi = {},
               } else break e;
             else {
               for (K = L = ee[Y], N = 1; L >= 10; L /= 10, N++);
-              H %= f, X = H - f + N, G = X < 0 ? 0 : o(K / Ae[N - X - 1] % 10)
+              H %= f, X = H - f + N, G = X < 0 ? 0 : o(K / Ie[N - X - 1] % 10)
             }
-            if (W = W || C < 0 || ee[Y + 1] != null || (X < 0 ? K : K % Ae[N - X - 1]), W = O < 4 ? (G || W) && (O == 0 || O == (w.s < 0 ? 3 : 2)) : G > 5 || G == 5 && (O == 4 || W || O == 6 && (H > 0 ? X > 0 ? K / Ae[N - X] : 0 : ee[Y - 1]) % 10 & 1 || O == (w.s < 0 ? 8 : 7)), C < 1 || !ee[0]) return ee.length = 0,
-            W ? (C -= w.e + 1, ee[0] = Ae[(f - C % f) % f], w.e = -C || 0) : ee[0] = w.e = 0,
+            if (W = W || C < 0 || ee[Y + 1] != null || (X < 0 ? K : K % Ie[N - X - 1]), W = O < 4 ? (G || W) && (O == 0 || O == (w.s < 0 ? 3 : 2)) : G > 5 || G == 5 && (O == 4 || W || O == 6 && (H > 0 ? X > 0 ? K / Ie[N - X] : 0 : ee[Y - 1]) % 10 & 1 || O == (w.s < 0 ? 8 : 7)), C < 1 || !ee[0]) return ee.length = 0,
+            W ? (C -= w.e + 1, ee[0] = Ie[(f - C % f) % f], w.e = -C || 0) : ee[0] = w.e = 0,
             w;
-            if (H == 0 ? (ee.length = Y, L = 1, Y--) : (ee.length = Y + 1, L = Ae[f - H], ee[Y] = X > 0 ? o(K / Ae[N - X] % Ae[X]) * L : 0), W)
+            if (H == 0 ? (ee.length = Y, L = 1, Y--) : (ee.length = Y + 1, L = Ie[f - H], ee[Y] = X > 0 ? o(K / Ie[N - X] % Ie[X]) * L : 0), W)
               for (;;)
                 if (Y == 0) {
                   for (H = 1, X = ee[0]; X >= 10; X /= 10, H++);
@@ -5486,12 +5487,12 @@ var gi = {},
                   ee[Y--] = 0, L = 1
                 } for (H = ee.length; ee[--H] === 0; ee.pop());
           }
-          w.e > Ce ? w.c = w.e = null : w.e < ve && (w.c = [w.e = 0])
+          w.e > Be ? w.c = w.e = null : w.e < ke && (w.c = [w.e = 0])
         }
         return w
       }
 
-      function nt(w) {
+      function rt(w) {
         var C, O = w.e;
         return O === null ? w.toString() : (C = v(w.c), C = O <= z || O >= ie ? h(C, O) : P(C, O, "0"), w.s < 0 ? "-" + C : C)
       }
@@ -5502,27 +5503,27 @@ var gi = {},
         return x(this, new he(w, C))
       }, q.decimalPlaces = q.dp = function(w, C) {
         var O, W, N, H = this;
-        if (w != null) return M(w, 0, y), C == null ? C = V : M(C, 0, 8), st(new he(H), w + H.e + 1, C);
+        if (w != null) return M(w, 0, y), C == null ? C = V : M(C, 0, 8), lt(new he(H), w + H.e + 1, C);
         if (!(O = H.c)) return null;
         if (W = ((N = O.length - 1) - m(this.e / f)) * f, N = O[N])
           for (; N % 10 == 0; N /= 10, W--);
         return W < 0 && (W = 0), W
       }, q.dividedBy = q.div = function(w, C) {
-        return T(this, new he(w, C), ke, V)
+        return T(this, new he(w, C), Se, V)
       }, q.dividedToIntegerBy = q.idiv = function(w, C) {
         return T(this, new he(w, C), 0, 1)
       }, q.exponentiatedBy = q.pow = function(w, C) {
         var O, W, N, H, X, L, K, Y, G, ee = this;
-        if (w = new he(w), w.c && !w.isInteger()) throw Error(a + "Exponent not an integer: " + nt(w));
-        if (C != null && (C = new he(C)), L = w.e > 14, !ee.c || !ee.c[0] || ee.c[0] == 1 && !ee.e && ee.c.length == 1 || !w.c || !w.c[0]) return G = new he(Math.pow(+nt(ee), L ? w.s * (2 - p(w)) : +nt(w))), C ? G.mod(C) : G;
+        if (w = new he(w), w.c && !w.isInteger()) throw Error(a + "Exponent not an integer: " + rt(w));
+        if (C != null && (C = new he(C)), L = w.e > 14, !ee.c || !ee.c[0] || ee.c[0] == 1 && !ee.e && ee.c.length == 1 || !w.c || !w.c[0]) return G = new he(Math.pow(+rt(ee), L ? w.s * (2 - p(w)) : +rt(w))), C ? G.mod(C) : G;
         if (K = w.s < 0, C) {
           if (C.c ? !C.c[0] : !C.s) return new he(NaN);
           W = !K && ee.isInteger() && C.isInteger(), W && (ee = ee.mod(C))
         } else {
           if (w.e > 9 && (ee.e > 0 || ee.e < -1 || (ee.e == 0 ? ee.c[0] > 1 || L && ee.c[1] >= 24e7 : ee.c[0] < 8e13 || L && ee.c[0] <= 9999975e7))) return H = ee.s < 0 && p(w) ? -0 : 0, ee.e > -1 && (H = 1 / H), new he(K ? 1 / H : H);
-          Ve && (H = i(Ve / f + 2))
+          Ge && (H = i(Ge / f + 2))
         }
-        for (L ? (O = new he(.5), K && (w.s = 1), Y = p(w)) : (N = Math.abs(+nt(w)), Y = N % 2), G = new he(we);;) {
+        for (L ? (O = new he(.5), K && (w.s = 1), Y = p(w)) : (N = Math.abs(+rt(w)), Y = N % 2), G = new he(ve);;) {
           if (Y) {
             if (G = G.times(ee), !G.c) break;
             H ? G.c.length > H && (G.c.length = H) : W && (G = G.mod(C))
@@ -5530,17 +5531,17 @@ var gi = {},
           if (N) {
             if (N = o(N / 2), N === 0) break;
             Y = N % 2
-          } else if (w = w.times(O), st(w, w.e + 1, 1), w.e > 14) Y = p(w);
+          } else if (w = w.times(O), lt(w, w.e + 1, 1), w.e > 14) Y = p(w);
           else {
-            if (N = +nt(w), N === 0) break;
+            if (N = +rt(w), N === 0) break;
             Y = N % 2
           }
           ee = ee.times(ee), H ? ee.c && ee.c.length > H && (ee.c.length = H) : W && (ee = ee.mod(C))
         }
-        return W ? G : (K && (G = we.div(G)), C ? G.mod(C) : H ? st(G, Ve, V, X) : G)
+        return W ? G : (K && (G = ve.div(G)), C ? G.mod(C) : H ? lt(G, Ge, V, X) : G)
       }, q.integerValue = function(w) {
         var C = new he(this);
-        return w == null ? w = V : M(w, 0, 8), st(C, C.e + 1, w)
+        return w == null ? w = V : M(w, 0, 8), lt(C, C.e + 1, w)
       }, q.isEqualTo = q.eq = function(w, C) {
         return x(this, new he(w, C)) === 0
       }, q.isFinite = function() {
@@ -5594,21 +5595,21 @@ var gi = {},
           G[W] -= ee[W]
         }
         for (; G[0] == 0; G.splice(0, 1), --Y);
-        return G[0] ? ln(w, G, Y) : (w.s = V == 3 ? -1 : 1, w.c = [w.e = 0], w)
+        return G[0] ? cn(w, G, Y) : (w.s = V == 3 ? -1 : 1, w.c = [w.e = 0], w)
       }, q.modulo = q.mod = function(w, C) {
         var O, W, N = this;
         return w = new he(w, C), !N.c || !w.s || w.c && !w.c[0] ? new he(NaN) : !w.c || N.c && !N.c[0] ? new he(N) : (F == 9 ? (W = w.s, w.s = 1, O = T(N, w, 0, 3), w.s = W, O.s *= W) : O = T(N, w, 0, F), w = N.minus(O.times(w)), !w.c[0] && F == 1 && (w.s = N.s), w)
       }, q.multipliedBy = q.times = function(w, C) {
-        var O, W, N, H, X, L, K, Y, G, ee, Ae, be, Be, A, g, I = this,
+        var O, W, N, H, X, L, K, Y, G, ee, Ie, ye, Pe, A, g, I = this,
           E = I.c,
           j = (w = new he(w, C)).c;
         if (!E || !j || !E[0] || !j[0]) return !I.s || !w.s || E && !E[0] && !j || j && !j[0] && !E ? w.c = w.e = w.s = null : (w.s *= I.s, !E || !j ? w.c = w.e = null : (w.c = [0], w.e = 0)), w;
-        for (W = m(I.e / f) + m(w.e / f), w.s *= I.s, K = E.length, ee = j.length, K < ee && (Be = E, E = j, j = Be, N = K, K = ee, ee = N), N = K + ee, Be = []; N--; Be.push(0));
+        for (W = m(I.e / f) + m(w.e / f), w.s *= I.s, K = E.length, ee = j.length, K < ee && (Pe = E, E = j, j = Pe, N = K, K = ee, ee = N), N = K + ee, Pe = []; N--; Pe.push(0));
         for (A = c, g = B, N = ee; --N >= 0;) {
-          for (O = 0, Ae = j[N] % g, be = j[N] / g | 0, X = K, H = N + X; H > N;) Y = E[--X] % g, G = E[X] / g | 0, L = be * Y + G * Ae, Y = Ae * Y + L % g * g + Be[H] + O, O = (Y / A | 0) + (L / g | 0) + be * G, Be[H--] = Y % A;
-          Be[H] = O
+          for (O = 0, Ie = j[N] % g, ye = j[N] / g | 0, X = K, H = N + X; H > N;) Y = E[--X] % g, G = E[X] / g | 0, L = ye * Y + G * Ie, Y = Ie * Y + L % g * g + Pe[H] + O, O = (Y / A | 0) + (L / g | 0) + ye * G, Pe[H--] = Y % A;
+          Pe[H] = O
         }
-        return O ? ++W : Be.splice(0, 1), ln(w, Be, W)
+        return O ? ++W : Pe.splice(0, 1), cn(w, Pe, W)
       }, q.negated = function() {
         var w = new he(this);
         return w.s = -w.s || null, w
@@ -5630,10 +5631,10 @@ var gi = {},
           O.reverse()
         }
         for (N = L.length, C = K.length, N - C < 0 && (O = K, K = L, L = O, C = N), N = 0; C;) N = (L[--C] = L[C] + K[C] + N) / c | 0, L[C] = c === L[C] ? 0 : L[C] % c;
-        return N && (L = [N].concat(L), ++X), ln(w, L, X)
+        return N && (L = [N].concat(L), ++X), cn(w, L, X)
       }, q.precision = q.sd = function(w, C) {
         var O, W, N, H = this;
-        if (w != null && w !== !!w) return M(w, 1, y), C == null ? C = V : M(C, 0, 8), st(new he(H), w, C);
+        if (w != null && w !== !!w) return M(w, 1, y), C == null ? C = V : M(C, 0, 8), lt(new he(H), w, C);
         if (!(O = H.c)) return null;
         if (N = O.length - 1, W = N * f + 1, N = O[N]) {
           for (; N % 10 == 0; N /= 10, W--);
@@ -5647,31 +5648,31 @@ var gi = {},
           X = H.c,
           L = H.s,
           K = H.e,
-          Y = ke + 4,
+          Y = Se + 4,
           G = new he("0.5");
         if (L !== 1 || !X || !X[0]) return new he(!L || L < 0 && (!X || X[0]) ? NaN : X ? H : 1 / 0);
-        if (L = Math.sqrt(+nt(H)), L == 0 || L == 1 / 0 ? (C = v(X), (C.length + K) % 2 == 0 && (C += "0"), L = Math.sqrt(+C), K = m((K + 1) / 2) - (K < 0 || K % 2), L == 1 / 0 ? C = "5e" + K : (C = L.toExponential(), C = C.slice(0, C.indexOf("e") + 1) + K), O = new he(C)) : O = new he(L + ""), O.c[0]) {
+        if (L = Math.sqrt(+rt(H)), L == 0 || L == 1 / 0 ? (C = v(X), (C.length + K) % 2 == 0 && (C += "0"), L = Math.sqrt(+C), K = m((K + 1) / 2) - (K < 0 || K % 2), L == 1 / 0 ? C = "5e" + K : (C = L.toExponential(), C = C.slice(0, C.indexOf("e") + 1) + K), O = new he(C)) : O = new he(L + ""), O.c[0]) {
           for (K = O.e, L = K + Y, L < 3 && (L = 0);;)
             if (N = O, O = G.times(N.plus(T(H, N, Y, 1))), v(N.c).slice(0, L) === (C = v(O.c)).slice(0, L))
               if (O.e < K && --L, C = C.slice(L - 3, L + 1), C == "9999" || !W && C == "4999") {
-                if (!W && (st(N, N.e + ke + 2, 0), N.times(N).eq(H))) {
+                if (!W && (lt(N, N.e + Se + 2, 0), N.times(N).eq(H))) {
                   O = N;
                   break
                 }
                 Y += 4, L += 4, W = 1
               } else {
-                (!+C || !+C.slice(1) && C.charAt(0) == "5") && (st(O, O.e + ke + 2, 1), w = !O.times(O).eq(H));
+                (!+C || !+C.slice(1) && C.charAt(0) == "5") && (lt(O, O.e + Se + 2, 1), w = !O.times(O).eq(H));
                 break
               }
         }
-        return st(O, O.e + ke + 1, V, w)
+        return lt(O, O.e + Se + 1, V, w)
       }, q.toExponential = function(w, C) {
-        return w != null && (M(w, 0, y), w++), sn(this, w, C, 1)
+        return w != null && (M(w, 0, y), w++), ln(this, w, C, 1)
       }, q.toFixed = function(w, C) {
-        return w != null && (M(w, 0, y), w = w + this.e + 1), sn(this, w, C)
+        return w != null && (M(w, 0, y), w = w + this.e + 1), ln(this, w, C)
       }, q.toFormat = function(w, C, O) {
         var W, N = this;
-        if (O == null) w != null && C && typeof C == "object" ? (O = C, C = null) : w && typeof w == "object" ? (O = w, w = C = null) : O = Fe;
+        if (O == null) w != null && C && typeof C == "object" ? (O = C, C = null) : w && typeof w == "object" ? (O = w, w = C = null) : O = Ke;
         else if (typeof O != "object") throw Error(a + "Argument not an object: " + O);
         if (W = N.toFixed(w, C), N.c) {
           var H, X = W.split("."),
@@ -5680,34 +5681,34 @@ var gi = {},
             Y = O.groupSeparator || "",
             G = X[0],
             ee = X[1],
-            Ae = N.s < 0,
-            be = Ae ? G.slice(1) : G,
-            Be = be.length;
-          if (K && (H = L, L = K, K = H, Be -= H), L > 0 && Be > 0) {
-            for (H = Be % L || L, G = be.substr(0, H); H < Be; H += L) G += Y + be.substr(H, L);
-            K > 0 && (G += Y + be.slice(H)), Ae && (G = "-" + G)
+            Ie = N.s < 0,
+            ye = Ie ? G.slice(1) : G,
+            Pe = ye.length;
+          if (K && (H = L, L = K, K = H, Pe -= H), L > 0 && Pe > 0) {
+            for (H = Pe % L || L, G = ye.substr(0, H); H < Pe; H += L) G += Y + ye.substr(H, L);
+            K > 0 && (G += Y + ye.slice(H)), Ie && (G = "-" + G)
           }
           W = ee ? G + (O.decimalSeparator || "") + ((K = +O.fractionGroupSize) ? ee.replace(new RegExp("\\d{" + K + "}\\B", "g"), "$&" + (O.fractionGroupSeparator || "")) : ee) : G
         }
         return (O.prefix || "") + W + (O.suffix || "")
       }, q.toFraction = function(w) {
-        var C, O, W, N, H, X, L, K, Y, G, ee, Ae, be = this,
-          Be = be.c;
-        if (w != null && (L = new he(w), !L.isInteger() && (L.c || L.s !== 1) || L.lt(we))) throw Error(a + "Argument " + (L.isInteger() ? "out of range: " : "not an integer: ") + nt(L));
-        if (!Be) return new he(be);
-        for (C = new he(we), Y = O = new he(we), W = K = new he(we), Ae = v(Be), H = C.e = Ae.length - be.e - 1, C.c[0] = _[(X = H % f) < 0 ? f + X : X], w = !w || L.comparedTo(C) > 0 ? H > 0 ? C : Y : L, X = Ce, Ce = 1 / 0, L = new he(Ae), K.c[0] = 0; G = T(L, C, 0, 1), N = O.plus(G.times(W)), N.comparedTo(w) != 1;) O = W, W = N, Y = K.plus(G.times(N = Y)), K = N, C = L.minus(G.times(N = C)), L = N;
-        return N = T(w.minus(O), W, 0, 1), K = K.plus(N.times(Y)), O = O.plus(N.times(W)), K.s = Y.s = be.s, H = H * 2, ee = T(Y, W, H, V).minus(be).abs().comparedTo(T(K, O, H, V).minus(be).abs()) < 1 ? [Y, W] : [K, O], Ce = X, ee
+        var C, O, W, N, H, X, L, K, Y, G, ee, Ie, ye = this,
+          Pe = ye.c;
+        if (w != null && (L = new he(w), !L.isInteger() && (L.c || L.s !== 1) || L.lt(ve))) throw Error(a + "Argument " + (L.isInteger() ? "out of range: " : "not an integer: ") + rt(L));
+        if (!Pe) return new he(ye);
+        for (C = new he(ve), Y = O = new he(ve), W = K = new he(ve), Ie = v(Pe), H = C.e = Ie.length - ye.e - 1, C.c[0] = _[(X = H % f) < 0 ? f + X : X], w = !w || L.comparedTo(C) > 0 ? H > 0 ? C : Y : L, X = Be, Be = 1 / 0, L = new he(Ie), K.c[0] = 0; G = T(L, C, 0, 1), N = O.plus(G.times(W)), N.comparedTo(w) != 1;) O = W, W = N, Y = K.plus(G.times(N = Y)), K = N, C = L.minus(G.times(N = C)), L = N;
+        return N = T(w.minus(O), W, 0, 1), K = K.plus(N.times(Y)), O = O.plus(N.times(W)), K.s = Y.s = ye.s, H = H * 2, ee = T(Y, W, H, V).minus(ye).abs().comparedTo(T(K, O, H, V).minus(ye).abs()) < 1 ? [Y, W] : [K, O], Be = X, ee
       }, q.toNumber = function() {
-        return +nt(this)
+        return +rt(this)
       }, q.toPrecision = function(w, C) {
-        return w != null && M(w, 1, y), sn(this, w, C, 2)
+        return w != null && M(w, 1, y), ln(this, w, C, 2)
       }, q.toString = function(w) {
         var C, O = this,
           W = O.s,
           N = O.e;
-        return N === null ? W ? (C = "Infinity", W < 0 && (C = "-" + C)) : C = "NaN" : (w == null ? C = N <= z || N >= ie ? h(v(O.c), N) : P(v(O.c), N, "0") : w === 10 && on ? (O = st(new he(O), ke + N + 1, V), C = P(v(O.c), O.e, "0")) : (M(w, 2, gt.length, "Base"), C = J(P(v(O.c), N, "0"), 10, w, W, !0)), W < 0 && O.c[0] && (C = "-" + C)), C
+        return N === null ? W ? (C = "Infinity", W < 0 && (C = "-" + C)) : C = "NaN" : (w == null ? C = N <= z || N >= ie ? h(v(O.c), N) : P(v(O.c), N, "0") : w === 10 && sn ? (O = lt(new he(O), Se + N + 1, V), C = P(v(O.c), O.e, "0")) : (M(w, 2, mt.length, "Base"), C = J(P(v(O.c), N, "0"), 10, w, W, !0)), W < 0 && O.c[0] && (C = "-" + C)), C
       }, q.valueOf = q.toJSON = function() {
-        return nt(this)
+        return rt(this)
       }, q._isBigNumber = !0, k != null && he.set(k), he
     }
 
@@ -5717,28 +5718,28 @@ var gi = {},
     }
 
     function v(k) {
-      for (var T, J, ne = 1, q = k.length, we = k[0] + ""; ne < q;) {
+      for (var T, J, ne = 1, q = k.length, ve = k[0] + ""; ne < q;) {
         for (T = k[ne++] + "", J = f - T.length; J--; T = "0" + T);
-        we += T
+        ve += T
       }
-      for (q = we.length; we.charCodeAt(--q) === 48;);
-      return we.slice(0, q + 1 || 1)
+      for (q = ve.length; ve.charCodeAt(--q) === 48;);
+      return ve.slice(0, q + 1 || 1)
     }
 
     function x(k, T) {
       var J, ne, q = k.c,
-        we = T.c,
-        ke = k.s,
+        ve = T.c,
+        Se = k.s,
         V = T.s,
         z = k.e,
         ie = T.e;
-      if (!ke || !V) return null;
-      if (J = q && !q[0], ne = we && !we[0], J || ne) return J ? ne ? 0 : -V : ke;
-      if (ke != V) return ke;
-      if (J = ke < 0, ne = z == ie, !q || !we) return ne ? 0 : !q ^ J ? 1 : -1;
+      if (!Se || !V) return null;
+      if (J = q && !q[0], ne = ve && !ve[0], J || ne) return J ? ne ? 0 : -V : Se;
+      if (Se != V) return Se;
+      if (J = Se < 0, ne = z == ie, !q || !ve) return ne ? 0 : !q ^ J ? 1 : -1;
       if (!ne) return z > ie ^ J ? 1 : -1;
-      for (V = (z = q.length) < (ie = we.length) ? z : ie, ke = 0; ke < V; ke++)
-        if (q[ke] != we[ke]) return q[ke] > we[ke] ^ J ? 1 : -1;
+      for (V = (z = q.length) < (ie = ve.length) ? z : ie, Se = 0; Se < V; Se++)
+        if (q[Se] != ve[Se]) return q[Se] > ve[Se] ^ J ? 1 : -1;
       return z == ie ? 0 : z > ie ^ J ? 1 : -1
     }
 
@@ -5768,34 +5769,34 @@ var gi = {},
     }
     n = S(), n.default = n.BigNumber = n, e.exports ? e.exports = n : (t || (t = typeof self < "u" && self ? self : window), t.BigNumber = n)
   })(pe)
-})(ks);
-var Ma = ks.exports,
-  Ss = pe && pe.__importDefault || function(e) {
+})(Ss);
+var Ta = Ss.exports,
+  As = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(gi, "__esModule", {
+Object.defineProperty(mi, "__esModule", {
   value: !0
 });
-gi.WalletV3Account = void 0;
-const Qu = nn,
-  Cr = Ss(Ma),
-  fa = Ss(St);
-class Qr {
+mi.WalletV3Account = void 0;
+const qu = rn,
+  Br = As(Ta),
+  ha = As(At);
+class qr {
   static async computeAddress(t) {
-    await fa.default.ensureNekotonLoaded();
-    const n = t.publicKey instanceof Cr.default ? t.publicKey : new Cr.default(`0x${t.publicKey}`),
-      r = fo(n).hash;
-    return new Qu.Address(`${t.workchain!=null?t.workchain:0}:${r}`)
+    await ha.default.ensureNekotonLoaded();
+    const n = t.publicKey instanceof Br.default ? t.publicKey : new Br.default(`0x${t.publicKey}`),
+      r = ho(n).hash;
+    return new qu.Address(`${t.workchain!=null?t.workchain:0}:${r}`)
   }
   static async fromPubkey(t) {
-    const n = new Cr.default(`0x${t.publicKey}`),
-      r = await Qr.computeAddress({
+    const n = new Br.default(`0x${t.publicKey}`),
+      r = await qr.computeAddress({
         publicKey: n,
         workchain: t.workchain
       }),
-      i = new Qr(r);
+      i = new qr(r);
     return i.publicKey = n, i
   }
   constructor(t) {
@@ -5803,7 +5804,7 @@ class Qr {
   }
   async fetchPublicKey(t) {
     let n = this.publicKey;
-    return n == null && (n = this.publicKey = await t.fetchPublicKey(this.address).then(r => new Cr.default(`0x${r}`))), n.toString(16).padStart(64, "0")
+    return n == null && (n = this.publicKey = await t.fetchPublicKey(this.address).then(r => new Br.default(`0x${r}`))), n.toString(16).padStart(64, "0")
   }
   async prepareMessage(t, n) {
     const {
@@ -5817,20 +5818,20 @@ class Qr {
       body: c,
       amount: t.amount
     }), u = {
-      walletId: Cs,
+      walletId: Bs,
       expireAt: s,
       seqno: r,
       flags: 3,
       message: f
     }, _ = n.packIntoCell({
-      structure: As,
+      structure: Is,
       data: u
     }).hash, B = await a.sign(_, t.signatureId), {
       signatureParts: y
     } = n.extendSignature(B);
     u.signatureHigh = y.high, u.signatureLow = y.low;
     const S = n.packIntoCell({
-      structure: Zu,
+      structure: ed,
       data: u
     }).boc;
     return n.createRawExternalMessage({
@@ -5845,14 +5846,14 @@ class Qr {
     const i = await t.getFullContractState(this.address);
     if (i == null || !i.isDeployed) {
       if (this.publicKey == null) throw new Error("Contract not deployed and public key was not specified");
-      n = fo(this.publicKey).boc, r = {
+      n = ho(this.publicKey).boc, r = {
         seqno: 0,
         publicKey: this.publicKey
       }
     } else {
       const o = t.extractContractData(i.boc);
       if (o == null) throw new Error("Failed to extract contract data");
-      r = qu(t, o)
+      r = Zu(t, o)
     }
     if (this.publicKey == null) this.publicKey = r.publicKey;
     else if (!this.publicKey.eq(r.publicKey)) throw new Error("Public key mismatch");
@@ -5863,28 +5864,28 @@ class Qr {
     }
   }
 }
-gi.WalletV3Account = Qr;
-const qu = (e, t) => {
+mi.WalletV3Account = qr;
+const Zu = (e, t) => {
     const n = e.unpackFromCell({
-      structure: Is,
+      structure: Cs,
       boc: t,
       allowPartial: !1
     });
     if (typeof n != "object" || typeof n.seqno != "string" || typeof n.publicKey != "string") throw new Error("Invalid contract data ");
     return {
       seqno: parseInt(n.seqno),
-      publicKey: new Cr.default(n.publicKey)
+      publicKey: new Br.default(n.publicKey)
     }
   },
-  fo = e => {
-    const t = fa.default.nekoton.packIntoCell(Is, {
+  ho = e => {
+    const t = ha.default.nekoton.packIntoCell(Cs, {
       seqno: 0,
-      walletId: Cs,
+      walletId: Bs,
       publicKey: e.toFixed(0)
     }).boc;
-    return fa.default.nekoton.mergeTvc(ed, t)
+    return ha.default.nekoton.mergeTvc(td, t)
   },
-  As = [{
+  Is = [{
     name: "walletId",
     type: "uint32"
   }, {
@@ -5900,14 +5901,14 @@ const qu = (e, t) => {
     name: "message",
     type: "cell"
   }],
-  Zu = [{
+  ed = [{
     name: "signatureHigh",
     type: "uint256"
   }, {
     name: "signatureLow",
     type: "uint256"
-  }, ...As],
-  Is = [{
+  }, ...Is],
+  Cs = [{
     name: "seqno",
     type: "uint32"
   }, {
@@ -5917,44 +5918,44 @@ const qu = (e, t) => {
     name: "publicKey",
     type: "uint256"
   }],
-  ed = "te6ccgEBAQEAcQAA3v8AIN0gggFMl7ohggEznLqxn3Gw7UTQ0x/THzHXC//jBOCk8mCDCNcYINMf0x/TH/gjE7vyY+1E0NMf0x/T/9FRMrryoVFEuvKiBPkBVBBV+RDyo/gAkyDXSpbTB9QC+wDo0QGkyMsfyx/L/8ntVA==",
-  Cs = 1269378442;
-var mi = {},
-  Bs = pe && pe.__importDefault || function(e) {
+  td = "te6ccgEBAQEAcQAA3v8AIN0gggFMl7ohggEznLqxn3Gw7UTQ0x/THzHXC//jBOCk8mCDCNcYINMf0x/TH/gjE7vyY+1E0NMf0x/T/9FRMrryoVFEuvKiBPkBVBBV+RDyo/gAkyDXSpbTB9QC+wDo0QGkyMsfyx/L/8ntVA==",
+  Bs = 1269378442;
+var bi = {},
+  Ps = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(mi, "__esModule", {
+Object.defineProperty(bi, "__esModule", {
   value: !0
 });
-mi.HighloadWalletV2 = void 0;
-const td = nn,
-  Br = Bs(Ma),
-  ha = Bs(St),
-  nd = pt;
-class qr {
+bi.HighloadWalletV2 = void 0;
+const nd = rn,
+  Pr = Ps(Ta),
+  pa = Ps(At),
+  rd = gt;
+class Zr {
   static async computeAddress(t) {
-    await ha.default.ensureNekotonLoaded();
-    const n = t.publicKey instanceof Br.default ? t.publicKey : new Br.default(`0x${t.publicKey}`),
-      r = ho(n).hash;
-    return new td.Address(`${t.workchain!=null?t.workchain:0}:${r}`)
+    await pa.default.ensureNekotonLoaded();
+    const n = t.publicKey instanceof Pr.default ? t.publicKey : new Pr.default(`0x${t.publicKey}`),
+      r = po(n).hash;
+    return new nd.Address(`${t.workchain!=null?t.workchain:0}:${r}`)
   }
   static async fromPubkey(t) {
-    const n = new Br.default(`0x${t.publicKey}`),
-      r = await qr.computeAddress({
+    const n = new Pr.default(`0x${t.publicKey}`),
+      r = await Zr.computeAddress({
         publicKey: n,
         workchain: t.workchain
       }),
-      i = new qr(r);
+      i = new Zr(r);
     return i.publicKey = n, i
   }
   constructor(t) {
-    this.address = (0, nd.convertToAddressObject)(t)
+    this.address = (0, rd.convertToAddressObject)(t)
   }
   async fetchPublicKey(t) {
     let n = this.publicKey;
-    return n == null && (n = this.publicKey = await t.fetchPublicKey(this.address).then(r => new Br.default(`0x${r}`))), n.toString(16).padStart(64, "0")
+    return n == null && (n = this.publicKey = await t.fetchPublicKey(this.address).then(r => new Pr.default(`0x${r}`))), n.toString(16).padStart(64, "0")
   }
   async prepareMessage(t, n) {
     const {
@@ -5977,12 +5978,12 @@ class qr {
       boc: u,
       hash: _
     } = n.packIntoCell({
-      structure: Ps,
+      structure: Ms,
       data: f
     });
-    f.walletId = Es, f.expireAt = a, f.messagesHash = `0x${_.slice(-8)}`;
+    f.walletId = Os, f.expireAt = a, f.messagesHash = `0x${_.slice(-8)}`;
     const B = n.packIntoCell({
-        structure: Ms,
+        structure: Ts,
         data: f
       }).hash,
       y = await o.sign(B, t.signatureId),
@@ -5991,7 +5992,7 @@ class qr {
       } = n.extendSignature(y);
     f.signatureHigh = S.high, f.signatureLow = S.low;
     const m = n.packIntoCell({
-      structure: id,
+      structure: ad,
       data: f
     }).boc;
     return n.createRawExternalMessage({
@@ -6006,11 +6007,11 @@ class qr {
     const i = await t.getFullContractState(this.address);
     if (i == null || !i.isDeployed) {
       if (this.publicKey == null) throw new Error("Contract not deployed and public key was not specified");
-      n = ho(this.publicKey).boc, r = this.publicKey
+      n = po(this.publicKey).boc, r = this.publicKey
     } else if (this.publicKey == null) {
       const o = t.extractContractData(i.boc);
       if (o == null) throw new Error("Failed to extract contract data");
-      r = rd(t, o).publicKey
+      r = id(t, o).publicKey
     } else r = this.publicKey;
     return this.publicKey == null && (this.publicKey = r), {
       publicKey: r.toString(16).padStart(64, "0"),
@@ -6018,28 +6019,28 @@ class qr {
     }
   }
 }
-mi.HighloadWalletV2 = qr;
-const rd = (e, t) => {
+bi.HighloadWalletV2 = Zr;
+const id = (e, t) => {
     const n = e.unpackFromCell({
-      structure: Ts,
+      structure: Es,
       boc: t,
       allowPartial: !0
     });
     if (typeof n != "object" || typeof n.publicKey != "string") throw new Error("Invalid contract data");
     return {
-      publicKey: new Br.default(n.publicKey)
+      publicKey: new Pr.default(n.publicKey)
     }
   },
-  ho = e => {
-    const t = ha.default.nekoton.packIntoCell(Ts, {
-      walletId: Es,
+  po = e => {
+    const t = pa.default.nekoton.packIntoCell(Es, {
+      walletId: Os,
       lastCleaned: 0,
       publicKey: e.toFixed(0),
       queries: !1
     }).boc;
-    return ha.default.nekoton.mergeTvc(ad, t)
+    return pa.default.nekoton.mergeTvc(od, t)
   },
-  Ps = [{
+  Ms = [{
     name: "messages",
     type: "map(uint16,tuple)",
     components: [{
@@ -6050,7 +6051,7 @@ const rd = (e, t) => {
       type: "cell"
     }]
   }],
-  Ms = [{
+  Ts = [{
     name: "walletId",
     type: "uint32"
   }, {
@@ -6059,15 +6060,15 @@ const rd = (e, t) => {
   }, {
     name: "messagesHash",
     type: "uint32"
-  }, ...Ps],
-  id = [{
+  }, ...Ms],
+  ad = [{
     name: "signatureHigh",
     type: "uint256"
   }, {
     name: "signatureLow",
     type: "uint256"
-  }, ...Ms],
-  Ts = [{
+  }, ...Ts],
+  Es = [{
     name: "walletId",
     type: "uint32"
   }, {
@@ -6080,36 +6081,36 @@ const rd = (e, t) => {
     name: "queries",
     type: "bool"
   }],
-  ad = "te6ccgEBCQEA5QABFP8A9KQT9LzyyAsBAgEgBAIB6vKDCNcYINMf0z/4I6ofUyC58mPtRNDTH9M/0//0BNFTYIBA9A5voTHyYFFzuvKiB/kBVBCH+RDyowL0BNH4AH+OFiGAEPR4b6UgmALTB9QwAfsAkTLiAbPmW4MlochANIBA9EOK5jHIEssfE8s/y//0AMntVAMANCCAQPSWb6UyURCUMFMDud4gkzM2AZIyMOKzAgFICAUCASAHBgBBvl+XaiaGmPmOmf6f+Y+gJoqRBAIHoHN9CYyS2/yV3R8UABe9nOdqJoaa+Y64X/wABNAw",
-  Es = 0;
-var bi = {},
-  Os = pe && pe.__importDefault || function(e) {
+  od = "te6ccgEBCQEA5QABFP8A9KQT9LzyyAsBAgEgBAIB6vKDCNcYINMf0z/4I6ofUyC58mPtRNDTH9M/0//0BNFTYIBA9A5voTHyYFFzuvKiB/kBVBCH+RDyowL0BNH4AH+OFiGAEPR4b6UgmALTB9QwAfsAkTLiAbPmW4MlochANIBA9EOK5jHIEssfE8s/y//0AMntVAMANCCAQPSWb6UyURCUMFMDud4gkzM2AZIyMOKzAgFICAUCASAHBgBBvl+XaiaGmPmOmf6f+Y+gJoqRBAIHoHN9CYyS2/yV3R8UABe9nOdqJoaa+Y64X/wABNAw",
+  Os = 0;
+var yi = {},
+  xs = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(bi, "__esModule", {
+Object.defineProperty(yi, "__esModule", {
   value: !0
 });
-bi.EverWalletAccount = void 0;
-const od = nn,
-  gr = Os(Ma),
-  Zr = Os(St);
-class ei {
+yi.EverWalletAccount = void 0;
+const sd = rn,
+  mr = xs(Ta),
+  ei = xs(At);
+class ti {
   static async computeAddress(t) {
-    await Zr.default.ensureNekotonLoaded();
-    const n = t.publicKey instanceof gr.default ? t.publicKey : new gr.default(`0x${t.publicKey}`),
-      r = po(n, t.nonce).hash;
-    return new od.Address(`${t.workchain!=null?t.workchain:0}:${r}`)
+    await ei.default.ensureNekotonLoaded();
+    const n = t.publicKey instanceof mr.default ? t.publicKey : new mr.default(`0x${t.publicKey}`),
+      r = go(n, t.nonce).hash;
+    return new sd.Address(`${t.workchain!=null?t.workchain:0}:${r}`)
   }
   static async fromPubkey(t) {
-    const n = new gr.default(`0x${t.publicKey}`),
-      r = await ei.computeAddress({
+    const n = new mr.default(`0x${t.publicKey}`),
+      r = await ti.computeAddress({
         publicKey: n,
         workchain: t.workchain,
         nonce: t.nonce
       }),
-      i = new ei(r);
+      i = new ti(r);
     return i.publicKey = n, i.nonce = t.nonce, i
   }
   constructor(t) {
@@ -6117,7 +6118,7 @@ class ei {
   }
   async fetchPublicKey(t) {
     let n = this.publicKey;
-    return n == null && (n = this.publicKey = await t.fetchPublicKey(this.address).then(r => new gr.default(`0x${r}`)), this.isDeployed = !0), n.toString(16).padStart(64, "0")
+    return n == null && (n = this.publicKey = await t.fetchPublicKey(this.address).then(r => new mr.default(`0x${r}`)), this.isDeployed = !0), n.toString(16).padStart(64, "0")
   }
   async prepareMessage(t, n) {
     const {
@@ -6125,13 +6126,13 @@ class ei {
       stateInit: i
     } = await this.fetchState(n), o = await n.getSigner(r), a = t.payload ? n.encodeInternalInput(t.payload) : "";
     let s, c, f;
-    return t.stateInit == null ? (s = ud, c = "sendTransaction", f = {
+    return t.stateInit == null ? (s = dd, c = "sendTransaction", f = {
       dest: t.recipient,
       value: t.amount,
       bounce: t.bounce,
       flags: 3,
       payload: a
-    }) : (s = dd, c = "sendTransactionRaw", f = {
+    }) : (s = fd, c = "sendTransactionRaw", f = {
       flags: 3,
       message: n.encodeInternalMessage({
         dst: t.recipient,
@@ -6158,8 +6159,8 @@ class ei {
       const i = await t.getFullContractState(this.address);
       if (i == null || !i.isDeployed) {
         if (this.publicKey == null) throw new Error("Contract not deployed and public key was not specified");
-        n = po(this.publicKey, this.nonce).boc, r = this.publicKey
-      } else this.isDeployed = !0, r = new gr.default(`0x${Zr.default.nekoton.extractPublicKey(i.boc)}`);
+        n = go(this.publicKey, this.nonce).boc, r = this.publicKey
+      } else this.isDeployed = !0, r = new mr.default(`0x${ei.default.nekoton.extractPublicKey(i.boc)}`);
       this.publicKey == null && (this.publicKey = r)
     }
     return {
@@ -6168,28 +6169,28 @@ class ei {
     }
   }
 }
-bi.EverWalletAccount = ei;
-const po = (e, t) => {
+yi.EverWalletAccount = ti;
+const go = (e, t) => {
     let n, r;
-    t != null ? (n = ld, r = {
+    t != null ? (n = cd, r = {
       publicKey: e.toFixed(0),
       timestamp: 0,
       nonce: t
-    }) : (n = sd, r = {
+    }) : (n = ld, r = {
       publicKey: e.toFixed(0),
       timestamp: 0
     });
-    const i = Zr.default.nekoton.packIntoCell(n, r).boc;
-    return Zr.default.nekoton.mergeTvc(cd, i)
+    const i = ei.default.nekoton.packIntoCell(n, r).boc;
+    return ei.default.nekoton.mergeTvc(ud, i)
   },
-  sd = [{
+  ld = [{
     name: "publicKey",
     type: "uint256"
   }, {
     name: "timestamp",
     type: "uint64"
   }],
-  ld = [{
+  cd = [{
     name: "publicKey",
     type: "uint256"
   }, {
@@ -6199,8 +6200,8 @@ const po = (e, t) => {
     name: "nonce",
     type: "uint32"
   }],
-  cd = "te6cckEBBgEA/AABFP8A9KQT9LzyyAsBAgEgAgMABNIwAubycdcBAcAA8nqDCNcY7UTQgwfXAdcLP8j4KM8WI88WyfkAA3HXAQHDAJqDB9cBURO68uBk3oBA1wGAINcBgCDXAVQWdfkQ8qj4I7vyeWa++COBBwiggQPoqFIgvLHydAIgghBM7mRsuuMPAcjL/8s/ye1UBAUAmDAC10zQ+kCDBtcBcdcBeNcB10z4AHCAEASqAhSxyMsFUAXPFlAD+gLLaSLQIc8xIddJoIQJuZgzcAHLAFjPFpcwcQHLABLM4skB+wAAPoIQFp4+EbqOEfgAApMg10qXeNcB1AL7AOjRkzLyPOI+zYS/",
-  ud = `{
+  ud = "te6cckEBBgEA/AABFP8A9KQT9LzyyAsBAgEgAgMABNIwAubycdcBAcAA8nqDCNcY7UTQgwfXAdcLP8j4KM8WI88WyfkAA3HXAQHDAJqDB9cBURO68uBk3oBA1wGAINcBgCDXAVQWdfkQ8qj4I7vyeWa++COBBwiggQPoqFIgvLHydAIgghBM7mRsuuMPAcjL/8s/ye1UBAUAmDAC10zQ+kCDBtcBcdcBeNcB10z4AHCAEASqAhSxyMsFUAXPFlAD+gLLaSLQIc8xIddJoIQJuZgzcAHLAFjPFpcwcQHLABLM4skB+wAAPoIQFp4+EbqOEfgAApMg10qXeNcB1AL7AOjRkzLyPOI+zYS/",
+  dd = `{
   "ABI version": 2,
   "version": "2.3",
   "header": ["pubkey", "time", "expire"],
@@ -6217,7 +6218,7 @@ const po = (e, t) => {
   }],
   "events": []
 }`,
-  dd = `{
+  fd = `{
   "ABI version": 2,
   "version": "2.3",
   "header": ["pubkey", "time", "expire"],
@@ -6236,15 +6237,15 @@ const po = (e, t) => {
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.SimpleAccountsStorage = e.AccountsStorageContext = e.EverWalletAccount = e.HighloadWalletV2 = e.WalletV3Account = e.MsigAccount = e.GenericAccount = e.GiverAccount = void 0;
-  const t = pt;
-  var n = pi;
+  const t = gt;
+  var n = gi;
   Object.defineProperty(e, "GiverAccount", {
     enumerable: !0,
     get: function() {
       return n.GiverAccount
     }
   });
-  var r = er;
+  var r = tr;
   Object.defineProperty(e, "GenericAccount", {
     enumerable: !0,
     get: function() {
@@ -6256,21 +6257,21 @@ const po = (e, t) => {
       return r.MsigAccount
     }
   });
-  var i = gi;
+  var i = mi;
   Object.defineProperty(e, "WalletV3Account", {
     enumerable: !0,
     get: function() {
       return i.WalletV3Account
     }
   });
-  var o = mi;
+  var o = bi;
   Object.defineProperty(e, "HighloadWalletV2", {
     enumerable: !0,
     get: function() {
       return o.HighloadWalletV2
     }
   });
-  var a = bi;
+  var a = yi;
   Object.defineProperty(e, "EverWalletAccount", {
     enumerable: !0,
     get: function() {
@@ -6373,37 +6374,37 @@ const po = (e, t) => {
     }
   }
   e.SimpleAccountsStorage = c
-})(da);
-var yi = {};
-Object.defineProperty(yi, "__esModule", {
+})(fa);
+var _i = {};
+Object.defineProperty(_i, "__esModule", {
   value: !0
 });
-yi.ConnectionFactory = void 0;
-class fd {}
-yi.ConnectionFactory = fd;
-var _i = {},
-  hd = pe && pe.__importDefault || function(e) {
+_i.ConnectionFactory = void 0;
+class hd {}
+_i.ConnectionFactory = hd;
+var wi = {},
+  pd = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(_i, "__esModule", {
+Object.defineProperty(wi, "__esModule", {
   value: !0
 });
-_i.SimpleKeystore = void 0;
-const xs = hd(St);
-class Ta {
+wi.SimpleKeystore = void 0;
+const Us = pd(At);
+class Ea {
   constructor(t = {}) {
     this.signers = new Map, this.signersByPublicKey = new Map;
     for (const [n, r] of Object.entries(t)) this.addKeyPair(n, r)
   }
   static generateKeyPair() {
-    return xs.default.nekoton.ed25519_generateKeyPair()
+    return Us.default.nekoton.ed25519_generateKeyPair()
   }
   addKeyPair(t, n) {
     let r, i;
     typeof t == "string" ? (r = t, i = n) : (r = t.publicKey, i = t);
-    const o = new pd(i);
+    const o = new gd(i);
     this.signers.set(r, o), this.signersByPublicKey.set(i.publicKey, o)
   }
   removeKeyPair(t) {
@@ -6411,7 +6412,7 @@ class Ta {
     n != null && (this.signers.delete(t), this.signersByPublicKey.delete(n.publicKey))
   }
   async withNewKey(t, n = {}) {
-    const r = Ta.generateKeyPair(),
+    const r = Ea.generateKeyPair(),
       i = n.keyId != null ? n.keyId : r.publicKey,
       o = n.keepOnError || !1;
     return this.addKeyPair(i, r), t(i).then(a => (a === !1 && this.removeKeyPair(i), i)).catch(a => {
@@ -6422,21 +6423,21 @@ class Ta {
     return this.signers.get(t) || this.signersByPublicKey.get(t)
   }
 }
-_i.SimpleKeystore = Ta;
-class pd {
+wi.SimpleKeystore = Ea;
+class gd {
   constructor(t) {
     this.keyPair = t, this.publicKey = this.keyPair.publicKey
   }
   async sign(t, n) {
-    return xs.default.nekoton.ed25519_sign(this.keyPair.secretKey, t, n)
+    return Us.default.nekoton.ed25519_sign(this.keyPair.secretKey, t, n)
   }
 }
-var wi = {};
-Object.defineProperty(wi, "__esModule", {
+var vi = {};
+Object.defineProperty(vi, "__esModule", {
   value: !0
 });
-wi.Clock = void 0;
-class gd {
+vi.Clock = void 0;
+class md {
   constructor(t) {
     this.impls = [], this.currentOffset = 0, t != null && (this.currentOffset = t)
   }
@@ -6454,7 +6455,7 @@ class gd {
     this.impls = []
   }
 }
-wi.Clock = gd;
+vi.Clock = md;
 (function(e) {
   var t = pe && pe.__createBinding || (Object.create ? function(U, l, R, D) {
       D === void 0 && (D = R);
@@ -6479,21 +6480,21 @@ wi.Clock = gd;
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.EverscaleStandaloneClient = e.SUPPORTED_PERMISSIONS = e.VERSION = e.Clock = e.SimpleKeystore = e.checkConnection = e.ConnectionError = e.NETWORK_PRESETS = void 0;
-  const i = r(qc),
-    o = r(St),
-    a = pt,
-    s = Wr,
-    c = fi,
-    f = da;
-  n(yi, e);
-  var u = Wr;
+  const i = r(Zc),
+    o = r(At),
+    a = gt,
+    s = Yr,
+    c = hi,
+    f = fa;
+  n(_i, e);
+  var u = Yr;
   Object.defineProperty(e, "NETWORK_PRESETS", {
     enumerable: !0,
     get: function() {
       return u.NETWORK_PRESETS
     }
   });
-  var _ = Wr;
+  var _ = Yr;
   Object.defineProperty(e, "ConnectionError", {
     enumerable: !0,
     get: function() {
@@ -6504,15 +6505,15 @@ wi.Clock = gd;
     get: function() {
       return _.checkConnection
     }
-  }), n(da, e);
-  var B = _i;
+  }), n(fa, e);
+  var B = wi;
   Object.defineProperty(e, "SimpleKeystore", {
     enumerable: !0,
     get: function() {
       return B.SimpleKeystore
     }
   });
-  var y = wi;
+  var y = vi;
   Object.defineProperty(e, "Clock", {
     enumerable: !0,
     get: function() {
@@ -6534,19 +6535,19 @@ wi.Clock = gd;
     static async create(l = {}) {
       await o.default.ensureNekotonLoaded(l.initInput);
       const R = {},
-        D = (ce, Ie) => {
-          var Se;
-          (Se = R.client) === null || Se === void 0 || Se.emit(ce, Ie)
+        D = (ce, Ce) => {
+          var Ae;
+          (Ae = R.client) === null || Ae === void 0 || Ae.emit(ce, Ce)
         },
         Z = new o.default.nekoton.ClockWithOffset;
       l.clock != null && (l.clock.impls.push(Z), Z.updateOffset(l.clock.offset));
       try {
         const ce = l.connection != null ? await (0, s.createConnectionController)(Z, l.connection) : void 0,
-          Ie = ce != null ? new c.SubscriptionController(ce, D) : void 0,
-          Se = new m({
+          Ce = ce != null ? new c.SubscriptionController(ce, D) : void 0,
+          Ae = new m({
             permissions: {},
             connectionController: ce,
-            subscriptionController: Ie,
+            subscriptionController: Ce,
             properties: {
               message: S(l.message)
             },
@@ -6555,7 +6556,7 @@ wi.Clock = gd;
             clock: Z,
             notify: D
           });
-        return R.client = Se, Se
+        return R.client = Ae, Ae
       } catch (ce) {
         throw l.clock != null && l.clock.impls.pop(), Z.free(), ce
       }
@@ -6576,25 +6577,25 @@ wi.Clock = gd;
         computeStorageFee: J,
         getAccountsByCodeHash: ne,
         getTransactions: q,
-        getTransaction: we,
-        findTransaction: ke,
+        getTransaction: ve,
+        findTransaction: Se,
         runLocal: V,
         executeLocal: z,
         getExpectedAddress: ie,
-        getContractFields: ve,
-        unpackInitData: Ce,
-        getBocHash: Ee,
+        getContractFields: ke,
+        unpackInitData: Be,
+        getBocHash: Oe,
         packIntoCell: F,
-        unpackFromCell: Ve,
-        extractPublicKey: Fe,
-        codeToTvc: gt,
-        mergeTvc: on,
+        unpackFromCell: Ge,
+        extractPublicKey: Ke,
+        codeToTvc: mt,
+        mergeTvc: sn,
         splitTvc: he,
-        setCodeSalt: sn,
-        getCodeSalt: ot,
-        encodeInternalInput: ln,
-        decodeInput: st,
-        decodeOutput: nt,
+        setCodeSalt: ln,
+        getCodeSalt: st,
+        encodeInternalInput: cn,
+        decodeInput: lt,
+        decodeOutput: rt,
         decodeEvent: w,
         decodeTransaction: C,
         decodeTransactionEvents: O,
@@ -6650,7 +6651,7 @@ wi.Clock = gd;
       if (ce === "basic" || ce === "tonClient") D.basic = !0;
       else if (ce === "accountInteraction") {
       if (D.accountInteraction != null) continue;
-      D.accountInteraction = await Ne(l, U)
+      D.accountInteraction = await De(l, U)
     } else throw de(l, `Permission '${ce}' is not supported by standalone provider`);
     U.permissions = D;
     const Z = JSON.parse(JSON.stringify(D));
@@ -6658,11 +6659,11 @@ wi.Clock = gd;
       permissions: Z
     }), Z
   }, x = async (U, l) => {
-    Ae(l, U);
+    Ie(l, U);
     const R = {
       ...U.permissions
     };
-    R.accountInteraction = await Ne(l, U), U.permissions = R;
+    R.accountInteraction = await De(l, U), U.permissions = R;
     const D = JSON.parse(JSON.stringify(R));
     return U.notify("permissionsChanged", {
       permissions: D
@@ -6673,7 +6674,7 @@ wi.Clock = gd;
       permissions: {}
     })
   }, p = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       address: R,
       subscriptions: D
@@ -6691,7 +6692,7 @@ wi.Clock = gd;
       throw de(l, ce.toString())
     }
   }, h = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       address: R
     } = l.params;
@@ -6720,7 +6721,7 @@ wi.Clock = gd;
       subscriptions: ((D = U.subscriptionController) === null || D === void 0 ? void 0 : D.subscriptionStates) || {}
     }
   }, T = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       address: R
     } = l.params;
@@ -6740,29 +6741,29 @@ wi.Clock = gd;
       throw de(l, Z.toString())
     }
   }, J = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       state: R,
       masterchain: D,
       timestamp: Z
     } = l.params;
-    Pe(l, l.params, "state"), j(l, l.params, "masterchain"), te(l, l.params, "timestamp");
+    Me(l, l.params, "state"), j(l, l.params, "masterchain"), te(l, l.params, "timestamp");
     const {
       connectionController: ce
     } = U;
     try {
-      const Ie = await ce.use(({
+      const Ce = await ce.use(({
           data: {
-            transport: Ue
+            transport: Re
           }
-        }) => Ue.getBlockchainConfig()),
-        Se = Z ?? ~~(U.clock.nowMs / 1e3);
-      return o.default.nekoton.computeStorageFee(Ie, R.boc, Se, D || !1)
-    } catch (Ie) {
-      throw de(l, Ie.toString())
+        }) => Re.getBlockchainConfig()),
+        Ae = Z ?? ~~(U.clock.nowMs / 1e3);
+      return o.default.nekoton.computeStorageFee(Ce, R.boc, Ae, D || !1)
+    } catch (Ce) {
+      throw de(l, Ce.toString())
     }
   }, ne = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       codeHash: R,
       limit: D,
@@ -6775,14 +6776,14 @@ wi.Clock = gd;
     try {
       return ce.use(({
         data: {
-          transport: Ie
+          transport: Ce
         }
-      }) => Ie.getAccountsByCodeHash(R, D || 50, Z))
-    } catch (Ie) {
-      throw de(l, Ie.toString())
+      }) => Ce.getAccountsByCodeHash(R, D || 50, Z))
+    } catch (Ce) {
+      throw de(l, Ce.toString())
     }
   }, q = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       address: R,
       continuation: D,
@@ -6795,14 +6796,14 @@ wi.Clock = gd;
     try {
       return ce.use(({
         data: {
-          transport: Ie
+          transport: Ce
         }
-      }) => Ie.getTransactions(R, D == null ? void 0 : D.lt, Z || 50))
-    } catch (Ie) {
-      throw de(l, Ie.toString())
+      }) => Ce.getTransactions(R, D == null ? void 0 : D.lt, Z || 50))
+    } catch (Ce) {
+      throw de(l, Ce.toString())
     }
-  }, we = async (U, l) => {
-    A(l), be(l, U);
+  }, ve = async (U, l) => {
+    A(l), ye(l, U);
     const {
       hash: R
     } = l.params;
@@ -6821,8 +6822,8 @@ wi.Clock = gd;
     } catch (Z) {
       throw de(l, Z.toString())
     }
-  }, ke = async (U, l) => {
-    A(l), be(l, U);
+  }, Se = async (U, l) => {
+    A(l), ye(l, U);
     const {
       inMessageHash: R
     } = l.params;
@@ -6851,105 +6852,105 @@ wi.Clock = gd;
       cachedState: D,
       responsible: Z,
       functionCall: ce,
-      withSignatureId: Ie
+      withSignatureId: Ce
     } = l.params;
-    b(l, l.params, "address"), se(l, l.params, "cachedState", ue), j(l, l.params, "responsible"), Me(l, l.params, "functionCall"), ye(l, l.params, "withSignatureId");
-    let Se = D;
-    if (Se == null && (be(l, U), Se = await U.connectionController.use(async ({
+    b(l, l.params, "address"), se(l, l.params, "cachedState", ue), j(l, l.params, "responsible"), Te(l, l.params, "functionCall"), _e(l, l.params, "withSignatureId");
+    let Ae = D;
+    if (Ae == null && (ye(l, U), Ae = await U.connectionController.use(async ({
         data: {
-          transport: Ge
+          transport: We
         }
-      }) => Ge.getFullContractState(R))), Se == null) throw de(l, "Account not found");
-    if (!Se.isDeployed || Se.lastTransactionId == null) throw de(l, "Account is not deployed");
-    const Ue = await Be(l, U, Ie);
+      }) => We.getFullContractState(R))), Ae == null) throw de(l, "Account not found");
+    if (!Ae.isDeployed || Ae.lastTransactionId == null) throw de(l, "Account is not deployed");
+    const Re = await Pe(l, U, Ce);
     try {
       const {
-        output: Ge,
-        code: We
-      } = o.default.nekoton.runLocal(U.clock, Se.boc, ce.abi, ce.method, ce.params, Z || !1, Ue);
+        output: We,
+        code: Ye
+      } = o.default.nekoton.runLocal(U.clock, Ae.boc, ce.abi, ce.method, ce.params, Z || !1, Re);
       return {
-        output: Ge,
-        code: We
+        output: We,
+        code: Ye
       }
-    } catch (Ge) {
-      throw de(l, Ge.toString())
+    } catch (We) {
+      throw de(l, We.toString())
     }
   }, z = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       address: R,
       cachedState: D,
       stateInit: Z,
       payload: ce,
-      executorParams: Ie,
-      messageHeader: Se
+      executorParams: Ce,
+      messageHeader: Ae
     } = l.params;
-    b(l, l.params, "address"), se(l, l.params, "cachedState", ue), Q(l, l.params, "stateInit"), Te(l, l.params, "payload"), I(l, l.params, "executorParams"), g(l, l.params, "messageHeader");
+    b(l, l.params, "address"), se(l, l.params, "cachedState", ue), Q(l, l.params, "stateInit"), Ee(l, l.params, "payload"), I(l, l.params, "executorParams"), g(l, l.params, "messageHeader");
     const {
-      clock: Ue,
-      connectionController: Ge
+      clock: Re,
+      connectionController: We
     } = U;
-    let We;
+    let Ye;
     try {
-      We = o.default.nekoton.repackAddress(R)
-    } catch (Re) {
-      throw de(l, Re.toString())
+      Ye = o.default.nekoton.repackAddress(R)
+    } catch (je) {
+      throw de(l, je.toString())
     }
-    const rt = ~~(Ue.nowMs / 1e3),
-      mt = 60;
-    let Qe;
-    if (Se.type === "external")
-      if (ce == null || typeof ce == "string") Qe = o.default.nekoton.createRawExternalMessage(We, Z, ce, rt + mt).boc;
-      else if (Se.withoutSignature === !0) Qe = o.default.nekoton.createExternalMessageWithoutSignature(Ue, We, ce.abi, ce.method, Z, ce.params, mt).boc;
+    const it = ~~(Re.nowMs / 1e3),
+      bt = 60;
+    let qe;
+    if (Ae.type === "external")
+      if (ce == null || typeof ce == "string") qe = o.default.nekoton.createRawExternalMessage(Ye, Z, ce, it + bt).boc;
+      else if (Ae.withoutSignature === !0) qe = o.default.nekoton.createExternalMessageWithoutSignature(Re, Ye, ce.abi, ce.method, Z, ce.params, bt).boc;
     else {
-      const Re = o.default.nekoton.createExternalMessage(Ue, We, ce.abi, ce.method, Z, ce.params, Se.publicKey, mt);
+      const je = o.default.nekoton.createExternalMessage(Re, Ye, ce.abi, ce.method, Z, ce.params, Ae.publicKey, bt);
       try {
-        if ((Ie == null ? void 0 : Ie.disableSignatureCheck) === !0) Qe = Re.signFake().boc;
+        if ((Ce == null ? void 0 : Ce.disableSignatureCheck) === !0) qe = je.signFake().boc;
         else {
           ee(l, U);
-          const Le = await Be(l, U),
+          const ze = await Pe(l, U),
             {
-              keystore: Ke
+              keystore: $e
             } = U,
-            et = await Ke.getSigner(Se.publicKey);
-          if (et == null) throw "Signer not found for public key";
-          const xe = await et.sign(Re.hash, Le);
-          Qe = Re.sign(xe).boc
+            tt = await $e.getSigner(Ae.publicKey);
+          if (tt == null) throw "Signer not found for public key";
+          const Ue = await tt.sign(je.hash, ze);
+          qe = je.sign(Ue).boc
         }
-      } catch (Le) {
-        throw de(l, Le.toString())
+      } catch (ze) {
+        throw de(l, ze.toString())
       } finally {
-        Re.free()
+        je.free()
       }
-    } else if (Se.type === "internal") {
-      b(l, Se, "sender"), b(l, Se, "amount"), E(l, Se, "bounce"), j(l, Se, "bounced");
-      const Re = ce == null ? void 0 : typeof ce == "string" ? ce : o.default.nekoton.encodeInternalInput(ce.abi, ce.method, ce.params);
-      Qe = o.default.nekoton.encodeInternalMessage(Se.sender, We, Se.bounce, Z, Re, Se.amount)
+    } else if (Ae.type === "internal") {
+      b(l, Ae, "sender"), b(l, Ae, "amount"), E(l, Ae, "bounce"), j(l, Ae, "bounced");
+      const je = ce == null ? void 0 : typeof ce == "string" ? ce : o.default.nekoton.encodeInternalInput(ce.abi, ce.method, ce.params);
+      qe = o.default.nekoton.encodeInternalMessage(Ae.sender, Ye, Ae.bounce, Z, je, Ae.amount)
     } else throw de(l, "Unknown message type");
     try {
-      const [Re, Le, Ke] = await Ge.use(({
+      const [je, ze, $e] = await We.use(({
         data: {
-          transport: He
+          transport: Ve
         }
-      }) => Promise.all([D ?? He.getFullContractState(We), He.getBlockchainConfig(), He.getNetworkDescription()])), et = o.default.nekoton.makeFullAccountBoc(Re == null ? void 0 : Re.boc), xe = Ie == null ? void 0 : Ie.overrideBalance, Ze = o.default.nekoton.executeLocal(Le, et, Qe, rt, (Ie == null ? void 0 : Ie.disableSignatureCheck) === !0, xe != null ? xe.toString() : void 0, Ke.globalId);
-      if (Ze.exitCode != null) throw new Error(`Contract did not accept the message. Exit code: ${Ze.exitCode}`);
-      const lt = Ze,
-        Wn = lt.transaction,
-        it = o.default.nekoton.parseFullAccountBoc(lt.account);
-      let at;
+      }) => Promise.all([D ?? Ve.getFullContractState(Ye), Ve.getBlockchainConfig(), Ve.getNetworkDescription()])), tt = o.default.nekoton.makeFullAccountBoc(je == null ? void 0 : je.boc), Ue = Ce == null ? void 0 : Ce.overrideBalance, et = o.default.nekoton.executeLocal(ze, tt, qe, it, (Ce == null ? void 0 : Ce.disableSignatureCheck) === !0, Ue != null ? Ue.toString() : void 0, $e.globalId);
+      if (et.exitCode != null) throw new Error(`Contract did not accept the message. Exit code: ${et.exitCode}`);
+      const ct = et,
+        Yn = ct.transaction,
+        at = o.default.nekoton.parseFullAccountBoc(ct.account);
+      let ot;
       try {
         if (typeof ce == "object" && typeof ce != null) {
-          const He = o.default.nekoton.decodeTransaction(lt.transaction, ce.abi, ce.method);
-          at = He == null ? void 0 : He.output
+          const Ve = o.default.nekoton.decodeTransaction(ct.transaction, ce.abi, ce.method);
+          ot = Ve == null ? void 0 : Ve.output
         }
       } catch {}
       return {
-        transaction: Wn,
-        newState: it,
-        output: at
+        transaction: Yn,
+        newState: at,
+        output: ot
       }
-    } catch (Re) {
-      throw de(l, Re.toString())
+    } catch (je) {
+      throw de(l, je.toString())
     }
   }, ie = async (U, l) => {
     A(l);
@@ -6958,15 +6959,15 @@ wi.Clock = gd;
       abi: D,
       workchain: Z,
       publicKey: ce,
-      initParams: Ie
+      initParams: Ce
     } = l.params;
     b(l, l.params, "tvc"), b(l, l.params, "abi"), te(l, l.params, "workchain"), Q(l, l.params, "publicKey");
     try {
-      return o.default.nekoton.getExpectedAddress(R, D, Z || 0, ce, Ie)
-    } catch (Se) {
-      throw de(l, Se.toString())
+      return o.default.nekoton.getExpectedAddress(R, D, Z || 0, ce, Ce)
+    } catch (Ae) {
+      throw de(l, Ae.toString())
     }
-  }, ve = async (U, l) => {
+  }, ke = async (U, l) => {
     A(l);
     const {
       address: R,
@@ -6975,34 +6976,34 @@ wi.Clock = gd;
       allowPartial: ce
     } = l.params;
     b(l, l.params, "address"), b(l, l.params, "abi"), se(l, l.params, "cachedState", ue), E(l, l.params, "allowPartial");
-    let Ie;
+    let Ce;
     try {
-      Ie = o.default.nekoton.repackAddress(R)
-    } catch (Ue) {
-      throw de(l, Ue.toString())
+      Ce = o.default.nekoton.repackAddress(R)
+    } catch (Re) {
+      throw de(l, Re.toString())
     }
-    let Se = Z;
-    if (Se == null && (be(l, U), Se = await U.connectionController.use(async ({
+    let Ae = Z;
+    if (Ae == null && (ye(l, U), Ae = await U.connectionController.use(async ({
         data: {
-          transport: Ue
+          transport: Re
         }
-      }) => Ue.getFullContractState(Ie))), Se == null) return {
+      }) => Re.getFullContractState(Ce))), Ae == null) return {
       fields: void 0,
       state: void 0
     };
-    if (!Se.isDeployed || Se.lastTransactionId == null) return {
+    if (!Ae.isDeployed || Ae.lastTransactionId == null) return {
       fields: void 0,
-      state: Se
+      state: Ae
     };
     try {
       return {
-        fields: o.default.nekoton.unpackContractFields(D, Se.boc, ce),
-        state: Se
+        fields: o.default.nekoton.unpackContractFields(D, Ae.boc, ce),
+        state: Ae
       }
-    } catch (Ue) {
-      throw de(l, Ue.toString())
+    } catch (Re) {
+      throw de(l, Re.toString())
     }
-  }, Ce = async (U, l) => {
+  }, Be = async (U, l) => {
     A(l);
     const {
       abi: R,
@@ -7021,7 +7022,7 @@ wi.Clock = gd;
     } catch (Z) {
       throw de(l, Z.toString())
     }
-  }, Ee = async (U, l) => {
+  }, Oe = async (U, l) => {
     A(l);
     const {
       boc: R
@@ -7047,7 +7048,7 @@ wi.Clock = gd;
     } catch (ce) {
       throw de(l, ce.toString())
     }
-  }, Ve = async (U, l) => {
+  }, Ge = async (U, l) => {
     A(l);
     const {
       structure: R,
@@ -7060,10 +7061,10 @@ wi.Clock = gd;
       return {
         data: o.default.nekoton.unpackFromCell(R, D, Z, ce)
       }
-    } catch (Ie) {
-      throw de(l, Ie.toString())
+    } catch (Ce) {
+      throw de(l, Ce.toString())
     }
-  }, Fe = async (U, l) => {
+  }, Ke = async (U, l) => {
     A(l);
     const {
       boc: R
@@ -7076,7 +7077,7 @@ wi.Clock = gd;
     } catch (D) {
       throw de(l, D.toString())
     }
-  }, gt = async (U, l) => {
+  }, mt = async (U, l) => {
     A(l);
     const {
       code: R
@@ -7094,7 +7095,7 @@ wi.Clock = gd;
     } catch (D) {
       throw de(l, D.toString())
     }
-  }, on = async (U, l) => {
+  }, sn = async (U, l) => {
     A(l);
     const {
       code: R,
@@ -7124,7 +7125,7 @@ wi.Clock = gd;
     } catch (D) {
       throw de(l, D.toString())
     }
-  }, sn = async (U, l) => {
+  }, ln = async (U, l) => {
     A(l);
     const {
       code: R,
@@ -7143,7 +7144,7 @@ wi.Clock = gd;
     } catch (Z) {
       throw de(l, Z.toString())
     }
-  }, ot = async (U, l) => {
+  }, st = async (U, l) => {
     A(l);
     const {
       code: R
@@ -7156,8 +7157,8 @@ wi.Clock = gd;
     } catch (D) {
       throw de(l, D.toString())
     }
-  }, ln = async (U, l) => {
-    A(l), Me(l, l, "params");
+  }, cn = async (U, l) => {
+    A(l), Te(l, l, "params");
     const {
       abi: R,
       method: D,
@@ -7170,7 +7171,7 @@ wi.Clock = gd;
     } catch (ce) {
       throw de(l, ce.toString())
     }
-  }, st = async (U, l) => {
+  }, lt = async (U, l) => {
     A(l);
     const {
       body: R,
@@ -7178,20 +7179,20 @@ wi.Clock = gd;
       method: Z,
       internal: ce
     } = l.params;
-    b(l, l.params, "body"), b(l, l.params, "abi"), Oe(l, l.params, "method"), E(l, l.params, "internal");
+    b(l, l.params, "body"), b(l, l.params, "abi"), xe(l, l.params, "method"), E(l, l.params, "internal");
     try {
       return o.default.nekoton.decodeInput(R, D, Z, ce) || null
-    } catch (Ie) {
-      throw de(l, Ie.toString())
+    } catch (Ce) {
+      throw de(l, Ce.toString())
     }
-  }, nt = async (U, l) => {
+  }, rt = async (U, l) => {
     A(l);
     const {
       body: R,
       abi: D,
       method: Z
     } = l.params;
-    b(l, l.params, "body"), b(l, l.params, "abi"), Oe(l, l.params, "method");
+    b(l, l.params, "body"), b(l, l.params, "abi"), xe(l, l.params, "method");
     try {
       return o.default.nekoton.decodeOutput(R, D, Z) || null
     } catch (ce) {
@@ -7204,7 +7205,7 @@ wi.Clock = gd;
       abi: D,
       event: Z
     } = l.params;
-    b(l, l.params, "body"), b(l, l.params, "abi"), Oe(l, l.params, "event");
+    b(l, l.params, "body"), b(l, l.params, "abi"), xe(l, l.params, "event");
     try {
       return o.default.nekoton.decodeEvent(R, D, Z) || null
     } catch (ce) {
@@ -7217,7 +7218,7 @@ wi.Clock = gd;
       abi: D,
       method: Z
     } = l.params;
-    b(l, l.params, "abi"), Oe(l, l.params, "method");
+    b(l, l.params, "abi"), xe(l, l.params, "method");
     try {
       return o.default.nekoton.decodeTransaction(R, D, Z) || null
     } catch (ce) {
@@ -7245,79 +7246,79 @@ wi.Clock = gd;
       signature: Z,
       withSignatureId: ce
     } = l.params;
-    b(l, l.params, "publicKey"), b(l, l.params, "dataHash"), b(l, l.params, "signature"), ye(l, l.params, "withSignatureId");
-    const Ie = await Be(l, U, ce);
+    b(l, l.params, "publicKey"), b(l, l.params, "dataHash"), b(l, l.params, "signature"), _e(l, l.params, "withSignatureId");
+    const Ce = await Pe(l, U, ce);
     try {
       return {
-        isValid: o.default.nekoton.verifySignature(R, D, Z, Ie)
+        isValid: o.default.nekoton.verifySignature(R, D, Z, Ce)
       }
-    } catch (Se) {
-      throw de(l, Se.toString())
+    } catch (Ae) {
+      throw de(l, Ae.toString())
     }
   }, N = async (U, l) => {
-    A(l), be(l, U);
+    A(l), ye(l, U);
     const {
       recipient: R,
       stateInit: D,
       payload: Z,
       local: ce,
-      executorParams: Ie
+      executorParams: Ce
     } = l.params;
-    b(l, l.params, "recipient"), Q(l, l.params, "stateInit"), Te(l, l.params, "payload"), j(l, l.params, "local"), I(l, l.params, "executorParams");
-    let Se;
+    b(l, l.params, "recipient"), Q(l, l.params, "stateInit"), Ee(l, l.params, "payload"), j(l, l.params, "local"), I(l, l.params, "executorParams");
+    let Ae;
     try {
-      Se = o.default.nekoton.repackAddress(R)
-    } catch (xe) {
-      throw de(l, xe.toString())
+      Ae = o.default.nekoton.repackAddress(R)
+    } catch (Ue) {
+      throw de(l, Ue.toString())
     }
     const {
-      clock: Ue,
-      subscriptionController: Ge,
-      properties: We
-    } = U, rt = xe => {
+      clock: Re,
+      subscriptionController: We,
+      properties: Ye
+    } = U, it = Ue => {
       try {
         if (typeof Z == "string" || Z == null) {
-          const Ze = ~~(Ue.nowMs / 1e3) + xe;
-          return o.default.nekoton.createRawExternalMessage(Se, D, Z, ~~Ze)
-        } else return o.default.nekoton.createExternalMessageWithoutSignature(Ue, Se, Z.abi, Z.method, D, Z.params, ~~xe)
-      } catch (Ze) {
-        throw de(l, Ze.toString())
+          const et = ~~(Re.nowMs / 1e3) + Ue;
+          return o.default.nekoton.createRawExternalMessage(Ae, D, Z, ~~et)
+        } else return o.default.nekoton.createExternalMessageWithoutSignature(Re, Ae, Z.abi, Z.method, D, Z.params, ~~Ue)
+      } catch (et) {
+        throw de(l, et.toString())
       }
-    }, mt = xe => {
-      let Ze;
+    }, bt = Ue => {
+      let et;
       try {
         if (typeof Z == "object" && typeof Z != null) {
-          const lt = o.default.nekoton.decodeTransaction(xe, Z.abi, Z.method);
-          Ze = lt == null ? void 0 : lt.output
+          const ct = o.default.nekoton.decodeTransaction(Ue, Z.abi, Z.method);
+          et = ct == null ? void 0 : ct.output
         }
       } catch {}
       return {
-        transaction: xe,
-        output: Ze
+        transaction: Ue,
+        output: et
       }
     };
     if (ce === !0) {
-      const xe = rt(60),
-        Ze = await Ge.sendMessageLocally(Se, xe, Ie);
-      return mt(Ze)
+      const Ue = it(60),
+        et = await We.sendMessageLocally(Ae, Ue, Ce);
+      return bt(et)
     }
-    let Qe = We.message.timeout;
-    for (let xe = 0; xe < We.message.retryCount; ++xe) {
-      const Ze = rt(Qe),
-        lt = await Ge.sendMessage(Se, Ze);
-      if (lt == null) {
-        Qe *= We.message.timeoutGrowFactor;
+    let qe = Ye.message.timeout;
+    for (let Ue = 0; Ue < Ye.message.retryCount; ++Ue) {
+      const et = it(qe),
+        ct = await We.sendMessage(Ae, et);
+      if (ct == null) {
+        qe *= Ye.message.timeoutGrowFactor;
         continue
       }
-      return mt(lt)
+      return bt(ct)
     }
-    const Re = "Message expired",
-      Le = rt(60),
-      Ke = await Ge.sendMessageLocally(Se, Le).catch(xe => {
-        throw de(l, `${Re}. ${xe.toString()}`)
+    const je = "Message expired",
+      ze = it(60),
+      $e = await We.sendMessageLocally(Ae, ze).catch(Ue => {
+        throw de(l, `${je}. ${Ue.toString()}`)
       }),
-      et = Ke.exitCode != null ? `. Possible exit code: ${Ke.exitCode}` : "";
-    throw de(l, `${Re}${et}`)
+      tt = $e.exitCode != null ? `. Possible exit code: ${$e.exitCode}` : "";
+    throw de(l, `${je}${tt}`)
   }, H = async (U, l) => {
     ee(l, U), A(l);
     const {
@@ -7325,21 +7326,21 @@ wi.Clock = gd;
       data: D,
       withSignatureId: Z
     } = l.params;
-    b(l, l.params, "publicKey"), b(l, l.params, "data"), ye(l, l.params, "withSignatureId");
-    const ce = await Be(l, U, Z),
+    b(l, l.params, "publicKey"), b(l, l.params, "data"), _e(l, l.params, "withSignatureId");
+    const ce = await Pe(l, U, Z),
       {
-        keystore: Ie
+        keystore: Ce
       } = U,
-      Se = await Ie.getSigner(R);
-    if (Se == null) throw de(l, "Signer not found for public key");
+      Ae = await Ce.getSigner(R);
+    if (Ae == null) throw de(l, "Signer not found for public key");
     try {
-      const Ue = o.default.nekoton.getDataHash(D);
+      const Re = o.default.nekoton.getDataHash(D);
       return {
-        dataHash: Ue,
-        ...await Se.sign(Ue, ce).then(o.default.nekoton.extendSignature)
+        dataHash: Re,
+        ...await Ae.sign(Re, ce).then(o.default.nekoton.extendSignature)
       }
-    } catch (Ue) {
-      throw de(l, Ue.toString())
+    } catch (Re) {
+      throw de(l, Re.toString())
     }
   }, X = async (U, l) => {
     ee(l, U), A(l);
@@ -7348,260 +7349,260 @@ wi.Clock = gd;
       data: D,
       withSignatureId: Z
     } = l.params;
-    b(l, l.params, "publicKey"), b(l, l.params, "data"), ye(l, l.params, "withSignatureId");
-    const ce = await Be(l, U, Z),
+    b(l, l.params, "publicKey"), b(l, l.params, "data"), _e(l, l.params, "withSignatureId");
+    const ce = await Pe(l, U, Z),
       {
-        keystore: Ie
+        keystore: Ce
       } = U,
-      Se = await Ie.getSigner(R);
-    if (Se == null) throw de(l, "Signer not found for public key");
+      Ae = await Ce.getSigner(R);
+    if (Ae == null) throw de(l, "Signer not found for public key");
     try {
-      return await Se.sign(D, ce).then(o.default.nekoton.extendSignature)
-    } catch (Ue) {
-      throw de(l, Ue.toString())
+      return await Ae.sign(D, ce).then(o.default.nekoton.extendSignature)
+    } catch (Re) {
+      throw de(l, Re.toString())
     }
   }, L = async (U, l) => {
-    ee(l, U), Ae(l, U), be(l, U), A(l);
+    ee(l, U), Ie(l, U), ye(l, U), A(l);
     const {
       sender: R,
       recipient: D,
       amount: Z,
       bounce: ce,
-      payload: Ie,
-      stateInit: Se
+      payload: Ce,
+      stateInit: Ae
     } = l.params;
-    b(l, l.params, "sender"), b(l, l.params, "recipient"), b(l, l.params, "amount"), E(l, l.params, "bounce"), se(l, l.params, "payload", Me), Q(l, l.params, "stateInit");
-    const Ue = await Be(l, U),
+    b(l, l.params, "sender"), b(l, l.params, "recipient"), b(l, l.params, "amount"), E(l, l.params, "bounce"), se(l, l.params, "payload", Te), Q(l, l.params, "stateInit");
+    const Re = await Pe(l, U),
       {
-        clock: Ge,
-        properties: We,
-        subscriptionController: rt,
-        connectionController: mt,
-        keystore: Qe,
-        accountsStorage: Re
+        clock: We,
+        properties: Ye,
+        subscriptionController: it,
+        connectionController: bt,
+        keystore: qe,
+        accountsStorage: je
       } = U;
-    let Le, Ke, et;
+    let ze, $e, tt;
     try {
-      Le = o.default.nekoton.repackAddress(R), Ke = o.default.nekoton.repackAddress(D), et = await Re.getAccount(Le).then(It => {
-        if (It != null) return It;
+      ze = o.default.nekoton.repackAddress(R), $e = o.default.nekoton.repackAddress(D), tt = await je.getAccount(ze).then(Ct => {
+        if (Ct != null) return Ct;
         throw new Error("Sender not found")
       })
-    } catch (It) {
-      throw de(l, It.toString())
+    } catch (Ct) {
+      throw de(l, Ct.toString())
     }
-    const xe = async It => {
+    const Ue = async Ct => {
       try {
-        return et.prepareMessage({
-          recipient: Ke,
+        return tt.prepareMessage({
+          recipient: $e,
           amount: Z,
           bounce: ce,
-          payload: Ie,
-          stateInit: Se,
-          timeout: ~~It,
-          signatureId: Ue
-        }, new f.AccountsStorageContext(Ge, mt, o.default.nekoton, Qe))
-      } catch (Yi) {
-        throw de(l, Yi.toString())
+          payload: Ce,
+          stateInit: Ae,
+          timeout: ~~Ct,
+          signatureId: Re
+        }, new f.AccountsStorageContext(We, bt, o.default.nekoton, qe))
+      } catch (Xi) {
+        throw de(l, Xi.toString())
       }
     };
-    let Ze = We.message.timeout;
-    const lt = We.message.retryTransfers !== !1 ? We.message.retryCount : 1;
-    for (let It = 0; It < lt; ++It) {
-      const Yi = await xe(Ze),
-        Va = await rt.sendMessage(Le, Yi);
-      if (Va == null) {
-        Ze *= We.message.timeoutGrowFactor;
+    let et = Ye.message.timeout;
+    const ct = Ye.message.retryTransfers !== !1 ? Ye.message.retryCount : 1;
+    for (let Ct = 0; Ct < ct; ++Ct) {
+      const Xi = await Ue(et),
+        Ga = await it.sendMessage(ze, Xi);
+      if (Ga == null) {
+        et *= Ye.message.timeoutGrowFactor;
         continue
       }
       return {
-        transaction: Va
+        transaction: Ga
       }
     }
-    const Wn = "Message expired",
-      it = await xe(60),
-      at = await rt.sendMessageLocally(Le, it).catch(It => {
-        throw de(l, `${Wn}. ${It.toString()}`)
+    const Yn = "Message expired",
+      at = await Ue(60),
+      ot = await it.sendMessageLocally(ze, at).catch(Ct => {
+        throw de(l, `${Yn}. ${Ct.toString()}`)
       }),
-      He = at.exitCode != null ? `. Possible exit code: ${at.exitCode}` : "";
-    throw de(l, `${Wn}${He}`)
+      Ve = ot.exitCode != null ? `. Possible exit code: ${ot.exitCode}` : "";
+    throw de(l, `${Yn}${Ve}`)
   }, K = async (U, l) => {
-    ee(l, U), Ae(l, U), A(l), be(l, U);
+    ee(l, U), Ie(l, U), A(l), ye(l, U);
     const {
       sender: R,
       recipient: D,
       amount: Z,
       bounce: ce,
-      payload: Ie,
-      stateInit: Se
+      payload: Ce,
+      stateInit: Ae
     } = l.params;
-    b(l, l.params, "sender"), b(l, l.params, "recipient"), b(l, l.params, "amount"), E(l, l.params, "bounce"), se(l, l.params, "payload", Me), Q(l, l.params, "stateInit");
-    const Ue = await Be(l, U),
+    b(l, l.params, "sender"), b(l, l.params, "recipient"), b(l, l.params, "amount"), E(l, l.params, "bounce"), se(l, l.params, "payload", Te), Q(l, l.params, "stateInit");
+    const Re = await Pe(l, U),
       {
-        clock: Ge,
-        subscriptionController: We,
-        connectionController: rt,
-        keystore: mt,
-        accountsStorage: Qe,
-        notify: Re
+        clock: We,
+        subscriptionController: Ye,
+        connectionController: it,
+        keystore: bt,
+        accountsStorage: qe,
+        notify: je
       } = U;
-    let Le, Ke;
+    let ze, $e;
     try {
-      Le = o.default.nekoton.repackAddress(R), Ke = o.default.nekoton.repackAddress(D)
-    } catch (xe) {
-      throw de(l, xe.toString())
+      ze = o.default.nekoton.repackAddress(R), $e = o.default.nekoton.repackAddress(D)
+    } catch (Ue) {
+      throw de(l, Ue.toString())
     }
-    let et;
+    let tt;
     try {
-      const xe = await Qe.getAccount(Le);
-      if (xe == null) throw new Error("Sender not found");
-      et = await xe.prepareMessage({
-        recipient: Ke,
+      const Ue = await qe.getAccount(ze);
+      if (Ue == null) throw new Error("Sender not found");
+      tt = await Ue.prepareMessage({
+        recipient: $e,
         amount: Z,
         bounce: ce,
-        payload: Ie,
-        stateInit: Se,
+        payload: Ce,
+        stateInit: Ae,
         timeout: 60,
-        signatureId: Ue
-      }, new f.AccountsStorageContext(Ge, rt, o.default.nekoton, mt))
-    } catch (xe) {
-      throw de(l, xe.toString())
+        signatureId: Re
+      }, new f.AccountsStorageContext(We, it, o.default.nekoton, bt))
+    } catch (Ue) {
+      throw de(l, Ue.toString())
     }
-    return We.sendMessage(Le, et).then(xe => {
-      Re("messageStatusUpdated", {
-        address: Le,
-        hash: et.hash,
-        transaction: xe
+    return Ye.sendMessage(ze, tt).then(Ue => {
+      je("messageStatusUpdated", {
+        address: ze,
+        hash: tt.hash,
+        transaction: Ue
       })
     }).catch(console.error), {
       message: {
-        account: Le,
-        hash: et.hash,
-        expireAt: et.expireAt
+        account: ze,
+        hash: tt.hash,
+        expireAt: tt.expireAt
       }
     }
   }, Y = async (U, l) => {
-    ee(l, U), A(l), be(l, U);
+    ee(l, U), A(l), ye(l, U);
     const {
       publicKey: R,
       recipient: D,
       stateInit: Z,
       payload: ce,
-      local: Ie,
-      executorParams: Se
+      local: Ce,
+      executorParams: Ae
     } = l.params;
-    b(l, l.params, "publicKey"), b(l, l.params, "recipient"), Q(l, l.params, "stateInit"), Me(l, l.params, "payload"), j(l, l.params, "local"), I(l, l.params, "executorParams");
-    const Ue = await Be(l, U);
-    let Ge;
+    b(l, l.params, "publicKey"), b(l, l.params, "recipient"), Q(l, l.params, "stateInit"), Te(l, l.params, "payload"), j(l, l.params, "local"), I(l, l.params, "executorParams");
+    const Re = await Pe(l, U);
+    let We;
     try {
-      Ge = o.default.nekoton.repackAddress(D)
-    } catch (it) {
-      throw de(l, it.toString())
+      We = o.default.nekoton.repackAddress(D)
+    } catch (at) {
+      throw de(l, at.toString())
     }
     const {
-      clock: We,
-      subscriptionController: rt,
-      keystore: mt,
-      properties: Qe
-    } = U, Re = await mt.getSigner(R);
-    if (Re == null) throw de(l, "Signer not found for public key");
-    const Le = async it => {
-      let at;
+      clock: Ye,
+      subscriptionController: it,
+      keystore: bt,
+      properties: qe
+    } = U, je = await bt.getSigner(R);
+    if (je == null) throw de(l, "Signer not found for public key");
+    const ze = async at => {
+      let ot;
       try {
-        at = o.default.nekoton.createExternalMessage(We, Ge, ce.abi, ce.method, Z, ce.params, R, ~~it)
-      } catch (He) {
-        throw de(l, He.toString())
+        ot = o.default.nekoton.createExternalMessage(Ye, We, ce.abi, ce.method, Z, ce.params, R, ~~at)
+      } catch (Ve) {
+        throw de(l, Ve.toString())
       }
       try {
-        const He = await Re.sign(at.hash, Ue);
-        return at.sign(He)
-      } catch (He) {
-        throw de(l, He.toString())
+        const Ve = await je.sign(ot.hash, Re);
+        return ot.sign(Ve)
+      } catch (Ve) {
+        throw de(l, Ve.toString())
       } finally {
-        at.free()
+        ot.free()
       }
-    }, Ke = it => {
-      let at;
+    }, $e = at => {
+      let ot;
       try {
-        const He = o.default.nekoton.decodeTransaction(it, ce.abi, ce.method);
-        at = He == null ? void 0 : He.output
+        const Ve = o.default.nekoton.decodeTransaction(at, ce.abi, ce.method);
+        ot = Ve == null ? void 0 : Ve.output
       } catch {}
       return {
-        transaction: it,
-        output: at
+        transaction: at,
+        output: ot
       }
     };
-    if (Ie === !0) {
-      const it = await Le(60),
-        at = await rt.sendMessageLocally(Ge, it, Se);
-      return Ke(at)
+    if (Ce === !0) {
+      const at = await ze(60),
+        ot = await it.sendMessageLocally(We, at, Ae);
+      return $e(ot)
     }
-    let et = Qe.message.timeout;
-    for (let it = 0; it < Qe.message.retryCount; ++it) {
-      const at = await Le(et),
-        He = await rt.sendMessage(Ge, at);
-      if (He == null) {
-        et *= Qe.message.timeoutGrowFactor;
+    let tt = qe.message.timeout;
+    for (let at = 0; at < qe.message.retryCount; ++at) {
+      const ot = await ze(tt),
+        Ve = await it.sendMessage(We, ot);
+      if (Ve == null) {
+        tt *= qe.message.timeoutGrowFactor;
         continue
       }
-      return Ke(He)
+      return $e(Ve)
     }
-    const xe = "Message expired",
-      Ze = await Le(60),
-      lt = await rt.sendMessageLocally(Ge, Ze).catch(it => {
-        throw de(l, `${xe}. ${it.toString()}`)
+    const Ue = "Message expired",
+      et = await ze(60),
+      ct = await it.sendMessageLocally(We, et).catch(at => {
+        throw de(l, `${Ue}. ${at.toString()}`)
       }),
-      Wn = lt.exitCode != null ? `. Possible exit code: ${lt.exitCode}` : "";
-    throw de(l, `${xe}${Wn}`)
+      Yn = ct.exitCode != null ? `. Possible exit code: ${ct.exitCode}` : "";
+    throw de(l, `${Ue}${Yn}`)
   }, G = async (U, l) => {
-    ee(l, U), A(l), be(l, U);
+    ee(l, U), A(l), ye(l, U);
     const {
       publicKey: R,
       recipient: D,
       stateInit: Z,
       payload: ce
     } = l.params;
-    b(l, l.params, "publicKey"), b(l, l.params, "recipient"), Q(l, l.params, "stateInit"), Me(l, l.params, "payload");
-    const Ie = await Be(l, U);
-    let Se;
+    b(l, l.params, "publicKey"), b(l, l.params, "recipient"), Q(l, l.params, "stateInit"), Te(l, l.params, "payload");
+    const Ce = await Pe(l, U);
+    let Ae;
     try {
-      Se = o.default.nekoton.repackAddress(D)
-    } catch (Ke) {
-      throw de(l, Ke.toString())
+      Ae = o.default.nekoton.repackAddress(D)
+    } catch ($e) {
+      throw de(l, $e.toString())
     }
     const {
-      clock: Ue,
-      subscriptionController: Ge,
-      keystore: We,
-      properties: rt,
-      notify: mt
-    } = U, Qe = await We.getSigner(R);
-    if (Qe == null) throw de(l, "Signer not found for public key");
-    let Re;
+      clock: Re,
+      subscriptionController: We,
+      keystore: Ye,
+      properties: it,
+      notify: bt
+    } = U, qe = await Ye.getSigner(R);
+    if (qe == null) throw de(l, "Signer not found for public key");
+    let je;
     try {
-      Re = o.default.nekoton.createExternalMessage(Ue, Se, ce.abi, ce.method, Z, ce.params, R, ~~rt.message.timeout)
-    } catch (Ke) {
-      throw de(l, Ke.toString())
+      je = o.default.nekoton.createExternalMessage(Re, Ae, ce.abi, ce.method, Z, ce.params, R, ~~it.message.timeout)
+    } catch ($e) {
+      throw de(l, $e.toString())
     }
-    let Le;
+    let ze;
     try {
-      const Ke = await Qe.sign(Re.hash, Ie);
-      Le = Re.sign(Ke)
-    } catch (Ke) {
-      throw de(l, Ke.toString())
+      const $e = await qe.sign(je.hash, Ce);
+      ze = je.sign($e)
+    } catch ($e) {
+      throw de(l, $e.toString())
     } finally {
-      Re.free()
+      je.free()
     }
-    return Ge.sendMessage(Se, Le).then(Ke => {
-      mt("messageStatusUpdated", {
-        address: Se,
-        hash: Le.hash,
-        transaction: Ke
+    return We.sendMessage(Ae, ze).then($e => {
+      bt("messageStatusUpdated", {
+        address: Ae,
+        hash: ze.hash,
+        transaction: $e
       })
     }).catch(console.error), {
       message: {
-        account: Se,
-        hash: Le.hash,
-        expireAt: Le.expireAt
+        account: Ae,
+        hash: ze.hash,
+        expireAt: ze.expireAt
       }
     }
   };
@@ -7610,14 +7611,14 @@ wi.Clock = gd;
     if (l.keystore == null) throw de(U, "Keystore not found")
   }
 
-  function Ae(U, l) {
+  function Ie(U, l) {
     if (l.accountsStorage == null) throw de(U, "AccountsStorage not found")
   }
 
-  function be(U, l) {
+  function ye(U, l) {
     if (l.connectionController == null || l.subscriptionController == null) throw de(U, "Connection was not initialized")
   }
-  async function Be(U, l, R) {
+  async function Pe(U, l, R) {
     if (R !== !1) {
       {
         if (typeof R == "number") return R;
@@ -7679,7 +7680,7 @@ wi.Clock = gd;
     l[R] != null && D(U, l, R)
   }
 
-  function ye(U, l, R) {
+  function _e(U, l, R) {
     const D = l[R];
     if (D != null && typeof D != "boolean" && typeof D != "number") throw de(U, `'${String(R)}' must be an optional boolean or number`)
   }
@@ -7696,7 +7697,7 @@ wi.Clock = gd;
     E(U, D, "isExact"), b(U, D, "lt"), Q(U, D, "hash")
   }
 
-  function Pe(U, l, R) {
+  function Me(U, l, R) {
     g(U, l, R);
     const D = l[R];
     b(U, D, "boc")
@@ -7708,25 +7709,25 @@ wi.Clock = gd;
     b(U, D, "balance"), se(U, D, "lastTransactionId", le), E(U, D, "isDeployed")
   }
 
-  function Me(U, l, R) {
+  function Te(U, l, R) {
     g(U, l, R);
     const D = l[R];
     b(U, D, "abi"), b(U, D, "method"), g(U, D, "params")
   }
 
-  function Te(U, l, R) {
+  function Ee(U, l, R) {
     const D = l[R];
     if (!(typeof D == "string" || D == null))
       if (typeof D == "object") b(U, D, "abi"), b(U, D, "method"), g(U, D, "params");
       else throw de(U, `'${String(R)}' must be a function all or optional string`)
   }
 
-  function Oe(U, l, R) {
+  function xe(U, l, R) {
     const D = l[R];
     if (D != null && typeof D != "string" && !Array.isArray(D)) throw de(U, `'${String(R)}' must be a method name or an array of possible names`)
   }
-  async function Ne(U, l) {
-    Ae(U, l), be(U, l);
+  async function De(U, l) {
+    Ie(U, l), ye(U, l);
     const R = l.accountsStorage.defaultAccount;
     if (R == null) throw de(U, "Default account not set in accounts storage");
     const D = await l.accountsStorage.getAccount(R);
@@ -7738,8 +7739,8 @@ wi.Clock = gd;
       contractType: "unknown"
     }
   }
-  const de = (U, l, R) => new dt(2, `${U.method}: ${l}`, R);
-  class dt extends Error {
+  const de = (U, l, R) => new ft(2, `${U.method}: ${l}`, R);
+  class ft extends Error {
     constructor(l, R, D) {
       if (!Number.isInteger(l)) throw new Error('"code" must be an integer');
       if (!R || typeof R != "string") throw new Error('"message" must be a nonempty string');
@@ -7753,13 +7754,13 @@ wi.Clock = gd;
       return this.data !== void 0 && (l.data = this.data), this.stack && (l.stack = this.stack), l
     }
     toString() {
-      return (0, i.default)(this.serialize(), _t, 2)
+      return (0, i.default)(this.serialize(), wt, 2)
     }
   }
-  const _t = (U, l) => {
+  const wt = (U, l) => {
     if (l !== "[Circular]") return l
   }
-})(rs);
+})(is);
 (function(e) {
   var t = pe && pe.__createBinding || (Object.create ? function(B, y, S, m) {
       m === void 0 && (m = S);
@@ -7799,9 +7800,9 @@ wi.Clock = gd;
   Object.defineProperty(e, "__esModule", {
     value: !0
   });
-  const a = r(Jc),
+  const a = r(Qc),
     s = a,
-    c = o(St);
+    c = o(At);
   let f = !1,
     u;
   const _ = new Promise((B, y) => {
@@ -7810,58 +7811,58 @@ wi.Clock = gd;
       reject: y
     }
   });
-  c.default.ensureNekotonLoaded = B => (f || (f = !0, (0, a.default)(B).then(u.resolve).catch(u.reject)), _), c.default.nekoton = s, c.default.fetch = fetch, c.default.debugLog = B => {}, i(rs, e)
-})(ra);
-var vi = {},
-  kt = {};
-const md = Symbol.for("nodejs.util.inspect.custom");
-var ar = md,
-  or = {};
-Object.defineProperty(or, "__esModule", {
+  c.default.ensureNekotonLoaded = B => (f || (f = !0, (0, a.default)(B).then(u.resolve).catch(u.reject)), _), c.default.nekoton = s, c.default.fetch = fetch, c.default.debugLog = B => {}, i(is, e)
+})(ia);
+var ki = {},
+  St = {};
+const bd = Symbol.for("nodejs.util.inspect.custom");
+var or = bd,
+  sr = {};
+Object.defineProperty(sr, "__esModule", {
   value: !0
 });
-or.crc16 = void 0;
+sr.crc16 = void 0;
 
-function bd(e) {
+function yd(e) {
   let n = 0;
-  const r = Buffer.alloc(e.length + 2);
+  const r = be.Buffer.alloc(e.length + 2);
   r.set(e);
   for (let i of r) {
     let o = 128;
     for (; o > 0;) n <<= 1, i & o && (n += 1), o >>= 1, n > 65535 && (n &= 65535, n ^= 4129)
   }
-  return Buffer.from([Math.floor(n / 256), n % 256])
+  return be.Buffer.from([Math.floor(n / 256), n % 256])
 }
-or.crc16 = bd;
-var yd = pe && pe.__importDefault || function(e) {
+sr.crc16 = yd;
+var _d = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   },
-  Us;
-Object.defineProperty(kt, "__esModule", {
+  Rs;
+Object.defineProperty(St, "__esModule", {
   value: !0
 });
-kt.address = kt.Address = void 0;
-const _d = yd(ar),
-  Rs = or,
-  pa = 17,
-  js = 81,
-  ga = 128;
+St.address = St.Address = void 0;
+const wd = _d(or),
+  js = sr,
+  ga = 17,
+  Ls = 81,
+  ma = 128;
 
-function go(e) {
-  if (typeof e == "string" && !Ct.isFriendly(e)) throw new Error("Unknown address type");
-  const t = Buffer.isBuffer(e) ? e : Buffer.from(e, "base64");
+function mo(e) {
+  if (typeof e == "string" && !Bt.isFriendly(e)) throw new Error("Unknown address type");
+  const t = be.Buffer.isBuffer(e) ? e : be.Buffer.from(e, "base64");
   if (t.length !== 36) throw new Error("Unknown address type: byte length is not equal to 36");
   const n = t.subarray(0, 34),
     r = t.subarray(34, 36),
-    i = (0, Rs.crc16)(n);
+    i = (0, js.crc16)(n);
   if (!(i[0] === r[0] && i[1] === r[1])) throw new Error("Invalid checksum: " + e);
   let o = n[0],
     a = !1,
     s = !1;
-  if (o & ga && (a = !0, o = o ^ ga), o !== pa && o !== js) throw "Unknown address tag";
-  s = o === pa;
+  if (o & ma && (a = !0, o = o ^ ma), o !== ga && o !== Ls) throw "Unknown address tag";
+  s = o === ga;
   let c = null;
   n[1] === 255 ? c = -1 : c = n[1];
   const f = n.subarray(2, 34);
@@ -7872,9 +7873,9 @@ function go(e) {
     hashPart: f
   }
 }
-class Ct {
+class Bt {
   static isAddress(t) {
-    return t instanceof Ct
+    return t instanceof Bt
   }
   static isFriendly(t) {
     return !(t.length !== 48 || !/[A-Za-z0-9+/_-]+/.test(t))
@@ -7885,117 +7886,117 @@ class Ct {
     return !(!Number.isInteger(parseFloat(n)) || !/[a-f0-9]+/.test(r.toLowerCase()) || r.length !== 64)
   }
   static normalize(t) {
-    return typeof t == "string" ? Ct.parse(t).toString() : t.toString()
+    return typeof t == "string" ? Bt.parse(t).toString() : t.toString()
   }
   static parse(t) {
-    if (Ct.isFriendly(t)) return this.parseFriendly(t).address;
-    if (Ct.isRaw(t)) return this.parseRaw(t);
+    if (Bt.isFriendly(t)) return this.parseFriendly(t).address;
+    if (Bt.isRaw(t)) return this.parseRaw(t);
     throw new Error("Unknown address type: " + t)
   }
   static parseRaw(t) {
     let n = parseInt(t.split(":")[0]),
-      r = Buffer.from(t.split(":")[1], "hex");
-    return new Ct(n, r)
+      r = be.Buffer.from(t.split(":")[1], "hex");
+    return new Bt(n, r)
   }
   static parseFriendly(t) {
-    if (Buffer.isBuffer(t)) {
-      let n = go(t);
+    if (be.Buffer.isBuffer(t)) {
+      let n = mo(t);
       return {
         isBounceable: n.isBounceable,
         isTestOnly: n.isTestOnly,
-        address: new Ct(n.workchain, n.hashPart)
+        address: new Bt(n.workchain, n.hashPart)
       }
     } else {
       let n = t.replace(/\-/g, "+").replace(/_/g, "/"),
-        r = go(n);
+        r = mo(n);
       return {
         isBounceable: r.isBounceable,
         isTestOnly: r.isTestOnly,
-        address: new Ct(r.workchain, r.hashPart)
+        address: new Bt(r.workchain, r.hashPart)
       }
     }
   }
   constructor(t, n) {
     if (this.toRawString = () => this.workChain + ":" + this.hash.toString("hex"), this.toRaw = () => {
-        const r = Buffer.alloc(36);
+        const r = be.Buffer.alloc(36);
         return r.set(this.hash), r.set([this.workChain, this.workChain, this.workChain, this.workChain], 32), r
       }, this.toStringBuffer = r => {
         let i = r && r.testOnly !== void 0 ? r.testOnly : !1,
-          a = (r && r.bounceable !== void 0 ? r.bounceable : !0) ? pa : js;
-        i && (a |= ga);
-        const s = Buffer.alloc(34);
+          a = (r && r.bounceable !== void 0 ? r.bounceable : !0) ? ga : Ls;
+        i && (a |= ma);
+        const s = be.Buffer.alloc(34);
         s[0] = a, s[1] = this.workChain, s.set(this.hash, 2);
-        const c = Buffer.alloc(36);
-        return c.set(s), c.set((0, Rs.crc16)(s), 34), c
+        const c = be.Buffer.alloc(36);
+        return c.set(s), c.set((0, js.crc16)(s), 34), c
       }, this.toString = r => {
         let i = r && r.urlSafe !== void 0 ? r.urlSafe : !0,
           o = this.toStringBuffer(r);
         return i ? o.toString("base64").replace(/\+/g, "-").replace(/\//g, "_") : o.toString("base64")
-      }, this[Us] = () => this.toString(), n.length !== 32) throw new Error("Invalid address hash length: " + n.length);
+      }, this[Rs] = () => this.toString(), n.length !== 32) throw new Error("Invalid address hash length: " + n.length);
     this.workChain = t, this.hash = n, Object.freeze(this)
   }
   equals(t) {
     return t.workChain !== this.workChain ? !1 : t.hash.equals(this.hash)
   }
 }
-kt.Address = Ct;
-Us = _d.default;
+St.Address = Bt;
+Rs = wd.default;
 
-function wd(e) {
-  return Ct.parse(e)
+function vd(e) {
+  return Bt.parse(e)
 }
-kt.address = wd;
-var sr = {},
-  vd = pe && pe.__importDefault || function(e) {
+St.address = vd;
+var lr = {},
+  kd = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   },
-  Ls;
-Object.defineProperty(sr, "__esModule", {
+  zs;
+Object.defineProperty(lr, "__esModule", {
   value: !0
 });
-sr.ExternalAddress = void 0;
-const kd = vd(ar);
-class Ea {
+lr.ExternalAddress = void 0;
+const Sd = kd(or);
+class Oa {
   static isAddress(t) {
-    return t instanceof Ea
+    return t instanceof Oa
   }
   constructor(t, n) {
-    this[Ls] = () => this.toString(), this.value = t, this.bits = n
+    this[zs] = () => this.toString(), this.value = t, this.bits = n
   }
   toString() {
     return `External<${this.bits}:${this.value}>`
   }
 }
-sr.ExternalAddress = Ea;
-Ls = kd.default;
-var ki = {},
-  vn = {};
-Object.defineProperty(vn, "__esModule", {
+lr.ExternalAddress = Oa;
+zs = Sd.default;
+var Si = {},
+  kn = {};
+Object.defineProperty(kn, "__esModule", {
   value: !0
 });
-vn.base32Decode = vn.base32Encode = void 0;
-const ma = "abcdefghijklmnopqrstuvwxyz234567";
+kn.base32Decode = kn.base32Encode = void 0;
+const ba = "abcdefghijklmnopqrstuvwxyz234567";
 
-function Sd(e) {
+function Ad(e) {
   const t = e.byteLength;
   let n = 0,
     r = 0,
     i = "";
   for (let o = 0; o < t; o++)
-    for (r = r << 8 | e[o], n += 8; n >= 5;) i += ma[r >>> n - 5 & 31], n -= 5;
-  return n > 0 && (i += ma[r << 5 - n & 31]), i
+    for (r = r << 8 | e[o], n += 8; n >= 5;) i += ba[r >>> n - 5 & 31], n -= 5;
+  return n > 0 && (i += ba[r << 5 - n & 31]), i
 }
-vn.base32Encode = Sd;
+kn.base32Encode = Ad;
 
-function Ad(e, t) {
+function Id(e, t) {
   const n = e.indexOf(t);
   if (n === -1) throw new Error("Invalid character found: " + t);
   return n
 }
 
-function Id(e) {
+function Cd(e) {
   let t;
   t = e.toLowerCase();
   const {
@@ -8004,66 +8005,66 @@ function Id(e) {
   let r = 0,
     i = 0,
     o = 0;
-  const a = Buffer.alloc(n * 5 / 8 | 0);
-  for (let s = 0; s < n; s++) i = i << 5 | Ad(ma, t[s]), r += 5, r >= 8 && (a[o++] = i >>> r - 8 & 255, r -= 8);
+  const a = be.Buffer.alloc(n * 5 / 8 | 0);
+  for (let s = 0; s < n; s++) i = i << 5 | Id(ba, t[s]), r += 5, r >= 8 && (a[o++] = i >>> r - 8 & 255, r -= 8);
   return a
 }
-vn.base32Decode = Id;
-var Cd = pe && pe.__importDefault || function(e) {
+kn.base32Decode = Cd;
+var Bd = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   },
-  zs;
-Object.defineProperty(ki, "__esModule", {
+  Ns;
+Object.defineProperty(Si, "__esModule", {
   value: !0
 });
-ki.ADNLAddress = void 0;
-const Bd = Cd(ar),
-  mo = vn,
-  bo = or;
-class ti {
+Si.ADNLAddress = void 0;
+const Pd = Bd(or),
+  bo = kn,
+  yo = sr;
+class ni {
   static parseFriendly(t) {
     if (t.length !== 55) throw Error("Invalid address");
     t = "f" + t;
-    let n = (0, mo.base32Decode)(t);
+    let n = (0, bo.base32Decode)(t);
     if (n[0] !== 45) throw Error("Invalid address");
     let r = n.slice(33);
-    if (!(0, bo.crc16)(n.slice(0, 33)).equals(r)) throw Error("Invalid address");
-    return new ti(n.slice(1, 33))
+    if (!(0, yo.crc16)(n.slice(0, 33)).equals(r)) throw Error("Invalid address");
+    return new ni(n.slice(1, 33))
   }
   static parseRaw(t) {
-    const n = Buffer.from(t, "base64");
-    return new ti(n)
+    const n = be.Buffer.from(t, "base64");
+    return new ni(n)
   }
   constructor(t) {
     if (this.toRaw = () => this.address.toString("hex").toUpperCase(), this.toString = () => {
-        let n = Buffer.concat([Buffer.from([45]), this.address]),
-          r = (0, bo.crc16)(n);
-        return n = Buffer.concat([n, r]), (0, mo.base32Encode)(n).slice(1)
-      }, this[zs] = () => this.toString(), t.length !== 32) throw Error("Invalid address");
+        let n = be.Buffer.concat([be.Buffer.from([45]), this.address]),
+          r = (0, yo.crc16)(n);
+        return n = be.Buffer.concat([n, r]), (0, bo.base32Encode)(n).slice(1)
+      }, this[Ns] = () => this.toString(), t.length !== 32) throw Error("Invalid address");
     this.address = t
   }
   equals(t) {
     return this.address.equals(t.address)
   }
 }
-ki.ADNLAddress = ti;
-zs = Bd.default;
-var Si = {},
-  cn = {},
-  mr = {},
-  br = {},
+Si.ADNLAddress = ni;
+Ns = Pd.default;
+var Ai = {},
   un = {},
-  yo;
+  br = {},
+  yr = {},
+  dn = {},
+  _o;
 
-function Ai() {
-  if (yo) return un;
-  yo = 1, Object.defineProperty(un, "__esModule", {
+function Ii() {
+  if (_o) return dn;
+  _o = 1, Object.defineProperty(dn, "__esModule", {
     value: !0
-  }), un.paddedBufferToBits = un.bitsToPaddedBuffer = void 0;
-  const e = Ii(),
-    t = rn();
+  }), dn.paddedBufferToBits = dn.bitsToPaddedBuffer = void 0;
+  const e = Ci(),
+    t = an();
 
   function n(i) {
     let o = new e.BitBuilder(Math.ceil(i.length / 8) * 8);
@@ -8072,7 +8073,7 @@ function Ai() {
     for (let s = 0; s < a; s++) s === 0 ? o.writeBit(1) : o.writeBit(0);
     return o.buffer()
   }
-  un.bitsToPaddedBuffer = n;
+  dn.bitsToPaddedBuffer = n;
 
   function r(i) {
     let o = 0;
@@ -8084,27 +8085,27 @@ function Ai() {
         break
       } return new t.BitString(i, 0, o)
   }
-  return un.paddedBufferToBits = r, un
+  return dn.paddedBufferToBits = r, dn
 }
-var _o;
+var wo;
 
-function rn() {
-  if (_o) return br;
-  _o = 1;
+function an() {
+  if (wo) return yr;
+  wo = 1;
   var e = pe && pe.__importDefault || function(o) {
       return o && o.__esModule ? o : {
         default: o
       }
     },
     t;
-  Object.defineProperty(br, "__esModule", {
+  Object.defineProperty(yr, "__esModule", {
     value: !0
-  }), br.BitString = void 0;
-  const n = Ai(),
-    r = e(ar);
-  let i = class Xr {
+  }), yr.BitString = void 0;
+  const n = Ii(),
+    r = e(or);
+  let i = class Jr {
     static isBitString(a) {
-      return a instanceof Xr
+      return a instanceof Jr
     }
     constructor(a, s, c) {
       if (this[t] = () => this.toString(), c < 0) throw new Error(`Length ${c} is out of bounds`);
@@ -8123,9 +8124,9 @@ function rn() {
     substring(a, s) {
       if (a > this._length) throw new Error(`Offset(${a}) > ${this._length} is out of bounds`);
       if (a < 0) throw new Error(`Offset(${a}) < 0 is out of bounds`);
-      if (s === 0) return Xr.EMPTY;
+      if (s === 0) return Jr.EMPTY;
       if (a + s > this._length) throw new Error(`Offset ${a} + Length ${s} > ${this._length} is out of bounds`);
-      return new Xr(this._data, this._offset + a, s)
+      return new Jr(this._data, this._offset + a, s)
     }
     subbuffer(a, s) {
       if (a > this._length) throw new Error(`Offset ${a} is out of bounds`);
@@ -8153,21 +8154,21 @@ function rn() {
       }
     }
   };
-  return br.BitString = i, t = r.default, i.EMPTY = new i(Buffer.alloc(0), 0, 0), br
+  return yr.BitString = i, t = r.default, i.EMPTY = new i(be.Buffer.alloc(0), 0, 0), yr
 }
-var wo;
+var vo;
 
-function Ii() {
-  if (wo) return mr;
-  wo = 1, Object.defineProperty(mr, "__esModule", {
+function Ci() {
+  if (vo) return br;
+  vo = 1, Object.defineProperty(br, "__esModule", {
     value: !0
-  }), mr.BitBuilder = void 0;
-  const e = kt,
-    t = sr,
-    n = rn();
+  }), br.BitBuilder = void 0;
+  const e = St,
+    t = lr,
+    n = an();
   let r = class {
     constructor(o = 1023) {
-      this._buffer = Buffer.alloc(Math.ceil(o / 8)), this._length = 0
+      this._buffer = be.Buffer.alloc(Math.ceil(o / 8)), this._length = 0
     }
     get length() {
       return this._length
@@ -8276,42 +8277,42 @@ function Ii() {
       return this._buffer.subarray(0, this._length / 8)
     }
   };
-  return mr.BitBuilder = r, mr
+  return br.BitBuilder = r, br
 }
-var yr = {},
-  an = {};
-Object.defineProperty(an, "__esModule", {
+var _r = {},
+  on = {};
+Object.defineProperty(on, "__esModule", {
   value: !0
 });
-an.CellType = void 0;
-var vo;
+on.CellType = void 0;
+var ko;
 (function(e) {
   e[e.Ordinary = -1] = "Ordinary", e[e.PrunedBranch = 1] = "PrunedBranch", e[e.Library = 2] = "Library", e[e.MerkleProof = 3] = "MerkleProof", e[e.MerkleUpdate = 4] = "MerkleUpdate"
-})(vo || (an.CellType = vo = {}));
-var _r = {},
-  wr = {},
-  dn = {},
-  Ci = {};
-Object.defineProperty(Ci, "__esModule", {
+})(ko || (on.CellType = ko = {}));
+var wr = {},
+  vr = {},
+  fn = {},
+  Bi = {};
+Object.defineProperty(Bi, "__esModule", {
   value: !0
 });
-Ci.readUnaryLength = void 0;
+Bi.readUnaryLength = void 0;
 
-function Pd(e) {
+function Md(e) {
   let t = 0;
   for (; e.loadBit();) t++;
   return t
 }
-Ci.readUnaryLength = Pd;
-var fn = {},
-  Bt = {};
-Object.defineProperty(Bt, "__esModule", {
+Bi.readUnaryLength = Md;
+var hn = {},
+  Pt = {};
+Object.defineProperty(Pt, "__esModule", {
   value: !0
 });
-Bt.BitReader = void 0;
-const Md = kt,
-  Td = sr;
-class Oa {
+Pt.BitReader = void 0;
+const Td = St,
+  Ed = lr;
+class xa {
   constructor(t, n = 0) {
     this._checkpoints = [], this._bits = t, this._offset = n
   }
@@ -8457,7 +8458,7 @@ class Oa {
     return this._offset += t, r
   }
   clone() {
-    return new Oa(this._bits, this._offset)
+    return new xa(this._bits, this._offset)
   }
   _preloadInt(t, n) {
     if (t == 0) return 0n;
@@ -8475,7 +8476,7 @@ class Oa {
   _preloadBuffer(t, n) {
     let r = this._bits.subbuffer(n, t * 8);
     if (r) return r;
-    let i = Buffer.alloc(t);
+    let i = be.Buffer.alloc(t);
     for (let o = 0; o < t; o++) i[o] = Number(this._preloadUint(8, n + o * 8));
     return i
   }
@@ -8483,29 +8484,29 @@ class Oa {
     if (Number(this._preloadUint(2, this._offset)) !== 2 || this._preloadUint(1, this._offset + 2) !== 0n) throw Error("Invalid address");
     let n = Number(this._preloadInt(8, this._offset + 3)),
       r = this._preloadBuffer(32, this._offset + 11);
-    return this._offset += 267, new Md.Address(n, r)
+    return this._offset += 267, new Td.Address(n, r)
   }
   _loadExternalAddress() {
     if (Number(this._preloadUint(2, this._offset)) !== 1) throw Error("Invalid address");
     let n = Number(this._preloadUint(9, this._offset + 2)),
       r = this._preloadUint(n, this._offset + 11);
-    return this._offset += 11 + n, new Td.ExternalAddress(r, n)
+    return this._offset += 11 + n, new Ed.ExternalAddress(r, n)
   }
   _toSafeInteger(t, n) {
     if (BigInt(Number.MAX_SAFE_INTEGER) < t || t < BigInt(Number.MIN_SAFE_INTEGER)) throw new TypeError(`${t} is out of safe integer range. Use ${n} instead`);
     return Number(t)
   }
 }
-Bt.BitReader = Oa;
-var ko;
+Pt.BitReader = xa;
+var So;
 
-function Bi() {
-  if (ko) return fn;
-  ko = 1, Object.defineProperty(fn, "__esModule", {
+function Pi() {
+  if (So) return hn;
+  So = 1, Object.defineProperty(hn, "__esModule", {
     value: !0
-  }), fn.convertToMerkleProof = fn.exoticMerkleProof = void 0;
-  const e = Bt,
-    t = qe();
+  }), hn.convertToMerkleProof = hn.exoticMerkleProof = void 0;
+  const e = Pt,
+    t = Ze();
 
   function n(i, o) {
     const a = new e.BitReader(i);
@@ -8524,25 +8525,25 @@ function Bi() {
       proofHash: f
     }
   }
-  fn.exoticMerkleProof = n;
+  hn.exoticMerkleProof = n;
 
   function r(i) {
     return (0, t.beginCell)().storeUint(3, 8).storeBuffer(i.hash(0)).storeUint(i.depth(0), 16).storeRef(i).endCell({
       exotic: !0
     })
   }
-  return fn.convertToMerkleProof = r, fn
+  return hn.convertToMerkleProof = r, hn
 }
-var So;
+var Ao;
 
-function xa() {
-  if (So) return dn;
-  So = 1, Object.defineProperty(dn, "__esModule", {
+function Ua() {
+  if (Ao) return fn;
+  Ao = 1, Object.defineProperty(fn, "__esModule", {
     value: !0
-  }), dn.generateMerkleProof = dn.generateMerkleProofDirect = void 0;
-  const e = qe(),
-    t = Ci,
-    n = Bi();
+  }), fn.generateMerkleProof = fn.generateMerkleProofDirect = void 0;
+  const e = Ze(),
+    t = Bi,
+    n = Pi();
 
   function r(s) {
     return (0, e.beginCell)().storeUint(1, 8).storeUint(1, 8).storeBuffer(s.hash(0)).storeUint(s.depth(0), 16).endCell({
@@ -8591,23 +8592,23 @@ function xa() {
     const u = (0, e.beginCell)().storeDictDirect(s).asSlice();
     return i("", u, f.bits, c.map(_ => f.serialize(_).toString(2).padStart(f.bits, "0")))
   }
-  dn.generateMerkleProofDirect = o;
+  fn.generateMerkleProofDirect = o;
 
   function a(s, c, f) {
     return (0, n.convertToMerkleProof)(o(s, c, f))
   }
-  return dn.generateMerkleProof = a, dn
+  return fn.generateMerkleProof = a, fn
 }
-var vr = {},
-  Ao;
+var kr = {},
+  Io;
 
-function Ns() {
-  if (Ao) return vr;
-  Ao = 1, Object.defineProperty(vr, "__esModule", {
+function Ds() {
+  if (Io) return kr;
+  Io = 1, Object.defineProperty(kr, "__esModule", {
     value: !0
-  }), vr.generateMerkleUpdate = void 0;
-  const e = qe(),
-    t = xa();
+  }), kr.generateMerkleUpdate = void 0;
+  const e = Ze(),
+    t = Ua();
 
   function n(i, o) {
     return (0, e.beginCell)().storeUint(4, 8).storeBuffer(i.hash(0)).storeBuffer(o.hash(0)).storeUint(i.depth(0), 16).storeUint(o.depth(0), 16).storeRef(i).storeRef(o).endCell({
@@ -8621,26 +8622,26 @@ function Ns() {
     const f = (0, t.generateMerkleProof)(i, [o], a).refs[0];
     return n(c, f)
   }
-  return vr.generateMerkleUpdate = r, vr
+  return kr.generateMerkleUpdate = r, kr
 }
-var Pi = {};
-Object.defineProperty(Pi, "__esModule", {
+var Mi = {};
+Object.defineProperty(Mi, "__esModule", {
   value: !0
 });
-Pi.parseDict = void 0;
+Mi.parseDict = void 0;
 
-function Ed(e) {
+function Od(e) {
   let t = 0;
   for (; e.loadBit();) t++;
   return t
 }
 
-function ba(e, t, n, r, i) {
+function ya(e, t, n, r, i) {
   let o = t.loadBit() ? 1 : 0,
     a = 0,
     s = e;
   if (o === 0) {
-    a = Ed(t);
+    a = Od(t);
     for (let c = 0; c < a; c++) s += t.loadBit() ? "1" : "0"
   } else if ((t.loadBit() ? 1 : 0) === 0) {
     a = t.loadUint(Math.ceil(Math.log2(n + 1)));
@@ -8654,23 +8655,23 @@ function ba(e, t, n, r, i) {
   else {
     let c = t.loadRef(),
       f = t.loadRef();
-    c.isExotic || ba(s + "0", c.beginParse(), n - a - 1, r, i), f.isExotic || ba(s + "1", f.beginParse(), n - a - 1, r, i)
+    c.isExotic || ya(s + "0", c.beginParse(), n - a - 1, r, i), f.isExotic || ya(s + "1", f.beginParse(), n - a - 1, r, i)
   }
 }
 
-function Od(e, t, n) {
+function xd(e, t, n) {
   let r = new Map;
-  return e && ba("", e, t, r, n), r
+  return e && ya("", e, t, r, n), r
 }
-Pi.parseDict = Od;
-var ft = {},
-  Mi = {};
-Object.defineProperty(Mi, "__esModule", {
+Mi.parseDict = xd;
+var ht = {},
+  Ti = {};
+Object.defineProperty(Ti, "__esModule", {
   value: !0
 });
-Mi.findCommonPrefix = void 0;
+Ti.findCommonPrefix = void 0;
 
-function xd(e, t = 0) {
+function Ud(e, t = 0) {
   if (e.length === 0) return "";
   let n = e[0].slice(t);
   for (let r = 1; r < e.length; r++) {
@@ -8680,16 +8681,16 @@ function xd(e, t = 0) {
   }
   return n
 }
-Mi.findCommonPrefix = xd;
-var Io;
+Ti.findCommonPrefix = Ud;
+var Co;
 
-function Ud() {
-  if (Io) return ft;
-  Io = 1, Object.defineProperty(ft, "__esModule", {
+function Rd() {
+  if (Co) return ht;
+  Co = 1, Object.defineProperty(ht, "__esModule", {
     value: !0
-  }), ft.serializeDict = ft.detectLabelType = ft.writeLabelSame = ft.writeLabelLong = ft.writeLabelShort = ft.buildTree = void 0;
-  const e = qe(),
-    t = Mi;
+  }), ht.serializeDict = ht.detectLabelType = ht.writeLabelSame = ht.writeLabelLong = ht.writeLabelShort = ht.buildTree = void 0;
+  const e = Ze(),
+    t = Ti;
 
   function n(p, h) {
     for (; p.length < h;) p = "0" + p;
@@ -8743,14 +8744,14 @@ function Ud() {
     }
     return o(P)
   }
-  ft.buildTree = a;
+  ht.buildTree = a;
 
   function s(p, h) {
     h.storeBit(0);
     for (let P = 0; P < p.length; P++) h.storeBit(1);
     return h.storeBit(0), p.length > 0 && h.storeUint(BigInt("0b" + p), p.length), h
   }
-  ft.writeLabelShort = s;
+  ht.writeLabelShort = s;
 
   function c(p) {
     return 1 + p.length + 1 + p.length
@@ -8761,7 +8762,7 @@ function Ud() {
     let k = Math.ceil(Math.log2(h + 1));
     return P.storeUint(p.length, k), p.length > 0 && P.storeUint(BigInt("0b" + p), p.length), P
   }
-  ft.writeLabelLong = f;
+  ht.writeLabelLong = f;
 
   function u(p, h) {
     return 2 + Math.ceil(Math.log2(h + 1)) + p.length
@@ -8772,7 +8773,7 @@ function Ud() {
     let T = Math.ceil(Math.log2(P + 1));
     k.storeUint(h, T)
   }
-  ft.writeLabelSame = _;
+  ht.writeLabelSame = _;
 
   function B(p) {
     return 3 + Math.ceil(Math.log2(p + 1))
@@ -8795,7 +8796,7 @@ function Ud() {
     }
     return P
   }
-  ft.detectLabelType = S;
+  ht.detectLabelType = S;
 
   function m(p, h, P) {
     let k = S(p, h);
@@ -8818,89 +8819,89 @@ function Ud() {
     const T = a(p, h);
     x(T, h, P, k)
   }
-  return ft.serializeDict = M, ft
+  return ht.serializeDict = M, ht
 }
-var tr = {};
-Object.defineProperty(tr, "__esModule", {
+var nr = {};
+Object.defineProperty(nr, "__esModule", {
   value: !0
 });
-tr.deserializeInternalKey = tr.serializeInternalKey = void 0;
-const Ds = kt,
-  ya = rn(),
-  Rd = Ai();
+nr.deserializeInternalKey = nr.serializeInternalKey = void 0;
+const Fs = St,
+  _a = an(),
+  jd = Ii();
 
-function jd(e) {
+function Ld(e) {
   if (typeof e == "number") {
     if (!Number.isSafeInteger(e)) throw Error("Invalid key type: not a safe integer: " + e);
     return "n:" + e.toString(10)
   } else {
     if (typeof e == "bigint") return "b:" + e.toString(10);
-    if (Ds.Address.isAddress(e)) return "a:" + e.toString();
-    if (Buffer.isBuffer(e)) return "f:" + e.toString("hex");
-    if (ya.BitString.isBitString(e)) return "B:" + e.toString();
+    if (Fs.Address.isAddress(e)) return "a:" + e.toString();
+    if (be.Buffer.isBuffer(e)) return "f:" + e.toString("hex");
+    if (_a.BitString.isBitString(e)) return "B:" + e.toString();
     throw Error("Invalid key type")
   }
 }
-tr.serializeInternalKey = jd;
+nr.serializeInternalKey = Ld;
 
-function Ld(e) {
+function zd(e) {
   let t = e.slice(0, 2),
     n = e.slice(2);
   if (t === "n:") return parseInt(n, 10);
   if (t === "b:") return BigInt(n);
-  if (t === "a:") return Ds.Address.parse(n);
-  if (t === "f:") return Buffer.from(n, "hex");
+  if (t === "a:") return Fs.Address.parse(n);
+  if (t === "f:") return be.Buffer.from(n, "hex");
   if (t === "B:") {
     const r = n.slice(-1) == "_";
     if (r || n.length % 2 != 0) {
       let o = r ? n.length - 1 : n.length;
       const a = n.substr(0, o) + "0";
-      return !r && o & 1 ? new ya.BitString(Buffer.from(a, "hex"), 0, o << 2) : (0, Rd.paddedBufferToBits)(Buffer.from(a, "hex"))
-    } else return new ya.BitString(Buffer.from(n, "hex"), 0, n.length << 2)
+      return !r && o & 1 ? new _a.BitString(be.Buffer.from(a, "hex"), 0, o << 2) : (0, jd.paddedBufferToBits)(be.Buffer.from(a, "hex"))
+    } else return new _a.BitString(be.Buffer.from(n, "hex"), 0, n.length << 2)
   }
   throw Error("Invalid key type: " + t)
 }
-tr.deserializeInternalKey = Ld;
-var Co;
+nr.deserializeInternalKey = zd;
+var Bo;
 
-function Vn() {
-  if (Co) return wr;
-  Co = 1, Object.defineProperty(wr, "__esModule", {
+function Gn() {
+  if (Bo) return vr;
+  Bo = 1, Object.defineProperty(vr, "__esModule", {
     value: !0
-  }), wr.Dictionary = void 0;
-  const e = kt,
-    t = qe(),
-    n = Gn(),
-    r = rn(),
-    i = xa(),
-    o = Ns(),
-    a = Pi,
-    s = Ud(),
-    c = tr;
-  let f = class Vt {
+  }), vr.Dictionary = void 0;
+  const e = St,
+    t = Ze(),
+    n = Wn(),
+    r = an(),
+    i = Ua(),
+    o = Ds(),
+    a = Mi,
+    s = Rd(),
+    c = nr;
+  let f = class Gt {
     static empty(z, ie) {
-      return z && ie ? new Vt(new Map, z, ie) : new Vt(new Map, null, null)
+      return z && ie ? new Gt(new Map, z, ie) : new Gt(new Map, null, null)
     }
-    static load(z, ie, ve) {
-      let Ce;
-      if (ve instanceof n.Cell) {
-        if (ve.isExotic) return Vt.empty(z, ie);
-        Ce = ve.beginParse()
-      } else Ce = ve;
-      let Ee = Ce.loadMaybeRef();
-      return Ee && !Ee.isExotic ? Vt.loadDirect(z, ie, Ee.beginParse()) : Vt.empty(z, ie)
+    static load(z, ie, ke) {
+      let Be;
+      if (ke instanceof n.Cell) {
+        if (ke.isExotic) return Gt.empty(z, ie);
+        Be = ke.beginParse()
+      } else Be = ke;
+      let Oe = Be.loadMaybeRef();
+      return Oe && !Oe.isExotic ? Gt.loadDirect(z, ie, Oe.beginParse()) : Gt.empty(z, ie)
     }
-    static loadDirect(z, ie, ve) {
-      if (!ve) return Vt.empty(z, ie);
-      let Ce;
-      ve instanceof n.Cell ? Ce = ve.beginParse() : Ce = ve;
-      let Ee = (0, a.parseDict)(Ce, z.bits, ie.parse),
+    static loadDirect(z, ie, ke) {
+      if (!ke) return Gt.empty(z, ie);
+      let Be;
+      ke instanceof n.Cell ? Be = ke.beginParse() : Be = ke;
+      let Oe = (0, a.parseDict)(Be, z.bits, ie.parse),
         F = new Map;
-      for (let [Ve, Fe] of Ee) F.set((0, c.serializeInternalKey)(z.parse(Ve)), Fe);
-      return new Vt(F, z, ie)
+      for (let [Ge, Ke] of Oe) F.set((0, c.serializeInternalKey)(z.parse(Ge)), Ke);
+      return new Gt(F, z, ie)
     }
-    constructor(z, ie, ve) {
-      this._key = ie, this._value = ve, this._map = z
+    constructor(z, ie, ke) {
+      this._key = ie, this._value = ke, this._map = z
     }
     get size() {
       return this._map.size
@@ -8929,31 +8930,31 @@ function Vn() {
     values() {
       return Array.from(this._map.values())
     }
-    store(z, ie, ve) {
+    store(z, ie, ke) {
       if (this._map.size === 0) z.storeBit(0);
       else {
-        let Ce = this._key;
-        ie != null && (Ce = ie);
-        let Ee = this._value;
-        if (ve != null && (Ee = ve), !Ce) throw Error("Key serializer is not defined");
-        if (!Ee) throw Error("Value serializer is not defined");
+        let Be = this._key;
+        ie != null && (Be = ie);
+        let Oe = this._value;
+        if (ke != null && (Oe = ke), !Be) throw Error("Key serializer is not defined");
+        if (!Oe) throw Error("Value serializer is not defined");
         let F = new Map;
-        for (const [Fe, gt] of this._map) F.set(Ce.serialize((0, c.deserializeInternalKey)(Fe)), gt);
+        for (const [Ke, mt] of this._map) F.set(Be.serialize((0, c.deserializeInternalKey)(Ke)), mt);
         z.storeBit(1);
-        let Ve = (0, t.beginCell)();
-        (0, s.serializeDict)(F, Ce.bits, Ee.serialize, Ve), z.storeRef(Ve.endCell())
+        let Ge = (0, t.beginCell)();
+        (0, s.serializeDict)(F, Be.bits, Oe.serialize, Ge), z.storeRef(Ge.endCell())
       }
     }
-    storeDirect(z, ie, ve) {
+    storeDirect(z, ie, ke) {
       if (this._map.size === 0) throw Error("Cannot store empty dictionary directly");
-      let Ce = this._key;
-      ie != null && (Ce = ie);
-      let Ee = this._value;
-      if (ve != null && (Ee = ve), !Ce) throw Error("Key serializer is not defined");
-      if (!Ee) throw Error("Value serializer is not defined");
+      let Be = this._key;
+      ie != null && (Be = ie);
+      let Oe = this._value;
+      if (ke != null && (Oe = ke), !Be) throw Error("Key serializer is not defined");
+      if (!Oe) throw Error("Value serializer is not defined");
       let F = new Map;
-      for (const [Ve, Fe] of this._map) F.set(Ce.serialize((0, c.deserializeInternalKey)(Ve)), Fe);
-      (0, s.serializeDict)(F, Ce.bits, Ee.serialize, z)
+      for (const [Ge, Ke] of this._map) F.set(Be.serialize((0, c.deserializeInternalKey)(Ge)), Ke);
+      (0, s.serializeDict)(F, Be.bits, Oe.serialize, z)
     }
     generateMerkleProof(z) {
       return (0, i.generateMerkleProof)(this, z, this._key)
@@ -8965,7 +8966,7 @@ function Vn() {
       return (0, o.generateMerkleUpdate)(this, z, this._key, ie)
     }
   };
-  wr.Dictionary = f, f.Keys = {
+  vr.Dictionary = f, f.Keys = {
     Address: () => u(),
     BigInt: V => _(V),
     Int: V => B(V),
@@ -8983,8 +8984,8 @@ function Vn() {
     Bool: () => T(),
     Address: () => J(),
     Cell: () => ne(),
-    Buffer: V => we(V),
-    BitString: V => ke(V),
+    Buffer: V => ve(V),
+    BitString: V => Se(V),
     Dictionary: (V, z) => q(V, z)
   };
 
@@ -9051,7 +9052,7 @@ function Vn() {
     return {
       bits: V * 8,
       serialize: z => {
-        if (!Buffer.isBuffer(z)) throw Error("Key is not a buffer");
+        if (!be.Buffer.isBuffer(z)) throw Error("Key is not a buffer");
         return (0, t.beginCell)().storeBuffer(z).endCell().beginParse().loadUintBig(V * 8)
       },
       parse: z => (0, t.beginCell)().storeUint(z, V * 8).endCell().beginParse().loadBuffer(V)
@@ -9152,14 +9153,14 @@ function Vn() {
 
   function q(V, z) {
     return {
-      serialize: (ie, ve) => {
-        ie.store(ve)
+      serialize: (ie, ke) => {
+        ie.store(ke)
       },
       parse: ie => f.load(V, z, ie)
     }
   }
 
-  function we(V) {
+  function ve(V) {
     return {
       serialize: (z, ie) => {
         if (z.length !== V) throw Error("Invalid buffer size");
@@ -9169,7 +9170,7 @@ function Vn() {
     }
   }
 
-  function ke(V) {
+  function Se(V) {
     return {
       serialize: (z, ie) => {
         if (z.length !== V) throw Error("Invalid BitString size");
@@ -9178,29 +9179,29 @@ function Vn() {
       parse: z => z.loadBits(V)
     }
   }
-  return wr
+  return vr
 }
-var Rt = {},
-  Bo;
+var jt = {},
+  Po;
 
-function Fs() {
-  if (Bo) return Rt;
-  Bo = 1, Object.defineProperty(Rt, "__esModule", {
+function Ks() {
+  if (Po) return jt;
+  Po = 1, Object.defineProperty(jt, "__esModule", {
     value: !0
-  }), Rt.writeString = Rt.stringToCell = Rt.readString = void 0;
-  const e = qe();
+  }), jt.writeString = jt.stringToCell = jt.readString = void 0;
+  const e = Ze();
 
   function t(a) {
     if (a.remainingBits % 8 !== 0) throw new Error(`Invalid string length: ${a.remainingBits}`);
     if (a.remainingRefs !== 0 && a.remainingRefs !== 1) throw new Error(`invalid number of refs: ${a.remainingRefs}`);
     let s;
-    return a.remainingBits === 0 ? s = Buffer.alloc(0) : s = a.loadBuffer(a.remainingBits / 8), a.remainingRefs === 1 && (s = Buffer.concat([s, t(a.loadRef().beginParse())])), s
+    return a.remainingBits === 0 ? s = be.Buffer.alloc(0) : s = a.loadBuffer(a.remainingBits / 8), a.remainingRefs === 1 && (s = be.Buffer.concat([s, t(a.loadRef().beginParse())])), s
   }
 
   function n(a) {
     return t(a).toString()
   }
-  Rt.readString = n;
+  jt.readString = n;
 
   function r(a, s) {
     if (a.length > 0) {
@@ -9217,34 +9218,34 @@ function Fs() {
 
   function i(a) {
     let s = (0, e.beginCell)();
-    return r(Buffer.from(a), s), s.endCell()
+    return r(be.Buffer.from(a), s), s.endCell()
   }
-  Rt.stringToCell = i;
+  jt.stringToCell = i;
 
   function o(a, s) {
-    r(Buffer.from(a), s)
+    r(be.Buffer.from(a), s)
   }
-  return Rt.writeString = o, Rt
+  return jt.writeString = o, jt
 }
-var Po;
+var Mo;
 
-function Ua() {
-  if (Po) return _r;
-  Po = 1;
+function Ra() {
+  if (Mo) return wr;
+  Mo = 1;
   var e = pe && pe.__importDefault || function(s) {
       return s && s.__esModule ? s : {
         default: s
       }
     },
     t;
-  Object.defineProperty(_r, "__esModule", {
+  Object.defineProperty(wr, "__esModule", {
     value: !0
-  }), _r.Slice = void 0;
-  const n = e(ar),
-    r = Vn(),
-    i = qe(),
-    o = Fs();
-  let a = class _a {
+  }), wr.Slice = void 0;
+  const n = e(or),
+    r = Gn(),
+    i = Ze(),
+    o = Ks();
+  let a = class wa {
     constructor(c, f) {
       this[t] = () => this.toString(), this._reader = c.clone(), this._refs = [...f], this._refsOffset = 0
     }
@@ -9416,9 +9417,9 @@ function Ua() {
     clone(c = !1) {
       if (c) {
         let f = this._reader.clone();
-        return f.reset(), new _a(f, this._refs)
+        return f.reset(), new wa(f, this._refs)
       } else {
-        let f = new _a(this._reader, this._refs);
+        let f = new wa(this._reader, this._refs);
         return f._refsOffset = this._refsOffset, f
       }
     }
@@ -9426,33 +9427,33 @@ function Ua() {
       return this.asCell().toString()
     }
   };
-  return _r.Slice = a, t = n.default, _r
+  return wr.Slice = a, t = n.default, wr
 }
-var kr = {},
-  Nr = {};
-Object.defineProperty(Nr, "__esModule", {
+var Sr = {},
+  Dr = {};
+Object.defineProperty(Dr, "__esModule", {
   value: !0
 });
-Nr.exoticLibrary = void 0;
-const zd = Bt;
+Dr.exoticLibrary = void 0;
+const Nd = Pt;
 
-function Nd(e, t) {
-  const n = new zd.BitReader(e);
+function Dd(e, t) {
+  const n = new Nd.BitReader(e);
   if (e.length !== 264) throw new Error(`Library cell must have exactly (8 + 256) bits, got "${e.length}"`);
   let i = n.loadUint(8);
   if (i !== 2) throw new Error(`Library cell must have type 2, got "${i}"`);
   return {}
 }
-Nr.exoticLibrary = Nd;
-var lr = {};
-Object.defineProperty(lr, "__esModule", {
+Dr.exoticLibrary = Dd;
+var cr = {};
+Object.defineProperty(cr, "__esModule", {
   value: !0
 });
-lr.exoticMerkleUpdate = void 0;
-const Dd = Bt;
+cr.exoticMerkleUpdate = void 0;
+const Fd = Pt;
 
-function Fd(e, t) {
-  const n = new Dd.BitReader(e),
+function Kd(e, t) {
+  const n = new Fd.BitReader(e),
     r = 8 + 2 * 272;
   if (e.length !== r) throw new Error(`Merkle Update cell must have exactly (8 + (2 * (256 + 16))) bits, got "${e.length}"`);
   if (t.length !== 2) throw new Error(`Merkle Update cell must have exactly 2 refs, got "${t.length}"`);
@@ -9473,16 +9474,16 @@ function Fd(e, t) {
     proofHash2: a
   }
 }
-lr.exoticMerkleUpdate = Fd;
-var cr = {},
-  ur = {};
-Object.defineProperty(ur, "__esModule", {
+cr.exoticMerkleUpdate = Kd;
+var ur = {},
+  dr = {};
+Object.defineProperty(dr, "__esModule", {
   value: !0
 });
-ur.LevelMask = void 0;
-class Ra {
+dr.LevelMask = void 0;
+class ja {
   constructor(t = 0) {
-    this._mask = 0, this._mask = t, this._hashIndex = Kd(this._mask), this._hashCount = this._hashIndex + 1
+    this._mask = 0, this._mask = t, this._hashIndex = $d(this._mask), this._hashCount = this._hashIndex + 1
   }
   get value() {
     return this._mask
@@ -9497,33 +9498,33 @@ class Ra {
     return this._hashCount
   }
   apply(t) {
-    return new Ra(this._mask & (1 << t) - 1)
+    return new ja(this._mask & (1 << t) - 1)
   }
   isSignificant(t) {
     return t === 0 || (this._mask >> t - 1) % 2 !== 0
   }
 }
-ur.LevelMask = Ra;
+dr.LevelMask = ja;
 
-function Kd(e) {
+function $d(e) {
   return e = e - (e >> 1 & 1431655765), e = (e & 858993459) + (e >> 2 & 858993459), (e + (e >> 4) & 252645135) * 16843009 >> 24
 }
-Object.defineProperty(cr, "__esModule", {
+Object.defineProperty(ur, "__esModule", {
   value: !0
 });
-cr.exoticPruned = void 0;
-const $d = Bt,
-  Mo = ur;
+ur.exoticPruned = void 0;
+const Hd = Pt,
+  To = dr;
 
-function Hd(e, t) {
-  let n = new $d.BitReader(e),
+function Vd(e, t) {
+  let n = new Hd.BitReader(e),
     r = n.loadUint(8);
   if (r !== 1) throw new Error(`Pruned branch cell must have type 1, got "${r}"`);
   if (t.length !== 0) throw new Error(`Pruned Branch cell can't has refs, got "${t.length}"`);
   let i;
-  if (e.length === 280) i = new Mo.LevelMask(1);
+  if (e.length === 280) i = new To.LevelMask(1);
   else {
-    if (i = new Mo.LevelMask(n.loadUint(8)), i.level < 1 || i.level > 3) throw new Error(`Pruned Branch cell level must be >= 1 and <= 3, got "${i.level}/${i.value}"`);
+    if (i = new To.LevelMask(n.loadUint(8)), i.level < 1 || i.level > 3) throw new Error(`Pruned Branch cell level must be >= 1 and <= 3, got "${i.level}/${i.value}"`);
     const c = 16 + i.apply(i.level - 1).hashCount * 272;
     if (e.length !== c) throw new Error(`Pruned branch cell must have exactly ${c} bits, got "${e.length}"`)
   }
@@ -9541,21 +9542,21 @@ function Hd(e, t) {
     pruned: o
   }
 }
-cr.exoticPruned = Hd;
-var To;
+ur.exoticPruned = Vd;
+var Eo;
 
-function Vd() {
-  if (To) return kr;
-  To = 1, Object.defineProperty(kr, "__esModule", {
+function Gd() {
+  if (Eo) return Sr;
+  Eo = 1, Object.defineProperty(Sr, "__esModule", {
     value: !0
-  }), kr.resolveExotic = void 0;
-  const e = Bt,
-    t = an,
-    n = Nr,
-    r = Bi(),
-    i = lr,
-    o = cr,
-    a = ur;
+  }), Sr.resolveExotic = void 0;
+  const e = Pt,
+    t = on,
+    n = Dr,
+    r = Pi(),
+    i = cr,
+    o = ur,
+    a = dr;
 
   function s(B, y) {
     let S = (0, o.exoticPruned)(B, y),
@@ -9618,47 +9619,47 @@ function Vd() {
     if (m === 4) return u(B, y);
     throw Error("Invalid exotic cell type: " + m)
   }
-  return kr.resolveExotic = _, kr
+  return Sr.resolveExotic = _, Sr
 }
-var Sr = {},
-  Nt = {};
-Object.defineProperty(Nt, "__esModule", {
+var Ar = {},
+  Dt = {};
+Object.defineProperty(Dt, "__esModule", {
   value: !0
 });
-Nt.getRepr = Nt.getBitsDescriptor = Nt.getRefsDescriptor = void 0;
-const Pr = an,
-  Gd = Ai();
+Dt.getRepr = Dt.getBitsDescriptor = Dt.getRefsDescriptor = void 0;
+const Mr = on,
+  Wd = Ii();
 
-function Ks(e, t, n) {
-  return e.length + (n !== Pr.CellType.Ordinary ? 1 : 0) * 8 + t * 32
+function $s(e, t, n) {
+  return e.length + (n !== Mr.CellType.Ordinary ? 1 : 0) * 8 + t * 32
 }
-Nt.getRefsDescriptor = Ks;
+Dt.getRefsDescriptor = $s;
 
-function $s(e) {
+function Hs(e) {
   let t = e.length;
   return Math.ceil(t / 8) + Math.floor(t / 8)
 }
-Nt.getBitsDescriptor = $s;
+Dt.getBitsDescriptor = Hs;
 
-function Wd(e, t, n, r, i, o) {
+function Yd(e, t, n, r, i, o) {
   const a = Math.ceil(t.length / 8),
-    s = Buffer.alloc(2 + a + 34 * n.length);
+    s = be.Buffer.alloc(2 + a + 34 * n.length);
   let c = 0;
-  s[c++] = Ks(n, i, o), s[c++] = $s(e), (0, Gd.bitsToPaddedBuffer)(t).copy(s, c), c += a;
+  s[c++] = $s(n, i, o), s[c++] = Hs(e), (0, Wd.bitsToPaddedBuffer)(t).copy(s, c), c += a;
   for (const f of n) {
     let u;
-    o == Pr.CellType.MerkleProof || o == Pr.CellType.MerkleUpdate ? u = f.depth(r + 1) : u = f.depth(r), s[c++] = Math.floor(u / 256), s[c++] = u % 256
+    o == Mr.CellType.MerkleProof || o == Mr.CellType.MerkleUpdate ? u = f.depth(r + 1) : u = f.depth(r), s[c++] = Math.floor(u / 256), s[c++] = u % 256
   }
   for (const f of n) {
     let u;
-    o == Pr.CellType.MerkleProof || o == Pr.CellType.MerkleUpdate ? u = f.hash(r + 1) : u = f.hash(r), u.copy(s, c), c += 32
+    o == Mr.CellType.MerkleProof || o == Mr.CellType.MerkleUpdate ? u = f.hash(r + 1) : u = f.hash(r), u.copy(s, c), c += 32
   }
   return s
 }
-Nt.getRepr = Wd;
-var qi = {},
-  Gt = {},
-  Hs = {
+Dt.getRepr = Yd;
+var Zi = {},
+  Wt = {},
+  Vs = {
     exports: {}
   };
 (function(e, t) {
@@ -9691,15 +9692,15 @@ var qi = {},
         case "HEX":
           return function(E, j, b) {
             return function(Q, te, re, se) {
-              var ye, ae, le, Pe;
+              var _e, ae, le, Me;
               if (Q.length % 2 != 0) throw new Error("String of HEX type must be in byte increments");
               var ue = te || [0],
-                Me = (re = re || 0) >>> 3,
-                Te = se === -1 ? 3 : 0;
-              for (ye = 0; ye < Q.length; ye += 2) {
-                if (ae = parseInt(Q.substr(ye, 2), 16), isNaN(ae)) throw new Error("String of HEX type contains invalid characters");
-                for (le = (Pe = (ye >>> 1) + Me) >>> 2; ue.length <= le;) ue.push(0);
-                ue[le] |= ae << 8 * (Te + se * (Pe % 4))
+                Te = (re = re || 0) >>> 3,
+                Ee = se === -1 ? 3 : 0;
+              for (_e = 0; _e < Q.length; _e += 2) {
+                if (ae = parseInt(Q.substr(_e, 2), 16), isNaN(ae)) throw new Error("String of HEX type contains invalid characters");
+                for (le = (Me = (_e >>> 1) + Te) >>> 2; ue.length <= le;) ue.push(0);
+                ue[le] |= ae << 8 * (Ee + se * (Me % 4))
               }
               return {
                 value: ue,
@@ -9709,22 +9710,22 @@ var qi = {},
           };
         case "TEXT":
           return function(E, j, b) {
-            return function(Q, te, re, se, ye) {
-              var ae, le, Pe, ue, Me, Te, Oe, Ne, de = 0,
-                dt = re || [0],
-                _t = (se = se || 0) >>> 3;
+            return function(Q, te, re, se, _e) {
+              var ae, le, Me, ue, Te, Ee, xe, De, de = 0,
+                ft = re || [0],
+                wt = (se = se || 0) >>> 3;
               if (te === "UTF8")
-                for (Oe = ye === -1 ? 3 : 0, Pe = 0; Pe < Q.length; Pe += 1)
-                  for (le = [], 128 > (ae = Q.charCodeAt(Pe)) ? le.push(ae) : 2048 > ae ? (le.push(192 | ae >>> 6), le.push(128 | 63 & ae)) : 55296 > ae || 57344 <= ae ? le.push(224 | ae >>> 12, 128 | ae >>> 6 & 63, 128 | 63 & ae) : (Pe += 1, ae = 65536 + ((1023 & ae) << 10 | 1023 & Q.charCodeAt(Pe)), le.push(240 | ae >>> 18, 128 | ae >>> 12 & 63, 128 | ae >>> 6 & 63, 128 | 63 & ae)), ue = 0; ue < le.length; ue += 1) {
-                    for (Me = (Te = de + _t) >>> 2; dt.length <= Me;) dt.push(0);
-                    dt[Me] |= le[ue] << 8 * (Oe + ye * (Te % 4)), de += 1
+                for (xe = _e === -1 ? 3 : 0, Me = 0; Me < Q.length; Me += 1)
+                  for (le = [], 128 > (ae = Q.charCodeAt(Me)) ? le.push(ae) : 2048 > ae ? (le.push(192 | ae >>> 6), le.push(128 | 63 & ae)) : 55296 > ae || 57344 <= ae ? le.push(224 | ae >>> 12, 128 | ae >>> 6 & 63, 128 | 63 & ae) : (Me += 1, ae = 65536 + ((1023 & ae) << 10 | 1023 & Q.charCodeAt(Me)), le.push(240 | ae >>> 18, 128 | ae >>> 12 & 63, 128 | ae >>> 6 & 63, 128 | 63 & ae)), ue = 0; ue < le.length; ue += 1) {
+                    for (Te = (Ee = de + wt) >>> 2; ft.length <= Te;) ft.push(0);
+                    ft[Te] |= le[ue] << 8 * (xe + _e * (Ee % 4)), de += 1
                   } else
-                    for (Oe = ye === -1 ? 2 : 0, Ne = te === "UTF16LE" && ye !== 1 || te !== "UTF16LE" && ye === 1, Pe = 0; Pe < Q.length; Pe += 1) {
-                      for (ae = Q.charCodeAt(Pe), Ne === !0 && (ae = (ue = 255 & ae) << 8 | ae >>> 8), Me = (Te = de + _t) >>> 2; dt.length <= Me;) dt.push(0);
-                      dt[Me] |= ae << 8 * (Oe + ye * (Te % 4)), de += 2
+                    for (xe = _e === -1 ? 2 : 0, De = te === "UTF16LE" && _e !== 1 || te !== "UTF16LE" && _e === 1, Me = 0; Me < Q.length; Me += 1) {
+                      for (ae = Q.charCodeAt(Me), De === !0 && (ae = (ue = 255 & ae) << 8 | ae >>> 8), Te = (Ee = de + wt) >>> 2; ft.length <= Te;) ft.push(0);
+                      ft[Te] |= ae << 8 * (xe + _e * (Ee % 4)), de += 2
                     }
               return {
-                value: dt,
+                value: ft,
                 binLen: 8 * de + se
               }
             }(E, g, j, b, I)
@@ -9732,33 +9733,33 @@ var qi = {},
         case "B64":
           return function(E, j, b) {
             return function(Q, te, re, se) {
-              var ye, ae, le, Pe, ue, Me, Te = 0,
-                Oe = te || [0],
-                Ne = (re = re || 0) >>> 3,
+              var _e, ae, le, Me, ue, Te, Ee = 0,
+                xe = te || [0],
+                De = (re = re || 0) >>> 3,
                 de = se === -1 ? 3 : 0,
-                dt = Q.indexOf("=");
+                ft = Q.indexOf("=");
               if (Q.search(/^[a-zA-Z0-9=+/]+$/) === -1) throw new Error("Invalid character in base-64 string");
-              if (Q = Q.replace(/=/g, ""), dt !== -1 && dt < Q.length) throw new Error("Invalid '=' found in base-64 string");
-              for (ye = 0; ye < Q.length; ye += 4) {
-                for (Pe = Q.substr(ye, 4), le = 0, ae = 0; ae < Pe.length; ae += 1) le |= n.indexOf(Pe.charAt(ae)) << 18 - 6 * ae;
-                for (ae = 0; ae < Pe.length - 1; ae += 1) {
-                  for (ue = (Me = Te + Ne) >>> 2; Oe.length <= ue;) Oe.push(0);
-                  Oe[ue] |= (le >>> 16 - 8 * ae & 255) << 8 * (de + se * (Me % 4)), Te += 1
+              if (Q = Q.replace(/=/g, ""), ft !== -1 && ft < Q.length) throw new Error("Invalid '=' found in base-64 string");
+              for (_e = 0; _e < Q.length; _e += 4) {
+                for (Me = Q.substr(_e, 4), le = 0, ae = 0; ae < Me.length; ae += 1) le |= n.indexOf(Me.charAt(ae)) << 18 - 6 * ae;
+                for (ae = 0; ae < Me.length - 1; ae += 1) {
+                  for (ue = (Te = Ee + De) >>> 2; xe.length <= ue;) xe.push(0);
+                  xe[ue] |= (le >>> 16 - 8 * ae & 255) << 8 * (de + se * (Te % 4)), Ee += 1
                 }
               }
               return {
-                value: Oe,
-                binLen: 8 * Te + re
+                value: xe,
+                binLen: 8 * Ee + re
               }
             }(E, j, b, I)
           };
         case "BYTES":
           return function(E, j, b) {
             return function(Q, te, re, se) {
-              var ye, ae, le, Pe, ue = te || [0],
-                Me = (re = re || 0) >>> 3,
-                Te = se === -1 ? 3 : 0;
-              for (ae = 0; ae < Q.length; ae += 1) ye = Q.charCodeAt(ae), le = (Pe = ae + Me) >>> 2, ue.length <= le && ue.push(0), ue[le] |= ye << 8 * (Te + se * (Pe % 4));
+              var _e, ae, le, Me, ue = te || [0],
+                Te = (re = re || 0) >>> 3,
+                Ee = se === -1 ? 3 : 0;
+              for (ae = 0; ae < Q.length; ae += 1) _e = Q.charCodeAt(ae), le = (Me = ae + Te) >>> 2, ue.length <= le && ue.push(0), ue[le] |= _e << 8 * (Ee + se * (Me % 4));
               return {
                 value: ue,
                 binLen: 8 * Q.length + re
@@ -9795,32 +9796,32 @@ var qi = {},
         case "HEX":
           return function(j) {
             return function(b, Q, te, re) {
-              var se, ye, ae = "",
+              var se, _e, ae = "",
                 le = Q / 8,
-                Pe = te === -1 ? 3 : 0;
-              for (se = 0; se < le; se += 1) ye = b[se >>> 2] >>> 8 * (Pe + te * (se % 4)), ae += "0123456789abcdef".charAt(ye >>> 4 & 15) + "0123456789abcdef".charAt(15 & ye);
+                Me = te === -1 ? 3 : 0;
+              for (se = 0; se < le; se += 1) _e = b[se >>> 2] >>> 8 * (Me + te * (se % 4)), ae += "0123456789abcdef".charAt(_e >>> 4 & 15) + "0123456789abcdef".charAt(15 & _e);
               return re.outputUpper ? ae.toUpperCase() : ae
             }(j, g, I, E)
           };
         case "B64":
           return function(j) {
             return function(b, Q, te, re) {
-              var se, ye, ae, le, Pe, ue = "",
-                Me = Q / 8,
-                Te = te === -1 ? 3 : 0;
-              for (se = 0; se < Me; se += 3)
-                for (le = se + 1 < Me ? b[se + 1 >>> 2] : 0, Pe = se + 2 < Me ? b[se + 2 >>> 2] : 0, ae = (b[se >>> 2] >>> 8 * (Te + te * (se % 4)) & 255) << 16 | (le >>> 8 * (Te + te * ((se + 1) % 4)) & 255) << 8 | Pe >>> 8 * (Te + te * ((se + 2) % 4)) & 255, ye = 0; ye < 4; ye += 1) ue += 8 * se + 6 * ye <= Q ? n.charAt(ae >>> 6 * (3 - ye) & 63) : re.b64Pad;
+              var se, _e, ae, le, Me, ue = "",
+                Te = Q / 8,
+                Ee = te === -1 ? 3 : 0;
+              for (se = 0; se < Te; se += 3)
+                for (le = se + 1 < Te ? b[se + 1 >>> 2] : 0, Me = se + 2 < Te ? b[se + 2 >>> 2] : 0, ae = (b[se >>> 2] >>> 8 * (Ee + te * (se % 4)) & 255) << 16 | (le >>> 8 * (Ee + te * ((se + 1) % 4)) & 255) << 8 | Me >>> 8 * (Ee + te * ((se + 2) % 4)) & 255, _e = 0; _e < 4; _e += 1) ue += 8 * se + 6 * _e <= Q ? n.charAt(ae >>> 6 * (3 - _e) & 63) : re.b64Pad;
               return ue
             }(j, g, I, E)
           };
         case "BYTES":
           return function(j) {
             return function(b, Q, te) {
-              var re, se, ye = "",
+              var re, se, _e = "",
                 ae = Q / 8,
                 le = te === -1 ? 3 : 0;
-              for (re = 0; re < ae; re += 1) se = b[re >>> 2] >>> 8 * (le + te * (re % 4)) & 255, ye += String.fromCharCode(se);
-              return ye
+              for (re = 0; re < ae; re += 1) se = b[re >>> 2] >>> 8 * (le + te * (re % 4)) & 255, _e += String.fromCharCode(se);
+              return _e
             }(j, g, I)
           };
         case "ARRAYBUFFER":
@@ -9832,11 +9833,11 @@ var qi = {},
           return function(j) {
             return function(b, Q, te) {
               var re, se = Q / 8,
-                ye = new ArrayBuffer(se),
-                ae = new Uint8Array(ye),
+                _e = new ArrayBuffer(se),
+                ae = new Uint8Array(_e),
                 le = te === -1 ? 3 : 0;
               for (re = 0; re < se; re += 1) ae[re] = b[re >>> 2] >>> 8 * (le + te * (re % 4)) & 255;
-              return ye
+              return _e
             }(j, g, I)
           };
         case "UINT8ARRAY":
@@ -9848,9 +9849,9 @@ var qi = {},
           return function(j) {
             return function(b, Q, te) {
               var re, se = Q / 8,
-                ye = te === -1 ? 3 : 0,
+                _e = te === -1 ? 3 : 0,
                 ae = new Uint8Array(se);
-              for (re = 0; re < se; re += 1) ae[re] = b[re >>> 2] >>> 8 * (ye + te * (re % 4)) & 255;
+              for (re = 0; re < se; re += 1) ae[re] = b[re >>> 2] >>> 8 * (_e + te * (re % 4)) & 255;
               return ae
             }(j, g, I)
           };
@@ -10024,11 +10025,11 @@ var qi = {},
       return x(A, 7) ^ x(A, 18) ^ M(A, 3)
     }
 
-    function we(A) {
+    function ve(A) {
       return x(A, 6) ^ x(A, 11) ^ x(A, 25)
     }
 
-    function ke(A) {
+    function Se(A) {
       return [1732584193, 4023233417, 2562383102, 271733878, 3285377520]
     }
 
@@ -10050,34 +10051,34 @@ var qi = {},
         var Q = j || {};
         return (b = A.call(this, I, E, j) || this).g = !0, b.F = b.Y, b.C = -1, b.p = i(b.t, b.i, b.C), b.R = V, b.B = function(te) {
           return te.slice()
-        }, b.L = ke, b.K = z, b.m = [1732584193, 4023233417, 2562383102, 271733878, 3285377520], b.S = 512, b.U = 160, b.T = !1, Q.hmacKey && b.k(B("hmacKey", Q.hmacKey, b.C)), b
+        }, b.L = Se, b.K = z, b.m = [1732584193, 4023233417, 2562383102, 271733878, 3285377520], b.S = 512, b.U = 160, b.T = !1, Q.hmacKey && b.k(B("hmacKey", Q.hmacKey, b.C)), b
       }
       return m(g, A), g
     }(y);
 
-    function ve(A) {
+    function ke(A) {
       return A == "SHA-224" ? s.slice() : c.slice()
     }
 
-    function Ce(A, g) {
-      var I, E, j, b, Q, te, re, se, ye, ae, le, Pe, ue = [];
-      for (I = g[0], E = g[1], j = g[2], b = g[3], Q = g[4], te = g[5], re = g[6], se = g[7], le = 0; le < 64; le += 1) ue[le] = le < 16 ? A[le] : J(x(Pe = ue[le - 2], 17) ^ x(Pe, 19) ^ M(Pe, 10), ue[le - 7], q(ue[le - 15]), ue[le - 16]), ye = ne(se, we(Q), h(Q, te, re), a[le], ue[le]), ae = T(k(I), P(I, E, j)), se = re, re = te, te = Q, Q = T(b, ye), b = j, j = E, E = I, I = T(ye, ae);
+    function Be(A, g) {
+      var I, E, j, b, Q, te, re, se, _e, ae, le, Me, ue = [];
+      for (I = g[0], E = g[1], j = g[2], b = g[3], Q = g[4], te = g[5], re = g[6], se = g[7], le = 0; le < 64; le += 1) ue[le] = le < 16 ? A[le] : J(x(Me = ue[le - 2], 17) ^ x(Me, 19) ^ M(Me, 10), ue[le - 7], q(ue[le - 15]), ue[le - 16]), _e = ne(se, ve(Q), h(Q, te, re), a[le], ue[le]), ae = T(k(I), P(I, E, j)), se = re, re = te, te = Q, Q = T(b, _e), b = j, j = E, E = I, I = T(_e, ae);
       return g[0] = T(I, g[0]), g[1] = T(E, g[1]), g[2] = T(j, g[2]), g[3] = T(b, g[3]), g[4] = T(Q, g[4]), g[5] = T(te, g[5]), g[6] = T(re, g[6]), g[7] = T(se, g[7]), g
     }
-    var Ee = function(A) {
+    var Oe = function(A) {
         function g(I, E, j) {
           var b = this;
           if (I !== "SHA-224" && I !== "SHA-256") throw new Error(f);
           var Q = j || {};
-          return (b = A.call(this, I, E, j) || this).F = b.Y, b.g = !0, b.C = -1, b.p = i(b.t, b.i, b.C), b.R = Ce, b.B = function(te) {
+          return (b = A.call(this, I, E, j) || this).F = b.Y, b.g = !0, b.C = -1, b.p = i(b.t, b.i, b.C), b.R = Be, b.B = function(te) {
             return te.slice()
-          }, b.L = ve, b.K = function(te, re, se, ye) {
-            return function(ae, le, Pe, ue, Me) {
-              for (var Te, Oe = 15 + (le + 65 >>> 9 << 4), Ne = le + Pe; ae.length <= Oe;) ae.push(0);
-              for (ae[le >>> 5] |= 128 << 24 - le % 32, ae[Oe] = 4294967295 & Ne, ae[Oe - 1] = Ne / 4294967296 | 0, Te = 0; Te < ae.length; Te += 16) ue = Ce(ae.slice(Te, Te + 16), ue);
-              return Me === "SHA-224" ? [ue[0], ue[1], ue[2], ue[3], ue[4], ue[5], ue[6]] : ue
-            }(te, re, se, ye, I)
-          }, b.m = ve(I), b.S = 512, b.U = I === "SHA-224" ? 224 : 256, b.T = !1, Q.hmacKey && b.k(B("hmacKey", Q.hmacKey, b.C)), b
+          }, b.L = ke, b.K = function(te, re, se, _e) {
+            return function(ae, le, Me, ue, Te) {
+              for (var Ee, xe = 15 + (le + 65 >>> 9 << 4), De = le + Me; ae.length <= xe;) ae.push(0);
+              for (ae[le >>> 5] |= 128 << 24 - le % 32, ae[xe] = 4294967295 & De, ae[xe - 1] = De / 4294967296 | 0, Ee = 0; Ee < ae.length; Ee += 16) ue = Be(ae.slice(Ee, Ee + 16), ue);
+              return Te === "SHA-224" ? [ue[0], ue[1], ue[2], ue[3], ue[4], ue[5], ue[6]] : ue
+            }(te, re, se, _e, I)
+          }, b.m = ke(I), b.S = 512, b.U = I === "SHA-224" ? 224 : 256, b.T = !1, Q.hmacKey && b.k(B("hmacKey", Q.hmacKey, b.C)), b
         }
         return m(g, A), g
       }(y),
@@ -10085,21 +10086,21 @@ var qi = {},
         this.N = A, this.I = g
       };
 
-    function Ve(A, g) {
+    function Ge(A, g) {
       var I;
       return g > 32 ? (I = 64 - g, new F(A.I << g | A.N >>> I, A.N << g | A.I >>> I)) : g !== 0 ? (I = 32 - g, new F(A.N << g | A.I >>> I, A.I << g | A.N >>> I)) : A
     }
 
-    function Fe(A, g) {
+    function Ke(A, g) {
       var I;
       return g < 32 ? (I = 32 - g, new F(A.N >>> g | A.I << I, A.I >>> g | A.N << I)) : (I = 64 - g, new F(A.I >>> g | A.N << I, A.N >>> g | A.I << I))
     }
 
-    function gt(A, g) {
+    function mt(A, g) {
       return new F(A.N >>> g, A.I >>> g | A.N << 32 - g)
     }
 
-    function on(A, g, I) {
+    function sn(A, g, I) {
       return new F(A.N & g.N ^ ~A.N & I.N, A.I & g.I ^ ~A.I & I.I)
     }
 
@@ -10107,49 +10108,49 @@ var qi = {},
       return new F(A.N & g.N ^ A.N & I.N ^ g.N & I.N, A.I & g.I ^ A.I & I.I ^ g.I & I.I)
     }
 
-    function sn(A) {
-      var g = Fe(A, 28),
-        I = Fe(A, 34),
-        E = Fe(A, 39);
+    function ln(A) {
+      var g = Ke(A, 28),
+        I = Ke(A, 34),
+        E = Ke(A, 39);
       return new F(g.N ^ I.N ^ E.N, g.I ^ I.I ^ E.I)
     }
 
-    function ot(A, g) {
+    function st(A, g) {
       var I, E;
       I = (65535 & A.I) + (65535 & g.I);
       var j = (65535 & (E = (A.I >>> 16) + (g.I >>> 16) + (I >>> 16))) << 16 | 65535 & I;
       return I = (65535 & A.N) + (65535 & g.N) + (E >>> 16), E = (A.N >>> 16) + (g.N >>> 16) + (I >>> 16), new F((65535 & E) << 16 | 65535 & I, j)
     }
 
-    function ln(A, g, I, E) {
+    function cn(A, g, I, E) {
       var j, b;
       j = (65535 & A.I) + (65535 & g.I) + (65535 & I.I) + (65535 & E.I);
       var Q = (65535 & (b = (A.I >>> 16) + (g.I >>> 16) + (I.I >>> 16) + (E.I >>> 16) + (j >>> 16))) << 16 | 65535 & j;
       return j = (65535 & A.N) + (65535 & g.N) + (65535 & I.N) + (65535 & E.N) + (b >>> 16), b = (A.N >>> 16) + (g.N >>> 16) + (I.N >>> 16) + (E.N >>> 16) + (j >>> 16), new F((65535 & b) << 16 | 65535 & j, Q)
     }
 
-    function st(A, g, I, E, j) {
+    function lt(A, g, I, E, j) {
       var b, Q;
       b = (65535 & A.I) + (65535 & g.I) + (65535 & I.I) + (65535 & E.I) + (65535 & j.I);
       var te = (65535 & (Q = (A.I >>> 16) + (g.I >>> 16) + (I.I >>> 16) + (E.I >>> 16) + (j.I >>> 16) + (b >>> 16))) << 16 | 65535 & b;
       return b = (65535 & A.N) + (65535 & g.N) + (65535 & I.N) + (65535 & E.N) + (65535 & j.N) + (Q >>> 16), Q = (A.N >>> 16) + (g.N >>> 16) + (I.N >>> 16) + (E.N >>> 16) + (j.N >>> 16) + (b >>> 16), new F((65535 & Q) << 16 | 65535 & b, te)
     }
 
-    function nt(A, g) {
+    function rt(A, g) {
       return new F(A.N ^ g.N, A.I ^ g.I)
     }
 
     function w(A) {
-      var g = Fe(A, 1),
-        I = Fe(A, 8),
-        E = gt(A, 7);
+      var g = Ke(A, 1),
+        I = Ke(A, 8),
+        E = mt(A, 7);
       return new F(g.N ^ I.N ^ E.N, g.I ^ I.I ^ E.I)
     }
 
     function C(A) {
-      var g = Fe(A, 14),
-        I = Fe(A, 18),
-        E = Fe(A, 41);
+      var g = Ke(A, 14),
+        I = Ke(A, 18),
+        E = Ke(A, 41);
       return new F(g.N ^ I.N ^ E.N, g.I ^ I.I ^ E.I)
     }
     var O = [new F(a[0], 3609767458), new F(a[1], 602891725), new F(a[2], 3964484399), new F(a[3], 2173295548), new F(a[4], 4081628472), new F(a[5], 3053834265), new F(a[6], 2937671579), new F(a[7], 3664609560), new F(a[8], 2734883394), new F(a[9], 1164996542), new F(a[10], 1323610764), new F(a[11], 3590304994), new F(a[12], 4068182383), new F(a[13], 991336113), new F(a[14], 633803317), new F(a[15], 3479774868), new F(a[16], 2666613458), new F(a[17], 944711139), new F(a[18], 2341262773), new F(a[19], 2007800933), new F(a[20], 1495990901), new F(a[21], 1856431235), new F(a[22], 3175218132), new F(a[23], 2198950837), new F(a[24], 3999719339), new F(a[25], 766784016), new F(a[26], 2566594879), new F(a[27], 3203337956), new F(a[28], 1034457026), new F(a[29], 2466948901), new F(a[30], 3758326383), new F(a[31], 168717936), new F(a[32], 1188179964), new F(a[33], 1546045734), new F(a[34], 1522805485), new F(a[35], 2643833823), new F(a[36], 2343527390), new F(a[37], 1014477480), new F(a[38], 1206759142), new F(a[39], 344077627), new F(a[40], 1290863460), new F(a[41], 3158454273), new F(a[42], 3505952657), new F(a[43], 106217008), new F(a[44], 3606008344), new F(a[45], 1432725776), new F(a[46], 1467031594), new F(a[47], 851169720), new F(a[48], 3100823752), new F(a[49], 1363258195), new F(a[50], 3750685593), new F(a[51], 3785050280), new F(a[52], 3318307427), new F(a[53], 3812723403), new F(a[54], 2003034995), new F(a[55], 3602036899), new F(a[56], 1575990012), new F(a[57], 1125592928), new F(a[58], 2716904306), new F(a[59], 442776044), new F(a[60], 593698344), new F(a[61], 3733110249), new F(a[62], 2999351573), new F(a[63], 3815920427), new F(3391569614, 3928383900), new F(3515267271, 566280711), new F(3940187606, 3454069534), new F(4118630271, 4000239992), new F(116418474, 1914138554), new F(174292421, 2731055270), new F(289380356, 3203993006), new F(460393269, 320620315), new F(685471733, 587496836), new F(852142971, 1086792851), new F(1017036298, 365543100), new F(1126000580, 2618297676), new F(1288033470, 3409855158), new F(1501505948, 4234509866), new F(1607167915, 987167468), new F(1816402316, 1246189591)];
@@ -10159,9 +10160,9 @@ var qi = {},
     }
 
     function N(A, g) {
-      var I, E, j, b, Q, te, re, se, ye, ae, le, Pe, ue, Me, Te, Oe, Ne = [];
-      for (I = g[0], E = g[1], j = g[2], b = g[3], Q = g[4], te = g[5], re = g[6], se = g[7], le = 0; le < 80; le += 1) le < 16 ? (Pe = 2 * le, Ne[le] = new F(A[Pe], A[Pe + 1])) : Ne[le] = ln((ue = Ne[le - 2], Me = void 0, Te = void 0, Oe = void 0, Me = Fe(ue, 19), Te = Fe(ue, 61), Oe = gt(ue, 6), new F(Me.N ^ Te.N ^ Oe.N, Me.I ^ Te.I ^ Oe.I)), Ne[le - 7], w(Ne[le - 15]), Ne[le - 16]), ye = st(se, C(Q), on(Q, te, re), O[le], Ne[le]), ae = ot(sn(I), he(I, E, j)), se = re, re = te, te = Q, Q = ot(b, ye), b = j, j = E, E = I, I = ot(ye, ae);
-      return g[0] = ot(I, g[0]), g[1] = ot(E, g[1]), g[2] = ot(j, g[2]), g[3] = ot(b, g[3]), g[4] = ot(Q, g[4]), g[5] = ot(te, g[5]), g[6] = ot(re, g[6]), g[7] = ot(se, g[7]), g
+      var I, E, j, b, Q, te, re, se, _e, ae, le, Me, ue, Te, Ee, xe, De = [];
+      for (I = g[0], E = g[1], j = g[2], b = g[3], Q = g[4], te = g[5], re = g[6], se = g[7], le = 0; le < 80; le += 1) le < 16 ? (Me = 2 * le, De[le] = new F(A[Me], A[Me + 1])) : De[le] = cn((ue = De[le - 2], Te = void 0, Ee = void 0, xe = void 0, Te = Ke(ue, 19), Ee = Ke(ue, 61), xe = mt(ue, 6), new F(Te.N ^ Ee.N ^ xe.N, Te.I ^ Ee.I ^ xe.I)), De[le - 7], w(De[le - 15]), De[le - 16]), _e = lt(se, C(Q), sn(Q, te, re), O[le], De[le]), ae = st(ln(I), he(I, E, j)), se = re, re = te, te = Q, Q = st(b, _e), b = j, j = E, E = I, I = st(_e, ae);
+      return g[0] = st(I, g[0]), g[1] = st(E, g[1]), g[2] = st(j, g[2]), g[3] = st(b, g[3]), g[4] = st(Q, g[4]), g[5] = st(te, g[5]), g[6] = st(re, g[6]), g[7] = st(se, g[7]), g
     }
     var H = function(A) {
         function g(I, E, j) {
@@ -10170,12 +10171,12 @@ var qi = {},
           var Q = j || {};
           return (b = A.call(this, I, E, j) || this).F = b.Y, b.g = !0, b.C = -1, b.p = i(b.t, b.i, b.C), b.R = N, b.B = function(te) {
             return te.slice()
-          }, b.L = W, b.K = function(te, re, se, ye) {
-            return function(ae, le, Pe, ue, Me) {
-              for (var Te, Oe = 31 + (le + 129 >>> 10 << 5), Ne = le + Pe; ae.length <= Oe;) ae.push(0);
-              for (ae[le >>> 5] |= 128 << 24 - le % 32, ae[Oe] = 4294967295 & Ne, ae[Oe - 1] = Ne / 4294967296 | 0, Te = 0; Te < ae.length; Te += 32) ue = N(ae.slice(Te, Te + 32), ue);
-              return Me === "SHA-384" ? [(ue = ue)[0].N, ue[0].I, ue[1].N, ue[1].I, ue[2].N, ue[2].I, ue[3].N, ue[3].I, ue[4].N, ue[4].I, ue[5].N, ue[5].I] : [ue[0].N, ue[0].I, ue[1].N, ue[1].I, ue[2].N, ue[2].I, ue[3].N, ue[3].I, ue[4].N, ue[4].I, ue[5].N, ue[5].I, ue[6].N, ue[6].I, ue[7].N, ue[7].I]
-            }(te, re, se, ye, I)
+          }, b.L = W, b.K = function(te, re, se, _e) {
+            return function(ae, le, Me, ue, Te) {
+              for (var Ee, xe = 31 + (le + 129 >>> 10 << 5), De = le + Me; ae.length <= xe;) ae.push(0);
+              for (ae[le >>> 5] |= 128 << 24 - le % 32, ae[xe] = 4294967295 & De, ae[xe - 1] = De / 4294967296 | 0, Ee = 0; Ee < ae.length; Ee += 32) ue = N(ae.slice(Ee, Ee + 32), ue);
+              return Te === "SHA-384" ? [(ue = ue)[0].N, ue[0].I, ue[1].N, ue[1].I, ue[2].N, ue[2].I, ue[3].N, ue[3].I, ue[4].N, ue[4].I, ue[5].N, ue[5].I] : [ue[0].N, ue[0].I, ue[1].N, ue[1].I, ue[2].N, ue[2].I, ue[3].N, ue[3].I, ue[4].N, ue[4].I, ue[5].N, ue[5].I, ue[6].N, ue[6].I, ue[7].N, ue[7].I]
+            }(te, re, se, _e, I)
           }, b.m = W(I), b.S = 1024, b.U = I === "SHA-384" ? 384 : 512, b.T = !1, Q.hmacKey && b.k(B("hmacKey", Q.hmacKey, b.C)), b
         }
         return m(g, A), g
@@ -10202,20 +10203,20 @@ var qi = {},
     }
 
     function G(A, g) {
-      var I, E, j, b, Q, te, re, se, ye, ae = [],
+      var I, E, j, b, Q, te, re, se, _e, ae = [],
         le = [];
       if (A !== null)
-        for (E = 0; E < A.length; E += 2) g[(E >>> 1) % 5][(E >>> 1) / 5 | 0] = nt(g[(E >>> 1) % 5][(E >>> 1) / 5 | 0], new F(A[E + 1], A[E]));
+        for (E = 0; E < A.length; E += 2) g[(E >>> 1) % 5][(E >>> 1) / 5 | 0] = rt(g[(E >>> 1) % 5][(E >>> 1) / 5 | 0], new F(A[E + 1], A[E]));
       for (I = 0; I < 24; I += 1) {
-        for (b = K(), E = 0; E < 5; E += 1) ae[E] = (Q = g[E][0], te = g[E][1], re = g[E][2], se = g[E][3], ye = g[E][4], new F(Q.N ^ te.N ^ re.N ^ se.N ^ ye.N, Q.I ^ te.I ^ re.I ^ se.I ^ ye.I));
-        for (E = 0; E < 5; E += 1) le[E] = nt(ae[(E + 4) % 5], Ve(ae[(E + 1) % 5], 1));
+        for (b = K(), E = 0; E < 5; E += 1) ae[E] = (Q = g[E][0], te = g[E][1], re = g[E][2], se = g[E][3], _e = g[E][4], new F(Q.N ^ te.N ^ re.N ^ se.N ^ _e.N, Q.I ^ te.I ^ re.I ^ se.I ^ _e.I));
+        for (E = 0; E < 5; E += 1) le[E] = rt(ae[(E + 4) % 5], Ge(ae[(E + 1) % 5], 1));
         for (E = 0; E < 5; E += 1)
-          for (j = 0; j < 5; j += 1) g[E][j] = nt(g[E][j], le[E]);
+          for (j = 0; j < 5; j += 1) g[E][j] = rt(g[E][j], le[E]);
         for (E = 0; E < 5; E += 1)
-          for (j = 0; j < 5; j += 1) b[j][(2 * E + 3 * j) % 5] = Ve(g[E][j], L[E][j]);
+          for (j = 0; j < 5; j += 1) b[j][(2 * E + 3 * j) % 5] = Ge(g[E][j], L[E][j]);
         for (E = 0; E < 5; E += 1)
-          for (j = 0; j < 5; j += 1) g[E][j] = nt(b[E][j], new F(~b[(E + 1) % 5][j].N & b[(E + 2) % 5][j].N, ~b[(E + 1) % 5][j].I & b[(E + 2) % 5][j].I));
-        g[0][0] = nt(g[0][0], X[I])
+          for (j = 0; j < 5; j += 1) g[E][j] = rt(b[E][j], new F(~b[(E + 1) % 5][j].N & b[(E + 2) % 5][j].N, ~b[(E + 1) % 5][j].I & b[(E + 2) % 5][j].I));
+        g[0][0] = rt(g[0][0], X[I])
       }
       return g
     }
@@ -10231,18 +10232,18 @@ var qi = {},
       }
     }
 
-    function Ae(A) {
+    function Ie(A) {
       return u(ee(A.binLen), A)
     }
 
-    function be(A, g) {
+    function ye(A, g) {
       var I, E = ee(g),
         j = g >>> 2,
         b = (j - (E = u(E, A)).value.length % j) % j;
       for (I = 0; I < b; I++) E.value.push(0);
       return E.value
     }
-    var Be = function(A) {
+    var Pe = function(A) {
       function g(I, E, j) {
         var b = this,
           Q = 6,
@@ -10286,17 +10287,17 @@ var qi = {},
           default:
             throw new Error(f)
         }
-        return b.K = function(se, ye, ae, le, Pe) {
-          return function(ue, Me, Te, Oe, Ne, de, dt) {
-            var _t, U, l = 0,
+        return b.K = function(se, _e, ae, le, Me) {
+          return function(ue, Te, Ee, xe, De, de, ft) {
+            var wt, U, l = 0,
               R = [],
-              D = Ne >>> 5,
-              Z = Me >>> 5;
-            for (_t = 0; _t < Z && Me >= Ne; _t += D) Oe = G(ue.slice(_t, _t + D), Oe), Me -= Ne;
-            for (ue = ue.slice(_t), Me %= Ne; ue.length < D;) ue.push(0);
-            for (ue[(_t = Me >>> 3) >> 2] ^= de << _t % 4 * 8, ue[D - 1] ^= 2147483648, Oe = G(ue, Oe); 32 * R.length < dt && (U = Oe[l % 5][l / 5 | 0], R.push(U.I), !(32 * R.length >= dt));) R.push(U.N), 64 * (l += 1) % Ne == 0 && (G(null, Oe), l = 0);
+              D = De >>> 5,
+              Z = Te >>> 5;
+            for (wt = 0; wt < Z && Te >= De; wt += D) xe = G(ue.slice(wt, wt + D), xe), Te -= De;
+            for (ue = ue.slice(wt), Te %= De; ue.length < D;) ue.push(0);
+            for (ue[(wt = Te >>> 3) >> 2] ^= de << wt % 4 * 8, ue[D - 1] ^= 2147483648, xe = G(ue, xe); 32 * R.length < ft && (U = xe[l % 5][l / 5 | 0], R.push(U.I), !(32 * R.length >= ft));) R.push(U.N), 64 * (l += 1) % De == 0 && (G(null, xe), l = 0);
             return R
-          }(se, ye, 0, le, te, Q, Pe)
+          }(se, _e, 0, le, te, Q, Me)
         }, re.hmacKey && b.k(B("hmacKey", re.hmacKey, b.C)), b
       }
       return m(g, A), g.prototype.O = function(I, E) {
@@ -10314,9 +10315,9 @@ var qi = {},
           }
         }(I || {});
         E && (j.funcName = E);
-        var b = u(Ae(j.funcName), Ae(j.customization));
+        var b = u(Ie(j.funcName), Ie(j.customization));
         if (j.customization.binLen !== 0 || j.funcName.binLen !== 0) {
-          for (var Q = be(b, this.S >>> 3), te = 0; te < Q.length; te += this.S >>> 5) this.m = this.R(Q.slice(te, te + (this.S >>> 5)), this.m), this.v += this.S;
+          for (var Q = ye(b, this.S >>> 3), te = 0; te < Q.length; te += this.S >>> 5) this.m = this.R(Q.slice(te, te + (this.S >>> 5)), this.m), this.v += this.S;
           return 4
         }
         return 31
@@ -10336,7 +10337,7 @@ var qi = {},
           }
         }(I || {});
         this.O(I, E.funcName);
-        for (var j = be(Ae(E.kmacKey), this.S >>> 3), b = 0; b < j.length; b += this.S >>> 5) this.m = this.R(j.slice(b, b + (this.S >>> 5)), this.m), this.v += this.S;
+        for (var j = ye(Ie(E.kmacKey), this.S >>> 3), b = 0; b < j.length; b += this.S >>> 5) this.m = this.R(j.slice(b, b + (this.S >>> 5)), this.m), this.v += this.S;
         this.A = !0
       }, g.prototype.X = function(I) {
         var E = u({
@@ -10358,11 +10359,11 @@ var qi = {},
     return function() {
       function A(g, I, E) {
         if (g == "SHA-1") this.j = new ie(g, I, E);
-        else if (g == "SHA-224" || g == "SHA-256") this.j = new Ee(g, I, E);
+        else if (g == "SHA-224" || g == "SHA-256") this.j = new Oe(g, I, E);
         else if (g == "SHA-384" || g == "SHA-512") this.j = new H(g, I, E);
         else {
           if (g != "SHA3-224" && g != "SHA3-256" && g != "SHA3-384" && g != "SHA3-512" && g != "SHAKE128" && g != "SHAKE256" && g != "CSHAKE128" && g != "CSHAKE256" && g != "KMAC128" && g != "KMAC256") throw new Error(f);
-          this.j = new Be(g, I, E)
+          this.j = new Pe(g, I, E)
         }
       }
       return A.prototype.update = function(g) {
@@ -10376,48 +10377,48 @@ var qi = {},
       }, A
     }()
   })
-})(Hs);
-var ja = Hs.exports,
-  dr = {},
-  nr = {};
-Object.defineProperty(nr, "__esModule", {
+})(Vs);
+var La = Vs.exports,
+  fr = {},
+  rr = {};
+Object.defineProperty(rr, "__esModule", {
   value: !0
 });
-nr.getSecureRandomWords = nr.getSecureRandomBytes = void 0;
-
-function Yd(e) {
-  return Buffer.from(window.crypto.getRandomValues(new Uint8Array(e)))
-}
-nr.getSecureRandomBytes = Yd;
+rr.getSecureRandomWords = rr.getSecureRandomBytes = void 0;
 
 function Xd(e) {
+  return be.Buffer.from(window.crypto.getRandomValues(new Uint8Array(e)))
+}
+rr.getSecureRandomBytes = Xd;
+
+function Jd(e) {
   return window.crypto.getRandomValues(new Uint16Array(e))
 }
-nr.getSecureRandomWords = Xd;
-var Ti = {};
-Object.defineProperty(Ti, "__esModule", {
+rr.getSecureRandomWords = Jd;
+var Ei = {};
+Object.defineProperty(Ei, "__esModule", {
   value: !0
 });
-Ti.hmac_sha512 = void 0;
-async function Jd(e, t) {
-  let n = typeof e == "string" ? Buffer.from(e, "utf-8") : e,
-    r = typeof t == "string" ? Buffer.from(t, "utf-8") : t;
+Ei.hmac_sha512 = void 0;
+async function Qd(e, t) {
+  let n = typeof e == "string" ? be.Buffer.from(e, "utf-8") : e,
+    r = typeof t == "string" ? be.Buffer.from(t, "utf-8") : t;
   const i = {
       name: "HMAC",
       hash: "SHA-512"
     },
     o = await window.crypto.subtle.importKey("raw", n, i, !1, ["sign"]);
-  return Buffer.from(await crypto.subtle.sign(i, o, r))
+  return be.Buffer.from(await crypto.subtle.sign(i, o, r))
 }
-Ti.hmac_sha512 = Jd;
-var Ei = {};
-Object.defineProperty(Ei, "__esModule", {
+Ei.hmac_sha512 = Qd;
+var Oi = {};
+Object.defineProperty(Oi, "__esModule", {
   value: !0
 });
-Ei.pbkdf2_sha512 = void 0;
-async function Qd(e, t, n, r) {
-  const i = typeof e == "string" ? Buffer.from(e, "utf-8") : e,
-    o = typeof t == "string" ? Buffer.from(t, "utf-8") : t,
+Oi.pbkdf2_sha512 = void 0;
+async function qd(e, t, n, r) {
+  const i = typeof e == "string" ? be.Buffer.from(e, "utf-8") : e,
+    o = typeof t == "string" ? be.Buffer.from(t, "utf-8") : t,
     a = await window.crypto.subtle.importKey("raw", i, {
       name: "PBKDF2"
     }, !1, ["deriveBits"]),
@@ -10427,32 +10428,32 @@ async function Qd(e, t, n, r) {
       salt: o,
       iterations: n
     }, a, r * 8);
-  return Buffer.from(s)
+  return be.Buffer.from(s)
 }
-Ei.pbkdf2_sha512 = Qd;
-var Oi = {};
-Object.defineProperty(Oi, "__esModule", {
-  value: !0
-});
-Oi.sha256 = void 0;
-async function qd(e) {
-  return typeof e == "string" ? Buffer.from(await crypto.subtle.digest("SHA-256", Buffer.from(e, "utf-8"))) : Buffer.from(await crypto.subtle.digest("SHA-256", e))
-}
-Oi.sha256 = qd;
+Oi.pbkdf2_sha512 = qd;
 var xi = {};
 Object.defineProperty(xi, "__esModule", {
   value: !0
 });
-xi.sha512 = void 0;
+xi.sha256 = void 0;
 async function Zd(e) {
-  return typeof e == "string" ? Buffer.from(await crypto.subtle.digest("SHA-512", Buffer.from(e, "utf-8"))) : Buffer.from(await crypto.subtle.digest("SHA-512", e))
+  return typeof e == "string" ? be.Buffer.from(await crypto.subtle.digest("SHA-256", be.Buffer.from(e, "utf-8"))) : be.Buffer.from(await crypto.subtle.digest("SHA-256", e))
 }
-xi.sha512 = Zd;
+xi.sha256 = Zd;
+var Ui = {};
+Object.defineProperty(Ui, "__esModule", {
+  value: !0
+});
+Ui.sha512 = void 0;
+async function ef(e) {
+  return typeof e == "string" ? be.Buffer.from(await crypto.subtle.digest("SHA-512", be.Buffer.from(e, "utf-8"))) : be.Buffer.from(await crypto.subtle.digest("SHA-512", e))
+}
+Ui.sha512 = ef;
 (function(e) {
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.sha512 = e.sha256 = e.pbkdf2_sha512 = e.hmac_sha512 = e.getSecureRandomWords = e.getSecureRandomBytes = void 0;
-  var t = nr;
+  var t = rr;
   Object.defineProperty(e, "getSecureRandomBytes", {
     enumerable: !0,
     get: function() {
@@ -10464,122 +10465,122 @@ xi.sha512 = Zd;
       return t.getSecureRandomWords
     }
   });
-  var n = Ti;
+  var n = Ei;
   Object.defineProperty(e, "hmac_sha512", {
     enumerable: !0,
     get: function() {
       return n.hmac_sha512
     }
   });
-  var r = Ei;
+  var r = Oi;
   Object.defineProperty(e, "pbkdf2_sha512", {
     enumerable: !0,
     get: function() {
       return r.pbkdf2_sha512
     }
   });
-  var i = Oi;
+  var i = xi;
   Object.defineProperty(e, "sha256", {
     enumerable: !0,
     get: function() {
       return i.sha256
     }
   });
-  var o = xi;
+  var o = Ui;
   Object.defineProperty(e, "sha512", {
     enumerable: !0,
     get: function() {
       return o.sha512
     }
   })
-})(dr);
-var ef = pe && pe.__importDefault || function(e) {
+})(fr);
+var tf = pe && pe.__importDefault || function(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 };
-Object.defineProperty(Gt, "__esModule", {
-  value: !0
-});
-Gt.sha256 = Gt.sha256_fallback = Gt.sha256_sync = void 0;
-const tf = ef(ja),
-  nf = dr;
-
-function Vs(e) {
-  let t;
-  typeof e == "string" ? t = Buffer.from(e, "utf-8").toString("hex") : t = e.toString("hex");
-  let n = new tf.default("SHA-256", "HEX");
-  n.update(t);
-  let r = n.getHash("HEX");
-  return Buffer.from(r, "hex")
-}
-Gt.sha256_sync = Vs;
-async function rf(e) {
-  return Vs(e)
-}
-Gt.sha256_fallback = rf;
-
-function af(e) {
-  return (0, nf.sha256)(e)
-}
-Gt.sha256 = af;
-var Wt = {},
-  of = pe && pe.__importDefault || function(e) {
-    return e && e.__esModule ? e : {
-      default: e
-    }
-  };
 Object.defineProperty(Wt, "__esModule", {
   value: !0
 });
-Wt.sha512 = Wt.sha512_fallback = Wt.sha512_sync = void 0;
-const sf = of(ja),
-  lf = dr;
+Wt.sha256 = Wt.sha256_fallback = Wt.sha256_sync = void 0;
+const nf = tf(La),
+  rf = fr;
 
 function Gs(e) {
   let t;
-  typeof e == "string" ? t = Buffer.from(e, "utf-8").toString("hex") : t = e.toString("hex");
-  let n = new sf.default("SHA-512", "HEX");
+  typeof e == "string" ? t = be.Buffer.from(e, "utf-8").toString("hex") : t = e.toString("hex");
+  let n = new nf.default("SHA-256", "HEX");
   n.update(t);
   let r = n.getHash("HEX");
-  return Buffer.from(r, "hex")
+  return be.Buffer.from(r, "hex")
 }
-Wt.sha512_sync = Gs;
-async function cf(e) {
+Wt.sha256_sync = Gs;
+async function af(e) {
   return Gs(e)
 }
-Wt.sha512_fallback = cf;
-async function uf(e) {
-  return (0, lf.sha512)(e)
-}
-Wt.sha512 = uf;
-var Dr = {};
-Object.defineProperty(Dr, "__esModule", {
-  value: !0
-});
-Dr.pbkdf2_sha512 = void 0;
-const df = dr;
+Wt.sha256_fallback = af;
 
-function ff(e, t, n, r) {
-  return (0, df.pbkdf2_sha512)(e, t, n, r)
+function of(e) {
+  return (0, rf.sha256)(e)
 }
-Dr.pbkdf2_sha512 = ff;
-var Tt = {},
-  hf = pe && pe.__importDefault || function(e) {
+Wt.sha256 = of;
+var Yt = {},
+  sf = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(Tt, "__esModule", {
+Object.defineProperty(Yt, "__esModule", {
   value: !0
 });
-Tt.hmac_sha512 = Tt.hmac_sha512_fallback = void 0;
-const pf = hf(ja),
-  gf = dr;
-async function mf(e, t) {
-  let n = typeof e == "string" ? Buffer.from(e, "utf-8") : e,
-    r = typeof t == "string" ? Buffer.from(t, "utf-8") : t;
-  const i = new pf.default("SHA-512", "HEX", {
+Yt.sha512 = Yt.sha512_fallback = Yt.sha512_sync = void 0;
+const lf = sf(La),
+  cf = fr;
+
+function Ws(e) {
+  let t;
+  typeof e == "string" ? t = be.Buffer.from(e, "utf-8").toString("hex") : t = e.toString("hex");
+  let n = new lf.default("SHA-512", "HEX");
+  n.update(t);
+  let r = n.getHash("HEX");
+  return be.Buffer.from(r, "hex")
+}
+Yt.sha512_sync = Ws;
+async function uf(e) {
+  return Ws(e)
+}
+Yt.sha512_fallback = uf;
+async function df(e) {
+  return (0, cf.sha512)(e)
+}
+Yt.sha512 = df;
+var Fr = {};
+Object.defineProperty(Fr, "__esModule", {
+  value: !0
+});
+Fr.pbkdf2_sha512 = void 0;
+const ff = fr;
+
+function hf(e, t, n, r) {
+  return (0, ff.pbkdf2_sha512)(e, t, n, r)
+}
+Fr.pbkdf2_sha512 = hf;
+var Et = {},
+  pf = pe && pe.__importDefault || function(e) {
+    return e && e.__esModule ? e : {
+      default: e
+    }
+  };
+Object.defineProperty(Et, "__esModule", {
+  value: !0
+});
+Et.hmac_sha512 = Et.hmac_sha512_fallback = void 0;
+const gf = pf(La),
+  mf = fr;
+async function bf(e, t) {
+  let n = typeof e == "string" ? be.Buffer.from(e, "utf-8") : e,
+    r = typeof t == "string" ? be.Buffer.from(t, "utf-8") : t;
+  const i = new gf.default("SHA-512", "HEX", {
     hmacKey: {
       value: n.toString("hex"),
       format: "HEX"
@@ -10587,196 +10588,196 @@ async function mf(e, t) {
   });
   i.update(r.toString("hex"));
   const o = i.getHash("HEX");
-  return Buffer.from(o, "hex")
+  return be.Buffer.from(o, "hex")
 }
-Tt.hmac_sha512_fallback = mf;
+Et.hmac_sha512_fallback = bf;
 
-function bf(e, t) {
-  return (0, gf.hmac_sha512)(e, t)
+function yf(e, t) {
+  return (0, mf.hmac_sha512)(e, t)
 }
-Tt.hmac_sha512 = bf;
-var Mt = {};
-Object.defineProperty(Mt, "__esModule", {
+Et.hmac_sha512 = yf;
+var Tt = {};
+Object.defineProperty(Tt, "__esModule", {
   value: !0
 });
-Mt.getSecureRandomNumber = Mt.getSecureRandomWords = Mt.getSecureRandomBytes = void 0;
-const yf = dr;
-async function Ws(e) {
-  return (0, yf.getSecureRandomBytes)(e)
-}
-Mt.getSecureRandomBytes = Ws;
+Tt.getSecureRandomNumber = Tt.getSecureRandomWords = Tt.getSecureRandomBytes = void 0;
+const _f = fr;
 async function Ys(e) {
-  return Ys()
+  return (0, _f.getSecureRandomBytes)(e)
 }
-Mt.getSecureRandomWords = Ys;
-async function _f(e, t) {
+Tt.getSecureRandomBytes = Ys;
+async function Xs(e) {
+  return Xs()
+}
+Tt.getSecureRandomWords = Xs;
+async function wf(e, t) {
   let n = t - e;
   var r = Math.ceil(Math.log2(n));
   if (r > 53) throw new Error("Range is too large");
   for (var i = Math.ceil(r / 8), o = Math.pow(2, r) - 1;;) {
-    let s = await Ws(r),
+    let s = await Ys(r),
       c = (i - 1) * 8,
       f = 0;
     for (var a = 0; a < i; a++) f += s[a] * Math.pow(2, c), c -= 8;
     if (f = f & o, !(f >= n)) return e + f
   }
 }
-Mt.getSecureRandomNumber = _f;
-var Ui = {},
-  Ri = {};
+Tt.getSecureRandomNumber = wf;
+var Ri = {},
+  ji = {};
+Object.defineProperty(ji, "__esModule", {
+  value: !0
+});
+ji.wordlist = void 0;
+ji.wordlist = ["abacus", "abdomen", "abdominal", "abide", "abiding", "ability", "ablaze", "able", "abnormal", "abrasion", "abrasive", "abreast", "abridge", "abroad", "abruptly", "absence", "absentee", "absently", "absinthe", "absolute", "absolve", "abstain", "abstract", "absurd", "accent", "acclaim", "acclimate", "accompany", "account", "accuracy", "accurate", "accustom", "acetone", "achiness", "aching", "acid", "acorn", "acquaint", "acquire", "acre", "acrobat", "acronym", "acting", "action", "activate", "activator", "active", "activism", "activist", "activity", "actress", "acts", "acutely", "acuteness", "aeration", "aerobics", "aerosol", "aerospace", "afar", "affair", "affected", "affecting", "affection", "affidavit", "affiliate", "affirm", "affix", "afflicted", "affluent", "afford", "affront", "aflame", "afloat", "aflutter", "afoot", "afraid", "afterglow", "afterlife", "aftermath", "aftermost", "afternoon", "aged", "ageless", "agency", "agenda", "agent", "aggregate", "aghast", "agile", "agility", "aging", "agnostic", "agonize", "agonizing", "agony", "agreeable", "agreeably", "agreed", "agreeing", "agreement", "aground", "ahead", "ahoy", "aide", "aids", "aim", "ajar", "alabaster", "alarm", "albatross", "album", "alfalfa", "algebra", "algorithm", "alias", "alibi", "alienable", "alienate", "aliens", "alike", "alive", "alkaline", "alkalize", "almanac", "almighty", "almost", "aloe", "aloft", "aloha", "alone", "alongside", "aloof", "alphabet", "alright", "although", "altitude", "alto", "aluminum", "alumni", "always", "amaretto", "amaze", "amazingly", "amber", "ambiance", "ambiguity", "ambiguous", "ambition", "ambitious", "ambulance", "ambush", "amendable", "amendment", "amends", "amenity", "amiable", "amicably", "amid", "amigo", "amino", "amiss", "ammonia", "ammonium", "amnesty", "amniotic", "among", "amount", "amperage", "ample", "amplifier", "amplify", "amply", "amuck", "amulet", "amusable", "amused", "amusement", "amuser", "amusing", "anaconda", "anaerobic", "anagram", "anatomist", "anatomy", "anchor", "anchovy", "ancient", "android", "anemia", "anemic", "aneurism", "anew", "angelfish", "angelic", "anger", "angled", "angler", "angles", "angling", "angrily", "angriness", "anguished", "angular", "animal", "animate", "animating", "animation", "animator", "anime", "animosity", "ankle", "annex", "annotate", "announcer", "annoying", "annually", "annuity", "anointer", "another", "answering", "antacid", "antarctic", "anteater", "antelope", "antennae", "anthem", "anthill", "anthology", "antibody", "antics", "antidote", "antihero", "antiquely", "antiques", "antiquity", "antirust", "antitoxic", "antitrust", "antiviral", "antivirus", "antler", "antonym", "antsy", "anvil", "anybody", "anyhow", "anymore", "anyone", "anyplace", "anything", "anytime", "anyway", "anywhere", "aorta", "apache", "apostle", "appealing", "appear", "appease", "appeasing", "appendage", "appendix", "appetite", "appetizer", "applaud", "applause", "apple", "appliance", "applicant", "applied", "apply", "appointee", "appraisal", "appraiser", "apprehend", "approach", "approval", "approve", "apricot", "april", "apron", "aptitude", "aptly", "aqua", "aqueduct", "arbitrary", "arbitrate", "ardently", "area", "arena", "arguable", "arguably", "argue", "arise", "armadillo", "armband", "armchair", "armed", "armful", "armhole", "arming", "armless", "armoire", "armored", "armory", "armrest", "army", "aroma", "arose", "around", "arousal", "arrange", "array", "arrest", "arrival", "arrive", "arrogance", "arrogant", "arson", "art", "ascend", "ascension", "ascent", "ascertain", "ashamed", "ashen", "ashes", "ashy", "aside", "askew", "asleep", "asparagus", "aspect", "aspirate", "aspire", "aspirin", "astonish", "astound", "astride", "astrology", "astronaut", "astronomy", "astute", "atlantic", "atlas", "atom", "atonable", "atop", "atrium", "atrocious", "atrophy", "attach", "attain", "attempt", "attendant", "attendee", "attention", "attentive", "attest", "attic", "attire", "attitude", "attractor", "attribute", "atypical", "auction", "audacious", "audacity", "audible", "audibly", "audience", "audio", "audition", "augmented", "august", "authentic", "author", "autism", "autistic", "autograph", "automaker", "automated", "automatic", "autopilot", "available", "avalanche", "avatar", "avenge", "avenging", "avenue", "average", "aversion", "avert", "aviation", "aviator", "avid", "avoid", "await", "awaken", "award", "aware", "awhile", "awkward", "awning", "awoke", "awry", "axis", "babble", "babbling", "babied", "baboon", "backache", "backboard", "backboned", "backdrop", "backed", "backer", "backfield", "backfire", "backhand", "backing", "backlands", "backlash", "backless", "backlight", "backlit", "backlog", "backpack", "backpedal", "backrest", "backroom", "backshift", "backside", "backslid", "backspace", "backspin", "backstab", "backstage", "backtalk", "backtrack", "backup", "backward", "backwash", "backwater", "backyard", "bacon", "bacteria", "bacterium", "badass", "badge", "badland", "badly", "badness", "baffle", "baffling", "bagel", "bagful", "baggage", "bagged", "baggie", "bagginess", "bagging", "baggy", "bagpipe", "baguette", "baked", "bakery", "bakeshop", "baking", "balance", "balancing", "balcony", "balmy", "balsamic", "bamboo", "banana", "banish", "banister", "banjo", "bankable", "bankbook", "banked", "banker", "banking", "banknote", "bankroll", "banner", "bannister", "banshee", "banter", "barbecue", "barbed", "barbell", "barber", "barcode", "barge", "bargraph", "barista", "baritone", "barley", "barmaid", "barman", "barn", "barometer", "barrack", "barracuda", "barrel", "barrette", "barricade", "barrier", "barstool", "bartender", "barterer", "bash", "basically", "basics", "basil", "basin", "basis", "basket", "batboy", "batch", "bath", "baton", "bats", "battalion", "battered", "battering", "battery", "batting", "battle", "bauble", "bazooka", "blabber", "bladder", "blade", "blah", "blame", "blaming", "blanching", "blandness", "blank", "blaspheme", "blasphemy", "blast", "blatancy", "blatantly", "blazer", "blazing", "bleach", "bleak", "bleep", "blemish", "blend", "bless", "blighted", "blimp", "bling", "blinked", "blinker", "blinking", "blinks", "blip", "blissful", "blitz", "blizzard", "bloated", "bloating", "blob", "blog", "bloomers", "blooming", "blooper", "blot", "blouse", "blubber", "bluff", "bluish", "blunderer", "blunt", "blurb", "blurred", "blurry", "blurt", "blush", "blustery", "boaster", "boastful", "boasting", "boat", "bobbed", "bobbing", "bobble", "bobcat", "bobsled", "bobtail", "bodacious", "body", "bogged", "boggle", "bogus", "boil", "bok", "bolster", "bolt", "bonanza", "bonded", "bonding", "bondless", "boned", "bonehead", "boneless", "bonelike", "boney", "bonfire", "bonnet", "bonsai", "bonus", "bony", "boogeyman", "boogieman", "book", "boondocks", "booted", "booth", "bootie", "booting", "bootlace", "bootleg", "boots", "boozy", "borax", "boring", "borough", "borrower", "borrowing", "boss", "botanical", "botanist", "botany", "botch", "both", "bottle", "bottling", "bottom", "bounce", "bouncing", "bouncy", "bounding", "boundless", "bountiful", "bovine", "boxcar", "boxer", "boxing", "boxlike", "boxy", "breach", "breath", "breeches", "breeching", "breeder", "breeding", "breeze", "breezy", "brethren", "brewery", "brewing", "briar", "bribe", "brick", "bride", "bridged", "brigade", "bright", "brilliant", "brim", "bring", "brink", "brisket", "briskly", "briskness", "bristle", "brittle", "broadband", "broadcast", "broaden", "broadly", "broadness", "broadside", "broadways", "broiler", "broiling", "broken", "broker", "bronchial", "bronco", "bronze", "bronzing", "brook", "broom", "brought", "browbeat", "brownnose", "browse", "browsing", "bruising", "brunch", "brunette", "brunt", "brush", "brussels", "brute", "brutishly", "bubble", "bubbling", "bubbly", "buccaneer", "bucked", "bucket", "buckle", "buckshot", "buckskin", "bucktooth", "buckwheat", "buddhism", "buddhist", "budding", "buddy", "budget", "buffalo", "buffed", "buffer", "buffing", "buffoon", "buggy", "bulb", "bulge", "bulginess", "bulgur", "bulk", "bulldog", "bulldozer", "bullfight", "bullfrog", "bullhorn", "bullion", "bullish", "bullpen", "bullring", "bullseye", "bullwhip", "bully", "bunch", "bundle", "bungee", "bunion", "bunkbed", "bunkhouse", "bunkmate", "bunny", "bunt", "busboy", "bush", "busily", "busload", "bust", "busybody", "buzz", "cabana", "cabbage", "cabbie", "cabdriver", "cable", "caboose", "cache", "cackle", "cacti", "cactus", "caddie", "caddy", "cadet", "cadillac", "cadmium", "cage", "cahoots", "cake", "calamari", "calamity", "calcium", "calculate", "calculus", "caliber", "calibrate", "calm", "caloric", "calorie", "calzone", "camcorder", "cameo", "camera", "camisole", "camper", "campfire", "camping", "campsite", "campus", "canal", "canary", "cancel", "candied", "candle", "candy", "cane", "canine", "canister", "cannabis", "canned", "canning", "cannon", "cannot", "canola", "canon", "canopener", "canopy", "canteen", "canyon", "capable", "capably", "capacity", "cape", "capillary", "capital", "capitol", "capped", "capricorn", "capsize", "capsule", "caption", "captivate", "captive", "captivity", "capture", "caramel", "carat", "caravan", "carbon", "cardboard", "carded", "cardiac", "cardigan", "cardinal", "cardstock", "carefully", "caregiver", "careless", "caress", "caretaker", "cargo", "caring", "carless", "carload", "carmaker", "carnage", "carnation", "carnival", "carnivore", "carol", "carpenter", "carpentry", "carpool", "carport", "carried", "carrot", "carrousel", "carry", "cartel", "cartload", "carton", "cartoon", "cartridge", "cartwheel", "carve", "carving", "carwash", "cascade", "case", "cash", "casing", "casino", "casket", "cassette", "casually", "casualty", "catacomb", "catalog", "catalyst", "catalyze", "catapult", "cataract", "catatonic", "catcall", "catchable", "catcher", "catching", "catchy", "caterer", "catering", "catfight", "catfish", "cathedral", "cathouse", "catlike", "catnap", "catnip", "catsup", "cattail", "cattishly", "cattle", "catty", "catwalk", "caucasian", "caucus", "causal", "causation", "cause", "causing", "cauterize", "caution", "cautious", "cavalier", "cavalry", "caviar", "cavity", "cedar", "celery", "celestial", "celibacy", "celibate", "celtic", "cement", "census", "ceramics", "ceremony", "certainly", "certainty", "certified", "certify", "cesarean", "cesspool", "chafe", "chaffing", "chain", "chair", "chalice", "challenge", "chamber", "chamomile", "champion", "chance", "change", "channel", "chant", "chaos", "chaperone", "chaplain", "chapped", "chaps", "chapter", "character", "charbroil", "charcoal", "charger", "charging", "chariot", "charity", "charm", "charred", "charter", "charting", "chase", "chasing", "chaste", "chastise", "chastity", "chatroom", "chatter", "chatting", "chatty", "cheating", "cheddar", "cheek", "cheer", "cheese", "cheesy", "chef", "chemicals", "chemist", "chemo", "cherisher", "cherub", "chess", "chest", "chevron", "chevy", "chewable", "chewer", "chewing", "chewy", "chief", "chihuahua", "childcare", "childhood", "childish", "childless", "childlike", "chili", "chill", "chimp", "chip", "chirping", "chirpy", "chitchat", "chivalry", "chive", "chloride", "chlorine", "choice", "chokehold", "choking", "chomp", "chooser", "choosing", "choosy", "chop", "chosen", "chowder", "chowtime", "chrome", "chubby", "chuck", "chug", "chummy", "chump", "chunk", "churn", "chute", "cider", "cilantro", "cinch", "cinema", "cinnamon", "circle", "circling", "circular", "circulate", "circus", "citable", "citadel", "citation", "citizen", "citric", "citrus", "city", "civic", "civil", "clad", "claim", "clambake", "clammy", "clamor", "clamp", "clamshell", "clang", "clanking", "clapped", "clapper", "clapping", "clarify", "clarinet", "clarity", "clash", "clasp", "class", "clatter", "clause", "clavicle", "claw", "clay", "clean", "clear", "cleat", "cleaver", "cleft", "clench", "clergyman", "clerical", "clerk", "clever", "clicker", "client", "climate", "climatic", "cling", "clinic", "clinking", "clip", "clique", "cloak", "clobber", "clock", "clone", "cloning", "closable", "closure", "clothes", "clothing", "cloud", "clover", "clubbed", "clubbing", "clubhouse", "clump", "clumsily", "clumsy", "clunky", "clustered", "clutch", "clutter", "coach", "coagulant", "coastal", "coaster", "coasting", "coastland", "coastline", "coat", "coauthor", "cobalt", "cobbler", "cobweb", "cocoa", "coconut", "cod", "coeditor", "coerce", "coexist", "coffee", "cofounder", "cognition", "cognitive", "cogwheel", "coherence", "coherent", "cohesive", "coil", "coke", "cola", "cold", "coleslaw", "coliseum", "collage", "collapse", "collar", "collected", "collector", "collide", "collie", "collision", "colonial", "colonist", "colonize", "colony", "colossal", "colt", "coma", "come", "comfort", "comfy", "comic", "coming", "comma", "commence", "commend", "comment", "commerce", "commode", "commodity", "commodore", "common", "commotion", "commute", "commuting", "compacted", "compacter", "compactly", "compactor", "companion", "company", "compare", "compel", "compile", "comply", "component", "composed", "composer", "composite", "compost", "composure", "compound", "compress", "comprised", "computer", "computing", "comrade", "concave", "conceal", "conceded", "concept", "concerned", "concert", "conch", "concierge", "concise", "conclude", "concrete", "concur", "condense", "condiment", "condition", "condone", "conducive", "conductor", "conduit", "cone", "confess", "confetti", "confidant", "confident", "confider", "confiding", "configure", "confined", "confining", "confirm", "conflict", "conform", "confound", "confront", "confused", "confusing", "confusion", "congenial", "congested", "congrats", "congress", "conical", "conjoined", "conjure", "conjuror", "connected", "connector", "consensus", "consent", "console", "consoling", "consonant", "constable", "constant", "constrain", "constrict", "construct", "consult", "consumer", "consuming", "contact", "container", "contempt", "contend", "contented", "contently", "contents", "contest", "context", "contort", "contour", "contrite", "control", "contusion", "convene", "convent", "copartner", "cope", "copied", "copier", "copilot", "coping", "copious", "copper", "copy", "coral", "cork", "cornball", "cornbread", "corncob", "cornea", "corned", "corner", "cornfield", "cornflake", "cornhusk", "cornmeal", "cornstalk", "corny", "coronary", "coroner", "corporal", "corporate", "corral", "correct", "corridor", "corrode", "corroding", "corrosive", "corsage", "corset", "cortex", "cosigner", "cosmetics", "cosmic", "cosmos", "cosponsor", "cost", "cottage", "cotton", "couch", "cough", "could", "countable", "countdown", "counting", "countless", "country", "county", "courier", "covenant", "cover", "coveted", "coveting", "coyness", "cozily", "coziness", "cozy", "crabbing", "crabgrass", "crablike", "crabmeat", "cradle", "cradling", "crafter", "craftily", "craftsman", "craftwork", "crafty", "cramp", "cranberry", "crane", "cranial", "cranium", "crank", "crate", "crave", "craving", "crawfish", "crawlers", "crawling", "crayfish", "crayon", "crazed", "crazily", "craziness", "crazy", "creamed", "creamer", "creamlike", "crease", "creasing", "creatable", "create", "creation", "creative", "creature", "credible", "credibly", "credit", "creed", "creme", "creole", "crepe", "crept", "crescent", "crested", "cresting", "crestless", "crevice", "crewless", "crewman", "crewmate", "crib", "cricket", "cried", "crier", "crimp", "crimson", "cringe", "cringing", "crinkle", "crinkly", "crisped", "crisping", "crisply", "crispness", "crispy", "criteria", "critter", "croak", "crock", "crook", "croon", "crop", "cross", "crouch", "crouton", "crowbar", "crowd", "crown", "crucial", "crudely", "crudeness", "cruelly", "cruelness", "cruelty", "crumb", "crummiest", "crummy", "crumpet", "crumpled", "cruncher", "crunching", "crunchy", "crusader", "crushable", "crushed", "crusher", "crushing", "crust", "crux", "crying", "cryptic", "crystal", "cubbyhole", "cube", "cubical", "cubicle", "cucumber", "cuddle", "cuddly", "cufflink", "culinary", "culminate", "culpable", "culprit", "cultivate", "cultural", "culture", "cupbearer", "cupcake", "cupid", "cupped", "cupping", "curable", "curator", "curdle", "cure", "curfew", "curing", "curled", "curler", "curliness", "curling", "curly", "curry", "curse", "cursive", "cursor", "curtain", "curtly", "curtsy", "curvature", "curve", "curvy", "cushy", "cusp", "cussed", "custard", "custodian", "custody", "customary", "customer", "customize", "customs", "cut", "cycle", "cyclic", "cycling", "cyclist", "cylinder", "cymbal", "cytoplasm", "cytoplast", "dab", "dad", "daffodil", "dagger", "daily", "daintily", "dainty", "dairy", "daisy", "dallying", "dance", "dancing", "dandelion", "dander", "dandruff", "dandy", "danger", "dangle", "dangling", "daredevil", "dares", "daringly", "darkened", "darkening", "darkish", "darkness", "darkroom", "darling", "darn", "dart", "darwinism", "dash", "dastardly", "data", "datebook", "dating", "daughter", "daunting", "dawdler", "dawn", "daybed", "daybreak", "daycare", "daydream", "daylight", "daylong", "dayroom", "daytime", "dazzler", "dazzling", "deacon", "deafening", "deafness", "dealer", "dealing", "dealmaker", "dealt", "dean", "debatable", "debate", "debating", "debit", "debrief", "debtless", "debtor", "debug", "debunk", "decade", "decaf", "decal", "decathlon", "decay", "deceased", "deceit", "deceiver", "deceiving", "december", "decency", "decent", "deception", "deceptive", "decibel", "decidable", "decimal", "decimeter", "decipher", "deck", "declared", "decline", "decode", "decompose", "decorated", "decorator", "decoy", "decrease", "decree", "dedicate", "dedicator", "deduce", "deduct", "deed", "deem", "deepen", "deeply", "deepness", "deface", "defacing", "defame", "default", "defeat", "defection", "defective", "defendant", "defender", "defense", "defensive", "deferral", "deferred", "defiance", "defiant", "defile", "defiling", "define", "definite", "deflate", "deflation", "deflator", "deflected", "deflector", "defog", "deforest", "defraud", "defrost", "deftly", "defuse", "defy", "degraded", "degrading", "degrease", "degree", "dehydrate", "deity", "dejected", "delay", "delegate", "delegator", "delete", "deletion", "delicacy", "delicate", "delicious", "delighted", "delirious", "delirium", "deliverer", "delivery", "delouse", "delta", "deluge", "delusion", "deluxe", "demanding", "demeaning", "demeanor", "demise", "democracy", "democrat", "demote", "demotion", "demystify", "denatured", "deniable", "denial", "denim", "denote", "dense", "density", "dental", "dentist", "denture", "deny", "deodorant", "deodorize", "departed", "departure", "depict", "deplete", "depletion", "deplored", "deploy", "deport", "depose", "depraved", "depravity", "deprecate", "depress", "deprive", "depth", "deputize", "deputy", "derail", "deranged", "derby", "derived", "desecrate", "deserve", "deserving", "designate", "designed", "designer", "designing", "deskbound", "desktop", "deskwork", "desolate", "despair", "despise", "despite", "destiny", "destitute", "destruct", "detached", "detail", "detection", "detective", "detector", "detention", "detergent", "detest", "detonate", "detonator", "detoxify", "detract", "deuce", "devalue", "deviancy", "deviant", "deviate", "deviation", "deviator", "device", "devious", "devotedly", "devotee", "devotion", "devourer", "devouring", "devoutly", "dexterity", "dexterous", "diabetes", "diabetic", "diabolic", "diagnoses", "diagnosis", "diagram", "dial", "diameter", "diaper", "diaphragm", "diary", "dice", "dicing", "dictate", "dictation", "dictator", "difficult", "diffused", "diffuser", "diffusion", "diffusive", "dig", "dilation", "diligence", "diligent", "dill", "dilute", "dime", "diminish", "dimly", "dimmed", "dimmer", "dimness", "dimple", "diner", "dingbat", "dinghy", "dinginess", "dingo", "dingy", "dining", "dinner", "diocese", "dioxide", "diploma", "dipped", "dipper", "dipping", "directed", "direction", "directive", "directly", "directory", "direness", "dirtiness", "disabled", "disagree", "disallow", "disarm", "disarray", "disaster", "disband", "disbelief", "disburse", "discard", "discern", "discharge", "disclose", "discolor", "discount", "discourse", "discover", "discuss", "disdain", "disengage", "disfigure", "disgrace", "dish", "disinfect", "disjoin", "disk", "dislike", "disliking", "dislocate", "dislodge", "disloyal", "dismantle", "dismay", "dismiss", "dismount", "disobey", "disorder", "disown", "disparate", "disparity", "dispatch", "dispense", "dispersal", "dispersed", "disperser", "displace", "display", "displease", "disposal", "dispose", "disprove", "dispute", "disregard", "disrupt", "dissuade", "distance", "distant", "distaste", "distill", "distinct", "distort", "distract", "distress", "district", "distrust", "ditch", "ditto", "ditzy", "dividable", "divided", "dividend", "dividers", "dividing", "divinely", "diving", "divinity", "divisible", "divisibly", "division", "divisive", "divorcee", "dizziness", "dizzy", "doable", "docile", "dock", "doctrine", "document", "dodge", "dodgy", "doily", "doing", "dole", "dollar", "dollhouse", "dollop", "dolly", "dolphin", "domain", "domelike", "domestic", "dominion", "dominoes", "donated", "donation", "donator", "donor", "donut", "doodle", "doorbell", "doorframe", "doorknob", "doorman", "doormat", "doornail", "doorpost", "doorstep", "doorstop", "doorway", "doozy", "dork", "dormitory", "dorsal", "dosage", "dose", "dotted", "doubling", "douche", "dove", "down", "dowry", "doze", "drab", "dragging", "dragonfly", "dragonish", "dragster", "drainable", "drainage", "drained", "drainer", "drainpipe", "dramatic", "dramatize", "drank", "drapery", "drastic", "draw", "dreaded", "dreadful", "dreadlock", "dreamboat", "dreamily", "dreamland", "dreamless", "dreamlike", "dreamt", "dreamy", "drearily", "dreary", "drench", "dress", "drew", "dribble", "dried", "drier", "drift", "driller", "drilling", "drinkable", "drinking", "dripping", "drippy", "drivable", "driven", "driver", "driveway", "driving", "drizzle", "drizzly", "drone", "drool", "droop", "drop-down", "dropbox", "dropkick", "droplet", "dropout", "dropper", "drove", "drown", "drowsily", "drudge", "drum", "dry", "dubbed", "dubiously", "duchess", "duckbill", "ducking", "duckling", "ducktail", "ducky", "duct", "dude", "duffel", "dugout", "duh", "duke", "duller", "dullness", "duly", "dumping", "dumpling", "dumpster", "duo", "dupe", "duplex", "duplicate", "duplicity", "durable", "durably", "duration", "duress", "during", "dusk", "dust", "dutiful", "duty", "duvet", "dwarf", "dweeb", "dwelled", "dweller", "dwelling", "dwindle", "dwindling", "dynamic", "dynamite", "dynasty", "dyslexia", "dyslexic", "each", "eagle", "earache", "eardrum", "earflap", "earful", "earlobe", "early", "earmark", "earmuff", "earphone", "earpiece", "earplugs", "earring", "earshot", "earthen", "earthlike", "earthling", "earthly", "earthworm", "earthy", "earwig", "easeful", "easel", "easiest", "easily", "easiness", "easing", "eastbound", "eastcoast", "easter", "eastward", "eatable", "eaten", "eatery", "eating", "eats", "ebay", "ebony", "ebook", "ecard", "eccentric", "echo", "eclair", "eclipse", "ecologist", "ecology", "economic", "economist", "economy", "ecosphere", "ecosystem", "edge", "edginess", "edging", "edgy", "edition", "editor", "educated", "education", "educator", "eel", "effective", "effects", "efficient", "effort", "eggbeater", "egging", "eggnog", "eggplant", "eggshell", "egomaniac", "egotism", "egotistic", "either", "eject", "elaborate", "elastic", "elated", "elbow", "eldercare", "elderly", "eldest", "electable", "election", "elective", "elephant", "elevate", "elevating", "elevation", "elevator", "eleven", "elf", "eligible", "eligibly", "eliminate", "elite", "elitism", "elixir", "elk", "ellipse", "elliptic", "elm", "elongated", "elope", "eloquence", "eloquent", "elsewhere", "elude", "elusive", "elves", "email", "embargo", "embark", "embassy", "embattled", "embellish", "ember", "embezzle", "emblaze", "emblem", "embody", "embolism", "emboss", "embroider", "emcee", "emerald", "emergency", "emission", "emit", "emote", "emoticon", "emotion", "empathic", "empathy", "emperor", "emphases", "emphasis", "emphasize", "emphatic", "empirical", "employed", "employee", "employer", "emporium", "empower", "emptier", "emptiness", "empty", "emu", "enable", "enactment", "enamel", "enchanted", "enchilada", "encircle", "enclose", "enclosure", "encode", "encore", "encounter", "encourage", "encroach", "encrust", "encrypt", "endanger", "endeared", "endearing", "ended", "ending", "endless", "endnote", "endocrine", "endorphin", "endorse", "endowment", "endpoint", "endurable", "endurance", "enduring", "energetic", "energize", "energy", "enforced", "enforcer", "engaged", "engaging", "engine", "engorge", "engraved", "engraver", "engraving", "engross", "engulf", "enhance", "enigmatic", "enjoyable", "enjoyably", "enjoyer", "enjoying", "enjoyment", "enlarged", "enlarging", "enlighten", "enlisted", "enquirer", "enrage", "enrich", "enroll", "enslave", "ensnare", "ensure", "entail", "entangled", "entering", "entertain", "enticing", "entire", "entitle", "entity", "entomb", "entourage", "entrap", "entree", "entrench", "entrust", "entryway", "entwine", "enunciate", "envelope", "enviable", "enviably", "envious", "envision", "envoy", "envy", "enzyme", "epic", "epidemic", "epidermal", "epidermis", "epidural", "epilepsy", "epileptic", "epilogue", "epiphany", "episode", "equal", "equate", "equation", "equator", "equinox", "equipment", "equity", "equivocal", "eradicate", "erasable", "erased", "eraser", "erasure", "ergonomic", "errand", "errant", "erratic", "error", "erupt", "escalate", "escalator", "escapable", "escapade", "escapist", "escargot", "eskimo", "esophagus", "espionage", "espresso", "esquire", "essay", "essence", "essential", "establish", "estate", "esteemed", "estimate", "estimator", "estranged", "estrogen", "etching", "eternal", "eternity", "ethanol", "ether", "ethically", "ethics", "euphemism", "evacuate", "evacuee", "evade", "evaluate", "evaluator", "evaporate", "evasion", "evasive", "even", "everglade", "evergreen", "everybody", "everyday", "everyone", "evict", "evidence", "evident", "evil", "evoke", "evolution", "evolve", "exact", "exalted", "example", "excavate", "excavator", "exceeding", "exception", "excess", "exchange", "excitable", "exciting", "exclaim", "exclude", "excluding", "exclusion", "exclusive", "excretion", "excretory", "excursion", "excusable", "excusably", "excuse", "exemplary", "exemplify", "exemption", "exerciser", "exert", "exes", "exfoliate", "exhale", "exhaust", "exhume", "exile", "existing", "exit", "exodus", "exonerate", "exorcism", "exorcist", "expand", "expanse", "expansion", "expansive", "expectant", "expedited", "expediter", "expel", "expend", "expenses", "expensive", "expert", "expire", "expiring", "explain", "expletive", "explicit", "explode", "exploit", "explore", "exploring", "exponent", "exporter", "exposable", "expose", "exposure", "express", "expulsion", "exquisite", "extended", "extending", "extent", "extenuate", "exterior", "external", "extinct", "extortion", "extradite", "extras", "extrovert", "extrude", "extruding", "exuberant", "fable", "fabric", "fabulous", "facebook", "facecloth", "facedown", "faceless", "facelift", "faceplate", "faceted", "facial", "facility", "facing", "facsimile", "faction", "factoid", "factor", "factsheet", "factual", "faculty", "fade", "fading", "failing", "falcon", "fall", "false", "falsify", "fame", "familiar", "family", "famine", "famished", "fanatic", "fancied", "fanciness", "fancy", "fanfare", "fang", "fanning", "fantasize", "fantastic", "fantasy", "fascism", "fastball", "faster", "fasting", "fastness", "faucet", "favorable", "favorably", "favored", "favoring", "favorite", "fax", "feast", "federal", "fedora", "feeble", "feed", "feel", "feisty", "feline", "felt-tip", "feminine", "feminism", "feminist", "feminize", "femur", "fence", "fencing", "fender", "ferment", "fernlike", "ferocious", "ferocity", "ferret", "ferris", "ferry", "fervor", "fester", "festival", "festive", "festivity", "fetal", "fetch", "fever", "fiber", "fiction", "fiddle", "fiddling", "fidelity", "fidgeting", "fidgety", "fifteen", "fifth", "fiftieth", "fifty", "figment", "figure", "figurine", "filing", "filled", "filler", "filling", "film", "filter", "filth", "filtrate", "finale", "finalist", "finalize", "finally", "finance", "financial", "finch", "fineness", "finer", "finicky", "finished", "finisher", "finishing", "finite", "finless", "finlike", "fiscally", "fit", "five", "flaccid", "flagman", "flagpole", "flagship", "flagstick", "flagstone", "flail", "flakily", "flaky", "flame", "flammable", "flanked", "flanking", "flannels", "flap", "flaring", "flashback", "flashbulb", "flashcard", "flashily", "flashing", "flashy", "flask", "flatbed", "flatfoot", "flatly", "flatness", "flatten", "flattered", "flatterer", "flattery", "flattop", "flatware", "flatworm", "flavored", "flavorful", "flavoring", "flaxseed", "fled", "fleshed", "fleshy", "flick", "flier", "flight", "flinch", "fling", "flint", "flip", "flirt", "float", "flock", "flogging", "flop", "floral", "florist", "floss", "flounder", "flyable", "flyaway", "flyer", "flying", "flyover", "flypaper", "foam", "foe", "fog", "foil", "folic", "folk", "follicle", "follow", "fondling", "fondly", "fondness", "fondue", "font", "food", "fool", "footage", "football", "footbath", "footboard", "footer", "footgear", "foothill", "foothold", "footing", "footless", "footman", "footnote", "footpad", "footpath", "footprint", "footrest", "footsie", "footsore", "footwear", "footwork", "fossil", "foster", "founder", "founding", "fountain", "fox", "foyer", "fraction", "fracture", "fragile", "fragility", "fragment", "fragrance", "fragrant", "frail", "frame", "framing", "frantic", "fraternal", "frayed", "fraying", "frays", "freckled", "freckles", "freebase", "freebee", "freebie", "freedom", "freefall", "freehand", "freeing", "freeload", "freely", "freemason", "freeness", "freestyle", "freeware", "freeway", "freewill", "freezable", "freezing", "freight", "french", "frenzied", "frenzy", "frequency", "frequent", "fresh", "fretful", "fretted", "friction", "friday", "fridge", "fried", "friend", "frighten", "frightful", "frigidity", "frigidly", "frill", "fringe", "frisbee", "frisk", "fritter", "frivolous", "frolic", "from", "front", "frostbite", "frosted", "frostily", "frosting", "frostlike", "frosty", "froth", "frown", "frozen", "fructose", "frugality", "frugally", "fruit", "frustrate", "frying", "gab", "gaffe", "gag", "gainfully", "gaining", "gains", "gala", "gallantly", "galleria", "gallery", "galley", "gallon", "gallows", "gallstone", "galore", "galvanize", "gambling", "game", "gaming", "gamma", "gander", "gangly", "gangrene", "gangway", "gap", "garage", "garbage", "garden", "gargle", "garland", "garlic", "garment", "garnet", "garnish", "garter", "gas", "gatherer", "gathering", "gating", "gauging", "gauntlet", "gauze", "gave", "gawk", "gazing", "gear", "gecko", "geek", "geiger", "gem", "gender", "generic", "generous", "genetics", "genre", "gentile", "gentleman", "gently", "gents", "geography", "geologic", "geologist", "geology", "geometric", "geometry", "geranium", "gerbil", "geriatric", "germicide", "germinate", "germless", "germproof", "gestate", "gestation", "gesture", "getaway", "getting", "getup", "giant", "gibberish", "giblet", "giddily", "giddiness", "giddy", "gift", "gigabyte", "gigahertz", "gigantic", "giggle", "giggling", "giggly", "gigolo", "gilled", "gills", "gimmick", "girdle", "giveaway", "given", "giver", "giving", "gizmo", "gizzard", "glacial", "glacier", "glade", "gladiator", "gladly", "glamorous", "glamour", "glance", "glancing", "glandular", "glare", "glaring", "glass", "glaucoma", "glazing", "gleaming", "gleeful", "glider", "gliding", "glimmer", "glimpse", "glisten", "glitch", "glitter", "glitzy", "gloater", "gloating", "gloomily", "gloomy", "glorified", "glorifier", "glorify", "glorious", "glory", "gloss", "glove", "glowing", "glowworm", "glucose", "glue", "gluten", "glutinous", "glutton", "gnarly", "gnat", "goal", "goatskin", "goes", "goggles", "going", "goldfish", "goldmine", "goldsmith", "golf", "goliath", "gonad", "gondola", "gone", "gong", "good", "gooey", "goofball", "goofiness", "goofy", "google", "goon", "gopher", "gore", "gorged", "gorgeous", "gory", "gosling", "gossip", "gothic", "gotten", "gout", "gown", "grab", "graceful", "graceless", "gracious", "gradation", "graded", "grader", "gradient", "grading", "gradually", "graduate", "graffiti", "grafted", "grafting", "grain", "granddad", "grandkid", "grandly", "grandma", "grandpa", "grandson", "granite", "granny", "granola", "grant", "granular", "grape", "graph", "grapple", "grappling", "grasp", "grass", "gratified", "gratify", "grating", "gratitude", "gratuity", "gravel", "graveness", "graves", "graveyard", "gravitate", "gravity", "gravy", "gray", "grazing", "greasily", "greedily", "greedless", "greedy", "green", "greeter", "greeting", "grew", "greyhound", "grid", "grief", "grievance", "grieving", "grievous", "grill", "grimace", "grimacing", "grime", "griminess", "grimy", "grinch", "grinning", "grip", "gristle", "grit", "groggily", "groggy", "groin", "groom", "groove", "grooving", "groovy", "grope", "ground", "grouped", "grout", "grove", "grower", "growing", "growl", "grub", "grudge", "grudging", "grueling", "gruffly", "grumble", "grumbling", "grumbly", "grumpily", "grunge", "grunt", "guacamole", "guidable", "guidance", "guide", "guiding", "guileless", "guise", "gulf", "gullible", "gully", "gulp", "gumball", "gumdrop", "gumminess", "gumming", "gummy", "gurgle", "gurgling", "guru", "gush", "gusto", "gusty", "gutless", "guts", "gutter", "guy", "guzzler", "gyration", "habitable", "habitant", "habitat", "habitual", "hacked", "hacker", "hacking", "hacksaw", "had", "haggler", "haiku", "half", "halogen", "halt", "halved", "halves", "hamburger", "hamlet", "hammock", "hamper", "hamster", "hamstring", "handbag", "handball", "handbook", "handbrake", "handcart", "handclap", "handclasp", "handcraft", "handcuff", "handed", "handful", "handgrip", "handgun", "handheld", "handiness", "handiwork", "handlebar", "handled", "handler", "handling", "handmade", "handoff", "handpick", "handprint", "handrail", "handsaw", "handset", "handsfree", "handshake", "handstand", "handwash", "handwork", "handwoven", "handwrite", "handyman", "hangnail", "hangout", "hangover", "hangup", "hankering", "hankie", "hanky", "haphazard", "happening", "happier", "happiest", "happily", "happiness", "happy", "harbor", "hardcopy", "hardcore", "hardcover", "harddisk", "hardened", "hardener", "hardening", "hardhat", "hardhead", "hardiness", "hardly", "hardness", "hardship", "hardware", "hardwired", "hardwood", "hardy", "harmful", "harmless", "harmonica", "harmonics", "harmonize", "harmony", "harness", "harpist", "harsh", "harvest", "hash", "hassle", "haste", "hastily", "hastiness", "hasty", "hatbox", "hatchback", "hatchery", "hatchet", "hatching", "hatchling", "hate", "hatless", "hatred", "haunt", "haven", "hazard", "hazelnut", "hazily", "haziness", "hazing", "hazy", "headache", "headband", "headboard", "headcount", "headdress", "headed", "header", "headfirst", "headgear", "heading", "headlamp", "headless", "headlock", "headphone", "headpiece", "headrest", "headroom", "headscarf", "headset", "headsman", "headstand", "headstone", "headway", "headwear", "heap", "heat", "heave", "heavily", "heaviness", "heaving", "hedge", "hedging", "heftiness", "hefty", "helium", "helmet", "helper", "helpful", "helping", "helpless", "helpline", "hemlock", "hemstitch", "hence", "henchman", "henna", "herald", "herbal", "herbicide", "herbs", "heritage", "hermit", "heroics", "heroism", "herring", "herself", "hertz", "hesitancy", "hesitant", "hesitate", "hexagon", "hexagram", "hubcap", "huddle", "huddling", "huff", "hug", "hula", "hulk", "hull", "human", "humble", "humbling", "humbly", "humid", "humiliate", "humility", "humming", "hummus", "humongous", "humorist", "humorless", "humorous", "humpback", "humped", "humvee", "hunchback", "hundredth", "hunger", "hungrily", "hungry", "hunk", "hunter", "hunting", "huntress", "huntsman", "hurdle", "hurled", "hurler", "hurling", "hurray", "hurricane", "hurried", "hurry", "hurt", "husband", "hush", "husked", "huskiness", "hut", "hybrid", "hydrant", "hydrated", "hydration", "hydrogen", "hydroxide", "hyperlink", "hypertext", "hyphen", "hypnoses", "hypnosis", "hypnotic", "hypnotism", "hypnotist", "hypnotize", "hypocrisy", "hypocrite", "ibuprofen", "ice", "iciness", "icing", "icky", "icon", "icy", "idealism", "idealist", "idealize", "ideally", "idealness", "identical", "identify", "identity", "ideology", "idiocy", "idiom", "idly", "igloo", "ignition", "ignore", "iguana", "illicitly", "illusion", "illusive", "image", "imaginary", "imagines", "imaging", "imbecile", "imitate", "imitation", "immature", "immerse", "immersion", "imminent", "immobile", "immodest", "immorally", "immortal", "immovable", "immovably", "immunity", "immunize", "impaired", "impale", "impart", "impatient", "impeach", "impeding", "impending", "imperfect", "imperial", "impish", "implant", "implement", "implicate", "implicit", "implode", "implosion", "implosive", "imply", "impolite", "important", "importer", "impose", "imposing", "impotence", "impotency", "impotent", "impound", "imprecise", "imprint", "imprison", "impromptu", "improper", "improve", "improving", "improvise", "imprudent", "impulse", "impulsive", "impure", "impurity", "iodine", "iodize", "ion", "ipad", "iphone", "ipod", "irate", "irk", "iron", "irregular", "irrigate", "irritable", "irritably", "irritant", "irritate", "islamic", "islamist", "isolated", "isolating", "isolation", "isotope", "issue", "issuing", "italicize", "italics", "item", "itinerary", "itunes", "ivory", "ivy", "jab", "jackal", "jacket", "jackknife", "jackpot", "jailbird", "jailbreak", "jailer", "jailhouse", "jalapeno", "jam", "janitor", "january", "jargon", "jarring", "jasmine", "jaundice", "jaunt", "java", "jawed", "jawless", "jawline", "jaws", "jaybird", "jaywalker", "jazz", "jeep", "jeeringly", "jellied", "jelly", "jersey", "jester", "jet", "jiffy", "jigsaw", "jimmy", "jingle", "jingling", "jinx", "jitters", "jittery", "job", "jockey", "jockstrap", "jogger", "jogging", "john", "joining", "jokester", "jokingly", "jolliness", "jolly", "jolt", "jot", "jovial", "joyfully", "joylessly", "joyous", "joyride", "joystick", "jubilance", "jubilant", "judge", "judgingly", "judicial", "judiciary", "judo", "juggle", "juggling", "jugular", "juice", "juiciness", "juicy", "jujitsu", "jukebox", "july", "jumble", "jumbo", "jump", "junction", "juncture", "june", "junior", "juniper", "junkie", "junkman", "junkyard", "jurist", "juror", "jury", "justice", "justifier", "justify", "justly", "justness", "juvenile", "kabob", "kangaroo", "karaoke", "karate", "karma", "kebab", "keenly", "keenness", "keep", "keg", "kelp", "kennel", "kept", "kerchief", "kerosene", "kettle", "kick", "kiln", "kilobyte", "kilogram", "kilometer", "kilowatt", "kilt", "kimono", "kindle", "kindling", "kindly", "kindness", "kindred", "kinetic", "kinfolk", "king", "kinship", "kinsman", "kinswoman", "kissable", "kisser", "kissing", "kitchen", "kite", "kitten", "kitty", "kiwi", "kleenex", "knapsack", "knee", "knelt", "knickers", "knoll", "koala", "kooky", "kosher", "krypton", "kudos", "kung", "labored", "laborer", "laboring", "laborious", "labrador", "ladder", "ladies", "ladle", "ladybug", "ladylike", "lagged", "lagging", "lagoon", "lair", "lake", "lance", "landed", "landfall", "landfill", "landing", "landlady", "landless", "landline", "landlord", "landmark", "landmass", "landmine", "landowner", "landscape", "landside", "landslide", "language", "lankiness", "lanky", "lantern", "lapdog", "lapel", "lapped", "lapping", "laptop", "lard", "large", "lark", "lash", "lasso", "last", "latch", "late", "lather", "latitude", "latrine", "latter", "latticed", "launch", "launder", "laundry", "laurel", "lavender", "lavish", "laxative", "lazily", "laziness", "lazy", "lecturer", "left", "legacy", "legal", "legend", "legged", "leggings", "legible", "legibly", "legislate", "lego", "legroom", "legume", "legwarmer", "legwork", "lemon", "lend", "length", "lens", "lent", "leotard", "lesser", "letdown", "lethargic", "lethargy", "letter", "lettuce", "level", "leverage", "levers", "levitate", "levitator", "liability", "liable", "liberty", "librarian", "library", "licking", "licorice", "lid", "life", "lifter", "lifting", "liftoff", "ligament", "likely", "likeness", "likewise", "liking", "lilac", "lilly", "lily", "limb", "limeade", "limelight", "limes", "limit", "limping", "limpness", "line", "lingo", "linguini", "linguist", "lining", "linked", "linoleum", "linseed", "lint", "lion", "lip", "liquefy", "liqueur", "liquid", "lisp", "list", "litigate", "litigator", "litmus", "litter", "little", "livable", "lived", "lively", "liver", "livestock", "lividly", "living", "lizard", "lubricant", "lubricate", "lucid", "luckily", "luckiness", "luckless", "lucrative", "ludicrous", "lugged", "lukewarm", "lullaby", "lumber", "luminance", "luminous", "lumpiness", "lumping", "lumpish", "lunacy", "lunar", "lunchbox", "luncheon", "lunchroom", "lunchtime", "lung", "lurch", "lure", "luridness", "lurk", "lushly", "lushness", "luster", "lustfully", "lustily", "lustiness", "lustrous", "lusty", "luxurious", "luxury", "lying", "lyrically", "lyricism", "lyricist", "lyrics", "macarena", "macaroni", "macaw", "mace", "machine", "machinist", "magazine", "magenta", "maggot", "magical", "magician", "magma", "magnesium", "magnetic", "magnetism", "magnetize", "magnifier", "magnify", "magnitude", "magnolia", "mahogany", "maimed", "majestic", "majesty", "majorette", "majority", "makeover", "maker", "makeshift", "making", "malformed", "malt", "mama", "mammal", "mammary", "mammogram", "manager", "managing", "manatee", "mandarin", "mandate", "mandatory", "mandolin", "manger", "mangle", "mango", "mangy", "manhandle", "manhole", "manhood", "manhunt", "manicotti", "manicure", "manifesto", "manila", "mankind", "manlike", "manliness", "manly", "manmade", "manned", "mannish", "manor", "manpower", "mantis", "mantra", "manual", "many", "map", "marathon", "marauding", "marbled", "marbles", "marbling", "march", "mardi", "margarine", "margarita", "margin", "marigold", "marina", "marine", "marital", "maritime", "marlin", "marmalade", "maroon", "married", "marrow", "marry", "marshland", "marshy", "marsupial", "marvelous", "marxism", "mascot", "masculine", "mashed", "mashing", "massager", "masses", "massive", "mastiff", "matador", "matchbook", "matchbox", "matcher", "matching", "matchless", "material", "maternal", "maternity", "math", "mating", "matriarch", "matrimony", "matrix", "matron", "matted", "matter", "maturely", "maturing", "maturity", "mauve", "maverick", "maximize", "maximum", "maybe", "mayday", "mayflower", "moaner", "moaning", "mobile", "mobility", "mobilize", "mobster", "mocha", "mocker", "mockup", "modified", "modify", "modular", "modulator", "module", "moisten", "moistness", "moisture", "molar", "molasses", "mold", "molecular", "molecule", "molehill", "mollusk", "mom", "monastery", "monday", "monetary", "monetize", "moneybags", "moneyless", "moneywise", "mongoose", "mongrel", "monitor", "monkhood", "monogamy", "monogram", "monologue", "monopoly", "monorail", "monotone", "monotype", "monoxide", "monsieur", "monsoon", "monstrous", "monthly", "monument", "moocher", "moodiness", "moody", "mooing", "moonbeam", "mooned", "moonlight", "moonlike", "moonlit", "moonrise", "moonscape", "moonshine", "moonstone", "moonwalk", "mop", "morale", "morality", "morally", "morbidity", "morbidly", "morphine", "morphing", "morse", "mortality", "mortally", "mortician", "mortified", "mortify", "mortuary", "mosaic", "mossy", "most", "mothball", "mothproof", "motion", "motivate", "motivator", "motive", "motocross", "motor", "motto", "mountable", "mountain", "mounted", "mounting", "mourner", "mournful", "mouse", "mousiness", "moustache", "mousy", "mouth", "movable", "move", "movie", "moving", "mower", "mowing", "much", "muck", "mud", "mug", "mulberry", "mulch", "mule", "mulled", "mullets", "multiple", "multiply", "multitask", "multitude", "mumble", "mumbling", "mumbo", "mummified", "mummify", "mummy", "mumps", "munchkin", "mundane", "municipal", "muppet", "mural", "murkiness", "murky", "murmuring", "muscular", "museum", "mushily", "mushiness", "mushroom", "mushy", "music", "musket", "muskiness", "musky", "mustang", "mustard", "muster", "mustiness", "musty", "mutable", "mutate", "mutation", "mute", "mutilated", "mutilator", "mutiny", "mutt", "mutual", "muzzle", "myself", "myspace", "mystified", "mystify", "myth", "nacho", "nag", "nail", "name", "naming", "nanny", "nanometer", "nape", "napkin", "napped", "napping", "nappy", "narrow", "nastily", "nastiness", "national", "native", "nativity", "natural", "nature", "naturist", "nautical", "navigate", "navigator", "navy", "nearby", "nearest", "nearly", "nearness", "neatly", "neatness", "nebula", "nebulizer", "nectar", "negate", "negation", "negative", "neglector", "negligee", "negligent", "negotiate", "nemeses", "nemesis", "neon", "nephew", "nerd", "nervous", "nervy", "nest", "net", "neurology", "neuron", "neurosis", "neurotic", "neuter", "neutron", "never", "next", "nibble", "nickname", "nicotine", "niece", "nifty", "nimble", "nimbly", "nineteen", "ninetieth", "ninja", "nintendo", "ninth", "nuclear", "nuclei", "nucleus", "nugget", "nullify", "number", "numbing", "numbly", "numbness", "numeral", "numerate", "numerator", "numeric", "numerous", "nuptials", "nursery", "nursing", "nurture", "nutcase", "nutlike", "nutmeg", "nutrient", "nutshell", "nuttiness", "nutty", "nuzzle", "nylon", "oaf", "oak", "oasis", "oat", "obedience", "obedient", "obituary", "object", "obligate", "obliged", "oblivion", "oblivious", "oblong", "obnoxious", "oboe", "obscure", "obscurity", "observant", "observer", "observing", "obsessed", "obsession", "obsessive", "obsolete", "obstacle", "obstinate", "obstruct", "obtain", "obtrusive", "obtuse", "obvious", "occultist", "occupancy", "occupant", "occupier", "occupy", "ocean", "ocelot", "octagon", "octane", "october", "octopus", "ogle", "oil", "oink", "ointment", "okay", "old", "olive", "olympics", "omega", "omen", "ominous", "omission", "omit", "omnivore", "onboard", "oncoming", "ongoing", "onion", "online", "onlooker", "only", "onscreen", "onset", "onshore", "onslaught", "onstage", "onto", "onward", "onyx", "oops", "ooze", "oozy", "opacity", "opal", "open", "operable", "operate", "operating", "operation", "operative", "operator", "opium", "opossum", "opponent", "oppose", "opposing", "opposite", "oppressed", "oppressor", "opt", "opulently", "osmosis", "other", "otter", "ouch", "ought", "ounce", "outage", "outback", "outbid", "outboard", "outbound", "outbreak", "outburst", "outcast", "outclass", "outcome", "outdated", "outdoors", "outer", "outfield", "outfit", "outflank", "outgoing", "outgrow", "outhouse", "outing", "outlast", "outlet", "outline", "outlook", "outlying", "outmatch", "outmost", "outnumber", "outplayed", "outpost", "outpour", "output", "outrage", "outrank", "outreach", "outright", "outscore", "outsell", "outshine", "outshoot", "outsider", "outskirts", "outsmart", "outsource", "outspoken", "outtakes", "outthink", "outward", "outweigh", "outwit", "oval", "ovary", "oven", "overact", "overall", "overarch", "overbid", "overbill", "overbite", "overblown", "overboard", "overbook", "overbuilt", "overcast", "overcoat", "overcome", "overcook", "overcrowd", "overdraft", "overdrawn", "overdress", "overdrive", "overdue", "overeager", "overeater", "overexert", "overfed", "overfeed", "overfill", "overflow", "overfull", "overgrown", "overhand", "overhang", "overhaul", "overhead", "overhear", "overheat", "overhung", "overjoyed", "overkill", "overlabor", "overlaid", "overlap", "overlay", "overload", "overlook", "overlord", "overlying", "overnight", "overpass", "overpay", "overplant", "overplay", "overpower", "overprice", "overrate", "overreach", "overreact", "override", "overripe", "overrule", "overrun", "overshoot", "overshot", "oversight", "oversized", "oversleep", "oversold", "overspend", "overstate", "overstay", "overstep", "overstock", "overstuff", "oversweet", "overtake", "overthrow", "overtime", "overtly", "overtone", "overture", "overturn", "overuse", "overvalue", "overview", "overwrite", "owl", "oxford", "oxidant", "oxidation", "oxidize", "oxidizing", "oxygen", "oxymoron", "oyster", "ozone", "paced", "pacemaker", "pacific", "pacifier", "pacifism", "pacifist", "pacify", "padded", "padding", "paddle", "paddling", "padlock", "pagan", "pager", "paging", "pajamas", "palace", "palatable", "palm", "palpable", "palpitate", "paltry", "pampered", "pamperer", "pampers", "pamphlet", "panama", "pancake", "pancreas", "panda", "pandemic", "pang", "panhandle", "panic", "panning", "panorama", "panoramic", "panther", "pantomime", "pantry", "pants", "pantyhose", "paparazzi", "papaya", "paper", "paprika", "papyrus", "parabola", "parachute", "parade", "paradox", "paragraph", "parakeet", "paralegal", "paralyses", "paralysis", "paralyze", "paramedic", "parameter", "paramount", "parasail", "parasite", "parasitic", "parcel", "parched", "parchment", "pardon", "parish", "parka", "parking", "parkway", "parlor", "parmesan", "parole", "parrot", "parsley", "parsnip", "partake", "parted", "parting", "partition", "partly", "partner", "partridge", "party", "passable", "passably", "passage", "passcode", "passenger", "passerby", "passing", "passion", "passive", "passivism", "passover", "passport", "password", "pasta", "pasted", "pastel", "pastime", "pastor", "pastrami", "pasture", "pasty", "patchwork", "patchy", "paternal", "paternity", "path", "patience", "patient", "patio", "patriarch", "patriot", "patrol", "patronage", "patronize", "pauper", "pavement", "paver", "pavestone", "pavilion", "paving", "pawing", "payable", "payback", "paycheck", "payday", "payee", "payer", "paying", "payment", "payphone", "payroll", "pebble", "pebbly", "pecan", "pectin", "peculiar", "peddling", "pediatric", "pedicure", "pedigree", "pedometer", "pegboard", "pelican", "pellet", "pelt", "pelvis", "penalize", "penalty", "pencil", "pendant", "pending", "penholder", "penknife", "pennant", "penniless", "penny", "penpal", "pension", "pentagon", "pentagram", "pep", "perceive", "percent", "perch", "percolate", "perennial", "perfected", "perfectly", "perfume", "periscope", "perish", "perjurer", "perjury", "perkiness", "perky", "perm", "peroxide", "perpetual", "perplexed", "persecute", "persevere", "persuaded", "persuader", "pesky", "peso", "pessimism", "pessimist", "pester", "pesticide", "petal", "petite", "petition", "petri", "petroleum", "petted", "petticoat", "pettiness", "petty", "petunia", "phantom", "phobia", "phoenix", "phonebook", "phoney", "phonics", "phoniness", "phony", "phosphate", "photo", "phrase", "phrasing", "placard", "placate", "placidly", "plank", "planner", "plant", "plasma", "plaster", "plastic", "plated", "platform", "plating", "platinum", "platonic", "platter", "platypus", "plausible", "plausibly", "playable", "playback", "player", "playful", "playgroup", "playhouse", "playing", "playlist", "playmaker", "playmate", "playoff", "playpen", "playroom", "playset", "plaything", "playtime", "plaza", "pleading", "pleat", "pledge", "plentiful", "plenty", "plethora", "plexiglas", "pliable", "plod", "plop", "plot", "plow", "ploy", "pluck", "plug", "plunder", "plunging", "plural", "plus", "plutonium", "plywood", "poach", "pod", "poem", "poet", "pogo", "pointed", "pointer", "pointing", "pointless", "pointy", "poise", "poison", "poker", "poking", "polar", "police", "policy", "polio", "polish", "politely", "polka", "polo", "polyester", "polygon", "polygraph", "polymer", "poncho", "pond", "pony", "popcorn", "pope", "poplar", "popper", "poppy", "popsicle", "populace", "popular", "populate", "porcupine", "pork", "porous", "porridge", "portable", "portal", "portfolio", "porthole", "portion", "portly", "portside", "poser", "posh", "posing", "possible", "possibly", "possum", "postage", "postal", "postbox", "postcard", "posted", "poster", "posting", "postnasal", "posture", "postwar", "pouch", "pounce", "pouncing", "pound", "pouring", "pout", "powdered", "powdering", "powdery", "power", "powwow", "pox", "praising", "prance", "prancing", "pranker", "prankish", "prankster", "prayer", "praying", "preacher", "preaching", "preachy", "preamble", "precinct", "precise", "precision", "precook", "precut", "predator", "predefine", "predict", "preface", "prefix", "preflight", "preformed", "pregame", "pregnancy", "pregnant", "preheated", "prelaunch", "prelaw", "prelude", "premiere", "premises", "premium", "prenatal", "preoccupy", "preorder", "prepaid", "prepay", "preplan", "preppy", "preschool", "prescribe", "preseason", "preset", "preshow", "president", "presoak", "press", "presume", "presuming", "preteen", "pretended", "pretender", "pretense", "pretext", "pretty", "pretzel", "prevail", "prevalent", "prevent", "preview", "previous", "prewar", "prewashed", "prideful", "pried", "primal", "primarily", "primary", "primate", "primer", "primp", "princess", "print", "prior", "prism", "prison", "prissy", "pristine", "privacy", "private", "privatize", "prize", "proactive", "probable", "probably", "probation", "probe", "probing", "probiotic", "problem", "procedure", "process", "proclaim", "procreate", "procurer", "prodigal", "prodigy", "produce", "product", "profane", "profanity", "professed", "professor", "profile", "profound", "profusely", "progeny", "prognosis", "program", "progress", "projector", "prologue", "prolonged", "promenade", "prominent", "promoter", "promotion", "prompter", "promptly", "prone", "prong", "pronounce", "pronto", "proofing", "proofread", "proofs", "propeller", "properly", "property", "proponent", "proposal", "propose", "props", "prorate", "protector", "protegee", "proton", "prototype", "protozoan", "protract", "protrude", "proud", "provable", "proved", "proven", "provided", "provider", "providing", "province", "proving", "provoke", "provoking", "provolone", "prowess", "prowler", "prowling", "proximity", "proxy", "prozac", "prude", "prudishly", "prune", "pruning", "pry", "psychic", "public", "publisher", "pucker", "pueblo", "pug", "pull", "pulmonary", "pulp", "pulsate", "pulse", "pulverize", "puma", "pumice", "pummel", "punch", "punctual", "punctuate", "punctured", "pungent", "punisher", "punk", "pupil", "puppet", "puppy", "purchase", "pureblood", "purebred", "purely", "pureness", "purgatory", "purge", "purging", "purifier", "purify", "purist", "puritan", "purity", "purple", "purplish", "purposely", "purr", "purse", "pursuable", "pursuant", "pursuit", "purveyor", "pushcart", "pushchair", "pusher", "pushiness", "pushing", "pushover", "pushpin", "pushup", "pushy", "putdown", "putt", "puzzle", "puzzling", "pyramid", "pyromania", "python", "quack", "quadrant", "quail", "quaintly", "quake", "quaking", "qualified", "qualifier", "qualify", "quality", "qualm", "quantum", "quarrel", "quarry", "quartered", "quarterly", "quarters", "quartet", "quench", "query", "quicken", "quickly", "quickness", "quicksand", "quickstep", "quiet", "quill", "quilt", "quintet", "quintuple", "quirk", "quit", "quiver", "quizzical", "quotable", "quotation", "quote", "rabid", "race", "racing", "racism", "rack", "racoon", "radar", "radial", "radiance", "radiantly", "radiated", "radiation", "radiator", "radio", "radish", "raffle", "raft", "rage", "ragged", "raging", "ragweed", "raider", "railcar", "railing", "railroad", "railway", "raisin", "rake", "raking", "rally", "ramble", "rambling", "ramp", "ramrod", "ranch", "rancidity", "random", "ranged", "ranger", "ranging", "ranked", "ranking", "ransack", "ranting", "rants", "rare", "rarity", "rascal", "rash", "rasping", "ravage", "raven", "ravine", "raving", "ravioli", "ravishing", "reabsorb", "reach", "reacquire", "reaction", "reactive", "reactor", "reaffirm", "ream", "reanalyze", "reappear", "reapply", "reappoint", "reapprove", "rearrange", "rearview", "reason", "reassign", "reassure", "reattach", "reawake", "rebalance", "rebate", "rebel", "rebirth", "reboot", "reborn", "rebound", "rebuff", "rebuild", "rebuilt", "reburial", "rebuttal", "recall", "recant", "recapture", "recast", "recede", "recent", "recess", "recharger", "recipient", "recital", "recite", "reckless", "reclaim", "recliner", "reclining", "recluse", "reclusive", "recognize", "recoil", "recollect", "recolor", "reconcile", "reconfirm", "reconvene", "recopy", "record", "recount", "recoup", "recovery", "recreate", "rectal", "rectangle", "rectified", "rectify", "recycled", "recycler", "recycling", "reemerge", "reenact", "reenter", "reentry", "reexamine", "referable", "referee", "reference", "refill", "refinance", "refined", "refinery", "refining", "refinish", "reflected", "reflector", "reflex", "reflux", "refocus", "refold", "reforest", "reformat", "reformed", "reformer", "reformist", "refract", "refrain", "refreeze", "refresh", "refried", "refueling", "refund", "refurbish", "refurnish", "refusal", "refuse", "refusing", "refutable", "refute", "regain", "regalia", "regally", "reggae", "regime", "region", "register", "registrar", "registry", "regress", "regretful", "regroup", "regular", "regulate", "regulator", "rehab", "reheat", "rehire", "rehydrate", "reimburse", "reissue", "reiterate", "rejoice", "rejoicing", "rejoin", "rekindle", "relapse", "relapsing", "relatable", "related", "relation", "relative", "relax", "relay", "relearn", "release", "relenting", "reliable", "reliably", "reliance", "reliant", "relic", "relieve", "relieving", "relight", "relish", "relive", "reload", "relocate", "relock", "reluctant", "rely", "remake", "remark", "remarry", "rematch", "remedial", "remedy", "remember", "reminder", "remindful", "remission", "remix", "remnant", "remodeler", "remold", "remorse", "remote", "removable", "removal", "removed", "remover", "removing", "rename", "renderer", "rendering", "rendition", "renegade", "renewable", "renewably", "renewal", "renewed", "renounce", "renovate", "renovator", "rentable", "rental", "rented", "renter", "reoccupy", "reoccur", "reopen", "reorder", "repackage", "repacking", "repaint", "repair", "repave", "repaying", "repayment", "repeal", "repeated", "repeater", "repent", "rephrase", "replace", "replay", "replica", "reply", "reporter", "repose", "repossess", "repost", "repressed", "reprimand", "reprint", "reprise", "reproach", "reprocess", "reproduce", "reprogram", "reps", "reptile", "reptilian", "repugnant", "repulsion", "repulsive", "repurpose", "reputable", "reputably", "request", "require", "requisite", "reroute", "rerun", "resale", "resample", "rescuer", "reseal", "research", "reselect", "reseller", "resemble", "resend", "resent", "reset", "reshape", "reshoot", "reshuffle", "residence", "residency", "resident", "residual", "residue", "resigned", "resilient", "resistant", "resisting", "resize", "resolute", "resolved", "resonant", "resonate", "resort", "resource", "respect", "resubmit", "result", "resume", "resupply", "resurface", "resurrect", "retail", "retainer", "retaining", "retake", "retaliate", "retention", "rethink", "retinal", "retired", "retiree", "retiring", "retold", "retool", "retorted", "retouch", "retrace", "retract", "retrain", "retread", "retreat", "retrial", "retrieval", "retriever", "retry", "return", "retying", "retype", "reunion", "reunite", "reusable", "reuse", "reveal", "reveler", "revenge", "revenue", "reverb", "revered", "reverence", "reverend", "reversal", "reverse", "reversing", "reversion", "revert", "revisable", "revise", "revision", "revisit", "revivable", "revival", "reviver", "reviving", "revocable", "revoke", "revolt", "revolver", "revolving", "reward", "rewash", "rewind", "rewire", "reword", "rework", "rewrap", "rewrite", "rhyme", "ribbon", "ribcage", "rice", "riches", "richly", "richness", "rickety", "ricotta", "riddance", "ridden", "ride", "riding", "rifling", "rift", "rigging", "rigid", "rigor", "rimless", "rimmed", "rind", "rink", "rinse", "rinsing", "riot", "ripcord", "ripeness", "ripening", "ripping", "ripple", "rippling", "riptide", "rise", "rising", "risk", "risotto", "ritalin", "ritzy", "rival", "riverbank", "riverbed", "riverboat", "riverside", "riveter", "riveting", "roamer", "roaming", "roast", "robbing", "robe", "robin", "robotics", "robust", "rockband", "rocker", "rocket", "rockfish", "rockiness", "rocking", "rocklike", "rockslide", "rockstar", "rocky", "rogue", "roman", "romp", "rope", "roping", "roster", "rosy", "rotten", "rotting", "rotunda", "roulette", "rounding", "roundish", "roundness", "roundup", "roundworm", "routine", "routing", "rover", "roving", "royal", "rubbed", "rubber", "rubbing", "rubble", "rubdown", "ruby", "ruckus", "rudder", "rug", "ruined", "rule", "rumble", "rumbling", "rummage", "rumor", "runaround", "rundown", "runner", "running", "runny", "runt", "runway", "rupture", "rural", "ruse", "rush", "rust", "rut", "sabbath", "sabotage", "sacrament", "sacred", "sacrifice", "sadden", "saddlebag", "saddled", "saddling", "sadly", "sadness", "safari", "safeguard", "safehouse", "safely", "safeness", "saffron", "saga", "sage", "sagging", "saggy", "said", "saint", "sake", "salad", "salami", "salaried", "salary", "saline", "salon", "saloon", "salsa", "salt", "salutary", "salute", "salvage", "salvaging", "salvation", "same", "sample", "sampling", "sanction", "sanctity", "sanctuary", "sandal", "sandbag", "sandbank", "sandbar", "sandblast", "sandbox", "sanded", "sandfish", "sanding", "sandlot", "sandpaper", "sandpit", "sandstone", "sandstorm", "sandworm", "sandy", "sanitary", "sanitizer", "sank", "santa", "sapling", "sappiness", "sappy", "sarcasm", "sarcastic", "sardine", "sash", "sasquatch", "sassy", "satchel", "satiable", "satin", "satirical", "satisfied", "satisfy", "saturate", "saturday", "sauciness", "saucy", "sauna", "savage", "savanna", "saved", "savings", "savior", "savor", "saxophone", "say", "scabbed", "scabby", "scalded", "scalding", "scale", "scaling", "scallion", "scallop", "scalping", "scam", "scandal", "scanner", "scanning", "scant", "scapegoat", "scarce", "scarcity", "scarecrow", "scared", "scarf", "scarily", "scariness", "scarring", "scary", "scavenger", "scenic", "schedule", "schematic", "scheme", "scheming", "schilling", "schnapps", "scholar", "science", "scientist", "scion", "scoff", "scolding", "scone", "scoop", "scooter", "scope", "scorch", "scorebook", "scorecard", "scored", "scoreless", "scorer", "scoring", "scorn", "scorpion", "scotch", "scoundrel", "scoured", "scouring", "scouting", "scouts", "scowling", "scrabble", "scraggly", "scrambled", "scrambler", "scrap", "scratch", "scrawny", "screen", "scribble", "scribe", "scribing", "scrimmage", "script", "scroll", "scrooge", "scrounger", "scrubbed", "scrubber", "scruffy", "scrunch", "scrutiny", "scuba", "scuff", "sculptor", "sculpture", "scurvy", "scuttle", "secluded", "secluding", "seclusion", "second", "secrecy", "secret", "sectional", "sector", "secular", "securely", "security", "sedan", "sedate", "sedation", "sedative", "sediment", "seduce", "seducing", "segment", "seismic", "seizing", "seldom", "selected", "selection", "selective", "selector", "self", "seltzer", "semantic", "semester", "semicolon", "semifinal", "seminar", "semisoft", "semisweet", "senate", "senator", "send", "senior", "senorita", "sensation", "sensitive", "sensitize", "sensually", "sensuous", "sepia", "september", "septic", "septum", "sequel", "sequence", "sequester", "series", "sermon", "serotonin", "serpent", "serrated", "serve", "service", "serving", "sesame", "sessions", "setback", "setting", "settle", "settling", "setup", "sevenfold", "seventeen", "seventh", "seventy", "severity", "shabby", "shack", "shaded", "shadily", "shadiness", "shading", "shadow", "shady", "shaft", "shakable", "shakily", "shakiness", "shaking", "shaky", "shale", "shallot", "shallow", "shame", "shampoo", "shamrock", "shank", "shanty", "shape", "shaping", "share", "sharpener", "sharper", "sharpie", "sharply", "sharpness", "shawl", "sheath", "shed", "sheep", "sheet", "shelf", "shell", "shelter", "shelve", "shelving", "sherry", "shield", "shifter", "shifting", "shiftless", "shifty", "shimmer", "shimmy", "shindig", "shine", "shingle", "shininess", "shining", "shiny", "ship", "shirt", "shivering", "shock", "shone", "shoplift", "shopper", "shopping", "shoptalk", "shore", "shortage", "shortcake", "shortcut", "shorten", "shorter", "shorthand", "shortlist", "shortly", "shortness", "shorts", "shortwave", "shorty", "shout", "shove", "showbiz", "showcase", "showdown", "shower", "showgirl", "showing", "showman", "shown", "showoff", "showpiece", "showplace", "showroom", "showy", "shrank", "shrapnel", "shredder", "shredding", "shrewdly", "shriek", "shrill", "shrimp", "shrine", "shrink", "shrivel", "shrouded", "shrubbery", "shrubs", "shrug", "shrunk", "shucking", "shudder", "shuffle", "shuffling", "shun", "shush", "shut", "shy", "siamese", "siberian", "sibling", "siding", "sierra", "siesta", "sift", "sighing", "silenced", "silencer", "silent", "silica", "silicon", "silk", "silliness", "silly", "silo", "silt", "silver", "similarly", "simile", "simmering", "simple", "simplify", "simply", "sincere", "sincerity", "singer", "singing", "single", "singular", "sinister", "sinless", "sinner", "sinuous", "sip", "siren", "sister", "sitcom", "sitter", "sitting", "situated", "situation", "sixfold", "sixteen", "sixth", "sixties", "sixtieth", "sixtyfold", "sizable", "sizably", "size", "sizing", "sizzle", "sizzling", "skater", "skating", "skedaddle", "skeletal", "skeleton", "skeptic", "sketch", "skewed", "skewer", "skid", "skied", "skier", "skies", "skiing", "skilled", "skillet", "skillful", "skimmed", "skimmer", "skimming", "skimpily", "skincare", "skinhead", "skinless", "skinning", "skinny", "skintight", "skipper", "skipping", "skirmish", "skirt", "skittle", "skydiver", "skylight", "skyline", "skype", "skyrocket", "skyward", "slab", "slacked", "slacker", "slacking", "slackness", "slacks", "slain", "slam", "slander", "slang", "slapping", "slapstick", "slashed", "slashing", "slate", "slather", "slaw", "sled", "sleek", "sleep", "sleet", "sleeve", "slept", "sliceable", "sliced", "slicer", "slicing", "slick", "slider", "slideshow", "sliding", "slighted", "slighting", "slightly", "slimness", "slimy", "slinging", "slingshot", "slinky", "slip", "slit", "sliver", "slobbery", "slogan", "sloped", "sloping", "sloppily", "sloppy", "slot", "slouching", "slouchy", "sludge", "slug", "slum", "slurp", "slush", "sly", "small", "smartly", "smartness", "smasher", "smashing", "smashup", "smell", "smelting", "smile", "smilingly", "smirk", "smite", "smith", "smitten", "smock", "smog", "smoked", "smokeless", "smokiness", "smoking", "smoky", "smolder", "smooth", "smother", "smudge", "smudgy", "smuggler", "smuggling", "smugly", "smugness", "snack", "snagged", "snaking", "snap", "snare", "snarl", "snazzy", "sneak", "sneer", "sneeze", "sneezing", "snide", "sniff", "snippet", "snipping", "snitch", "snooper", "snooze", "snore", "snoring", "snorkel", "snort", "snout", "snowbird", "snowboard", "snowbound", "snowcap", "snowdrift", "snowdrop", "snowfall", "snowfield", "snowflake", "snowiness", "snowless", "snowman", "snowplow", "snowshoe", "snowstorm", "snowsuit", "snowy", "snub", "snuff", "snuggle", "snugly", "snugness", "speak", "spearfish", "spearhead", "spearman", "spearmint", "species", "specimen", "specked", "speckled", "specks", "spectacle", "spectator", "spectrum", "speculate", "speech", "speed", "spellbind", "speller", "spelling", "spendable", "spender", "spending", "spent", "spew", "sphere", "spherical", "sphinx", "spider", "spied", "spiffy", "spill", "spilt", "spinach", "spinal", "spindle", "spinner", "spinning", "spinout", "spinster", "spiny", "spiral", "spirited", "spiritism", "spirits", "spiritual", "splashed", "splashing", "splashy", "splatter", "spleen", "splendid", "splendor", "splice", "splicing", "splinter", "splotchy", "splurge", "spoilage", "spoiled", "spoiler", "spoiling", "spoils", "spoken", "spokesman", "sponge", "spongy", "sponsor", "spoof", "spookily", "spooky", "spool", "spoon", "spore", "sporting", "sports", "sporty", "spotless", "spotlight", "spotted", "spotter", "spotting", "spotty", "spousal", "spouse", "spout", "sprain", "sprang", "sprawl", "spray", "spree", "sprig", "spring", "sprinkled", "sprinkler", "sprint", "sprite", "sprout", "spruce", "sprung", "spry", "spud", "spur", "sputter", "spyglass", "squabble", "squad", "squall", "squander", "squash", "squatted", "squatter", "squatting", "squeak", "squealer", "squealing", "squeamish", "squeegee", "squeeze", "squeezing", "squid", "squiggle", "squiggly", "squint", "squire", "squirt", "squishier", "squishy", "stability", "stabilize", "stable", "stack", "stadium", "staff", "stage", "staging", "stagnant", "stagnate", "stainable", "stained", "staining", "stainless", "stalemate", "staleness", "stalling", "stallion", "stamina", "stammer", "stamp", "stand", "stank", "staple", "stapling", "starboard", "starch", "stardom", "stardust", "starfish", "stargazer", "staring", "stark", "starless", "starlet", "starlight", "starlit", "starring", "starry", "starship", "starter", "starting", "startle", "startling", "startup", "starved", "starving", "stash", "state", "static", "statistic", "statue", "stature", "status", "statute", "statutory", "staunch", "stays", "steadfast", "steadier", "steadily", "steadying", "steam", "steed", "steep", "steerable", "steering", "steersman", "stegosaur", "stellar", "stem", "stench", "stencil", "step", "stereo", "sterile", "sterility", "sterilize", "sterling", "sternness", "sternum", "stew", "stick", "stiffen", "stiffly", "stiffness", "stifle", "stifling", "stillness", "stilt", "stimulant", "stimulate", "stimuli", "stimulus", "stinger", "stingily", "stinging", "stingray", "stingy", "stinking", "stinky", "stipend", "stipulate", "stir", "stitch", "stock", "stoic", "stoke", "stole", "stomp", "stonewall", "stoneware", "stonework", "stoning", "stony", "stood", "stooge", "stool", "stoop", "stoplight", "stoppable", "stoppage", "stopped", "stopper", "stopping", "stopwatch", "storable", "storage", "storeroom", "storewide", "storm", "stout", "stove", "stowaway", "stowing", "straddle", "straggler", "strained", "strainer", "straining", "strangely", "stranger", "strangle", "strategic", "strategy", "stratus", "straw", "stray", "streak", "stream", "street", "strength", "strenuous", "strep", "stress", "stretch", "strewn", "stricken", "strict", "stride", "strife", "strike", "striking", "strive", "striving", "strobe", "strode", "stroller", "strongbox", "strongly", "strongman", "struck", "structure", "strudel", "struggle", "strum", "strung", "strut", "stubbed", "stubble", "stubbly", "stubborn", "stucco", "stuck", "student", "studied", "studio", "study", "stuffed", "stuffing", "stuffy", "stumble", "stumbling", "stump", "stung", "stunned", "stunner", "stunning", "stunt", "stupor", "sturdily", "sturdy", "styling", "stylishly", "stylist", "stylized", "stylus", "suave", "subarctic", "subatomic", "subdivide", "subdued", "subduing", "subfloor", "subgroup", "subheader", "subject", "sublease", "sublet", "sublevel", "sublime", "submarine", "submerge", "submersed", "submitter", "subpanel", "subpar", "subplot", "subprime", "subscribe", "subscript", "subsector", "subside", "subsiding", "subsidize", "subsidy", "subsoil", "subsonic", "substance", "subsystem", "subtext", "subtitle", "subtly", "subtotal", "subtract", "subtype", "suburb", "subway", "subwoofer", "subzero", "succulent", "such", "suction", "sudden", "sudoku", "suds", "sufferer", "suffering", "suffice", "suffix", "suffocate", "suffrage", "sugar", "suggest", "suing", "suitable", "suitably", "suitcase", "suitor", "sulfate", "sulfide", "sulfite", "sulfur", "sulk", "sullen", "sulphate", "sulphuric", "sultry", "superbowl", "superglue", "superhero", "superior", "superjet", "superman", "supermom", "supernova", "supervise", "supper", "supplier", "supply", "support", "supremacy", "supreme", "surcharge", "surely", "sureness", "surface", "surfacing", "surfboard", "surfer", "surgery", "surgical", "surging", "surname", "surpass", "surplus", "surprise", "surreal", "surrender", "surrogate", "surround", "survey", "survival", "survive", "surviving", "survivor", "sushi", "suspect", "suspend", "suspense", "sustained", "sustainer", "swab", "swaddling", "swagger", "swampland", "swan", "swapping", "swarm", "sway", "swear", "sweat", "sweep", "swell", "swept", "swerve", "swifter", "swiftly", "swiftness", "swimmable", "swimmer", "swimming", "swimsuit", "swimwear", "swinger", "swinging", "swipe", "swirl", "switch", "swivel", "swizzle", "swooned", "swoop", "swoosh", "swore", "sworn", "swung", "sycamore", "sympathy", "symphonic", "symphony", "symptom", "synapse", "syndrome", "synergy", "synopses", "synopsis", "synthesis", "synthetic", "syrup", "system", "t-shirt", "tabasco", "tabby", "tableful", "tables", "tablet", "tableware", "tabloid", "tackiness", "tacking", "tackle", "tackling", "tacky", "taco", "tactful", "tactical", "tactics", "tactile", "tactless", "tadpole", "taekwondo", "tag", "tainted", "take", "taking", "talcum", "talisman", "tall", "talon", "tamale", "tameness", "tamer", "tamper", "tank", "tanned", "tannery", "tanning", "tantrum", "tapeless", "tapered", "tapering", "tapestry", "tapioca", "tapping", "taps", "tarantula", "target", "tarmac", "tarnish", "tarot", "tartar", "tartly", "tartness", "task", "tassel", "taste", "tastiness", "tasting", "tasty", "tattered", "tattle", "tattling", "tattoo", "taunt", "tavern", "thank", "that", "thaw", "theater", "theatrics", "thee", "theft", "theme", "theology", "theorize", "thermal", "thermos", "thesaurus", "these", "thesis", "thespian", "thicken", "thicket", "thickness", "thieving", "thievish", "thigh", "thimble", "thing", "think", "thinly", "thinner", "thinness", "thinning", "thirstily", "thirsting", "thirsty", "thirteen", "thirty", "thong", "thorn", "those", "thousand", "thrash", "thread", "threaten", "threefold", "thrift", "thrill", "thrive", "thriving", "throat", "throbbing", "throng", "throttle", "throwaway", "throwback", "thrower", "throwing", "thud", "thumb", "thumping", "thursday", "thus", "thwarting", "thyself", "tiara", "tibia", "tidal", "tidbit", "tidiness", "tidings", "tidy", "tiger", "tighten", "tightly", "tightness", "tightrope", "tightwad", "tigress", "tile", "tiling", "till", "tilt", "timid", "timing", "timothy", "tinderbox", "tinfoil", "tingle", "tingling", "tingly", "tinker", "tinkling", "tinsel", "tinsmith", "tint", "tinwork", "tiny", "tipoff", "tipped", "tipper", "tipping", "tiptoeing", "tiptop", "tiring", "tissue", "trace", "tracing", "track", "traction", "tractor", "trade", "trading", "tradition", "traffic", "tragedy", "trailing", "trailside", "train", "traitor", "trance", "tranquil", "transfer", "transform", "translate", "transpire", "transport", "transpose", "trapdoor", "trapeze", "trapezoid", "trapped", "trapper", "trapping", "traps", "trash", "travel", "traverse", "travesty", "tray", "treachery", "treading", "treadmill", "treason", "treat", "treble", "tree", "trekker", "tremble", "trembling", "tremor", "trench", "trend", "trespass", "triage", "trial", "triangle", "tribesman", "tribunal", "tribune", "tributary", "tribute", "triceps", "trickery", "trickily", "tricking", "trickle", "trickster", "tricky", "tricolor", "tricycle", "trident", "tried", "trifle", "trifocals", "trillion", "trilogy", "trimester", "trimmer", "trimming", "trimness", "trinity", "trio", "tripod", "tripping", "triumph", "trivial", "trodden", "trolling", "trombone", "trophy", "tropical", "tropics", "trouble", "troubling", "trough", "trousers", "trout", "trowel", "truce", "truck", "truffle", "trump", "trunks", "trustable", "trustee", "trustful", "trusting", "trustless", "truth", "try", "tubby", "tubeless", "tubular", "tucking", "tuesday", "tug", "tuition", "tulip", "tumble", "tumbling", "tummy", "turban", "turbine", "turbofan", "turbojet", "turbulent", "turf", "turkey", "turmoil", "turret", "turtle", "tusk", "tutor", "tutu", "tux", "tweak", "tweed", "tweet", "tweezers", "twelve", "twentieth", "twenty", "twerp", "twice", "twiddle", "twiddling", "twig", "twilight", "twine", "twins", "twirl", "twistable", "twisted", "twister", "twisting", "twisty", "twitch", "twitter", "tycoon", "tying", "tyke", "udder", "ultimate", "ultimatum", "ultra", "umbilical", "umbrella", "umpire", "unabashed", "unable", "unadorned", "unadvised", "unafraid", "unaired", "unaligned", "unaltered", "unarmored", "unashamed", "unaudited", "unawake", "unaware", "unbaked", "unbalance", "unbeaten", "unbend", "unbent", "unbiased", "unbitten", "unblended", "unblessed", "unblock", "unbolted", "unbounded", "unboxed", "unbraided", "unbridle", "unbroken", "unbuckled", "unbundle", "unburned", "unbutton", "uncanny", "uncapped", "uncaring", "uncertain", "unchain", "unchanged", "uncharted", "uncheck", "uncivil", "unclad", "unclaimed", "unclamped", "unclasp", "uncle", "unclip", "uncloak", "unclog", "unclothed", "uncoated", "uncoiled", "uncolored", "uncombed", "uncommon", "uncooked", "uncork", "uncorrupt", "uncounted", "uncouple", "uncouth", "uncover", "uncross", "uncrown", "uncrushed", "uncured", "uncurious", "uncurled", "uncut", "undamaged", "undated", "undaunted", "undead", "undecided", "undefined", "underage", "underarm", "undercoat", "undercook", "undercut", "underdog", "underdone", "underfed", "underfeed", "underfoot", "undergo", "undergrad", "underhand", "underline", "underling", "undermine", "undermost", "underpaid", "underpass", "underpay", "underrate", "undertake", "undertone", "undertook", "undertow", "underuse", "underwear", "underwent", "underwire", "undesired", "undiluted", "undivided", "undocked", "undoing", "undone", "undrafted", "undress", "undrilled", "undusted", "undying", "unearned", "unearth", "unease", "uneasily", "uneasy", "uneatable", "uneaten", "unedited", "unelected", "unending", "unengaged", "unenvied", "unequal", "unethical", "uneven", "unexpired", "unexposed", "unfailing", "unfair", "unfasten", "unfazed", "unfeeling", "unfiled", "unfilled", "unfitted", "unfitting", "unfixable", "unfixed", "unflawed", "unfocused", "unfold", "unfounded", "unframed", "unfreeze", "unfrosted", "unfrozen", "unfunded", "unglazed", "ungloved", "unglue", "ungodly", "ungraded", "ungreased", "unguarded", "unguided", "unhappily", "unhappy", "unharmed", "unhealthy", "unheard", "unhearing", "unheated", "unhelpful", "unhidden", "unhinge", "unhitched", "unholy", "unhook", "unicorn", "unicycle", "unified", "unifier", "uniformed", "uniformly", "unify", "unimpeded", "uninjured", "uninstall", "uninsured", "uninvited", "union", "uniquely", "unisexual", "unison", "unissued", "unit", "universal", "universe", "unjustly", "unkempt", "unkind", "unknotted", "unknowing", "unknown", "unlaced", "unlatch", "unlawful", "unleaded", "unlearned", "unleash", "unless", "unleveled", "unlighted", "unlikable", "unlimited", "unlined", "unlinked", "unlisted", "unlit", "unlivable", "unloaded", "unloader", "unlocked", "unlocking", "unlovable", "unloved", "unlovely", "unloving", "unluckily", "unlucky", "unmade", "unmanaged", "unmanned", "unmapped", "unmarked", "unmasked", "unmasking", "unmatched", "unmindful", "unmixable", "unmixed", "unmolded", "unmoral", "unmovable", "unmoved", "unmoving", "unnamable", "unnamed", "unnatural", "unneeded", "unnerve", "unnerving", "unnoticed", "unopened", "unopposed", "unpack", "unpadded", "unpaid", "unpainted", "unpaired", "unpaved", "unpeeled", "unpicked", "unpiloted", "unpinned", "unplanned", "unplanted", "unpleased", "unpledged", "unplowed", "unplug", "unpopular", "unproven", "unquote", "unranked", "unrated", "unraveled", "unreached", "unread", "unreal", "unreeling", "unrefined", "unrelated", "unrented", "unrest", "unretired", "unrevised", "unrigged", "unripe", "unrivaled", "unroasted", "unrobed", "unroll", "unruffled", "unruly", "unrushed", "unsaddle", "unsafe", "unsaid", "unsalted", "unsaved", "unsavory", "unscathed", "unscented", "unscrew", "unsealed", "unseated", "unsecured", "unseeing", "unseemly", "unseen", "unselect", "unselfish", "unsent", "unsettled", "unshackle", "unshaken", "unshaved", "unshaven", "unsheathe", "unshipped", "unsightly", "unsigned", "unskilled", "unsliced", "unsmooth", "unsnap", "unsocial", "unsoiled", "unsold", "unsolved", "unsorted", "unspoiled", "unspoken", "unstable", "unstaffed", "unstamped", "unsteady", "unsterile", "unstirred", "unstitch", "unstopped", "unstuck", "unstuffed", "unstylish", "unsubtle", "unsubtly", "unsuited", "unsure", "unsworn", "untagged", "untainted", "untaken", "untamed", "untangled", "untapped", "untaxed", "unthawed", "unthread", "untidy", "untie", "until", "untimed", "untimely", "untitled", "untoasted", "untold", "untouched", "untracked", "untrained", "untreated", "untried", "untrimmed", "untrue", "untruth", "unturned", "untwist", "untying", "unusable", "unused", "unusual", "unvalued", "unvaried", "unvarying", "unveiled", "unveiling", "unvented", "unviable", "unvisited", "unvocal", "unwanted", "unwarlike", "unwary", "unwashed", "unwatched", "unweave", "unwed", "unwelcome", "unwell", "unwieldy", "unwilling", "unwind", "unwired", "unwitting", "unwomanly", "unworldly", "unworn", "unworried", "unworthy", "unwound", "unwoven", "unwrapped", "unwritten", "unzip", "upbeat", "upchuck", "upcoming", "upcountry", "update", "upfront", "upgrade", "upheaval", "upheld", "uphill", "uphold", "uplifted", "uplifting", "upload", "upon", "upper", "upright", "uprising", "upriver", "uproar", "uproot", "upscale", "upside", "upstage", "upstairs", "upstart", "upstate", "upstream", "upstroke", "upswing", "uptake", "uptight", "uptown", "upturned", "upward", "upwind", "uranium", "urban", "urchin", "urethane", "urgency", "urgent", "urging", "urologist", "urology", "usable", "usage", "useable", "used", "uselessly", "user", "usher", "usual", "utensil", "utility", "utilize", "utmost", "utopia", "utter", "vacancy", "vacant", "vacate", "vacation", "vagabond", "vagrancy", "vagrantly", "vaguely", "vagueness", "valiant", "valid", "valium", "valley", "valuables", "value", "vanilla", "vanish", "vanity", "vanquish", "vantage", "vaporizer", "variable", "variably", "varied", "variety", "various", "varmint", "varnish", "varsity", "varying", "vascular", "vaseline", "vastly", "vastness", "veal", "vegan", "veggie", "vehicular", "velcro", "velocity", "velvet", "vendetta", "vending", "vendor", "veneering", "vengeful", "venomous", "ventricle", "venture", "venue", "venus", "verbalize", "verbally", "verbose", "verdict", "verify", "verse", "version", "versus", "vertebrae", "vertical", "vertigo", "very", "vessel", "vest", "veteran", "veto", "vexingly", "viability", "viable", "vibes", "vice", "vicinity", "victory", "video", "viewable", "viewer", "viewing", "viewless", "viewpoint", "vigorous", "village", "villain", "vindicate", "vineyard", "vintage", "violate", "violation", "violator", "violet", "violin", "viper", "viral", "virtual", "virtuous", "virus", "visa", "viscosity", "viscous", "viselike", "visible", "visibly", "vision", "visiting", "visitor", "visor", "vista", "vitality", "vitalize", "vitally", "vitamins", "vivacious", "vividly", "vividness", "vixen", "vocalist", "vocalize", "vocally", "vocation", "voice", "voicing", "void", "volatile", "volley", "voltage", "volumes", "voter", "voting", "voucher", "vowed", "vowel", "voyage", "wackiness", "wad", "wafer", "waffle", "waged", "wager", "wages", "waggle", "wagon", "wake", "waking", "walk", "walmart", "walnut", "walrus", "waltz", "wand", "wannabe", "wanted", "wanting", "wasabi", "washable", "washbasin", "washboard", "washbowl", "washcloth", "washday", "washed", "washer", "washhouse", "washing", "washout", "washroom", "washstand", "washtub", "wasp", "wasting", "watch", "water", "waviness", "waving", "wavy", "whacking", "whacky", "wham", "wharf", "wheat", "whenever", "whiff", "whimsical", "whinny", "whiny", "whisking", "whoever", "whole", "whomever", "whoopee", "whooping", "whoops", "why", "wick", "widely", "widen", "widget", "widow", "width", "wieldable", "wielder", "wife", "wifi", "wikipedia", "wildcard", "wildcat", "wilder", "wildfire", "wildfowl", "wildland", "wildlife", "wildly", "wildness", "willed", "willfully", "willing", "willow", "willpower", "wilt", "wimp", "wince", "wincing", "wind", "wing", "winking", "winner", "winnings", "winter", "wipe", "wired", "wireless", "wiring", "wiry", "wisdom", "wise", "wish", "wisplike", "wispy", "wistful", "wizard", "wobble", "wobbling", "wobbly", "wok", "wolf", "wolverine", "womanhood", "womankind", "womanless", "womanlike", "womanly", "womb", "woof", "wooing", "wool", "woozy", "word", "work", "worried", "worrier", "worrisome", "worry", "worsening", "worshiper", "worst", "wound", "woven", "wow", "wrangle", "wrath", "wreath", "wreckage", "wrecker", "wrecking", "wrench", "wriggle", "wriggly", "wrinkle", "wrinkly", "wrist", "writing", "written", "wrongdoer", "wronged", "wrongful", "wrongly", "wrongness", "wrought", "xbox", "xerox", "yahoo", "yam", "yanking", "yapping", "yard", "yarn", "yeah", "yearbook", "yearling", "yearly", "yearning", "yeast", "yelling", "yelp", "yen", "yesterday", "yiddish", "yield", "yin", "yippee", "yo-yo", "yodel", "yoga", "yogurt", "yonder", "yoyo", "yummy", "zap", "zealous", "zebra", "zen", "zeppelin", "zero", "zestfully", "zesty", "zigzagged", "zipfile", "zipping", "zippy", "zips", "zit", "zodiac", "zombie", "zone", "zoning", "zookeeper", "zoologist", "zoology", "zoom"];
 Object.defineProperty(Ri, "__esModule", {
   value: !0
 });
-Ri.wordlist = void 0;
-Ri.wordlist = ["abacus", "abdomen", "abdominal", "abide", "abiding", "ability", "ablaze", "able", "abnormal", "abrasion", "abrasive", "abreast", "abridge", "abroad", "abruptly", "absence", "absentee", "absently", "absinthe", "absolute", "absolve", "abstain", "abstract", "absurd", "accent", "acclaim", "acclimate", "accompany", "account", "accuracy", "accurate", "accustom", "acetone", "achiness", "aching", "acid", "acorn", "acquaint", "acquire", "acre", "acrobat", "acronym", "acting", "action", "activate", "activator", "active", "activism", "activist", "activity", "actress", "acts", "acutely", "acuteness", "aeration", "aerobics", "aerosol", "aerospace", "afar", "affair", "affected", "affecting", "affection", "affidavit", "affiliate", "affirm", "affix", "afflicted", "affluent", "afford", "affront", "aflame", "afloat", "aflutter", "afoot", "afraid", "afterglow", "afterlife", "aftermath", "aftermost", "afternoon", "aged", "ageless", "agency", "agenda", "agent", "aggregate", "aghast", "agile", "agility", "aging", "agnostic", "agonize", "agonizing", "agony", "agreeable", "agreeably", "agreed", "agreeing", "agreement", "aground", "ahead", "ahoy", "aide", "aids", "aim", "ajar", "alabaster", "alarm", "albatross", "album", "alfalfa", "algebra", "algorithm", "alias", "alibi", "alienable", "alienate", "aliens", "alike", "alive", "alkaline", "alkalize", "almanac", "almighty", "almost", "aloe", "aloft", "aloha", "alone", "alongside", "aloof", "alphabet", "alright", "although", "altitude", "alto", "aluminum", "alumni", "always", "amaretto", "amaze", "amazingly", "amber", "ambiance", "ambiguity", "ambiguous", "ambition", "ambitious", "ambulance", "ambush", "amendable", "amendment", "amends", "amenity", "amiable", "amicably", "amid", "amigo", "amino", "amiss", "ammonia", "ammonium", "amnesty", "amniotic", "among", "amount", "amperage", "ample", "amplifier", "amplify", "amply", "amuck", "amulet", "amusable", "amused", "amusement", "amuser", "amusing", "anaconda", "anaerobic", "anagram", "anatomist", "anatomy", "anchor", "anchovy", "ancient", "android", "anemia", "anemic", "aneurism", "anew", "angelfish", "angelic", "anger", "angled", "angler", "angles", "angling", "angrily", "angriness", "anguished", "angular", "animal", "animate", "animating", "animation", "animator", "anime", "animosity", "ankle", "annex", "annotate", "announcer", "annoying", "annually", "annuity", "anointer", "another", "answering", "antacid", "antarctic", "anteater", "antelope", "antennae", "anthem", "anthill", "anthology", "antibody", "antics", "antidote", "antihero", "antiquely", "antiques", "antiquity", "antirust", "antitoxic", "antitrust", "antiviral", "antivirus", "antler", "antonym", "antsy", "anvil", "anybody", "anyhow", "anymore", "anyone", "anyplace", "anything", "anytime", "anyway", "anywhere", "aorta", "apache", "apostle", "appealing", "appear", "appease", "appeasing", "appendage", "appendix", "appetite", "appetizer", "applaud", "applause", "apple", "appliance", "applicant", "applied", "apply", "appointee", "appraisal", "appraiser", "apprehend", "approach", "approval", "approve", "apricot", "april", "apron", "aptitude", "aptly", "aqua", "aqueduct", "arbitrary", "arbitrate", "ardently", "area", "arena", "arguable", "arguably", "argue", "arise", "armadillo", "armband", "armchair", "armed", "armful", "armhole", "arming", "armless", "armoire", "armored", "armory", "armrest", "army", "aroma", "arose", "around", "arousal", "arrange", "array", "arrest", "arrival", "arrive", "arrogance", "arrogant", "arson", "art", "ascend", "ascension", "ascent", "ascertain", "ashamed", "ashen", "ashes", "ashy", "aside", "askew", "asleep", "asparagus", "aspect", "aspirate", "aspire", "aspirin", "astonish", "astound", "astride", "astrology", "astronaut", "astronomy", "astute", "atlantic", "atlas", "atom", "atonable", "atop", "atrium", "atrocious", "atrophy", "attach", "attain", "attempt", "attendant", "attendee", "attention", "attentive", "attest", "attic", "attire", "attitude", "attractor", "attribute", "atypical", "auction", "audacious", "audacity", "audible", "audibly", "audience", "audio", "audition", "augmented", "august", "authentic", "author", "autism", "autistic", "autograph", "automaker", "automated", "automatic", "autopilot", "available", "avalanche", "avatar", "avenge", "avenging", "avenue", "average", "aversion", "avert", "aviation", "aviator", "avid", "avoid", "await", "awaken", "award", "aware", "awhile", "awkward", "awning", "awoke", "awry", "axis", "babble", "babbling", "babied", "baboon", "backache", "backboard", "backboned", "backdrop", "backed", "backer", "backfield", "backfire", "backhand", "backing", "backlands", "backlash", "backless", "backlight", "backlit", "backlog", "backpack", "backpedal", "backrest", "backroom", "backshift", "backside", "backslid", "backspace", "backspin", "backstab", "backstage", "backtalk", "backtrack", "backup", "backward", "backwash", "backwater", "backyard", "bacon", "bacteria", "bacterium", "badass", "badge", "badland", "badly", "badness", "baffle", "baffling", "bagel", "bagful", "baggage", "bagged", "baggie", "bagginess", "bagging", "baggy", "bagpipe", "baguette", "baked", "bakery", "bakeshop", "baking", "balance", "balancing", "balcony", "balmy", "balsamic", "bamboo", "banana", "banish", "banister", "banjo", "bankable", "bankbook", "banked", "banker", "banking", "banknote", "bankroll", "banner", "bannister", "banshee", "banter", "barbecue", "barbed", "barbell", "barber", "barcode", "barge", "bargraph", "barista", "baritone", "barley", "barmaid", "barman", "barn", "barometer", "barrack", "barracuda", "barrel", "barrette", "barricade", "barrier", "barstool", "bartender", "barterer", "bash", "basically", "basics", "basil", "basin", "basis", "basket", "batboy", "batch", "bath", "baton", "bats", "battalion", "battered", "battering", "battery", "batting", "battle", "bauble", "bazooka", "blabber", "bladder", "blade", "blah", "blame", "blaming", "blanching", "blandness", "blank", "blaspheme", "blasphemy", "blast", "blatancy", "blatantly", "blazer", "blazing", "bleach", "bleak", "bleep", "blemish", "blend", "bless", "blighted", "blimp", "bling", "blinked", "blinker", "blinking", "blinks", "blip", "blissful", "blitz", "blizzard", "bloated", "bloating", "blob", "blog", "bloomers", "blooming", "blooper", "blot", "blouse", "blubber", "bluff", "bluish", "blunderer", "blunt", "blurb", "blurred", "blurry", "blurt", "blush", "blustery", "boaster", "boastful", "boasting", "boat", "bobbed", "bobbing", "bobble", "bobcat", "bobsled", "bobtail", "bodacious", "body", "bogged", "boggle", "bogus", "boil", "bok", "bolster", "bolt", "bonanza", "bonded", "bonding", "bondless", "boned", "bonehead", "boneless", "bonelike", "boney", "bonfire", "bonnet", "bonsai", "bonus", "bony", "boogeyman", "boogieman", "book", "boondocks", "booted", "booth", "bootie", "booting", "bootlace", "bootleg", "boots", "boozy", "borax", "boring", "borough", "borrower", "borrowing", "boss", "botanical", "botanist", "botany", "botch", "both", "bottle", "bottling", "bottom", "bounce", "bouncing", "bouncy", "bounding", "boundless", "bountiful", "bovine", "boxcar", "boxer", "boxing", "boxlike", "boxy", "breach", "breath", "breeches", "breeching", "breeder", "breeding", "breeze", "breezy", "brethren", "brewery", "brewing", "briar", "bribe", "brick", "bride", "bridged", "brigade", "bright", "brilliant", "brim", "bring", "brink", "brisket", "briskly", "briskness", "bristle", "brittle", "broadband", "broadcast", "broaden", "broadly", "broadness", "broadside", "broadways", "broiler", "broiling", "broken", "broker", "bronchial", "bronco", "bronze", "bronzing", "brook", "broom", "brought", "browbeat", "brownnose", "browse", "browsing", "bruising", "brunch", "brunette", "brunt", "brush", "brussels", "brute", "brutishly", "bubble", "bubbling", "bubbly", "buccaneer", "bucked", "bucket", "buckle", "buckshot", "buckskin", "bucktooth", "buckwheat", "buddhism", "buddhist", "budding", "buddy", "budget", "buffalo", "buffed", "buffer", "buffing", "buffoon", "buggy", "bulb", "bulge", "bulginess", "bulgur", "bulk", "bulldog", "bulldozer", "bullfight", "bullfrog", "bullhorn", "bullion", "bullish", "bullpen", "bullring", "bullseye", "bullwhip", "bully", "bunch", "bundle", "bungee", "bunion", "bunkbed", "bunkhouse", "bunkmate", "bunny", "bunt", "busboy", "bush", "busily", "busload", "bust", "busybody", "buzz", "cabana", "cabbage", "cabbie", "cabdriver", "cable", "caboose", "cache", "cackle", "cacti", "cactus", "caddie", "caddy", "cadet", "cadillac", "cadmium", "cage", "cahoots", "cake", "calamari", "calamity", "calcium", "calculate", "calculus", "caliber", "calibrate", "calm", "caloric", "calorie", "calzone", "camcorder", "cameo", "camera", "camisole", "camper", "campfire", "camping", "campsite", "campus", "canal", "canary", "cancel", "candied", "candle", "candy", "cane", "canine", "canister", "cannabis", "canned", "canning", "cannon", "cannot", "canola", "canon", "canopener", "canopy", "canteen", "canyon", "capable", "capably", "capacity", "cape", "capillary", "capital", "capitol", "capped", "capricorn", "capsize", "capsule", "caption", "captivate", "captive", "captivity", "capture", "caramel", "carat", "caravan", "carbon", "cardboard", "carded", "cardiac", "cardigan", "cardinal", "cardstock", "carefully", "caregiver", "careless", "caress", "caretaker", "cargo", "caring", "carless", "carload", "carmaker", "carnage", "carnation", "carnival", "carnivore", "carol", "carpenter", "carpentry", "carpool", "carport", "carried", "carrot", "carrousel", "carry", "cartel", "cartload", "carton", "cartoon", "cartridge", "cartwheel", "carve", "carving", "carwash", "cascade", "case", "cash", "casing", "casino", "casket", "cassette", "casually", "casualty", "catacomb", "catalog", "catalyst", "catalyze", "catapult", "cataract", "catatonic", "catcall", "catchable", "catcher", "catching", "catchy", "caterer", "catering", "catfight", "catfish", "cathedral", "cathouse", "catlike", "catnap", "catnip", "catsup", "cattail", "cattishly", "cattle", "catty", "catwalk", "caucasian", "caucus", "causal", "causation", "cause", "causing", "cauterize", "caution", "cautious", "cavalier", "cavalry", "caviar", "cavity", "cedar", "celery", "celestial", "celibacy", "celibate", "celtic", "cement", "census", "ceramics", "ceremony", "certainly", "certainty", "certified", "certify", "cesarean", "cesspool", "chafe", "chaffing", "chain", "chair", "chalice", "challenge", "chamber", "chamomile", "champion", "chance", "change", "channel", "chant", "chaos", "chaperone", "chaplain", "chapped", "chaps", "chapter", "character", "charbroil", "charcoal", "charger", "charging", "chariot", "charity", "charm", "charred", "charter", "charting", "chase", "chasing", "chaste", "chastise", "chastity", "chatroom", "chatter", "chatting", "chatty", "cheating", "cheddar", "cheek", "cheer", "cheese", "cheesy", "chef", "chemicals", "chemist", "chemo", "cherisher", "cherub", "chess", "chest", "chevron", "chevy", "chewable", "chewer", "chewing", "chewy", "chief", "chihuahua", "childcare", "childhood", "childish", "childless", "childlike", "chili", "chill", "chimp", "chip", "chirping", "chirpy", "chitchat", "chivalry", "chive", "chloride", "chlorine", "choice", "chokehold", "choking", "chomp", "chooser", "choosing", "choosy", "chop", "chosen", "chowder", "chowtime", "chrome", "chubby", "chuck", "chug", "chummy", "chump", "chunk", "churn", "chute", "cider", "cilantro", "cinch", "cinema", "cinnamon", "circle", "circling", "circular", "circulate", "circus", "citable", "citadel", "citation", "citizen", "citric", "citrus", "city", "civic", "civil", "clad", "claim", "clambake", "clammy", "clamor", "clamp", "clamshell", "clang", "clanking", "clapped", "clapper", "clapping", "clarify", "clarinet", "clarity", "clash", "clasp", "class", "clatter", "clause", "clavicle", "claw", "clay", "clean", "clear", "cleat", "cleaver", "cleft", "clench", "clergyman", "clerical", "clerk", "clever", "clicker", "client", "climate", "climatic", "cling", "clinic", "clinking", "clip", "clique", "cloak", "clobber", "clock", "clone", "cloning", "closable", "closure", "clothes", "clothing", "cloud", "clover", "clubbed", "clubbing", "clubhouse", "clump", "clumsily", "clumsy", "clunky", "clustered", "clutch", "clutter", "coach", "coagulant", "coastal", "coaster", "coasting", "coastland", "coastline", "coat", "coauthor", "cobalt", "cobbler", "cobweb", "cocoa", "coconut", "cod", "coeditor", "coerce", "coexist", "coffee", "cofounder", "cognition", "cognitive", "cogwheel", "coherence", "coherent", "cohesive", "coil", "coke", "cola", "cold", "coleslaw", "coliseum", "collage", "collapse", "collar", "collected", "collector", "collide", "collie", "collision", "colonial", "colonist", "colonize", "colony", "colossal", "colt", "coma", "come", "comfort", "comfy", "comic", "coming", "comma", "commence", "commend", "comment", "commerce", "commode", "commodity", "commodore", "common", "commotion", "commute", "commuting", "compacted", "compacter", "compactly", "compactor", "companion", "company", "compare", "compel", "compile", "comply", "component", "composed", "composer", "composite", "compost", "composure", "compound", "compress", "comprised", "computer", "computing", "comrade", "concave", "conceal", "conceded", "concept", "concerned", "concert", "conch", "concierge", "concise", "conclude", "concrete", "concur", "condense", "condiment", "condition", "condone", "conducive", "conductor", "conduit", "cone", "confess", "confetti", "confidant", "confident", "confider", "confiding", "configure", "confined", "confining", "confirm", "conflict", "conform", "confound", "confront", "confused", "confusing", "confusion", "congenial", "congested", "congrats", "congress", "conical", "conjoined", "conjure", "conjuror", "connected", "connector", "consensus", "consent", "console", "consoling", "consonant", "constable", "constant", "constrain", "constrict", "construct", "consult", "consumer", "consuming", "contact", "container", "contempt", "contend", "contented", "contently", "contents", "contest", "context", "contort", "contour", "contrite", "control", "contusion", "convene", "convent", "copartner", "cope", "copied", "copier", "copilot", "coping", "copious", "copper", "copy", "coral", "cork", "cornball", "cornbread", "corncob", "cornea", "corned", "corner", "cornfield", "cornflake", "cornhusk", "cornmeal", "cornstalk", "corny", "coronary", "coroner", "corporal", "corporate", "corral", "correct", "corridor", "corrode", "corroding", "corrosive", "corsage", "corset", "cortex", "cosigner", "cosmetics", "cosmic", "cosmos", "cosponsor", "cost", "cottage", "cotton", "couch", "cough", "could", "countable", "countdown", "counting", "countless", "country", "county", "courier", "covenant", "cover", "coveted", "coveting", "coyness", "cozily", "coziness", "cozy", "crabbing", "crabgrass", "crablike", "crabmeat", "cradle", "cradling", "crafter", "craftily", "craftsman", "craftwork", "crafty", "cramp", "cranberry", "crane", "cranial", "cranium", "crank", "crate", "crave", "craving", "crawfish", "crawlers", "crawling", "crayfish", "crayon", "crazed", "crazily", "craziness", "crazy", "creamed", "creamer", "creamlike", "crease", "creasing", "creatable", "create", "creation", "creative", "creature", "credible", "credibly", "credit", "creed", "creme", "creole", "crepe", "crept", "crescent", "crested", "cresting", "crestless", "crevice", "crewless", "crewman", "crewmate", "crib", "cricket", "cried", "crier", "crimp", "crimson", "cringe", "cringing", "crinkle", "crinkly", "crisped", "crisping", "crisply", "crispness", "crispy", "criteria", "critter", "croak", "crock", "crook", "croon", "crop", "cross", "crouch", "crouton", "crowbar", "crowd", "crown", "crucial", "crudely", "crudeness", "cruelly", "cruelness", "cruelty", "crumb", "crummiest", "crummy", "crumpet", "crumpled", "cruncher", "crunching", "crunchy", "crusader", "crushable", "crushed", "crusher", "crushing", "crust", "crux", "crying", "cryptic", "crystal", "cubbyhole", "cube", "cubical", "cubicle", "cucumber", "cuddle", "cuddly", "cufflink", "culinary", "culminate", "culpable", "culprit", "cultivate", "cultural", "culture", "cupbearer", "cupcake", "cupid", "cupped", "cupping", "curable", "curator", "curdle", "cure", "curfew", "curing", "curled", "curler", "curliness", "curling", "curly", "curry", "curse", "cursive", "cursor", "curtain", "curtly", "curtsy", "curvature", "curve", "curvy", "cushy", "cusp", "cussed", "custard", "custodian", "custody", "customary", "customer", "customize", "customs", "cut", "cycle", "cyclic", "cycling", "cyclist", "cylinder", "cymbal", "cytoplasm", "cytoplast", "dab", "dad", "daffodil", "dagger", "daily", "daintily", "dainty", "dairy", "daisy", "dallying", "dance", "dancing", "dandelion", "dander", "dandruff", "dandy", "danger", "dangle", "dangling", "daredevil", "dares", "daringly", "darkened", "darkening", "darkish", "darkness", "darkroom", "darling", "darn", "dart", "darwinism", "dash", "dastardly", "data", "datebook", "dating", "daughter", "daunting", "dawdler", "dawn", "daybed", "daybreak", "daycare", "daydream", "daylight", "daylong", "dayroom", "daytime", "dazzler", "dazzling", "deacon", "deafening", "deafness", "dealer", "dealing", "dealmaker", "dealt", "dean", "debatable", "debate", "debating", "debit", "debrief", "debtless", "debtor", "debug", "debunk", "decade", "decaf", "decal", "decathlon", "decay", "deceased", "deceit", "deceiver", "deceiving", "december", "decency", "decent", "deception", "deceptive", "decibel", "decidable", "decimal", "decimeter", "decipher", "deck", "declared", "decline", "decode", "decompose", "decorated", "decorator", "decoy", "decrease", "decree", "dedicate", "dedicator", "deduce", "deduct", "deed", "deem", "deepen", "deeply", "deepness", "deface", "defacing", "defame", "default", "defeat", "defection", "defective", "defendant", "defender", "defense", "defensive", "deferral", "deferred", "defiance", "defiant", "defile", "defiling", "define", "definite", "deflate", "deflation", "deflator", "deflected", "deflector", "defog", "deforest", "defraud", "defrost", "deftly", "defuse", "defy", "degraded", "degrading", "degrease", "degree", "dehydrate", "deity", "dejected", "delay", "delegate", "delegator", "delete", "deletion", "delicacy", "delicate", "delicious", "delighted", "delirious", "delirium", "deliverer", "delivery", "delouse", "delta", "deluge", "delusion", "deluxe", "demanding", "demeaning", "demeanor", "demise", "democracy", "democrat", "demote", "demotion", "demystify", "denatured", "deniable", "denial", "denim", "denote", "dense", "density", "dental", "dentist", "denture", "deny", "deodorant", "deodorize", "departed", "departure", "depict", "deplete", "depletion", "deplored", "deploy", "deport", "depose", "depraved", "depravity", "deprecate", "depress", "deprive", "depth", "deputize", "deputy", "derail", "deranged", "derby", "derived", "desecrate", "deserve", "deserving", "designate", "designed", "designer", "designing", "deskbound", "desktop", "deskwork", "desolate", "despair", "despise", "despite", "destiny", "destitute", "destruct", "detached", "detail", "detection", "detective", "detector", "detention", "detergent", "detest", "detonate", "detonator", "detoxify", "detract", "deuce", "devalue", "deviancy", "deviant", "deviate", "deviation", "deviator", "device", "devious", "devotedly", "devotee", "devotion", "devourer", "devouring", "devoutly", "dexterity", "dexterous", "diabetes", "diabetic", "diabolic", "diagnoses", "diagnosis", "diagram", "dial", "diameter", "diaper", "diaphragm", "diary", "dice", "dicing", "dictate", "dictation", "dictator", "difficult", "diffused", "diffuser", "diffusion", "diffusive", "dig", "dilation", "diligence", "diligent", "dill", "dilute", "dime", "diminish", "dimly", "dimmed", "dimmer", "dimness", "dimple", "diner", "dingbat", "dinghy", "dinginess", "dingo", "dingy", "dining", "dinner", "diocese", "dioxide", "diploma", "dipped", "dipper", "dipping", "directed", "direction", "directive", "directly", "directory", "direness", "dirtiness", "disabled", "disagree", "disallow", "disarm", "disarray", "disaster", "disband", "disbelief", "disburse", "discard", "discern", "discharge", "disclose", "discolor", "discount", "discourse", "discover", "discuss", "disdain", "disengage", "disfigure", "disgrace", "dish", "disinfect", "disjoin", "disk", "dislike", "disliking", "dislocate", "dislodge", "disloyal", "dismantle", "dismay", "dismiss", "dismount", "disobey", "disorder", "disown", "disparate", "disparity", "dispatch", "dispense", "dispersal", "dispersed", "disperser", "displace", "display", "displease", "disposal", "dispose", "disprove", "dispute", "disregard", "disrupt", "dissuade", "distance", "distant", "distaste", "distill", "distinct", "distort", "distract", "distress", "district", "distrust", "ditch", "ditto", "ditzy", "dividable", "divided", "dividend", "dividers", "dividing", "divinely", "diving", "divinity", "divisible", "divisibly", "division", "divisive", "divorcee", "dizziness", "dizzy", "doable", "docile", "dock", "doctrine", "document", "dodge", "dodgy", "doily", "doing", "dole", "dollar", "dollhouse", "dollop", "dolly", "dolphin", "domain", "domelike", "domestic", "dominion", "dominoes", "donated", "donation", "donator", "donor", "donut", "doodle", "doorbell", "doorframe", "doorknob", "doorman", "doormat", "doornail", "doorpost", "doorstep", "doorstop", "doorway", "doozy", "dork", "dormitory", "dorsal", "dosage", "dose", "dotted", "doubling", "douche", "dove", "down", "dowry", "doze", "drab", "dragging", "dragonfly", "dragonish", "dragster", "drainable", "drainage", "drained", "drainer", "drainpipe", "dramatic", "dramatize", "drank", "drapery", "drastic", "draw", "dreaded", "dreadful", "dreadlock", "dreamboat", "dreamily", "dreamland", "dreamless", "dreamlike", "dreamt", "dreamy", "drearily", "dreary", "drench", "dress", "drew", "dribble", "dried", "drier", "drift", "driller", "drilling", "drinkable", "drinking", "dripping", "drippy", "drivable", "driven", "driver", "driveway", "driving", "drizzle", "drizzly", "drone", "drool", "droop", "drop-down", "dropbox", "dropkick", "droplet", "dropout", "dropper", "drove", "drown", "drowsily", "drudge", "drum", "dry", "dubbed", "dubiously", "duchess", "duckbill", "ducking", "duckling", "ducktail", "ducky", "duct", "dude", "duffel", "dugout", "duh", "duke", "duller", "dullness", "duly", "dumping", "dumpling", "dumpster", "duo", "dupe", "duplex", "duplicate", "duplicity", "durable", "durably", "duration", "duress", "during", "dusk", "dust", "dutiful", "duty", "duvet", "dwarf", "dweeb", "dwelled", "dweller", "dwelling", "dwindle", "dwindling", "dynamic", "dynamite", "dynasty", "dyslexia", "dyslexic", "each", "eagle", "earache", "eardrum", "earflap", "earful", "earlobe", "early", "earmark", "earmuff", "earphone", "earpiece", "earplugs", "earring", "earshot", "earthen", "earthlike", "earthling", "earthly", "earthworm", "earthy", "earwig", "easeful", "easel", "easiest", "easily", "easiness", "easing", "eastbound", "eastcoast", "easter", "eastward", "eatable", "eaten", "eatery", "eating", "eats", "ebay", "ebony", "ebook", "ecard", "eccentric", "echo", "eclair", "eclipse", "ecologist", "ecology", "economic", "economist", "economy", "ecosphere", "ecosystem", "edge", "edginess", "edging", "edgy", "edition", "editor", "educated", "education", "educator", "eel", "effective", "effects", "efficient", "effort", "eggbeater", "egging", "eggnog", "eggplant", "eggshell", "egomaniac", "egotism", "egotistic", "either", "eject", "elaborate", "elastic", "elated", "elbow", "eldercare", "elderly", "eldest", "electable", "election", "elective", "elephant", "elevate", "elevating", "elevation", "elevator", "eleven", "elf", "eligible", "eligibly", "eliminate", "elite", "elitism", "elixir", "elk", "ellipse", "elliptic", "elm", "elongated", "elope", "eloquence", "eloquent", "elsewhere", "elude", "elusive", "elves", "email", "embargo", "embark", "embassy", "embattled", "embellish", "ember", "embezzle", "emblaze", "emblem", "embody", "embolism", "emboss", "embroider", "emcee", "emerald", "emergency", "emission", "emit", "emote", "emoticon", "emotion", "empathic", "empathy", "emperor", "emphases", "emphasis", "emphasize", "emphatic", "empirical", "employed", "employee", "employer", "emporium", "empower", "emptier", "emptiness", "empty", "emu", "enable", "enactment", "enamel", "enchanted", "enchilada", "encircle", "enclose", "enclosure", "encode", "encore", "encounter", "encourage", "encroach", "encrust", "encrypt", "endanger", "endeared", "endearing", "ended", "ending", "endless", "endnote", "endocrine", "endorphin", "endorse", "endowment", "endpoint", "endurable", "endurance", "enduring", "energetic", "energize", "energy", "enforced", "enforcer", "engaged", "engaging", "engine", "engorge", "engraved", "engraver", "engraving", "engross", "engulf", "enhance", "enigmatic", "enjoyable", "enjoyably", "enjoyer", "enjoying", "enjoyment", "enlarged", "enlarging", "enlighten", "enlisted", "enquirer", "enrage", "enrich", "enroll", "enslave", "ensnare", "ensure", "entail", "entangled", "entering", "entertain", "enticing", "entire", "entitle", "entity", "entomb", "entourage", "entrap", "entree", "entrench", "entrust", "entryway", "entwine", "enunciate", "envelope", "enviable", "enviably", "envious", "envision", "envoy", "envy", "enzyme", "epic", "epidemic", "epidermal", "epidermis", "epidural", "epilepsy", "epileptic", "epilogue", "epiphany", "episode", "equal", "equate", "equation", "equator", "equinox", "equipment", "equity", "equivocal", "eradicate", "erasable", "erased", "eraser", "erasure", "ergonomic", "errand", "errant", "erratic", "error", "erupt", "escalate", "escalator", "escapable", "escapade", "escapist", "escargot", "eskimo", "esophagus", "espionage", "espresso", "esquire", "essay", "essence", "essential", "establish", "estate", "esteemed", "estimate", "estimator", "estranged", "estrogen", "etching", "eternal", "eternity", "ethanol", "ether", "ethically", "ethics", "euphemism", "evacuate", "evacuee", "evade", "evaluate", "evaluator", "evaporate", "evasion", "evasive", "even", "everglade", "evergreen", "everybody", "everyday", "everyone", "evict", "evidence", "evident", "evil", "evoke", "evolution", "evolve", "exact", "exalted", "example", "excavate", "excavator", "exceeding", "exception", "excess", "exchange", "excitable", "exciting", "exclaim", "exclude", "excluding", "exclusion", "exclusive", "excretion", "excretory", "excursion", "excusable", "excusably", "excuse", "exemplary", "exemplify", "exemption", "exerciser", "exert", "exes", "exfoliate", "exhale", "exhaust", "exhume", "exile", "existing", "exit", "exodus", "exonerate", "exorcism", "exorcist", "expand", "expanse", "expansion", "expansive", "expectant", "expedited", "expediter", "expel", "expend", "expenses", "expensive", "expert", "expire", "expiring", "explain", "expletive", "explicit", "explode", "exploit", "explore", "exploring", "exponent", "exporter", "exposable", "expose", "exposure", "express", "expulsion", "exquisite", "extended", "extending", "extent", "extenuate", "exterior", "external", "extinct", "extortion", "extradite", "extras", "extrovert", "extrude", "extruding", "exuberant", "fable", "fabric", "fabulous", "facebook", "facecloth", "facedown", "faceless", "facelift", "faceplate", "faceted", "facial", "facility", "facing", "facsimile", "faction", "factoid", "factor", "factsheet", "factual", "faculty", "fade", "fading", "failing", "falcon", "fall", "false", "falsify", "fame", "familiar", "family", "famine", "famished", "fanatic", "fancied", "fanciness", "fancy", "fanfare", "fang", "fanning", "fantasize", "fantastic", "fantasy", "fascism", "fastball", "faster", "fasting", "fastness", "faucet", "favorable", "favorably", "favored", "favoring", "favorite", "fax", "feast", "federal", "fedora", "feeble", "feed", "feel", "feisty", "feline", "felt-tip", "feminine", "feminism", "feminist", "feminize", "femur", "fence", "fencing", "fender", "ferment", "fernlike", "ferocious", "ferocity", "ferret", "ferris", "ferry", "fervor", "fester", "festival", "festive", "festivity", "fetal", "fetch", "fever", "fiber", "fiction", "fiddle", "fiddling", "fidelity", "fidgeting", "fidgety", "fifteen", "fifth", "fiftieth", "fifty", "figment", "figure", "figurine", "filing", "filled", "filler", "filling", "film", "filter", "filth", "filtrate", "finale", "finalist", "finalize", "finally", "finance", "financial", "finch", "fineness", "finer", "finicky", "finished", "finisher", "finishing", "finite", "finless", "finlike", "fiscally", "fit", "five", "flaccid", "flagman", "flagpole", "flagship", "flagstick", "flagstone", "flail", "flakily", "flaky", "flame", "flammable", "flanked", "flanking", "flannels", "flap", "flaring", "flashback", "flashbulb", "flashcard", "flashily", "flashing", "flashy", "flask", "flatbed", "flatfoot", "flatly", "flatness", "flatten", "flattered", "flatterer", "flattery", "flattop", "flatware", "flatworm", "flavored", "flavorful", "flavoring", "flaxseed", "fled", "fleshed", "fleshy", "flick", "flier", "flight", "flinch", "fling", "flint", "flip", "flirt", "float", "flock", "flogging", "flop", "floral", "florist", "floss", "flounder", "flyable", "flyaway", "flyer", "flying", "flyover", "flypaper", "foam", "foe", "fog", "foil", "folic", "folk", "follicle", "follow", "fondling", "fondly", "fondness", "fondue", "font", "food", "fool", "footage", "football", "footbath", "footboard", "footer", "footgear", "foothill", "foothold", "footing", "footless", "footman", "footnote", "footpad", "footpath", "footprint", "footrest", "footsie", "footsore", "footwear", "footwork", "fossil", "foster", "founder", "founding", "fountain", "fox", "foyer", "fraction", "fracture", "fragile", "fragility", "fragment", "fragrance", "fragrant", "frail", "frame", "framing", "frantic", "fraternal", "frayed", "fraying", "frays", "freckled", "freckles", "freebase", "freebee", "freebie", "freedom", "freefall", "freehand", "freeing", "freeload", "freely", "freemason", "freeness", "freestyle", "freeware", "freeway", "freewill", "freezable", "freezing", "freight", "french", "frenzied", "frenzy", "frequency", "frequent", "fresh", "fretful", "fretted", "friction", "friday", "fridge", "fried", "friend", "frighten", "frightful", "frigidity", "frigidly", "frill", "fringe", "frisbee", "frisk", "fritter", "frivolous", "frolic", "from", "front", "frostbite", "frosted", "frostily", "frosting", "frostlike", "frosty", "froth", "frown", "frozen", "fructose", "frugality", "frugally", "fruit", "frustrate", "frying", "gab", "gaffe", "gag", "gainfully", "gaining", "gains", "gala", "gallantly", "galleria", "gallery", "galley", "gallon", "gallows", "gallstone", "galore", "galvanize", "gambling", "game", "gaming", "gamma", "gander", "gangly", "gangrene", "gangway", "gap", "garage", "garbage", "garden", "gargle", "garland", "garlic", "garment", "garnet", "garnish", "garter", "gas", "gatherer", "gathering", "gating", "gauging", "gauntlet", "gauze", "gave", "gawk", "gazing", "gear", "gecko", "geek", "geiger", "gem", "gender", "generic", "generous", "genetics", "genre", "gentile", "gentleman", "gently", "gents", "geography", "geologic", "geologist", "geology", "geometric", "geometry", "geranium", "gerbil", "geriatric", "germicide", "germinate", "germless", "germproof", "gestate", "gestation", "gesture", "getaway", "getting", "getup", "giant", "gibberish", "giblet", "giddily", "giddiness", "giddy", "gift", "gigabyte", "gigahertz", "gigantic", "giggle", "giggling", "giggly", "gigolo", "gilled", "gills", "gimmick", "girdle", "giveaway", "given", "giver", "giving", "gizmo", "gizzard", "glacial", "glacier", "glade", "gladiator", "gladly", "glamorous", "glamour", "glance", "glancing", "glandular", "glare", "glaring", "glass", "glaucoma", "glazing", "gleaming", "gleeful", "glider", "gliding", "glimmer", "glimpse", "glisten", "glitch", "glitter", "glitzy", "gloater", "gloating", "gloomily", "gloomy", "glorified", "glorifier", "glorify", "glorious", "glory", "gloss", "glove", "glowing", "glowworm", "glucose", "glue", "gluten", "glutinous", "glutton", "gnarly", "gnat", "goal", "goatskin", "goes", "goggles", "going", "goldfish", "goldmine", "goldsmith", "golf", "goliath", "gonad", "gondola", "gone", "gong", "good", "gooey", "goofball", "goofiness", "goofy", "google", "goon", "gopher", "gore", "gorged", "gorgeous", "gory", "gosling", "gossip", "gothic", "gotten", "gout", "gown", "grab", "graceful", "graceless", "gracious", "gradation", "graded", "grader", "gradient", "grading", "gradually", "graduate", "graffiti", "grafted", "grafting", "grain", "granddad", "grandkid", "grandly", "grandma", "grandpa", "grandson", "granite", "granny", "granola", "grant", "granular", "grape", "graph", "grapple", "grappling", "grasp", "grass", "gratified", "gratify", "grating", "gratitude", "gratuity", "gravel", "graveness", "graves", "graveyard", "gravitate", "gravity", "gravy", "gray", "grazing", "greasily", "greedily", "greedless", "greedy", "green", "greeter", "greeting", "grew", "greyhound", "grid", "grief", "grievance", "grieving", "grievous", "grill", "grimace", "grimacing", "grime", "griminess", "grimy", "grinch", "grinning", "grip", "gristle", "grit", "groggily", "groggy", "groin", "groom", "groove", "grooving", "groovy", "grope", "ground", "grouped", "grout", "grove", "grower", "growing", "growl", "grub", "grudge", "grudging", "grueling", "gruffly", "grumble", "grumbling", "grumbly", "grumpily", "grunge", "grunt", "guacamole", "guidable", "guidance", "guide", "guiding", "guileless", "guise", "gulf", "gullible", "gully", "gulp", "gumball", "gumdrop", "gumminess", "gumming", "gummy", "gurgle", "gurgling", "guru", "gush", "gusto", "gusty", "gutless", "guts", "gutter", "guy", "guzzler", "gyration", "habitable", "habitant", "habitat", "habitual", "hacked", "hacker", "hacking", "hacksaw", "had", "haggler", "haiku", "half", "halogen", "halt", "halved", "halves", "hamburger", "hamlet", "hammock", "hamper", "hamster", "hamstring", "handbag", "handball", "handbook", "handbrake", "handcart", "handclap", "handclasp", "handcraft", "handcuff", "handed", "handful", "handgrip", "handgun", "handheld", "handiness", "handiwork", "handlebar", "handled", "handler", "handling", "handmade", "handoff", "handpick", "handprint", "handrail", "handsaw", "handset", "handsfree", "handshake", "handstand", "handwash", "handwork", "handwoven", "handwrite", "handyman", "hangnail", "hangout", "hangover", "hangup", "hankering", "hankie", "hanky", "haphazard", "happening", "happier", "happiest", "happily", "happiness", "happy", "harbor", "hardcopy", "hardcore", "hardcover", "harddisk", "hardened", "hardener", "hardening", "hardhat", "hardhead", "hardiness", "hardly", "hardness", "hardship", "hardware", "hardwired", "hardwood", "hardy", "harmful", "harmless", "harmonica", "harmonics", "harmonize", "harmony", "harness", "harpist", "harsh", "harvest", "hash", "hassle", "haste", "hastily", "hastiness", "hasty", "hatbox", "hatchback", "hatchery", "hatchet", "hatching", "hatchling", "hate", "hatless", "hatred", "haunt", "haven", "hazard", "hazelnut", "hazily", "haziness", "hazing", "hazy", "headache", "headband", "headboard", "headcount", "headdress", "headed", "header", "headfirst", "headgear", "heading", "headlamp", "headless", "headlock", "headphone", "headpiece", "headrest", "headroom", "headscarf", "headset", "headsman", "headstand", "headstone", "headway", "headwear", "heap", "heat", "heave", "heavily", "heaviness", "heaving", "hedge", "hedging", "heftiness", "hefty", "helium", "helmet", "helper", "helpful", "helping", "helpless", "helpline", "hemlock", "hemstitch", "hence", "henchman", "henna", "herald", "herbal", "herbicide", "herbs", "heritage", "hermit", "heroics", "heroism", "herring", "herself", "hertz", "hesitancy", "hesitant", "hesitate", "hexagon", "hexagram", "hubcap", "huddle", "huddling", "huff", "hug", "hula", "hulk", "hull", "human", "humble", "humbling", "humbly", "humid", "humiliate", "humility", "humming", "hummus", "humongous", "humorist", "humorless", "humorous", "humpback", "humped", "humvee", "hunchback", "hundredth", "hunger", "hungrily", "hungry", "hunk", "hunter", "hunting", "huntress", "huntsman", "hurdle", "hurled", "hurler", "hurling", "hurray", "hurricane", "hurried", "hurry", "hurt", "husband", "hush", "husked", "huskiness", "hut", "hybrid", "hydrant", "hydrated", "hydration", "hydrogen", "hydroxide", "hyperlink", "hypertext", "hyphen", "hypnoses", "hypnosis", "hypnotic", "hypnotism", "hypnotist", "hypnotize", "hypocrisy", "hypocrite", "ibuprofen", "ice", "iciness", "icing", "icky", "icon", "icy", "idealism", "idealist", "idealize", "ideally", "idealness", "identical", "identify", "identity", "ideology", "idiocy", "idiom", "idly", "igloo", "ignition", "ignore", "iguana", "illicitly", "illusion", "illusive", "image", "imaginary", "imagines", "imaging", "imbecile", "imitate", "imitation", "immature", "immerse", "immersion", "imminent", "immobile", "immodest", "immorally", "immortal", "immovable", "immovably", "immunity", "immunize", "impaired", "impale", "impart", "impatient", "impeach", "impeding", "impending", "imperfect", "imperial", "impish", "implant", "implement", "implicate", "implicit", "implode", "implosion", "implosive", "imply", "impolite", "important", "importer", "impose", "imposing", "impotence", "impotency", "impotent", "impound", "imprecise", "imprint", "imprison", "impromptu", "improper", "improve", "improving", "improvise", "imprudent", "impulse", "impulsive", "impure", "impurity", "iodine", "iodize", "ion", "ipad", "iphone", "ipod", "irate", "irk", "iron", "irregular", "irrigate", "irritable", "irritably", "irritant", "irritate", "islamic", "islamist", "isolated", "isolating", "isolation", "isotope", "issue", "issuing", "italicize", "italics", "item", "itinerary", "itunes", "ivory", "ivy", "jab", "jackal", "jacket", "jackknife", "jackpot", "jailbird", "jailbreak", "jailer", "jailhouse", "jalapeno", "jam", "janitor", "january", "jargon", "jarring", "jasmine", "jaundice", "jaunt", "java", "jawed", "jawless", "jawline", "jaws", "jaybird", "jaywalker", "jazz", "jeep", "jeeringly", "jellied", "jelly", "jersey", "jester", "jet", "jiffy", "jigsaw", "jimmy", "jingle", "jingling", "jinx", "jitters", "jittery", "job", "jockey", "jockstrap", "jogger", "jogging", "john", "joining", "jokester", "jokingly", "jolliness", "jolly", "jolt", "jot", "jovial", "joyfully", "joylessly", "joyous", "joyride", "joystick", "jubilance", "jubilant", "judge", "judgingly", "judicial", "judiciary", "judo", "juggle", "juggling", "jugular", "juice", "juiciness", "juicy", "jujitsu", "jukebox", "july", "jumble", "jumbo", "jump", "junction", "juncture", "june", "junior", "juniper", "junkie", "junkman", "junkyard", "jurist", "juror", "jury", "justice", "justifier", "justify", "justly", "justness", "juvenile", "kabob", "kangaroo", "karaoke", "karate", "karma", "kebab", "keenly", "keenness", "keep", "keg", "kelp", "kennel", "kept", "kerchief", "kerosene", "kettle", "kick", "kiln", "kilobyte", "kilogram", "kilometer", "kilowatt", "kilt", "kimono", "kindle", "kindling", "kindly", "kindness", "kindred", "kinetic", "kinfolk", "king", "kinship", "kinsman", "kinswoman", "kissable", "kisser", "kissing", "kitchen", "kite", "kitten", "kitty", "kiwi", "kleenex", "knapsack", "knee", "knelt", "knickers", "knoll", "koala", "kooky", "kosher", "krypton", "kudos", "kung", "labored", "laborer", "laboring", "laborious", "labrador", "ladder", "ladies", "ladle", "ladybug", "ladylike", "lagged", "lagging", "lagoon", "lair", "lake", "lance", "landed", "landfall", "landfill", "landing", "landlady", "landless", "landline", "landlord", "landmark", "landmass", "landmine", "landowner", "landscape", "landside", "landslide", "language", "lankiness", "lanky", "lantern", "lapdog", "lapel", "lapped", "lapping", "laptop", "lard", "large", "lark", "lash", "lasso", "last", "latch", "late", "lather", "latitude", "latrine", "latter", "latticed", "launch", "launder", "laundry", "laurel", "lavender", "lavish", "laxative", "lazily", "laziness", "lazy", "lecturer", "left", "legacy", "legal", "legend", "legged", "leggings", "legible", "legibly", "legislate", "lego", "legroom", "legume", "legwarmer", "legwork", "lemon", "lend", "length", "lens", "lent", "leotard", "lesser", "letdown", "lethargic", "lethargy", "letter", "lettuce", "level", "leverage", "levers", "levitate", "levitator", "liability", "liable", "liberty", "librarian", "library", "licking", "licorice", "lid", "life", "lifter", "lifting", "liftoff", "ligament", "likely", "likeness", "likewise", "liking", "lilac", "lilly", "lily", "limb", "limeade", "limelight", "limes", "limit", "limping", "limpness", "line", "lingo", "linguini", "linguist", "lining", "linked", "linoleum", "linseed", "lint", "lion", "lip", "liquefy", "liqueur", "liquid", "lisp", "list", "litigate", "litigator", "litmus", "litter", "little", "livable", "lived", "lively", "liver", "livestock", "lividly", "living", "lizard", "lubricant", "lubricate", "lucid", "luckily", "luckiness", "luckless", "lucrative", "ludicrous", "lugged", "lukewarm", "lullaby", "lumber", "luminance", "luminous", "lumpiness", "lumping", "lumpish", "lunacy", "lunar", "lunchbox", "luncheon", "lunchroom", "lunchtime", "lung", "lurch", "lure", "luridness", "lurk", "lushly", "lushness", "luster", "lustfully", "lustily", "lustiness", "lustrous", "lusty", "luxurious", "luxury", "lying", "lyrically", "lyricism", "lyricist", "lyrics", "macarena", "macaroni", "macaw", "mace", "machine", "machinist", "magazine", "magenta", "maggot", "magical", "magician", "magma", "magnesium", "magnetic", "magnetism", "magnetize", "magnifier", "magnify", "magnitude", "magnolia", "mahogany", "maimed", "majestic", "majesty", "majorette", "majority", "makeover", "maker", "makeshift", "making", "malformed", "malt", "mama", "mammal", "mammary", "mammogram", "manager", "managing", "manatee", "mandarin", "mandate", "mandatory", "mandolin", "manger", "mangle", "mango", "mangy", "manhandle", "manhole", "manhood", "manhunt", "manicotti", "manicure", "manifesto", "manila", "mankind", "manlike", "manliness", "manly", "manmade", "manned", "mannish", "manor", "manpower", "mantis", "mantra", "manual", "many", "map", "marathon", "marauding", "marbled", "marbles", "marbling", "march", "mardi", "margarine", "margarita", "margin", "marigold", "marina", "marine", "marital", "maritime", "marlin", "marmalade", "maroon", "married", "marrow", "marry", "marshland", "marshy", "marsupial", "marvelous", "marxism", "mascot", "masculine", "mashed", "mashing", "massager", "masses", "massive", "mastiff", "matador", "matchbook", "matchbox", "matcher", "matching", "matchless", "material", "maternal", "maternity", "math", "mating", "matriarch", "matrimony", "matrix", "matron", "matted", "matter", "maturely", "maturing", "maturity", "mauve", "maverick", "maximize", "maximum", "maybe", "mayday", "mayflower", "moaner", "moaning", "mobile", "mobility", "mobilize", "mobster", "mocha", "mocker", "mockup", "modified", "modify", "modular", "modulator", "module", "moisten", "moistness", "moisture", "molar", "molasses", "mold", "molecular", "molecule", "molehill", "mollusk", "mom", "monastery", "monday", "monetary", "monetize", "moneybags", "moneyless", "moneywise", "mongoose", "mongrel", "monitor", "monkhood", "monogamy", "monogram", "monologue", "monopoly", "monorail", "monotone", "monotype", "monoxide", "monsieur", "monsoon", "monstrous", "monthly", "monument", "moocher", "moodiness", "moody", "mooing", "moonbeam", "mooned", "moonlight", "moonlike", "moonlit", "moonrise", "moonscape", "moonshine", "moonstone", "moonwalk", "mop", "morale", "morality", "morally", "morbidity", "morbidly", "morphine", "morphing", "morse", "mortality", "mortally", "mortician", "mortified", "mortify", "mortuary", "mosaic", "mossy", "most", "mothball", "mothproof", "motion", "motivate", "motivator", "motive", "motocross", "motor", "motto", "mountable", "mountain", "mounted", "mounting", "mourner", "mournful", "mouse", "mousiness", "moustache", "mousy", "mouth", "movable", "move", "movie", "moving", "mower", "mowing", "much", "muck", "mud", "mug", "mulberry", "mulch", "mule", "mulled", "mullets", "multiple", "multiply", "multitask", "multitude", "mumble", "mumbling", "mumbo", "mummified", "mummify", "mummy", "mumps", "munchkin", "mundane", "municipal", "muppet", "mural", "murkiness", "murky", "murmuring", "muscular", "museum", "mushily", "mushiness", "mushroom", "mushy", "music", "musket", "muskiness", "musky", "mustang", "mustard", "muster", "mustiness", "musty", "mutable", "mutate", "mutation", "mute", "mutilated", "mutilator", "mutiny", "mutt", "mutual", "muzzle", "myself", "myspace", "mystified", "mystify", "myth", "nacho", "nag", "nail", "name", "naming", "nanny", "nanometer", "nape", "napkin", "napped", "napping", "nappy", "narrow", "nastily", "nastiness", "national", "native", "nativity", "natural", "nature", "naturist", "nautical", "navigate", "navigator", "navy", "nearby", "nearest", "nearly", "nearness", "neatly", "neatness", "nebula", "nebulizer", "nectar", "negate", "negation", "negative", "neglector", "negligee", "negligent", "negotiate", "nemeses", "nemesis", "neon", "nephew", "nerd", "nervous", "nervy", "nest", "net", "neurology", "neuron", "neurosis", "neurotic", "neuter", "neutron", "never", "next", "nibble", "nickname", "nicotine", "niece", "nifty", "nimble", "nimbly", "nineteen", "ninetieth", "ninja", "nintendo", "ninth", "nuclear", "nuclei", "nucleus", "nugget", "nullify", "number", "numbing", "numbly", "numbness", "numeral", "numerate", "numerator", "numeric", "numerous", "nuptials", "nursery", "nursing", "nurture", "nutcase", "nutlike", "nutmeg", "nutrient", "nutshell", "nuttiness", "nutty", "nuzzle", "nylon", "oaf", "oak", "oasis", "oat", "obedience", "obedient", "obituary", "object", "obligate", "obliged", "oblivion", "oblivious", "oblong", "obnoxious", "oboe", "obscure", "obscurity", "observant", "observer", "observing", "obsessed", "obsession", "obsessive", "obsolete", "obstacle", "obstinate", "obstruct", "obtain", "obtrusive", "obtuse", "obvious", "occultist", "occupancy", "occupant", "occupier", "occupy", "ocean", "ocelot", "octagon", "octane", "october", "octopus", "ogle", "oil", "oink", "ointment", "okay", "old", "olive", "olympics", "omega", "omen", "ominous", "omission", "omit", "omnivore", "onboard", "oncoming", "ongoing", "onion", "online", "onlooker", "only", "onscreen", "onset", "onshore", "onslaught", "onstage", "onto", "onward", "onyx", "oops", "ooze", "oozy", "opacity", "opal", "open", "operable", "operate", "operating", "operation", "operative", "operator", "opium", "opossum", "opponent", "oppose", "opposing", "opposite", "oppressed", "oppressor", "opt", "opulently", "osmosis", "other", "otter", "ouch", "ought", "ounce", "outage", "outback", "outbid", "outboard", "outbound", "outbreak", "outburst", "outcast", "outclass", "outcome", "outdated", "outdoors", "outer", "outfield", "outfit", "outflank", "outgoing", "outgrow", "outhouse", "outing", "outlast", "outlet", "outline", "outlook", "outlying", "outmatch", "outmost", "outnumber", "outplayed", "outpost", "outpour", "output", "outrage", "outrank", "outreach", "outright", "outscore", "outsell", "outshine", "outshoot", "outsider", "outskirts", "outsmart", "outsource", "outspoken", "outtakes", "outthink", "outward", "outweigh", "outwit", "oval", "ovary", "oven", "overact", "overall", "overarch", "overbid", "overbill", "overbite", "overblown", "overboard", "overbook", "overbuilt", "overcast", "overcoat", "overcome", "overcook", "overcrowd", "overdraft", "overdrawn", "overdress", "overdrive", "overdue", "overeager", "overeater", "overexert", "overfed", "overfeed", "overfill", "overflow", "overfull", "overgrown", "overhand", "overhang", "overhaul", "overhead", "overhear", "overheat", "overhung", "overjoyed", "overkill", "overlabor", "overlaid", "overlap", "overlay", "overload", "overlook", "overlord", "overlying", "overnight", "overpass", "overpay", "overplant", "overplay", "overpower", "overprice", "overrate", "overreach", "overreact", "override", "overripe", "overrule", "overrun", "overshoot", "overshot", "oversight", "oversized", "oversleep", "oversold", "overspend", "overstate", "overstay", "overstep", "overstock", "overstuff", "oversweet", "overtake", "overthrow", "overtime", "overtly", "overtone", "overture", "overturn", "overuse", "overvalue", "overview", "overwrite", "owl", "oxford", "oxidant", "oxidation", "oxidize", "oxidizing", "oxygen", "oxymoron", "oyster", "ozone", "paced", "pacemaker", "pacific", "pacifier", "pacifism", "pacifist", "pacify", "padded", "padding", "paddle", "paddling", "padlock", "pagan", "pager", "paging", "pajamas", "palace", "palatable", "palm", "palpable", "palpitate", "paltry", "pampered", "pamperer", "pampers", "pamphlet", "panama", "pancake", "pancreas", "panda", "pandemic", "pang", "panhandle", "panic", "panning", "panorama", "panoramic", "panther", "pantomime", "pantry", "pants", "pantyhose", "paparazzi", "papaya", "paper", "paprika", "papyrus", "parabola", "parachute", "parade", "paradox", "paragraph", "parakeet", "paralegal", "paralyses", "paralysis", "paralyze", "paramedic", "parameter", "paramount", "parasail", "parasite", "parasitic", "parcel", "parched", "parchment", "pardon", "parish", "parka", "parking", "parkway", "parlor", "parmesan", "parole", "parrot", "parsley", "parsnip", "partake", "parted", "parting", "partition", "partly", "partner", "partridge", "party", "passable", "passably", "passage", "passcode", "passenger", "passerby", "passing", "passion", "passive", "passivism", "passover", "passport", "password", "pasta", "pasted", "pastel", "pastime", "pastor", "pastrami", "pasture", "pasty", "patchwork", "patchy", "paternal", "paternity", "path", "patience", "patient", "patio", "patriarch", "patriot", "patrol", "patronage", "patronize", "pauper", "pavement", "paver", "pavestone", "pavilion", "paving", "pawing", "payable", "payback", "paycheck", "payday", "payee", "payer", "paying", "payment", "payphone", "payroll", "pebble", "pebbly", "pecan", "pectin", "peculiar", "peddling", "pediatric", "pedicure", "pedigree", "pedometer", "pegboard", "pelican", "pellet", "pelt", "pelvis", "penalize", "penalty", "pencil", "pendant", "pending", "penholder", "penknife", "pennant", "penniless", "penny", "penpal", "pension", "pentagon", "pentagram", "pep", "perceive", "percent", "perch", "percolate", "perennial", "perfected", "perfectly", "perfume", "periscope", "perish", "perjurer", "perjury", "perkiness", "perky", "perm", "peroxide", "perpetual", "perplexed", "persecute", "persevere", "persuaded", "persuader", "pesky", "peso", "pessimism", "pessimist", "pester", "pesticide", "petal", "petite", "petition", "petri", "petroleum", "petted", "petticoat", "pettiness", "petty", "petunia", "phantom", "phobia", "phoenix", "phonebook", "phoney", "phonics", "phoniness", "phony", "phosphate", "photo", "phrase", "phrasing", "placard", "placate", "placidly", "plank", "planner", "plant", "plasma", "plaster", "plastic", "plated", "platform", "plating", "platinum", "platonic", "platter", "platypus", "plausible", "plausibly", "playable", "playback", "player", "playful", "playgroup", "playhouse", "playing", "playlist", "playmaker", "playmate", "playoff", "playpen", "playroom", "playset", "plaything", "playtime", "plaza", "pleading", "pleat", "pledge", "plentiful", "plenty", "plethora", "plexiglas", "pliable", "plod", "plop", "plot", "plow", "ploy", "pluck", "plug", "plunder", "plunging", "plural", "plus", "plutonium", "plywood", "poach", "pod", "poem", "poet", "pogo", "pointed", "pointer", "pointing", "pointless", "pointy", "poise", "poison", "poker", "poking", "polar", "police", "policy", "polio", "polish", "politely", "polka", "polo", "polyester", "polygon", "polygraph", "polymer", "poncho", "pond", "pony", "popcorn", "pope", "poplar", "popper", "poppy", "popsicle", "populace", "popular", "populate", "porcupine", "pork", "porous", "porridge", "portable", "portal", "portfolio", "porthole", "portion", "portly", "portside", "poser", "posh", "posing", "possible", "possibly", "possum", "postage", "postal", "postbox", "postcard", "posted", "poster", "posting", "postnasal", "posture", "postwar", "pouch", "pounce", "pouncing", "pound", "pouring", "pout", "powdered", "powdering", "powdery", "power", "powwow", "pox", "praising", "prance", "prancing", "pranker", "prankish", "prankster", "prayer", "praying", "preacher", "preaching", "preachy", "preamble", "precinct", "precise", "precision", "precook", "precut", "predator", "predefine", "predict", "preface", "prefix", "preflight", "preformed", "pregame", "pregnancy", "pregnant", "preheated", "prelaunch", "prelaw", "prelude", "premiere", "premises", "premium", "prenatal", "preoccupy", "preorder", "prepaid", "prepay", "preplan", "preppy", "preschool", "prescribe", "preseason", "preset", "preshow", "president", "presoak", "press", "presume", "presuming", "preteen", "pretended", "pretender", "pretense", "pretext", "pretty", "pretzel", "prevail", "prevalent", "prevent", "preview", "previous", "prewar", "prewashed", "prideful", "pried", "primal", "primarily", "primary", "primate", "primer", "primp", "princess", "print", "prior", "prism", "prison", "prissy", "pristine", "privacy", "private", "privatize", "prize", "proactive", "probable", "probably", "probation", "probe", "probing", "probiotic", "problem", "procedure", "process", "proclaim", "procreate", "procurer", "prodigal", "prodigy", "produce", "product", "profane", "profanity", "professed", "professor", "profile", "profound", "profusely", "progeny", "prognosis", "program", "progress", "projector", "prologue", "prolonged", "promenade", "prominent", "promoter", "promotion", "prompter", "promptly", "prone", "prong", "pronounce", "pronto", "proofing", "proofread", "proofs", "propeller", "properly", "property", "proponent", "proposal", "propose", "props", "prorate", "protector", "protegee", "proton", "prototype", "protozoan", "protract", "protrude", "proud", "provable", "proved", "proven", "provided", "provider", "providing", "province", "proving", "provoke", "provoking", "provolone", "prowess", "prowler", "prowling", "proximity", "proxy", "prozac", "prude", "prudishly", "prune", "pruning", "pry", "psychic", "public", "publisher", "pucker", "pueblo", "pug", "pull", "pulmonary", "pulp", "pulsate", "pulse", "pulverize", "puma", "pumice", "pummel", "punch", "punctual", "punctuate", "punctured", "pungent", "punisher", "punk", "pupil", "puppet", "puppy", "purchase", "pureblood", "purebred", "purely", "pureness", "purgatory", "purge", "purging", "purifier", "purify", "purist", "puritan", "purity", "purple", "purplish", "purposely", "purr", "purse", "pursuable", "pursuant", "pursuit", "purveyor", "pushcart", "pushchair", "pusher", "pushiness", "pushing", "pushover", "pushpin", "pushup", "pushy", "putdown", "putt", "puzzle", "puzzling", "pyramid", "pyromania", "python", "quack", "quadrant", "quail", "quaintly", "quake", "quaking", "qualified", "qualifier", "qualify", "quality", "qualm", "quantum", "quarrel", "quarry", "quartered", "quarterly", "quarters", "quartet", "quench", "query", "quicken", "quickly", "quickness", "quicksand", "quickstep", "quiet", "quill", "quilt", "quintet", "quintuple", "quirk", "quit", "quiver", "quizzical", "quotable", "quotation", "quote", "rabid", "race", "racing", "racism", "rack", "racoon", "radar", "radial", "radiance", "radiantly", "radiated", "radiation", "radiator", "radio", "radish", "raffle", "raft", "rage", "ragged", "raging", "ragweed", "raider", "railcar", "railing", "railroad", "railway", "raisin", "rake", "raking", "rally", "ramble", "rambling", "ramp", "ramrod", "ranch", "rancidity", "random", "ranged", "ranger", "ranging", "ranked", "ranking", "ransack", "ranting", "rants", "rare", "rarity", "rascal", "rash", "rasping", "ravage", "raven", "ravine", "raving", "ravioli", "ravishing", "reabsorb", "reach", "reacquire", "reaction", "reactive", "reactor", "reaffirm", "ream", "reanalyze", "reappear", "reapply", "reappoint", "reapprove", "rearrange", "rearview", "reason", "reassign", "reassure", "reattach", "reawake", "rebalance", "rebate", "rebel", "rebirth", "reboot", "reborn", "rebound", "rebuff", "rebuild", "rebuilt", "reburial", "rebuttal", "recall", "recant", "recapture", "recast", "recede", "recent", "recess", "recharger", "recipient", "recital", "recite", "reckless", "reclaim", "recliner", "reclining", "recluse", "reclusive", "recognize", "recoil", "recollect", "recolor", "reconcile", "reconfirm", "reconvene", "recopy", "record", "recount", "recoup", "recovery", "recreate", "rectal", "rectangle", "rectified", "rectify", "recycled", "recycler", "recycling", "reemerge", "reenact", "reenter", "reentry", "reexamine", "referable", "referee", "reference", "refill", "refinance", "refined", "refinery", "refining", "refinish", "reflected", "reflector", "reflex", "reflux", "refocus", "refold", "reforest", "reformat", "reformed", "reformer", "reformist", "refract", "refrain", "refreeze", "refresh", "refried", "refueling", "refund", "refurbish", "refurnish", "refusal", "refuse", "refusing", "refutable", "refute", "regain", "regalia", "regally", "reggae", "regime", "region", "register", "registrar", "registry", "regress", "regretful", "regroup", "regular", "regulate", "regulator", "rehab", "reheat", "rehire", "rehydrate", "reimburse", "reissue", "reiterate", "rejoice", "rejoicing", "rejoin", "rekindle", "relapse", "relapsing", "relatable", "related", "relation", "relative", "relax", "relay", "relearn", "release", "relenting", "reliable", "reliably", "reliance", "reliant", "relic", "relieve", "relieving", "relight", "relish", "relive", "reload", "relocate", "relock", "reluctant", "rely", "remake", "remark", "remarry", "rematch", "remedial", "remedy", "remember", "reminder", "remindful", "remission", "remix", "remnant", "remodeler", "remold", "remorse", "remote", "removable", "removal", "removed", "remover", "removing", "rename", "renderer", "rendering", "rendition", "renegade", "renewable", "renewably", "renewal", "renewed", "renounce", "renovate", "renovator", "rentable", "rental", "rented", "renter", "reoccupy", "reoccur", "reopen", "reorder", "repackage", "repacking", "repaint", "repair", "repave", "repaying", "repayment", "repeal", "repeated", "repeater", "repent", "rephrase", "replace", "replay", "replica", "reply", "reporter", "repose", "repossess", "repost", "repressed", "reprimand", "reprint", "reprise", "reproach", "reprocess", "reproduce", "reprogram", "reps", "reptile", "reptilian", "repugnant", "repulsion", "repulsive", "repurpose", "reputable", "reputably", "request", "require", "requisite", "reroute", "rerun", "resale", "resample", "rescuer", "reseal", "research", "reselect", "reseller", "resemble", "resend", "resent", "reset", "reshape", "reshoot", "reshuffle", "residence", "residency", "resident", "residual", "residue", "resigned", "resilient", "resistant", "resisting", "resize", "resolute", "resolved", "resonant", "resonate", "resort", "resource", "respect", "resubmit", "result", "resume", "resupply", "resurface", "resurrect", "retail", "retainer", "retaining", "retake", "retaliate", "retention", "rethink", "retinal", "retired", "retiree", "retiring", "retold", "retool", "retorted", "retouch", "retrace", "retract", "retrain", "retread", "retreat", "retrial", "retrieval", "retriever", "retry", "return", "retying", "retype", "reunion", "reunite", "reusable", "reuse", "reveal", "reveler", "revenge", "revenue", "reverb", "revered", "reverence", "reverend", "reversal", "reverse", "reversing", "reversion", "revert", "revisable", "revise", "revision", "revisit", "revivable", "revival", "reviver", "reviving", "revocable", "revoke", "revolt", "revolver", "revolving", "reward", "rewash", "rewind", "rewire", "reword", "rework", "rewrap", "rewrite", "rhyme", "ribbon", "ribcage", "rice", "riches", "richly", "richness", "rickety", "ricotta", "riddance", "ridden", "ride", "riding", "rifling", "rift", "rigging", "rigid", "rigor", "rimless", "rimmed", "rind", "rink", "rinse", "rinsing", "riot", "ripcord", "ripeness", "ripening", "ripping", "ripple", "rippling", "riptide", "rise", "rising", "risk", "risotto", "ritalin", "ritzy", "rival", "riverbank", "riverbed", "riverboat", "riverside", "riveter", "riveting", "roamer", "roaming", "roast", "robbing", "robe", "robin", "robotics", "robust", "rockband", "rocker", "rocket", "rockfish", "rockiness", "rocking", "rocklike", "rockslide", "rockstar", "rocky", "rogue", "roman", "romp", "rope", "roping", "roster", "rosy", "rotten", "rotting", "rotunda", "roulette", "rounding", "roundish", "roundness", "roundup", "roundworm", "routine", "routing", "rover", "roving", "royal", "rubbed", "rubber", "rubbing", "rubble", "rubdown", "ruby", "ruckus", "rudder", "rug", "ruined", "rule", "rumble", "rumbling", "rummage", "rumor", "runaround", "rundown", "runner", "running", "runny", "runt", "runway", "rupture", "rural", "ruse", "rush", "rust", "rut", "sabbath", "sabotage", "sacrament", "sacred", "sacrifice", "sadden", "saddlebag", "saddled", "saddling", "sadly", "sadness", "safari", "safeguard", "safehouse", "safely", "safeness", "saffron", "saga", "sage", "sagging", "saggy", "said", "saint", "sake", "salad", "salami", "salaried", "salary", "saline", "salon", "saloon", "salsa", "salt", "salutary", "salute", "salvage", "salvaging", "salvation", "same", "sample", "sampling", "sanction", "sanctity", "sanctuary", "sandal", "sandbag", "sandbank", "sandbar", "sandblast", "sandbox", "sanded", "sandfish", "sanding", "sandlot", "sandpaper", "sandpit", "sandstone", "sandstorm", "sandworm", "sandy", "sanitary", "sanitizer", "sank", "santa", "sapling", "sappiness", "sappy", "sarcasm", "sarcastic", "sardine", "sash", "sasquatch", "sassy", "satchel", "satiable", "satin", "satirical", "satisfied", "satisfy", "saturate", "saturday", "sauciness", "saucy", "sauna", "savage", "savanna", "saved", "savings", "savior", "savor", "saxophone", "say", "scabbed", "scabby", "scalded", "scalding", "scale", "scaling", "scallion", "scallop", "scalping", "scam", "scandal", "scanner", "scanning", "scant", "scapegoat", "scarce", "scarcity", "scarecrow", "scared", "scarf", "scarily", "scariness", "scarring", "scary", "scavenger", "scenic", "schedule", "schematic", "scheme", "scheming", "schilling", "schnapps", "scholar", "science", "scientist", "scion", "scoff", "scolding", "scone", "scoop", "scooter", "scope", "scorch", "scorebook", "scorecard", "scored", "scoreless", "scorer", "scoring", "scorn", "scorpion", "scotch", "scoundrel", "scoured", "scouring", "scouting", "scouts", "scowling", "scrabble", "scraggly", "scrambled", "scrambler", "scrap", "scratch", "scrawny", "screen", "scribble", "scribe", "scribing", "scrimmage", "script", "scroll", "scrooge", "scrounger", "scrubbed", "scrubber", "scruffy", "scrunch", "scrutiny", "scuba", "scuff", "sculptor", "sculpture", "scurvy", "scuttle", "secluded", "secluding", "seclusion", "second", "secrecy", "secret", "sectional", "sector", "secular", "securely", "security", "sedan", "sedate", "sedation", "sedative", "sediment", "seduce", "seducing", "segment", "seismic", "seizing", "seldom", "selected", "selection", "selective", "selector", "self", "seltzer", "semantic", "semester", "semicolon", "semifinal", "seminar", "semisoft", "semisweet", "senate", "senator", "send", "senior", "senorita", "sensation", "sensitive", "sensitize", "sensually", "sensuous", "sepia", "september", "septic", "septum", "sequel", "sequence", "sequester", "series", "sermon", "serotonin", "serpent", "serrated", "serve", "service", "serving", "sesame", "sessions", "setback", "setting", "settle", "settling", "setup", "sevenfold", "seventeen", "seventh", "seventy", "severity", "shabby", "shack", "shaded", "shadily", "shadiness", "shading", "shadow", "shady", "shaft", "shakable", "shakily", "shakiness", "shaking", "shaky", "shale", "shallot", "shallow", "shame", "shampoo", "shamrock", "shank", "shanty", "shape", "shaping", "share", "sharpener", "sharper", "sharpie", "sharply", "sharpness", "shawl", "sheath", "shed", "sheep", "sheet", "shelf", "shell", "shelter", "shelve", "shelving", "sherry", "shield", "shifter", "shifting", "shiftless", "shifty", "shimmer", "shimmy", "shindig", "shine", "shingle", "shininess", "shining", "shiny", "ship", "shirt", "shivering", "shock", "shone", "shoplift", "shopper", "shopping", "shoptalk", "shore", "shortage", "shortcake", "shortcut", "shorten", "shorter", "shorthand", "shortlist", "shortly", "shortness", "shorts", "shortwave", "shorty", "shout", "shove", "showbiz", "showcase", "showdown", "shower", "showgirl", "showing", "showman", "shown", "showoff", "showpiece", "showplace", "showroom", "showy", "shrank", "shrapnel", "shredder", "shredding", "shrewdly", "shriek", "shrill", "shrimp", "shrine", "shrink", "shrivel", "shrouded", "shrubbery", "shrubs", "shrug", "shrunk", "shucking", "shudder", "shuffle", "shuffling", "shun", "shush", "shut", "shy", "siamese", "siberian", "sibling", "siding", "sierra", "siesta", "sift", "sighing", "silenced", "silencer", "silent", "silica", "silicon", "silk", "silliness", "silly", "silo", "silt", "silver", "similarly", "simile", "simmering", "simple", "simplify", "simply", "sincere", "sincerity", "singer", "singing", "single", "singular", "sinister", "sinless", "sinner", "sinuous", "sip", "siren", "sister", "sitcom", "sitter", "sitting", "situated", "situation", "sixfold", "sixteen", "sixth", "sixties", "sixtieth", "sixtyfold", "sizable", "sizably", "size", "sizing", "sizzle", "sizzling", "skater", "skating", "skedaddle", "skeletal", "skeleton", "skeptic", "sketch", "skewed", "skewer", "skid", "skied", "skier", "skies", "skiing", "skilled", "skillet", "skillful", "skimmed", "skimmer", "skimming", "skimpily", "skincare", "skinhead", "skinless", "skinning", "skinny", "skintight", "skipper", "skipping", "skirmish", "skirt", "skittle", "skydiver", "skylight", "skyline", "skype", "skyrocket", "skyward", "slab", "slacked", "slacker", "slacking", "slackness", "slacks", "slain", "slam", "slander", "slang", "slapping", "slapstick", "slashed", "slashing", "slate", "slather", "slaw", "sled", "sleek", "sleep", "sleet", "sleeve", "slept", "sliceable", "sliced", "slicer", "slicing", "slick", "slider", "slideshow", "sliding", "slighted", "slighting", "slightly", "slimness", "slimy", "slinging", "slingshot", "slinky", "slip", "slit", "sliver", "slobbery", "slogan", "sloped", "sloping", "sloppily", "sloppy", "slot", "slouching", "slouchy", "sludge", "slug", "slum", "slurp", "slush", "sly", "small", "smartly", "smartness", "smasher", "smashing", "smashup", "smell", "smelting", "smile", "smilingly", "smirk", "smite", "smith", "smitten", "smock", "smog", "smoked", "smokeless", "smokiness", "smoking", "smoky", "smolder", "smooth", "smother", "smudge", "smudgy", "smuggler", "smuggling", "smugly", "smugness", "snack", "snagged", "snaking", "snap", "snare", "snarl", "snazzy", "sneak", "sneer", "sneeze", "sneezing", "snide", "sniff", "snippet", "snipping", "snitch", "snooper", "snooze", "snore", "snoring", "snorkel", "snort", "snout", "snowbird", "snowboard", "snowbound", "snowcap", "snowdrift", "snowdrop", "snowfall", "snowfield", "snowflake", "snowiness", "snowless", "snowman", "snowplow", "snowshoe", "snowstorm", "snowsuit", "snowy", "snub", "snuff", "snuggle", "snugly", "snugness", "speak", "spearfish", "spearhead", "spearman", "spearmint", "species", "specimen", "specked", "speckled", "specks", "spectacle", "spectator", "spectrum", "speculate", "speech", "speed", "spellbind", "speller", "spelling", "spendable", "spender", "spending", "spent", "spew", "sphere", "spherical", "sphinx", "spider", "spied", "spiffy", "spill", "spilt", "spinach", "spinal", "spindle", "spinner", "spinning", "spinout", "spinster", "spiny", "spiral", "spirited", "spiritism", "spirits", "spiritual", "splashed", "splashing", "splashy", "splatter", "spleen", "splendid", "splendor", "splice", "splicing", "splinter", "splotchy", "splurge", "spoilage", "spoiled", "spoiler", "spoiling", "spoils", "spoken", "spokesman", "sponge", "spongy", "sponsor", "spoof", "spookily", "spooky", "spool", "spoon", "spore", "sporting", "sports", "sporty", "spotless", "spotlight", "spotted", "spotter", "spotting", "spotty", "spousal", "spouse", "spout", "sprain", "sprang", "sprawl", "spray", "spree", "sprig", "spring", "sprinkled", "sprinkler", "sprint", "sprite", "sprout", "spruce", "sprung", "spry", "spud", "spur", "sputter", "spyglass", "squabble", "squad", "squall", "squander", "squash", "squatted", "squatter", "squatting", "squeak", "squealer", "squealing", "squeamish", "squeegee", "squeeze", "squeezing", "squid", "squiggle", "squiggly", "squint", "squire", "squirt", "squishier", "squishy", "stability", "stabilize", "stable", "stack", "stadium", "staff", "stage", "staging", "stagnant", "stagnate", "stainable", "stained", "staining", "stainless", "stalemate", "staleness", "stalling", "stallion", "stamina", "stammer", "stamp", "stand", "stank", "staple", "stapling", "starboard", "starch", "stardom", "stardust", "starfish", "stargazer", "staring", "stark", "starless", "starlet", "starlight", "starlit", "starring", "starry", "starship", "starter", "starting", "startle", "startling", "startup", "starved", "starving", "stash", "state", "static", "statistic", "statue", "stature", "status", "statute", "statutory", "staunch", "stays", "steadfast", "steadier", "steadily", "steadying", "steam", "steed", "steep", "steerable", "steering", "steersman", "stegosaur", "stellar", "stem", "stench", "stencil", "step", "stereo", "sterile", "sterility", "sterilize", "sterling", "sternness", "sternum", "stew", "stick", "stiffen", "stiffly", "stiffness", "stifle", "stifling", "stillness", "stilt", "stimulant", "stimulate", "stimuli", "stimulus", "stinger", "stingily", "stinging", "stingray", "stingy", "stinking", "stinky", "stipend", "stipulate", "stir", "stitch", "stock", "stoic", "stoke", "stole", "stomp", "stonewall", "stoneware", "stonework", "stoning", "stony", "stood", "stooge", "stool", "stoop", "stoplight", "stoppable", "stoppage", "stopped", "stopper", "stopping", "stopwatch", "storable", "storage", "storeroom", "storewide", "storm", "stout", "stove", "stowaway", "stowing", "straddle", "straggler", "strained", "strainer", "straining", "strangely", "stranger", "strangle", "strategic", "strategy", "stratus", "straw", "stray", "streak", "stream", "street", "strength", "strenuous", "strep", "stress", "stretch", "strewn", "stricken", "strict", "stride", "strife", "strike", "striking", "strive", "striving", "strobe", "strode", "stroller", "strongbox", "strongly", "strongman", "struck", "structure", "strudel", "struggle", "strum", "strung", "strut", "stubbed", "stubble", "stubbly", "stubborn", "stucco", "stuck", "student", "studied", "studio", "study", "stuffed", "stuffing", "stuffy", "stumble", "stumbling", "stump", "stung", "stunned", "stunner", "stunning", "stunt", "stupor", "sturdily", "sturdy", "styling", "stylishly", "stylist", "stylized", "stylus", "suave", "subarctic", "subatomic", "subdivide", "subdued", "subduing", "subfloor", "subgroup", "subheader", "subject", "sublease", "sublet", "sublevel", "sublime", "submarine", "submerge", "submersed", "submitter", "subpanel", "subpar", "subplot", "subprime", "subscribe", "subscript", "subsector", "subside", "subsiding", "subsidize", "subsidy", "subsoil", "subsonic", "substance", "subsystem", "subtext", "subtitle", "subtly", "subtotal", "subtract", "subtype", "suburb", "subway", "subwoofer", "subzero", "succulent", "such", "suction", "sudden", "sudoku", "suds", "sufferer", "suffering", "suffice", "suffix", "suffocate", "suffrage", "sugar", "suggest", "suing", "suitable", "suitably", "suitcase", "suitor", "sulfate", "sulfide", "sulfite", "sulfur", "sulk", "sullen", "sulphate", "sulphuric", "sultry", "superbowl", "superglue", "superhero", "superior", "superjet", "superman", "supermom", "supernova", "supervise", "supper", "supplier", "supply", "support", "supremacy", "supreme", "surcharge", "surely", "sureness", "surface", "surfacing", "surfboard", "surfer", "surgery", "surgical", "surging", "surname", "surpass", "surplus", "surprise", "surreal", "surrender", "surrogate", "surround", "survey", "survival", "survive", "surviving", "survivor", "sushi", "suspect", "suspend", "suspense", "sustained", "sustainer", "swab", "swaddling", "swagger", "swampland", "swan", "swapping", "swarm", "sway", "swear", "sweat", "sweep", "swell", "swept", "swerve", "swifter", "swiftly", "swiftness", "swimmable", "swimmer", "swimming", "swimsuit", "swimwear", "swinger", "swinging", "swipe", "swirl", "switch", "swivel", "swizzle", "swooned", "swoop", "swoosh", "swore", "sworn", "swung", "sycamore", "sympathy", "symphonic", "symphony", "symptom", "synapse", "syndrome", "synergy", "synopses", "synopsis", "synthesis", "synthetic", "syrup", "system", "t-shirt", "tabasco", "tabby", "tableful", "tables", "tablet", "tableware", "tabloid", "tackiness", "tacking", "tackle", "tackling", "tacky", "taco", "tactful", "tactical", "tactics", "tactile", "tactless", "tadpole", "taekwondo", "tag", "tainted", "take", "taking", "talcum", "talisman", "tall", "talon", "tamale", "tameness", "tamer", "tamper", "tank", "tanned", "tannery", "tanning", "tantrum", "tapeless", "tapered", "tapering", "tapestry", "tapioca", "tapping", "taps", "tarantula", "target", "tarmac", "tarnish", "tarot", "tartar", "tartly", "tartness", "task", "tassel", "taste", "tastiness", "tasting", "tasty", "tattered", "tattle", "tattling", "tattoo", "taunt", "tavern", "thank", "that", "thaw", "theater", "theatrics", "thee", "theft", "theme", "theology", "theorize", "thermal", "thermos", "thesaurus", "these", "thesis", "thespian", "thicken", "thicket", "thickness", "thieving", "thievish", "thigh", "thimble", "thing", "think", "thinly", "thinner", "thinness", "thinning", "thirstily", "thirsting", "thirsty", "thirteen", "thirty", "thong", "thorn", "those", "thousand", "thrash", "thread", "threaten", "threefold", "thrift", "thrill", "thrive", "thriving", "throat", "throbbing", "throng", "throttle", "throwaway", "throwback", "thrower", "throwing", "thud", "thumb", "thumping", "thursday", "thus", "thwarting", "thyself", "tiara", "tibia", "tidal", "tidbit", "tidiness", "tidings", "tidy", "tiger", "tighten", "tightly", "tightness", "tightrope", "tightwad", "tigress", "tile", "tiling", "till", "tilt", "timid", "timing", "timothy", "tinderbox", "tinfoil", "tingle", "tingling", "tingly", "tinker", "tinkling", "tinsel", "tinsmith", "tint", "tinwork", "tiny", "tipoff", "tipped", "tipper", "tipping", "tiptoeing", "tiptop", "tiring", "tissue", "trace", "tracing", "track", "traction", "tractor", "trade", "trading", "tradition", "traffic", "tragedy", "trailing", "trailside", "train", "traitor", "trance", "tranquil", "transfer", "transform", "translate", "transpire", "transport", "transpose", "trapdoor", "trapeze", "trapezoid", "trapped", "trapper", "trapping", "traps", "trash", "travel", "traverse", "travesty", "tray", "treachery", "treading", "treadmill", "treason", "treat", "treble", "tree", "trekker", "tremble", "trembling", "tremor", "trench", "trend", "trespass", "triage", "trial", "triangle", "tribesman", "tribunal", "tribune", "tributary", "tribute", "triceps", "trickery", "trickily", "tricking", "trickle", "trickster", "tricky", "tricolor", "tricycle", "trident", "tried", "trifle", "trifocals", "trillion", "trilogy", "trimester", "trimmer", "trimming", "trimness", "trinity", "trio", "tripod", "tripping", "triumph", "trivial", "trodden", "trolling", "trombone", "trophy", "tropical", "tropics", "trouble", "troubling", "trough", "trousers", "trout", "trowel", "truce", "truck", "truffle", "trump", "trunks", "trustable", "trustee", "trustful", "trusting", "trustless", "truth", "try", "tubby", "tubeless", "tubular", "tucking", "tuesday", "tug", "tuition", "tulip", "tumble", "tumbling", "tummy", "turban", "turbine", "turbofan", "turbojet", "turbulent", "turf", "turkey", "turmoil", "turret", "turtle", "tusk", "tutor", "tutu", "tux", "tweak", "tweed", "tweet", "tweezers", "twelve", "twentieth", "twenty", "twerp", "twice", "twiddle", "twiddling", "twig", "twilight", "twine", "twins", "twirl", "twistable", "twisted", "twister", "twisting", "twisty", "twitch", "twitter", "tycoon", "tying", "tyke", "udder", "ultimate", "ultimatum", "ultra", "umbilical", "umbrella", "umpire", "unabashed", "unable", "unadorned", "unadvised", "unafraid", "unaired", "unaligned", "unaltered", "unarmored", "unashamed", "unaudited", "unawake", "unaware", "unbaked", "unbalance", "unbeaten", "unbend", "unbent", "unbiased", "unbitten", "unblended", "unblessed", "unblock", "unbolted", "unbounded", "unboxed", "unbraided", "unbridle", "unbroken", "unbuckled", "unbundle", "unburned", "unbutton", "uncanny", "uncapped", "uncaring", "uncertain", "unchain", "unchanged", "uncharted", "uncheck", "uncivil", "unclad", "unclaimed", "unclamped", "unclasp", "uncle", "unclip", "uncloak", "unclog", "unclothed", "uncoated", "uncoiled", "uncolored", "uncombed", "uncommon", "uncooked", "uncork", "uncorrupt", "uncounted", "uncouple", "uncouth", "uncover", "uncross", "uncrown", "uncrushed", "uncured", "uncurious", "uncurled", "uncut", "undamaged", "undated", "undaunted", "undead", "undecided", "undefined", "underage", "underarm", "undercoat", "undercook", "undercut", "underdog", "underdone", "underfed", "underfeed", "underfoot", "undergo", "undergrad", "underhand", "underline", "underling", "undermine", "undermost", "underpaid", "underpass", "underpay", "underrate", "undertake", "undertone", "undertook", "undertow", "underuse", "underwear", "underwent", "underwire", "undesired", "undiluted", "undivided", "undocked", "undoing", "undone", "undrafted", "undress", "undrilled", "undusted", "undying", "unearned", "unearth", "unease", "uneasily", "uneasy", "uneatable", "uneaten", "unedited", "unelected", "unending", "unengaged", "unenvied", "unequal", "unethical", "uneven", "unexpired", "unexposed", "unfailing", "unfair", "unfasten", "unfazed", "unfeeling", "unfiled", "unfilled", "unfitted", "unfitting", "unfixable", "unfixed", "unflawed", "unfocused", "unfold", "unfounded", "unframed", "unfreeze", "unfrosted", "unfrozen", "unfunded", "unglazed", "ungloved", "unglue", "ungodly", "ungraded", "ungreased", "unguarded", "unguided", "unhappily", "unhappy", "unharmed", "unhealthy", "unheard", "unhearing", "unheated", "unhelpful", "unhidden", "unhinge", "unhitched", "unholy", "unhook", "unicorn", "unicycle", "unified", "unifier", "uniformed", "uniformly", "unify", "unimpeded", "uninjured", "uninstall", "uninsured", "uninvited", "union", "uniquely", "unisexual", "unison", "unissued", "unit", "universal", "universe", "unjustly", "unkempt", "unkind", "unknotted", "unknowing", "unknown", "unlaced", "unlatch", "unlawful", "unleaded", "unlearned", "unleash", "unless", "unleveled", "unlighted", "unlikable", "unlimited", "unlined", "unlinked", "unlisted", "unlit", "unlivable", "unloaded", "unloader", "unlocked", "unlocking", "unlovable", "unloved", "unlovely", "unloving", "unluckily", "unlucky", "unmade", "unmanaged", "unmanned", "unmapped", "unmarked", "unmasked", "unmasking", "unmatched", "unmindful", "unmixable", "unmixed", "unmolded", "unmoral", "unmovable", "unmoved", "unmoving", "unnamable", "unnamed", "unnatural", "unneeded", "unnerve", "unnerving", "unnoticed", "unopened", "unopposed", "unpack", "unpadded", "unpaid", "unpainted", "unpaired", "unpaved", "unpeeled", "unpicked", "unpiloted", "unpinned", "unplanned", "unplanted", "unpleased", "unpledged", "unplowed", "unplug", "unpopular", "unproven", "unquote", "unranked", "unrated", "unraveled", "unreached", "unread", "unreal", "unreeling", "unrefined", "unrelated", "unrented", "unrest", "unretired", "unrevised", "unrigged", "unripe", "unrivaled", "unroasted", "unrobed", "unroll", "unruffled", "unruly", "unrushed", "unsaddle", "unsafe", "unsaid", "unsalted", "unsaved", "unsavory", "unscathed", "unscented", "unscrew", "unsealed", "unseated", "unsecured", "unseeing", "unseemly", "unseen", "unselect", "unselfish", "unsent", "unsettled", "unshackle", "unshaken", "unshaved", "unshaven", "unsheathe", "unshipped", "unsightly", "unsigned", "unskilled", "unsliced", "unsmooth", "unsnap", "unsocial", "unsoiled", "unsold", "unsolved", "unsorted", "unspoiled", "unspoken", "unstable", "unstaffed", "unstamped", "unsteady", "unsterile", "unstirred", "unstitch", "unstopped", "unstuck", "unstuffed", "unstylish", "unsubtle", "unsubtly", "unsuited", "unsure", "unsworn", "untagged", "untainted", "untaken", "untamed", "untangled", "untapped", "untaxed", "unthawed", "unthread", "untidy", "untie", "until", "untimed", "untimely", "untitled", "untoasted", "untold", "untouched", "untracked", "untrained", "untreated", "untried", "untrimmed", "untrue", "untruth", "unturned", "untwist", "untying", "unusable", "unused", "unusual", "unvalued", "unvaried", "unvarying", "unveiled", "unveiling", "unvented", "unviable", "unvisited", "unvocal", "unwanted", "unwarlike", "unwary", "unwashed", "unwatched", "unweave", "unwed", "unwelcome", "unwell", "unwieldy", "unwilling", "unwind", "unwired", "unwitting", "unwomanly", "unworldly", "unworn", "unworried", "unworthy", "unwound", "unwoven", "unwrapped", "unwritten", "unzip", "upbeat", "upchuck", "upcoming", "upcountry", "update", "upfront", "upgrade", "upheaval", "upheld", "uphill", "uphold", "uplifted", "uplifting", "upload", "upon", "upper", "upright", "uprising", "upriver", "uproar", "uproot", "upscale", "upside", "upstage", "upstairs", "upstart", "upstate", "upstream", "upstroke", "upswing", "uptake", "uptight", "uptown", "upturned", "upward", "upwind", "uranium", "urban", "urchin", "urethane", "urgency", "urgent", "urging", "urologist", "urology", "usable", "usage", "useable", "used", "uselessly", "user", "usher", "usual", "utensil", "utility", "utilize", "utmost", "utopia", "utter", "vacancy", "vacant", "vacate", "vacation", "vagabond", "vagrancy", "vagrantly", "vaguely", "vagueness", "valiant", "valid", "valium", "valley", "valuables", "value", "vanilla", "vanish", "vanity", "vanquish", "vantage", "vaporizer", "variable", "variably", "varied", "variety", "various", "varmint", "varnish", "varsity", "varying", "vascular", "vaseline", "vastly", "vastness", "veal", "vegan", "veggie", "vehicular", "velcro", "velocity", "velvet", "vendetta", "vending", "vendor", "veneering", "vengeful", "venomous", "ventricle", "venture", "venue", "venus", "verbalize", "verbally", "verbose", "verdict", "verify", "verse", "version", "versus", "vertebrae", "vertical", "vertigo", "very", "vessel", "vest", "veteran", "veto", "vexingly", "viability", "viable", "vibes", "vice", "vicinity", "victory", "video", "viewable", "viewer", "viewing", "viewless", "viewpoint", "vigorous", "village", "villain", "vindicate", "vineyard", "vintage", "violate", "violation", "violator", "violet", "violin", "viper", "viral", "virtual", "virtuous", "virus", "visa", "viscosity", "viscous", "viselike", "visible", "visibly", "vision", "visiting", "visitor", "visor", "vista", "vitality", "vitalize", "vitally", "vitamins", "vivacious", "vividly", "vividness", "vixen", "vocalist", "vocalize", "vocally", "vocation", "voice", "voicing", "void", "volatile", "volley", "voltage", "volumes", "voter", "voting", "voucher", "vowed", "vowel", "voyage", "wackiness", "wad", "wafer", "waffle", "waged", "wager", "wages", "waggle", "wagon", "wake", "waking", "walk", "walmart", "walnut", "walrus", "waltz", "wand", "wannabe", "wanted", "wanting", "wasabi", "washable", "washbasin", "washboard", "washbowl", "washcloth", "washday", "washed", "washer", "washhouse", "washing", "washout", "washroom", "washstand", "washtub", "wasp", "wasting", "watch", "water", "waviness", "waving", "wavy", "whacking", "whacky", "wham", "wharf", "wheat", "whenever", "whiff", "whimsical", "whinny", "whiny", "whisking", "whoever", "whole", "whomever", "whoopee", "whooping", "whoops", "why", "wick", "widely", "widen", "widget", "widow", "width", "wieldable", "wielder", "wife", "wifi", "wikipedia", "wildcard", "wildcat", "wilder", "wildfire", "wildfowl", "wildland", "wildlife", "wildly", "wildness", "willed", "willfully", "willing", "willow", "willpower", "wilt", "wimp", "wince", "wincing", "wind", "wing", "winking", "winner", "winnings", "winter", "wipe", "wired", "wireless", "wiring", "wiry", "wisdom", "wise", "wish", "wisplike", "wispy", "wistful", "wizard", "wobble", "wobbling", "wobbly", "wok", "wolf", "wolverine", "womanhood", "womankind", "womanless", "womanlike", "womanly", "womb", "woof", "wooing", "wool", "woozy", "word", "work", "worried", "worrier", "worrisome", "worry", "worsening", "worshiper", "worst", "wound", "woven", "wow", "wrangle", "wrath", "wreath", "wreckage", "wrecker", "wrecking", "wrench", "wriggle", "wriggly", "wrinkle", "wrinkly", "wrist", "writing", "written", "wrongdoer", "wronged", "wrongful", "wrongly", "wrongness", "wrought", "xbox", "xerox", "yahoo", "yam", "yanking", "yapping", "yard", "yarn", "yeah", "yearbook", "yearling", "yearly", "yearning", "yeast", "yelling", "yelp", "yen", "yesterday", "yiddish", "yield", "yin", "yippee", "yo-yo", "yodel", "yoga", "yogurt", "yonder", "yoyo", "yummy", "zap", "zealous", "zebra", "zen", "zeppelin", "zero", "zestfully", "zesty", "zigzagged", "zipfile", "zipping", "zippy", "zips", "zit", "zodiac", "zombie", "zone", "zoning", "zookeeper", "zoologist", "zoology", "zoom"];
-Object.defineProperty(Ui, "__esModule", {
-  value: !0
-});
-Ui.newSecureWords = void 0;
-const wf = Mt,
-  Eo = Ri;
-async function vf(e = 6) {
+Ri.newSecureWords = void 0;
+const vf = Tt,
+  Oo = ji;
+async function kf(e = 6) {
   let t = [];
-  for (let n = 0; n < e; n++) t.push(Eo.wordlist[await (0, wf.getSecureRandomNumber)(0, Eo.wordlist.length)]);
+  for (let n = 0; n < e; n++) t.push(Oo.wordlist[await (0, vf.getSecureRandomNumber)(0, Oo.wordlist.length)]);
   return t
 }
-Ui.newSecureWords = vf;
-var Ar = {},
-  Oo;
+Ri.newSecureWords = kf;
+var Ir = {},
+  xo;
 
-function kf() {
-  if (Oo) return Ar;
-  Oo = 1, Object.defineProperty(Ar, "__esModule", {
+function Sf() {
+  if (xo) return Ir;
+  xo = 1, Object.defineProperty(Ir, "__esModule", {
     value: !0
-  }), Ar.newSecurePassphrase = void 0;
-  const e = Fa();
+  }), Ir.newSecurePassphrase = void 0;
+  const e = Ka();
   async function t(n = 6) {
     return (await (0, e.newSecureWords)(n)).join("-")
   }
-  return Ar.newSecurePassphrase = t, Ar
+  return Ir.newSecurePassphrase = t, Ir
 }
-var $e = {},
-  Yt = {};
-Object.defineProperty(Yt, "__esModule", {
+var He = {},
+  Xt = {};
+Object.defineProperty(Xt, "__esModule", {
   value: !0
 });
-Yt.bitsToBytes = Yt.bytesToBits = Yt.lpad = void 0;
+Xt.bitsToBytes = Xt.bytesToBits = Xt.lpad = void 0;
 
-function Xs(e, t, n) {
+function Js(e, t, n) {
   for (; e.length < n;) e = t + e;
   return e
 }
-Yt.lpad = Xs;
+Xt.lpad = Js;
 
-function Sf(e) {
+function Af(e) {
   let t = "";
   for (let n = 0; n < e.length; n++) {
     let r = e.at(n);
-    t += Xs(r.toString(2), "0", 8)
+    t += Js(r.toString(2), "0", 8)
   }
   return t
 }
-Yt.bytesToBits = Sf;
+Xt.bytesToBits = Af;
 
-function Af(e) {
+function If(e) {
   if (e.length % 8 !== 0) throw Error("Uneven bits");
   let t = [];
   for (; e.length > 0;) t.push(parseInt(e.slice(0, 8), 2)), e = e.slice(8);
-  return Buffer.from(t)
+  return be.Buffer.from(t)
 }
-Yt.bitsToBytes = Af;
-var Fr = {};
-Object.defineProperty(Fr, "__esModule", {
+Xt.bitsToBytes = If;
+var Kr = {};
+Object.defineProperty(Kr, "__esModule", {
   value: !0
 });
-Fr.wordlist = void 0;
-const If = ["abandon", "ability", "able", "about", "above", "absent", "absorb", "abstract", "absurd", "abuse", "access", "accident", "account", "accuse", "achieve", "acid", "acoustic", "acquire", "across", "act", "action", "actor", "actress", "actual", "adapt", "add", "addict", "address", "adjust", "admit", "adult", "advance", "advice", "aerobic", "affair", "afford", "afraid", "again", "age", "agent", "agree", "ahead", "aim", "air", "airport", "aisle", "alarm", "album", "alcohol", "alert", "alien", "all", "alley", "allow", "almost", "alone", "alpha", "already", "also", "alter", "always", "amateur", "amazing", "among", "amount", "amused", "analyst", "anchor", "ancient", "anger", "angle", "angry", "animal", "ankle", "announce", "annual", "another", "answer", "antenna", "antique", "anxiety", "any", "apart", "apology", "appear", "apple", "approve", "april", "arch", "arctic", "area", "arena", "argue", "arm", "armed", "armor", "army", "around", "arrange", "arrest", "arrive", "arrow", "art", "artefact", "artist", "artwork", "ask", "aspect", "assault", "asset", "assist", "assume", "asthma", "athlete", "atom", "attack", "attend", "attitude", "attract", "auction", "audit", "august", "aunt", "author", "auto", "autumn", "average", "avocado", "avoid", "awake", "aware", "away", "awesome", "awful", "awkward", "axis", "baby", "bachelor", "bacon", "badge", "bag", "balance", "balcony", "ball", "bamboo", "banana", "banner", "bar", "barely", "bargain", "barrel", "base", "basic", "basket", "battle", "beach", "bean", "beauty", "because", "become", "beef", "before", "begin", "behave", "behind", "believe", "below", "belt", "bench", "benefit", "best", "betray", "better", "between", "beyond", "bicycle", "bid", "bike", "bind", "biology", "bird", "birth", "bitter", "black", "blade", "blame", "blanket", "blast", "bleak", "bless", "blind", "blood", "blossom", "blouse", "blue", "blur", "blush", "board", "boat", "body", "boil", "bomb", "bone", "bonus", "book", "boost", "border", "boring", "borrow", "boss", "bottom", "bounce", "box", "boy", "bracket", "brain", "brand", "brass", "brave", "bread", "breeze", "brick", "bridge", "brief", "bright", "bring", "brisk", "broccoli", "broken", "bronze", "broom", "brother", "brown", "brush", "bubble", "buddy", "budget", "buffalo", "build", "bulb", "bulk", "bullet", "bundle", "bunker", "burden", "burger", "burst", "bus", "business", "busy", "butter", "buyer", "buzz", "cabbage", "cabin", "cable", "cactus", "cage", "cake", "call", "calm", "camera", "camp", "can", "canal", "cancel", "candy", "cannon", "canoe", "canvas", "canyon", "capable", "capital", "captain", "car", "carbon", "card", "cargo", "carpet", "carry", "cart", "case", "cash", "casino", "castle", "casual", "cat", "catalog", "catch", "category", "cattle", "caught", "cause", "caution", "cave", "ceiling", "celery", "cement", "census", "century", "cereal", "certain", "chair", "chalk", "champion", "change", "chaos", "chapter", "charge", "chase", "chat", "cheap", "check", "cheese", "chef", "cherry", "chest", "chicken", "chief", "child", "chimney", "choice", "choose", "chronic", "chuckle", "chunk", "churn", "cigar", "cinnamon", "circle", "citizen", "city", "civil", "claim", "clap", "clarify", "claw", "clay", "clean", "clerk", "clever", "click", "client", "cliff", "climb", "clinic", "clip", "clock", "clog", "close", "cloth", "cloud", "clown", "club", "clump", "cluster", "clutch", "coach", "coast", "coconut", "code", "coffee", "coil", "coin", "collect", "color", "column", "combine", "come", "comfort", "comic", "common", "company", "concert", "conduct", "confirm", "congress", "connect", "consider", "control", "convince", "cook", "cool", "copper", "copy", "coral", "core", "corn", "correct", "cost", "cotton", "couch", "country", "couple", "course", "cousin", "cover", "coyote", "crack", "cradle", "craft", "cram", "crane", "crash", "crater", "crawl", "crazy", "cream", "credit", "creek", "crew", "cricket", "crime", "crisp", "critic", "crop", "cross", "crouch", "crowd", "crucial", "cruel", "cruise", "crumble", "crunch", "crush", "cry", "crystal", "cube", "culture", "cup", "cupboard", "curious", "current", "curtain", "curve", "cushion", "custom", "cute", "cycle", "dad", "damage", "damp", "dance", "danger", "daring", "dash", "daughter", "dawn", "day", "deal", "debate", "debris", "decade", "december", "decide", "decline", "decorate", "decrease", "deer", "defense", "define", "defy", "degree", "delay", "deliver", "demand", "demise", "denial", "dentist", "deny", "depart", "depend", "deposit", "depth", "deputy", "derive", "describe", "desert", "design", "desk", "despair", "destroy", "detail", "detect", "develop", "device", "devote", "diagram", "dial", "diamond", "diary", "dice", "diesel", "diet", "differ", "digital", "dignity", "dilemma", "dinner", "dinosaur", "direct", "dirt", "disagree", "discover", "disease", "dish", "dismiss", "disorder", "display", "distance", "divert", "divide", "divorce", "dizzy", "doctor", "document", "dog", "doll", "dolphin", "domain", "donate", "donkey", "donor", "door", "dose", "double", "dove", "draft", "dragon", "drama", "drastic", "draw", "dream", "dress", "drift", "drill", "drink", "drip", "drive", "drop", "drum", "dry", "duck", "dumb", "dune", "during", "dust", "dutch", "duty", "dwarf", "dynamic", "eager", "eagle", "early", "earn", "earth", "easily", "east", "easy", "echo", "ecology", "economy", "edge", "edit", "educate", "effort", "egg", "eight", "either", "elbow", "elder", "electric", "elegant", "element", "elephant", "elevator", "elite", "else", "embark", "embody", "embrace", "emerge", "emotion", "employ", "empower", "empty", "enable", "enact", "end", "endless", "endorse", "enemy", "energy", "enforce", "engage", "engine", "enhance", "enjoy", "enlist", "enough", "enrich", "enroll", "ensure", "enter", "entire", "entry", "envelope", "episode", "equal", "equip", "era", "erase", "erode", "erosion", "error", "erupt", "escape", "essay", "essence", "estate", "eternal", "ethics", "evidence", "evil", "evoke", "evolve", "exact", "example", "excess", "exchange", "excite", "exclude", "excuse", "execute", "exercise", "exhaust", "exhibit", "exile", "exist", "exit", "exotic", "expand", "expect", "expire", "explain", "expose", "express", "extend", "extra", "eye", "eyebrow", "fabric", "face", "faculty", "fade", "faint", "faith", "fall", "false", "fame", "family", "famous", "fan", "fancy", "fantasy", "farm", "fashion", "fat", "fatal", "father", "fatigue", "fault", "favorite", "feature", "february", "federal", "fee", "feed", "feel", "female", "fence", "festival", "fetch", "fever", "few", "fiber", "fiction", "field", "figure", "file", "film", "filter", "final", "find", "fine", "finger", "finish", "fire", "firm", "first", "fiscal", "fish", "fit", "fitness", "fix", "flag", "flame", "flash", "flat", "flavor", "flee", "flight", "flip", "float", "flock", "floor", "flower", "fluid", "flush", "fly", "foam", "focus", "fog", "foil", "fold", "follow", "food", "foot", "force", "forest", "forget", "fork", "fortune", "forum", "forward", "fossil", "foster", "found", "fox", "fragile", "frame", "frequent", "fresh", "friend", "fringe", "frog", "front", "frost", "frown", "frozen", "fruit", "fuel", "fun", "funny", "furnace", "fury", "future", "gadget", "gain", "galaxy", "gallery", "game", "gap", "garage", "garbage", "garden", "garlic", "garment", "gas", "gasp", "gate", "gather", "gauge", "gaze", "general", "genius", "genre", "gentle", "genuine", "gesture", "ghost", "giant", "gift", "giggle", "ginger", "giraffe", "girl", "give", "glad", "glance", "glare", "glass", "glide", "glimpse", "globe", "gloom", "glory", "glove", "glow", "glue", "goat", "goddess", "gold", "good", "goose", "gorilla", "gospel", "gossip", "govern", "gown", "grab", "grace", "grain", "grant", "grape", "grass", "gravity", "great", "green", "grid", "grief", "grit", "grocery", "group", "grow", "grunt", "guard", "guess", "guide", "guilt", "guitar", "gun", "gym", "habit", "hair", "half", "hammer", "hamster", "hand", "happy", "harbor", "hard", "harsh", "harvest", "hat", "have", "hawk", "hazard", "head", "health", "heart", "heavy", "hedgehog", "height", "hello", "helmet", "help", "hen", "hero", "hidden", "high", "hill", "hint", "hip", "hire", "history", "hobby", "hockey", "hold", "hole", "holiday", "hollow", "home", "honey", "hood", "hope", "horn", "horror", "horse", "hospital", "host", "hotel", "hour", "hover", "hub", "huge", "human", "humble", "humor", "hundred", "hungry", "hunt", "hurdle", "hurry", "hurt", "husband", "hybrid", "ice", "icon", "idea", "identify", "idle", "ignore", "ill", "illegal", "illness", "image", "imitate", "immense", "immune", "impact", "impose", "improve", "impulse", "inch", "include", "income", "increase", "index", "indicate", "indoor", "industry", "infant", "inflict", "inform", "inhale", "inherit", "initial", "inject", "injury", "inmate", "inner", "innocent", "input", "inquiry", "insane", "insect", "inside", "inspire", "install", "intact", "interest", "into", "invest", "invite", "involve", "iron", "island", "isolate", "issue", "item", "ivory", "jacket", "jaguar", "jar", "jazz", "jealous", "jeans", "jelly", "jewel", "job", "join", "joke", "journey", "joy", "judge", "juice", "jump", "jungle", "junior", "junk", "just", "kangaroo", "keen", "keep", "ketchup", "key", "kick", "kid", "kidney", "kind", "kingdom", "kiss", "kit", "kitchen", "kite", "kitten", "kiwi", "knee", "knife", "knock", "know", "lab", "label", "labor", "ladder", "lady", "lake", "lamp", "language", "laptop", "large", "later", "latin", "laugh", "laundry", "lava", "law", "lawn", "lawsuit", "layer", "lazy", "leader", "leaf", "learn", "leave", "lecture", "left", "leg", "legal", "legend", "leisure", "lemon", "lend", "length", "lens", "leopard", "lesson", "letter", "level", "liar", "liberty", "library", "license", "life", "lift", "light", "like", "limb", "limit", "link", "lion", "liquid", "list", "little", "live", "lizard", "load", "loan", "lobster", "local", "lock", "logic", "lonely", "long", "loop", "lottery", "loud", "lounge", "love", "loyal", "lucky", "luggage", "lumber", "lunar", "lunch", "luxury", "lyrics", "machine", "mad", "magic", "magnet", "maid", "mail", "main", "major", "make", "mammal", "man", "manage", "mandate", "mango", "mansion", "manual", "maple", "marble", "march", "margin", "marine", "market", "marriage", "mask", "mass", "master", "match", "material", "math", "matrix", "matter", "maximum", "maze", "meadow", "mean", "measure", "meat", "mechanic", "medal", "media", "melody", "melt", "member", "memory", "mention", "menu", "mercy", "merge", "merit", "merry", "mesh", "message", "metal", "method", "middle", "midnight", "milk", "million", "mimic", "mind", "minimum", "minor", "minute", "miracle", "mirror", "misery", "miss", "mistake", "mix", "mixed", "mixture", "mobile", "model", "modify", "mom", "moment", "monitor", "monkey", "monster", "month", "moon", "moral", "more", "morning", "mosquito", "mother", "motion", "motor", "mountain", "mouse", "move", "movie", "much", "muffin", "mule", "multiply", "muscle", "museum", "mushroom", "music", "must", "mutual", "myself", "mystery", "myth", "naive", "name", "napkin", "narrow", "nasty", "nation", "nature", "near", "neck", "need", "negative", "neglect", "neither", "nephew", "nerve", "nest", "net", "network", "neutral", "never", "news", "next", "nice", "night", "noble", "noise", "nominee", "noodle", "normal", "north", "nose", "notable", "note", "nothing", "notice", "novel", "now", "nuclear", "number", "nurse", "nut", "oak", "obey", "object", "oblige", "obscure", "observe", "obtain", "obvious", "occur", "ocean", "october", "odor", "off", "offer", "office", "often", "oil", "okay", "old", "olive", "olympic", "omit", "once", "one", "onion", "online", "only", "open", "opera", "opinion", "oppose", "option", "orange", "orbit", "orchard", "order", "ordinary", "organ", "orient", "original", "orphan", "ostrich", "other", "outdoor", "outer", "output", "outside", "oval", "oven", "over", "own", "owner", "oxygen", "oyster", "ozone", "pact", "paddle", "page", "pair", "palace", "palm", "panda", "panel", "panic", "panther", "paper", "parade", "parent", "park", "parrot", "party", "pass", "patch", "path", "patient", "patrol", "pattern", "pause", "pave", "payment", "peace", "peanut", "pear", "peasant", "pelican", "pen", "penalty", "pencil", "people", "pepper", "perfect", "permit", "person", "pet", "phone", "photo", "phrase", "physical", "piano", "picnic", "picture", "piece", "pig", "pigeon", "pill", "pilot", "pink", "pioneer", "pipe", "pistol", "pitch", "pizza", "place", "planet", "plastic", "plate", "play", "please", "pledge", "pluck", "plug", "plunge", "poem", "poet", "point", "polar", "pole", "police", "pond", "pony", "pool", "popular", "portion", "position", "possible", "post", "potato", "pottery", "poverty", "powder", "power", "practice", "praise", "predict", "prefer", "prepare", "present", "pretty", "prevent", "price", "pride", "primary", "print", "priority", "prison", "private", "prize", "problem", "process", "produce", "profit", "program", "project", "promote", "proof", "property", "prosper", "protect", "proud", "provide", "public", "pudding", "pull", "pulp", "pulse", "pumpkin", "punch", "pupil", "puppy", "purchase", "purity", "purpose", "purse", "push", "put", "puzzle", "pyramid", "quality", "quantum", "quarter", "question", "quick", "quit", "quiz", "quote", "rabbit", "raccoon", "race", "rack", "radar", "radio", "rail", "rain", "raise", "rally", "ramp", "ranch", "random", "range", "rapid", "rare", "rate", "rather", "raven", "raw", "razor", "ready", "real", "reason", "rebel", "rebuild", "recall", "receive", "recipe", "record", "recycle", "reduce", "reflect", "reform", "refuse", "region", "regret", "regular", "reject", "relax", "release", "relief", "rely", "remain", "remember", "remind", "remove", "render", "renew", "rent", "reopen", "repair", "repeat", "replace", "report", "require", "rescue", "resemble", "resist", "resource", "response", "result", "retire", "retreat", "return", "reunion", "reveal", "review", "reward", "rhythm", "rib", "ribbon", "rice", "rich", "ride", "ridge", "rifle", "right", "rigid", "ring", "riot", "ripple", "risk", "ritual", "rival", "river", "road", "roast", "robot", "robust", "rocket", "romance", "roof", "rookie", "room", "rose", "rotate", "rough", "round", "route", "royal", "rubber", "rude", "rug", "rule", "run", "runway", "rural", "sad", "saddle", "sadness", "safe", "sail", "salad", "salmon", "salon", "salt", "salute", "same", "sample", "sand", "satisfy", "satoshi", "sauce", "sausage", "save", "say", "scale", "scan", "scare", "scatter", "scene", "scheme", "school", "science", "scissors", "scorpion", "scout", "scrap", "screen", "script", "scrub", "sea", "search", "season", "seat", "second", "secret", "section", "security", "seed", "seek", "segment", "select", "sell", "seminar", "senior", "sense", "sentence", "series", "service", "session", "settle", "setup", "seven", "shadow", "shaft", "shallow", "share", "shed", "shell", "sheriff", "shield", "shift", "shine", "ship", "shiver", "shock", "shoe", "shoot", "shop", "short", "shoulder", "shove", "shrimp", "shrug", "shuffle", "shy", "sibling", "sick", "side", "siege", "sight", "sign", "silent", "silk", "silly", "silver", "similar", "simple", "since", "sing", "siren", "sister", "situate", "six", "size", "skate", "sketch", "ski", "skill", "skin", "skirt", "skull", "slab", "slam", "sleep", "slender", "slice", "slide", "slight", "slim", "slogan", "slot", "slow", "slush", "small", "smart", "smile", "smoke", "smooth", "snack", "snake", "snap", "sniff", "snow", "soap", "soccer", "social", "sock", "soda", "soft", "solar", "soldier", "solid", "solution", "solve", "someone", "song", "soon", "sorry", "sort", "soul", "sound", "soup", "source", "south", "space", "spare", "spatial", "spawn", "speak", "special", "speed", "spell", "spend", "sphere", "spice", "spider", "spike", "spin", "spirit", "split", "spoil", "sponsor", "spoon", "sport", "spot", "spray", "spread", "spring", "spy", "square", "squeeze", "squirrel", "stable", "stadium", "staff", "stage", "stairs", "stamp", "stand", "start", "state", "stay", "steak", "steel", "stem", "step", "stereo", "stick", "still", "sting", "stock", "stomach", "stone", "stool", "story", "stove", "strategy", "street", "strike", "strong", "struggle", "student", "stuff", "stumble", "style", "subject", "submit", "subway", "success", "such", "sudden", "suffer", "sugar", "suggest", "suit", "summer", "sun", "sunny", "sunset", "super", "supply", "supreme", "sure", "surface", "surge", "surprise", "surround", "survey", "suspect", "sustain", "swallow", "swamp", "swap", "swarm", "swear", "sweet", "swift", "swim", "swing", "switch", "sword", "symbol", "symptom", "syrup", "system", "table", "tackle", "tag", "tail", "talent", "talk", "tank", "tape", "target", "task", "taste", "tattoo", "taxi", "teach", "team", "tell", "ten", "tenant", "tennis", "tent", "term", "test", "text", "thank", "that", "theme", "then", "theory", "there", "they", "thing", "this", "thought", "three", "thrive", "throw", "thumb", "thunder", "ticket", "tide", "tiger", "tilt", "timber", "time", "tiny", "tip", "tired", "tissue", "title", "toast", "tobacco", "today", "toddler", "toe", "together", "toilet", "token", "tomato", "tomorrow", "tone", "tongue", "tonight", "tool", "tooth", "top", "topic", "topple", "torch", "tornado", "tortoise", "toss", "total", "tourist", "toward", "tower", "town", "toy", "track", "trade", "traffic", "tragic", "train", "transfer", "trap", "trash", "travel", "tray", "treat", "tree", "trend", "trial", "tribe", "trick", "trigger", "trim", "trip", "trophy", "trouble", "truck", "true", "truly", "trumpet", "trust", "truth", "try", "tube", "tuition", "tumble", "tuna", "tunnel", "turkey", "turn", "turtle", "twelve", "twenty", "twice", "twin", "twist", "two", "type", "typical", "ugly", "umbrella", "unable", "unaware", "uncle", "uncover", "under", "undo", "unfair", "unfold", "unhappy", "uniform", "unique", "unit", "universe", "unknown", "unlock", "until", "unusual", "unveil", "update", "upgrade", "uphold", "upon", "upper", "upset", "urban", "urge", "usage", "use", "used", "useful", "useless", "usual", "utility", "vacant", "vacuum", "vague", "valid", "valley", "valve", "van", "vanish", "vapor", "various", "vast", "vault", "vehicle", "velvet", "vendor", "venture", "venue", "verb", "verify", "version", "very", "vessel", "veteran", "viable", "vibrant", "vicious", "victory", "video", "view", "village", "vintage", "violin", "virtual", "virus", "visa", "visit", "visual", "vital", "vivid", "vocal", "voice", "void", "volcano", "volume", "vote", "voyage", "wage", "wagon", "wait", "walk", "wall", "walnut", "want", "warfare", "warm", "warrior", "wash", "wasp", "waste", "water", "wave", "way", "wealth", "weapon", "wear", "weasel", "weather", "web", "wedding", "weekend", "weird", "welcome", "west", "wet", "whale", "what", "wheat", "wheel", "when", "where", "whip", "whisper", "wide", "width", "wife", "wild", "will", "win", "window", "wine", "wing", "wink", "winner", "winter", "wire", "wisdom", "wise", "wish", "witness", "wolf", "woman", "wonder", "wood", "wool", "word", "work", "world", "worry", "worth", "wrap", "wreck", "wrestle", "wrist", "write", "wrong", "yard", "year", "yellow", "you", "young", "youth", "zebra", "zero", "zone", "zoo"];
-Fr.wordlist = If;
-var Cf = pe && pe.__importDefault || function(e) {
+Kr.wordlist = void 0;
+const Cf = ["abandon", "ability", "able", "about", "above", "absent", "absorb", "abstract", "absurd", "abuse", "access", "accident", "account", "accuse", "achieve", "acid", "acoustic", "acquire", "across", "act", "action", "actor", "actress", "actual", "adapt", "add", "addict", "address", "adjust", "admit", "adult", "advance", "advice", "aerobic", "affair", "afford", "afraid", "again", "age", "agent", "agree", "ahead", "aim", "air", "airport", "aisle", "alarm", "album", "alcohol", "alert", "alien", "all", "alley", "allow", "almost", "alone", "alpha", "already", "also", "alter", "always", "amateur", "amazing", "among", "amount", "amused", "analyst", "anchor", "ancient", "anger", "angle", "angry", "animal", "ankle", "announce", "annual", "another", "answer", "antenna", "antique", "anxiety", "any", "apart", "apology", "appear", "apple", "approve", "april", "arch", "arctic", "area", "arena", "argue", "arm", "armed", "armor", "army", "around", "arrange", "arrest", "arrive", "arrow", "art", "artefact", "artist", "artwork", "ask", "aspect", "assault", "asset", "assist", "assume", "asthma", "athlete", "atom", "attack", "attend", "attitude", "attract", "auction", "audit", "august", "aunt", "author", "auto", "autumn", "average", "avocado", "avoid", "awake", "aware", "away", "awesome", "awful", "awkward", "axis", "baby", "bachelor", "bacon", "badge", "bag", "balance", "balcony", "ball", "bamboo", "banana", "banner", "bar", "barely", "bargain", "barrel", "base", "basic", "basket", "battle", "beach", "bean", "beauty", "because", "become", "beef", "before", "begin", "behave", "behind", "believe", "below", "belt", "bench", "benefit", "best", "betray", "better", "between", "beyond", "bicycle", "bid", "bike", "bind", "biology", "bird", "birth", "bitter", "black", "blade", "blame", "blanket", "blast", "bleak", "bless", "blind", "blood", "blossom", "blouse", "blue", "blur", "blush", "board", "boat", "body", "boil", "bomb", "bone", "bonus", "book", "boost", "border", "boring", "borrow", "boss", "bottom", "bounce", "box", "boy", "bracket", "brain", "brand", "brass", "brave", "bread", "breeze", "brick", "bridge", "brief", "bright", "bring", "brisk", "broccoli", "broken", "bronze", "broom", "brother", "brown", "brush", "bubble", "buddy", "budget", "buffalo", "build", "bulb", "bulk", "bullet", "bundle", "bunker", "burden", "burger", "burst", "bus", "business", "busy", "butter", "buyer", "buzz", "cabbage", "cabin", "cable", "cactus", "cage", "cake", "call", "calm", "camera", "camp", "can", "canal", "cancel", "candy", "cannon", "canoe", "canvas", "canyon", "capable", "capital", "captain", "car", "carbon", "card", "cargo", "carpet", "carry", "cart", "case", "cash", "casino", "castle", "casual", "cat", "catalog", "catch", "category", "cattle", "caught", "cause", "caution", "cave", "ceiling", "celery", "cement", "census", "century", "cereal", "certain", "chair", "chalk", "champion", "change", "chaos", "chapter", "charge", "chase", "chat", "cheap", "check", "cheese", "chef", "cherry", "chest", "chicken", "chief", "child", "chimney", "choice", "choose", "chronic", "chuckle", "chunk", "churn", "cigar", "cinnamon", "circle", "citizen", "city", "civil", "claim", "clap", "clarify", "claw", "clay", "clean", "clerk", "clever", "click", "client", "cliff", "climb", "clinic", "clip", "clock", "clog", "close", "cloth", "cloud", "clown", "club", "clump", "cluster", "clutch", "coach", "coast", "coconut", "code", "coffee", "coil", "coin", "collect", "color", "column", "combine", "come", "comfort", "comic", "common", "company", "concert", "conduct", "confirm", "congress", "connect", "consider", "control", "convince", "cook", "cool", "copper", "copy", "coral", "core", "corn", "correct", "cost", "cotton", "couch", "country", "couple", "course", "cousin", "cover", "coyote", "crack", "cradle", "craft", "cram", "crane", "crash", "crater", "crawl", "crazy", "cream", "credit", "creek", "crew", "cricket", "crime", "crisp", "critic", "crop", "cross", "crouch", "crowd", "crucial", "cruel", "cruise", "crumble", "crunch", "crush", "cry", "crystal", "cube", "culture", "cup", "cupboard", "curious", "current", "curtain", "curve", "cushion", "custom", "cute", "cycle", "dad", "damage", "damp", "dance", "danger", "daring", "dash", "daughter", "dawn", "day", "deal", "debate", "debris", "decade", "december", "decide", "decline", "decorate", "decrease", "deer", "defense", "define", "defy", "degree", "delay", "deliver", "demand", "demise", "denial", "dentist", "deny", "depart", "depend", "deposit", "depth", "deputy", "derive", "describe", "desert", "design", "desk", "despair", "destroy", "detail", "detect", "develop", "device", "devote", "diagram", "dial", "diamond", "diary", "dice", "diesel", "diet", "differ", "digital", "dignity", "dilemma", "dinner", "dinosaur", "direct", "dirt", "disagree", "discover", "disease", "dish", "dismiss", "disorder", "display", "distance", "divert", "divide", "divorce", "dizzy", "doctor", "document", "dog", "doll", "dolphin", "domain", "donate", "donkey", "donor", "door", "dose", "double", "dove", "draft", "dragon", "drama", "drastic", "draw", "dream", "dress", "drift", "drill", "drink", "drip", "drive", "drop", "drum", "dry", "duck", "dumb", "dune", "during", "dust", "dutch", "duty", "dwarf", "dynamic", "eager", "eagle", "early", "earn", "earth", "easily", "east", "easy", "echo", "ecology", "economy", "edge", "edit", "educate", "effort", "egg", "eight", "either", "elbow", "elder", "electric", "elegant", "element", "elephant", "elevator", "elite", "else", "embark", "embody", "embrace", "emerge", "emotion", "employ", "empower", "empty", "enable", "enact", "end", "endless", "endorse", "enemy", "energy", "enforce", "engage", "engine", "enhance", "enjoy", "enlist", "enough", "enrich", "enroll", "ensure", "enter", "entire", "entry", "envelope", "episode", "equal", "equip", "era", "erase", "erode", "erosion", "error", "erupt", "escape", "essay", "essence", "estate", "eternal", "ethics", "evidence", "evil", "evoke", "evolve", "exact", "example", "excess", "exchange", "excite", "exclude", "excuse", "execute", "exercise", "exhaust", "exhibit", "exile", "exist", "exit", "exotic", "expand", "expect", "expire", "explain", "expose", "express", "extend", "extra", "eye", "eyebrow", "fabric", "face", "faculty", "fade", "faint", "faith", "fall", "false", "fame", "family", "famous", "fan", "fancy", "fantasy", "farm", "fashion", "fat", "fatal", "father", "fatigue", "fault", "favorite", "feature", "february", "federal", "fee", "feed", "feel", "female", "fence", "festival", "fetch", "fever", "few", "fiber", "fiction", "field", "figure", "file", "film", "filter", "final", "find", "fine", "finger", "finish", "fire", "firm", "first", "fiscal", "fish", "fit", "fitness", "fix", "flag", "flame", "flash", "flat", "flavor", "flee", "flight", "flip", "float", "flock", "floor", "flower", "fluid", "flush", "fly", "foam", "focus", "fog", "foil", "fold", "follow", "food", "foot", "force", "forest", "forget", "fork", "fortune", "forum", "forward", "fossil", "foster", "found", "fox", "fragile", "frame", "frequent", "fresh", "friend", "fringe", "frog", "front", "frost", "frown", "frozen", "fruit", "fuel", "fun", "funny", "furnace", "fury", "future", "gadget", "gain", "galaxy", "gallery", "game", "gap", "garage", "garbage", "garden", "garlic", "garment", "gas", "gasp", "gate", "gather", "gauge", "gaze", "general", "genius", "genre", "gentle", "genuine", "gesture", "ghost", "giant", "gift", "giggle", "ginger", "giraffe", "girl", "give", "glad", "glance", "glare", "glass", "glide", "glimpse", "globe", "gloom", "glory", "glove", "glow", "glue", "goat", "goddess", "gold", "good", "goose", "gorilla", "gospel", "gossip", "govern", "gown", "grab", "grace", "grain", "grant", "grape", "grass", "gravity", "great", "green", "grid", "grief", "grit", "grocery", "group", "grow", "grunt", "guard", "guess", "guide", "guilt", "guitar", "gun", "gym", "habit", "hair", "half", "hammer", "hamster", "hand", "happy", "harbor", "hard", "harsh", "harvest", "hat", "have", "hawk", "hazard", "head", "health", "heart", "heavy", "hedgehog", "height", "hello", "helmet", "help", "hen", "hero", "hidden", "high", "hill", "hint", "hip", "hire", "history", "hobby", "hockey", "hold", "hole", "holiday", "hollow", "home", "honey", "hood", "hope", "horn", "horror", "horse", "hospital", "host", "hotel", "hour", "hover", "hub", "huge", "human", "humble", "humor", "hundred", "hungry", "hunt", "hurdle", "hurry", "hurt", "husband", "hybrid", "ice", "icon", "idea", "identify", "idle", "ignore", "ill", "illegal", "illness", "image", "imitate", "immense", "immune", "impact", "impose", "improve", "impulse", "inch", "include", "income", "increase", "index", "indicate", "indoor", "industry", "infant", "inflict", "inform", "inhale", "inherit", "initial", "inject", "injury", "inmate", "inner", "innocent", "input", "inquiry", "insane", "insect", "inside", "inspire", "install", "intact", "interest", "into", "invest", "invite", "involve", "iron", "island", "isolate", "issue", "item", "ivory", "jacket", "jaguar", "jar", "jazz", "jealous", "jeans", "jelly", "jewel", "job", "join", "joke", "journey", "joy", "judge", "juice", "jump", "jungle", "junior", "junk", "just", "kangaroo", "keen", "keep", "ketchup", "key", "kick", "kid", "kidney", "kind", "kingdom", "kiss", "kit", "kitchen", "kite", "kitten", "kiwi", "knee", "knife", "knock", "know", "lab", "label", "labor", "ladder", "lady", "lake", "lamp", "language", "laptop", "large", "later", "latin", "laugh", "laundry", "lava", "law", "lawn", "lawsuit", "layer", "lazy", "leader", "leaf", "learn", "leave", "lecture", "left", "leg", "legal", "legend", "leisure", "lemon", "lend", "length", "lens", "leopard", "lesson", "letter", "level", "liar", "liberty", "library", "license", "life", "lift", "light", "like", "limb", "limit", "link", "lion", "liquid", "list", "little", "live", "lizard", "load", "loan", "lobster", "local", "lock", "logic", "lonely", "long", "loop", "lottery", "loud", "lounge", "love", "loyal", "lucky", "luggage", "lumber", "lunar", "lunch", "luxury", "lyrics", "machine", "mad", "magic", "magnet", "maid", "mail", "main", "major", "make", "mammal", "man", "manage", "mandate", "mango", "mansion", "manual", "maple", "marble", "march", "margin", "marine", "market", "marriage", "mask", "mass", "master", "match", "material", "math", "matrix", "matter", "maximum", "maze", "meadow", "mean", "measure", "meat", "mechanic", "medal", "media", "melody", "melt", "member", "memory", "mention", "menu", "mercy", "merge", "merit", "merry", "mesh", "message", "metal", "method", "middle", "midnight", "milk", "million", "mimic", "mind", "minimum", "minor", "minute", "miracle", "mirror", "misery", "miss", "mistake", "mix", "mixed", "mixture", "mobile", "model", "modify", "mom", "moment", "monitor", "monkey", "monster", "month", "moon", "moral", "more", "morning", "mosquito", "mother", "motion", "motor", "mountain", "mouse", "move", "movie", "much", "muffin", "mule", "multiply", "muscle", "museum", "mushroom", "music", "must", "mutual", "myself", "mystery", "myth", "naive", "name", "napkin", "narrow", "nasty", "nation", "nature", "near", "neck", "need", "negative", "neglect", "neither", "nephew", "nerve", "nest", "net", "network", "neutral", "never", "news", "next", "nice", "night", "noble", "noise", "nominee", "noodle", "normal", "north", "nose", "notable", "note", "nothing", "notice", "novel", "now", "nuclear", "number", "nurse", "nut", "oak", "obey", "object", "oblige", "obscure", "observe", "obtain", "obvious", "occur", "ocean", "october", "odor", "off", "offer", "office", "often", "oil", "okay", "old", "olive", "olympic", "omit", "once", "one", "onion", "online", "only", "open", "opera", "opinion", "oppose", "option", "orange", "orbit", "orchard", "order", "ordinary", "organ", "orient", "original", "orphan", "ostrich", "other", "outdoor", "outer", "output", "outside", "oval", "oven", "over", "own", "owner", "oxygen", "oyster", "ozone", "pact", "paddle", "page", "pair", "palace", "palm", "panda", "panel", "panic", "panther", "paper", "parade", "parent", "park", "parrot", "party", "pass", "patch", "path", "patient", "patrol", "pattern", "pause", "pave", "payment", "peace", "peanut", "pear", "peasant", "pelican", "pen", "penalty", "pencil", "people", "pepper", "perfect", "permit", "person", "pet", "phone", "photo", "phrase", "physical", "piano", "picnic", "picture", "piece", "pig", "pigeon", "pill", "pilot", "pink", "pioneer", "pipe", "pistol", "pitch", "pizza", "place", "planet", "plastic", "plate", "play", "please", "pledge", "pluck", "plug", "plunge", "poem", "poet", "point", "polar", "pole", "police", "pond", "pony", "pool", "popular", "portion", "position", "possible", "post", "potato", "pottery", "poverty", "powder", "power", "practice", "praise", "predict", "prefer", "prepare", "present", "pretty", "prevent", "price", "pride", "primary", "print", "priority", "prison", "private", "prize", "problem", "process", "produce", "profit", "program", "project", "promote", "proof", "property", "prosper", "protect", "proud", "provide", "public", "pudding", "pull", "pulp", "pulse", "pumpkin", "punch", "pupil", "puppy", "purchase", "purity", "purpose", "purse", "push", "put", "puzzle", "pyramid", "quality", "quantum", "quarter", "question", "quick", "quit", "quiz", "quote", "rabbit", "raccoon", "race", "rack", "radar", "radio", "rail", "rain", "raise", "rally", "ramp", "ranch", "random", "range", "rapid", "rare", "rate", "rather", "raven", "raw", "razor", "ready", "real", "reason", "rebel", "rebuild", "recall", "receive", "recipe", "record", "recycle", "reduce", "reflect", "reform", "refuse", "region", "regret", "regular", "reject", "relax", "release", "relief", "rely", "remain", "remember", "remind", "remove", "render", "renew", "rent", "reopen", "repair", "repeat", "replace", "report", "require", "rescue", "resemble", "resist", "resource", "response", "result", "retire", "retreat", "return", "reunion", "reveal", "review", "reward", "rhythm", "rib", "ribbon", "rice", "rich", "ride", "ridge", "rifle", "right", "rigid", "ring", "riot", "ripple", "risk", "ritual", "rival", "river", "road", "roast", "robot", "robust", "rocket", "romance", "roof", "rookie", "room", "rose", "rotate", "rough", "round", "route", "royal", "rubber", "rude", "rug", "rule", "run", "runway", "rural", "sad", "saddle", "sadness", "safe", "sail", "salad", "salmon", "salon", "salt", "salute", "same", "sample", "sand", "satisfy", "satoshi", "sauce", "sausage", "save", "say", "scale", "scan", "scare", "scatter", "scene", "scheme", "school", "science", "scissors", "scorpion", "scout", "scrap", "screen", "script", "scrub", "sea", "search", "season", "seat", "second", "secret", "section", "security", "seed", "seek", "segment", "select", "sell", "seminar", "senior", "sense", "sentence", "series", "service", "session", "settle", "setup", "seven", "shadow", "shaft", "shallow", "share", "shed", "shell", "sheriff", "shield", "shift", "shine", "ship", "shiver", "shock", "shoe", "shoot", "shop", "short", "shoulder", "shove", "shrimp", "shrug", "shuffle", "shy", "sibling", "sick", "side", "siege", "sight", "sign", "silent", "silk", "silly", "silver", "similar", "simple", "since", "sing", "siren", "sister", "situate", "six", "size", "skate", "sketch", "ski", "skill", "skin", "skirt", "skull", "slab", "slam", "sleep", "slender", "slice", "slide", "slight", "slim", "slogan", "slot", "slow", "slush", "small", "smart", "smile", "smoke", "smooth", "snack", "snake", "snap", "sniff", "snow", "soap", "soccer", "social", "sock", "soda", "soft", "solar", "soldier", "solid", "solution", "solve", "someone", "song", "soon", "sorry", "sort", "soul", "sound", "soup", "source", "south", "space", "spare", "spatial", "spawn", "speak", "special", "speed", "spell", "spend", "sphere", "spice", "spider", "spike", "spin", "spirit", "split", "spoil", "sponsor", "spoon", "sport", "spot", "spray", "spread", "spring", "spy", "square", "squeeze", "squirrel", "stable", "stadium", "staff", "stage", "stairs", "stamp", "stand", "start", "state", "stay", "steak", "steel", "stem", "step", "stereo", "stick", "still", "sting", "stock", "stomach", "stone", "stool", "story", "stove", "strategy", "street", "strike", "strong", "struggle", "student", "stuff", "stumble", "style", "subject", "submit", "subway", "success", "such", "sudden", "suffer", "sugar", "suggest", "suit", "summer", "sun", "sunny", "sunset", "super", "supply", "supreme", "sure", "surface", "surge", "surprise", "surround", "survey", "suspect", "sustain", "swallow", "swamp", "swap", "swarm", "swear", "sweet", "swift", "swim", "swing", "switch", "sword", "symbol", "symptom", "syrup", "system", "table", "tackle", "tag", "tail", "talent", "talk", "tank", "tape", "target", "task", "taste", "tattoo", "taxi", "teach", "team", "tell", "ten", "tenant", "tennis", "tent", "term", "test", "text", "thank", "that", "theme", "then", "theory", "there", "they", "thing", "this", "thought", "three", "thrive", "throw", "thumb", "thunder", "ticket", "tide", "tiger", "tilt", "timber", "time", "tiny", "tip", "tired", "tissue", "title", "toast", "tobacco", "today", "toddler", "toe", "together", "toilet", "token", "tomato", "tomorrow", "tone", "tongue", "tonight", "tool", "tooth", "top", "topic", "topple", "torch", "tornado", "tortoise", "toss", "total", "tourist", "toward", "tower", "town", "toy", "track", "trade", "traffic", "tragic", "train", "transfer", "trap", "trash", "travel", "tray", "treat", "tree", "trend", "trial", "tribe", "trick", "trigger", "trim", "trip", "trophy", "trouble", "truck", "true", "truly", "trumpet", "trust", "truth", "try", "tube", "tuition", "tumble", "tuna", "tunnel", "turkey", "turn", "turtle", "twelve", "twenty", "twice", "twin", "twist", "two", "type", "typical", "ugly", "umbrella", "unable", "unaware", "uncle", "uncover", "under", "undo", "unfair", "unfold", "unhappy", "uniform", "unique", "unit", "universe", "unknown", "unlock", "until", "unusual", "unveil", "update", "upgrade", "uphold", "upon", "upper", "upset", "urban", "urge", "usage", "use", "used", "useful", "useless", "usual", "utility", "vacant", "vacuum", "vague", "valid", "valley", "valve", "van", "vanish", "vapor", "various", "vast", "vault", "vehicle", "velvet", "vendor", "venture", "venue", "verb", "verify", "version", "very", "vessel", "veteran", "viable", "vibrant", "vicious", "victory", "video", "view", "village", "vintage", "violin", "virtual", "virus", "visa", "visit", "visual", "vital", "vivid", "vocal", "voice", "void", "volcano", "volume", "vote", "voyage", "wage", "wagon", "wait", "walk", "wall", "walnut", "want", "warfare", "warm", "warrior", "wash", "wasp", "waste", "water", "wave", "way", "wealth", "weapon", "wear", "weasel", "weather", "web", "wedding", "weekend", "weird", "welcome", "west", "wet", "whale", "what", "wheat", "wheel", "when", "where", "whip", "whisper", "wide", "width", "wife", "wild", "will", "win", "window", "wine", "wing", "wink", "winner", "winter", "wire", "wisdom", "wise", "wish", "witness", "wolf", "woman", "wonder", "wood", "wool", "word", "work", "world", "worry", "worth", "wrap", "wreck", "wrestle", "wrist", "write", "wrong", "yard", "year", "yellow", "you", "young", "youth", "zebra", "zero", "zone", "zoo"];
+Kr.wordlist = Cf;
+var Bf = pe && pe.__importDefault || function(e) {
   return e && e.__esModule ? e : {
     default: e
   }
 };
-Object.defineProperty($e, "__esModule", {
+Object.defineProperty(He, "__esModule", {
   value: !0
 });
-$e.mnemonicFromRandomSeed = $e.mnemonicIndexesToBytes = $e.bytesToMnemonics = $e.bytesToMnemonicIndexes = $e.mnemonicNew = $e.mnemonicValidate = $e.mnemonicToHDSeed = $e.mnemonicToWalletKey = $e.mnemonicToPrivateKey = $e.mnemonicToSeed = $e.mnemonicToEntropy = void 0;
-const Js = Cf(Yo),
-  Bf = Mt,
+He.mnemonicFromRandomSeed = He.mnemonicIndexesToBytes = He.bytesToMnemonics = He.bytesToMnemonicIndexes = He.mnemonicNew = He.mnemonicValidate = He.mnemonicToHDSeed = He.mnemonicToWalletKey = He.mnemonicToPrivateKey = He.mnemonicToSeed = He.mnemonicToEntropy = void 0;
+const Qs = Bf(Xo),
   Pf = Tt,
-  ji = Dr,
-  wa = Yt,
-  ni = Fr,
-  La = 1e5;
-async function Qs(e) {
-  const t = await Kr(e);
-  return await Mf(t) && !await Na(t)
+  Mf = Et,
+  Li = Fr,
+  va = Xt,
+  ri = Kr,
+  za = 1e5;
+async function qs(e) {
+  const t = await $r(e);
+  return await Tf(t) && !await Da(t)
 }
 
-function za(e) {
+function Na(e) {
   return e.map(t => t.toLowerCase().trim())
 }
-async function Na(e) {
-  return (await (0, ji.pbkdf2_sha512)(e, "TON seed version", Math.max(1, Math.floor(La / 256)), 64))[0] == 0
+async function Da(e) {
+  return (await (0, Li.pbkdf2_sha512)(e, "TON seed version", Math.max(1, Math.floor(za / 256)), 64))[0] == 0
 }
-async function Mf(e) {
-  return (await (0, ji.pbkdf2_sha512)(e, "TON fast seed version", 1, 64))[0] == 1
+async function Tf(e) {
+  return (await (0, Li.pbkdf2_sha512)(e, "TON fast seed version", 1, 64))[0] == 1
 }
-async function Kr(e, t) {
-  return await (0, Pf.hmac_sha512)(e.join(" "), t && t.length > 0 ? t : "")
+async function $r(e, t) {
+  return await (0, Mf.hmac_sha512)(e.join(" "), t && t.length > 0 ? t : "")
 }
-$e.mnemonicToEntropy = Kr;
-async function Da(e, t, n) {
-  const r = await Kr(e, n);
-  return await (0, ji.pbkdf2_sha512)(r, t, La, 64)
+He.mnemonicToEntropy = $r;
+async function Fa(e, t, n) {
+  const r = await $r(e, n);
+  return await (0, Li.pbkdf2_sha512)(r, t, za, 64)
 }
-$e.mnemonicToSeed = Da;
-async function qs(e, t) {
-  e = za(e);
-  const n = await Da(e, "TON default seed", t);
-  let r = Js.default.sign.keyPair.fromSeed(n.slice(0, 32));
-  return {
-    publicKey: Buffer.from(r.publicKey),
-    secretKey: Buffer.from(r.secretKey)
-  }
-}
-$e.mnemonicToPrivateKey = qs;
-async function Tf(e, t) {
-  let r = (await qs(e, t)).secretKey.slice(0, 32);
-  const i = Js.default.sign.keyPair.fromSeed(r);
-  return {
-    publicKey: Buffer.from(i.publicKey),
-    secretKey: Buffer.from(i.secretKey)
-  }
-}
-$e.mnemonicToWalletKey = Tf;
-async function Ef(e, t) {
-  return e = za(e), await Da(e, "TON HD Keys seed", t)
-}
-$e.mnemonicToHDSeed = Ef;
+He.mnemonicToSeed = Fa;
 async function Zs(e, t) {
-  e = za(e);
-  for (let n of e)
-    if (ni.wordlist.indexOf(n) < 0) return !1;
-  return t && t.length > 0 && !await Qs(e) ? !1 : await Na(await Kr(e, t))
+  e = Na(e);
+  const n = await Fa(e, "TON default seed", t);
+  let r = Qs.default.sign.keyPair.fromSeed(n.slice(0, 32));
+  return {
+    publicKey: be.Buffer.from(r.publicKey),
+    secretKey: be.Buffer.from(r.secretKey)
+  }
 }
-$e.mnemonicValidate = Zs;
-async function Of(e = 24, t) {
+He.mnemonicToPrivateKey = Zs;
+async function Ef(e, t) {
+  let r = (await Zs(e, t)).secretKey.slice(0, 32);
+  const i = Qs.default.sign.keyPair.fromSeed(r);
+  return {
+    publicKey: be.Buffer.from(i.publicKey),
+    secretKey: be.Buffer.from(i.secretKey)
+  }
+}
+He.mnemonicToWalletKey = Ef;
+async function Of(e, t) {
+  return e = Na(e), await Fa(e, "TON HD Keys seed", t)
+}
+He.mnemonicToHDSeed = Of;
+async function el(e, t) {
+  e = Na(e);
+  for (let n of e)
+    if (ri.wordlist.indexOf(n) < 0) return !1;
+  return t && t.length > 0 && !await qs(e) ? !1 : await Da(await $r(e, t))
+}
+He.mnemonicValidate = el;
+async function xf(e = 24, t) {
   let n = [];
   for (;;) {
     n = [];
     for (let r = 0; r < e; r++) {
-      let i = await (0, Bf.getSecureRandomNumber)(0, ni.wordlist.length);
-      n.push(ni.wordlist[i])
+      let i = await (0, Pf.getSecureRandomNumber)(0, ri.wordlist.length);
+      n.push(ri.wordlist[i])
     }
-    if (!(t && t.length > 0 && !await Qs(n)) && await Na(await Kr(n, t))) break
+    if (!(t && t.length > 0 && !await qs(n)) && await Da(await $r(n, t))) break
   }
   return n
 }
-$e.mnemonicNew = Of;
+He.mnemonicNew = xf;
 
-function el(e, t) {
-  let n = (0, wa.bytesToBits)(e),
+function tl(e, t) {
+  let n = (0, va.bytesToBits)(e),
     r = [];
   for (let i = 0; i < t; i++) {
     let o = n.slice(i * 11, i * 11 + 11);
@@ -10784,97 +10785,97 @@ function el(e, t) {
   }
   return r
 }
-$e.bytesToMnemonicIndexes = el;
+He.bytesToMnemonicIndexes = tl;
 
-function tl(e, t) {
-  let n = el(e, t),
+function nl(e, t) {
+  let n = tl(e, t),
     r = [];
-  for (let i of n) r.push(ni.wordlist[i]);
+  for (let i of n) r.push(ri.wordlist[i]);
   return r
 }
-$e.bytesToMnemonics = tl;
+He.bytesToMnemonics = nl;
 
-function xf(e) {
+function Uf(e) {
   let t = "";
   for (let n of e) {
     if (!Number.isSafeInteger(n) || n < 0 || n >= 2028) throw Error("Invalid input");
-    t += (0, wa.lpad)(n.toString(2), "0", 11)
+    t += (0, va.lpad)(n.toString(2), "0", 11)
   }
   for (; t.length % 8 !== 0;) t = t + "0";
-  return (0, wa.bitsToBytes)(t)
+  return (0, va.bitsToBytes)(t)
 }
-$e.mnemonicIndexesToBytes = xf;
-async function Uf(e, t = 24, n) {
+He.mnemonicIndexesToBytes = Uf;
+async function Rf(e, t = 24, n) {
   const r = Math.ceil(t * 11 / 8);
   let i = e;
   for (;;) {
-    let o = await (0, ji.pbkdf2_sha512)(i, "TON mnemonic seed", Math.max(1, Math.floor(La / 256)), r),
-      a = tl(o, t);
-    if (await Zs(a, n)) return a;
+    let o = await (0, Li.pbkdf2_sha512)(i, "TON mnemonic seed", Math.max(1, Math.floor(za / 256)), r),
+      a = nl(o, t);
+    if (await el(a, n)) return a;
     i = o
   }
 }
-$e.mnemonicFromRandomSeed = Uf;
-var ht = {},
-  Rf = pe && pe.__importDefault || function(e) {
+He.mnemonicFromRandomSeed = Rf;
+var pt = {},
+  jf = pe && pe.__importDefault || function(e) {
     return e && e.__esModule ? e : {
       default: e
     }
   };
-Object.defineProperty(ht, "__esModule", {
+Object.defineProperty(pt, "__esModule", {
   value: !0
 });
-ht.openBox = ht.sealBox = ht.signVerify = ht.sign = ht.keyPairFromSeed = ht.keyPairFromSecretKey = void 0;
-const fr = Rf(Yo);
-
-function jf(e) {
-  let t = fr.default.sign.keyPair.fromSecretKey(new Uint8Array(e));
-  return {
-    publicKey: Buffer.from(t.publicKey),
-    secretKey: Buffer.from(t.secretKey)
-  }
-}
-ht.keyPairFromSecretKey = jf;
+pt.openBox = pt.sealBox = pt.signVerify = pt.sign = pt.keyPairFromSeed = pt.keyPairFromSecretKey = void 0;
+const hr = jf(Xo);
 
 function Lf(e) {
-  let t = fr.default.sign.keyPair.fromSeed(new Uint8Array(e));
+  let t = hr.default.sign.keyPair.fromSecretKey(new Uint8Array(e));
   return {
-    publicKey: Buffer.from(t.publicKey),
-    secretKey: Buffer.from(t.secretKey)
+    publicKey: be.Buffer.from(t.publicKey),
+    secretKey: be.Buffer.from(t.secretKey)
   }
 }
-ht.keyPairFromSeed = Lf;
+pt.keyPairFromSecretKey = Lf;
 
-function zf(e, t) {
-  return Buffer.from(fr.default.sign.detached(new Uint8Array(e), new Uint8Array(t)))
+function zf(e) {
+  let t = hr.default.sign.keyPair.fromSeed(new Uint8Array(e));
+  return {
+    publicKey: be.Buffer.from(t.publicKey),
+    secretKey: be.Buffer.from(t.secretKey)
+  }
 }
-ht.sign = zf;
+pt.keyPairFromSeed = zf;
 
-function Nf(e, t, n) {
-  return fr.default.sign.detached.verify(new Uint8Array(e), new Uint8Array(t), new Uint8Array(n))
+function Nf(e, t) {
+  return be.Buffer.from(hr.default.sign.detached(new Uint8Array(e), new Uint8Array(t)))
 }
-ht.signVerify = Nf;
+pt.sign = Nf;
 
 function Df(e, t, n) {
-  return Buffer.from(fr.default.secretbox(e, t, n))
+  return hr.default.sign.detached.verify(new Uint8Array(e), new Uint8Array(t), new Uint8Array(n))
 }
-ht.sealBox = Df;
+pt.signVerify = Df;
 
 function Ff(e, t, n) {
-  let r = fr.default.secretbox.open(e, t, n);
-  return r ? Buffer.from(r) : null
+  return be.Buffer.from(hr.default.secretbox(e, t, n))
 }
-ht.openBox = Ff;
-var Xt = {};
-Object.defineProperty(Xt, "__esModule", {
+pt.sealBox = Ff;
+
+function Kf(e, t, n) {
+  let r = hr.default.secretbox.open(e, t, n);
+  return r ? be.Buffer.from(r) : null
+}
+pt.openBox = Kf;
+var Jt = {};
+Object.defineProperty(Jt, "__esModule", {
   value: !0
 });
-Xt.deriveEd25519Path = Xt.deriveED25519HardenedKey = Xt.getED25519MasterKeyFromSeed = void 0;
-const nl = Tt,
-  Kf = "ed25519 seed",
-  xo = 2147483648;
-async function rl(e) {
-  const t = await (0, nl.hmac_sha512)(Kf, e),
+Jt.deriveEd25519Path = Jt.deriveED25519HardenedKey = Jt.getED25519MasterKeyFromSeed = void 0;
+const rl = Et,
+  $f = "ed25519 seed",
+  Uo = 2147483648;
+async function il(e) {
+  const t = await (0, rl.hmac_sha512)($f, e),
     n = t.slice(0, 32),
     r = t.slice(32);
   return {
@@ -10882,13 +10883,13 @@ async function rl(e) {
     chainCode: r
   }
 }
-Xt.getED25519MasterKeyFromSeed = rl;
-async function il(e, t) {
-  if (t >= xo) throw Error("Key index must be less than offset");
-  const n = Buffer.alloc(4);
-  n.writeUInt32BE(t + xo, 0);
-  const r = Buffer.concat([Buffer.alloc(1, 0), e.key, n]),
-    i = await (0, nl.hmac_sha512)(e.chainCode, r),
+Jt.getED25519MasterKeyFromSeed = il;
+async function al(e, t) {
+  if (t >= Uo) throw Error("Key index must be less than offset");
+  const n = be.Buffer.alloc(4);
+  n.writeUInt32BE(t + Uo, 0);
+  const r = be.Buffer.concat([be.Buffer.alloc(1, 0), e.key, n]),
+    i = await (0, rl.hmac_sha512)(e.chainCode, r),
     o = i.slice(0, 32),
     a = i.slice(32);
   return {
@@ -10896,26 +10897,26 @@ async function il(e, t) {
     chainCode: a
   }
 }
-Xt.deriveED25519HardenedKey = il;
-async function $f(e, t) {
-  let n = await rl(e),
+Jt.deriveED25519HardenedKey = al;
+async function Hf(e, t) {
+  let n = await il(e),
     r = [...t];
   for (; r.length > 0;) {
     let i = r[0];
-    r = r.slice(1), n = await il(n, i)
+    r = r.slice(1), n = await al(n, i)
   }
   return n.key
 }
-Xt.deriveEd25519Path = $f;
-var Jt = {};
-Object.defineProperty(Jt, "__esModule", {
+Jt.deriveEd25519Path = Hf;
+var Qt = {};
+Object.defineProperty(Qt, "__esModule", {
   value: !0
 });
-Jt.deriveSymmetricPath = Jt.deriveSymmetricHardenedKey = Jt.getSymmetricMasterKeyFromSeed = void 0;
-const al = Tt,
-  Hf = "Symmetric key seed";
-async function ol(e) {
-  const t = await (0, al.hmac_sha512)(Hf, e),
+Qt.deriveSymmetricPath = Qt.deriveSymmetricHardenedKey = Qt.getSymmetricMasterKeyFromSeed = void 0;
+const ol = Et,
+  Vf = "Symmetric key seed";
+async function sl(e) {
+  const t = await (0, ol.hmac_sha512)(Vf, e),
     n = t.slice(32),
     r = t.slice(0, 32);
   return {
@@ -10923,10 +10924,10 @@ async function ol(e) {
     chainCode: r
   }
 }
-Jt.getSymmetricMasterKeyFromSeed = ol;
-async function sl(e, t) {
-  const n = Buffer.concat([Buffer.alloc(1, 0), Buffer.from(t)]),
-    r = await (0, al.hmac_sha512)(e.chainCode, n),
+Qt.getSymmetricMasterKeyFromSeed = sl;
+async function ll(e, t) {
+  const n = be.Buffer.concat([be.Buffer.alloc(1, 0), be.Buffer.from(t)]),
+    r = await (0, ol.hmac_sha512)(e.chainCode, n),
     i = r.slice(32),
     o = r.slice(0, 32);
   return {
@@ -10934,28 +10935,28 @@ async function sl(e, t) {
     chainCode: o
   }
 }
-Jt.deriveSymmetricHardenedKey = sl;
-async function Vf(e, t) {
-  let n = await ol(e),
+Qt.deriveSymmetricHardenedKey = ll;
+async function Gf(e, t) {
+  let n = await sl(e),
     r = [...t];
   for (; r.length > 0;) {
     let i = r[0];
-    r = r.slice(1), n = await sl(n, i)
+    r = r.slice(1), n = await ll(n, i)
   }
   return n.key
 }
-Jt.deriveSymmetricPath = Vf;
-var Qt = {};
-Object.defineProperty(Qt, "__esModule", {
+Qt.deriveSymmetricPath = Gf;
+var qt = {};
+Object.defineProperty(qt, "__esModule", {
   value: !0
 });
-Qt.deriveMnemonicsPath = Qt.deriveMnemonicHardenedKey = Qt.getMnemonicsMasterKeyFromSeed = void 0;
-const Gf = $e,
-  ll = Tt,
-  Uo = 2147483648,
-  Wf = "TON Mnemonics HD seed";
-async function cl(e) {
-  const t = await (0, ll.hmac_sha512)(Wf, e),
+qt.deriveMnemonicsPath = qt.deriveMnemonicHardenedKey = qt.getMnemonicsMasterKeyFromSeed = void 0;
+const Wf = He,
+  cl = Et,
+  Ro = 2147483648,
+  Yf = "TON Mnemonics HD seed";
+async function ul(e) {
+  const t = await (0, cl.hmac_sha512)(Yf, e),
     n = t.slice(0, 32),
     r = t.slice(32);
   return {
@@ -10963,13 +10964,13 @@ async function cl(e) {
     chainCode: r
   }
 }
-Qt.getMnemonicsMasterKeyFromSeed = cl;
-async function ul(e, t) {
-  if (t >= Uo) throw Error("Key index must be less than offset");
-  const n = Buffer.alloc(4);
-  n.writeUInt32BE(t + Uo, 0);
-  const r = Buffer.concat([Buffer.alloc(1, 0), e.key, n]),
-    i = await (0, ll.hmac_sha512)(e.chainCode, r),
+qt.getMnemonicsMasterKeyFromSeed = ul;
+async function dl(e, t) {
+  if (t >= Ro) throw Error("Key index must be less than offset");
+  const n = be.Buffer.alloc(4);
+  n.writeUInt32BE(t + Ro, 0);
+  const r = be.Buffer.concat([be.Buffer.alloc(1, 0), e.key, n]),
+    i = await (0, cl.hmac_sha512)(e.chainCode, r),
     o = i.slice(0, 32),
     a = i.slice(32);
   return {
@@ -10977,25 +10978,25 @@ async function ul(e, t) {
     chainCode: a
   }
 }
-Qt.deriveMnemonicHardenedKey = ul;
-async function Yf(e, t, n = 24, r) {
-  let i = await cl(e),
+qt.deriveMnemonicHardenedKey = dl;
+async function Xf(e, t, n = 24, r) {
+  let i = await ul(e),
     o = [...t];
   for (; o.length > 0;) {
     let a = o[0];
-    o = o.slice(1), i = await ul(i, a)
+    o = o.slice(1), i = await dl(i, a)
   }
-  return await (0, Gf.mnemonicFromRandomSeed)(i.key, n, r)
+  return await (0, Wf.mnemonicFromRandomSeed)(i.key, n, r)
 }
-Qt.deriveMnemonicsPath = Yf;
-var Ro;
+qt.deriveMnemonicsPath = Xf;
+var jo;
 
-function Fa() {
-  return Ro || (Ro = 1, function(e) {
+function Ka() {
+  return jo || (jo = 1, function(e) {
     Object.defineProperty(e, "__esModule", {
       value: !0
     }), e.getMnemonicsMasterKeyFromSeed = e.deriveMnemonicHardenedKey = e.deriveMnemonicsPath = e.deriveSymmetricPath = e.deriveSymmetricHardenedKey = e.getSymmetricMasterKeyFromSeed = e.deriveEd25519Path = e.deriveED25519HardenedKey = e.getED25519MasterKeyFromSeed = e.signVerify = e.sign = e.keyPairFromSecretKey = e.keyPairFromSeed = e.openBox = e.sealBox = e.mnemonicWordList = e.mnemonicToHDSeed = e.mnemonicToSeed = e.mnemonicToWalletKey = e.mnemonicToPrivateKey = e.mnemonicValidate = e.mnemonicNew = e.newSecurePassphrase = e.newSecureWords = e.getSecureRandomNumber = e.getSecureRandomWords = e.getSecureRandomBytes = e.hmac_sha512 = e.pbkdf2_sha512 = e.sha512_sync = e.sha512 = e.sha256_sync = e.sha256 = void 0;
-    var t = Gt;
+    var t = Wt;
     Object.defineProperty(e, "sha256", {
       enumerable: !0,
       get: function() {
@@ -11007,7 +11008,7 @@ function Fa() {
         return t.sha256_sync
       }
     });
-    var n = Wt;
+    var n = Yt;
     Object.defineProperty(e, "sha512", {
       enumerable: !0,
       get: function() {
@@ -11019,21 +11020,21 @@ function Fa() {
         return n.sha512_sync
       }
     });
-    var r = Dr;
+    var r = Fr;
     Object.defineProperty(e, "pbkdf2_sha512", {
       enumerable: !0,
       get: function() {
         return r.pbkdf2_sha512
       }
     });
-    var i = Tt;
+    var i = Et;
     Object.defineProperty(e, "hmac_sha512", {
       enumerable: !0,
       get: function() {
         return i.hmac_sha512
       }
     });
-    var o = Mt;
+    var o = Tt;
     Object.defineProperty(e, "getSecureRandomBytes", {
       enumerable: !0,
       get: function() {
@@ -11050,21 +11051,21 @@ function Fa() {
         return o.getSecureRandomNumber
       }
     });
-    var a = Ui;
+    var a = Ri;
     Object.defineProperty(e, "newSecureWords", {
       enumerable: !0,
       get: function() {
         return a.newSecureWords
       }
     });
-    var s = kf();
+    var s = Sf();
     Object.defineProperty(e, "newSecurePassphrase", {
       enumerable: !0,
       get: function() {
         return s.newSecurePassphrase
       }
     });
-    var c = $e;
+    var c = He;
     Object.defineProperty(e, "mnemonicNew", {
       enumerable: !0,
       get: function() {
@@ -11096,14 +11097,14 @@ function Fa() {
         return c.mnemonicToHDSeed
       }
     });
-    var f = Fr;
+    var f = Kr;
     Object.defineProperty(e, "mnemonicWordList", {
       enumerable: !0,
       get: function() {
         return f.wordlist
       }
     });
-    var u = ht;
+    var u = pt;
     Object.defineProperty(e, "sealBox", {
       enumerable: !0,
       get: function() {
@@ -11115,7 +11116,7 @@ function Fa() {
         return u.openBox
       }
     });
-    var _ = ht;
+    var _ = pt;
     Object.defineProperty(e, "keyPairFromSeed", {
       enumerable: !0,
       get: function() {
@@ -11137,7 +11138,7 @@ function Fa() {
         return _.signVerify
       }
     });
-    var B = Xt;
+    var B = Jt;
     Object.defineProperty(e, "getED25519MasterKeyFromSeed", {
       enumerable: !0,
       get: function() {
@@ -11154,7 +11155,7 @@ function Fa() {
         return B.deriveEd25519Path
       }
     });
-    var y = Jt;
+    var y = Qt;
     Object.defineProperty(e, "getSymmetricMasterKeyFromSeed", {
       enumerable: !0,
       get: function() {
@@ -11171,7 +11172,7 @@ function Fa() {
         return y.deriveSymmetricPath
       }
     });
-    var S = Qt;
+    var S = qt;
     Object.defineProperty(e, "deriveMnemonicsPath", {
       enumerable: !0,
       get: function() {
@@ -11188,24 +11189,24 @@ function Fa() {
         return S.getMnemonicsMasterKeyFromSeed
       }
     })
-  }(qi)), qi
+  }(Zi)), Zi
 }
-var jo;
+var Lo;
 
-function Xf() {
-  if (jo) return Sr;
-  jo = 1, Object.defineProperty(Sr, "__esModule", {
+function Jf() {
+  if (Lo) return Ar;
+  Lo = 1, Object.defineProperty(Ar, "__esModule", {
     value: !0
-  }), Sr.wonderCalculator = void 0;
-  const e = rn(),
-    t = an,
-    n = ur,
-    r = cr,
-    i = Bi(),
-    o = Nt,
-    a = Fa(),
-    s = lr,
-    c = Nr;
+  }), Ar.wonderCalculator = void 0;
+  const e = an(),
+    t = on,
+    n = dr,
+    r = ur,
+    i = Pi(),
+    o = Dt,
+    a = Ka(),
+    s = cr,
+    c = Dr;
 
   function f(u, _, B) {
     let y, S = null;
@@ -11243,9 +11244,9 @@ function Xf() {
       }
       B.length > 0 && ne++;
       let q = (0, o.getRepr)(_, J, B, k, y.apply(k).value, u),
-        we = (0, a.sha256_sync)(q),
-        ke = T - p;
-      m[ke] = ne, v[ke] = we, T++
+        ve = (0, a.sha256_sync)(q),
+        Se = T - p;
+      m[Se] = ne, v[Se] = ve, T++
     }
     let h = [],
       P = [];
@@ -11265,16 +11266,16 @@ function Xf() {
       depths: P
     }
   }
-  return Sr.wonderCalculator = f, Sr
+  return Ar.wonderCalculator = f, Ar
 }
-var jt = {},
-  Li = {};
-Object.defineProperty(Li, "__esModule", {
+var Lt = {},
+  zi = {};
+Object.defineProperty(zi, "__esModule", {
   value: !0
 });
-Li.topologicalSort = void 0;
+zi.topologicalSort = void 0;
 
-function Jf(e) {
+function Qf(e) {
   let t = [e],
     n = new Map,
     r = new Set,
@@ -11320,14 +11321,14 @@ function Jf(e) {
   }
   return c
 }
-Li.topologicalSort = Jf;
-var zi = {};
-Object.defineProperty(zi, "__esModule", {
+zi.topologicalSort = Qf;
+var Ni = {};
+Object.defineProperty(Ni, "__esModule", {
   value: !0
 });
-zi.bitsForNumber = void 0;
+Ni.bitsForNumber = void 0;
 
-function Qf(e, t) {
+function qf(e, t) {
   let n = BigInt(e);
   if (t === "int") return n === 0n || n === -1n ? 1 : (n > 0 ? n : -n).toString(2).length + 1;
   if (t === "uint") {
@@ -11335,38 +11336,38 @@ function Qf(e, t) {
     return n.toString(2).length
   } else throw Error(`invalid mode. Got ${t}`)
 }
-zi.bitsForNumber = Qf;
-var $r = {};
-Object.defineProperty($r, "__esModule", {
+Ni.bitsForNumber = qf;
+var Hr = {};
+Object.defineProperty(Hr, "__esModule", {
   value: !0
 });
-$r.crc32c = void 0;
-const Ht = 2197175160;
+Hr.crc32c = void 0;
+const Vt = 2197175160;
 
-function qf(e) {
+function Zf(e) {
   let t = -1;
-  for (let r = 0; r < e.length; r++) t ^= e[r], t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1, t = t & 1 ? t >>> 1 ^ Ht : t >>> 1;
+  for (let r = 0; r < e.length; r++) t ^= e[r], t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1, t = t & 1 ? t >>> 1 ^ Vt : t >>> 1;
   t = t ^ 4294967295;
-  let n = Buffer.alloc(4);
+  let n = be.Buffer.alloc(4);
   return n.writeInt32LE(t), n
 }
-$r.crc32c = qf;
-var Lo;
+Hr.crc32c = Zf;
+var zo;
 
-function Zf() {
-  if (Lo) return jt;
-  Lo = 1, Object.defineProperty(jt, "__esModule", {
+function eh() {
+  if (zo) return Lt;
+  zo = 1, Object.defineProperty(Lt, "__esModule", {
     value: !0
-  }), jt.serializeBoc = jt.deserializeBoc = jt.parseBoc = void 0;
-  const e = Bt,
-    t = rn(),
-    n = Gn(),
-    r = Li,
-    i = zi,
-    o = Ii(),
-    a = Nt,
-    s = Ai(),
-    c = $r;
+  }), Lt.serializeBoc = Lt.deserializeBoc = Lt.parseBoc = void 0;
+  const e = Pt,
+    t = an(),
+    n = Wn(),
+    r = zi,
+    i = Ni,
+    o = Ci(),
+    a = Dt,
+    s = Ii(),
+    c = Hr;
 
   function f(x) {
     return u(x & 7)
@@ -11387,13 +11388,13 @@ function Zf() {
       J = !!(k % 2),
       ne = p >> 5,
       q = (p & 16) != 0,
-      ke = q ? f(ne) * 32 : 0,
+      Se = q ? f(ne) * 32 : 0,
       V = q ? f(ne) * 2 : 0;
-    x.skip(ke * 8), x.skip(V * 8);
+    x.skip(Se * 8), x.skip(V * 8);
     let z = t.BitString.EMPTY;
     T > 0 && (J ? z = x.loadPaddedBits(T * 8) : z = x.loadBits(T * 8));
     let ie = [];
-    for (let ve = 0; ve < h; ve++) ie.push(x.loadUint(M * 8));
+    for (let ke = 0; ke < h; ke++) ie.push(x.loadUint(M * 8));
     return {
       bits: z,
       refs: ie,
@@ -11416,7 +11417,7 @@ function Zf() {
         J = M.loadUint(h * 8),
         ne = M.loadUint(P * 8),
         q = M.loadBuffer(k * P),
-        we = M.loadBuffer(ne);
+        ve = M.loadBuffer(ne);
       return {
         size: h,
         offBytes: P,
@@ -11425,7 +11426,7 @@ function Zf() {
         absent: J,
         totalCellSize: ne,
         index: q,
-        cellData: we,
+        cellData: ve,
         root: [0]
       }
     } else if (p === 2898503464) {
@@ -11436,9 +11437,9 @@ function Zf() {
         J = M.loadUint(h * 8),
         ne = M.loadUint(P * 8),
         q = M.loadBuffer(k * P),
-        we = M.loadBuffer(ne),
-        ke = M.loadBuffer(4);
-      if (!(0, c.crc32c)(x.subarray(0, x.length - 4)).equals(ke)) throw Error("Invalid CRC32C");
+        ve = M.loadBuffer(ne),
+        Se = M.loadBuffer(4);
+      if (!(0, c.crc32c)(x.subarray(0, x.length - 4)).equals(Se)) throw Error("Invalid CRC32C");
       return {
         size: h,
         offBytes: P,
@@ -11447,7 +11448,7 @@ function Zf() {
         absent: J,
         totalCellSize: ne,
         index: q,
-        cellData: we,
+        cellData: ve,
         root: [0]
       }
     } else if (p === 3052313714) {
@@ -11459,12 +11460,12 @@ function Zf() {
         J = M.loadUint(k * 8),
         ne = M.loadUint(k * 8),
         q = M.loadUint(k * 8),
-        we = M.loadUint(T * 8),
-        ke = [];
-      for (let ie = 0; ie < ne; ie++) ke.push(M.loadUint(k * 8));
+        ve = M.loadUint(T * 8),
+        Se = [];
+      for (let ie = 0; ie < ne; ie++) Se.push(M.loadUint(k * 8));
       let V = null;
       h && (V = M.loadBuffer(J * T));
-      let z = M.loadBuffer(we);
+      let z = M.loadBuffer(ve);
       if (P) {
         let ie = M.loadBuffer(4);
         if (!(0, c.crc32c)(x.subarray(0, x.length - 4)).equals(ie)) throw Error("Invalid CRC32C")
@@ -11475,14 +11476,14 @@ function Zf() {
         cells: J,
         roots: ne,
         absent: q,
-        totalCellSize: we,
+        totalCellSize: ve,
         index: V,
         cellData: z,
-        root: ke
+        root: Se
       }
     } else throw Error("Invalid magic")
   }
-  jt.parseBoc = y;
+  Lt.parseBoc = y;
 
   function S(x) {
     let M = y(x),
@@ -11512,7 +11513,7 @@ function Zf() {
     for (let k = 0; k < M.root.length; k++) P.push(h[M.root[k]].result);
     return P
   }
-  jt.deserializeBoc = S;
+  Lt.deserializeBoc = S;
 
   function m(x, M, p, h) {
     let P = (0, a.getRefsDescriptor)(x.refs, x.mask.value, x.type),
@@ -11530,61 +11531,61 @@ function Zf() {
       J = 0,
       ne = Math.max(Math.ceil((0, i.bitsForNumber)(h, "uint") / 8), 1),
       q = 0,
-      we = [];
-    for (let ve of p) {
-      let Ce = B(ve.cell, ne);
-      q += Ce, we.push(q)
+      ve = [];
+    for (let ke of p) {
+      let Be = B(ke.cell, ne);
+      q += Be, ve.push(q)
     }
-    let ke = Math.max(Math.ceil((0, i.bitsForNumber)(q, "uint") / 8), 1),
-      V = (6 + 3 * ne + ke + 1 * ne + (P ? h * ke : 0) + q + (k ? 4 : 0)) * 8,
+    let Se = Math.max(Math.ceil((0, i.bitsForNumber)(q, "uint") / 8), 1),
+      V = (6 + 3 * ne + Se + 1 * ne + (P ? h * Se : 0) + q + (k ? 4 : 0)) * 8,
       z = new o.BitBuilder(V);
-    if (z.writeUint(3052313714, 32), z.writeBit(P), z.writeBit(k), z.writeBit(T), z.writeUint(J, 2), z.writeUint(ne, 3), z.writeUint(ke, 8), z.writeUint(h, ne * 8), z.writeUint(1, ne * 8), z.writeUint(0, ne * 8), z.writeUint(q, ke * 8), z.writeUint(0, ne * 8), P)
-      for (let ve = 0; ve < h; ve++) z.writeUint(we[ve], ke * 8);
-    for (let ve = 0; ve < h; ve++) m(p[ve].cell, p[ve].refs, ne, z);
+    if (z.writeUint(3052313714, 32), z.writeBit(P), z.writeBit(k), z.writeBit(T), z.writeUint(J, 2), z.writeUint(ne, 3), z.writeUint(Se, 8), z.writeUint(h, ne * 8), z.writeUint(1, ne * 8), z.writeUint(0, ne * 8), z.writeUint(q, Se * 8), z.writeUint(0, ne * 8), P)
+      for (let ke = 0; ke < h; ke++) z.writeUint(ve[ke], Se * 8);
+    for (let ke = 0; ke < h; ke++) m(p[ke].cell, p[ke].refs, ne, z);
     if (k) {
-      let ve = (0, c.crc32c)(z.buffer());
-      z.writeBuffer(ve)
+      let ke = (0, c.crc32c)(z.buffer());
+      z.writeBuffer(ke)
     }
     let ie = z.buffer();
     if (ie.length !== V / 8) throw Error("Internal error");
     return ie
   }
-  return jt.serializeBoc = v, jt
+  return Lt.serializeBoc = v, Lt
 }
-var zo;
+var No;
 
-function Gn() {
-  if (zo) return yr;
-  zo = 1;
+function Wn() {
+  if (No) return _r;
+  No = 1;
   var e = pe && pe.__importDefault || function(B) {
       return B && B.__esModule ? B : {
         default: B
       }
     },
     t;
-  Object.defineProperty(yr, "__esModule", {
+  Object.defineProperty(_r, "__esModule", {
     value: !0
-  }), yr.Cell = void 0;
-  const n = e(ar),
-    r = rn(),
-    i = an,
-    o = Ua(),
-    a = Vd(),
-    s = Xf(),
-    c = Zf(),
-    f = Bt,
-    u = qe();
-  let _ = class va {
+  }), _r.Cell = void 0;
+  const n = e(or),
+    r = an(),
+    i = on,
+    o = Ra(),
+    a = Gd(),
+    s = Jf(),
+    c = eh(),
+    f = Pt,
+    u = Ze();
+  let _ = class ka {
     static fromBoc(y) {
       return (0, c.deserializeBoc)(y)
     }
     static fromBase64(y) {
-      let S = va.fromBoc(Buffer.from(y, "base64"));
+      let S = ka.fromBoc(be.Buffer.from(y, "base64"));
       if (S.length !== 1) throw new Error("Deserialized more than one cell");
       return S[0]
     }
     static fromHex(y) {
-      let S = va.fromBoc(Buffer.from(y, "hex"));
+      let S = ka.fromBoc(be.Buffer.from(y, "hex"));
       if (S.length !== 1) throw new Error("Deserialized more than one cell");
       return S[0]
     }
@@ -11640,24 +11641,24 @@ function Gn() {
       return (0, u.beginCell)().storeSlice(this.asSlice())
     }
   };
-  return yr.Cell = _, t = n.default, _.EMPTY = new _, yr
+  return _r.Cell = _, t = n.default, _.EMPTY = new _, _r
 }
-var No;
+var Do;
 
-function qe() {
-  if (No) return cn;
-  No = 1, Object.defineProperty(cn, "__esModule", {
+function Ze() {
+  if (Do) return un;
+  Do = 1, Object.defineProperty(un, "__esModule", {
     value: !0
-  }), cn.Builder = cn.beginCell = void 0;
-  const e = Ii(),
-    t = Gn(),
-    n = Fs();
+  }), un.Builder = un.beginCell = void 0;
+  const e = Ci(),
+    t = Wn(),
+    n = Ks();
 
   function r() {
     return new i
   }
-  cn.beginCell = r;
-  let i = class dl {
+  un.beginCell = r;
+  let i = class fl {
     constructor() {
       this._bits = new e.BitBuilder, this._refs = []
     }
@@ -11722,7 +11723,7 @@ function qe() {
     storeRef(a) {
       if (this._refs.length >= 4) throw new Error("Too many references");
       if (a instanceof t.Cell) this._refs.push(a);
-      else if (a instanceof dl) this._refs.push(a.endCell());
+      else if (a instanceof fl) this._refs.push(a.endCell());
       else throw new Error("Invalid argument");
       return this
     }
@@ -11784,73 +11785,73 @@ function qe() {
       return this.endCell().beginParse()
     }
   };
-  return cn.Builder = i, cn
+  return un.Builder = i, un
 }
-var Et = {},
-  Dt = {};
-Object.defineProperty(Dt, "__esModule", {
+var Ot = {},
+  Ft = {};
+Object.defineProperty(Ft, "__esModule", {
   value: !0
 });
-Dt.SimpleLibraryValue = Dt.storeSimpleLibrary = Dt.loadSimpleLibrary = void 0;
+Ft.SimpleLibraryValue = Ft.storeSimpleLibrary = Ft.loadSimpleLibrary = void 0;
 
-function fl(e) {
+function hl(e) {
   return {
     public: e.loadBit(),
     root: e.loadRef()
   }
 }
-Dt.loadSimpleLibrary = fl;
+Ft.loadSimpleLibrary = hl;
 
-function hl(e) {
+function pl(e) {
   return t => {
     t.storeBit(e.public), t.storeRef(e.root)
   }
 }
-Dt.storeSimpleLibrary = hl;
-Dt.SimpleLibraryValue = {
+Ft.storeSimpleLibrary = pl;
+Ft.SimpleLibraryValue = {
   serialize(e, t) {
-    hl(e)(t)
+    pl(e)(t)
   },
   parse(e) {
-    return fl(e)
+    return hl(e)
   }
 };
-var kn = {};
-Object.defineProperty(kn, "__esModule", {
+var Sn = {};
+Object.defineProperty(Sn, "__esModule", {
   value: !0
 });
-kn.storeTickTock = kn.loadTickTock = void 0;
+Sn.storeTickTock = Sn.loadTickTock = void 0;
 
-function eh(e) {
+function th(e) {
   return {
     tick: e.loadBit(),
     tock: e.loadBit()
   }
 }
-kn.loadTickTock = eh;
+Sn.loadTickTock = th;
 
-function th(e) {
+function nh(e) {
   return t => {
     t.storeBit(e.tick), t.storeBit(e.tock)
   }
 }
-kn.storeTickTock = th;
-Object.defineProperty(Et, "__esModule", {
+Sn.storeTickTock = nh;
+Object.defineProperty(Ot, "__esModule", {
   value: !0
 });
-Et.storeStateInit = Et.loadStateInit = void 0;
-const nh = Vn(),
-  rh = Dt,
-  pl = kn;
+Ot.storeStateInit = Ot.loadStateInit = void 0;
+const rh = Gn(),
+  ih = Ft,
+  gl = Sn;
 
-function ih(e) {
+function ah(e) {
   let t;
   e.loadBit() && (t = e.loadUint(5));
   let n;
-  e.loadBit() && (n = (0, pl.loadTickTock)(e));
+  e.loadBit() && (n = (0, gl.loadTickTock)(e));
   let r = e.loadMaybeRef(),
     i = e.loadMaybeRef(),
-    o = e.loadDict(nh.Dictionary.Keys.BigUint(256), rh.SimpleLibraryValue);
+    o = e.loadDict(rh.Dictionary.Keys.BigUint(256), ih.SimpleLibraryValue);
   return o.size === 0 && (o = void 0), {
     splitDepth: t,
     special: n,
@@ -11859,39 +11860,39 @@ function ih(e) {
     libraries: o
   }
 }
-Et.loadStateInit = ih;
+Ot.loadStateInit = ah;
 
-function ah(e) {
+function oh(e) {
   return t => {
-    e.splitDepth !== null && e.splitDepth !== void 0 ? (t.storeBit(!0), t.storeUint(e.splitDepth, 5)) : t.storeBit(!1), e.special !== null && e.special !== void 0 ? (t.storeBit(!0), t.store((0, pl.storeTickTock)(e.special))) : t.storeBit(!1), t.storeMaybeRef(e.code), t.storeMaybeRef(e.data), t.storeDict(e.libraries)
+    e.splitDepth !== null && e.splitDepth !== void 0 ? (t.storeBit(!0), t.storeUint(e.splitDepth, 5)) : t.storeBit(!1), e.special !== null && e.special !== void 0 ? (t.storeBit(!0), t.store((0, gl.storeTickTock)(e.special))) : t.storeBit(!1), t.storeMaybeRef(e.code), t.storeMaybeRef(e.data), t.storeDict(e.libraries)
   }
 }
-Et.storeStateInit = ah;
-Object.defineProperty(Si, "__esModule", {
+Ot.storeStateInit = oh;
+Object.defineProperty(Ai, "__esModule", {
   value: !0
 });
-Si.contractAddress = void 0;
-const oh = qe(),
-  sh = Et,
-  lh = kt;
+Ai.contractAddress = void 0;
+const sh = Ze(),
+  lh = Ot,
+  ch = St;
 
-function ch(e, t) {
-  let n = (0, oh.beginCell)().store((0, sh.storeStateInit)(t)).endCell().hash();
-  return new lh.Address(e, n)
+function uh(e, t) {
+  let n = (0, sh.beginCell)().store((0, lh.storeStateInit)(t)).endCell().hash();
+  return new ch.Address(e, n)
 }
-Si.contractAddress = ch;
-var rr = {};
-Object.defineProperty(rr, "__esModule", {
+Ai.contractAddress = uh;
+var ir = {};
+Object.defineProperty(ir, "__esModule", {
   value: !0
 });
-rr.parseTuple = rr.serializeTuple = void 0;
-const zr = qe(),
-  uh = BigInt("-9223372036854775808"),
-  dh = BigInt("9223372036854775807");
+ir.parseTuple = ir.serializeTuple = void 0;
+const Nr = Ze(),
+  dh = BigInt("-9223372036854775808"),
+  fh = BigInt("9223372036854775807");
 
-function gl(e, t) {
+function ml(e, t) {
   if (e.type === "null") t.storeUint(0, 8);
-  else if (e.type === "int") e.value <= dh && e.value >= uh ? (t.storeUint(1, 8), t.storeInt(e.value, 64)) : (t.storeUint(256, 15), t.storeInt(e.value, 257));
+  else if (e.type === "int") e.value <= fh && e.value >= dh ? (t.storeUint(1, 8), t.storeInt(e.value, 64)) : (t.storeUint(256, 15), t.storeInt(e.value, 257));
   else if (e.type === "nan") t.storeInt(767, 16);
   else if (e.type === "cell") t.storeUint(3, 8), t.storeRef(e.cell);
   else if (e.type === "slice") t.storeUint(4, 8), t.storeUint(0, 10), t.storeUint(e.cell.bits.length, 10), t.storeUint(0, 3), t.storeUint(e.cell.refs.length, 3), t.storeRef(e.cell);
@@ -11901,15 +11902,15 @@ function gl(e, t) {
       r = null;
     for (let i = 0; i < e.items.length; i++) {
       let o = n;
-      n = r, r = o, i > 1 && (n = (0, zr.beginCell)().storeRef(r).storeRef(n).endCell());
-      let a = (0, zr.beginCell)();
-      gl(e.items[i], a), r = a.endCell()
+      n = r, r = o, i > 1 && (n = (0, Nr.beginCell)().storeRef(r).storeRef(n).endCell());
+      let a = (0, Nr.beginCell)();
+      ml(e.items[i], a), r = a.endCell()
     }
     t.storeUint(7, 8), t.storeUint(e.items.length, 16), n && t.storeRef(n), r && t.storeRef(r)
   } else throw Error("Invalid value")
 }
 
-function Mr(e) {
+function Tr(e) {
   let t = e.loadUint(8);
   if (t === 0) return {
     type: "null"
@@ -11936,7 +11937,7 @@ function Mr(e) {
       a = e.loadRef().beginParse();
     a.skip(n);
     let s = a.loadBits(r - n),
-      c = (0, zr.beginCell)().storeBits(s);
+      c = (0, Nr.beginCell)().storeBits(s);
     if (i < o) {
       for (let f = 0; f < i; f++) a.loadRef();
       for (let f = 0; f < o - i; f++) c.storeRef(a.loadRef())
@@ -11956,13 +11957,13 @@ function Mr(e) {
       if (n > 1) {
         let i = e.loadRef().beginParse(),
           o = e.loadRef().beginParse();
-        r.unshift(Mr(o));
+        r.unshift(Tr(o));
         for (let a = 0; a < n - 2; a++) {
           let s = i;
-          i = s.loadRef().beginParse(), o = s.loadRef().beginParse(), r.unshift(Mr(o))
+          i = s.loadRef().beginParse(), o = s.loadRef().beginParse(), r.unshift(Tr(o))
         }
-        r.unshift(Mr(i))
-      } else n === 1 && r.push(Mr(e.loadRef().beginParse()));
+        r.unshift(Tr(i))
+      } else n === 1 && r.push(Tr(e.loadRef().beginParse()));
       return {
         type: "tuple",
         items: r
@@ -11971,38 +11972,38 @@ function Mr(e) {
   }
 }
 
-function ml(e, t) {
+function bl(e, t) {
   if (e.length > 0) {
-    let n = (0, zr.beginCell)();
-    ml(e.slice(0, e.length - 1), n), t.storeRef(n.endCell()), gl(e[e.length - 1], t)
+    let n = (0, Nr.beginCell)();
+    bl(e.slice(0, e.length - 1), n), t.storeRef(n.endCell()), ml(e[e.length - 1], t)
   }
 }
 
-function fh(e) {
-  let t = (0, zr.beginCell)();
+function hh(e) {
+  let t = (0, Nr.beginCell)();
   t.storeUint(e.length, 24);
   let n = [...e];
-  return ml(n, t), t.endCell()
+  return bl(n, t), t.endCell()
 }
-rr.serializeTuple = fh;
+ir.serializeTuple = hh;
 
-function hh(e) {
+function ph(e) {
   let t = [],
     n = e.beginParse(),
     r = n.loadUint(24);
   for (let i = 0; i < r; i++) {
     let o = n.loadRef();
-    t.unshift(Mr(n)), n = o.beginParse()
+    t.unshift(Tr(n)), n = o.beginParse()
   }
   return t
 }
-rr.parseTuple = hh;
-var Ni = {};
-Object.defineProperty(Ni, "__esModule", {
+ir.parseTuple = ph;
+var Di = {};
+Object.defineProperty(Di, "__esModule", {
   value: !0
 });
-Ni.TupleReader = void 0;
-class Xn {
+Di.TupleReader = void 0;
+class Jn {
   constructor(t) {
     this.items = [...t]
   }
@@ -12070,13 +12071,13 @@ class Xn {
   readTuple() {
     let t = this.pop();
     if (t.type !== "tuple") throw Error("Not a tuple");
-    return new Xn(t.items)
+    return new Jn(t.items)
   }
   readTupleOpt() {
     let t = this.pop();
     if (t.type === "null") return null;
     if (t.type !== "tuple") throw Error("Not a tuple");
-    return new Xn(t.items)
+    return new Jn(t.items)
   }
   static readLispList(t) {
     const n = [];
@@ -12089,10 +12090,10 @@ class Xn {
     return n
   }
   readLispListDirect() {
-    return this.items.length === 1 && this.items[0].type === "null" ? [] : Xn.readLispList(this)
+    return this.items.length === 1 && this.items[0].type === "null" ? [] : Jn.readLispList(this)
   }
   readLispList() {
-    return Xn.readLispList(this.readTupleOpt())
+    return Jn.readLispList(this.readTupleOpt())
   }
   readBuffer() {
     let t = this.readCell().beginParse();
@@ -12115,16 +12116,16 @@ class Xn {
     return t !== null ? t.beginParse().loadStringTail() : null
   }
 }
-Ni.TupleReader = Xn;
-var Di = {};
-Object.defineProperty(Di, "__esModule", {
+Di.TupleReader = Jn;
+var Fi = {};
+Object.defineProperty(Fi, "__esModule", {
   value: !0
 });
-Di.TupleBuilder = void 0;
-const Zi = qe(),
-  ea = Gn(),
-  ta = Ua();
-class ph {
+Fi.TupleBuilder = void 0;
+const ea = Ze(),
+  ta = Wn(),
+  na = Ra();
+class gh {
   constructor() {
     this._tuple = []
   }
@@ -12149,7 +12150,7 @@ class ph {
       type: "null"
     }) : this._tuple.push({
       type: "slice",
-      cell: (0, Zi.beginCell)().storeBuffer(t).endCell()
+      cell: (0, ea.beginCell)().storeBuffer(t).endCell()
     })
   }
   writeString(t) {
@@ -12157,16 +12158,16 @@ class ph {
       type: "null"
     }) : this._tuple.push({
       type: "slice",
-      cell: (0, Zi.beginCell)().storeStringTail(t).endCell()
+      cell: (0, ea.beginCell)().storeStringTail(t).endCell()
     })
   }
   writeCell(t) {
     t == null ? this._tuple.push({
       type: "null"
-    }) : t instanceof ea.Cell ? this._tuple.push({
+    }) : t instanceof ta.Cell ? this._tuple.push({
       type: "cell",
       cell: t
-    }) : t instanceof ta.Slice && this._tuple.push({
+    }) : t instanceof na.Slice && this._tuple.push({
       type: "cell",
       cell: t.asCell()
     })
@@ -12174,10 +12175,10 @@ class ph {
   writeSlice(t) {
     t == null ? this._tuple.push({
       type: "null"
-    }) : t instanceof ea.Cell ? this._tuple.push({
+    }) : t instanceof ta.Cell ? this._tuple.push({
       type: "slice",
       cell: t
-    }) : t instanceof ta.Slice && this._tuple.push({
+    }) : t instanceof na.Slice && this._tuple.push({
       type: "slice",
       cell: t.asCell()
     })
@@ -12185,10 +12186,10 @@ class ph {
   writeBuilder(t) {
     t == null ? this._tuple.push({
       type: "null"
-    }) : t instanceof ea.Cell ? this._tuple.push({
+    }) : t instanceof ta.Cell ? this._tuple.push({
       type: "builder",
       cell: t
-    }) : t instanceof ta.Slice && this._tuple.push({
+    }) : t instanceof na.Slice && this._tuple.push({
       type: "builder",
       cell: t.asCell()
     })
@@ -12206,23 +12207,23 @@ class ph {
       type: "null"
     }) : this._tuple.push({
       type: "slice",
-      cell: (0, Zi.beginCell)().storeAddress(t).endCell()
+      cell: (0, ea.beginCell)().storeAddress(t).endCell()
     })
   }
   build() {
     return [...this._tuple]
   }
 }
-Di.TupleBuilder = ph;
-var bl = {},
-  qt = {},
-  Sn = {};
-Object.defineProperty(Sn, "__esModule", {
+Fi.TupleBuilder = gh;
+var yl = {},
+  Zt = {},
+  An = {};
+Object.defineProperty(An, "__esModule", {
   value: !0
 });
-Sn.fromNano = Sn.toNano = void 0;
+An.fromNano = An.toNano = void 0;
 
-function gh(e) {
+function mh(e) {
   if (typeof e == "bigint") return e * 1000000000n;
   {
     if (typeof e == "number") {
@@ -12250,9 +12251,9 @@ function gh(e) {
     return t && (o = -o), o
   }
 }
-Sn.toNano = gh;
+An.toNano = mh;
 
-function mh(e) {
+function bh(e) {
   let t = BigInt(e),
     n = !1;
   t < 0 && (n = !0, t = -t);
@@ -12262,27 +12263,27 @@ function mh(e) {
   let s = `${(t/1000000000n).toString()}${i==="0"?"":`.${i}`}`;
   return n && (s = "-" + s), s
 }
-Sn.fromNano = mh;
-Object.defineProperty(qt, "__esModule", {
+An.fromNano = bh;
+Object.defineProperty(Zt, "__esModule", {
   value: !0
 });
-qt.comment = qt.external = qt.internal = void 0;
-const ri = kt,
-  yl = Gn(),
-  _l = qe(),
-  bh = Sn;
+Zt.comment = Zt.external = Zt.internal = void 0;
+const ii = St,
+  _l = Wn(),
+  wl = Ze(),
+  yh = An;
 
-function yh(e) {
+function _h(e) {
   let t = !0;
   e.bounce !== null && e.bounce !== void 0 && (t = e.bounce);
   let n;
-  if (typeof e.to == "string") n = ri.Address.parse(e.to);
-  else if (ri.Address.isAddress(e.to)) n = e.to;
+  if (typeof e.to == "string") n = ii.Address.parse(e.to);
+  else if (ii.Address.isAddress(e.to)) n = e.to;
   else throw new Error(`Invalid address ${e.to}`);
   let r;
-  typeof e.value == "string" ? r = (0, bh.toNano)(e.value) : r = e.value;
-  let i = yl.Cell.EMPTY;
-  return typeof e.body == "string" ? i = (0, _l.beginCell)().storeUint(0, 32).storeStringTail(e.body).endCell() : e.body && (i = e.body), {
+  typeof e.value == "string" ? r = (0, yh.toNano)(e.value) : r = e.value;
+  let i = _l.Cell.EMPTY;
+  return typeof e.body == "string" ? i = (0, wl.beginCell)().storeUint(0, 32).storeStringTail(e.body).endCell() : e.body && (i = e.body), {
     info: {
       type: "internal",
       dest: n,
@@ -12301,12 +12302,12 @@ function yh(e) {
     body: i
   }
 }
-qt.internal = yh;
+Zt.internal = _h;
 
-function _h(e) {
+function wh(e) {
   let t;
-  if (typeof e.to == "string") t = ri.Address.parse(e.to);
-  else if (ri.Address.isAddress(e.to)) t = e.to;
+  if (typeof e.to == "string") t = ii.Address.parse(e.to);
+  else if (ii.Address.isAddress(e.to)) t = e.to;
   else throw new Error(`Invalid address ${e.to}`);
   return {
     info: {
@@ -12315,28 +12316,28 @@ function _h(e) {
       importFee: 0n
     },
     init: e.init ?? void 0,
-    body: e.body || yl.Cell.EMPTY
+    body: e.body || _l.Cell.EMPTY
   }
 }
-qt.external = _h;
-
-function wh(e) {
-  return (0, _l.beginCell)().storeUint(0, 32).storeStringTail(e).endCell()
-}
-qt.comment = wh;
-var An = {},
-  In = {},
-  Cn = {};
-Object.defineProperty(Cn, "__esModule", {
-  value: !0
-});
-Cn.storeAccountState = Cn.loadAccountState = void 0;
-const wl = Et;
+Zt.external = wh;
 
 function vh(e) {
+  return (0, wl.beginCell)().storeUint(0, 32).storeStringTail(e).endCell()
+}
+Zt.comment = vh;
+var In = {},
+  Cn = {},
+  Bn = {};
+Object.defineProperty(Bn, "__esModule", {
+  value: !0
+});
+Bn.storeAccountState = Bn.loadAccountState = void 0;
+const vl = Ot;
+
+function kh(e) {
   return e.loadBit() ? {
     type: "active",
-    state: (0, wl.loadStateInit)(e)
+    state: (0, vl.loadStateInit)(e)
   } : e.loadBit() ? {
     type: "frozen",
     stateHash: e.loadUintBig(256)
@@ -12344,24 +12345,24 @@ function vh(e) {
     type: "uninit"
   }
 }
-Cn.loadAccountState = vh;
-
-function kh(e) {
-  return t => {
-    e.type === "active" ? (t.storeBit(!0), t.store((0, wl.storeStateInit)(e.state))) : e.type === "frozen" ? (t.storeBit(!1), t.storeBit(!0), t.storeUint(e.stateHash, 256)) : e.type === "uninit" && (t.storeBit(!1), t.storeBit(!1))
-  }
-}
-Cn.storeAccountState = kh;
-var yt = {};
-Object.defineProperty(yt, "__esModule", {
-  value: !0
-});
-yt.storeCurrencyCollection = yt.loadCurrencyCollection = void 0;
-const Do = Vn();
+Bn.loadAccountState = kh;
 
 function Sh(e) {
+  return t => {
+    e.type === "active" ? (t.storeBit(!0), t.store((0, vl.storeStateInit)(e.state))) : e.type === "frozen" ? (t.storeBit(!1), t.storeBit(!0), t.storeUint(e.stateHash, 256)) : e.type === "uninit" && (t.storeBit(!1), t.storeBit(!1))
+  }
+}
+Bn.storeAccountState = Sh;
+var _t = {};
+Object.defineProperty(_t, "__esModule", {
+  value: !0
+});
+_t.storeCurrencyCollection = _t.loadCurrencyCollection = void 0;
+const Fo = Gn();
+
+function Ah(e) {
   const t = e.loadCoins(),
-    n = e.loadDict(Do.Dictionary.Keys.Uint(32), Do.Dictionary.Values.BigVarUint(5));
+    n = e.loadDict(Fo.Dictionary.Keys.Uint(32), Fo.Dictionary.Values.BigVarUint(5));
   return n.size === 0 ? {
     coins: t
   } : {
@@ -12369,108 +12370,108 @@ function Sh(e) {
     coins: t
   }
 }
-yt.loadCurrencyCollection = Sh;
+_t.loadCurrencyCollection = Ah;
 
-function Ah(e) {
+function Ih(e) {
   return t => {
     t.storeCoins(e.coins), e.other ? t.storeDict(e.other) : t.storeBit(0)
   }
 }
-yt.storeCurrencyCollection = Ah;
-Object.defineProperty(In, "__esModule", {
+_t.storeCurrencyCollection = Ih;
+Object.defineProperty(Cn, "__esModule", {
   value: !0
 });
-In.storeAccountStorage = In.loadAccountStorage = void 0;
-const vl = Cn,
-  kl = yt;
-
-function Ih(e) {
-  return {
-    lastTransLt: e.loadUintBig(64),
-    balance: (0, kl.loadCurrencyCollection)(e),
-    state: (0, vl.loadAccountState)(e)
-  }
-}
-In.loadAccountStorage = Ih;
+Cn.storeAccountStorage = Cn.loadAccountStorage = void 0;
+const kl = Bn,
+  Sl = _t;
 
 function Ch(e) {
-  return t => {
-    t.storeUint(e.lastTransLt, 64), t.store((0, kl.storeCurrencyCollection)(e.balance)), t.store((0, vl.storeAccountState)(e.state))
+  return {
+    lastTransLt: e.loadUintBig(64),
+    balance: (0, Sl.loadCurrencyCollection)(e),
+    state: (0, kl.loadAccountState)(e)
   }
 }
-In.storeAccountStorage = Ch;
-var Bn = {},
-  Pn = {};
-Object.defineProperty(Pn, "__esModule", {
-  value: !0
-});
-Pn.storeStorageUsed = Pn.loadStorageUsed = void 0;
+Cn.loadAccountStorage = Ch;
 
 function Bh(e) {
+  return t => {
+    t.storeUint(e.lastTransLt, 64), t.store((0, Sl.storeCurrencyCollection)(e.balance)), t.store((0, kl.storeAccountState)(e.state))
+  }
+}
+Cn.storeAccountStorage = Bh;
+var Pn = {},
+  Mn = {};
+Object.defineProperty(Mn, "__esModule", {
+  value: !0
+});
+Mn.storeStorageUsed = Mn.loadStorageUsed = void 0;
+
+function Ph(e) {
   return {
     cells: e.loadVarUintBig(3),
     bits: e.loadVarUintBig(3),
     publicCells: e.loadVarUintBig(3)
   }
 }
-Pn.loadStorageUsed = Bh;
+Mn.loadStorageUsed = Ph;
 
-function Ph(e) {
+function Mh(e) {
   return t => {
     t.storeVarUint(e.cells, 3), t.storeVarUint(e.bits, 3), t.storeVarUint(e.publicCells, 3)
   }
 }
-Pn.storeStorageUsed = Ph;
-Object.defineProperty(Bn, "__esModule", {
+Mn.storeStorageUsed = Mh;
+Object.defineProperty(Pn, "__esModule", {
   value: !0
 });
-Bn.storeStorageInfo = Bn.loadStorageInfo = void 0;
-const Sl = Pn;
+Pn.storeStorageInfo = Pn.loadStorageInfo = void 0;
+const Al = Mn;
 
-function Mh(e) {
+function Th(e) {
   return {
-    used: (0, Sl.loadStorageUsed)(e),
+    used: (0, Al.loadStorageUsed)(e),
     lastPaid: e.loadUint(32),
     duePayment: e.loadMaybeCoins()
   }
 }
-Bn.loadStorageInfo = Mh;
-
-function Th(e) {
-  return t => {
-    t.store((0, Sl.storeStorageUsed)(e.used)), t.storeUint(e.lastPaid, 32), t.storeMaybeCoins(e.duePayment)
-  }
-}
-Bn.storeStorageInfo = Th;
-Object.defineProperty(An, "__esModule", {
-  value: !0
-});
-An.storeAccount = An.loadAccount = void 0;
-const Al = In,
-  Il = Bn;
+Pn.loadStorageInfo = Th;
 
 function Eh(e) {
-  return {
-    addr: e.loadAddress(),
-    storageStats: (0, Il.loadStorageInfo)(e),
-    storage: (0, Al.loadAccountStorage)(e)
-  }
-}
-An.loadAccount = Eh;
-
-function Oh(e) {
   return t => {
-    t.storeAddress(e.addr), t.store((0, Il.storeStorageInfo)(e.storageStats)), t.store((0, Al.storeAccountStorage)(e.storage))
+    t.store((0, Al.storeStorageUsed)(e.used)), t.storeUint(e.lastPaid, 32), t.storeMaybeCoins(e.duePayment)
   }
 }
-An.storeAccount = Oh;
-var Mn = {};
-Object.defineProperty(Mn, "__esModule", {
+Pn.storeStorageInfo = Eh;
+Object.defineProperty(In, "__esModule", {
   value: !0
 });
-Mn.storeAccountStatus = Mn.loadAccountStatus = void 0;
+In.storeAccount = In.loadAccount = void 0;
+const Il = Cn,
+  Cl = Pn;
+
+function Oh(e) {
+  return {
+    addr: e.loadAddress(),
+    storageStats: (0, Cl.loadStorageInfo)(e),
+    storage: (0, Il.loadAccountStorage)(e)
+  }
+}
+In.loadAccount = Oh;
 
 function xh(e) {
+  return t => {
+    t.storeAddress(e.addr), t.store((0, Cl.storeStorageInfo)(e.storageStats)), t.store((0, Il.storeAccountStorage)(e.storage))
+  }
+}
+In.storeAccount = xh;
+var Tn = {};
+Object.defineProperty(Tn, "__esModule", {
+  value: !0
+});
+Tn.storeAccountStatus = Tn.loadAccountStatus = void 0;
+
+function Uh(e) {
   const t = e.loadUint(2);
   if (t === 0) return "uninitialized";
   if (t === 1) return "frozen";
@@ -12478,9 +12479,9 @@ function xh(e) {
   if (t === 3) return "non-existing";
   throw Error("Invalid data")
 }
-Mn.loadAccountStatus = xh;
+Tn.loadAccountStatus = Uh;
 
-function Uh(e) {
+function Rh(e) {
   return t => {
     if (e === "uninitialized") t.storeUint(0, 2);
     else if (e === "frozen") t.storeUint(1, 2);
@@ -12490,19 +12491,19 @@ function Uh(e) {
     return t
   }
 }
-Mn.storeAccountStatus = Uh;
-var en = {};
-Object.defineProperty(en, "__esModule", {
+Tn.storeAccountStatus = Rh;
+var tn = {};
+Object.defineProperty(tn, "__esModule", {
   value: !0
 });
-en.storeAccountStatusChange = en.loadAccountStatusChange = void 0;
-
-function Rh(e) {
-  return e.loadBit() ? e.loadBit() ? "deleted" : "frozen" : "unchanged"
-}
-en.loadAccountStatusChange = Rh;
+tn.storeAccountStatusChange = tn.loadAccountStatusChange = void 0;
 
 function jh(e) {
+  return e.loadBit() ? e.loadBit() ? "deleted" : "frozen" : "unchanged"
+}
+tn.loadAccountStatusChange = jh;
+
+function Lh(e) {
   return t => {
     if (e == "unchanged") t.storeBit(0);
     else if (e === "frozen") t.storeBit(1), t.storeBit(0);
@@ -12510,24 +12511,24 @@ function jh(e) {
     else throw Error("Invalid account status change")
   }
 }
-en.storeAccountStatusChange = jh;
-var Pt = {},
-  Tn = {},
-  En = {};
-Object.defineProperty(En, "__esModule", {
+tn.storeAccountStatusChange = Lh;
+var Mt = {},
+  En = {},
+  On = {};
+Object.defineProperty(On, "__esModule", {
   value: !0
 });
-En.storeCommonMessageInfoRelaxed = En.loadCommonMessageInfoRelaxed = void 0;
-const Cl = yt;
+On.storeCommonMessageInfoRelaxed = On.loadCommonMessageInfoRelaxed = void 0;
+const Bl = _t;
 
-function Lh(e) {
+function zh(e) {
   if (!e.loadBit()) {
     const o = e.loadBit(),
       a = e.loadBit(),
       s = e.loadBit(),
       c = e.loadMaybeAddress(),
       f = e.loadAddress(),
-      u = (0, Cl.loadCurrencyCollection)(e),
+      u = (0, Bl.loadCurrencyCollection)(e),
       _ = e.loadCoins(),
       B = e.loadCoins(),
       y = e.loadUintBig(64),
@@ -12559,28 +12560,28 @@ function Lh(e) {
     createdAt: i
   }
 }
-En.loadCommonMessageInfoRelaxed = Lh;
+On.loadCommonMessageInfoRelaxed = zh;
 
-function zh(e) {
+function Nh(e) {
   return t => {
-    if (e.type === "internal") t.storeBit(0), t.storeBit(e.ihrDisabled), t.storeBit(e.bounce), t.storeBit(e.bounced), t.storeAddress(e.src), t.storeAddress(e.dest), t.store((0, Cl.storeCurrencyCollection)(e.value)), t.storeCoins(e.ihrFee), t.storeCoins(e.forwardFee), t.storeUint(e.createdLt, 64), t.storeUint(e.createdAt, 32);
+    if (e.type === "internal") t.storeBit(0), t.storeBit(e.ihrDisabled), t.storeBit(e.bounce), t.storeBit(e.bounced), t.storeAddress(e.src), t.storeAddress(e.dest), t.store((0, Bl.storeCurrencyCollection)(e.value)), t.storeCoins(e.ihrFee), t.storeCoins(e.forwardFee), t.storeUint(e.createdLt, 64), t.storeUint(e.createdAt, 32);
     else if (e.type === "external-out") t.storeBit(1), t.storeBit(1), t.storeAddress(e.src), t.storeAddress(e.dest), t.storeUint(e.createdLt, 64), t.storeUint(e.createdAt, 32);
     else throw new Error("Unknown CommonMessageInfo type")
   }
 }
-En.storeCommonMessageInfoRelaxed = zh;
-Object.defineProperty(Tn, "__esModule", {
+On.storeCommonMessageInfoRelaxed = Nh;
+Object.defineProperty(En, "__esModule", {
   value: !0
 });
-Tn.storeMessageRelaxed = Tn.loadMessageRelaxed = void 0;
-const Nh = qe(),
-  Bl = En,
-  ka = Et;
+En.storeMessageRelaxed = En.loadMessageRelaxed = void 0;
+const Dh = Ze(),
+  Pl = On,
+  Sa = Ot;
 
-function Dh(e) {
-  const t = (0, Bl.loadCommonMessageInfoRelaxed)(e);
+function Fh(e) {
+  const t = (0, Pl.loadCommonMessageInfoRelaxed)(e);
   let n = null;
-  e.loadBit() && (e.loadBit() ? n = (0, ka.loadStateInit)(e.loadRef().beginParse()) : n = (0, ka.loadStateInit)(e));
+  e.loadBit() && (e.loadBit() ? n = (0, Sa.loadStateInit)(e.loadRef().beginParse()) : n = (0, Sa.loadStateInit)(e));
   const r = e.loadBit() ? e.loadRef() : e.asCell();
   return {
     info: t,
@@ -12588,13 +12589,13 @@ function Dh(e) {
     body: r
   }
 }
-Tn.loadMessageRelaxed = Dh;
+En.loadMessageRelaxed = Fh;
 
-function Fh(e, t) {
+function Kh(e, t) {
   return n => {
-    if (n.store((0, Bl.storeCommonMessageInfoRelaxed)(e.info)), e.init) {
+    if (n.store((0, Pl.storeCommonMessageInfoRelaxed)(e.info)), e.init) {
       n.storeBit(!0);
-      let i = (0, Nh.beginCell)().store((0, ka.storeStateInit)(e.init)),
+      let i = (0, Dh.beginCell)().store((0, Sa.storeStateInit)(e.init)),
         o = !1;
       t && t.forceRef ? o = !0 : n.availableBits - 2 >= i.bits ? o = !1 : o = !0, o ? (n.storeBit(!0), n.storeRef(i)) : (n.storeBit(!1), n.storeBuilder(i))
     } else n.storeBit(!1);
@@ -12602,14 +12603,14 @@ function Fh(e, t) {
     t && t.forceRef ? r = !0 : n.availableBits - 1 >= e.body.bits.length && n.refs + e.body.refs.length <= 4 && !e.body.isExotic ? r = !1 : r = !0, r ? (n.storeBit(!0), n.storeRef(e.body)) : (n.storeBit(!1), n.storeBuilder(e.body.asBuilder()))
   }
 }
-Tn.storeMessageRelaxed = Fh;
-var On = {};
-Object.defineProperty(On, "__esModule", {
+En.storeMessageRelaxed = Kh;
+var xn = {};
+Object.defineProperty(xn, "__esModule", {
   value: !0
 });
-On.storeLibRef = On.loadLibRef = void 0;
+xn.storeLibRef = xn.loadLibRef = void 0;
 
-function Kh(e) {
+function $h(e) {
   return e.loadUint(1) === 0 ? {
     type: "hash",
     libHash: e.loadBuffer(32)
@@ -12618,94 +12619,94 @@ function Kh(e) {
     library: e.loadRef()
   }
 }
-On.loadLibRef = Kh;
+xn.loadLibRef = $h;
 
-function $h(e) {
+function Hh(e) {
   return t => {
     e.type === "hash" ? (t.storeUint(0, 1), t.storeBuffer(e.libHash)) : (t.storeUint(1, 1), t.storeRef(e.library))
   }
 }
-On.storeLibRef = $h;
-Object.defineProperty(Pt, "__esModule", {
+xn.storeLibRef = Hh;
+Object.defineProperty(Mt, "__esModule", {
   value: !0
 });
-Pt.loadOutList = Pt.storeOutList = Pt.loadOutAction = Pt.storeOutAction = void 0;
-const Pl = Tn,
-  Sa = qe(),
-  Ml = yt,
-  Tl = On;
+Mt.loadOutList = Mt.storeOutList = Mt.loadOutAction = Mt.storeOutAction = void 0;
+const Ml = En,
+  Aa = Ze(),
+  Tl = _t,
+  El = xn;
 
-function El(e) {
+function Ol(e) {
   switch (e.type) {
     case "sendMsg":
-      return Hh(e);
-    case "setCode":
       return Vh(e);
-    case "reserve":
+    case "setCode":
       return Gh(e);
-    case "changeLibrary":
+    case "reserve":
       return Wh(e);
+    case "changeLibrary":
+      return Yh(e);
     default:
       throw new Error(`Unknown action type ${e.type}`)
   }
 }
-Pt.storeOutAction = El;
-const Ol = 247711853;
-
-function Hh(e) {
-  return t => {
-    t.storeUint(Ol, 32).storeUint(e.mode, 8).storeRef((0, Sa.beginCell)().store((0, Pl.storeMessageRelaxed)(e.outMsg)).endCell())
-  }
-}
-const xl = 2907562126;
+Mt.storeOutAction = Ol;
+const xl = 247711853;
 
 function Vh(e) {
   return t => {
-    t.storeUint(xl, 32).storeRef(e.newCode)
+    t.storeUint(xl, 32).storeUint(e.mode, 8).storeRef((0, Aa.beginCell)().store((0, Ml.storeMessageRelaxed)(e.outMsg)).endCell())
   }
 }
-const Ul = 921090057;
+const Ul = 2907562126;
 
 function Gh(e) {
   return t => {
-    t.storeUint(Ul, 32).storeUint(e.mode, 8).store((0, Ml.storeCurrencyCollection)(e.currency))
+    t.storeUint(Ul, 32).storeRef(e.newCode)
   }
 }
-const Rl = 653925844;
+const Rl = 921090057;
 
 function Wh(e) {
   return t => {
-    t.storeUint(Rl, 32).storeUint(e.mode, 7).store((0, Tl.storeLibRef)(e.libRef))
+    t.storeUint(Rl, 32).storeUint(e.mode, 8).store((0, Tl.storeCurrencyCollection)(e.currency))
+  }
+}
+const jl = 653925844;
+
+function Yh(e) {
+  return t => {
+    t.storeUint(jl, 32).storeUint(e.mode, 7).store((0, El.storeLibRef)(e.libRef))
   }
 }
 
-function jl(e) {
+function Ll(e) {
   const t = e.loadUint(32);
-  if (t === Ol) {
+  if (t === xl) {
     const n = e.loadUint(8),
-      r = (0, Pl.loadMessageRelaxed)(e.loadRef().beginParse());
+      r = (0, Ml.loadMessageRelaxed)(e.loadRef().beginParse());
     return {
       type: "sendMsg",
       mode: n,
       outMsg: r
     }
   }
-  if (t === xl) return {
+  if (t === Ul) return {
     type: "setCode",
     newCode: e.loadRef()
   };
-  if (t === Ul) {
+  if (t === Rl) {
     const n = e.loadUint(8),
-      r = (0, Ml.loadCurrencyCollection)(e);
+      r = (0, Tl.loadCurrencyCollection)(e);
     return {
       type: "reserve",
       mode: n,
       currency: r
     }
   }
-  if (t === Rl) {
+  if (t === jl) {
     const n = e.loadUint(7),
-      r = (0, Tl.loadLibRef)(e);
+      r = (0, El.loadLibRef)(e);
     return {
       type: "changeLibrary",
       mode: n,
@@ -12714,40 +12715,40 @@ function jl(e) {
   }
   throw new Error(`Unknown out action tag 0x${t.toString(16)}`)
 }
-Pt.loadOutAction = jl;
+Mt.loadOutAction = Ll;
 
-function Yh(e) {
-  const t = e.reduce((n, r) => (0, Sa.beginCell)().storeRef(n).store(El(r)).endCell(), (0, Sa.beginCell)().endCell());
+function Xh(e) {
+  const t = e.reduce((n, r) => (0, Aa.beginCell)().storeRef(n).store(Ol(r)).endCell(), (0, Aa.beginCell)().endCell());
   return n => {
     n.storeSlice(t.beginParse())
   }
 }
-Pt.storeOutList = Yh;
+Mt.storeOutList = Xh;
 
-function Xh(e) {
+function Jh(e) {
   const t = [];
   for (; e.remainingRefs;) {
     const n = e.loadRef();
-    t.push(jl(e)), e = n.beginParse()
+    t.push(Ll(e)), e = n.beginParse()
   }
   return t.reverse()
 }
-Pt.loadOutList = Xh;
-var xn = {};
-Object.defineProperty(xn, "__esModule", {
+Mt.loadOutList = Jh;
+var Un = {};
+Object.defineProperty(Un, "__esModule", {
   value: !0
 });
-xn.storeCommonMessageInfo = xn.loadCommonMessageInfo = void 0;
-const Ll = yt;
+Un.storeCommonMessageInfo = Un.loadCommonMessageInfo = void 0;
+const zl = _t;
 
-function Jh(e) {
+function Qh(e) {
   if (!e.loadBit()) {
     const o = e.loadBit(),
       a = e.loadBit(),
       s = e.loadBit(),
       c = e.loadAddress(),
       f = e.loadAddress(),
-      u = (0, Ll.loadCurrencyCollection)(e),
+      u = (0, zl.loadCurrencyCollection)(e),
       _ = e.loadCoins(),
       B = e.loadCoins(),
       y = e.loadUintBig(64),
@@ -12789,33 +12790,33 @@ function Jh(e) {
     createdAt: i
   }
 }
-xn.loadCommonMessageInfo = Jh;
+Un.loadCommonMessageInfo = Qh;
 
-function Qh(e) {
+function qh(e) {
   return t => {
-    if (e.type === "internal") t.storeBit(0), t.storeBit(e.ihrDisabled), t.storeBit(e.bounce), t.storeBit(e.bounced), t.storeAddress(e.src), t.storeAddress(e.dest), t.store((0, Ll.storeCurrencyCollection)(e.value)), t.storeCoins(e.ihrFee), t.storeCoins(e.forwardFee), t.storeUint(e.createdLt, 64), t.storeUint(e.createdAt, 32);
+    if (e.type === "internal") t.storeBit(0), t.storeBit(e.ihrDisabled), t.storeBit(e.bounce), t.storeBit(e.bounced), t.storeAddress(e.src), t.storeAddress(e.dest), t.store((0, zl.storeCurrencyCollection)(e.value)), t.storeCoins(e.ihrFee), t.storeCoins(e.forwardFee), t.storeUint(e.createdLt, 64), t.storeUint(e.createdAt, 32);
     else if (e.type === "external-in") t.storeBit(1), t.storeBit(0), t.storeAddress(e.src), t.storeAddress(e.dest), t.storeCoins(e.importFee);
     else if (e.type === "external-out") t.storeBit(1), t.storeBit(1), t.storeAddress(e.src), t.storeAddress(e.dest), t.storeUint(e.createdLt, 64), t.storeUint(e.createdAt, 32);
     else throw new Error("Unknown CommonMessageInfo type")
   }
 }
-xn.storeCommonMessageInfo = Qh;
-var Un = {};
-Object.defineProperty(Un, "__esModule", {
+Un.storeCommonMessageInfo = qh;
+var Rn = {};
+Object.defineProperty(Rn, "__esModule", {
   value: !0
 });
-Un.storeComputeSkipReason = Un.loadComputeSkipReason = void 0;
+Rn.storeComputeSkipReason = Rn.loadComputeSkipReason = void 0;
 
-function qh(e) {
+function Zh(e) {
   let t = e.loadUint(2);
   if (t === 0) return "no-state";
   if (t === 1) return "bad-state";
   if (t === 2) return "no-gas";
   throw new Error(`Unknown ComputeSkipReason: ${t}`)
 }
-Un.loadComputeSkipReason = qh;
+Rn.loadComputeSkipReason = Zh;
 
-function Zh(e) {
+function ep(e) {
   return t => {
     if (e === "no-state") t.storeUint(0, 2);
     else if (e === "bad-state") t.storeUint(1, 2);
@@ -12823,35 +12824,35 @@ function Zh(e) {
     else throw new Error(`Unknown ComputeSkipReason: ${e}`)
   }
 }
-Un.storeComputeSkipReason = Zh;
-var Rn = {};
-Object.defineProperty(Rn, "__esModule", {
-  value: !0
-});
-Rn.storeDepthBalanceInfo = Rn.loadDepthBalanceInfo = void 0;
-const zl = yt;
-
-function ep(e) {
-  return {
-    splitDepth: e.loadUint(5),
-    balance: (0, zl.loadCurrencyCollection)(e)
-  }
-}
-Rn.loadDepthBalanceInfo = ep;
-
-function tp(e) {
-  return t => {
-    t.storeUint(e.splitDepth, 5), t.store((0, zl.storeCurrencyCollection)(e.balance))
-  }
-}
-Rn.storeDepthBalanceInfo = tp;
+Rn.storeComputeSkipReason = ep;
 var jn = {};
 Object.defineProperty(jn, "__esModule", {
   value: !0
 });
-jn.storeHashUpdate = jn.loadHashUpdate = void 0;
+jn.storeDepthBalanceInfo = jn.loadDepthBalanceInfo = void 0;
+const Nl = _t;
+
+function tp(e) {
+  return {
+    splitDepth: e.loadUint(5),
+    balance: (0, Nl.loadCurrencyCollection)(e)
+  }
+}
+jn.loadDepthBalanceInfo = tp;
 
 function np(e) {
+  return t => {
+    t.storeUint(e.splitDepth, 5), t.store((0, Nl.storeCurrencyCollection)(e.balance))
+  }
+}
+jn.storeDepthBalanceInfo = np;
+var Ln = {};
+Object.defineProperty(Ln, "__esModule", {
+  value: !0
+});
+Ln.storeHashUpdate = Ln.loadHashUpdate = void 0;
+
+function rp(e) {
   if (e.loadUint(8) !== 114) throw Error("Invalid data");
   const t = e.loadBuffer(32),
     n = e.loadBuffer(32);
@@ -12860,48 +12861,48 @@ function np(e) {
     newHash: n
   }
 }
-jn.loadHashUpdate = np;
+Ln.loadHashUpdate = rp;
 
-function rp(e) {
+function ip(e) {
   return t => {
     t.storeUint(114, 8), t.storeBuffer(e.oldHash), t.storeBuffer(e.newHash)
   }
 }
-jn.storeHashUpdate = rp;
-var Hr = {};
-Object.defineProperty(Hr, "__esModule", {
+Ln.storeHashUpdate = ip;
+var Vr = {};
+Object.defineProperty(Vr, "__esModule", {
   value: !0
 });
-Hr.loadMasterchainStateExtra = void 0;
-const na = Vn(),
-  ip = yt;
+Vr.loadMasterchainStateExtra = void 0;
+const ra = Gn(),
+  ap = _t;
 
-function ap(e) {
+function op(e) {
   if (e.loadUint(16) !== 52262) throw Error("Invalid data");
   e.loadBit() && e.loadRef();
   let t = e.loadUintBig(256),
-    n = na.Dictionary.load(na.Dictionary.Keys.Int(32), na.Dictionary.Values.Cell(), e);
-  const r = (0, ip.loadCurrencyCollection)(e);
+    n = ra.Dictionary.load(ra.Dictionary.Keys.Int(32), ra.Dictionary.Values.Cell(), e);
+  const r = (0, ap.loadCurrencyCollection)(e);
   return {
     config: n,
     configAddress: t,
     globalBalance: r
   }
 }
-Hr.loadMasterchainStateExtra = ap;
-var Ft = {};
-Object.defineProperty(Ft, "__esModule", {
+Vr.loadMasterchainStateExtra = op;
+var Kt = {};
+Object.defineProperty(Kt, "__esModule", {
   value: !0
 });
-Ft.MessageValue = Ft.storeMessage = Ft.loadMessage = void 0;
-const Nl = qe(),
-  Dl = xn,
-  Aa = Et;
+Kt.MessageValue = Kt.storeMessage = Kt.loadMessage = void 0;
+const Dl = Ze(),
+  Fl = Un,
+  Ia = Ot;
 
-function Fl(e) {
-  const t = (0, Dl.loadCommonMessageInfo)(e);
+function Kl(e) {
+  const t = (0, Fl.loadCommonMessageInfo)(e);
   let n = null;
-  e.loadBit() && (e.loadBit() ? n = (0, Aa.loadStateInit)(e.loadRef().beginParse()) : n = (0, Aa.loadStateInit)(e));
+  e.loadBit() && (e.loadBit() ? n = (0, Ia.loadStateInit)(e.loadRef().beginParse()) : n = (0, Ia.loadStateInit)(e));
   const r = e.loadBit() ? e.loadRef() : e.asCell();
   return {
     info: t,
@@ -12909,13 +12910,13 @@ function Fl(e) {
     body: r
   }
 }
-Ft.loadMessage = Fl;
+Kt.loadMessage = Kl;
 
-function Kl(e, t) {
+function $l(e, t) {
   return n => {
-    if (n.store((0, Dl.storeCommonMessageInfo)(e.info)), e.init) {
+    if (n.store((0, Fl.storeCommonMessageInfo)(e.info)), e.init) {
       n.storeBit(!0);
-      let i = (0, Nl.beginCell)().store((0, Aa.storeStateInit)(e.init)),
+      let i = (0, Dl.beginCell)().store((0, Ia.storeStateInit)(e.init)),
         o = !1;
       t && t.forceRef ? o = !0 : o = n.availableBits - 2 < i.bits + e.body.bits.length, o ? (n.storeBit(!0), n.storeRef(i)) : (n.storeBit(!1), n.storeBuilder(i))
     } else n.storeBit(!1);
@@ -12923,47 +12924,47 @@ function Kl(e, t) {
     t && t.forceRef ? r = !0 : r = n.availableBits - 1 < e.body.bits.length || n.refs + e.body.refs.length > 4, r ? (n.storeBit(!0), n.storeRef(e.body)) : (n.storeBit(!1), n.storeBuilder(e.body.asBuilder()))
   }
 }
-Ft.storeMessage = Kl;
-Ft.MessageValue = {
+Kt.storeMessage = $l;
+Kt.MessageValue = {
   serialize(e, t) {
-    t.storeRef((0, Nl.beginCell)().store(Kl(e)))
+    t.storeRef((0, Dl.beginCell)().store($l(e)))
   },
   parse(e) {
-    return Fl(e.loadRef().beginParse())
+    return Kl(e.loadRef().beginParse())
   }
 };
-var Fi = {};
-Object.defineProperty(Fi, "__esModule", {
-  value: !0
-});
-Fi.SendMode = void 0;
-var Fo;
-(function(e) {
-  e[e.CARRY_ALL_REMAINING_BALANCE = 128] = "CARRY_ALL_REMAINING_BALANCE", e[e.CARRY_ALL_REMAINING_INCOMING_VALUE = 64] = "CARRY_ALL_REMAINING_INCOMING_VALUE", e[e.DESTROY_ACCOUNT_IF_ZERO = 32] = "DESTROY_ACCOUNT_IF_ZERO", e[e.PAY_GAS_SEPARATELY = 1] = "PAY_GAS_SEPARATELY", e[e.IGNORE_ERRORS = 2] = "IGNORE_ERRORS", e[e.NONE = 0] = "NONE"
-})(Fo || (Fi.SendMode = Fo = {}));
 var Ki = {};
 Object.defineProperty(Ki, "__esModule", {
   value: !0
 });
-Ki.ReserveMode = void 0;
+Ki.SendMode = void 0;
 var Ko;
 (function(e) {
-  e[e.THIS_AMOUNT = 0] = "THIS_AMOUNT", e[e.LEAVE_THIS_AMOUNT = 1] = "LEAVE_THIS_AMOUNT", e[e.AT_MOST_THIS_AMOUNT = 2] = "AT_MOST_THIS_AMOUNT", e[e.LEAVE_MAX_THIS_AMOUNT = 3] = "LEAVE_MAX_THIS_AMOUNT", e[e.BEFORE_BALANCE_PLUS_THIS_AMOUNT = 4] = "BEFORE_BALANCE_PLUS_THIS_AMOUNT", e[e.LEAVE_BBALANCE_PLUS_THIS_AMOUNT = 5] = "LEAVE_BBALANCE_PLUS_THIS_AMOUNT", e[e.BEFORE_BALANCE_MINUS_THIS_AMOUNT = 12] = "BEFORE_BALANCE_MINUS_THIS_AMOUNT", e[e.LEAVE_BEFORE_BALANCE_MINUS_THIS_AMOUNT = 13] = "LEAVE_BEFORE_BALANCE_MINUS_THIS_AMOUNT"
-})(Ko || (Ki.ReserveMode = Ko = {}));
-var Ln = {};
-Object.defineProperty(Ln, "__esModule", {
+  e[e.CARRY_ALL_REMAINING_BALANCE = 128] = "CARRY_ALL_REMAINING_BALANCE", e[e.CARRY_ALL_REMAINING_INCOMING_VALUE = 64] = "CARRY_ALL_REMAINING_INCOMING_VALUE", e[e.DESTROY_ACCOUNT_IF_ZERO = 32] = "DESTROY_ACCOUNT_IF_ZERO", e[e.PAY_GAS_SEPARATELY = 1] = "PAY_GAS_SEPARATELY", e[e.IGNORE_ERRORS = 2] = "IGNORE_ERRORS", e[e.NONE = 0] = "NONE"
+})(Ko || (Ki.SendMode = Ko = {}));
+var $i = {};
+Object.defineProperty($i, "__esModule", {
   value: !0
 });
-Ln.storeShardAccount = Ln.loadShardAccount = void 0;
-const $o = qe(),
-  $l = An;
+$i.ReserveMode = void 0;
+var $o;
+(function(e) {
+  e[e.THIS_AMOUNT = 0] = "THIS_AMOUNT", e[e.LEAVE_THIS_AMOUNT = 1] = "LEAVE_THIS_AMOUNT", e[e.AT_MOST_THIS_AMOUNT = 2] = "AT_MOST_THIS_AMOUNT", e[e.LEAVE_MAX_THIS_AMOUNT = 3] = "LEAVE_MAX_THIS_AMOUNT", e[e.BEFORE_BALANCE_PLUS_THIS_AMOUNT = 4] = "BEFORE_BALANCE_PLUS_THIS_AMOUNT", e[e.LEAVE_BBALANCE_PLUS_THIS_AMOUNT = 5] = "LEAVE_BBALANCE_PLUS_THIS_AMOUNT", e[e.BEFORE_BALANCE_MINUS_THIS_AMOUNT = 12] = "BEFORE_BALANCE_MINUS_THIS_AMOUNT", e[e.LEAVE_BEFORE_BALANCE_MINUS_THIS_AMOUNT = 13] = "LEAVE_BEFORE_BALANCE_MINUS_THIS_AMOUNT"
+})($o || ($i.ReserveMode = $o = {}));
+var zn = {};
+Object.defineProperty(zn, "__esModule", {
+  value: !0
+});
+zn.storeShardAccount = zn.loadShardAccount = void 0;
+const Ho = Ze(),
+  Hl = In;
 
-function op(e) {
+function sp(e) {
   let t = e.loadRef(),
     n;
   if (!t.isExotic) {
     let r = t.beginParse();
-    r.loadBit() && (n = (0, $l.loadAccount)(r))
+    r.loadBit() && (n = (0, Hl.loadAccount)(r))
   }
   return {
     account: n,
@@ -12971,22 +12972,22 @@ function op(e) {
     lastTransactionLt: e.loadUintBig(64)
   }
 }
-Ln.loadShardAccount = op;
+zn.loadShardAccount = sp;
 
-function sp(e) {
+function lp(e) {
   return t => {
-    e.account ? t.storeRef((0, $o.beginCell)().storeBit(!0).store((0, $l.storeAccount)(e.account))) : t.storeRef((0, $o.beginCell)().storeBit(!1)), t.storeUint(e.lastTransactionHash, 256), t.storeUint(e.lastTransactionLt, 64)
+    e.account ? t.storeRef((0, Ho.beginCell)().storeBit(!0).store((0, Hl.storeAccount)(e.account))) : t.storeRef((0, Ho.beginCell)().storeBit(!1)), t.storeUint(e.lastTransactionHash, 256), t.storeUint(e.lastTransactionLt, 64)
   }
 }
-Ln.storeShardAccount = sp;
-var Ka = {};
+zn.storeShardAccount = lp;
+var $a = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.storeShardAccounts = e.loadShardAccounts = e.ShardAccountRefValue = void 0;
-  const t = Vn(),
-    n = Rn,
-    r = Ln;
+  const t = Gn(),
+    n = jn,
+    r = zn;
   e.ShardAccountRefValue = {
     parse: a => {
       let s = (0, n.loadDepthBalanceInfo)(a),
@@ -13012,14 +13013,14 @@ var Ka = {};
     }
   }
   e.storeShardAccounts = o
-})(Ka);
-var zn = {};
-Object.defineProperty(zn, "__esModule", {
+})($a);
+var Nn = {};
+Object.defineProperty(Nn, "__esModule", {
   value: !0
 });
-zn.storeShardIdent = zn.loadShardIdent = void 0;
+Nn.storeShardIdent = Nn.loadShardIdent = void 0;
 
-function lp(e) {
+function cp(e) {
   if (e.loadUint(2) !== 0) throw Error("Invalid data");
   return {
     shardPrefixBits: e.loadUint(6),
@@ -13027,27 +13028,27 @@ function lp(e) {
     shardPrefix: e.loadUintBig(64)
   }
 }
-zn.loadShardIdent = lp;
+Nn.loadShardIdent = cp;
 
-function cp(e) {
+function up(e) {
   return t => {
     t.storeUint(0, 2), t.storeUint(e.shardPrefixBits, 6), t.storeInt(e.workchainId, 32), t.storeUint(e.shardPrefix, 64)
   }
 }
-zn.storeShardIdent = cp;
-var $i = {};
-Object.defineProperty($i, "__esModule", {
+Nn.storeShardIdent = up;
+var Hi = {};
+Object.defineProperty(Hi, "__esModule", {
   value: !0
 });
-$i.loadShardStateUnsplit = void 0;
-const up = Hr,
-  dp = Ka,
-  fp = zn;
+Hi.loadShardStateUnsplit = void 0;
+const dp = Vr,
+  fp = $a,
+  hp = Nn;
 
-function hp(e) {
+function pp(e) {
   if (e.loadUint(32) !== 2418257890) throw Error("Invalid data");
   let t = e.loadInt(32),
-    n = (0, fp.loadShardIdent)(e),
+    n = (0, hp.loadShardIdent)(e),
     r = e.loadUint(32),
     i = e.loadUint(32),
     o = e.loadUint(32),
@@ -13057,12 +13058,12 @@ function hp(e) {
   let c = e.loadBit(),
     f = e.loadRef(),
     u;
-  f.isExotic || (u = (0, dp.loadShardAccounts)(f.beginParse())), e.loadRef();
+  f.isExotic || (u = (0, fp.loadShardAccounts)(f.beginParse())), e.loadRef();
   let _ = e.loadBit(),
     B = null;
   if (_) {
     let y = e.loadRef();
-    y.isExotic || (B = (0, up.loadMasterchainStateExtra)(y.beginParse()))
+    y.isExotic || (B = (0, dp.loadMasterchainStateExtra)(y.beginParse()))
   }
   return {
     globalId: t,
@@ -13077,14 +13078,14 @@ function hp(e) {
     extras: B
   }
 }
-$i.loadShardStateUnsplit = hp;
-var Nn = {};
-Object.defineProperty(Nn, "__esModule", {
+Hi.loadShardStateUnsplit = pp;
+var Dn = {};
+Object.defineProperty(Dn, "__esModule", {
   value: !0
 });
-Nn.storeSplitMergeInfo = Nn.loadSplitMergeInfo = void 0;
+Dn.storeSplitMergeInfo = Dn.loadSplitMergeInfo = void 0;
 
-function pp(e) {
+function gp(e) {
   let t = e.loadUint(6),
     n = e.loadUint(6),
     r = e.loadUintBig(256),
@@ -13096,21 +13097,21 @@ function pp(e) {
     siblingAddress: i
   }
 }
-Nn.loadSplitMergeInfo = pp;
+Dn.loadSplitMergeInfo = gp;
 
-function gp(e) {
+function mp(e) {
   return t => {
     t.storeUint(e.currentShardPrefixLength, 6), t.storeUint(e.accountSplitDepth, 6), t.storeUint(e.thisAddress, 256), t.storeUint(e.siblingAddress, 256)
   }
 }
-Nn.storeSplitMergeInfo = gp;
-var tn = {};
-Object.defineProperty(tn, "__esModule", {
+Dn.storeSplitMergeInfo = mp;
+var nn = {};
+Object.defineProperty(nn, "__esModule", {
   value: !0
 });
-tn.storeStorageUsedShort = tn.loadStorageUsedShort = void 0;
+nn.storeStorageUsedShort = nn.loadStorageUsedShort = void 0;
 
-function mp(e) {
+function bp(e) {
   let t = e.loadVarUintBig(3),
     n = e.loadVarUintBig(3);
   return {
@@ -13118,29 +13119,29 @@ function mp(e) {
     bits: n
   }
 }
-tn.loadStorageUsedShort = mp;
+nn.loadStorageUsedShort = bp;
 
-function bp(e) {
+function yp(e) {
   return t => {
     t.storeVarUint(e.cells, 3), t.storeVarUint(e.bits, 3)
   }
 }
-tn.storeStorageUsedShort = bp;
-var hn = {},
-  pn = {},
-  Dn = {};
-Object.defineProperty(Dn, "__esModule", {
+nn.storeStorageUsedShort = yp;
+var pn = {},
+  gn = {},
+  Fn = {};
+Object.defineProperty(Fn, "__esModule", {
   value: !0
 });
-Dn.storeTransactionActionPhase = Dn.loadTransactionActionPhase = void 0;
-const Hl = en,
-  Vl = tn;
+Fn.storeTransactionActionPhase = Fn.loadTransactionActionPhase = void 0;
+const Vl = tn,
+  Gl = nn;
 
-function yp(e) {
+function _p(e) {
   let t = e.loadBit(),
     n = e.loadBit(),
     r = e.loadBit(),
-    i = (0, Hl.loadAccountStatusChange)(e),
+    i = (0, Vl.loadAccountStatusChange)(e),
     o = e.loadBit() ? e.loadCoins() : void 0,
     a = e.loadBit() ? e.loadCoins() : void 0,
     s = e.loadInt(32),
@@ -13150,7 +13151,7 @@ function yp(e) {
     _ = e.loadUint(16),
     B = e.loadUint(16),
     y = e.loadUintBig(256),
-    S = (0, Vl.loadStorageUsedShort)(e);
+    S = (0, Gl.loadStorageUsedShort)(e);
   return {
     success: t,
     valid: n,
@@ -13168,24 +13169,24 @@ function yp(e) {
     totalMessageSize: S
   }
 }
-Dn.loadTransactionActionPhase = yp;
-
-function _p(e) {
-  return t => {
-    t.storeBit(e.success), t.storeBit(e.valid), t.storeBit(e.noFunds), t.store((0, Hl.storeAccountStatusChange)(e.statusChange)), t.storeMaybeCoins(e.totalFwdFees), t.storeMaybeCoins(e.totalActionFees), t.storeInt(e.resultCode, 32), t.storeMaybeInt(e.resultArg, 32), t.storeUint(e.totalActions, 16), t.storeUint(e.specActions, 16), t.storeUint(e.skippedActions, 16), t.storeUint(e.messagesCreated, 16), t.storeUint(e.actionListHash, 256), t.store((0, Vl.storeStorageUsedShort)(e.totalMessageSize))
-  }
-}
-Dn.storeTransactionActionPhase = _p;
-var Fn = {};
-Object.defineProperty(Fn, "__esModule", {
-  value: !0
-});
-Fn.storeTransactionBouncePhase = Fn.loadTransactionBouncePhase = void 0;
-const ii = tn;
+Fn.loadTransactionActionPhase = _p;
 
 function wp(e) {
+  return t => {
+    t.storeBit(e.success), t.storeBit(e.valid), t.storeBit(e.noFunds), t.store((0, Vl.storeAccountStatusChange)(e.statusChange)), t.storeMaybeCoins(e.totalFwdFees), t.storeMaybeCoins(e.totalActionFees), t.storeInt(e.resultCode, 32), t.storeMaybeInt(e.resultArg, 32), t.storeUint(e.totalActions, 16), t.storeUint(e.specActions, 16), t.storeUint(e.skippedActions, 16), t.storeUint(e.messagesCreated, 16), t.storeUint(e.actionListHash, 256), t.store((0, Gl.storeStorageUsedShort)(e.totalMessageSize))
+  }
+}
+Fn.storeTransactionActionPhase = wp;
+var Kn = {};
+Object.defineProperty(Kn, "__esModule", {
+  value: !0
+});
+Kn.storeTransactionBouncePhase = Kn.loadTransactionBouncePhase = void 0;
+const ai = nn;
+
+function vp(e) {
   if (e.loadBit()) {
-    let t = (0, ii.loadStorageUsedShort)(e),
+    let t = (0, ai.loadStorageUsedShort)(e),
       n = e.loadCoins(),
       r = e.loadCoins();
     return {
@@ -13196,7 +13197,7 @@ function wp(e) {
     }
   }
   if (e.loadBit()) {
-    let t = (0, ii.loadStorageUsedShort)(e),
+    let t = (0, ai.loadStorageUsedShort)(e),
       n = e.loadCoins();
     return {
       type: "no-funds",
@@ -13208,29 +13209,29 @@ function wp(e) {
     type: "negative-funds"
   }
 }
-Fn.loadTransactionBouncePhase = wp;
+Kn.loadTransactionBouncePhase = vp;
 
-function vp(e) {
+function kp(e) {
   return t => {
-    if (e.type === "ok") t.storeBit(!0), t.store((0, ii.storeStorageUsedShort)(e.messageSize)), t.storeCoins(e.messageFees), t.storeCoins(e.forwardFees);
+    if (e.type === "ok") t.storeBit(!0), t.store((0, ai.storeStorageUsedShort)(e.messageSize)), t.storeCoins(e.messageFees), t.storeCoins(e.forwardFees);
     else if (e.type === "negative-funds") t.storeBit(!1), t.storeBit(!1);
-    else if (e.type === "no-funds") t.storeBit(!1), t.storeBit(!0), t.store((0, ii.storeStorageUsedShort)(e.messageSize)), t.storeCoins(e.requiredForwardFees);
+    else if (e.type === "no-funds") t.storeBit(!1), t.storeBit(!0), t.store((0, ai.storeStorageUsedShort)(e.messageSize)), t.storeCoins(e.requiredForwardFees);
     else throw new Error("Invalid TransactionBouncePhase type")
   }
 }
-Fn.storeTransactionBouncePhase = vp;
-var Kn = {};
-Object.defineProperty(Kn, "__esModule", {
+Kn.storeTransactionBouncePhase = kp;
+var $n = {};
+Object.defineProperty($n, "__esModule", {
   value: !0
 });
-Kn.storeTransactionComputePhase = Kn.loadTransactionComputePhase = void 0;
-const kp = qe(),
-  Gl = Un;
+$n.storeTransactionComputePhase = $n.loadTransactionComputePhase = void 0;
+const Sp = Ze(),
+  Wl = Rn;
 
-function Sp(e) {
+function Ap(e) {
   if (!e.loadBit()) return {
     type: "skipped",
-    reason: (0, Gl.loadComputeSkipReason)(e)
+    reason: (0, Wl.loadComputeSkipReason)(e)
   };
   let t = e.loadBit(),
     n = e.loadBit(),
@@ -13263,82 +13264,82 @@ function Sp(e) {
     vmFinalStateHash: S
   }
 }
-Kn.loadTransactionComputePhase = Sp;
-
-function Ap(e) {
-  return t => {
-    if (e.type === "skipped") {
-      t.storeBit(0), t.store((0, Gl.storeComputeSkipReason)(e.reason));
-      return
-    }
-    t.storeBit(1), t.storeBit(e.success), t.storeBit(e.messageStateUsed), t.storeBit(e.accountActivated), t.storeCoins(e.gasFees), t.storeRef((0, kp.beginCell)().storeVarUint(e.gasUsed, 3).storeVarUint(e.gasLimit, 3).store(n => e.gasCredit !== void 0 && e.gasCredit !== null ? n.storeBit(1).storeVarUint(e.gasCredit, 2) : n.storeBit(0)).storeUint(e.mode, 8).storeInt(e.exitCode, 32).store(n => e.exitArg !== void 0 && e.exitArg !== null ? n.storeBit(1).storeInt(e.exitArg, 32) : n.storeBit(0)).storeUint(e.vmSteps, 32).storeUint(e.vmInitStateHash, 256).storeUint(e.vmFinalStateHash, 256).endCell())
-  }
-}
-Kn.storeTransactionComputePhase = Ap;
-var $n = {};
-Object.defineProperty($n, "__esModule", {
-  value: !0
-});
-$n.storeTransactionCreditPhase = $n.loadTransactionCreditPhase = void 0;
-const Wl = yt;
+$n.loadTransactionComputePhase = Ap;
 
 function Ip(e) {
+  return t => {
+    if (e.type === "skipped") {
+      t.storeBit(0), t.store((0, Wl.storeComputeSkipReason)(e.reason));
+      return
+    }
+    t.storeBit(1), t.storeBit(e.success), t.storeBit(e.messageStateUsed), t.storeBit(e.accountActivated), t.storeCoins(e.gasFees), t.storeRef((0, Sp.beginCell)().storeVarUint(e.gasUsed, 3).storeVarUint(e.gasLimit, 3).store(n => e.gasCredit !== void 0 && e.gasCredit !== null ? n.storeBit(1).storeVarUint(e.gasCredit, 2) : n.storeBit(0)).storeUint(e.mode, 8).storeInt(e.exitCode, 32).store(n => e.exitArg !== void 0 && e.exitArg !== null ? n.storeBit(1).storeInt(e.exitArg, 32) : n.storeBit(0)).storeUint(e.vmSteps, 32).storeUint(e.vmInitStateHash, 256).storeUint(e.vmFinalStateHash, 256).endCell())
+  }
+}
+$n.storeTransactionComputePhase = Ip;
+var Hn = {};
+Object.defineProperty(Hn, "__esModule", {
+  value: !0
+});
+Hn.storeTransactionCreditPhase = Hn.loadTransactionCreditPhase = void 0;
+const Yl = _t;
+
+function Cp(e) {
   const t = e.loadBit() ? e.loadCoins() : void 0,
-    n = (0, Wl.loadCurrencyCollection)(e);
+    n = (0, Yl.loadCurrencyCollection)(e);
   return {
     dueFeesColelcted: t,
     credit: n
   }
 }
-$n.loadTransactionCreditPhase = Ip;
-
-function Cp(e) {
-  return t => {
-    e.dueFeesColelcted === null || e.dueFeesColelcted === void 0 ? t.storeBit(!1) : (t.storeBit(!0), t.storeCoins(e.dueFeesColelcted)), t.store((0, Wl.storeCurrencyCollection)(e.credit))
-  }
-}
-$n.storeTransactionCreditPhase = Cp;
-var Hn = {};
-Object.defineProperty(Hn, "__esModule", {
-  value: !0
-});
-Hn.storeTransactionsStoragePhase = Hn.loadTransactionStoragePhase = void 0;
-const Yl = en;
+Hn.loadTransactionCreditPhase = Cp;
 
 function Bp(e) {
+  return t => {
+    e.dueFeesColelcted === null || e.dueFeesColelcted === void 0 ? t.storeBit(!1) : (t.storeBit(!0), t.storeCoins(e.dueFeesColelcted)), t.store((0, Yl.storeCurrencyCollection)(e.credit))
+  }
+}
+Hn.storeTransactionCreditPhase = Bp;
+var Vn = {};
+Object.defineProperty(Vn, "__esModule", {
+  value: !0
+});
+Vn.storeTransactionsStoragePhase = Vn.loadTransactionStoragePhase = void 0;
+const Xl = tn;
+
+function Pp(e) {
   const t = e.loadCoins();
   let n;
   e.loadBit() && (n = e.loadCoins());
-  const r = (0, Yl.loadAccountStatusChange)(e);
+  const r = (0, Xl.loadAccountStatusChange)(e);
   return {
     storageFeesCollected: t,
     storageFeesDue: n,
     statusChange: r
   }
 }
-Hn.loadTransactionStoragePhase = Bp;
+Vn.loadTransactionStoragePhase = Pp;
 
-function Pp(e) {
+function Mp(e) {
   return t => {
-    t.storeCoins(e.storageFeesCollected), e.storageFeesDue === null || e.storageFeesDue === void 0 ? t.storeBit(!1) : (t.storeBit(!0), t.storeCoins(e.storageFeesDue)), t.store((0, Yl.storeAccountStatusChange)(e.statusChange))
+    t.storeCoins(e.storageFeesCollected), e.storageFeesDue === null || e.storageFeesDue === void 0 ? t.storeBit(!1) : (t.storeBit(!0), t.storeCoins(e.storageFeesDue)), t.store((0, Xl.storeAccountStatusChange)(e.statusChange))
   }
 }
-Hn.storeTransactionsStoragePhase = Pp;
-var Ho;
+Vn.storeTransactionsStoragePhase = Mp;
+var Vo;
 
-function Xl() {
-  if (Ho) return pn;
-  Ho = 1, Object.defineProperty(pn, "__esModule", {
+function Jl() {
+  if (Vo) return gn;
+  Vo = 1, Object.defineProperty(gn, "__esModule", {
     value: !0
-  }), pn.storeTransactionDescription = pn.loadTransactionDescription = void 0;
-  const e = qe(),
-    t = Nn,
-    n = Jl(),
-    r = Dn,
-    i = Fn,
-    o = Kn,
-    a = $n,
-    s = Hn;
+  }), gn.storeTransactionDescription = gn.loadTransactionDescription = void 0;
+  const e = Ze(),
+    t = Dn,
+    n = Ql(),
+    r = Fn,
+    i = Kn,
+    o = $n,
+    a = Hn,
+    s = Vn;
 
   function c(u) {
     let _ = u.loadUint(4);
@@ -13421,7 +13422,7 @@ function Xl() {
     }
     throw Error(`Unsupported transaction description type ${_}`)
   }
-  pn.loadTransactionDescription = c;
+  gn.loadTransactionDescription = c;
 
   function f(u) {
     return _ => {
@@ -13433,22 +13434,22 @@ function Xl() {
       else throw Error(`Unsupported transaction description type ${u.type}`)
     }
   }
-  return pn.storeTransactionDescription = f, pn
+  return gn.storeTransactionDescription = f, gn
 }
-var Vo;
+var Go;
 
-function Jl() {
-  if (Vo) return hn;
-  Vo = 1, Object.defineProperty(hn, "__esModule", {
+function Ql() {
+  if (Go) return pn;
+  Go = 1, Object.defineProperty(pn, "__esModule", {
     value: !0
-  }), hn.storeTransaction = hn.loadTransaction = void 0;
-  const e = qe(),
-    t = Vn(),
-    n = Mn,
-    r = yt,
-    i = jn,
-    o = Ft,
-    a = Xl();
+  }), pn.storeTransaction = pn.loadTransaction = void 0;
+  const e = Ze(),
+    t = Gn(),
+    n = Tn,
+    r = _t,
+    i = Ln,
+    o = Kt,
+    a = Jl();
 
   function s(f) {
     let u = f.asCell();
@@ -13486,7 +13487,7 @@ function Jl() {
       hash: () => u.hash()
     }
   }
-  hn.loadTransaction = s;
+  pn.loadTransaction = s;
 
   function c(f) {
     return u => {
@@ -13495,12 +13496,12 @@ function Jl() {
       f.inMessage ? (_.storeBit(!0), _.storeRef((0, e.beginCell)().store((0, o.storeMessage)(f.inMessage)))) : _.storeBit(!1), _.storeDict(f.outMessages), u.storeRef(_), u.store((0, r.storeCurrencyCollection)(f.totalFees)), u.storeRef((0, e.beginCell)().store((0, i.storeHashUpdate)(f.stateUpdate))), u.storeRef((0, e.beginCell)().store((0, a.storeTransactionDescription)(f.description)))
     }
   }
-  return hn.storeTransaction = c, hn
+  return pn.storeTransaction = c, pn
 }(function(e) {
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.storeSplitMergeInfo = e.loadSplitMergeInfo = e.storeLibRef = e.loadLibRef = e.storeSimpleLibrary = e.loadSimpleLibrary = e.loadShardStateUnsplit = e.storeShardIdent = e.loadShardIdent = e.storeShardAccounts = e.loadShardAccounts = e.ShardAccountRefValue = e.storeShardAccount = e.loadShardAccount = e.ReserveMode = e.SendMode = e.storeMessageRelaxed = e.loadMessageRelaxed = e.storeMessage = e.loadMessage = e.loadMasterchainStateExtra = e.storeHashUpdate = e.loadHashUpdate = e.storeDepthBalanceInfo = e.loadDepthBalanceInfo = e.storeCurrencyCollection = e.loadCurrencyCollection = e.storeComputeSkipReason = e.loadComputeSkipReason = e.storeCommonMessageInfoRelaxed = e.loadCommonMessageInfoRelaxed = e.storeCommonMessageInfo = e.loadCommonMessageInfo = e.storeOutList = e.loadOutList = e.storeOutAction = e.loadOutAction = e.storeAccountStorage = e.loadAccountStorage = e.storeAccountStatusChange = e.loadAccountStatusChange = e.storeAccountStatus = e.loadAccountStatus = e.storeAccountState = e.loadAccountState = e.storeAccount = e.loadAccount = e.comment = e.external = e.internal = void 0, e.storeTransactionsStoragePhase = e.loadTransactionStoragePhase = e.storeTransactionDescription = e.loadTransactionDescription = e.storeTransactionCreditPhase = e.loadTransactionCreditPhase = e.storeTransactionComputePhase = e.loadTransactionComputePhase = e.storeTransactionBouncePhase = e.loadTransactionBouncePhase = e.storeTransactionActionPhase = e.loadTransactionActionPhase = e.storeTransaction = e.loadTransaction = e.storeTickTock = e.loadTickTock = e.storeStorageUsedShort = e.loadStorageUsedShort = e.storeStorageUsed = e.loadStorageUsed = e.storeStorageInfo = e.loadStorageInfo = e.storeStateInit = e.loadStateInit = void 0;
-  var t = qt;
+  var t = Zt;
   Object.defineProperty(e, "internal", {
     enumerable: !0,
     get: function() {
@@ -13517,7 +13518,7 @@ function Jl() {
       return t.comment
     }
   });
-  var n = An;
+  var n = In;
   Object.defineProperty(e, "loadAccount", {
     enumerable: !0,
     get: function() {
@@ -13529,7 +13530,7 @@ function Jl() {
       return n.storeAccount
     }
   });
-  var r = Cn;
+  var r = Bn;
   Object.defineProperty(e, "loadAccountState", {
     enumerable: !0,
     get: function() {
@@ -13541,7 +13542,7 @@ function Jl() {
       return r.storeAccountState
     }
   });
-  var i = Mn;
+  var i = Tn;
   Object.defineProperty(e, "loadAccountStatus", {
     enumerable: !0,
     get: function() {
@@ -13553,7 +13554,7 @@ function Jl() {
       return i.storeAccountStatus
     }
   });
-  var o = en;
+  var o = tn;
   Object.defineProperty(e, "loadAccountStatusChange", {
     enumerable: !0,
     get: function() {
@@ -13565,7 +13566,7 @@ function Jl() {
       return o.storeAccountStatusChange
     }
   });
-  var a = In;
+  var a = Cn;
   Object.defineProperty(e, "loadAccountStorage", {
     enumerable: !0,
     get: function() {
@@ -13577,7 +13578,7 @@ function Jl() {
       return a.storeAccountStorage
     }
   });
-  var s = Pt;
+  var s = Mt;
   Object.defineProperty(e, "loadOutAction", {
     enumerable: !0,
     get: function() {
@@ -13599,7 +13600,7 @@ function Jl() {
       return s.storeOutList
     }
   });
-  var c = xn;
+  var c = Un;
   Object.defineProperty(e, "loadCommonMessageInfo", {
     enumerable: !0,
     get: function() {
@@ -13611,7 +13612,7 @@ function Jl() {
       return c.storeCommonMessageInfo
     }
   });
-  var f = En;
+  var f = On;
   Object.defineProperty(e, "loadCommonMessageInfoRelaxed", {
     enumerable: !0,
     get: function() {
@@ -13623,7 +13624,7 @@ function Jl() {
       return f.storeCommonMessageInfoRelaxed
     }
   });
-  var u = Un;
+  var u = Rn;
   Object.defineProperty(e, "loadComputeSkipReason", {
     enumerable: !0,
     get: function() {
@@ -13635,7 +13636,7 @@ function Jl() {
       return u.storeComputeSkipReason
     }
   });
-  var _ = yt;
+  var _ = _t;
   Object.defineProperty(e, "loadCurrencyCollection", {
     enumerable: !0,
     get: function() {
@@ -13647,7 +13648,7 @@ function Jl() {
       return _.storeCurrencyCollection
     }
   });
-  var B = Rn;
+  var B = jn;
   Object.defineProperty(e, "loadDepthBalanceInfo", {
     enumerable: !0,
     get: function() {
@@ -13659,7 +13660,7 @@ function Jl() {
       return B.storeDepthBalanceInfo
     }
   });
-  var y = jn;
+  var y = Ln;
   Object.defineProperty(e, "loadHashUpdate", {
     enumerable: !0,
     get: function() {
@@ -13671,14 +13672,14 @@ function Jl() {
       return y.storeHashUpdate
     }
   });
-  var S = Hr;
+  var S = Vr;
   Object.defineProperty(e, "loadMasterchainStateExtra", {
     enumerable: !0,
     get: function() {
       return S.loadMasterchainStateExtra
     }
   });
-  var m = Ft;
+  var m = Kt;
   Object.defineProperty(e, "loadMessage", {
     enumerable: !0,
     get: function() {
@@ -13690,7 +13691,7 @@ function Jl() {
       return m.storeMessage
     }
   });
-  var v = Tn;
+  var v = En;
   Object.defineProperty(e, "loadMessageRelaxed", {
     enumerable: !0,
     get: function() {
@@ -13702,21 +13703,21 @@ function Jl() {
       return v.storeMessageRelaxed
     }
   });
-  var x = Fi;
+  var x = Ki;
   Object.defineProperty(e, "SendMode", {
     enumerable: !0,
     get: function() {
       return x.SendMode
     }
   });
-  var M = Ki;
+  var M = $i;
   Object.defineProperty(e, "ReserveMode", {
     enumerable: !0,
     get: function() {
       return M.ReserveMode
     }
   });
-  var p = Ln;
+  var p = zn;
   Object.defineProperty(e, "loadShardAccount", {
     enumerable: !0,
     get: function() {
@@ -13728,7 +13729,7 @@ function Jl() {
       return p.storeShardAccount
     }
   });
-  var h = Ka;
+  var h = $a;
   Object.defineProperty(e, "ShardAccountRefValue", {
     enumerable: !0,
     get: function() {
@@ -13745,7 +13746,7 @@ function Jl() {
       return h.storeShardAccounts
     }
   });
-  var P = zn;
+  var P = Nn;
   Object.defineProperty(e, "loadShardIdent", {
     enumerable: !0,
     get: function() {
@@ -13757,14 +13758,14 @@ function Jl() {
       return P.storeShardIdent
     }
   });
-  var k = $i;
+  var k = Hi;
   Object.defineProperty(e, "loadShardStateUnsplit", {
     enumerable: !0,
     get: function() {
       return k.loadShardStateUnsplit
     }
   });
-  var T = Dt;
+  var T = Ft;
   Object.defineProperty(e, "loadSimpleLibrary", {
     enumerable: !0,
     get: function() {
@@ -13776,7 +13777,7 @@ function Jl() {
       return T.storeSimpleLibrary
     }
   });
-  var J = On;
+  var J = xn;
   Object.defineProperty(e, "loadLibRef", {
     enumerable: !0,
     get: function() {
@@ -13788,7 +13789,7 @@ function Jl() {
       return J.storeLibRef
     }
   });
-  var ne = Nn;
+  var ne = Dn;
   Object.defineProperty(e, "loadSplitMergeInfo", {
     enumerable: !0,
     get: function() {
@@ -13800,7 +13801,7 @@ function Jl() {
       return ne.storeSplitMergeInfo
     }
   });
-  var q = Et;
+  var q = Ot;
   Object.defineProperty(e, "loadStateInit", {
     enumerable: !0,
     get: function() {
@@ -13812,31 +13813,31 @@ function Jl() {
       return q.storeStateInit
     }
   });
-  var we = Bn;
+  var ve = Pn;
   Object.defineProperty(e, "loadStorageInfo", {
     enumerable: !0,
     get: function() {
-      return we.loadStorageInfo
+      return ve.loadStorageInfo
     }
   }), Object.defineProperty(e, "storeStorageInfo", {
     enumerable: !0,
     get: function() {
-      return we.storeStorageInfo
+      return ve.storeStorageInfo
     }
   });
-  var ke = Pn;
+  var Se = Mn;
   Object.defineProperty(e, "loadStorageUsed", {
     enumerable: !0,
     get: function() {
-      return ke.loadStorageUsed
+      return Se.loadStorageUsed
     }
   }), Object.defineProperty(e, "storeStorageUsed", {
     enumerable: !0,
     get: function() {
-      return ke.storeStorageUsed
+      return Se.storeStorageUsed
     }
   });
-  var V = tn;
+  var V = nn;
   Object.defineProperty(e, "loadStorageUsedShort", {
     enumerable: !0,
     get: function() {
@@ -13848,7 +13849,7 @@ function Jl() {
       return V.storeStorageUsedShort
     }
   });
-  var z = kn;
+  var z = Sn;
   Object.defineProperty(e, "loadTickTock", {
     enumerable: !0,
     get: function() {
@@ -13860,7 +13861,7 @@ function Jl() {
       return z.storeTickTock
     }
   });
-  var ie = Jl();
+  var ie = Ql();
   Object.defineProperty(e, "loadTransaction", {
     enumerable: !0,
     get: function() {
@@ -13872,43 +13873,43 @@ function Jl() {
       return ie.storeTransaction
     }
   });
-  var ve = Dn;
+  var ke = Fn;
   Object.defineProperty(e, "loadTransactionActionPhase", {
     enumerable: !0,
     get: function() {
-      return ve.loadTransactionActionPhase
+      return ke.loadTransactionActionPhase
     }
   }), Object.defineProperty(e, "storeTransactionActionPhase", {
     enumerable: !0,
     get: function() {
-      return ve.storeTransactionActionPhase
+      return ke.storeTransactionActionPhase
     }
   });
-  var Ce = Fn;
+  var Be = Kn;
   Object.defineProperty(e, "loadTransactionBouncePhase", {
     enumerable: !0,
     get: function() {
-      return Ce.loadTransactionBouncePhase
+      return Be.loadTransactionBouncePhase
     }
   }), Object.defineProperty(e, "storeTransactionBouncePhase", {
     enumerable: !0,
     get: function() {
-      return Ce.storeTransactionBouncePhase
+      return Be.storeTransactionBouncePhase
     }
   });
-  var Ee = Kn;
+  var Oe = $n;
   Object.defineProperty(e, "loadTransactionComputePhase", {
     enumerable: !0,
     get: function() {
-      return Ee.loadTransactionComputePhase
+      return Oe.loadTransactionComputePhase
     }
   }), Object.defineProperty(e, "storeTransactionComputePhase", {
     enumerable: !0,
     get: function() {
-      return Ee.storeTransactionComputePhase
+      return Oe.storeTransactionComputePhase
     }
   });
-  var F = $n;
+  var F = Hn;
   Object.defineProperty(e, "loadTransactionCreditPhase", {
     enumerable: !0,
     get: function() {
@@ -13920,45 +13921,45 @@ function Jl() {
       return F.storeTransactionCreditPhase
     }
   });
-  var Ve = Xl();
+  var Ge = Jl();
   Object.defineProperty(e, "loadTransactionDescription", {
     enumerable: !0,
     get: function() {
-      return Ve.loadTransactionDescription
+      return Ge.loadTransactionDescription
     }
   }), Object.defineProperty(e, "storeTransactionDescription", {
     enumerable: !0,
     get: function() {
-      return Ve.storeTransactionDescription
+      return Ge.storeTransactionDescription
     }
   });
-  var Fe = Hn;
+  var Ke = Vn;
   Object.defineProperty(e, "loadTransactionStoragePhase", {
     enumerable: !0,
     get: function() {
-      return Fe.loadTransactionStoragePhase
+      return Ke.loadTransactionStoragePhase
     }
   }), Object.defineProperty(e, "storeTransactionsStoragePhase", {
     enumerable: !0,
     get: function() {
-      return Fe.storeTransactionsStoragePhase
+      return Ke.storeTransactionsStoragePhase
     }
   })
-})(bl);
-var Hi = {};
-Object.defineProperty(Hi, "__esModule", {
+})(yl);
+var Vi = {};
+Object.defineProperty(Vi, "__esModule", {
   value: !0
 });
-Hi.openContract = void 0;
-const Mp = kt,
-  Go = Gn();
+Vi.openContract = void 0;
+const Tp = St,
+  Wo = Wn();
 
-function Tp(e, t) {
+function Ep(e, t) {
   let n, r = null;
-  if (!Mp.Address.isAddress(e.address)) throw Error("Invalid address");
+  if (!Tp.Address.isAddress(e.address)) throw Error("Invalid address");
   if (n = e.address, e.init) {
-    if (!(e.init.code instanceof Go.Cell)) throw Error("Invalid init.code");
-    if (!(e.init.data instanceof Go.Cell)) throw Error("Invalid init.data");
+    if (!(e.init.code instanceof Wo.Cell)) throw Error("Invalid init.code");
+    if (!(e.init.data instanceof Wo.Cell)) throw Error("Invalid init.data");
     r = e.init
   }
   let i = t({
@@ -13972,84 +13973,84 @@ function Tp(e, t) {
     }
   })
 }
-Hi.openContract = Tp;
-var Vi = {};
-Object.defineProperty(Vi, "__esModule", {
-  value: !0
-});
-Vi.ComputeError = void 0;
-class $a extends Error {
-  constructor(t, n, r) {
-    super(t), this.exitCode = n, this.debugLogs = r && r.debugLogs ? r.debugLogs : null, this.logs = r && r.logs ? r.logs : null, Object.setPrototypeOf(this, $a.prototype)
-  }
-}
-Vi.ComputeError = $a;
+Vi.openContract = Ep;
 var Gi = {};
 Object.defineProperty(Gi, "__esModule", {
   value: !0
 });
-Gi.getMethodId = void 0;
-const Ep = new Int16Array([0, 4129, 8258, 12387, 16516, 20645, 24774, 28903, 33032, 37161, 41290, 45419, 49548, 53677, 57806, 61935, 4657, 528, 12915, 8786, 21173, 17044, 29431, 25302, 37689, 33560, 45947, 41818, 54205, 50076, 62463, 58334, 9314, 13379, 1056, 5121, 25830, 29895, 17572, 21637, 42346, 46411, 34088, 38153, 58862, 62927, 50604, 54669, 13907, 9842, 5649, 1584, 30423, 26358, 22165, 18100, 46939, 42874, 38681, 34616, 63455, 59390, 55197, 51132, 18628, 22757, 26758, 30887, 2112, 6241, 10242, 14371, 51660, 55789, 59790, 63919, 35144, 39273, 43274, 47403, 23285, 19156, 31415, 27286, 6769, 2640, 14899, 10770, 56317, 52188, 64447, 60318, 39801, 35672, 47931, 43802, 27814, 31879, 19684, 23749, 11298, 15363, 3168, 7233, 60846, 64911, 52716, 56781, 44330, 48395, 36200, 40265, 32407, 28342, 24277, 20212, 15891, 11826, 7761, 3696, 65439, 61374, 57309, 53244, 48923, 44858, 40793, 36728, 37256, 33193, 45514, 41451, 53516, 49453, 61774, 57711, 4224, 161, 12482, 8419, 20484, 16421, 28742, 24679, 33721, 37784, 41979, 46042, 49981, 54044, 58239, 62302, 689, 4752, 8947, 13010, 16949, 21012, 25207, 29270, 46570, 42443, 38312, 34185, 62830, 58703, 54572, 50445, 13538, 9411, 5280, 1153, 29798, 25671, 21540, 17413, 42971, 47098, 34713, 38840, 59231, 63358, 50973, 55100, 9939, 14066, 1681, 5808, 26199, 30326, 17941, 22068, 55628, 51565, 63758, 59695, 39368, 35305, 47498, 43435, 22596, 18533, 30726, 26663, 6336, 2273, 14466, 10403, 52093, 56156, 60223, 64286, 35833, 39896, 43963, 48026, 19061, 23124, 27191, 31254, 2801, 6864, 10931, 14994, 64814, 60687, 56684, 52557, 48554, 44427, 40424, 36297, 31782, 27655, 23652, 19525, 15522, 11395, 7392, 3265, 61215, 65342, 53085, 57212, 44955, 49082, 36825, 40952, 28183, 32310, 20053, 24180, 11923, 16050, 3793, 7920]);
+Gi.ComputeError = void 0;
+class Ha extends Error {
+  constructor(t, n, r) {
+    super(t), this.exitCode = n, this.debugLogs = r && r.debugLogs ? r.debugLogs : null, this.logs = r && r.logs ? r.logs : null, Object.setPrototypeOf(this, Ha.prototype)
+  }
+}
+Gi.ComputeError = Ha;
+var Wi = {};
+Object.defineProperty(Wi, "__esModule", {
+  value: !0
+});
+Wi.getMethodId = void 0;
+const Op = new Int16Array([0, 4129, 8258, 12387, 16516, 20645, 24774, 28903, 33032, 37161, 41290, 45419, 49548, 53677, 57806, 61935, 4657, 528, 12915, 8786, 21173, 17044, 29431, 25302, 37689, 33560, 45947, 41818, 54205, 50076, 62463, 58334, 9314, 13379, 1056, 5121, 25830, 29895, 17572, 21637, 42346, 46411, 34088, 38153, 58862, 62927, 50604, 54669, 13907, 9842, 5649, 1584, 30423, 26358, 22165, 18100, 46939, 42874, 38681, 34616, 63455, 59390, 55197, 51132, 18628, 22757, 26758, 30887, 2112, 6241, 10242, 14371, 51660, 55789, 59790, 63919, 35144, 39273, 43274, 47403, 23285, 19156, 31415, 27286, 6769, 2640, 14899, 10770, 56317, 52188, 64447, 60318, 39801, 35672, 47931, 43802, 27814, 31879, 19684, 23749, 11298, 15363, 3168, 7233, 60846, 64911, 52716, 56781, 44330, 48395, 36200, 40265, 32407, 28342, 24277, 20212, 15891, 11826, 7761, 3696, 65439, 61374, 57309, 53244, 48923, 44858, 40793, 36728, 37256, 33193, 45514, 41451, 53516, 49453, 61774, 57711, 4224, 161, 12482, 8419, 20484, 16421, 28742, 24679, 33721, 37784, 41979, 46042, 49981, 54044, 58239, 62302, 689, 4752, 8947, 13010, 16949, 21012, 25207, 29270, 46570, 42443, 38312, 34185, 62830, 58703, 54572, 50445, 13538, 9411, 5280, 1153, 29798, 25671, 21540, 17413, 42971, 47098, 34713, 38840, 59231, 63358, 50973, 55100, 9939, 14066, 1681, 5808, 26199, 30326, 17941, 22068, 55628, 51565, 63758, 59695, 39368, 35305, 47498, 43435, 22596, 18533, 30726, 26663, 6336, 2273, 14466, 10403, 52093, 56156, 60223, 64286, 35833, 39896, 43963, 48026, 19061, 23124, 27191, 31254, 2801, 6864, 10931, 14994, 64814, 60687, 56684, 52557, 48554, 44427, 40424, 36297, 31782, 27655, 23652, 19525, 15522, 11395, 7392, 3265, 61215, 65342, 53085, 57212, 44955, 49082, 36825, 40952, 28183, 32310, 20053, 24180, 11923, 16050, 3793, 7920]);
 
-function Op(e) {
-  e instanceof Buffer || (e = Buffer.from(e));
+function xp(e) {
+  e instanceof be.Buffer || (e = be.Buffer.from(e));
   let t = 0;
   for (let n = 0; n < e.length; n++) {
     const r = e[n];
-    t = (Ep[(t >> 8 ^ r) & 255] ^ t << 8) & 65535
+    t = (Op[(t >> 8 ^ r) & 255] ^ t << 8) & 65535
   }
   return t
 }
 
-function xp(e) {
-  return Op(e) & 65535 | 65536
+function Up(e) {
+  return xp(e) & 65535 | 65536
 }
-Gi.getMethodId = xp;
-var ir = {};
-Object.defineProperty(ir, "__esModule", {
+Wi.getMethodId = Up;
+var ar = {};
+Object.defineProperty(ar, "__esModule", {
   value: !0
 });
-ir.safeSignVerify = ir.safeSign = void 0;
-const Ha = Fa(),
-  Up = 8,
-  Rp = 64;
+ar.safeSignVerify = ar.safeSign = void 0;
+const Va = Ka(),
+  Rp = 8,
+  jp = 64;
 
-function Ql(e, t) {
-  let n = Buffer.from(t);
-  if (n.length > Rp) throw Error("Seed can	 be longer than 64 bytes");
-  if (n.length < Up) throw Error("Seed must be at least 8 bytes");
-  return (0, Ha.sha256_sync)(Buffer.concat([Buffer.from([255, 255]), n, e.hash()]))
+function ql(e, t) {
+  let n = be.Buffer.from(t);
+  if (n.length > jp) throw Error("Seed can	 be longer than 64 bytes");
+  if (n.length < Rp) throw Error("Seed must be at least 8 bytes");
+  return (0, Va.sha256_sync)(be.Buffer.concat([be.Buffer.from([255, 255]), n, e.hash()]))
 }
 
-function jp(e, t, n = "ton-safe-sign-magic") {
-  return (0, Ha.sign)(Ql(e, n), t)
+function Lp(e, t, n = "ton-safe-sign-magic") {
+  return (0, Va.sign)(ql(e, n), t)
 }
-ir.safeSign = jp;
+ar.safeSign = Lp;
 
-function Lp(e, t, n, r = "ton-safe-sign-magic") {
-  return (0, Ha.signVerify)(Ql(e, r), t, n)
+function zp(e, t, n, r = "ton-safe-sign-magic") {
+  return (0, Va.signVerify)(ql(e, r), t, n)
 }
-ir.safeSignVerify = Lp;
+ar.safeSignVerify = zp;
 (function(e) {
-  var t = pe && pe.__createBinding || (Object.create ? function(ie, ve, Ce, Ee) {
-      Ee === void 0 && (Ee = Ce);
-      var F = Object.getOwnPropertyDescriptor(ve, Ce);
-      (!F || ("get" in F ? !ve.__esModule : F.writable || F.configurable)) && (F = {
+  var t = pe && pe.__createBinding || (Object.create ? function(ie, ke, Be, Oe) {
+      Oe === void 0 && (Oe = Be);
+      var F = Object.getOwnPropertyDescriptor(ke, Be);
+      (!F || ("get" in F ? !ke.__esModule : F.writable || F.configurable)) && (F = {
         enumerable: !0,
         get: function() {
-          return ve[Ce]
+          return ke[Be]
         }
-      }), Object.defineProperty(ie, Ee, F)
-    } : function(ie, ve, Ce, Ee) {
-      Ee === void 0 && (Ee = Ce), ie[Ee] = ve[Ce]
+      }), Object.defineProperty(ie, Oe, F)
+    } : function(ie, ke, Be, Oe) {
+      Oe === void 0 && (Oe = Be), ie[Oe] = ke[Be]
     }),
-    n = pe && pe.__exportStar || function(ie, ve) {
-      for (var Ce in ie) Ce !== "default" && !Object.prototype.hasOwnProperty.call(ve, Ce) && t(ve, ie, Ce)
+    n = pe && pe.__exportStar || function(ie, ke) {
+      for (var Be in ie) Be !== "default" && !Object.prototype.hasOwnProperty.call(ke, Be) && t(ke, ie, Be)
     };
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.safeSignVerify = e.safeSign = e.getMethodId = e.base32Encode = e.base32Decode = e.crc32c = e.crc16 = e.fromNano = e.toNano = e.ComputeError = e.openContract = e.TupleBuilder = e.TupleReader = e.serializeTuple = e.parseTuple = e.generateMerkleUpdate = e.generateMerkleProofDirect = e.generateMerkleProof = e.exoticPruned = e.exoticMerkleUpdate = e.convertToMerkleProof = e.exoticMerkleProof = e.Dictionary = e.Cell = e.CellType = e.Slice = e.beginCell = e.Builder = e.BitBuilder = e.BitReader = e.BitString = e.contractAddress = e.ADNLAddress = e.ExternalAddress = e.address = e.Address = void 0;
-  var r = kt;
+  var r = St;
   Object.defineProperty(e, "Address", {
     enumerable: !0,
     get: function() {
@@ -14061,49 +14062,49 @@ ir.safeSignVerify = Lp;
       return r.address
     }
   });
-  var i = sr;
+  var i = lr;
   Object.defineProperty(e, "ExternalAddress", {
     enumerable: !0,
     get: function() {
       return i.ExternalAddress
     }
   });
-  var o = ki;
+  var o = Si;
   Object.defineProperty(e, "ADNLAddress", {
     enumerable: !0,
     get: function() {
       return o.ADNLAddress
     }
   });
-  var a = Si;
+  var a = Ai;
   Object.defineProperty(e, "contractAddress", {
     enumerable: !0,
     get: function() {
       return a.contractAddress
     }
   });
-  var s = rn();
+  var s = an();
   Object.defineProperty(e, "BitString", {
     enumerable: !0,
     get: function() {
       return s.BitString
     }
   });
-  var c = Bt;
+  var c = Pt;
   Object.defineProperty(e, "BitReader", {
     enumerable: !0,
     get: function() {
       return c.BitReader
     }
   });
-  var f = Ii();
+  var f = Ci();
   Object.defineProperty(e, "BitBuilder", {
     enumerable: !0,
     get: function() {
       return f.BitBuilder
     }
   });
-  var u = qe();
+  var u = Ze();
   Object.defineProperty(e, "Builder", {
     enumerable: !0,
     get: function() {
@@ -14115,35 +14116,35 @@ ir.safeSignVerify = Lp;
       return u.beginCell
     }
   });
-  var _ = Ua();
+  var _ = Ra();
   Object.defineProperty(e, "Slice", {
     enumerable: !0,
     get: function() {
       return _.Slice
     }
   });
-  var B = an;
+  var B = on;
   Object.defineProperty(e, "CellType", {
     enumerable: !0,
     get: function() {
       return B.CellType
     }
   });
-  var y = Gn();
+  var y = Wn();
   Object.defineProperty(e, "Cell", {
     enumerable: !0,
     get: function() {
       return y.Cell
     }
   });
-  var S = Vn();
+  var S = Gn();
   Object.defineProperty(e, "Dictionary", {
     enumerable: !0,
     get: function() {
       return S.Dictionary
     }
   });
-  var m = Bi();
+  var m = Pi();
   Object.defineProperty(e, "exoticMerkleProof", {
     enumerable: !0,
     get: function() {
@@ -14155,21 +14156,21 @@ ir.safeSignVerify = Lp;
       return m.convertToMerkleProof
     }
   });
-  var v = lr;
+  var v = cr;
   Object.defineProperty(e, "exoticMerkleUpdate", {
     enumerable: !0,
     get: function() {
       return v.exoticMerkleUpdate
     }
   });
-  var x = cr;
+  var x = ur;
   Object.defineProperty(e, "exoticPruned", {
     enumerable: !0,
     get: function() {
       return x.exoticPruned
     }
   });
-  var M = xa();
+  var M = Ua();
   Object.defineProperty(e, "generateMerkleProof", {
     enumerable: !0,
     get: function() {
@@ -14181,14 +14182,14 @@ ir.safeSignVerify = Lp;
       return M.generateMerkleProofDirect
     }
   });
-  var p = Ns();
+  var p = Ds();
   Object.defineProperty(e, "generateMerkleUpdate", {
     enumerable: !0,
     get: function() {
       return p.generateMerkleUpdate
     }
   });
-  var h = rr;
+  var h = ir;
   Object.defineProperty(e, "parseTuple", {
     enumerable: !0,
     get: function() {
@@ -14200,35 +14201,35 @@ ir.safeSignVerify = Lp;
       return h.serializeTuple
     }
   });
-  var P = Ni;
+  var P = Di;
   Object.defineProperty(e, "TupleReader", {
     enumerable: !0,
     get: function() {
       return P.TupleReader
     }
   });
-  var k = Di;
+  var k = Fi;
   Object.defineProperty(e, "TupleBuilder", {
     enumerable: !0,
     get: function() {
       return k.TupleBuilder
     }
-  }), n(bl, e);
-  var T = Hi;
+  }), n(yl, e);
+  var T = Vi;
   Object.defineProperty(e, "openContract", {
     enumerable: !0,
     get: function() {
       return T.openContract
     }
   });
-  var J = Vi;
+  var J = Gi;
   Object.defineProperty(e, "ComputeError", {
     enumerable: !0,
     get: function() {
       return J.ComputeError
     }
   });
-  var ne = Sn;
+  var ne = An;
   Object.defineProperty(e, "toNano", {
     enumerable: !0,
     get: function() {
@@ -14240,40 +14241,40 @@ ir.safeSignVerify = Lp;
       return ne.fromNano
     }
   });
-  var q = or;
+  var q = sr;
   Object.defineProperty(e, "crc16", {
     enumerable: !0,
     get: function() {
       return q.crc16
     }
   });
-  var we = $r;
+  var ve = Hr;
   Object.defineProperty(e, "crc32c", {
     enumerable: !0,
     get: function() {
-      return we.crc32c
+      return ve.crc32c
     }
   });
-  var ke = vn;
+  var Se = kn;
   Object.defineProperty(e, "base32Decode", {
     enumerable: !0,
     get: function() {
-      return ke.base32Decode
+      return Se.base32Decode
     }
   }), Object.defineProperty(e, "base32Encode", {
     enumerable: !0,
     get: function() {
-      return ke.base32Encode
+      return Se.base32Encode
     }
   });
-  var V = Gi;
+  var V = Wi;
   Object.defineProperty(e, "getMethodId", {
     enumerable: !0,
     get: function() {
       return V.getMethodId
     }
   });
-  var z = ir;
+  var z = ar;
   Object.defineProperty(e, "safeSign", {
     enumerable: !0,
     get: function() {
@@ -14285,14 +14286,14 @@ ir.safeSignVerify = Lp;
       return z.safeSignVerify
     }
   })
-})(vi);
-var ql = {},
-  Kt = {};
-Object.defineProperty(Kt, "__esModule", {
+})(ki);
+var Zl = {},
+  $t = {};
+Object.defineProperty($t, "__esModule", {
   value: !0
 });
-Kt.AirdropAbi = Kt.AirdropFactoryAbiV2 = Kt.AirdropFactoryAbiV1 = void 0;
-Kt.AirdropFactoryAbiV1 = {
+$t.AirdropAbi = $t.AirdropFactoryAbiV2 = $t.AirdropFactoryAbiV1 = void 0;
+$t.AirdropFactoryAbiV1 = {
   "ABI version": 2,
   version: "2.3",
   header: ["pubkey", "time", "expire"],
@@ -14545,7 +14546,7 @@ Kt.AirdropFactoryAbiV1 = {
     type: "uint128"
   }]
 };
-Kt.AirdropFactoryAbiV2 = {
+$t.AirdropFactoryAbiV2 = {
   "ABI version": 2,
   version: "2.3",
   header: ["pubkey", "time", "expire"],
@@ -14831,7 +14832,7 @@ Kt.AirdropFactoryAbiV2 = {
     type: "uint128"
   }]
 };
-Kt.AirdropAbi = {
+$t.AirdropAbi = {
   "ABI version": 2,
   version: "2.3",
   header: ["pubkey", "time", "expire"],
@@ -14870,16 +14871,16 @@ Kt.AirdropAbi = {
     type: "cell"
   }]
 };
-var Wi = {};
-Object.defineProperty(Wi, "__esModule", {
+var Yi = {};
+Object.defineProperty(Yi, "__esModule", {
   value: !0
 });
-Wi.AirdropStatus = void 0;
-var Wo;
+Yi.AirdropStatus = void 0;
+var Yo;
 (function(e) {
   e.NoClaimId = "NoClaimId", e.NoUser = "NoUser", e.HasClaimed = "HasClaimed", e.CanClaim = "CanClaim", e.InQueue = "InQueue", e.NoReward = "NoReward", e.NoAirdrop = "NoAirdrop", e.Loading = "Loading"
-})(Wo || (Wi.AirdropStatus = Wo = {}));
-var Ia = {};
+})(Yo || (Yi.AirdropStatus = Yo = {}));
+var Ca = {};
 (function(e) {
   var t = pe && pe.__awaiter || function(u, _, B, y) {
       function S(m) {
@@ -14992,9 +14993,9 @@ var Ia = {};
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.buildTransaction = e.getCodeAirdropAndAmount = e.checkQueue = void 0;
-  var i = vi,
-    o = nn,
-    a = Kt,
+  var i = ki,
+    o = rn,
+    a = $t,
     s = function(u, _, B) {
       return t(void 0, void 0, void 0, function() {
         var y, S;
@@ -15048,8 +15049,8 @@ var Ia = {};
     for (var y = [], S = 3; S < arguments.length; S++) y[S - 3] = arguments[S];
     return t(void 0, r([u, _, B], y, !0), void 0, function(m, v, x, M) {
       var p, h, P, k, T, J, ne, q;
-      return M === void 0 && (M = "10000000"), n(this, function(we) {
-        switch (we.label) {
+      return M === void 0 && (M = "10000000"), n(this, function(ve) {
+        switch (ve.label) {
           case 0:
             return [4, v.packIntoCell({
               abiVersion: "2.3",
@@ -15066,14 +15067,14 @@ var Ia = {};
               }
             })];
           case 1:
-            return p = we.sent(), [4, (0, e.getCodeAirdropAndAmount)(m.factory, v, M)];
+            return p = ve.sent(), [4, (0, e.getCodeAirdropAndAmount)(m.factory, v, M)];
           case 2:
-            return h = we.sent(), P = h.amount, k = h.codeAirdrop, [4, v.mergeTvc({
+            return h = ve.sent(), P = h.amount, k = h.codeAirdrop, [4, v.mergeTvc({
               code: k,
               data: "te6ccgEBAgEAKAABAcABAEPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg"
             })];
           case 3:
-            return T = we.sent(), [4, v.getStateInit(a.AirdropAbi, {
+            return T = ve.sent(), [4, v.getStateInit(a.AirdropAbi, {
               workchain: 0,
               initParams: {
                 _data: m.data,
@@ -15082,7 +15083,7 @@ var Ia = {};
               tvc: T.tvc
             })];
           case 4:
-            return J = we.sent(), ne = J.stateInit, q = J.address, [2, {
+            return J = ve.sent(), ne = J.stateInit, q = J.address, [2, {
               messages: [{
                 amount: P,
                 address: i.Address.parse(q.toString()).toString({
@@ -15098,7 +15099,7 @@ var Ia = {};
     })
   };
   e.buildTransaction = f
-})(Ia);
+})(Ca);
 (function(e) {
   var t = pe && pe.__assign || function() {
       return t = Object.assign || function(S) {
@@ -15230,12 +15231,12 @@ var Ia = {};
   Object.defineProperty(e, "__esModule", {
     value: !0
   }), e.AirdropUI = void 0;
-  var a = vi,
-    s = nn,
-    c = Kt,
-    f = Wi,
-    u = Ia;
-  r(Ia, e);
+  var a = ki,
+    s = rn,
+    c = $t,
+    f = Yi,
+    u = Ca;
+  r(Ca, e);
   var _ = function() {
       function S(m) {
         this.subscribers = [], this.value = m
@@ -15303,14 +15304,14 @@ var Ia = {};
         this.state.set("claimId", m)
       }, S.prototype.claim = function() {
         return i(this, void 0, void 0, function() {
-          var m, v, x, M, p, h, P, k, T, J, ne, q, we, ke, V, z;
+          var m, v, x, M, p, h, P, k, T, J, ne, q, ve, Se, V, z;
           return o(this, function(ie) {
             switch (ie.label) {
               case 0:
                 if (m = this.getState(), v = m.claimData, x = m.storageKey, M = m.claimId, !M) throw new Error("claimId must defined");
                 if ((v == null ? void 0 : v.status) !== "signed") throw new Error("claimData.status must be signed");
-                if (p = v.rewards.find(function(ve) {
-                    return ve.claimId === M
+                if (p = v.rewards.find(function(ke) {
+                    return ke.claimId === M
                   }), !p) throw new Error("rewardData must defined");
                 if (!x) throw new Error("storageKey must be defined");
                 this.state.set("loading", !0), ie.label = 1;
@@ -15346,22 +15347,22 @@ var Ia = {};
                   tvc: J.tvc
                 })];
               case 5:
-                return ne = ie.sent(), q = ne.stateInit, we = ne.address, ke = this.clock.time, [4, this.tonConnect.sendTransaction({
+                return ne = ie.sent(), q = ne.stateInit, ve = ne.address, Se = this.clock.time, [4, this.tonConnect.sendTransaction({
                   messages: [{
                     amount: T,
-                    address: a.Address.parse(we.toString()).toString({
+                    address: a.Address.parse(ve.toString()).toString({
                       bounceable: !0
                     }),
                     payload: h.boc,
                     stateInit: q
                   }],
-                  validUntil: Math.ceil((ke + 6e5) / 1e3)
+                  validUntil: Math.ceil((Se + 6e5) / 1e3)
                 })];
               case 6:
                 return ie.sent(), V = {
                   airdrop: p.airdrop,
                   factory: p.factory,
-                  until: ke + 12e4
+                  until: Se + 12e4
                 }, localStorage.setItem(x, JSON.stringify(V)), this.state.set("storageData", V), [3, 8];
               case 7:
                 return z = ie.sent(), console.error(z), [3, 8];
@@ -15503,30 +15504,30 @@ var Ia = {};
       }, S
     }();
   e.AirdropUI = y
-})(ql);
-const zp = {
+})(Zl);
+const Np = {
     async mounted() {
       this.stores.state.setPageSettings({
         isNoBg: !0
-      }), this.rpc = new nn.ProviderRpcClient({
-        fallback: () => ra.EverscaleStandaloneClient.create({
+      }), this.rpc = new rn.ProviderRpcClient({
+        fallback: () => ia.EverscaleStandaloneClient.create({
           clock: this.clock,
           connection: {
             data: {
               endpoint: "https://jrpc-ton.broxus.com/rpc"
             },
-            id: Number(ec.MAINNET),
+            id: Number(tc.MAINNET),
             type: "jrpc"
           }
         }),
         forceUseFallback: !0
-      }), this.tonConnectUI = await window.tonConnectUI(), this.airdropUI = new ql.AirdropUI(this.tonConnectUI, this.rpc, this.clock), this.state = this.airdropUI.getState(), this.airdropUI.subscribe(e => {
+      }), this.tonConnectUI = await window.tonConnectUI(), this.airdropUI = new Zl.AirdropUI(this.tonConnectUI, this.rpc, this.clock), this.state = this.airdropUI.getState(), this.airdropUI.subscribe(e => {
         this.state = e
       }), this.state = this.airdropUI.getState()
     },
     data() {
       return {
-        clock: new ra.Clock,
+        clock: new ia.Clock,
         rpc: null,
         tonConnectUI: null,
         airdropUI: null,
@@ -15566,7 +15567,7 @@ const zp = {
         this.airdropUI.claim(this.state.claimData, this.state.storageKey)
       },
       parseNonBounceable(e) {
-        return vi.Address.parseRaw(e).toString({
+        return ki.Address.parseRaw(e).toString({
           bounceable: !1
         })
       },
@@ -15577,23 +15578,23 @@ const zp = {
       }
     }
   },
-  Np = {
+  Dp = {
     class: "container onChainAirdrop",
     style: {
       "padding-top": "30px",
       "padding-bottom": "30px"
     }
   },
-  Dp = {
+  Fp = {
     class: "center goldText"
   },
-  Fp = {
+  Kp = {
     class: "connect"
   },
-  Kp = {
+  $p = {
     class: "statusInfo center"
   },
-  $p = {
+  Hp = {
     style: {
       margin: "0 10px"
     },
@@ -15603,80 +15604,80 @@ const zp = {
     viewBox: "0 0 28 29",
     fill: "none"
   },
-  Hp = {
+  Vp = {
     key: 0,
     class: "addresses"
   },
-  Vp = {
+  Gp = {
     class: "addressField"
   },
-  Gp = {
+  Wp = {
     class: "address"
   },
-  Wp = {
+  Yp = {
     class: "statusInfo center",
     style: {
       margin: "30px 0"
     }
   },
-  Yp = {
+  Xp = {
     key: 0,
     class: "center goldText"
   },
-  Xp = {
+  Jp = {
     key: 3,
     class: "center claimStatus",
     style: {
       color: "#0bc15f"
     }
   },
-  Jp = {
+  Qp = {
     key: 4,
     class: "claimButton"
   },
-  Qp = {
+  qp = {
     key: 5,
     class: "claimStatus"
   },
-  qp = {
+  Zp = {
     key: 6,
     class: "claimStatus"
   };
 
-function Zp(e, t, n, r, i, o) {
+function eg(e, t, n, r, i, o) {
   var m, v, x, M, p;
-  const a = Ut("van-icon"),
-    s = Ut("van-button"),
-    c = Ut("van-notice-bar"),
-    f = Ut("van-field"),
-    u = Ut("van-picker"),
-    _ = Ut("van-popup"),
-    B = Ut("van-loading"),
-    y = Ut("van-cell"),
-    S = Ut("van-cell-group");
-  return bt(), Ot("div", Np, [t[6] || (t[6] = tt("h1", {
+  const a = Rt("van-icon"),
+    s = Rt("van-button"),
+    c = Rt("van-notice-bar"),
+    f = Rt("van-field"),
+    u = Rt("van-picker"),
+    _ = Rt("van-popup"),
+    B = Rt("van-loading"),
+    y = Rt("van-cell"),
+    S = Rt("van-cell-group");
+  return yt(), xt("div", Dp, [t[6] || (t[6] = nt("h1", {
     class: "center"
-  }, "Airdrop on-chain claim", -1)), tt("p", null, wt(e.t("To claim on-chain, you must select the airdrop listed on your balance page from the dropdown menu.")), 1), tt("p", null, wt(e.t("Due to blockchain technical limitations, the distribution speed is restricted and follows a queue system. In the first few hours, the wait time may be longer due to the high number of participants.")), 1), tt("p", null, wt(e.t("If you leave the page for more than 10 minute, your position in the queue will be lost.")), 1), tt("p", null, wt(e.t("If you see tokens listed in the airdrop on your balance page, but no rewards are available on this page, please wait a few minutes.")), 1), tt("h3", Dp, wt(e.t("Your wallet")), 1), tt("div", Fp, [tt("div", Kp, [vt(s, {
+  }, "Airdrop on-chain claim", -1)), nt("p", null, vt(e.t("To claim on-chain, you must select the airdrop listed on your balance page from the dropdown menu.")), 1), nt("p", null, vt(e.t("Due to blockchain technical limitations, the distribution speed is restricted and follows a queue system. In the first few hours, the wait time may be longer due to the high number of participants.")), 1), nt("p", null, vt(e.t("If you leave the page for more than 10 minute, your position in the queue will be lost.")), 1), nt("p", null, vt(e.t("If you see tokens listed in the airdrop on your balance page, but no rewards are available on this page, please wait a few minutes.")), 1), nt("h3", Fp, vt(e.t("Your wallet")), 1), nt("div", Kp, [nt("div", $p, [kt(s, {
     round: "",
     type: o.isAddressAvailable ? "danger" : "primary",
     size: "normal",
     onClick: o.handleConnect
   }, {
-    icon: $t(() => [(bt(), Ot("svg", $p, t[5] || (t[5] = [tt("path", {
+    icon: Ht(() => [(yt(), xt("svg", Hp, t[5] || (t[5] = [nt("path", {
       "fill-rule": "evenodd",
       "clip-rule": "evenodd",
       d: "M1.75 12.002C1.75 9.20169 1.75 7.80156 2.29497 6.732C2.77433 5.79119 3.53924 5.02629 4.48005 4.54692C5.54961 4.00195 6.94974 4.00195 9.75 4.00195H17.25C20.0503 4.00195 21.4504 4.00195 22.52 4.54692C23.4608 5.02629 24.2257 5.79119 24.705 6.732C24.8256 6.96861 24.9195 7.2214 24.9926 7.50195H21.5C19.6377 7.50195 18.7065 7.50195 17.9609 7.77334C16.711 8.22828 15.7263 9.21291 15.2714 10.4629C15 11.2085 15 12.1396 15 14.002C15 15.8643 15 16.7954 15.2714 17.541C15.7263 18.791 16.711 19.7756 17.9609 20.2306C18.7065 20.502 19.6377 20.502 21.5 20.502H24.9926C24.9195 20.7825 24.8256 21.0353 24.705 21.2719C24.2257 22.2127 23.4608 22.9776 22.52 23.457C21.4504 24.002 20.0503 24.002 17.25 24.002H9.75C6.94974 24.002 5.54961 24.002 4.48005 23.457C3.53924 22.9776 2.77433 22.2127 2.29497 21.2719C1.75 20.2023 1.75 18.8022 1.75 16.002V12.002ZM16.4999 13.802C16.4999 12.1218 16.4999 11.2817 16.8269 10.64C17.1145 10.0755 17.5735 9.61656 18.138 9.32894C18.7797 9.00196 19.6198 9.00196 21.2999 9.00196H23.1999C24.8801 9.00196 25.7202 9.00196 26.3619 9.32894C26.9264 9.61656 27.3853 10.0755 27.673 10.64C27.9999 11.2817 27.9999 12.1218 27.9999 13.802V14.202C27.9999 15.8821 27.9999 16.7222 27.673 17.3639C27.3853 17.9284 26.9264 18.3874 26.3619 18.675C25.7202 19.002 24.8801 19.002 23.1999 19.002H21.2999C19.6198 19.002 18.7797 19.002 18.138 18.675C17.5735 18.3874 17.1145 17.9284 16.8269 17.3639C16.4999 16.7222 16.4999 15.8821 16.4999 14.202V13.802ZM22.4999 14.002C22.4999 14.9685 21.7164 15.752 20.7499 15.752C19.7834 15.752 18.9999 14.9685 18.9999 14.002C18.9999 13.0355 19.7834 12.252 20.7499 12.252C21.7164 12.252 22.4999 13.0355 22.4999 14.002Z",
       fill: "#FFFFFF"
     }, null, -1)])))]),
-    default: $t(() => [pr(" " + wt(o.isAddressAvailable ? e.t("Disconnect wallet") : e.t("Connect wallet")) + " ", 1), vt(a, {
+    default: Ht(() => [gr(" " + vt(o.isAddressAvailable ? e.t("Disconnect wallet") : e.t("Connect wallet")) + " ", 1), kt(a, {
       name: "arrow"
     })]),
     _: 1
-  }, 8, ["type", "onClick"]), o.isAddressAvailable ? (bt(), Ot("div", Hp, [tt("div", Vp, [tt("div", Gp, wt(o.parseNonBounceable(i.state.userAddress)), 1), vt(a, {
+  }, 8, ["type", "onClick"]), o.isAddressAvailable ? (yt(), xt("div", Vp, [nt("div", Gp, [nt("div", Wp, vt(o.parseNonBounceable(i.state.userAddress)), 1), kt(a, {
     size: "20px",
     name: "description",
     onClick: t[0] || (t[0] = h => e._copyToClipboard(o.parseNonBounceable(i.state.userAddress)))
-  })])])) : xt("", !0), vt(c, {
+  })])])) : Ut("", !0), kt(c, {
     wrapable: "",
     scrollable: !1,
     "left-icon": "warning",
@@ -15686,11 +15687,11 @@ function Zp(e, t, n, r, i, o) {
       "line-height": "normal"
     }
   }, {
-    default: $t(() => [pr(wt(e.t("To claim the airdrop, connect the wallet specified for the airdrop on the previous page.")), 1)]),
+    default: Ht(() => [gr(vt(e.t("To claim the airdrop, connect the wallet specified for the airdrop on the previous page.")), 1)]),
     _: 1
-  })])]), t[7] || (t[7] = tt("h3", {
+  })])]), t[7] || (t[7] = nt("h3", {
     class: "center goldText"
-  }, "Airdrop", -1)), tt("div", Wp, [o.isAddressAvailable ? (bt(), hr(f, {
+  }, "Airdrop", -1)), nt("div", Yp, [o.isAddressAvailable ? (yt(), pr(f, {
     key: 0,
     modelValue: i.selectedAirdrop,
     "onUpdate:modelValue": t[1] || (t[1] = h => i.selectedAirdrop = h),
@@ -15700,13 +15701,13 @@ function Zp(e, t, n, r, i, o) {
     label: e.t("Airdrop"),
     placeholder: e.t("Choose Airdrop"),
     onClick: t[2] || (t[2] = h => i.isShowAirdropPicker = !0)
-  }, null, 8, ["modelValue", "label", "placeholder"])) : xt("", !0), vt(_, {
+  }, null, 8, ["modelValue", "label", "placeholder"])) : Ut("", !0), kt(_, {
     show: i.isShowAirdropPicker,
     "onUpdate:show": t[4] || (t[4] = h => i.isShowAirdropPicker = h),
     round: "",
     position: "bottom"
   }, {
-    default: $t(() => [vt(u, {
+    default: Ht(() => [kt(u, {
       title: e.t("Choose Airdrop"),
       columns: i.airdropOptions,
       onCancel: t[3] || (t[3] = h => i.isShowAirdropPicker = !1),
@@ -15715,80 +15716,80 @@ function Zp(e, t, n, r, i, o) {
       onConfirm: o.handlePickerConfirm
     }, null, 8, ["title", "columns", "cancel-button-text", "confirm-button-text", "onConfirm"])]),
     _: 1
-  }, 8, ["show"])]), o.isAddressAvailable ? (bt(), Ot("h3", Yp, wt(e.t("Status")), 1)) : xt("", !0), i.state.loading || i.state.claimLoading ? (bt(), hr(B, {
+  }, 8, ["show"])]), o.isAddressAvailable ? (yt(), xt("h3", Xp, vt(e.t("Status")), 1)) : Ut("", !0), i.state.loading || i.state.claimLoading ? (yt(), pr(B, {
     key: 1,
     size: "12"
-  })) : xt("", !0), i.state.claimData ? (bt(), Ot(nc, {
+  })) : Ut("", !0), i.state.claimData ? (yt(), xt(rc, {
     key: 2
-  }, [((m = i.state.claimData) == null ? void 0 : m.status) === "signed" ? (bt(), hr(S, {
+  }, [((m = i.state.claimData) == null ? void 0 : m.status) === "signed" ? (yt(), pr(S, {
     key: 0,
     inset: "",
     style: {
       margin: "0"
     }
   }, {
-    default: $t(() => [vt(y, {
+    default: Ht(() => [kt(y, {
       size: "normal",
       center: "",
       title: e.t("Reward"),
       value: `${i.state.claimData.reward/1e9} $ZOO`
     }, null, 8, ["title", "value"])]),
     _: 1
-  })) : xt("", !0), ((v = i.state.claimData) == null ? void 0 : v.status) === "inQueue" ? (bt(), hr(S, {
+  })) : Ut("", !0), ((v = i.state.claimData) == null ? void 0 : v.status) === "inQueue" ? (yt(), pr(S, {
     key: 1,
     inset: "",
     style: {
       margin: "0"
     }
   }, {
-    default: $t(() => [vt(y, {
+    default: Ht(() => [kt(y, {
       size: "normal",
       center: "",
       title: e.t("Status"),
       value: e.t("In queue")
-    }, null, 8, ["title", "value"]), vt(y, {
+    }, null, 8, ["title", "value"]), kt(y, {
       size: "normal",
       center: "",
       title: e.t("Place"),
       value: o.yourPlace
     }, null, 8, ["title", "value"])]),
     _: 1
-  })) : xt("", !0), ((x = i.state.claimData) == null ? void 0 : x.status) === "noReward" ? (bt(), hr(S, {
+  })) : Ut("", !0), ((x = i.state.claimData) == null ? void 0 : x.status) === "noReward" ? (yt(), pr(S, {
     key: 2,
     inset: "",
     style: {
       margin: "0"
     }
   }, {
-    default: $t(() => [vt(y, {
+    default: Ht(() => [kt(y, {
       size: "normal",
       center: "",
       title: e.t("Status"),
       value: e.t("No reward")
     }, null, 8, ["title", "value"])]),
     _: 1
-  })) : xt("", !0)], 64)) : xt("", !0), i.state.claimed === !0 ? (bt(), Ot("h3", Xp, [vt(a, {
+  })) : Ut("", !0)], 64)) : Ut("", !0), i.state.claimed === !0 ? (yt(), xt("h3", Jp, [kt(a, {
     name: "checked"
-  }), pr(wt(e.t("Reward claimed")), 1)])) : i.state.claimed === !1 && ((M = i.state.claimData) == null ? void 0 : M.status) === "signed" && i.state.storageKey ? (bt(), Ot("div", Jp, [vt(s, {
+  }), gr(vt(e.t("Reward claimed")), 1)])) : i.state.claimed === !1 && ((M = i.state.claimData) == null ? void 0 : M.status) === "signed" && i.state.storageKey ? (yt(), xt("div", Qp, [kt(s, {
     loading: i.state.loading || i.state.claimLoading,
     round: "",
     size: "large",
     type: "primary",
     onClick: o.claimReward
   }, {
-    default: $t(() => [pr(wt(e.t("Claim")), 1)]),
+    default: Ht(() => [gr(vt(e.t("Claim")), 1)]),
     _: 1
-  }, 8, ["loading", "onClick"])])) : ((p = i.state.claimData) == null ? void 0 : p.status) === "inQueue" ? (bt(), Ot("div", Qp, wt(e.t("In queue")), 1)) : !i.state.airdropName && o.isAddressAvailable ? (bt(), Ot("div", qp, [pr(wt(e.t("Select airdrop")) + " ", 1), vt(a, {
+  }, 8, ["loading", "onClick"])])) : ((p = i.state.claimData) == null ? void 0 : p.status) === "inQueue" ? (yt(), xt("div", qp, vt(e.t("In queue")), 1)) : !i.state.airdropName && o.isAddressAvailable ? (yt(), xt("div", Zp, [gr(vt(e.t("Select airdrop")) + " ", 1), kt(a, {
     size: "20px",
     color: "#ffbb00",
     name: "warning-o"
-  })])) : xt("", !0), t[8] || (t[8] = tt("br", null, null, -1)), t[9] || (t[9] = tt("br", null, null, -1)), t[10] || (t[10] = tt("br", null, null, -1)), t[11] || (t[11] = tt("br", null, null, -1)), t[12] || (t[12] = tt("br", null, null, -1))])
+  })])) : Ut("", !0), t[8] || (t[8] = nt("br", null, null, -1)), t[9] || (t[9] = nt("br", null, null, -1)), t[10] || (t[10] = nt("br", null, null, -1)), t[11] || (t[11] = nt("br", null, null, -1)), t[12] || (t[12] = nt("br", null, null, -1))])
 }
-const rg = tc(zp, [
-  ["render", Zp],
+const ig = nc(Np, [
+  ["render", eg],
   ["__scopeId", "data-v-e406dad2"]
 ]);
 export {
-  rg as
+  ig as
   default
 };

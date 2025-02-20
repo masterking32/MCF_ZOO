@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-C_yUViqq.js", "assets/Airdrop2-D-bm_VtJ.css", "assets/Finish-BHxLm_Hg.js", "assets/Finish-Gzapn-3U.css", "assets/AirdropOnChain-DaZmyMxe.js", "assets/index-Duh1NKkB.js", "assets/AirdropOnChain-lhB0_m5n.css", "assets/Rating-DhtI9QCN.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-Cp2Fhl04.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-DYg0ks7i.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-B5Fakbdm.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-dnN6De3M.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Airdrop2-BUS1go-4.js", "assets/Airdrop2-D-bm_VtJ.css", "assets/Finish-g6m9ON81.js", "assets/Finish-Gzapn-3U.css", "assets/AirdropOnChain-ComIR7gO.js", "assets/index-CiSMjUBN.js", "assets/AirdropOnChain-lhB0_m5n.css", "assets/Rating-DoQE2OIP.js", "assets/Rating-DF4CVDh0.css", "assets/Communities-DLH_V4ZG.js", "assets/Communities-DpnpFDuu.css", "assets/Alliance-CtmoEgRO.js", "assets/Alliance-BkDyrW8l.css", "assets/Boost-DLqccVOr.js", "assets/Boost-CeTnVcsX.css", "assets/ReferralCommission-RsyiNRWW.js", "assets/ReferralCommission-DcL3Imm7.css"]))) => i.map(i => d[i]);
 (function() {
   const t = document.createElement("link").relList;
   if (t && t.supports && t.supports("modulepreload")) return;
@@ -20596,7 +20596,7 @@ function UA(e, t, n, o, s, a) {
         center: "",
         title: "Claim",
         "is-link": "",
-        to: "/airdrop2",
+        to: "/on-chain-airdrop",
         onClick: t[3] || (t[3] = d => {
           e.isMenuOpen = !1
         }),
@@ -20688,7 +20688,7 @@ function UA(e, t, n, o, s, a) {
 }
 const WA = yt(MA, [
     ["render", UA],
-    ["__scopeId", "data-v-3f4cbef6"]
+    ["__scopeId", "data-v-d1deb85a"]
   ]),
   jA = {
     components: {
@@ -22297,7 +22297,7 @@ const XI = yt(YI, [
             } = await ht(async () => {
               const {
                 TonConnectUI: n
-              } = await import("./index-Duh1NKkB.js").then(o => o.i);
+              } = await import("./index-CiSMjUBN.js").then(o => o.i);
               return {
                 TonConnectUI: n
               }
@@ -23960,46 +23960,46 @@ const ia = cO({
     history: FP("/"),
     routes: [{
       path: "/",
-      component: () => ht(() => import("./Airdrop2-C_yUViqq.js"), __vite__mapDeps([0, 1]))
+      component: () => ht(() => import("./Airdrop2-BUS1go-4.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/home",
       component: () => ht(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/finish",
-      component: () => ht(() => import("./Finish-BHxLm_Hg.js"), __vite__mapDeps([2, 3]))
+      component: () => ht(() => import("./Finish-g6m9ON81.js"), __vite__mapDeps([2, 3]))
     }, {
       path: "/airdrop",
       component: () => ht(() => Promise.resolve().then(() => Gu), void 0)
     }, {
       path: "/airdrop2",
-      component: () => ht(() => import("./Airdrop2-C_yUViqq.js"), __vite__mapDeps([0, 1]))
+      component: () => ht(() => import("./Airdrop2-BUS1go-4.js"), __vite__mapDeps([0, 1]))
     }, {
       path: "/on-chain-airdrop",
-      component: () => ht(() => import("./AirdropOnChain-DaZmyMxe.js"), __vite__mapDeps([4, 5, 6]))
+      component: () => ht(() => import("./AirdropOnChain-ComIR7gO.js"), __vite__mapDeps([4, 5, 6]))
     }, {
       path: "/terms",
-      component: () => ht(() => import("./Terms-BTt0AvP7.js"), [])
+      component: () => ht(() => import("./Terms-VcA4_ZuB.js"), [])
     }, {
       path: "/quests",
       component: () => ht(() => Promise.resolve().then(() => TE), void 0)
     }, {
       path: "/rating",
-      component: () => ht(() => import("./Rating-DhtI9QCN.js"), __vite__mapDeps([7, 8]))
+      component: () => ht(() => import("./Rating-DoQE2OIP.js"), __vite__mapDeps([7, 8]))
     }, {
       path: "/friends",
       component: () => ht(() => Promise.resolve().then(() => lI), void 0)
     }, {
       path: "/communities",
-      component: () => ht(() => import("./Communities-Cp2Fhl04.js"), __vite__mapDeps([9, 10]))
+      component: () => ht(() => import("./Communities-DLH_V4ZG.js"), __vite__mapDeps([9, 10]))
     }, {
       path: "/alliance",
-      component: () => ht(() => import("./Alliance-DYg0ks7i.js"), __vite__mapDeps([11, 12]))
+      component: () => ht(() => import("./Alliance-CtmoEgRO.js"), __vite__mapDeps([11, 12]))
     }, {
       path: "/boost",
-      component: () => ht(() => import("./Boost-B5Fakbdm.js"), __vite__mapDeps([13, 14]))
+      component: () => ht(() => import("./Boost-DLqccVOr.js"), __vite__mapDeps([13, 14]))
     }, {
       path: "/support",
-      component: () => ht(() => import("./Support-D-zsjGoU.js"), [])
+      component: () => ht(() => import("./Support-CY9fIluP.js"), [])
     }, {
       path: "/test",
       component: () => ht(() => Promise.resolve().then(() => RI), void 0)
@@ -24008,7 +24008,7 @@ const ia = cO({
       component: () => ht(() => Promise.resolve().then(() => bI), void 0)
     }, {
       path: "/referral/commission",
-      component: () => ht(() => import("./ReferralCommission-dnN6De3M.js"), __vite__mapDeps([15, 16]))
+      component: () => ht(() => import("./ReferralCommission-RsyiNRWW.js"), __vite__mapDeps([15, 16]))
     }]
   }),
   dO = {
