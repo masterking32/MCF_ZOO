@@ -18,7 +18,7 @@ import {
   g as p,
   o as r,
   h as W
-} from "./index-dYMJ6MmR.js";
+} from "./index-BTKYIAhm.js";
 const K = {
     name: "Airdrop2-g",
     components: {

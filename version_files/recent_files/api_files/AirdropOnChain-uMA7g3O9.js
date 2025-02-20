@@ -18,7 +18,7 @@ import {
   e as gr,
   g as Rt,
   o as yt
-} from "./index-dYMJ6MmR.js";
+} from "./index-BTKYIAhm.js";
 var ia = {};
 let d;
 const Jo = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
@@ -15536,7 +15536,7 @@ const Np = {
         selectedAirdrop: "",
         airdropOptions: [{
           text: "Airdrop #1",
-          value: "zoo-batch1"
+          value: "zoo_prod_0"
         }]
       }
     },
@@ -15787,7 +15787,7 @@ function eg(e, t, n, r, i, o) {
 }
 const ig = nc(Np, [
   ["render", eg],
-  ["__scopeId", "data-v-e406dad2"]
+  ["__scopeId", "data-v-0c1c10f7"]
 ]);
 export {
   ig as
