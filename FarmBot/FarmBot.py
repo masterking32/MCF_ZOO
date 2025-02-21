@@ -56,6 +56,8 @@ class FarmBot:
                 f"🤖 <g><c>{self.mcf_api.account_name}</c> | Starting to farm <c>Zoo</c>...</g>"
             )
 
+            return
+
             self.user = User(self.requests, self.mcf_api)
 
             user_data = self.user.login()
